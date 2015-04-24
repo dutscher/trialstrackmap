@@ -4,8 +4,14 @@ livesite: [trialstrackmap](http://trialstrackmap.sb-f.de)
 
 forum thread: [trackmap](http://forums.ubi.com/showthread.php/939397-Trackmap)
 
+# grunt
+```
+// concat all the database json, javascript libs and minify them for dist
+$ grunt deploy
 
-
+// starts a simple pyhton server
+$ grunt server
+```
 
 # response of the community
 
