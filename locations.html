@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="trialsTrackmap" ng-controller="trackmap">
+<head>
+    <title>Trials Frontier Trackmap Locations</title>
+    <script type="text/javascript" src="dist/vendor.min.js"></script>
+    <script type="text/javascript" src="dist/map.min.js"></script>
+    <style>
+        body{margin:0}
+        canvas{z-index:1;display:block;position:absolute;left:0;top:0}
+        img{position:relative;z-index:0;display:block}
+    </style>
+</head>
+<body class="en">
+    <canvas canvas-pointer></canvas>
+	<img ng-src="{{::data.images.trackmap.src|imageHoster:data.imagehoster}}" />
+</body>
+</html>

@@ -1,0 +1,97 @@
+body{margin:10px;font-family:Arial, Helvetica, sans-serif;background:#3a281d}
+.box{background:#6a4229;margin-bottom:10px;padding:5px}
+.classic-link{color:#000;font-weight:bold;text-decoration:none}
+.box,.classic-link{color:#ffee99}
+.box{
+    border-width: 2px;
+    border-style: solid;
+    border-top:2px solid #d2c3ab;
+    border-bottom:2px solid #6a4229;
+    -webkit-border-image:-webkit-gradient(linear, 0 100%, 0 0, from(#cfb781), to(#6a4229)) 1 10%;
+    -webkit-border-image:-webkit-linear-gradient(bottom, #6a4229, #d2c3ab) 1 10%;
+    -moz-border-image:-moz-linear-gradient(bottom, #6a4229, #d2c3ab) 1 10%;
+    -o-border-image:-o-linear-gradient(bottom, #6a4229, #d2c3ab) 1 10%;
+    border-image:linear-gradient(to top, #6a4229, #d2c3ab) 1 10%;
+    background:rgba(0,0,0,0.55);
+    -webkit-box-shadow: inset -0px 0px 10px 10px rgba(0, 0, 0, 0.25); /* WebKit */
+    -moz-box-shadow: inset -0px 0px 10px 10px rgba(0, 0, 0, 0.25); /* Firefox */
+    box-shadow: inset -0px 0px 10px 10px rgba(0, 0, 0, 0.25); /* Standard */
+}
+.no-pad{padding:0}
+hr{
+    border:none;
+    height:2px;
+    background:#6a4229;
+}
+
+h1, h2, h3{
+    color:#61d4d7;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.seasons-list{white-space:nowrap}
+.season-container{display:inline-block;width:300px;margin-right:10px;vertical-align:top}
+.season-container img{width:100%}
+.season-times{position:relative}
+.season-prizes{height:240px;overflow:scroll;overflow-x:hidden}
+.season-summary{
+    border-top: double 6px #ffee99;
+    text-align: right;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+[countdown]{
+    position: absolute;
+    right:0;
+    top:10px;
+}
+
+table{
+    width:100%;
+    border-spacing: 0;
+    table-layout: fixed;
+    padding-right:5px;
+}
+td{padding:0;height:80px}
+td.right{
+    text-align:right;
+}
+
+i[class^="season-"]{
+    width:80px;
+    height:80px;
+    display:inline-block;
+    vertical-align: middle;
+}
+.season-level-1{background-position:0 0}
+.season-level-2{background-position:0 -80px}
+.season-level-3{background-position:0 -160px}
+.season-level-4{background-position:0 -240px}
+.season-level-5{background-position:0 -320px}
+.season-level-6{background-position:-80px 0}
+.season-level-7{background-position:-80px -80px}
+.season-level-8{background-position:-80px -160px}
+.season-level-9{background-position:-80px -240px}
+.season-level-10{background-position:-80px -320px}
+.season-level-11{background-position:-160px 0}
+.season-level-12{background-position:-160px -80px}
+.season-level-13{background-position:-160px -160px}
+.season-level-14{background-position:-160px -240px}
+.season-level-15{background-position:-160px -320px}
+.season-level-16{background-position:-240px 0}
+.season-level-17{background-position:-240px -80px}
+.season-level-18{background-position:-240px -160px}
+.season-level-19{background-position:-240px -240px}
+.season-level-20{background-position:-240px -320px}
+.season-level-21{background-position:-320px 0}
+.season-level-22{background-position:-320px -80px}
+.season-level-23{background-position:-320px -160px}
+.season-level-24{background-position:-320px -240px}
+.season-level-25{background-position:-320px -320px}
+.season-extra-donkey{background-position:-400px 0}
+.season-extra-paintjob-1{background-position:-400px -80px}
+.season-extra-paintjob-2{background-position:-400px -160px}
+.season-extra-paintjob-3{background-position:-400px -240px}
+.season-extra-paintjob-4{background-position:-400px -320px}
+.season-extra-paintjob-5{background-position:-480px 0}

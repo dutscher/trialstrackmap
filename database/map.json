@@ -1,0 +1,133 @@
+{
+  "stats": {
+    "update": "23.04.2015",
+    "rank": "50",
+    "uplay": "Android: dutscher_sbf",
+    "level": "45",
+    "app_version": "3.2.2",
+    "avatar": "https://uplay-avatars.s3.amazonaws.com/c58587cb-75c5-4a13-a359-1a6b01a116d0/default_146_146.png"
+  },
+  "credits": [
+    {
+      "href": "http://forums.ubi.com/member.php/1647317-jyjeyzx",
+      "text": "Some Bunker Tracklocations by jyjeyzx"
+    },
+    {
+      "href": "http://forums.ubi.com/showthread.php/924263-Complete-list-of-tacks-with-startingline-picture",
+      "text": "Startline Pictures by flooodi"
+    },
+    {
+      "href": "http://forums.ubi.com/showthread.php/921292-Candy-Quest-Guide",
+      "text": "Candy Quest Guide by xitooner"
+    },
+    {
+      "href": "http://forums.ubi.com/showthread.php/924212-Slot-Machine-Rewards-Summary",
+      "text": "Slot machine levels by xitooner"
+    },
+    {
+      "href": "http://forums.ubi.com/showthread.php/931028-Official-Data-Cube-thread-Post-locations-here!",
+      "text": "Data Cube Quest Texts by CasuallyDressed"
+    },
+    {
+      "href": "http://forums.ubi.com/showthread.php/903838-complete-list-of-all-tracks",
+      "text": "Tracklistcolors by chabonators"
+    }
+  ],
+  "usefull_links": [
+    {
+      "href": "http://trialsfrontier.cloudapp.net",
+      "title": "Trials Frontier Agent Gift auto-send and receive service"
+    },
+    {
+      "href": "http://forums.ubi.com/showthread.php/939397-Trackmap",
+      "title": "Trackmap Thread @ Ubisoft Forum"
+    },
+    {
+      "href": "http://forums.ubi.com/forumdisplay.php/591-TRIALS-FRONTIER",
+      "title": "Trials Frontier Forum"
+    },
+    {
+      "href": "http://forums.ubi.com/showthread.php/996321-Guides-and-Useful-Topics-for-Trials-Frontier",
+      "title": "Guides-and-Useful-Topics-for-Trials-Frontier"
+    },
+    {
+      "href": "https://www.facebook.com/trialsfrontier.game?fref=ts",
+      "title": "Trials Frontier @ Facebook"
+    }
+  ],
+  "cats": [
+    {
+      "index": 1,
+      "class": "hardcore",
+      "color": "ff00f0"
+    },
+    {
+      "index": 2,
+      "class": "swamp",
+      "color": "54b131"
+    },
+    {
+      "index": 3,
+      "class": "slot-machine",
+      "color": "ca4340"
+    },
+    {
+      "index": 4,
+      "class": "loot-wheel",
+      "color": "b06410"
+    },
+    {
+      "index": 5,
+      "class": "time-machine",
+      "color": "ede010"
+    },
+    {
+      "index": 6,
+      "class": "data-cube",
+      "color": "74c8ec",
+      "notInTimes": true
+    },
+    {
+      "index": 7,
+      "class": "story",
+      "color": "1891c4"
+    },
+    {
+      "index": 8,
+      "class": "pumpkin",
+      "color": "EC7000"
+    },
+    {
+      "index": 9,
+      "class": "bunker",
+      "color": "797478"
+    },
+    {
+      "index": 10,
+      "class": "china",
+      "color": "BE0041"
+    },
+	{
+      "index": 11,
+      "class": "winter",
+      "color": "FFFFFF"
+    }
+  ],
+  "tiers": [
+    {
+      "index": 1,
+      "class": "tier-1",
+      "color": "a3da38"
+    },
+    {
+      "index": 2,
+      "class": "tier-2",
+      "color": "ffba00"
+    },
+    {
+      "index": 3,
+      "class": "tier-3",
+      "color": "ff6c00"
+    }
+  ]
+}

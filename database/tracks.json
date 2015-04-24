@@ -1,0 +1,1748 @@
+[
+  // "tier 1 / story"
+  {
+    "id": 1,
+    "coords": "1769,1294,60",
+    "tier": 1,
+    "cats": "7,6",
+    "startline": "#2/960x540q90/674/A9zhs0.png",
+    "datacube": "#1/nyFyDaj.jpg",
+    "candys": [
+      {
+        "src": "#1/56M8I5S.png",
+        "title": "20.Denial"
+      }
+    ],
+    "prio": 12,
+    "oid": 1068
+  },
+  {
+    "id": 2,
+    "coords": "1651,1269,60",
+    "tier": 1,
+    "cats": "7",
+    "startline": "#2/960x540q90/743/nbiK9G.png",
+    "prio": 1,
+    "oid": 100
+  },
+  {
+    "id": 3,
+    "coords": "1553,1190,60",
+    "tier": 1,
+    "cats": "7",
+    "startline": "#2/960x540q90/904/umi4EQ.png",
+    "candys": [
+      {
+        "src": "#1/r6vcrS6.png",
+        "title": "11.Hidden Goodies"
+      }
+    ],
+    "prio": 2,
+    "oid": 1097
+  },
+  {
+    "id": 4,
+    "coords": "1419,1274,60",
+    "tier": 1,
+    "cats": "7",
+    "startline": "#2/960x540q90/537/eTQc0D.png",
+    "prio": 3,
+    "oid": 1033
+  },
+  {
+    "id": 5,
+    "coords": "1395,1085,60",
+    "tier": 1,
+    "cats": "7",
+    "startline": "#2/960x540q90/910/qxTNCL.png",
+    "prio": 20,
+    "oid": 1
+  },
+  {
+    "id": 6,
+    "coords": "1160,1167,60",
+    "tier": 1,
+    "cats": "7",
+    "startline": "#2/960x540q90/674/urC3au.png",
+    "candys": [
+      {
+        "src": "#1/kLv5mr7.png",
+        "title": "01.Spinning Around"
+      },
+      {
+        "src": "#1/qIpxZER.png",
+        "title": "04.Candy In The Sky"
+      },
+      {
+        "src": "#1/RLCi8rc.png",
+        "title": "26.Saccharine Adventure"
+      }
+    ],
+    "prio": 4,
+    "oid": 2
+  },
+  {
+    "id": 7,
+    "coords": "1048,1233,60",
+    "tier": 1,
+    "cats": "7,6",
+    "startline": "#2/960x540q90/537/rjcWQs.png",
+    "datacube": "#1/mTZRhHx.jpg",
+    "candys": [
+      {
+        "src": "#1/kWZzNUb.png",
+        "title": "06.Artificial Sweetener"
+      },
+      {
+        "src": "#1/TgrSQH0.png",
+        "title": "22.Prophecy"
+      }
+    ],
+    "prio": 5,
+    "oid": 1036
+  },
+  {
+    "id": 8,
+    "coords": "1002,1340,60",
+    "tier": 1,
+    "cats": "7,6",
+    "startline": "#2/960x540q90/537/Q8Z8Fk.png",
+    "datacube": "#1/CKg2rVP.jpg",
+    "candys": [
+      {
+        "src": "#1/3cY6wkH.png",
+        "title": "07.Sugary Challenge"
+      },
+      {
+        "src": "#1/2mKs819.png",
+        "title": "25.Land Of Sugar"
+      },
+      {
+        "src": "#1/r8dAel5.png",
+        "title": "27.Bonbon Voyage"
+      }
+    ],
+    "prio": 6,
+    "oid": 1106
+  },
+  {
+    "id": 9,
+    "coords": "1069,1447,60",
+    "tier": 1,
+    "cats": "7,6",
+    "startline": "#2/960x540q90/910/WmTlq5.png",
+    "datacube": "#1/NN6Tf1s.jpg",
+    "candys": [
+      {
+        "src": "#1/KS1z5sC.png",
+        "title": "02.Candy Reborn"
+      },
+      {
+        "src": "#1/36LwZm7.png",
+        "title": "18.Worthy Champion"
+      }
+    ],
+    "prio": 7,
+    "oid": 4
+  },
+  {
+    "id": 10,
+    "coords": "1202,1492,60",
+    "tier": 1,
+    "cats": "7",
+    "startline": "#2/960x540q90/673/SoJw2I.png",
+    "candys": [
+      {
+        "src": "#1/XbG4BSR.png",
+        "title": "09.Sweet Dreams"
+      },
+      {
+        "src": "#1/fqC2VV1.png",
+        "title": "17.Candy Rush"
+      },
+      {
+        "src": "#1/o1Xali4.png",
+        "title": "23.Revelations Galore"
+      }
+    ],
+    "prio": 8,
+    "oid": 1062
+  },
+  {
+    "id": 11,
+    "coords": "1192,1651,60",
+    "tier": 1,
+    "cats": "7",
+    "startline": "#2/960x540q90/902/RnN6t8.png",
+    "candys": [
+      {
+        "src": "#1/FPH4Aal.png",
+        "title": "06.Artificial Sweetener"
+      },
+      {
+        "src": "#1/kCzZR4Q.png",
+        "title": "16.Up for Grabs"
+      },
+      {
+        "src": "#1/kwnDPDq.png",
+        "title": "27.Bonbon Voyage"
+      }
+    ],
+    "prio": 9,
+    "oid": 1037
+  },
+  {
+    "id": 12,
+    "coords": "1331,1615,60",
+    "tier": 1,
+    "cats": "7",
+    "startline": "#2/960x540q90/661/5SRfCd.png",
+    "candys": [
+      {
+        "src": "#1/ubNKg7h.png",
+        "title": "04.Candy In The Sky"
+      },
+      {
+        "src": "#1/3DBLBw3.png",
+        "title": "15.Stashing Away"
+      }
+    ],
+    "prio": -1,
+    "oid": 1083
+  },
+  {
+    "id": 13,
+    "coords": "1270,1768,60",
+    "tier": 1,
+    "cats": "7,6",
+    "startline": "#2/960x540q90/909/6lBroZ.png",
+    "datacube": "#1/Vja2lWM.jpg",
+    "candys": [
+      {
+        "src": "#1/85WUrjT.png",
+        "title": "22.Prophecy"
+      }
+    ],
+    "prio": 10,
+    "oid": 1090
+  },
+  {
+    "id": 14,
+    "coords": "1357,1882,60",
+    "tier": 1,
+    "cats": "7",
+    "startline": "#2/960x540q90/540/IbB3bo.png",
+    "candys": [
+      {
+        "src": "#1/yhSN3bl.png",
+        "title": "13.Hard Bargain"
+      },
+      {
+        "src": "#1/micPpYe.png",
+        "title": "25.Land Of Sugar"
+      }
+    ],
+    "prio": 11,
+    "oid": 1024
+  },
+  {
+    "id": 15,
+    "coords": "1213,1906,60",
+    "tier": 1,
+    "cats": "7",
+    "startline": "#2/960x540q90/661/etbnos.png",
+    "candys": [
+      {
+        "src": "#1/2c7A2WZ.png",
+        "title": "01.Spinning Around"
+      },
+      {
+        "src": "#1/jWA6DuY.png",
+        "title": "04.Candy In The Sky"
+      }
+    ],
+    "prio": 13,
+    "oid": 1075
+  },
+  {
+    "id": 16,
+    "coords": "1053,1928,60",
+    "tier": 1,
+    "cats": "7",
+    "startline": "http://s4.postimg.org/yt5tx72ct/Screenshot_2015_03_25_07_44_21.png",
+    "candys": [
+      {
+        "src": "#1/zyp6rrp.png",
+        "title": "08.One With The Candy"
+      },
+      {
+        "src": "#1/670WDNa.png",
+        "title": "11.Hidden Goodies"
+      },
+      {
+        "src": "#1/Cpb7k9i.png",
+        "title": "18.Worthy Champion"
+      },
+      {
+        "src": "#1/4bfvHrV.png",
+        "title": "19.Half A Kingdom"
+      }
+    ],
+    "prio": 14,
+    "oid": 1041
+  },
+  {
+    "id": 17,
+    "coords": "937,1876,60",
+    "tier": 1,
+    "cats": "7,6",
+    "startline": "#2/960x540q90/743/SoOMAu.png",
+    "datacube": "#1/upS1tZd.jpg",
+    "candys": [
+      {
+        "src": "#1/KwLpj46.png",
+        "title": "10.Hunt Continues"
+      },
+      {
+        "src": "#1/Wbuavf3.png",
+        "title": "17.candy Rush"
+      },
+      {
+        "src": "#1/keFmDCh.png",
+        "title": "27.Bonbon Voyage"
+      }
+    ],
+    "prio": 15,
+    "oid": 1069
+  },
+  {
+    "id": 18,
+    "coords": "897,1723,60",
+    "tier": 1,
+    "cats": "7",
+    "startline": "#2/960x540q90/911/ENLrQI.png",
+    "candys": [
+      {
+        "src": "#1/m7wKTCo.png",
+        "title": "07.Sugary Challenge"
+      },
+      {
+        "src": "#1/E9ETPnp.png",
+        "title": "13.Hard Bargain"
+      },
+      {
+        "src": "#1/Kic7iZN.png",
+        "title": "16.Up For Grabs"
+      },
+      {
+        "src": "#1/ltgjsaR.png",
+        "title": "24.Down The River"
+      }
+    ],
+    "prio": 17,
+    "oid": 1032
+  },
+  {
+    "id": 19,
+    "coords": "815,1608,60",
+    "tier": 1,
+    "cats": "7,6",
+    "startline": "#2/960x540q90/912/abzQDs.png",
+    "datacube": "#1/nIOtYvc.jpg",
+    "candys": [
+      {
+        "src": "#1/ErQAU1p.png",
+        "title": "12.Fair Trade"
+      },
+      {
+        "src": "#1/Vm5H1mx.png",
+        "title": "18.Worthy Champion"
+      },
+      {
+        "src": "#1/kHnSfkR.png",
+        "title": "21.Mind Games"
+      }
+    ],
+    "prio": 18,
+    "oid": 1023
+  },
+  {
+    "id": 20,
+    "coords": "857,1484,60",
+    "tier": 1,
+    "cats": "7",
+    "startline": "#2/960x540q90/661/FwItRu.png",
+    "prio": 19,
+    "oid": 1088
+  },
+  {
+    "id": 21,
+    "coords": "792,1378,60",
+    "tier": 1,
+    "cats": "7",
+    "startline": "#2/960x540q90/909/Tjjyck.png",
+    "candys": [
+      {
+        "src": "#1/7NKn83I.png",
+        "title": "02.Candy Reborn"
+      }
+    ],
+    "prio": 22,
+    "oid": 1087
+  },
+  {
+    "id": 22,
+    "coords": "1147,2255,60",
+    "tier": 1,
+    "cats": "7",
+    "startline": "#2/960x540q90/538/f5jXf0.png",
+    "candys": [
+      {
+        "src": "#1/EbrwH6V.png",
+        "title": "13.Hard Bargain"
+      },
+      {
+        "src": "#1/KYZ2474.png",
+        "title": "26.Saccharine Adventure"
+      }
+    ],
+    "prio": 16,
+    "oid": 1133
+  },
+  {
+    "id": 23,
+    "coords": "945,1112,60",
+    "tier": 1,
+    "cats": "7",
+    "startline": "#2/1136x640q90/538/I7mg4I.jpg",
+    "prio": -1,
+    "oid": 1178
+  },
+  // tier 1 / timemachine
+  {
+    "id": 24,
+    "coords": "1823,1375,60",
+    "tier": 1,
+    "cats": "5",
+    "startline": "#2/960x540q90/540/gPRBg2.png",
+    "prio": -1,
+    "oid": 1126
+  },
+  {
+    "id": 25,
+    "coords": "1927,1470,60",
+    "tier": 1,
+    "cats": "5",
+    "startline": "#2/960x540q90/909/iUuAJN.png",
+    "prio": -1,
+    "oid": 1131
+  },
+  {
+    "id": 26,
+    "coords": "1841,1568,60",
+    "tier": 1,
+    "cats": "5,6",
+    "startline": "#2/960x540q90/902/QIUH1F.png",
+    "datacube": "#1/c7QuxWP.jpg",
+    "prio": 21,
+    "oid": 1134
+  },
+  // tier 1 / lootwheel
+  {
+    "id": 27,
+    "coords": "717,1281,60",
+    "tier": 1,
+    "cats": "4",
+    "startline": "#2/960x540q90/745/Tczjnt.png",
+    "prio": -1,
+    "oid": 1167
+  },
+  {
+    "id": 28,
+    "coords": "1045,1646,60",
+    "tier": 1,
+    "cats": "4,6",
+    "startline": "#2/960x540q90/540/zrpPVQ.png",
+    "datacube": "#1/zba9I0p.jpg",
+    "prio": 23,
+    "oid": 1123
+  },
+  {
+    "id": 29,
+    "coords": "1072,1055,60",
+    "tier": 1,
+    "cats": "4",
+    "startline": "#2/1136x640q90/537/clkqXV.jpg",
+    "prio": -1,
+    "oid": 1135
+  },
+  {
+    "id": 30,
+    "coords": "1211,1002,60",
+    "tier": 1,
+    "cats": "4",
+    "startline": "#2/1136x640q90/540/XQJ8Eh.jpg",
+    "prio": -1,
+    "oid": 1156
+  },
+  {
+    "id": 31,
+    "coords": "1415,1717,60",
+    "tier": 1,
+    "cats": "4",
+    "startline": "#2/1136x640q90/661/lW9jbG.jpg",
+    "prio": -1,
+    "oid": 1181
+  },
+  // tier 1 / slotmachine
+  {
+    "id": 32,
+    "coords": "1480,1972,60",
+    "tier": 1,
+    "cats": "3",
+    "startline": "#2/960x540q90/673/FkNAne.png",
+    "prio": -1,
+    "level": 1,
+    "oid": 1113
+  },
+  {
+    "id": 33,
+    "coords": "1690,2024,60",
+    "tier": 1,
+    "cats": "3",
+    "startline": "#2/960x540q90/540/arIWYD.png",
+    "prio": -1,
+    "level": 2,
+    "oid": 1116
+  },
+  {
+    "id": 34,
+    "coords": "1852,2091,60",
+    "tier": 1,
+    "cats": "3",
+    "startline": "#2/960x540q90/746/xCRuFY.png",
+    "prio": -1,
+    "level": 5,
+    "oid": 1048
+  },
+  {
+    "id": 35,
+    "coords": "1988,2056,60",
+    "tier": 1,
+    "cats": "3",
+    "startline": "#2/960x540q90/746/qwnrYQ.png",
+    "prio": -1,
+    "level": 7,
+    "oid": 1120
+  },
+  {
+    "id": 36,
+    "coords": "2132,2126,60",
+    "tier": 1,
+    "cats": "3",
+    "startline": "#2/960x540q90/908/I2AkQt.png",
+    "prio": -1,
+    "level": 4,
+    "oid": 1115
+  },
+  {
+    "id": 37,
+    "coords": "2286,2181,60",
+    "tier": 1,
+    "cats": "3,6",
+    "startline": "#2/960x540q90/742/z3BStr.png",
+    "datacube": "#1/HnCtoVT.jpg",
+    "prio": -1,
+    "level": 8,
+    "oid": 1122
+  },
+  {
+    "id": 38,
+    "coords": "838,1215,60",
+    "tier": 1,
+    "cats": "3",
+    "startline": "#2/1136x640q50/674/NWBxGp.jpg",
+    "prio": -1,
+    "level": 6,
+    "oid": 1141
+  },
+  // tier 1 / swamp
+  {
+    "id": 39,
+    "coords": "1244,1328,60",
+    "tier": 1,
+    "cats": "2,6",
+    "startline": "#2/960x540q90/674/SrCQMU.png",
+    "datacube": "#1/Xiak0Sv.jpg",
+    "prio": -1,
+    "oid": 1152
+  },
+  {
+    "id": 40,
+    "coords": "1319,1409,60",
+    "tier": 1,
+    "cats": "2",
+    "startline": "#2/960x540q90/540/tDcQ2s.png",
+    "prio": -1,
+    "oid": 1148
+  },
+  {
+    "id": 41,
+    "coords": "1404,1492,60",
+    "tier": 1,
+    "cats": "2",
+    "startline": "#2/960x540q90/742/l0ygqH.png",
+    "prio": -1,
+    "oid": 1149
+  },
+  {
+    "id": 42,
+    "coords": "1576,1439,60",
+    "tier": 1,
+    "cats": "2",
+    "startline": "#2/960x540q90/912/lSC4eC.png",
+    "prio": -1,
+    "oid": 1153
+  },
+  // tier 1 / island
+  {
+    "id": 43,
+    "coords": "1977,1033,60",
+    "tier": 1,
+    "cats": "1",
+    "startline": "#2/960x540q90/540/GNH4XM.png",
+    "prio": -1,
+    "oid": 1172
+  },
+  {
+    "id": 44,
+    "coords": "2099,1120,60",
+    "tier": 1,
+    "cats": "1",
+    "startline": "#2/960x540q90/743/MgLPO5.png",
+    "prio": -1,
+    "oid": 1180
+  },
+  {
+    "id": 45,
+    "coords": "2270,1174,60",
+    "tier": 1,
+    "cats": "1",
+    "startline": "#2/960x540q90/745/IFYn58.png",
+    "prio": -1,
+    "oid": 1171
+  },
+  {
+    "id": 46,
+    "coords": "2135,1259,60",
+    "tier": 1,
+    "cats": "1",
+    "startline": "#2/960x540q90/673/ISTewH.png",
+    "prio": -1,
+    "oid": 1170
+  },
+  {
+    "id": 47,
+    "coords": "2298,1345,60",
+    "tier": 1,
+    "cats": "1",
+    "startline": "#2/960x540q90/661/IcNaTb.png",
+    "prio": -1,
+    "oid": 1168
+  },
+  {
+    "id": 48,
+    "coords": "2447,1324,60",
+    "tier": 1,
+    "cats": "1",
+    "startline": "#2/960x540q90/742/a6E1YL.png",
+    "prio": -1,
+    "oid": 1179
+  },
+  // tier 1 / pumpkin
+  {
+    "id": 49,
+    "coords": "772,1817,60",
+    "tier": 1,
+    "cats": "8",
+    "startline": "http://s14.postimg.org/gw6wpldup/Pumpkin_Patch.png",
+    "prio": -1
+  },
+  {
+    "id": 50,
+    "coords": "679,1687,60",
+    "tier": 1,
+    "cats": "8",
+    "startline": "http://s13.postimg.org/m4e1nvxfr/Doom_Drop.png",
+    "prio": -1,
+    "oid": 1189
+  },
+  // tier 2 / story
+  {
+    "id": 51,
+    "coords": "888,2028,60",
+    "tier": 2,
+    "cats": "7",
+    "startline": "#2/960x540q90/537/1rWH2L.png",
+    "candys": [
+      {
+        "src": "#1/2SPthk3.png",
+        "title": "09.Sweet Dreams"
+      },
+      {
+        "src": "#1/UuZXg9C.png",
+        "title": "12.Fair Trade"
+      },
+      {
+        "src": "#1/M1bKRrz.png",
+        "title": "15.Stashing Away"
+      },
+      {
+        "src": "#1/9bSkOFG.png",
+        "title": "19.Half A Kingdom"
+      },
+      {
+        "src": "#1/2QSrZbQ.png",
+        "title": "23.Revelations Galore"
+      }
+    ],
+    "prio": 1,
+    "oid": 1070
+  },
+  {
+    "id": 52,
+    "coords": "772,2143,60",
+    "tier": 2,
+    "cats": "7",
+    "startline": "#2/960x540q90/673/g5ZfDm.png",
+    "candys": [
+      {
+        "src": "#1/GYVrXyI.png",
+        "title": "11.Hidden Goodies"
+      }
+    ],
+    "prio": 2,
+    "oid": 1099
+  },
+  {
+    "id": 53,
+    "coords": "838,2277,60",
+    "tier": 2,
+    "cats": "7",
+    "startline": "#2/960x540q90/540/QHpTyK.png",
+    "candys": [
+      {
+        "src": "#1/kI86irv.png",
+        "title": "17.Candy Rush"
+      },
+      {
+        "src": "#1/teC9xw0.png",
+        "title": "21.Mind Games"
+      }
+    ],
+    "prio": 3,
+    "oid": 1051
+  },
+  {
+    "id": 54,
+    "coords": "693,2315,60",
+    "tier": 2,
+    "cats": "7",
+    "startline": "#2/960x540q90/902/2UWKc8.png",
+    "candys": [
+      {
+        "src": "#1/Z2rd7fB.png",
+        "title": "05.Candy Prophet"
+      },
+      {
+        "src": "#1/QgMOBXV.png",
+        "title": "15.Stashing Away"
+      }
+    ],
+    "prio": 4,
+    "oid": 1034
+  },
+  {
+    "id": 55,
+    "coords": "573,2207,60",
+    "tier": 2,
+    "cats": "7",
+    "startline": "#2/960x540q90/674/hbQusK.png",
+    "candys": [
+      {
+        "src": "#1/LcMbBvl.png",
+        "title": "09.Sweet Dreams"
+      },
+      {
+        "src": "#1/bxi2o4L.png",
+        "title": "27.Bonbon Voyage"
+      }
+    ],
+    "prio": -1,
+    "oid": 1040
+  },
+  {
+    "id": 56,
+    "coords": "625,2055,60",
+    "tier": 2,
+    "cats": "7,6",
+    "startline": "#2/960x540q90/745/7lKcMf.png",
+    "datacube": "#1/Pblf4io.jpg",
+    "candys": [
+      {
+        "src": "#1/Qk680Mi.png",
+        "title": "05.Candy Prophet"
+      },
+      {
+        "src": "#1/ERh4Och.png",
+        "title": "19.Half A Kingdom"
+      }
+    ],
+    "prio": -1,
+    "oid": 1072
+  },
+  {
+    "id": 57,
+    "coords": "591,1891,60",
+    "tier": 2,
+    "cats": "7",
+    "startline": "#2/960x540q90/673/BjuM5B.png",
+    "candys": [
+      {
+        "src": "#1/x4A9ym3.png",
+        "title": "08.One With The Candy"
+      },
+      {
+        "src": "#1/1NLroYo.png",
+        "title": "12.Fair Trade"
+      },
+      {
+        "src": "#1/uw7KKhA.png",
+        "title": "16.Up For Grabs"
+      },
+      {
+        "src": "#1/Cf0NpJW.png",
+        "title": "23.Revelations Galore"
+      },
+      {
+        "src": "#1/fHxaVuR.png",
+        "title": "26.Saccharine Adventure"
+      }
+    ],
+    "prio": -1,
+    "oid": 1045
+  },
+  {
+    "id": 58,
+    "coords": "513,1763,60",
+    "tier": 2,
+    "cats": "7",
+    "startline": "#2/960x540q90/674/KLQNzb.png",
+    "candys": [
+      {
+        "src": "#1/x7J8Laq.png",
+        "title": "03.Sweet Method"
+      },
+      {
+        "src": "#1/IwdA5w3.png",
+        "title": "10.Hunt Continues"
+      },
+      {
+        "src": "#1/vBO72TD.png",
+        "title": "25.Land Of Sugar"
+      }
+    ],
+    "prio": -1,
+    "oid": 1055
+  },
+  {
+    "id": 59,
+    "coords": "388,1687,60",
+    "tier": 2,
+    "cats": "7",
+    "startline": "#2/960x540q90/673/eoto0a.png",
+    "candys": [
+      {
+        "src": "#1/cBQE4tY.png",
+        "title": "06.Artificial Sweetener"
+      },
+      {
+        "src": "#1/H6DjBM7.png",
+        "title": "10.Hunt Continues"
+      },
+      {
+        "src": "#1/lsy1rV6.png",
+        "title": "24.Down The River"
+      }
+    ],
+    "prio": -1,
+    "oid": 1050
+  },
+  {
+    "id": 60,
+    "coords": "328,1506,60",
+    "tier": 2,
+    "cats": "7,6",
+    "startline": "#2/960x540q90/902/b0FHRn.png",
+    "datacube": "#1/yraAw8i.jpg",
+    "candys": [
+      {
+        "src": "#1/gvm55wo.png",
+        "title": "03.Sweet Method"
+      },
+      {
+        "src": "#1/btaYxiT.png",
+        "title": "14.Visions"
+      },
+      {
+        "src": "#1/VGf2SIK.png",
+        "title": "22.Prophecy"
+      }
+    ],
+    "prio": -1,
+    "oid": 1052
+  },
+  {
+    "id": 61,
+    "coords": "217,1743,60",
+    "tier": 2,
+    "cats": "7",
+    "startline": "#2/960x540q90/537/Ww0wlP.png",
+    "candys": [
+      {
+        "src": "#1/j6PcN8K.png",
+        "title": "01.Spinning Around"
+      },
+      {
+        "src": "#1/w3GIv0A.png",
+        "title": "03.Sweet Method"
+      },
+      {
+        "src": "#1/UyQmQHl.png",
+        "title": "14.Visions"
+      },
+      {
+        "src": "#1/PmILlcB.png",
+        "title": "20.Denial"
+      }
+    ],
+    "prio": -1,
+    "oid": 1085
+  },
+  {
+    "id": 62,
+    "coords": "137,1605,60",
+    "tier": 2,
+    "cats": "7",
+    "startline": "#2/960x540q90/661/JQMGix.png",
+    "candys": [
+      {
+        "src": "#1/a7HsyDS.png",
+        "title": "14.Visions"
+      },
+      {
+        "src": "#1/sIHIMoW.png",
+        "title": "24.Down The River"
+      }
+    ],
+    "prio": -1,
+    "oid": 1026
+  },
+  {
+    "id": 63,
+    "coords": "180,1443,60",
+    "tier": 2,
+    "cats": "7",
+    "startline": "#2/960x540q90/661/eJrZSm.png",
+    "prio": -1,
+    "oid": 1056
+  },
+  {
+    "id": 64,
+    "coords": "127,1288,60",
+    "tier": 2,
+    "cats": "7,6",
+    "startline": "#2/960x540q90/904/dCyuNR.png",
+    "datacube": "#1/Xiak0Sv.jpg",
+    "candys": [
+      {
+        "src": "#1/GjUWER4.png",
+        "title": "02.Candy Reborn"
+      }
+    ],
+    "prio": -1,
+    "oid": 1029
+  },
+  {
+    "id": 65,
+    "coords": "239,1176,60",
+    "tier": 2,
+    "cats": "7",
+    "startline": "#2/960x540q90/904/ZYjOAV.png",
+    "candys": [
+      {
+        "src": "#1/pIrJJja.png",
+        "title": "05.Candy Prophet"
+      },
+      {
+        "src": "#1/Qf4y7yC.png",
+        "title": "26.Saccharine Adventure"
+      }
+    ],
+    "prio": -1,
+    "oid": 1031
+  },
+  {
+    "id": 66,
+    "coords": "251,992,60",
+    "tier": 2,
+    "cats": "7",
+    "startline": "#2/960x540q90/913/exb8VT.png",
+    "candys": [
+      {
+        "src": "#1/aToNr9C.png",
+        "title": "07.Sugary Challenge"
+      },
+      {
+        "src": "#1/ZMgcd1H.png",
+        "title": "20.Denial"
+      }
+    ],
+    "prio": -1,
+    "oid": 1098
+  },
+  {
+    "id": 67,
+    "coords": "142,889,60",
+    "tier": 2,
+    "cats": "7",
+    "startline": "#2/960x540q90/540/5lMySD.png",
+    "candys": [
+      {
+        "src": "#1/7ctfoN9.png",
+        "title": "08.One With The Candy"
+      }
+    ],
+    "prio": -1,
+    "oid": 1095
+  },
+  {
+    "id": 68,
+    "coords": "85,746,60",
+    "tier": 2,
+    "cats": "7",
+    "startline": "#2/960x540q90/911/hsEvMU.png",
+    "prio": -1,
+    "oid": 1100
+  },
+  {
+    "id": 69,
+    "coords": "232,686,60",
+    "tier": 2,
+    "cats": "7",
+    "startline": "#2/960x540q90/540/cpDZWr.png",
+    "candys": [
+      {
+        "src": "#1/x0ZcEKO.png",
+        "title": "21.Mind Games"
+      }
+    ],
+    "prio": -1,
+    "oid": 1102
+  },
+  {
+    "id": 70,
+    "coords": "447,1428,60",
+    "tier": 2,
+    "cats": "7",
+    "startline": "#1/WLPUA9D.png",
+    "prio": -1,
+    "oid": 1094
+  },
+  // tier 2 / lootwheel
+  {
+    "id": 71,
+    "coords": "345,600,60",
+    "tier": 2,
+    "cats": "4",
+    "startline": "#2/960x540q90/913/dUo0Am.png",
+    "prio": -1,
+    "oid": 1108
+  },
+  {
+    "id": 72,
+    "coords": "99,1064,60",
+    "tier": 2,
+    "cats": "4",
+    "startline": "#2/960x540q90/912/qc3iHB.png",
+    "prio": -1,
+    "oid": 1166
+  },
+  {
+    "id": 73,
+    "coords": "470,655,60",
+    "tier": 2,
+    "cats": "4",
+    "startline": "#2/1136x640q90/743/HIRiYs.jpg",
+    "prio": -1,
+    "oid": 1105
+  },
+  {
+    "id": 74,
+    "coords": "691,646,60",
+    "tier": 2,
+    "cats": "4",
+    "startline": "#2/1136x640q90/673/SSYZg8.jpg",
+    "prio": -1,
+    "oid": 1129
+  },
+  {
+    "id": 75,
+    "coords": "444,1277,60",
+    "tier": 2,
+    "cats": "4,6",
+    "startline": "#2/1136x640q90/903/jVnGX3.jpg",
+    "datacube": "#1/FXGOImu.jpg",
+    "prio": -1,
+    "oid": 1130
+  },
+  {
+    "id": 76,
+    "coords": "269,2367,60",
+    "tier": 2,
+    "cats": "4",
+    "startline": "#2/1136x640q90/913/7osrU4.jpg",
+    "prio": -1,
+    "oid": 1112
+  },
+  {
+    "id": 77,
+    "coords": "584,579,60",
+    "tier": 2,
+    "cats": "4",
+    "startline": "#2/1136x640q90/746/TPdkFP.jpg",
+    "prio": -1,
+    "oid": 1127
+  },
+  // tier 2 / slotmachine
+  {
+    "id": 78,
+    "coords": "388,1948,60",
+    "tier": 2,
+    "cats": "3",
+    "startline": "#2/960x540q90/674/xFuPLU.png",
+    "prio": -1,
+    "level": 9
+  },
+  {
+    "id": 79,
+    "coords": "165,1923,60",
+    "tier": 2,
+    "cats": "3",
+    "startline": "#2/960x540q90/540/bDBzlO.png",
+    "prio": -1,
+    "level": 10,
+    "oid": 1121
+  },
+  {
+    "id": 80,
+    "coords": "138,2079,60",
+    "tier": 2,
+    "cats": "3",
+    "startline": "#2/960x540q50/674/3OjIvX.png",
+    "prio": -1,
+    "level": 11,
+    "oid": 1140
+  },
+  {
+    "id": 81,
+    "coords": "298,2149,60",
+    "tier": 2,
+    "cats": "3",
+    "startline": "#2/960x540q90/538/rTr1eo.png",
+    "prio": -1,
+    "level": 14,
+    "oid": 1136
+  },
+  {
+    "id": 82,
+    "coords": "122,2262,60",
+    "tier": 2,
+    "cats": "3",
+    "startline": "#2/960x540q90/746/4U1rGH.png",
+    "prio": -1,
+    "level": 13,
+    "oid": 1110
+  },
+  {
+    "id": 83,
+    "coords": "423,2233,60",
+    "tier": 2,
+    "cats": "3",
+    "startline": "#2/1136x640q90/674/oxaSIF.jpg",
+    "prio": -1,
+    "level": 16,
+    "oid": 1137
+  },
+  {
+    "id": 84,
+    "coords": "438,2403,60",
+    "tier": 2,
+    "cats": "3",
+    "startline": "#2/1136x640q90/743/nZAvSc.jpg",
+    "prio": -1,
+    "level": 17,
+    "oid": 1111
+  },
+  // tier 2 / swamp
+  {
+    "id": 85,
+    "coords": "1680,1533,60",
+    "tier": 2,
+    "cats": "2",
+    "startline": "#2/960x540q90/661/u9pskI.png",
+    "prio": -1,
+    "oid": 1145
+  },
+  {
+    "id": 86,
+    "coords": "1528,1622,60",
+    "tier": 2,
+    "cats": "2",
+    "startline": "#2/960x540q90/743/HTkznX.png",
+    "prio": -1,
+    "oid": 1151
+  },
+  {
+    "id": 87,
+    "coords": "1679,1706,60",
+    "tier": 2,
+    "cats": "2",
+    "startline": "#2/960x540q90/673/u7Zr8M.png",
+    "prio": -1,
+    "oid": 1154
+  },
+  {
+    "id": 88,
+    "coords": "1744,1833,60",
+    "tier": 2,
+    "cats": "2",
+    "startline": "#2/960x540q90/537/Whcepd.png",
+    "prio": -1,
+    "oid": 1155
+  },
+  // tier 2 / pumpkin
+  {
+    "id": 89,
+    "coords": "581,1592,60",
+    "tier": 2,
+    "cats": "8",
+    "startline": "http://s8.postimg.org/vjbjo35np/terror_tower.jpg",
+    "prio": -1,
+    "oid": 1204
+  },
+  {
+    "id": 90,
+    "coords": "639,1451,60",
+    "tier": 2,
+    "cats": "8",
+    "startline": "http://s28.postimg.org/wm5lsndsd/HAunted_Hallows.jpg",
+    "prio": -1,
+    "oid": 1205
+  },
+  // tier 2 / china
+  {
+    "id": 131,
+    "coords": "326,808,60",
+    "tier": 2,
+    "cats": "10",
+    "startline": "#1/GTyyz4k.jpg",
+    "oid": 1226
+  },
+  // tier 3 / story
+  {
+    "id": 91,
+    "coords": "1825,1189,60",
+    "tier": 3,
+    "cats": "7,6",
+    "startline": "#2/960x540q90/902/nCLqTm.png",
+    "datacube": "#1/IHNnMgS.jpg",
+    "prio": -1,
+    "oid": 1082
+  },
+  {
+    "id": 92,
+    "coords": "1743,1101,60",
+    "tier": 3,
+    "cats": "7",
+    "startline": "#2/960x540q90/540/w17AZn.png",
+    "prio": -1,
+    "oid": 1091
+  },
+  {
+    "id": 93,
+    "coords": "1628,1007,60",
+    "tier": 3,
+    "cats": "7",
+    "startline": "#2/960x540q90/743/ZKuDNu.png",
+
+    "prio": -1,
+    "oid": 1074
+  },
+  {
+    "id": 94,
+    "coords": "1712,898,60",
+    "tier": 3,
+    "cats": "7,6",
+    "startline": "#2/960x540q90/673/tl5qdk.png",
+    "datacube": "#1/RkUGHU3.jpg",
+    "prio": -1,
+    "oid": 1027
+  },
+  {
+    "id": 95,
+    "coords": "1767,779,60",
+    "tier": 3,
+    "cats": "7",
+    "startline": "#2/960x540q90/746/YZ95V3.png",
+    "prio": -1,
+    "oid": 8
+  },
+  {
+    "id": 96,
+    "coords": "1846,686,60",
+    "tier": 3,
+    "cats": "7",
+    "startline": "#2/960x540q90/540/iOVLf4.png",
+    "prio": -1,
+    "oid": 65010
+  },
+  {
+    "id": 97,
+    "coords": "2011,637,60",
+    "tier": 3,
+    "cats": "7",
+    "startline": "#2/960x540q90/537/FFH7g9.png",
+    "prio": -1,
+    "oid": 1089
+  },
+  {
+    "id": 98,
+    "coords": "2141,564,60",
+    "tier": 3,
+    "cats": "7",
+    "startline": "#2/960x540q90/537/VUbey6.png",
+    "prio": -1,
+    "oid": 1092
+  },
+  {
+    "id": 99,
+    "coords": "2267,498,60",
+    "tier": 3,
+    "cats": "7,6",
+    "startline": "#2/960x540q90/673/xQBgbK.png",
+    "datacube": "#1/KR5GUDd.jpg",
+    "prio": -1,
+    "oid": 1093
+  },
+  {
+    "id": 100,
+    "coords": "2430,434,60",
+    "tier": 3,
+    "cats": "7,6",
+    "startline": "#2/960x540q90/661/nzlyVp.png",
+    "datacube": "#1/MmZT7Qf.jpg",
+    "prio": -1,
+    "oid": 1054
+  },
+  {
+    "id": 101,
+    "coords": "2584,373,60",
+    "tier": 3,
+    "cats": "7,6",
+    "startline": "#2/960x540q90/673/xLgY1c.png",
+    "datacube": "#1/5tEPIbc.jpg",
+    "prio": -1,
+    "oid": 1084
+  },
+  {
+    "id": 102,
+    "coords": "2694,472,60",
+    "tier": 3,
+    "cats": "7",
+    "startline": "#2/960x540q90/910/9AlDlt.png",
+    "prio": -1,
+    "oid": 1101
+  },
+  {
+    "id": 103,
+    "coords": "1702,622,60",
+    "tier": 3,
+    "cats": "7",
+    "startline": "http://s10.postimg.org/exo8yf6eh/Dark_Machine.jpg",
+    "prio": -1,
+    "oid": 1143
+  },
+  // tier 3 / lootwheel
+  {
+    "id": 104,
+    "coords": "1956,838,60",
+    "tier": 3,
+    "cats": "4,6",
+    "startline": "#2/960x540q90/913/pBWInd.png",
+    "datacube": "#1/1shucej.jpg",
+    "prio": -1,
+    "oid": 1125
+  },
+  {
+    "id": 105,
+    "coords": "1551,712,60",
+    "tier": 3,
+    "cats": "4",
+    "startline": "#2/1136x640q90/540/Ur5tSl.jpg",
+    "prio": -1,
+    "oid": 1107
+  },
+  {
+    "id": 106,
+    "coords": "1580,581,60",
+    "tier": 3,
+    "cats": "4,6",
+    "startline": "#2/1136x640q90/673/5VaxTv.jpg",
+    "datacube": "#1/wkEAdOh.jpg",
+    "prio": -1,
+    "oid": 1132
+  },
+  {
+    "id": 107,
+    "coords": "1772,421,60",
+    "tier": 3,
+    "cats": "4",
+    "startline": "#2/1136x640q90/661/ZrtvL2.jpg",
+    "prio": -1,
+    "oid": 1146
+  },
+  {
+    "id": 108,
+    "coords": "2075,753,60",
+    "tier": 3,
+    "cats": "4",
+    "startline": "#2/1136x640q90/912/ngyoRn.jpg",
+    "prio": -1,
+    "oid": 1124
+  },
+  // tier 3 / slotmachine
+  {
+    "id": 109,
+    "coords": "1841,948,60",
+    "tier": 3,
+    "cats": "3",
+    "startline": "#2/960x540q90/540/y9SOpd.png",
+    "prio": -1,
+    "level": 12,
+    "oid": 1144
+  },
+  {
+    "id": 110,
+    "coords": "1617,819,60",
+    "tier": 3,
+    "cats": "3,6",
+    "startline": "#2/960x540q90/661/khjHQh.png",
+    "datacube": "#1/oGQKTsI.jpg",
+    "prio": -1,
+    "level": 16,
+    "oid": 1119
+  },
+  {
+    "id": 111,
+    "coords": "2248,1819,60",
+    "tier": 3,
+    "cats": "3",
+    "startline": "#2/960x540q90/661/0E6JzC.png",
+    "prio": -1,
+    "level": 17,
+    "oid": 1147
+  },
+  {
+    "id": 112,
+    "coords": "1887,524,60",
+    "tier": 3,
+    "cats": "3",
+    "startline": "#2/960x540q90/902/JA0fUq.png",
+    "prio": -1,
+    "level": 18
+  },
+  // tier 3 / swamp
+  {
+    "id": 113,
+    "coords": "1928,1848,60",
+    "tier": 3,
+    "cats": "2",
+    "startline": "#2/960x540q90/661/5Bs1mS.png",
+    "prio": -1,
+    "oid": 1150
+  },
+  {
+    "id": 114,
+    "coords": "2105,1925,60",
+    "tier": 3,
+    "cats": "2",
+    "startline": "#2/960x540q90/537/zCjS04.png",
+    "prio": -1,
+    "oid": 1157
+  },
+  // tier 1 / the bunker
+  {
+    "id": 115,
+    "coords": "2218,1481,60",
+    "tier": 1,
+    "cats": "9",
+    "startline": "http://s4.postimg.org/5vk5etnkd/Underground_Slopes.png",
+    "prio": 1,
+    "chips": 200,
+    "oid": 1209
+  },
+  {
+    "id": 116,
+    "coords": "2287,1611,60",
+    "tier": 1,
+    "cats": "9",
+    "startline": "http://s24.postimg.org/7nud3hoad/Abandoned_Mine.png",
+    "prio": 2,
+    "chips": 500,
+    "oid": 1197
+  },
+  {
+    "id": 117,
+    "coords": "2437,1630,60",
+    "tier": 1,
+    "cats": "9",
+    "startline": "http://s30.postimg.org/e33ogb8qp/Unstable_Tunnel.png",
+    "prio": 3,
+    "chips": 1000,
+    "oid": 1195
+  },
+  {
+    "id": 118,
+    "coords": "2571,1561,60",
+    "tier": 1,
+    "cats": "9",
+    "startline": "http://s8.postimg.org/vco5h0mo5/Processing_Center.png",
+    "prio": 4,
+    "chips": 1500,
+    "oid": 1210
+  },
+  {
+    "id": 119,
+    "coords": "2636,1430,60",
+    "tier": 1,
+    "cats": "9",
+    "startline": "http://s17.postimg.org/jm1g411n3/Cave_Crossing.png",
+    "prio": 5,
+    "chips": 2500,
+    "oid": 1193
+  },
+  {
+    "id": 120,
+    "coords": "2795,1503,60",
+    "tier": 1,
+    "cats": "9",
+    "startline": "http://s24.postimg.org/yo011z7h1/Forbidden_Path.png",
+    "prio": 6,
+    "chips": 5000,
+    "oid": 1199
+  },
+  {
+    "id": 121,
+    "coords": "2846,1403,60",
+    "tier": 2,
+    "cats": "9",
+    "prio": 7,
+    "startline": "#1/x63XVgj.jpg",
+    "chips": 7500,
+    "oid": 1194
+  },
+  {
+    "id": 122,
+    "coords": "2759,1286,60",
+    "tier": 2,
+    "cats": "9",
+    "startline": "#1/i9fHrst.jpg",
+    "prio": 8,
+    "chips": 10000,
+    "oid": 1196
+  },
+  {
+    "id": 124,
+    "coords": "2812,1170,60",
+    "tier": 2,
+    "cats": "9",
+    "startline": "#1/zAl04fe.jpg",
+    "prio": 9,
+    "chips": 12500,
+    "oid": 1208
+  },
+  {
+    "id": 125,
+    "coords": "2693,1032,60",
+    "tier": 2,
+    "cats": "9",
+    "startline": "#1/3OSJaid.jpg",
+    "prio": 10,
+    "chips": 15000,
+    "oid": 1207
+  },
+  {
+    "id": 126,
+    "coords": "2549,1121,60",
+    "tier": 2,
+    "cats": "9",
+    "startline": "#1/n4qivTJ.jpg",
+    "prio": 11,
+    "chips": 17500,
+    "oid": 1192
+  },
+  {
+    "id": 127,
+    "coords": "2414,1063,60",
+    "tier": 3,
+    "cats": "9",
+    "startline": "#1/T1SEQDj.jpg",
+    "prio": 12,
+    "chips": 20000,
+    "oid": 1191
+  },
+  {
+    "id": 128,
+    "coords": "2527,944,60",
+    "tier": 3,
+    "cats": "9",
+    "startline": "#1/DioLKyE.jpg",
+    "prio": 13,
+    "chips": 25000,
+    "oid": 1202
+  },
+  {
+    "id": 129,
+    "coords": "2407,876,60",
+    "tier": 3,
+    "cats": "9",
+    "startline": "#1/0dShahO.png",
+    "prio": 14,
+    "chips": 30000,
+    "oid": 1198
+  },
+  {
+    "id": 130,
+    "coords": "2278,952,60",
+    "tier": 3,
+    "cats": "9",
+    "startline": "#1/h9urlsP.png",
+    "prio": 15,
+    "chips": 35000,
+    "oid": 1203
+  },
+  {
+    "id": 123,
+    "coords": "2196,854,60",
+    "tier": 3,
+    "cats": "9",
+    "startline": "#1/loD59O1.png",
+    "prio": 16,
+    "chips": 40000,
+    "oid": 1201
+  },
+  // hidden bunker tracks
+  {
+    "id": 132,
+    "coords": "",
+    "tier": 1,
+    "cats": "9",
+    "startline": "#1/57aanHz.png",
+    "prio": 17,
+    "oid": 1233
+  },
+  {
+    "id": 133,
+    "coords": "",
+    "tier": 1,
+    "cats": "9",
+    "startline": "#1/9NAKyEN.png",
+    "prio": 18,
+    "oid": 1211
+  },
+  {
+    "id": 134,
+    "coords": "",
+    "tier": 1,
+    "cats": "9",
+    "startline": "#1/9jJCrwD.png",
+    "prio": 19,
+    "oid": 1212
+  },
+  // winter tracks
+  {
+	"id": 135,
+	"coords": "1476,920,60",
+	"tier": 1,
+	"cats": "11",
+	"prio": 1,
+	"startline": "http://s2.postimg.org/mg8n1gai1/Walrus_Road.png"
+  },
+  {
+	"id": 136,
+	"coords": "1405,810,60",
+	"tier": 1,
+	"cats": "11",
+	"prio": 2,
+	"startline": "http://s23.postimg.org/pwt5c848r/Snowman_Haven.png"
+  },
+  {
+	"id": 137,
+	"coords": "1279,731,60",
+	"tier": 1,
+	"cats": "11",
+	"prio": 3,
+	"startline": "http://s30.postimg.org/ccq4pwhmp/Frostmoore.png"
+  },
+  {
+	"id": 138,
+	"coords": "1168,799,60",
+	"tier": 1,
+	"cats": "11",
+	"prio": 4,
+	"startline": "http://s9.postimg.org/w13fp8ilr/Container_Grounds.png"
+  },
+  {
+    "id": 139,
+    "coords": "1106,902,60",
+    "tier": 1,
+    "cats": "11",
+    "prio": 5,
+    "startline": "http://s14.postimg.org/aezv0tgz5/Icy_Foothills.png"
+  },
+  {
+    "id": 140,
+    "coords": "977,957,60",
+    "tier": 1,
+    "cats": "11",
+    "prio": 6,
+    "startline": "http://s29.postimg.org/yasgwsdiv/Frozen_Facility.png"
+  },
+  {
+    "id": 141,
+    "coords": "839,1022,60",
+    "tier": 1,
+    "cats": "11",
+    "prio": 7,
+    "startline": "http://s16.postimg.org/laqgm2e1x/Squall_Slide.png"
+  },
+  {
+    "id": 142,
+    "coords": "703,1089,60",
+    "tier": 2,
+    "cats": "11",
+    "prio": 8,
+    "startline": "#1/QmAdItd.png"
+  }
+]

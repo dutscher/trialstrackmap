@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="trialsTrackmap" ng-controller="trackmap">
+<head>
+    <title page-title></title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/icons.css" />
+    <meta property="og:title" content="{{'page.title'|translate}}" />
+    <meta property="og:url" content="http://trialstrackmap.sb-f.de/" />
+    <meta property="og:image" content="{{::data.images.trackmap.src}}" />
+    <script type="text/javascript" src="dist/vendor.min.js"></script>
+    <script type="text/javascript" src="dist/map.min.js"></script>
+    <style map-colors></style>
+    <style preload-images></style>
+</head>
+<body class="en" hm-swipe-left="handleSidebars($event,'right','toggleLeft')" hm-swipe-right="handleSidebars($event,'left','toggleRight')">
+    <nav class="new-sidebar left">
+        <div class="handler" ng-click="handleSidebars($event,'left')"></div>
+        <div class="content">
+            <ul>
+                <li>
+                    <div class="wrap">
+                        <h2>{{'page.title'|translate}}</h2>
+
+                        <iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Ftrialsfrontiertrackmap&amp;width=100&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:200px; height:21px;" allowTransparency="true"></iframe>
+
+                        <hr>
+
+                        <div language-select></div>
+
+                        <hr>
+
+                        {{'page.leftSidebar.update'|translate}}: {{::data.map.stats.update}}<br/>
+
+                        <hr>
+
+                        <a href="/seasons.html">{{'page.leftSidebar.goToSeasons'|translate}} &raquo;</a>
+                        <a href="/times.html">{{'page.leftSidebar.goToMedals'|translate}} &raquo;</a>
+                        <a href="/anniversary.html">{{'page.leftSidebar.goToAnniversary'|translate}} &raquo;</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="wrap">
+                        <h2>{{'page.leftSidebar.stats'|translate}}</h2>
+                        {{'page.leftSidebar.uplayID'|translate}}: {{::data.map.stats.uplay}}<br/>
+                        {{'page.leftSidebar.level'|translate}}: {{::data.map.stats.level}}<br/>
+                        {{'page.leftSidebar.globalRang'|translate}}: {{::data.map.stats.rank}}<br/>
+                        {{'page.leftSidebar.appVersion'|translate}}: {{::data.map.stats.app_version}}<br/>
+                    </div>
+                </li>
+                <li>
+                    <div class="wrap tierlegend">
+                        <h2 class="with-cursor">{{'page.leftSidebar.usefullLinks'|translate}}</h2>
+                        <a ng-repeat="link in data.map.usefull_links" href="{{::link.href}}" target="_blank" ng-bind-html="link.title|comingSoon"></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="wrap with-select">
+                        <h2 class="with-cursor" ng-click="visibility('friendsVisible')">{{'page.leftSidebar.uplayFriends'|translate}} ({{::data.friends.length}})</h2>
+                        <div ng-show="friendsVisible">
+                            <div friendlist="data.friends"></div>
+                        </div>
+                        <div class="with-cursor" ng-click="visibility('friendsVisible')" ng-hide="friendsVisible">{{'page.leftSidebar.toggleMe'|translate}}</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="wrap tierlegend">
+                        <h2 class="with-cursor" ng-click="visibility('creditsVisible')">{{'page.leftSidebar.credits'|translate}}</h2>
+                        <div ng-show="creditsVisible">
+                            <a ng-repeat="credit in data.map.credits" href="{{::credit.href}}" target="_blank" ng-bind-html="credit.text|comingSoon"></a>
+                        </div>
+                        <div class="with-cursor" ng-click="visibility('creditsVisible')" ng-hide="creditsVisible">{{'page.leftSidebar.toggleMe'|translate}}</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="wrap tierlegend">
+                        <h2 class="with-cursor" ng-click="visibility('disqusVisible')"><a href="#disqus_thread" style="text-decoration:none;">{{'page.leftSidebar.comments'|translate}}</a></h2>
+                        <div ng-show="disqusVisible">
+                            <div id="disqus_thread"></div>
+                            <script type="text/javascript">
+                                /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+                                var disqus_shortname = 'trialstrackmap'; // required: replace example with your forum shortname
+                                var disqus_identifier = 'online';
+
+                                /* * * DON'T EDIT BELOW THIS LINE * * */
+                                (function() {
+                                    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                                    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                                })();
+                            </script>
+                            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                        </div>
+                        <div class="with-cursor" ng-click="visibility('disqusVisible')" ng-hide="disqusVisible">{{'page.leftSidebar.toggleMe'|translate}}</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav class="new-sidebar right">
+        <div class="handler" ng-click="handleSidebars($event,'right')"></div>
+        <div class="content">
+            <ul>
+                <li>
+                    <div class="wrap tierlegend">
+                        <h2>{{'page.rightSidebar.tracks'|translate}} ({{::data.tracks.length}} total)</h2>
+                        <div class="mb10">
+                            <h3>{{'page.rightSidebar.legend'|translate}}</h3>
+                            <span ng-repeat="cat in data.map.cats" class="{{::cat.class}} with-cursor" show-cat-on-map="{cat:cat,catIndex:$index+1,tracks:data.tracks}">
+                                {{'cats.'+cat.index|translate}} ({{::(data.tracks|catTracks:$index+1).length}})
+                            </span>
+                        </div>
+
+                        <hr>
+                        <div class="mb10">
+                            <input type="text" ng-model="searchTrack" ng-model-options="{debounce:500}" class="search" placeholder="{{'page.rightSidebar.searchForTrack'|translate}}" />
+                        </div>
+
+                        <div ng-repeat="tier in tierlegend" class="tierwrap">
+                            <hr>
+                            <h3>{{'page.rightSidebar.tier'|translate}} {{::tier.number}}</h3>
+                            <span ng-repeat="catClass in repeatObject(tier.cats)" class="{{::catClass}} trackwrap">
+                                <span ng-repeat="track in tier.cats[catClass]" show-track-on-map="{track:track,catClass:catClass,cats:data.map.cats}" show-track-in-modal="startline" class="track-available">
+                                    {{track.i18n}}
+                                    <i class="data-cube" ng-if="track.datacube" show-track-in-modal="datacube"></i>
+                                    <span candy-list="track" ng-if="track.candys"></span>
+                                    <i class="youtube" ng-if="track.youtube" show-track-in-modal="youtube"></i>
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="gallery-modal"></div>
+
+    <canvas track-pointer></canvas>
+
+    <div ng-init="trackmapReady = false" ng-hide="trackmapReady" class="loader spin"></div>
+
+    <img src="blank.png" class="track-pointer" usemap="#trackmap" />
+
+    <img ng-src="{{::data.images.trackmap.src|imageHoster:data.imagehoster}}" ng-load="trackmapReady = true" class="trackmap" alt="{{::data.images.trackmap.alt}}" ng-class="{'loading':!trackmapReady,'loaded':trackmapReady}" pinch-zoom="canvas" />
+
+    <map name="trackmap">
+        <area ng-repeat="track in tracks" shape="circle" alt="{{'tracks.'+track.id|translate}}" title="{{'tracks.'+track.id|translate}}" coords="{{track.genCoords||'0,0,0'}}" href="#" show-track-in-modal="startline" />
+    </map>
+
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'trialstrackmap'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function () {
+            var s = document.createElement('script'); s.async = true;
+            s.type = 'text/javascript';
+            s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+        }());
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="trialsTrackmap">
+<head>
+    <meta http-equiv="Access-Control-Allow-Origin" content="*">
+    <title page-title></title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="css/style-seasons.css" />
+    <link rel="stylesheet" type="text/css" href="css/icons.css" />
+    <script type="text/javascript" src="dist/vendor.min.js"></script>
+    <script type="text/javascript" src="dist/map.min.js"></script>
+    <style preload-images></style>
+</head>
+<body class="en" ng-controller="seasons">
+
+    <div class="box">
+        <a href="/index.html" class="classic-link">< {{'seasons.back'|translate}}</a>
+        |
+        <span language-select></span>
+        |
+        {{'seasons.amount'|translate}} {{filteredArray.length}}
+    </div>
+
+    <div class="seasons-list">
+        <div class="box season-container" ng-repeat="season in filteredArray" season-list-ready>
+            <img ng-src="{{season.header|imageHoster:data.imagehoster}}" \>
+
+            <hr />
+
+            <div class="season-times">
+                <span>{{'seasons.date'|translate}}: {{season.date}}</span> <br />
+                <span>{{(season.active?'seasons.date_ends':'seasons.date_end')|translate}}: {{season.date_end}}</span>
+
+                <span ng-if="season.active" countdown="season"></span>
+            </div>
+
+            <hr />
+
+            <h2>{{'seasons.prices'|translate}}</h2>
+
+            <div class="season-prizes">
+                <table>
+                    <tr ng-repeat="level in season.prizes">
+                        <td>
+                            <i class="season-level-{{::level.level}} seasons"></i>
+                        </td>
+                        <td title="{{::level.extra}}">
+                            <i ng-if="level.extra" class="season-extra-{{::level.extra_type}} seasons"></i>
+                        </td>
+                        <td class="right">
+                            + {{::level.coins}} <i class="coins"></i><br />
+                            + {{::level.gems}} <i class="gems"></i>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="season-summary">
+                + {{season.summary.coins}} <i class="coins"></i><br />
+                + {{season.summary.gems}} <i class="gems"></i><br />
+                <div ng-repeat="extra in season.summary.extras" title="{{extra.name}}">
+                    +
+                    <span ng-if="extra.amount > 1">{{::extra.amount}} x</span>
+                    <i class="season-extra-{{::extra.type}} seasons"></i>
+                </div>
+            </div>
+
+            <div ng-if="season.donkey">
+                <h2>{{'seasons.donkey_state'|translate}}</h2>
+                <a href="{{::season.donkey|imageHoster:data.imagehoster}}" target="_blank">
+                    <img ng-src="{{::season.donkey|imageHoster:data.imagehoster}}" />
+                </a>
+            </div>
+
+            <h2 ng-if="season.top20">{{'seasons.top20_legends'|translate}}</h2>
+
+        </div>
+    </div>
+</body>
+</html>

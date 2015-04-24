@@ -1,0 +1,25 @@
+[
+  {
+    "id":0,
+    "name": "Cornelius Costume",
+    "image": "",
+    "bonus": "10% discount in PvP Chip Shop",
+    "reguirements": {
+      "head": {
+        "type": "gems",
+        "value": 100,
+        "mission": "Recieve gifts from 10 different friends"
+      },
+      "body": {
+        "type": "gems",
+        "value": 50,
+        "mission": "Send a gift to 5 different friends"
+      },
+      "pants": {
+        "type": "gems",
+        "value": 30,
+        "mission": "Send total of x/100 gifts"
+      }
+    }
+  }
+]

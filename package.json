@@ -1,0 +1,16 @@
+{
+  "name": "trials-trackmap",
+  "description": "track locations and informations of the mobile game trials frontier",
+  "author": "willy woitas <dutscher_sbf@hotmail.com>",
+  "dependencies": {
+    "grunt-shell": "1.1.1",
+    "grunt-contrib-copy": "0.7.0",
+    "grunt-contrib-concat": "0.5.0",
+    "grunt-contrib-uglify": "0.7.0",
+    "grunt-contrib-clean": "0.6.0",
+    "grunt-concat-json": "0.0.6",
+    "grunt-minjson": "0.1.1",
+    "strip-json-comments": "1.0.2"
+  },
+  "engine": "node 0.10.32"
+}

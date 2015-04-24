@@ -1,0 +1,46 @@
+body{margin:10px;font-family:Arial, Helvetica, sans-serif;background:#3a281d}
+table{border-spacing:0;background:#6a4229;table-layout:fixed}
+th{padding:2px 5px;vertical-align:bottom}
+td{padding:5px}
+td.center{text-align:center}
+.bronze,[edit-time="bronze"],[edit-faults="bronze"]{background:#965A38}
+.silver,[edit-time="silver"],[edit-faults="silver"]{background:#CCC2C2}
+.gold,[edit-time="gold"],[edit-faults="gold"]{background:#C98910}
+.platinum,[edit-time="platinum"],[edit-faults="platinum"]{background:#A8A8A8}
+tr:hover td{background:#94583D}
+.highlightTime{text-decoration:underline;font-weight:bold;color:#fff}
+label{display:inline-block;border:solid 1px #8B8B8B;padding:0 2px;cursor:pointer}
+button{background:#ff0000;color:#fff}
+.box{background:#6a4229;margin-bottom:10px;padding:5px}
+.public-change{text-decoration:underline;font-weight:bold}
+.public-change:after{content:' *'}
+span.part-level{display:inline-block}
+.classic-link{color:#000;font-weight:bold;text-decoration:none}
+table,.box,.classic-link{color:#ffee99}
+.box{
+    border-width: 2px;
+    border-style: solid;
+    border-top:2px solid #d2c3ab;
+    border-bottom:2px solid #6a4229;
+    -webkit-border-image:-webkit-gradient(linear, 0 100%, 0 0, from(#cfb781), to(#6a4229)) 1 10%;
+    -webkit-border-image:-webkit-linear-gradient(bottom, #6a4229, #d2c3ab) 1 10%;
+    -moz-border-image:-moz-linear-gradient(bottom, #6a4229, #d2c3ab) 1 10%;
+    -o-border-image:-o-linear-gradient(bottom, #6a4229, #d2c3ab) 1 10%;
+    border-image:linear-gradient(to top, #6a4229, #d2c3ab) 1 10%;
+    -webkit-box-shadow: inset -0px 0px 10px 10px rgba(0, 0, 0, 0.25); /* WebKit */
+    -moz-box-shadow: inset -0px 0px 10px 10px rgba(0, 0, 0, 0.25); /* Firefox */
+    box-shadow: inset -0px 0px 10px 10px rgba(0, 0, 0, 0.25); /* Standard */
+    position: relative;
+}
+table,.box{background:rgba(0,0,0,0.55)}
+th,td{border:1px #6a4229 solid}
+.no-pad{padding:0}
+.w100{width:100%}
+
+.flying-header{
+    position: fixed;
+    top: 0;
+    left: 12px;
+    right: 12px;
+    background: #000;
+}

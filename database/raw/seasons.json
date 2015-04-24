@@ -1,0 +1,898 @@
+{
+  "seasons": [
+    {
+      "id": 1,
+      "header": "#1/n4IpsNg.jpg",
+      "donkey": "#1/El0isBD.png",
+      "title": "Opening Season",
+      "days": 50,
+      "date": "12.12.2014",
+      "date_end": "09.02.2015",
+      "first_legend": {
+        "name": "gtdave",
+        "date": "17.12.2014"
+      },
+      "total_legends": {
+        "ios": "1279",
+        "android": "721"
+      },
+      "prizes": [
+        {
+          "level": 1,
+          "gems": 10,
+          "coins": 50000,
+          "extra_type": "donkey",
+          "extra": "The Donkey Blueprint #10",
+          "icon": ""
+        },
+        {
+          "level": 2,
+          "gems": 5,
+          "coins": 25000,
+          "extra_type": "donkey",
+          "extra": "The Donkey Blueprint #9",
+          "icon": ""
+        },
+        {
+          "level": 3,
+          "gems": 5,
+          "coins": 15000,
+          "extra_type": "donkey",
+          "extra": "The Donkey Blueprint #8",
+          "icon": ""
+        },
+        {
+          "level": 4,
+          "gems": 5,
+          "coins": 10000,
+          "extra_type": "donkey",
+          "extra": "The Donkey Blueprint #7",
+          "icon": ""
+        },
+        {
+          "level": 5,
+          "gems": 5,
+          "coins": 8000,
+          "icon": ""
+        },
+        {
+          "level": 6,
+          "gems": 0,
+          "coins": 8000,
+          "extra_type": "donkey",
+          "extra": "The Donkey Blueprint #6",
+          "icon": ""
+        },
+        {
+          "level": 7,
+          "gems": 0,
+          "coins": 8000,
+          "icon": ""
+        },
+        {
+          "level": 8,
+          "gems": 0,
+          "coins": 8000,
+          "extra_type": "donkey",
+          "extra": "The Donkey Blueprint #5",
+          "icon": ""
+        },
+        {
+          "level": 9,
+          "gems": 0,
+          "coins": 8000,
+          "icon": ""
+        },
+        {
+          "level": 10,
+          "gems": 10,
+          "coins": 8000,
+          "extra_type": "donkey",
+          "extra": "The Donkey Blueprint #4",
+          "icon": ""
+        },
+        {
+          "level": 11,
+          "gems": 0,
+          "coins": 5000,
+          "icon": ""
+        },
+        {
+          "level": 12,
+          "gems": 0,
+          "coins": 5000,
+          "icon": ""
+        },
+        {
+          "level": 13,
+          "gems": 0,
+          "coins": 5000,
+          "extra_type": "donkey",
+          "extra": "The Donkey Blueprint #3",
+          "icon": ""
+        },
+        {
+          "level": 14,
+          "gems": 0,
+          "coins": 5000,
+          "icon": ""
+        },
+        {
+          "level": 15,
+          "gems": 10,
+          "coins": 5000,
+          "extra_type": "paintjob-2",
+          "extra": "Aloha Paint Job for Bronco",
+          "icon": ""
+        },
+        {
+          "level": 16,
+          "gems": 0,
+          "coins": 3000,
+          "icon": ""
+        },
+        {
+          "level": 17,
+          "gems": 0,
+          "coins": 3000,
+          "extra_type": "donkey",
+          "extra": "The Donkey Blueprint #2",
+          "icon": ""
+        },
+        {
+          "level": 18,
+          "gems": 0,
+          "coins": 3000,
+          "icon": ""
+        },
+        {
+          "level": 19,
+          "gems": 0,
+          "coins": 3000,
+          "icon": ""
+        },
+        {
+          "level": 20,
+          "gems": 5,
+          "coins": 3000,
+          "extra_type": "paintjob-1",
+          "extra": "Neon Paint Job for Tango",
+          "icon": ""
+        },
+        {
+          "level": 21,
+          "gems": 0,
+          "coins": 1000,
+          "icon": ""
+        },
+        {
+          "level": 22,
+          "gems": 0,
+          "coins": 1000,
+          "icon": ""
+        },
+        {
+          "level": 23,
+          "gems": 5,
+          "coins": 1000,
+          "extra_type": "donkey",
+          "extra": "The Donkey Blueprint #1",
+          "icon": ""
+        },
+        {
+          "level": 24,
+          "gems": 0,
+          "coins": 1000,
+          "icon": ""
+        },
+        {
+          "level": 25,
+          "gems": 0,
+          "coins": 1000,
+          "icon": ""
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "header": "#1/6GM60c6.jpg",
+      "donkey": "#1/Q0c3rHo.png",
+      "title": "Winter Season",
+      "days": 28,
+      "date": "09.02.2015",
+      "date_end": "09.03.2015",
+      "prizes": [
+        {
+          "level": 1,
+          "gems": 10,
+          "coins": 10000,
+          "extra_type": "donkey",
+          "extra": "The Donkey Blueprint #20",
+          "icon": ""
+        },
+        {
+          "level": 2,
+          "gems": 0,
+          "coins": 3000,
+          "extra_type": "donkey",
+          "extra": "The Donkey Blueprint #19",
+          "icon": ""
+        },
+        {
+          "level": 3,
+          "gems": 0,
+          "coins": 3000,
+          "extra_type": "donkey",
+          "extra": "The Donkey Blueprint #18",
+          "icon": ""
+        },
+        {
+          "level": 4,
+          "gems": 0,
+          "coins": 3000,
+          "extra_type": "donkey",
+          "extra": "The Donkey Blueprint #17",
+          "icon": ""
+        },
+        {
+          "level": 5,
+          "gems": 0,
+          "coins": 2000,
+          "extra_type": "paintjob-4",
+          "extra": "Kaleidoscope Paint Job for Bronco",
+          "icon": ""
+        },
+        {
+          "level": 6,
+          "gems": 0,
+          "coins": 2000,
+          "icon": ""
+        },
+        {
+          "level": 7,
+          "gems": 0,
+          "coins": 2000,
+          "extra_type": "donkey",
+          "extra": "The Donkey Blueprint #16",
+          "icon": ""
+        },
+        {
+          "level": 8,
+          "gems": 0,
+          "coins": 2000,
+          "icon": ""
+        },
+        {
+          "level": 9,
+          "gems": 0,
+          "coins": 2000,
+          "icon": ""
+        },
+        {
+          "level": 10,
+          "gems": 5,
+          "coins": 2000,
+          "extra_type": "donkey",
+          "extra": "The Donkey Blueprint #15",
+          "icon": ""
+        },
+        {
+          "level": 11,
+          "gems": 0,
+          "coins": 2000,
+          "icon": ""
+        },
+        {
+          "level": 12,
+          "gems": 0,
+          "coins": 2000,
+          "icon": ""
+        },
+        {
+          "level": 13,
+          "gems": 0,
+          "coins": 2000,
+          "extra_type": "donkey",
+          "extra": "The Donkey Blueprint #14",
+          "icon": ""
+        },
+        {
+          "level": 14,
+          "gems": 0,
+          "coins": 2000,
+          "icon": ""
+        },
+        {
+          "level": 15,
+          "gems": 5,
+          "coins": 2000,
+          "extra_type": "paintjob-3",
+          "extra": "Medic Paint Job for Bronco",
+          "icon": ""
+        },
+        {
+          "level": 16,
+          "gems": 0,
+          "coins": 1000,
+          "icon": ""
+        },
+        {
+          "level": 17,
+          "gems": 0,
+          "coins": 1000,
+          "icon": ""
+        },
+        {
+          "level": 18,
+          "gems": 0,
+          "coins": 1000,
+          "extra_type": "donkey",
+          "extra": "The Donkey Blueprint #13",
+          "icon": ""
+        },
+        {
+          "level": 19,
+          "gems": 0,
+          "coins": 1000,
+          "icon": ""
+        },
+        {
+          "level": 20,
+          "gems": 5,
+          "coins": 1000,
+          "icon": ""
+        },
+        {
+          "level": 21,
+          "gems": 0,
+          "coins": 1000,
+          "extra_type": "donkey",
+          "extra": "The Donkey Blueprint #12",
+          "icon": ""
+        },
+        {
+          "level": 22,
+          "gems": 0,
+          "coins": 1000,
+          "icon": ""
+        },
+        {
+          "level": 23,
+          "gems": 5,
+          "coins": 1000,
+          "icon": ""
+        },
+        {
+          "level": 24,
+          "gems": 0,
+          "coins": 1000,
+          "extra_type": "donkey",
+          "extra": "The Donkey Blueprint #11",
+          "icon": ""
+        },
+        {
+          "level": 25,
+          "gems": 0,
+          "coins": 1000,
+          "icon": ""
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "header": "#1/Q6mNVvf.jpg",
+      "donkey": "#1/6WYXI8j.png",
+      "title": "Blitz Season",
+      "days": 6,
+      "date": "09.03.2015",
+      "date_end": "16.03.2015",
+      "prizes": [
+        {
+          "level": 1,
+          "gems": 10,
+          "coins": 10000,
+          "extra_type": "donkey",
+          "extra": "The Donkey Blueprint #24",
+          "icon": ""
+        },
+        {
+          "level": 2,
+          "gems": 0,
+          "coins": 3000,
+          "icon": ""
+        },
+        {
+          "level": 3,
+          "gems": 0,
+          "coins": 3000,
+          "icon": ""
+        },
+        {
+          "level": 4,
+          "gems": 0,
+          "coins": 3000,
+          "extra_type": "donkey",
+          "extra": "The Donkey Blueprint #23",
+          "icon": ""
+        },
+        {
+          "level": 5,
+          "gems": 0,
+          "coins": 2000,
+          "icon": ""
+        },
+        {
+          "level": 6,
+          "gems": 0,
+          "coins": 2000,
+          "icon": ""
+        },
+        {
+          "level": 7,
+          "gems": 0,
+          "coins": 2000,
+          "icon": ""
+        },
+        {
+          "level": 8,
+          "gems": 0,
+          "coins": 2000,
+          "icon": ""
+        },
+        {
+          "level": 9,
+          "gems": 0,
+          "coins": 2000,
+          "icon": ""
+        },
+        {
+          "level": 10,
+          "gems": 5,
+          "coins": 2000,
+          "extra_type": "donkey",
+          "extra": "The Donkey Blueprint #22",
+          "icon": ""
+        },
+        {
+          "level": 11,
+          "gems": 0,
+          "coins": 2000,
+          "icon": ""
+        },
+        {
+          "level": 12,
+          "gems": 0,
+          "coins": 2000,
+          "icon": ""
+        },
+        {
+          "level": 13,
+          "gems": 0,
+          "coins": 2000,
+          "icon": ""
+        },
+        {
+          "level": 14,
+          "gems": 0,
+          "coins": 2000,
+          "icon": ""
+        },
+        {
+          "level": 15,
+          "gems": 5,
+          "coins": 2000,
+          "extra_type": "donkey",
+          "extra": "The Donkey Blueprint #21",
+          "icon": ""
+        },
+        {
+          "level": 16,
+          "gems": 0,
+          "coins": 1000,
+          "icon": ""
+        },
+        {
+          "level": 17,
+          "gems": 0,
+          "coins": 1000,
+          "icon": ""
+        },
+        {
+          "level": 18,
+          "gems": 0,
+          "coins": 1000,
+          "icon": ""
+        },
+        {
+          "level": 19,
+          "gems": 0,
+          "coins": 1000,
+          "icon": ""
+        },
+        {
+          "level": 20,
+          "gems": 5,
+          "coins": 1000,
+          "icon": ""
+        },
+        {
+          "level": 21,
+          "gems": 0,
+          "coins": 1000,
+          "icon": ""
+        },
+        {
+          "level": 22,
+          "gems": 0,
+          "coins": 1000,
+          "icon": ""
+        },
+        {
+          "level": 23,
+          "gems": 5,
+          "coins": 1000,
+          "icon": ""
+        },
+        {
+          "level": 24,
+          "gems": 0,
+          "coins": 1000,
+          "icon": ""
+        },
+        {
+          "level": 25,
+          "gems": 0,
+          "coins": 1000,
+          "icon": ""
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "header": "#1/BonUHCB.jpg",
+	  "donkey": "#1/wDUXriM.png",
+      "title": "Spring Season",
+      "days": 30,
+      "date": "16.03.2015",
+      "date_end": "16.04.2015",
+      "prizes": [
+        {
+          "level": 1,
+          "gems": 10,
+          "coins": 10000,
+          "extra_type": "donkey",
+          "extra": "The Donkey Blueprint #29",
+          "icon": ""
+        },
+        {
+          "level": 2,
+          "gems": 0,
+          "coins": 3000,
+          "icon": ""
+        },
+        {
+          "level": 3,
+          "gems": 0,
+          "coins": 3000,
+          "icon": ""
+        },
+        {
+          "level": 4,
+          "gems": 0,
+          "coins": 3000,
+          "extra_type": "donkey",
+          "extra": "The Donkey Blueprint #28",
+          "icon": ""
+        },
+        {
+          "level": 5,
+          "gems": 0,
+          "coins": 2000,
+          "icon": ""
+        },
+        {
+          "level": 6,
+          "gems": 0,
+          "coins": 2000,
+          "icon": ""
+        },
+        {
+          "level": 7,
+          "gems": 0,
+          "coins": 2000,
+          "extra_type": "donkey",
+          "extra": "The Donkey Blueprint #27",
+          "icon": ""
+        },
+        {
+          "level": 8,
+          "gems": 0,
+          "coins": 2000,
+          "icon": ""
+        },
+        {
+          "level": 9,
+          "gems": 0,
+          "coins": 2000,
+          "icon": ""
+        },
+        {
+          "level": 10,
+          "gems": 5,
+          "coins": 2000,
+          "icon": ""
+        },
+        {
+          "level": 11,
+          "gems": 0,
+          "coins": 2000,
+          "icon": ""
+        },
+        {
+          "level": 12,
+          "gems": 0,
+          "coins": 2000,
+          "icon": ""
+        },
+        {
+          "level": 13,
+          "gems": 0,
+          "coins": 2000,
+          "extra_type": "donkey",
+          "extra": "The Donkey Blueprint #26",
+          "icon": ""
+        },
+        {
+          "level": 14,
+          "gems": 0,
+          "coins": 2000,
+          "icon": ""
+        },
+        {
+          "level": 15,
+          "gems": 5,
+          "coins": 2000,
+          "icon": ""
+        },
+        {
+          "level": 16,
+          "gems": 0,
+          "coins": 1000,
+          "icon": ""
+        },
+        {
+          "level": 17,
+          "gems": 0,
+          "coins": 1000,
+          "icon": ""
+        },
+        {
+          "level": 18,
+          "gems": 0,
+          "coins": 1000,
+          "extra_type": "donkey",
+          "extra": "The Donkey Blueprint #25",
+          "icon": ""
+        },
+        {
+          "level": 19,
+          "gems": 0,
+          "coins": 1000,
+          "icon": ""
+        },
+        {
+          "level": 20,
+          "gems": 5,
+          "coins": 1000,
+          "icon": ""
+        },
+        {
+          "level": 21,
+          "gems": 0,
+          "coins": 1000,
+          "icon": ""
+        },
+        {
+          "level": 22,
+          "gems": 0,
+          "coins": 1000,
+          "icon": ""
+        },
+        {
+          "level": 23,
+          "gems": 5,
+          "coins": 1000,
+          "icon": ""
+        },
+        {
+          "level": 24,
+          "gems": 0,
+          "coins": 1000,
+          "icon": ""
+        },
+        {
+          "level": 25,
+          "gems": 0,
+          "coins": 1000,
+          "icon": ""
+        }
+      ]
+    },
+	   {
+      "id": 4,
+      "active": true,
+      "header": "#1/cXKyV9K.jpg",
+	  "donkey": "#1/p6WJjTs.png",
+      "title": "Donkey Season",
+      "days": 28,
+      "date": "16.04.2015",
+      "date_end": "14.05.2015",
+      "prizes": [
+        {
+          "level": 1,
+          "gems": 10,
+          "coins": 10000,
+          "extra_type": "donkey",
+          "extra": "The Donkey Blueprint #34",
+          "icon": ""
+        },
+        {
+          "level": 2,
+          "gems": 0,
+          "coins": 3000,
+          "icon": ""
+        },
+        {
+          "level": 3,
+          "gems": 0,
+          "coins": 3000,
+          "icon": ""
+        },
+        {
+          "level": 4,
+          "gems": 0,
+          "coins": 3000,
+          "extra_type": "donkey",
+          "extra": "The Donkey Blueprint #33",
+          "icon": ""
+        },
+        {
+          "level": 5,
+          "gems": 0,
+          "coins": 2000,
+		  "extra_type": "paintjob-5",
+		  "extra": "Soylent Paint Job for Tango",
+          "icon": ""
+        },
+        {
+          "level": 6,
+          "gems": 0,
+          "coins": 2000,
+          "icon": ""
+        },
+        {
+          "level": 7,
+          "gems": 0,
+          "coins": 2000,
+          "extra_type": "donkey",
+          "extra": "The Donkey Blueprint #32",
+          "icon": ""
+        },
+        {
+          "level": 8,
+          "gems": 0,
+          "coins": 2000,
+          "icon": ""
+        },
+        {
+          "level": 9,
+          "gems": 0,
+          "coins": 2000,
+          "icon": ""
+        },
+        {
+          "level": 10,
+          "gems": 5,
+          "coins": 2000,
+          "icon": ""
+        },
+        {
+          "level": 11,
+          "gems": 0,
+          "coins": 2000,
+          "icon": ""
+        },
+        {
+          "level": 12,
+          "gems": 0,
+          "coins": 2000,
+          "icon": ""
+        },
+        {
+          "level": 13,
+          "gems": 0,
+          "coins": 2000,
+          "extra_type": "donkey",
+          "extra": "The Donkey Blueprint #31",
+          "icon": ""
+        },
+        {
+          "level": 14,
+          "gems": 0,
+          "coins": 2000,
+          "icon": ""
+        },
+        {
+          "level": 15,
+          "gems": 5,
+          "coins": 2000,
+		  "extra_type": "paintjob-1",
+		  "extra": "Neon Paintjob for Tango",
+          "icon": ""
+        },
+        {
+          "level": 16,
+          "gems": 0,
+          "coins": 1000,
+          "icon": ""
+        },
+        {
+          "level": 17,
+          "gems": 0,
+          "coins": 1000,
+          "icon": ""
+        },
+        {
+          "level": 18,
+          "gems": 0,
+          "coins": 1000,
+          "extra_type": "donkey",
+          "extra": "The Donkey Blueprint #30",
+          "icon": ""
+        },
+        {
+          "level": 19,
+          "gems": 0,
+          "coins": 1000,
+          "icon": ""
+        },
+        {
+          "level": 20,
+          "gems": 5,
+          "coins": 1000,
+          "icon": ""
+        },
+        {
+          "level": 21,
+          "gems": 0,
+          "coins": 1000,
+          "icon": ""
+        },
+        {
+          "level": 22,
+          "gems": 0,
+          "coins": 1000,
+          "icon": ""
+        },
+        {
+          "level": 23,
+          "gems": 5,
+          "coins": 1000,
+          "icon": ""
+        },
+        {
+          "level": 24,
+          "gems": 0,
+          "coins": 1000,
+          "icon": ""
+        },
+        {
+          "level": 25,
+          "gems": 0,
+          "coins": 1000,
+          "icon": ""
+        }
+      ]
+    }
+  ]
+}
