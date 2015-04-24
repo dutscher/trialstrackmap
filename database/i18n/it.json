@@ -75,16 +75,16 @@
     "3": "Livello 3"
   },
   "parts": {
-    "1":"Catena",
-    "2":"Molla",
-    "3":"Bullone",
-    "4":"Dado",
-    "5":"Foglio",
-    "6":"Candela",
-    "7":"Tubo",
-    "8":"Cuscinetto",
-    "9":"Pistone",
-    "10":"Ingranaggio"
+    "1": "Catena",
+    "2": "Molla",
+    "3": "Bullone",
+    "4": "Dado",
+    "5": "Foglio",
+    "6": "Candela",
+    "7": "Tubo",
+    "8": "Cuscinetto",
+    "9": "Pistone",
+    "10": "Ingranaggio"
   },
   "seasons": {
     "back": "indietro",
@@ -220,7 +220,7 @@
     "120": "Sentiero proibito",
     "121": "Linea di consegna",
     "122": "Regno di cristallo",
-	"123": "Prova di trazione",
+    "123": "Prova di trazione",
     "124": "Crogioli",
     "125": "Grotta dell'incubo",
     "126": "Magazzino esplosivo",
@@ -228,14 +228,14 @@
     "128": "Tracciati distrutti",
     "129": "Il pozzo",
     "130": "Discarica rifiuti",
-	"131": "Grande muraglia",
+    "131": "Grande muraglia",
     "132": "Bunny Hop",
     "133": "Montagne russe",
     "134": "Arrampicata",
-	"135": "Strada del tricheco",
-	"136": "Paradiso di neve",
-	"137": "Ghiacciolandia",
-	"138": "Zona dei container"
+    "135": "Strada del tricheco",
+    "136": "Paradiso di neve",
+    "137": "Ghiacciolandia",
+    "138": "Zona dei container"
   }
 }
 

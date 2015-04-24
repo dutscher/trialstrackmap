@@ -5,7 +5,7 @@
       "update": "Update",
       "goToSeasons": "Season Overview",
       "goToMedals": "Medals & Parts Table",
-	  "goToAnniversary": "Anniversary page",
+      "goToAnniversary": "Anniversary page",
       "stats": "Stats",
       "uplayID": "Uplay",
       "level": "Level",
@@ -67,7 +67,7 @@
     "8": "Pumpkin",
     "9": "The Bunker",
     "10": "China",
-	"11": "Winter"
+    "11": "Winter"
   },
   "tiers": {
     "1": "Tier 1",
@@ -232,10 +232,10 @@
     "132": "Bunny Hop",
     "133": "Sine City",
     "134": "Hill Climb",
-	"135": "Walrus Road",
-	"136": "Snowman Haven",
-	"137": "Frostmoore",
-	"138": "Container Grounds",
+    "135": "Walrus Road",
+    "136": "Snowman Haven",
+    "137": "Frostmoore",
+    "138": "Container Grounds",
     "139": "Icy Foothills",
     "140": "Frozen Facility",
     "141": "Squall Slide",
