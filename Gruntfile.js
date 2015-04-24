@@ -81,7 +81,7 @@ module.exports = function(grunt) {
                     "/*\n"+
                     "The MIT License (MIT)\n"+
                     "\n"+
-                    "Copyright (c) 2014 willy woitas http://trialstrackmap.sb-f.de\n"+
+                    "Copyright (c) 2015 willy woitas http://trialstrackmap.sb-f.de\n"+
                     "\n"+
                     "Permission is hereby granted, free of charge, to any person obtaining a copy\n"+
                     "of this software and associated documentation files (the 'Software'), to deal\n"+
