@@ -1,8 +1,17 @@
 # trials trackmap made by dutscher
 
-livesite: [trialstrackmap](http://trialstrackmap.sb-f.de)
+* livesite: http://trialstrackmap.sb-f.de
+* seasons overview: http://trialstrackmap.sb-f.de/seasons.html
+* time and parts table: http://trialstrackmap.sb-f.de/times.html
+* locations ma: http://trialstrackmap.sb-f.de/locations.html
+* forum thread: http://forums.ubi.com/showthread.php/939397-Trackmap
 
-forum thread: [trackmap](http://forums.ubi.com/showthread.php/939397-Trackmap)
+# setup
+```
+$ git clone https://github.com/dutscher/trialstrackmap.git
+$ npm install
+$ grunt server
+```
 
 # grunt
 ```
