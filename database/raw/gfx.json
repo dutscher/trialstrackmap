@@ -6,12 +6,6 @@
       "alt": "Trails Frontier Trackmap",
       "dim": "3050x2495"
     },
-    "loader": {
-      "src": "#1/pnCGs05.png",
-      "lSrc": "#0/loader.png",
-      "selector": ".loader",
-      "bgPos": ""
-    },
     "candy": {
       "src": "#1/HuTSmQ0.png",
       "lSrc": "#0/items/candy.png",

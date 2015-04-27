@@ -124,6 +124,9 @@ module.exports = function(grunt) {
                     'dist/gfx.json': ['dist/gfx.json'],
                     'dist/map.json': ['build/map.json']
                 }
+            },
+            distI18n: {
+                files: 'dist/i18n/*.json'
             }
         },
 
@@ -220,7 +223,8 @@ module.exports = function(grunt) {
         'concat:dist',
         'concat:vendor',
         'uglify:dist',
-        'minjson:dist'
+        'minjson:dist',
+        'minjson:distI18n'
     ])
 
     grunt.registerTask('server', ['shell:python'])
