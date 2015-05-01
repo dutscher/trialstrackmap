@@ -146,9 +146,9 @@ li div.wrap, .gallery-modal div.gallery{
 	margin:10px;
 	padding:10px;
 	background:rgba(0,0,0,0.55);
-	-webkit-box-shadow: inset -0px 0px 10px 10px rgba(0, 0, 0, 0.25); /* WebKit */
-	-moz-box-shadow: inset -0px 0px 10px 10px rgba(0, 0, 0, 0.25); /* Firefox */
-	box-shadow: inset -0px 0px 10px 10px rgba(0, 0, 0, 0.25); /* Standard */
+	-webkit-box-shadow: inset -0px 0 10px 10px rgba(0, 0, 0, 0.25);
+	-moz-box-shadow: inset -0px 0 10px 10px rgba(0, 0, 0, 0.25);
+	box-shadow: inset -0px 010px 10px rgba(0, 0, 0, 0.25);
 }
 li div.wrap h2{
 	position:absolute;
@@ -159,13 +159,14 @@ li div.wrap h2{
 li div.wrap h3{
 	margin: 0;
 }
-li div.wrap a{
+li div.wrap > span,
+li div.wrap > a{
 	color: #61d4d7;
 	text-decoration:underline;
 	margin-bottom:10px;
 	display: block;
 }
-li div.wrap a:last-child{
+li div.wrap :last-child{
 	margin-bottom:0;
 }
 .tierlegend span {display:block}

@@ -67,7 +67,8 @@
     "8": "Zucca",
     "9": "Il Bunker",
     "10": "Cina",
-    "11": "Inverno"
+    "11": "Inverno",
+    "12": "Segreto"
   },
   "tiers": {
     "1": "Livello 1",
@@ -243,7 +244,9 @@
     "143": "",
     "144": "",
     "145": "",
-    "146": ""
+    "146": "",
+    "147": "Ruota Posteriore",
+    "148": "!!!-RocksOff"
   }
 }
 

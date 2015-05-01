@@ -67,7 +67,8 @@
     "8": "Calabaza",
     "9": "El Búnker",
     "10": "China",
-    "11": "Invierno"
+    "11": "Invierno",
+    "12": "Secreto"
   },
   "tiers": {
     "1": "Nivel 1",
@@ -243,6 +244,8 @@
     "143": "Barricada helada",
     "144": "Atraccción bola de nieve",
     "145": "Garganta Trineo",
-    "146": "Distrito cortador"
+    "146": "Distrito cortador",
+    "147": "Rueda Trasera",
+    "148": "!!!-Rocks Off"
   }
 }

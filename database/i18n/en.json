@@ -67,7 +67,8 @@
     "8": "Pumpkin",
     "9": "The Bunker",
     "10": "China",
-    "11": "Winter"
+    "11": "Winter",
+    "12": "Secret"
   },
   "tiers": {
     "1": "Tier 1",
@@ -242,7 +243,9 @@
     "142": "Penguin Landing",
     "143": "Ice Blockade",
     "144": "Snowball Ride",
-    "145": "",
-    "146": ""
+    "145": "Sledridge Gorge",
+    "146": "Chopping District",
+    "147": "Rear Wheel",
+    "148": "!!!-Rocks Off"
   }
 }

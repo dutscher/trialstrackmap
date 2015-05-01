@@ -31,7 +31,14 @@
     {
       "href": "http://forums.ubi.com/showthread.php/903838-complete-list-of-all-tracks",
       "text": "Tracklistcolors by chabonators"
-    }
+    },
+    {"text":"Sergsavin & bunnyhop90- russian translation"},
+    {"text":"maikkruppatz german translation"},
+    {"text":"davidegirgenti italian translation"},
+    {"text":"GSpiritz & AzimirKrstof98 french translation"},
+    {"text":"hector_evil & Vassagopk for spanish translation"},
+    {"text":"stampede-8 for youtube videos"},
+    {"text":"AlvaroGC for youtube videos"}
   ],
   "usefull_links": [
     {
@@ -111,6 +118,11 @@
       "index": 11,
       "class": "winter",
       "color": "FFFFFF"
+    },
+    {
+      "index": 12,
+      "class": "secret",
+      "color": "AB9A48"
     }
   ],
   "tiers": [

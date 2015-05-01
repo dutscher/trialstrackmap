@@ -67,7 +67,8 @@
     "8": "Halloween",
     "9": "Der Bunker",
     "10": "China",
-    "11": "Winter"
+    "11": "Winter",
+    "12": "Geheimnis"
   },
   "tiers": {
     "1": "Stufe 1",
@@ -243,6 +244,8 @@
     "143": "Eissperre",
     "144": "Schneeballfahrt",
     "145": "Schliddrige Schlucht",
-    "146": "Schnittiger Bezirk"
+    "146": "Schnittiger Bezirk",
+    "147": "Hinter Rad",
+    "148": "!!!-Felsen fetzen"
   }
 }

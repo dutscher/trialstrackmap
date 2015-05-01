@@ -65,9 +65,12 @@
                 </li>
                 <li>
                     <div class="wrap tierlegend">
-                        <h2 class="with-cursor" ng-click="visibility('creditsVisible')">{{'page.leftSidebar.credits'|translate}}</h2>
+                        <h2 class="with-cursor" ng-click="visibility('creditsVisible')">{{'page.leftSidebar.credits'|translate}} ({{::data.map.credits.length}})</h2>
                         <div ng-show="creditsVisible">
-                            <a ng-repeat="credit in data.map.credits" href="{{::credit.href}}" target="_blank" ng-bind-html="credit.text|comingSoon"></a>
+                            <span ng-repeat="credit in data.map.credits">
+                                <a ng-if="credit.href" href="{{::credit.href}}" target="_blank" ng-bind-html="credit.text|comingSoon"></a>
+                                <span ng-if="!credit.href" ng-bind-html="credit.text|comingSoon"></span>
+                            </span>
                         </div>
                         <div class="with-cursor" ng-click="visibility('creditsVisible')" ng-hide="creditsVisible">{{'page.leftSidebar.toggleMe'|translate}}</div>
                     </div>
