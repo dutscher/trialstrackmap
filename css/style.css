@@ -151,7 +151,7 @@ li div.wrap, .gallery-modal div.gallery{
 	box-shadow: inset -0px 010px 10px rgba(0, 0, 0, 0.25);
 }
 li div.wrap h2{
-	position:absolute;
+	position: absolute;
 	top: -50px;
     white-space: nowrap;
     letter-spacing: -1px;
@@ -159,12 +159,16 @@ li div.wrap h2{
 li div.wrap h3{
 	margin: 0;
 }
-li div.wrap > span,
-li div.wrap > a{
+li div.wrap a,
+li div.wrap .like-a {
 	color: #61d4d7;
-	text-decoration:underline;
-	margin-bottom:10px;
+	text-decoration: underline;
+	margin-bottom: 10px;
 	display: block;
+}
+li div.wrap .like-a {
+    color: #078184;
+    text-decoration: none;
 }
 li div.wrap :last-child{
 	margin-bottom:0;
