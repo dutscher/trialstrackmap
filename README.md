@@ -6,6 +6,11 @@
 * locations ma: http://trialstrackmap.sb-f.de/locations.html
 * forum thread: http://forums.ubi.com/showthread.php/939397-Trackmap
 
+# requirements
+* nodeJS
+* npm install -g grunt
+* pyhton (simpleserver) port 8001
+
 # setup
 ```
 $ git clone https://github.com/dutscher/trialstrackmap.git
