@@ -33,6 +33,11 @@
             <input type="checkbox" ng-click="setMedal($event,'platinum')" ng-checked="isChecked('platinum')"> {{'page.timesTable.platinum'|translate}}
         </label>-->
         |
+        <select ng-model="selectedCat" ng-change="setCat()">
+            <option value="" selected>{{'page.timesTable.parts.all'|translate}}</option>
+            <option ng-repeat="cat in data.map.cats" class="{{::cat.class}}-bg" value="{{cat.index}}" ng-selected="selectedCat == cat.index">{{'cats.'+cat.index|translate}} ({{::(data.tracks|catTracks:$index+1).length}})</option>
+        </select>
+        |
         {{'page.timesTable.parts.head'|translate}}:
         <select ng-model="selectedPart" ng-change="setParts()">
             <option value="" selected>{{'page.timesTable.parts.all'|translate}}</option>
@@ -90,7 +95,7 @@
             </thead>
             <tbody>
             <!-- showZero:showZero:medal| -->
-            <tr ng-repeat="track in filteredArray = (data.tracks|filter:search|showParts:selectedPart:selectedPartLevel)">
+            <tr ng-repeat="track in filteredArray = (data.tracks|showCat:selectedCat|filter:search|showParts:selectedPart:selectedPartLevel)">
                 <!--<td>
                     {{track.id}}
                 </td>-->
