@@ -126,7 +126,12 @@ module.exports = function(grunt) {
                 }
             },
             distI18n: {
-                files: 'dist/i18n/*.json'
+                files: [{
+                    expand: true,
+                    cwd: 'dist/i18n',
+                    src: ['*.json'],
+                    dest: 'dist/i18n'
+                }]
             }
         },
 
