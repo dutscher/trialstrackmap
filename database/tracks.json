@@ -27,7 +27,7 @@
   },
   {
     "id": 3,
-    "coords": "1553,1190,60",
+    "coords": "1554,1181,60",
     "tier": 1,
     "cats": "7",
     "startline": "#2/960x540q90/904/umi4EQ.png",
@@ -42,7 +42,7 @@
   },
   {
     "id": 4,
-    "coords": "1419,1274,60",
+    "coords": "1421,1260,60",
     "tier": 1,
     "cats": "7",
     "startline": "#2/960x540q90/537/eTQc0D.png",
@@ -430,7 +430,7 @@
   },
   {
     "id": 25,
-    "coords": "1927,1470,60",
+    "coords": "1925,1462,60",
     "tier": 1,
     "cats": "5",
     "startline": "#2/960x540q90/909/iUuAJN.png",
@@ -439,7 +439,7 @@
   },
   {
     "id": 26,
-    "coords": "1841,1568,60",
+    "coords": "1842,1565,60",
     "tier": 1,
     "cats": "5,6",
     "startline": "#2/960x540q90/902/QIUH1F.png",
@@ -450,7 +450,7 @@
   // tier 1 / lootwheel
   {
     "id": 27,
-    "coords": "717,1281,60",
+    "coords": "721,1264,60",
     "tier": 1,
     "cats": "4",
     "startline": "#2/960x540q90/745/Tczjnt.png",
@@ -558,7 +558,7 @@
   },
   {
     "id": 38,
-    "coords": "838,1215,60",
+    "coords": "838,1202,60",
     "tier": 1,
     "cats": "3",
     "startline": "#2/1136x640q50/674/NWBxGp.jpg",
@@ -1089,7 +1089,7 @@
   },
   {
     "id": 74,
-    "coords": "691,646,60",
+    "coords": "689,648,60",
     "tier": 2,
     "cats": "4",
     "startline": "#2/1136x640q90/673/SSYZg8.jpg",
@@ -1405,7 +1405,7 @@
   },
   {
     "id": 106,
-    "coords": "1580,581,60",
+    "coords": "1576,574,60",
     "tier": 3,
     "cats": "4,6",
     "startline": "#2/1136x640q90/673/5VaxTv.jpg",
@@ -1731,7 +1731,7 @@
   },
   {
     "id": 141,
-    "coords": "839,1022,60",
+    "coords": "838,1033,60",
     "tier": 1,
     "cats": "11",
     "prio": 7,
@@ -1778,6 +1778,39 @@
     "startline": "http://s17.postimg.org/3sboh3zb3/Screenshot_2015_05_01_19_29_15.png"
   },
   {
+    "id": 149,
+    "coords": "686,926,60",
+    "tier": 3,
+    "cats": "11",
+    "prio": 13,
+    "startline": "http://s18.postimg.org/y63x7vdm1/Icebould_Hamlet.png"
+  },
+  {
+    "id": 150,
+    "coords": "849,880,60",
+    "tier": 3,
+    "cats": "11",
+    "prio": 14,
+    "startline": "http://s18.postimg.org/rpuyhs52h/Frosty_Plumbing.png"
+  },
+  {
+    "id": 151,
+    "coords": "944,782,60",
+    "tier": 3,
+    "cats": "11",
+    "prio": 15,
+    "startline": "http://s18.postimg.org/5ryhnzq21/Permafrost_Climb.png"
+  },
+  {
+    "id": 152,
+    "coords": "810,725,60",
+    "tier": 3,
+    "cats": "11",
+    "prio": 16,
+    "startline": "http://s28.postimg.org/h0xmgnpy5/Chilled_Cliffs.png"
+  },
+  // leaked tracks
+  {
     "id": 147,
     "coords": "1284,890,60",
     "tier": 0,
@@ -1793,35 +1826,11 @@
     "startline": "#1/DKCaVN2.jpg"
   },
   {
-    "id": 149,
-    "coords": "",
-    "tier": 3,
-    "cats": "11",
-    "prio": 13,
-    "startline": "http://s18.postimg.org/y63x7vdm1/Icebould_Hamlet.png"
+    "id": 153,
+    "coords": "1750,1742,60",
+    "tier": 0,
+    "cats": "12",
+    "prio": 3,
+    "startline": "#1/k4amFm9.jpg"
   },
-  {
-    "id": 150,
-    "coords": "",
-    "tier": 3,
-    "cats": "11",
-    "prio": 14,
-    "startline": "http://s18.postimg.org/rpuyhs52h/Frosty_Plumbing.png"
-  },
-  {
-    "id": 151,
-    "coords": "",
-    "tier": 3,
-    "cats": "11",
-    "prio": 15,
-    "startline": "http://s18.postimg.org/5ryhnzq21/Permafrost_Climb.png"
-  },
-  {
-    "id": 152,
-    "coords": "",
-    "tier": 3,
-    "cats": "11",
-    "prio": 16,
-    "startline": "http://s28.postimg.org/h0xmgnpy5/Chilled_Cliffs.png"
-  }
 ]
