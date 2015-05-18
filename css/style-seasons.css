@@ -33,6 +33,8 @@ h1, h2, h3{
 .season-container{display:inline-block;width:300px;margin-right:10px;vertical-align:top}
 .season-container img{width:100%}
 .season-times{position:relative}
+.season-times strong{font-size:33px;float:left;margin-right:5px}
+.season-times span{position:relative}
 .season-prizes{height:240px;overflow:scroll;overflow-x:hidden}
 .season-summary{
     border-top: double 6px #ffee99;
@@ -41,7 +43,7 @@ h1, h2, h3{
     margin-top: 10px;
 }
 
-[countdown]{
+.season-times [countdown]{
     position: absolute;
     right:0;
     top:10px;
@@ -95,3 +97,4 @@ i[class^="season-"]{
 .season-extra-paintjob-3{background-position:-400px -240px}
 .season-extra-paintjob-4{background-position:-400px -320px}
 .season-extra-paintjob-5{background-position:-480px 0}
+.season-extra-paintjob-6{background-position:-480px -80px}

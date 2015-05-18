@@ -1,4 +1,15 @@
 {
+  "prizes": {
+    "donkey": "The Donkey Blueprint",
+    "paintjob": {
+      "1": "Neon Paint Job for Tango",
+      "2": "Aloha Paint Job for Bronco",
+      "3": "Medic Paint Job for Bronco",
+      "4": "Kaleidoscope Paint Job for Bronco",
+      "5": "Soylent Paint Job for Tango",
+      "6": "Luchador Paint Job for Bronco"
+    }
+  },
   "seasons": [
     {
       "id": 1,
@@ -22,174 +33,149 @@
           "gems": 10,
           "coins": 50000,
           "extra_type": "donkey",
-          "extra": "The Donkey Blueprint #10",
-          "icon": ""
+          "extra": "#10"
         },
         {
           "level": 2,
           "gems": 5,
           "coins": 25000,
           "extra_type": "donkey",
-          "extra": "The Donkey Blueprint #9",
-          "icon": ""
+          "extra": "#9"
         },
         {
           "level": 3,
           "gems": 5,
           "coins": 15000,
           "extra_type": "donkey",
-          "extra": "The Donkey Blueprint #8",
-          "icon": ""
+          "extra": "#8"
         },
         {
           "level": 4,
           "gems": 5,
           "coins": 10000,
           "extra_type": "donkey",
-          "extra": "The Donkey Blueprint #7",
-          "icon": ""
+          "extra": "#7"
         },
         {
           "level": 5,
           "gems": 5,
-          "coins": 8000,
-          "icon": ""
+          "coins": 8000
         },
         {
           "level": 6,
           "gems": 0,
           "coins": 8000,
           "extra_type": "donkey",
-          "extra": "The Donkey Blueprint #6",
-          "icon": ""
+          "extra": "#6"
         },
         {
           "level": 7,
           "gems": 0,
-          "coins": 8000,
-          "icon": ""
+          "coins": 8000
         },
         {
           "level": 8,
           "gems": 0,
           "coins": 8000,
           "extra_type": "donkey",
-          "extra": "The Donkey Blueprint #5",
-          "icon": ""
+          "extra": "#5"
         },
         {
           "level": 9,
           "gems": 0,
-          "coins": 8000,
-          "icon": ""
+          "coins": 8000
         },
         {
           "level": 10,
           "gems": 10,
           "coins": 8000,
           "extra_type": "donkey",
-          "extra": "The Donkey Blueprint #4",
-          "icon": ""
+          "extra": "#4"
         },
         {
           "level": 11,
           "gems": 0,
-          "coins": 5000,
-          "icon": ""
+          "coins": 5000
         },
         {
           "level": 12,
           "gems": 0,
-          "coins": 5000,
-          "icon": ""
+          "coins": 5000
         },
         {
           "level": 13,
           "gems": 0,
           "coins": 5000,
           "extra_type": "donkey",
-          "extra": "The Donkey Blueprint #3",
-          "icon": ""
+          "extra": "#3"
         },
         {
           "level": 14,
           "gems": 0,
-          "coins": 5000,
-          "icon": ""
+          "coins": 5000
         },
         {
           "level": 15,
           "gems": 10,
           "coins": 5000,
-          "extra_type": "paintjob-2",
-          "extra": "Aloha Paint Job for Bronco",
-          "icon": ""
+          "extra_type": "paintjob",
+          "extra": "2"
         },
         {
           "level": 16,
           "gems": 0,
-          "coins": 3000,
-          "icon": ""
+          "coins": 3000
         },
         {
           "level": 17,
           "gems": 0,
           "coins": 3000,
           "extra_type": "donkey",
-          "extra": "The Donkey Blueprint #2",
-          "icon": ""
+          "extra": "#2"
         },
         {
           "level": 18,
           "gems": 0,
-          "coins": 3000,
-          "icon": ""
+          "coins": 3000
         },
         {
           "level": 19,
           "gems": 0,
-          "coins": 3000,
-          "icon": ""
+          "coins": 3000
         },
         {
           "level": 20,
           "gems": 5,
           "coins": 3000,
-          "extra_type": "paintjob-1",
-          "extra": "Neon Paint Job for Tango",
-          "icon": ""
+          "extra_type": "paintjob",
+          "extra": "1"
         },
         {
           "level": 21,
           "gems": 0,
-          "coins": 1000,
-          "icon": ""
+          "coins": 1000
         },
         {
           "level": 22,
           "gems": 0,
-          "coins": 1000,
-          "icon": ""
+          "coins": 1000
         },
         {
           "level": 23,
           "gems": 5,
           "coins": 1000,
           "extra_type": "donkey",
-          "extra": "The Donkey Blueprint #1",
-          "icon": ""
+          "extra": "#1"
         },
         {
           "level": 24,
           "gems": 0,
-          "coins": 1000,
-          "icon": ""
+          "coins": 1000
         },
         {
           "level": 25,
           "gems": 0,
-          "coins": 1000,
-          "icon": ""
+          "coins": 1000
         }
       ]
     },
@@ -207,174 +193,149 @@
           "gems": 10,
           "coins": 10000,
           "extra_type": "donkey",
-          "extra": "The Donkey Blueprint #20",
-          "icon": ""
+          "extra": "#20"
         },
         {
           "level": 2,
           "gems": 0,
           "coins": 3000,
           "extra_type": "donkey",
-          "extra": "The Donkey Blueprint #19",
-          "icon": ""
+          "extra": "#19"
         },
         {
           "level": 3,
           "gems": 0,
           "coins": 3000,
           "extra_type": "donkey",
-          "extra": "The Donkey Blueprint #18",
-          "icon": ""
+          "extra": "#18"
         },
         {
           "level": 4,
           "gems": 0,
           "coins": 3000,
           "extra_type": "donkey",
-          "extra": "The Donkey Blueprint #17",
-          "icon": ""
+          "extra": "#17"
         },
         {
           "level": 5,
           "gems": 0,
           "coins": 2000,
-          "extra_type": "paintjob-4",
-          "extra": "Kaleidoscope Paint Job for Bronco",
-          "icon": ""
+          "extra_type": "paintjob",
+          "extra": "4"
         },
         {
           "level": 6,
           "gems": 0,
-          "coins": 2000,
-          "icon": ""
+          "coins": 2000
         },
         {
           "level": 7,
           "gems": 0,
           "coins": 2000,
           "extra_type": "donkey",
-          "extra": "The Donkey Blueprint #16",
-          "icon": ""
+          "extra": "#16"
         },
         {
           "level": 8,
           "gems": 0,
-          "coins": 2000,
-          "icon": ""
+          "coins": 2000
         },
         {
           "level": 9,
           "gems": 0,
-          "coins": 2000,
-          "icon": ""
+          "coins": 2000
         },
         {
           "level": 10,
           "gems": 5,
           "coins": 2000,
           "extra_type": "donkey",
-          "extra": "The Donkey Blueprint #15",
-          "icon": ""
+          "extra": " #15"
         },
         {
           "level": 11,
           "gems": 0,
-          "coins": 2000,
-          "icon": ""
+          "coins": 2000
         },
         {
           "level": 12,
           "gems": 0,
-          "coins": 2000,
-          "icon": ""
+          "coins": 2000
         },
         {
           "level": 13,
           "gems": 0,
           "coins": 2000,
           "extra_type": "donkey",
-          "extra": "The Donkey Blueprint #14",
-          "icon": ""
+          "extra": "#14"
         },
         {
           "level": 14,
           "gems": 0,
-          "coins": 2000,
-          "icon": ""
+          "coins": 2000
         },
         {
           "level": 15,
           "gems": 5,
           "coins": 2000,
-          "extra_type": "paintjob-3",
-          "extra": "Medic Paint Job for Bronco",
-          "icon": ""
+          "extra_type": "paintjob",
+          "extra": "3"
         },
         {
           "level": 16,
           "gems": 0,
-          "coins": 1000,
-          "icon": ""
+          "coins": 1000
         },
         {
           "level": 17,
           "gems": 0,
-          "coins": 1000,
-          "icon": ""
+          "coins": 1000
         },
         {
           "level": 18,
           "gems": 0,
           "coins": 1000,
           "extra_type": "donkey",
-          "extra": "The Donkey Blueprint #13",
-          "icon": ""
+          "extra": "#13"
         },
         {
           "level": 19,
           "gems": 0,
-          "coins": 1000,
-          "icon": ""
+          "coins": 1000
         },
         {
           "level": 20,
           "gems": 5,
-          "coins": 1000,
-          "icon": ""
+          "coins": 1000
         },
         {
           "level": 21,
           "gems": 0,
           "coins": 1000,
           "extra_type": "donkey",
-          "extra": "The Donkey Blueprint #12",
-          "icon": ""
+          "extra": "#12"
         },
         {
           "level": 22,
           "gems": 0,
-          "coins": 1000,
-          "icon": ""
+          "coins": 1000
         },
         {
           "level": 23,
           "gems": 5,
-          "coins": 1000,
-          "icon": ""
+          "coins": 1000
         },
         {
           "level": 24,
           "gems": 0,
           "coins": 1000,
           "extra_type": "donkey",
-          "extra": "The Donkey Blueprint #11",
-          "icon": ""
+          "extra": "#11"
         },
         {
           "level": 25,
           "gems": 0,
-          "coins": 1000,
-          "icon": ""
+          "coins": 1000
         }
       ]
     },
@@ -392,158 +353,133 @@
           "gems": 10,
           "coins": 10000,
           "extra_type": "donkey",
-          "extra": "The Donkey Blueprint #24",
-          "icon": ""
+          "extra": "#24"
         },
         {
           "level": 2,
           "gems": 0,
-          "coins": 3000,
-          "icon": ""
+          "coins": 3000
         },
         {
           "level": 3,
           "gems": 0,
-          "coins": 3000,
-          "icon": ""
+          "coins": 3000
         },
         {
           "level": 4,
           "gems": 0,
           "coins": 3000,
           "extra_type": "donkey",
-          "extra": "The Donkey Blueprint #23",
-          "icon": ""
+          "extra": "#23"
         },
         {
           "level": 5,
           "gems": 0,
-          "coins": 2000,
-          "icon": ""
+          "coins": 2000
         },
         {
           "level": 6,
           "gems": 0,
-          "coins": 2000,
-          "icon": ""
+          "coins": 2000
         },
         {
           "level": 7,
           "gems": 0,
-          "coins": 2000,
-          "icon": ""
+          "coins": 2000
         },
         {
           "level": 8,
           "gems": 0,
-          "coins": 2000,
-          "icon": ""
+          "coins": 2000
         },
         {
           "level": 9,
           "gems": 0,
-          "coins": 2000,
-          "icon": ""
+          "coins": 2000
         },
         {
           "level": 10,
           "gems": 5,
           "coins": 2000,
           "extra_type": "donkey",
-          "extra": "The Donkey Blueprint #22",
-          "icon": ""
+          "extra": "#22"
         },
         {
           "level": 11,
           "gems": 0,
-          "coins": 2000,
-          "icon": ""
+          "coins": 2000
         },
         {
           "level": 12,
           "gems": 0,
-          "coins": 2000,
-          "icon": ""
+          "coins": 2000
         },
         {
           "level": 13,
           "gems": 0,
-          "coins": 2000,
-          "icon": ""
+          "coins": 2000
         },
         {
           "level": 14,
           "gems": 0,
-          "coins": 2000,
-          "icon": ""
+          "coins": 2000
         },
         {
           "level": 15,
           "gems": 5,
           "coins": 2000,
           "extra_type": "donkey",
-          "extra": "The Donkey Blueprint #21",
-          "icon": ""
+          "extra": "#21"
         },
         {
           "level": 16,
           "gems": 0,
-          "coins": 1000,
-          "icon": ""
+          "coins": 1000
         },
         {
           "level": 17,
           "gems": 0,
-          "coins": 1000,
-          "icon": ""
+          "coins": 1000
         },
         {
           "level": 18,
           "gems": 0,
-          "coins": 1000,
-          "icon": ""
+          "coins": 1000
         },
         {
           "level": 19,
           "gems": 0,
-          "coins": 1000,
-          "icon": ""
+          "coins": 1000
         },
         {
           "level": 20,
           "gems": 5,
-          "coins": 1000,
-          "icon": ""
+          "coins": 1000
         },
         {
           "level": 21,
           "gems": 0,
-          "coins": 1000,
-          "icon": ""
+          "coins": 1000
         },
         {
           "level": 22,
           "gems": 0,
-          "coins": 1000,
-          "icon": ""
+          "coins": 1000
         },
         {
           "level": 23,
           "gems": 5,
-          "coins": 1000,
-          "icon": ""
+          "coins": 1000
         },
         {
           "level": 24,
           "gems": 0,
-          "coins": 1000,
-          "icon": ""
+          "coins": 1000
         },
         {
           "level": 25,
           "gems": 0,
-          "coins": 1000,
-          "icon": ""
+          "coins": 1000
         }
       ]
     },
@@ -561,166 +497,140 @@
           "gems": 10,
           "coins": 10000,
           "extra_type": "donkey",
-          "extra": "The Donkey Blueprint #29",
-          "icon": ""
+          "extra": "#29"
         },
         {
           "level": 2,
           "gems": 0,
-          "coins": 3000,
-          "icon": ""
+          "coins": 3000
         },
         {
           "level": 3,
           "gems": 0,
-          "coins": 3000,
-          "icon": ""
+          "coins": 3000
         },
         {
           "level": 4,
           "gems": 0,
           "coins": 3000,
           "extra_type": "donkey",
-          "extra": "The Donkey Blueprint #28",
-          "icon": ""
+          "extra": "#28"
         },
         {
           "level": 5,
           "gems": 0,
-          "coins": 2000,
-          "icon": ""
+          "coins": 2000
         },
         {
           "level": 6,
           "gems": 0,
-          "coins": 2000,
-          "icon": ""
+          "coins": 2000
         },
         {
           "level": 7,
           "gems": 0,
           "coins": 2000,
           "extra_type": "donkey",
-          "extra": "The Donkey Blueprint #27",
-          "icon": ""
+          "extra": "#27"
         },
         {
           "level": 8,
           "gems": 0,
-          "coins": 2000,
-          "icon": ""
+          "coins": 2000
         },
         {
           "level": 9,
           "gems": 0,
-          "coins": 2000,
-          "icon": ""
+          "coins": 2000
         },
         {
           "level": 10,
           "gems": 5,
-          "coins": 2000,
-          "icon": ""
+          "coins": 2000
         },
         {
           "level": 11,
           "gems": 0,
-          "coins": 2000,
-          "icon": ""
+          "coins": 2000
         },
         {
           "level": 12,
           "gems": 0,
-          "coins": 2000,
-          "icon": ""
+          "coins": 2000
         },
         {
           "level": 13,
           "gems": 0,
           "coins": 2000,
           "extra_type": "donkey",
-          "extra": "The Donkey Blueprint #26",
-          "icon": ""
+          "extra": "#26"
         },
         {
           "level": 14,
           "gems": 0,
-          "coins": 2000,
-          "icon": ""
+          "coins": 2000
         },
         {
           "level": 15,
           "gems": 5,
-          "coins": 2000,
-          "icon": ""
+          "coins": 2000
         },
         {
           "level": 16,
           "gems": 0,
-          "coins": 1000,
-          "icon": ""
+          "coins": 1000
         },
         {
           "level": 17,
           "gems": 0,
-          "coins": 1000,
-          "icon": ""
+          "coins": 1000
         },
         {
           "level": 18,
           "gems": 0,
           "coins": 1000,
           "extra_type": "donkey",
-          "extra": "The Donkey Blueprint #25",
-          "icon": ""
+          "extra": "#25"
         },
         {
           "level": 19,
           "gems": 0,
-          "coins": 1000,
-          "icon": ""
+          "coins": 1000
         },
         {
           "level": 20,
           "gems": 5,
-          "coins": 1000,
-          "icon": ""
+          "coins": 1000
         },
         {
           "level": 21,
           "gems": 0,
-          "coins": 1000,
-          "icon": ""
+          "coins": 1000
         },
         {
           "level": 22,
           "gems": 0,
-          "coins": 1000,
-          "icon": ""
+          "coins": 1000
         },
         {
           "level": 23,
           "gems": 5,
-          "coins": 1000,
-          "icon": ""
+          "coins": 1000
         },
         {
           "level": 24,
           "gems": 0,
-          "coins": 1000,
-          "icon": ""
+          "coins": 1000
         },
         {
           "level": 25,
           "gems": 0,
-          "coins": 1000,
-          "icon": ""
+          "coins": 1000
         }
       ]
     },
-	   {
-      "id": 4,
-      "active": true,
+    {
+      "id": 5,
       "header": "#1/cXKyV9K.jpg",
 	  "donkey": "#1/p6WJjTs.png",
       "title": "Donkey Season",
@@ -733,164 +643,288 @@
           "gems": 10,
           "coins": 10000,
           "extra_type": "donkey",
-          "extra": "The Donkey Blueprint #34",
-          "icon": ""
+          "extra": "#34"
         },
         {
           "level": 2,
           "gems": 0,
-          "coins": 3000,
-          "icon": ""
+          "coins": 3000
         },
         {
           "level": 3,
           "gems": 0,
-          "coins": 3000,
-          "icon": ""
+          "coins": 3000
         },
         {
           "level": 4,
           "gems": 0,
           "coins": 3000,
           "extra_type": "donkey",
-          "extra": "The Donkey Blueprint #33",
-          "icon": ""
+          "extra": "#33"
         },
         {
           "level": 5,
           "gems": 0,
           "coins": 2000,
-		  "extra_type": "paintjob-5",
-		  "extra": "Soylent Paint Job for Tango",
-          "icon": ""
+          "extra_type": "paintjob",
+          "extra": "5"
         },
         {
           "level": 6,
           "gems": 0,
-          "coins": 2000,
-          "icon": ""
+          "coins": 2000
         },
         {
           "level": 7,
           "gems": 0,
           "coins": 2000,
           "extra_type": "donkey",
-          "extra": "The Donkey Blueprint #32",
-          "icon": ""
+          "extra": "#32"
         },
         {
           "level": 8,
           "gems": 0,
-          "coins": 2000,
-          "icon": ""
+          "coins": 2000
         },
         {
           "level": 9,
           "gems": 0,
-          "coins": 2000,
-          "icon": ""
+          "coins": 2000
         },
         {
           "level": 10,
           "gems": 5,
-          "coins": 2000,
-          "icon": ""
+          "coins": 2000
         },
         {
           "level": 11,
           "gems": 0,
-          "coins": 2000,
-          "icon": ""
+          "coins": 2000
         },
         {
           "level": 12,
           "gems": 0,
-          "coins": 2000,
-          "icon": ""
+          "coins": 2000
         },
         {
           "level": 13,
           "gems": 0,
           "coins": 2000,
           "extra_type": "donkey",
-          "extra": "The Donkey Blueprint #31",
-          "icon": ""
+          "extra": "#31"
         },
         {
           "level": 14,
           "gems": 0,
-          "coins": 2000,
-          "icon": ""
+          "coins": 2000
         },
         {
           "level": 15,
           "gems": 5,
           "coins": 2000,
-		  "extra_type": "paintjob-1",
-		  "extra": "Neon Paintjob for Tango",
-          "icon": ""
+		  "extra_type": "paintjob",
+          "extra": "1"
         },
         {
           "level": 16,
           "gems": 0,
-          "coins": 1000,
-          "icon": ""
+          "coins": 1000
         },
         {
           "level": 17,
           "gems": 0,
-          "coins": 1000,
-          "icon": ""
+          "coins": 1000
         },
         {
           "level": 18,
           "gems": 0,
           "coins": 1000,
           "extra_type": "donkey",
-          "extra": "The Donkey Blueprint #30",
-          "icon": ""
+          "extra": "#30"
         },
         {
           "level": 19,
           "gems": 0,
-          "coins": 1000,
-          "icon": ""
+          "coins": 1000
         },
         {
           "level": 20,
           "gems": 5,
-          "coins": 1000,
-          "icon": ""
+          "coins": 1000
         },
         {
           "level": 21,
           "gems": 0,
-          "coins": 1000,
-          "icon": ""
+          "coins": 1000
         },
         {
           "level": 22,
           "gems": 0,
-          "coins": 1000,
-          "icon": ""
+          "coins": 1000
         },
         {
           "level": 23,
           "gems": 5,
-          "coins": 1000,
-          "icon": ""
+          "coins": 1000
         },
         {
           "level": 24,
           "gems": 0,
-          "coins": 1000,
-          "icon": ""
+          "coins": 1000
         },
         {
           "level": 25,
           "gems": 0,
+          "coins": 1000
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "active": true,
+      "header": "#1/kKdrr62.jpg",
+      "donkey": "#1/FIwbI0U.png",
+      "title": "Blitz Season II",
+      "days": 6,
+      "date": "14.05.2015",
+      "date_end": "21.05.2015",
+      "prizes": [
+        {
+          "level": 1,
+          "gems": 10,
+          "coins": 10000,
+          "extra_type": "donkey",
+          "extra": "#39"
+        },
+        {
+          "level": 2,
+          "gems": 0,
+          "coins": 3000
+        },
+        {
+          "level": 3,
+          "gems": 0,
+          "coins": 3000
+        },
+        {
+          "level": 4,
+          "gems": 0,
+          "coins": 3000,
+          "extra_type": "donkey",
+          "extra": "#38"
+        },
+        {
+          "level": 5,
+          "gems": 0,
+          "coins": 2000
+        },
+        {
+          "level": 6,
+          "gems": 0,
+          "coins": 2000
+        },
+        {
+          "level": 7,
+          "gems": 0,
+          "coins": 2000,
+          "extra_type": "donkey",
+          "extra": "#37"
+        },
+        {
+          "level": 8,
+          "gems": 0,
+          "coins": 2000
+        },
+        {
+          "level": 9,
+          "gems": 0,
+          "coins": 2000
+        },
+        {
+          "level": 10,
+          "gems": 5,
+          "coins": 2000,
+          "extra_type": "paintjob",
+          "extra": "6"
+        },
+        {
+          "level": 11,
+          "gems": 0,
+          "coins": 2000
+        },
+        {
+          "level": 12,
+          "gems": 0,
+          "coins": 2000
+        },
+        {
+          "level": 13,
+          "gems": 0,
+          "coins": 2000,
+          "extra_type": "donkey",
+          "extra": "#36"
+        },
+        {
+          "level": 14,
+          "gems": 0,
+          "coins": 2000
+        },
+        {
+          "level": 15,
+          "gems": 5,
+          "coins": 2000
+        },
+        {
+          "level": 16,
+          "gems": 0,
+          "coins": 1000
+        },
+        {
+          "level": 17,
+          "gems": 0,
+          "coins": 1000
+        },
+        {
+          "level": 18,
+          "gems": 0,
           "coins": 1000,
-          "icon": ""
+          "extra_type": "donkey",
+          "extra": "#35"
+        },
+        {
+          "level": 19,
+          "gems": 0,
+          "coins": 1000
+        },
+        {
+          "level": 20,
+          "gems": 5,
+          "coins": 1000
+        },
+        {
+          "level": 21,
+          "gems": 0,
+          "coins": 1000
+        },
+        {
+          "level": 22,
+          "gems": 0,
+          "coins": 1000
+        },
+        {
+          "level": 23,
+          "gems": 5,
+          "coins": 1000
+        },
+        {
+          "level": 24,
+          "gems": 0,
+          "coins": 1000
+        },
+        {
+          "level": 25,
+          "gems": 0,
+          "coins": 1000
         }
       ]
     }

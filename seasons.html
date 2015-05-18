@@ -22,11 +22,13 @@
 
     <div class="seasons-list">
         <div class="box season-container" ng-repeat="season in filteredArray" season-list-ready>
-            <img ng-src="{{season.header|imageHoster:data.imagehoster}}" \>
+            <img ng-src="{{season.header|imageHoster:data.imagehoster}}" />
 
             <hr />
 
             <div class="season-times">
+                <strong>#{{season.id|leadingZero:2}}</strong>
+
                 <span>{{'seasons.date'|translate}}: {{season.date}}</span> <br />
                 <span>{{(season.active?'seasons.date_ends':'seasons.date_end')|translate}}: {{season.date_end}}</span>
 
@@ -34,6 +36,13 @@
             </div>
 
             <hr />
+
+            <div ng-if="season.donkey">
+                <h2>{{'seasons.donkey_state'|translate}}</h2>
+                <a href="{{::season.donkey|imageHoster:data.imagehoster}}" target="_blank">
+                    <img ng-src="{{::season.donkey|imageHoster:data.imagehoster}}" />
+                </a>
+            </div>
 
             <h2>{{'seasons.prices'|translate}}</h2>
 
@@ -43,8 +52,8 @@
                         <td>
                             <i class="season-level-{{::level.level}} seasons"></i>
                         </td>
-                        <td title="{{::level.extra}}">
-                            <i ng-if="level.extra" class="season-extra-{{::level.extra_type}} seasons"></i>
+                        <td title="{{::level.title}}">
+                            <i ng-if="level.extra" class="season-extra-{{::level.css_selector}} seasons"></i>
                         </td>
                         <td class="right">
                             + {{::level.coins}} <i class="coins"></i><br />
@@ -57,18 +66,11 @@
             <div class="season-summary">
                 + {{season.summary.coins}} <i class="coins"></i><br />
                 + {{season.summary.gems}} <i class="gems"></i><br />
-                <div ng-repeat="extra in season.summary.extras" title="{{extra.name}}">
+                <div ng-repeat="extra in season.summary.extras" title="{{extra.title}}">
                     +
                     <span ng-if="extra.amount > 1">{{::extra.amount}} x</span>
-                    <i class="season-extra-{{::extra.type}} seasons"></i>
+                    <i class="season-extra-{{::extra.css_selector}} seasons"></i>
                 </div>
-            </div>
-
-            <div ng-if="season.donkey">
-                <h2>{{'seasons.donkey_state'|translate}}</h2>
-                <a href="{{::season.donkey|imageHoster:data.imagehoster}}" target="_blank">
-                    <img ng-src="{{::season.donkey|imageHoster:data.imagehoster}}" />
-                </a>
             </div>
 
             <h2 ng-if="season.top20">{{'seasons.top20_legends'|translate}}</h2>
