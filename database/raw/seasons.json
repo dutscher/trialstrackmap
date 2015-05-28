@@ -7,7 +7,8 @@
       "3": "Medic Paint Job for Bronco",
       "4": "Kaleidoscope Paint Job for Bronco",
       "5": "Soylent Paint Job for Tango",
-      "6": "Luchador Paint Job for Bronco"
+      "6": "Luchador Paint Job for Bronco",
+      "7": "Scales Paintjob for Marauder"
     }
   },
   "seasons": [
@@ -486,7 +487,7 @@
     {
       "id": 4,
       "header": "#1/BonUHCB.jpg",
-	  "donkey": "#1/wDUXriM.png",
+      "donkey": "#1/wDUXriM.png",
       "title": "Spring Season",
       "days": 30,
       "date": "16.03.2015",
@@ -632,7 +633,7 @@
     {
       "id": 5,
       "header": "#1/cXKyV9K.jpg",
-	  "donkey": "#1/p6WJjTs.png",
+      "donkey": "#1/p6WJjTs.png",
       "title": "Donkey Season",
       "days": 28,
       "date": "16.04.2015",
@@ -722,7 +723,7 @@
           "level": 15,
           "gems": 5,
           "coins": 2000,
-		  "extra_type": "paintjob",
+          "extra_type": "paintjob",
           "extra": "1"
         },
         {
@@ -890,6 +891,153 @@
           "coins": 1000,
           "extra_type": "donkey",
           "extra": "#35"
+        },
+        {
+          "level": 19,
+          "gems": 0,
+          "coins": 1000
+        },
+        {
+          "level": 20,
+          "gems": 5,
+          "coins": 1000
+        },
+        {
+          "level": 21,
+          "gems": 0,
+          "coins": 1000
+        },
+        {
+          "level": 22,
+          "gems": 0,
+          "coins": 1000
+        },
+        {
+          "level": 23,
+          "gems": 5,
+          "coins": 1000
+        },
+        {
+          "level": 24,
+          "gems": 0,
+          "coins": 1000
+        },
+        {
+          "level": 25,
+          "gems": 0,
+          "coins": 1000
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "active": true,
+      "header": "#1/1AKsFv9.jpg",
+      "donkey": "",
+      "title": "Summer Season",
+      "days": 14,
+      "date": "25.05.2015",
+      "date_end": "08.06.2015",
+      "prizes": [
+        {
+          "level": 1,
+          "gems": 10,
+          "coins": 10000
+        },
+        {
+          "level": 2,
+          "gems": 0,
+          "coins": 3000
+        },
+        {
+          "level": 3,
+          "gems": 0,
+          "coins": 3000
+        },
+        {
+          "level": 4,
+          "gems": 0,
+          "coins": 3000,
+          "extra_type": "donkey",
+          "extra": "#43"
+        },
+        {
+          "level": 5,
+          "gems": 0,
+          "coins": 2000
+        },
+        {
+          "level": 6,
+          "gems": 0,
+          "coins": 2000
+        },
+        {
+          "level": 7,
+          "gems": 0,
+          "coins": 2000,
+          "extra_type": "donkey",
+          "extra": "#42"
+        },
+        {
+          "level": 8,
+          "gems": 0,
+          "coins": 2000
+        },
+        {
+          "level": 9,
+          "gems": 0,
+          "coins": 2000
+        },
+        {
+          "level": 10,
+          "gems": 5,
+          "coins": 2000,
+          "extra_type": "paintjob",
+          "extra": "7"
+        },
+        {
+          "level": 11,
+          "gems": 0,
+          "coins": 2000
+        },
+        {
+          "level": 12,
+          "gems": 0,
+          "coins": 2000
+        },
+        {
+          "level": 13,
+          "gems": 0,
+          "coins": 2000,
+          "extra_type": "donkey",
+          "extra": "#41"
+        },
+        {
+          "level": 14,
+          "gems": 0,
+          "coins": 2000
+        },
+        {
+          "level": 15,
+          "gems": 5,
+          "coins": 2000
+        },
+        {
+          "level": 16,
+          "gems": 0,
+          "coins": 1000
+        },
+        {
+          "level": 17,
+          "gems": 0,
+          "coins": 1000
+        },
+        {
+          "level": 18,
+          "gems": 0,
+          "coins": 1000,
+          "extra_type": "donkey",
+          "extra": "#40"
         },
         {
           "level": 19,

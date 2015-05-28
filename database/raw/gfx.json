@@ -99,12 +99,12 @@
       "lSrc": "#0/flags/ru.png",
       "selector": "i.lang.lang_ru"
     },
-	"i18n_it": {
+    "i18n_it": {
       "src": "#1/PpPOUEX.png",
       "lSrc": "#0/flags/it.png",
       "selector": "i.lang.lang_it"
     },
-	"i18n_es": {
+    "i18n_es": {
       "src": "#1/Wdl73R9.png",
       "lSrc": "#0/flags/es.png",
       "selector": "i.lang.lang_es"
@@ -135,16 +135,16 @@
       "selector": "i.coins"
     },
     "seasons": {
-      "src": "#1/c6rVPiL.jpg",
+      "src": "#1/RCUrYHP.jpg",
       "lSrc": "#0/sprites/seasons.jpg",
       "selector": "i.seasons",
       "sprite": true
     }
   },
   "imagehoster": {
-    "#0/":"http://localhost:8001/gfx/",
-    "#1/":"http://i.imgur.com/",
-    "#2/":"https://imagizer.imageshack.us/v2/",
-    "#3/":"//www.youtube.com/embed/"
+    "#0/": "http://localhost:8001/gfx/",
+    "#1/": "http://i.imgur.com/",
+    "#2/": "https://imagizer.imageshack.us/v2/",
+    "#3/": "//www.youtube.com/embed/"
   }
 }
