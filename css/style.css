@@ -38,7 +38,7 @@ span.de, span.en{display:none}
     bottom:0;
     right:0;
     width:0;
-    z-index:3;
+    z-index:4;
     -webkit-transition: width 0.25s ease-in-out; /* Firefox */
     -moz-transition: width 0.25s ease-in-out; /* WebKit */
     -o-transition: width 0.25s ease-in-out; /* Opera */
