@@ -31,11 +31,12 @@ h1, h2, h3{
 
 .seasons-list{white-space:nowrap}
 .season-container{display:inline-block;width:300px;margin-right:10px;vertical-align:top}
-.season-container img{width:100%}
+.season-container .season-banner{width:300px;height:41px}
+.season-container .season-bike-state{width:300px;height:169px}
 .season-times{position:relative}
 .season-times strong{font-size:33px;float:left;margin-right:5px}
 .season-times span{position:relative}
-.season-prizes{height:240px;overflow:scroll;overflow-x:hidden}
+.season-prizes{height:150px;overflow:scroll;overflow-x:hidden}
 .season-summary{
     border-top: double 6px #ffee99;
     text-align: right;
@@ -55,47 +56,48 @@ table{
     table-layout: fixed;
     padding-right:5px;
 }
-td{padding:0;height:80px}
+td{padding:0;height:50px}
 td.right{
     text-align:right;
 }
 
 i[class^="season-"]{
-    width:80px;
-    height:80px;
+    width:40px;
+    height:40px;
     display:inline-block;
     vertical-align: middle;
 }
 .season-level-1{background-position:0 0}
-.season-level-2{background-position:0 -80px}
-.season-level-3{background-position:0 -160px}
-.season-level-4{background-position:0 -240px}
-.season-level-5{background-position:0 -320px}
-.season-level-6{background-position:-80px 0}
-.season-level-7{background-position:-80px -80px}
-.season-level-8{background-position:-80px -160px}
-.season-level-9{background-position:-80px -240px}
-.season-level-10{background-position:-80px -320px}
-.season-level-11{background-position:-160px 0}
-.season-level-12{background-position:-160px -80px}
-.season-level-13{background-position:-160px -160px}
-.season-level-14{background-position:-160px -240px}
-.season-level-15{background-position:-160px -320px}
-.season-level-16{background-position:-240px 0}
-.season-level-17{background-position:-240px -80px}
-.season-level-18{background-position:-240px -160px}
-.season-level-19{background-position:-240px -240px}
-.season-level-20{background-position:-240px -320px}
-.season-level-21{background-position:-320px 0}
-.season-level-22{background-position:-320px -80px}
-.season-level-23{background-position:-320px -160px}
-.season-level-24{background-position:-320px -240px}
-.season-level-25{background-position:-320px -320px}
-.season-extra-donkey{background-position:-400px 0}
-.season-extra-paintjob-1{background-position:-400px -80px}
-.season-extra-paintjob-2{background-position:-400px -160px}
-.season-extra-paintjob-3{background-position:-400px -240px}
-.season-extra-paintjob-4{background-position:-400px -320px}
-.season-extra-paintjob-5{background-position:-480px 0}
-.season-extra-paintjob-6{background-position:-480px -80px}
-.season-extra-paintjob-7{background-position:-480px -160px}
+.season-level-2{background-position:0 -40px}
+.season-level-3{background-position:0 -80px}
+.season-level-4{background-position:0 -120px}
+.season-level-5{background-position:0 -160px}
+.season-level-6{background-position:-40px 0}
+.season-level-7{background-position:-40px -40px}
+.season-level-8{background-position:-40px -80px}
+.season-level-9{background-position:-40px -120px}
+.season-level-10{background-position:-40px -160px}
+.season-level-11{background-position:-80px 0}
+.season-level-12{background-position:-80px -40px}
+.season-level-13{background-position:-80px -80px}
+.season-level-14{background-position:-80px -120px}
+.season-level-15{background-position:-80px -160px}
+.season-level-16{background-position:-120px 0}
+.season-level-17{background-position:-120px -40px}
+.season-level-18{background-position:-120px -80px}
+.season-level-19{background-position:-120px -120px}
+.season-level-20{background-position:-120px -160px}
+.season-level-21{background-position:-160px 0}
+.season-level-22{background-position:-160px -80px}
+.season-level-23{background-position:-160px -80px}
+.season-level-24{background-position:-160px -120px}
+.season-level-25{background-position:-160px -160px}
+.season-extra-donkey{background-position:-200px 0}
+.season-extra-paintjob-1{background-position:-200px -40px}
+.season-extra-paintjob-2{background-position:-200px -80px}
+.season-extra-paintjob-3{background-position:-200px -120px}
+.season-extra-paintjob-4{background-position:-200px -160px}
+.season-extra-paintjob-5{background-position:-240px 0}
+.season-extra-paintjob-6{background-position:-240px -40px}
+.season-extra-paintjob-7{background-position:-240px -80px}
+.season-extra-paintjob-8{background-position:-240px -120px}
