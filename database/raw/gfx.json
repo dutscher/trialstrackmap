@@ -109,6 +109,11 @@
       "lSrc": "#0/flags/es.png",
       "selector": "i.lang.lang_es"
     },
+    "i18n_pt": {
+      "src": "#1/V8Oz1hI.png",
+      "lSrc": "#0/flags/pt.png",
+      "selector": "i.lang.lang_pt"
+    },
     "part": {
       "src": "#1/vX7YYMs.png",
       "lSrc": "#0/currencies/parts.png",
