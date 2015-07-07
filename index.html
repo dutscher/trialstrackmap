@@ -122,7 +122,8 @@
 
                         <div ng-repeat="tier in tierlegend" class="tierwrap">
                             <hr>
-                            <h3>{{'page.rightSidebar.tier'|translate}} {{::tier.number}}</h3>
+                            <h3 ng-if="tier.number > 0">{{'page.rightSidebar.tier'|translate}} {{::tier.number}}</h3>
+                            <h3 ng-if="tier.number === 0">Leaked</h3>
                             <span ng-repeat="catClass in repeatObject(tier.cats)" class="{{::catClass}} trackwrap">
                                 <span ng-repeat="track in tier.cats[catClass]" show-track-on-map="{track:track,catClass:catClass,cats:data.map.cats}" show-track-in-modal="startline" class="track-available">
                                     {{track.i18n}}

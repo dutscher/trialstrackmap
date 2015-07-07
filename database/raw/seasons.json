@@ -9,7 +9,8 @@
       "5": "Soylent Paintjob for Tango",
       "6": "Luchador Paintjob for Bronco",
       "7": "Scales Paintjob for Marauder",
-      "8": "Lava Paintjob for Armadillo"
+      "8": "Lava Paintjob for Armadillo",
+      "9": "Spirits Paintjob for Berserker"
     }
   },
   "seasons": [
@@ -65,26 +66,22 @@
         },
         {
           "level": 6,
-          "gems": 0,
           "coins": 8000,
           "extra_type": "donkey",
           "extra": "#6"
         },
         {
           "level": 7,
-          "gems": 0,
           "coins": 8000
         },
         {
           "level": 8,
-          "gems": 0,
           "coins": 8000,
           "extra_type": "donkey",
           "extra": "#5"
         },
         {
           "level": 9,
-          "gems": 0,
           "coins": 8000
         },
         {
@@ -96,24 +93,20 @@
         },
         {
           "level": 11,
-          "gems": 0,
           "coins": 5000
         },
         {
           "level": 12,
-          "gems": 0,
           "coins": 5000
         },
         {
           "level": 13,
-          "gems": 0,
           "coins": 5000,
           "extra_type": "donkey",
           "extra": "#3"
         },
         {
           "level": 14,
-          "gems": 0,
           "coins": 5000
         },
         {
@@ -125,24 +118,20 @@
         },
         {
           "level": 16,
-          "gems": 0,
           "coins": 3000
         },
         {
           "level": 17,
-          "gems": 0,
           "coins": 3000,
           "extra_type": "donkey",
           "extra": "#2"
         },
         {
           "level": 18,
-          "gems": 0,
           "coins": 3000
         },
         {
           "level": 19,
-          "gems": 0,
           "coins": 3000
         },
         {
@@ -154,12 +143,10 @@
         },
         {
           "level": 21,
-          "gems": 0,
           "coins": 1000
         },
         {
           "level": 22,
-          "gems": 0,
           "coins": 1000
         },
         {
@@ -171,12 +158,10 @@
         },
         {
           "level": 24,
-          "gems": 0,
           "coins": 1000
         },
         {
           "level": 25,
-          "gems": 0,
           "coins": 1000
         }
       ]
@@ -199,52 +184,44 @@
         },
         {
           "level": 2,
-          "gems": 0,
           "coins": 3000,
           "extra_type": "donkey",
           "extra": "#19"
         },
         {
           "level": 3,
-          "gems": 0,
           "coins": 3000,
           "extra_type": "donkey",
           "extra": "#18"
         },
         {
           "level": 4,
-          "gems": 0,
           "coins": 3000,
           "extra_type": "donkey",
           "extra": "#17"
         },
         {
           "level": 5,
-          "gems": 0,
           "coins": 2000,
           "extra_type": "paintjob",
           "extra": "4"
         },
         {
           "level": 6,
-          "gems": 0,
           "coins": 2000
         },
         {
           "level": 7,
-          "gems": 0,
           "coins": 2000,
           "extra_type": "donkey",
           "extra": "#16"
         },
         {
           "level": 8,
-          "gems": 0,
           "coins": 2000
         },
         {
           "level": 9,
-          "gems": 0,
           "coins": 2000
         },
         {
@@ -256,24 +233,20 @@
         },
         {
           "level": 11,
-          "gems": 0,
           "coins": 2000
         },
         {
           "level": 12,
-          "gems": 0,
           "coins": 2000
         },
         {
           "level": 13,
-          "gems": 0,
           "coins": 2000,
           "extra_type": "donkey",
           "extra": "#14"
         },
         {
           "level": 14,
-          "gems": 0,
           "coins": 2000
         },
         {
@@ -285,24 +258,20 @@
         },
         {
           "level": 16,
-          "gems": 0,
           "coins": 1000
         },
         {
           "level": 17,
-          "gems": 0,
           "coins": 1000
         },
         {
           "level": 18,
-          "gems": 0,
           "coins": 1000,
           "extra_type": "donkey",
           "extra": "#13"
         },
         {
           "level": 19,
-          "gems": 0,
           "coins": 1000
         },
         {
@@ -312,14 +281,12 @@
         },
         {
           "level": 21,
-          "gems": 0,
           "coins": 1000,
           "extra_type": "donkey",
           "extra": "#12"
         },
         {
           "level": 22,
-          "gems": 0,
           "coins": 1000
         },
         {
@@ -329,14 +296,12 @@
         },
         {
           "level": 24,
-          "gems": 0,
           "coins": 1000,
           "extra_type": "donkey",
           "extra": "#11"
         },
         {
           "level": 25,
-          "gems": 0,
           "coins": 1000
         }
       ]
@@ -359,44 +324,36 @@
         },
         {
           "level": 2,
-          "gems": 0,
           "coins": 3000
         },
         {
           "level": 3,
-          "gems": 0,
           "coins": 3000
         },
         {
           "level": 4,
-          "gems": 0,
           "coins": 3000,
           "extra_type": "donkey",
           "extra": "#23"
         },
         {
           "level": 5,
-          "gems": 0,
           "coins": 2000
         },
         {
           "level": 6,
-          "gems": 0,
           "coins": 2000
         },
         {
           "level": 7,
-          "gems": 0,
           "coins": 2000
         },
         {
           "level": 8,
-          "gems": 0,
           "coins": 2000
         },
         {
           "level": 9,
-          "gems": 0,
           "coins": 2000
         },
         {
@@ -408,22 +365,18 @@
         },
         {
           "level": 11,
-          "gems": 0,
           "coins": 2000
         },
         {
           "level": 12,
-          "gems": 0,
           "coins": 2000
         },
         {
           "level": 13,
-          "gems": 0,
           "coins": 2000
         },
         {
           "level": 14,
-          "gems": 0,
           "coins": 2000
         },
         {
@@ -435,22 +388,18 @@
         },
         {
           "level": 16,
-          "gems": 0,
           "coins": 1000
         },
         {
           "level": 17,
-          "gems": 0,
           "coins": 1000
         },
         {
           "level": 18,
-          "gems": 0,
           "coins": 1000
         },
         {
           "level": 19,
-          "gems": 0,
           "coins": 1000
         },
         {
@@ -460,12 +409,10 @@
         },
         {
           "level": 21,
-          "gems": 0,
           "coins": 1000
         },
         {
           "level": 22,
-          "gems": 0,
           "coins": 1000
         },
         {
@@ -475,12 +422,10 @@
         },
         {
           "level": 24,
-          "gems": 0,
           "coins": 1000
         },
         {
           "level": 25,
-          "gems": 0,
           "coins": 1000
         }
       ]
@@ -503,46 +448,38 @@
         },
         {
           "level": 2,
-          "gems": 0,
           "coins": 3000
         },
         {
           "level": 3,
-          "gems": 0,
           "coins": 3000
         },
         {
           "level": 4,
-          "gems": 0,
           "coins": 3000,
           "extra_type": "donkey",
           "extra": "#28"
         },
         {
           "level": 5,
-          "gems": 0,
           "coins": 2000
         },
         {
           "level": 6,
-          "gems": 0,
           "coins": 2000
         },
         {
           "level": 7,
-          "gems": 0,
           "coins": 2000,
           "extra_type": "donkey",
           "extra": "#27"
         },
         {
           "level": 8,
-          "gems": 0,
           "coins": 2000
         },
         {
           "level": 9,
-          "gems": 0,
           "coins": 2000
         },
         {
@@ -552,24 +489,20 @@
         },
         {
           "level": 11,
-          "gems": 0,
           "coins": 2000
         },
         {
           "level": 12,
-          "gems": 0,
           "coins": 2000
         },
         {
           "level": 13,
-          "gems": 0,
           "coins": 2000,
           "extra_type": "donkey",
           "extra": "#26"
         },
         {
           "level": 14,
-          "gems": 0,
           "coins": 2000
         },
         {
@@ -579,24 +512,20 @@
         },
         {
           "level": 16,
-          "gems": 0,
           "coins": 1000
         },
         {
           "level": 17,
-          "gems": 0,
           "coins": 1000
         },
         {
           "level": 18,
-          "gems": 0,
           "coins": 1000,
           "extra_type": "donkey",
           "extra": "#25"
         },
         {
           "level": 19,
-          "gems": 0,
           "coins": 1000
         },
         {
@@ -606,12 +535,10 @@
         },
         {
           "level": 21,
-          "gems": 0,
           "coins": 1000
         },
         {
           "level": 22,
-          "gems": 0,
           "coins": 1000
         },
         {
@@ -621,12 +548,10 @@
         },
         {
           "level": 24,
-          "gems": 0,
           "coins": 1000
         },
         {
           "level": 25,
-          "gems": 0,
           "coins": 1000
         }
       ]
@@ -649,48 +574,40 @@
         },
         {
           "level": 2,
-          "gems": 0,
           "coins": 3000
         },
         {
           "level": 3,
-          "gems": 0,
           "coins": 3000
         },
         {
           "level": 4,
-          "gems": 0,
           "coins": 3000,
           "extra_type": "donkey",
           "extra": "#33"
         },
         {
           "level": 5,
-          "gems": 0,
           "coins": 2000,
           "extra_type": "paintjob",
           "extra": "5"
         },
         {
           "level": 6,
-          "gems": 0,
           "coins": 2000
         },
         {
           "level": 7,
-          "gems": 0,
           "coins": 2000,
           "extra_type": "donkey",
           "extra": "#32"
         },
         {
           "level": 8,
-          "gems": 0,
           "coins": 2000
         },
         {
           "level": 9,
-          "gems": 0,
           "coins": 2000
         },
         {
@@ -700,24 +617,20 @@
         },
         {
           "level": 11,
-          "gems": 0,
           "coins": 2000
         },
         {
           "level": 12,
-          "gems": 0,
           "coins": 2000
         },
         {
           "level": 13,
-          "gems": 0,
           "coins": 2000,
           "extra_type": "donkey",
           "extra": "#31"
         },
         {
           "level": 14,
-          "gems": 0,
           "coins": 2000
         },
         {
@@ -729,24 +642,20 @@
         },
         {
           "level": 16,
-          "gems": 0,
           "coins": 1000
         },
         {
           "level": 17,
-          "gems": 0,
           "coins": 1000
         },
         {
           "level": 18,
-          "gems": 0,
           "coins": 1000,
           "extra_type": "donkey",
           "extra": "#30"
         },
         {
           "level": 19,
-          "gems": 0,
           "coins": 1000
         },
         {
@@ -756,12 +665,10 @@
         },
         {
           "level": 21,
-          "gems": 0,
           "coins": 1000
         },
         {
           "level": 22,
-          "gems": 0,
           "coins": 1000
         },
         {
@@ -771,25 +678,21 @@
         },
         {
           "level": 24,
-          "gems": 0,
           "coins": 1000
         },
         {
           "level": 25,
-          "gems": 0,
           "coins": 1000
         }
       ]
     },
     {
       "id": 6,
-      "active": true,
       "header": "#1/kKdrr62.jpg",
       "donkey": "#1/FIwbI0U.png",
       "title": "Blitz Season II",
-      "days": 6,
       "date": "14.05.2015",
-      "date_end": "21.05.2015",
+      "date_end": "25.05.2015",
       "prizes": [
         {
           "level": 1,
@@ -800,46 +703,38 @@
         },
         {
           "level": 2,
-          "gems": 0,
           "coins": 3000
         },
         {
           "level": 3,
-          "gems": 0,
           "coins": 3000
         },
         {
           "level": 4,
-          "gems": 0,
           "coins": 3000,
           "extra_type": "donkey",
           "extra": "#38"
         },
         {
           "level": 5,
-          "gems": 0,
           "coins": 2000
         },
         {
           "level": 6,
-          "gems": 0,
           "coins": 2000
         },
         {
           "level": 7,
-          "gems": 0,
           "coins": 2000,
           "extra_type": "donkey",
           "extra": "#37"
         },
         {
           "level": 8,
-          "gems": 0,
           "coins": 2000
         },
         {
           "level": 9,
-          "gems": 0,
           "coins": 2000
         },
         {
@@ -851,24 +746,20 @@
         },
         {
           "level": 11,
-          "gems": 0,
           "coins": 2000
         },
         {
           "level": 12,
-          "gems": 0,
           "coins": 2000
         },
         {
           "level": 13,
-          "gems": 0,
           "coins": 2000,
           "extra_type": "donkey",
           "extra": "#36"
         },
         {
           "level": 14,
-          "gems": 0,
           "coins": 2000
         },
         {
@@ -878,24 +769,20 @@
         },
         {
           "level": 16,
-          "gems": 0,
           "coins": 1000
         },
         {
           "level": 17,
-          "gems": 0,
           "coins": 1000
         },
         {
           "level": 18,
-          "gems": 0,
           "coins": 1000,
           "extra_type": "donkey",
           "extra": "#35"
         },
         {
           "level": 19,
-          "gems": 0,
           "coins": 1000
         },
         {
@@ -905,12 +792,10 @@
         },
         {
           "level": 21,
-          "gems": 0,
           "coins": 1000
         },
         {
           "level": 22,
-          "gems": 0,
           "coins": 1000
         },
         {
@@ -920,12 +805,10 @@
         },
         {
           "level": 24,
-          "gems": 0,
           "coins": 1000
         },
         {
           "level": 25,
-          "gems": 0,
           "coins": 1000
         }
       ]
@@ -935,7 +818,6 @@
       "header": "#1/1AKsFv9.jpg",
       "donkey": "#1/IQUiutp.png",
       "title": "Summer Season",
-      "days": 14,
       "date": "25.05.2015",
       "date_end": "08.06.2015",
       "prizes": [
@@ -946,46 +828,38 @@
         },
         {
           "level": 2,
-          "gems": 0,
           "coins": 3000
         },
         {
           "level": 3,
-          "gems": 0,
           "coins": 3000
         },
         {
           "level": 4,
-          "gems": 0,
           "coins": 3000,
           "extra_type": "donkey",
           "extra": "#43"
         },
         {
           "level": 5,
-          "gems": 0,
           "coins": 2000
         },
         {
           "level": 6,
-          "gems": 0,
           "coins": 2000
         },
         {
           "level": 7,
-          "gems": 0,
           "coins": 2000,
           "extra_type": "donkey",
           "extra": "#42"
         },
         {
           "level": 8,
-          "gems": 0,
           "coins": 2000
         },
         {
           "level": 9,
-          "gems": 0,
           "coins": 2000
         },
         {
@@ -997,24 +871,20 @@
         },
         {
           "level": 11,
-          "gems": 0,
           "coins": 2000
         },
         {
           "level": 12,
-          "gems": 0,
           "coins": 2000
         },
         {
           "level": 13,
-          "gems": 0,
           "coins": 2000,
           "extra_type": "donkey",
           "extra": "#41"
         },
         {
           "level": 14,
-          "gems": 0,
           "coins": 2000
         },
         {
@@ -1024,24 +894,20 @@
         },
         {
           "level": 16,
-          "gems": 0,
           "coins": 1000
         },
         {
           "level": 17,
-          "gems": 0,
           "coins": 1000
         },
         {
           "level": 18,
-          "gems": 0,
           "coins": 1000,
           "extra_type": "donkey",
           "extra": "#40"
         },
         {
           "level": 19,
-          "gems": 0,
           "coins": 1000
         },
         {
@@ -1051,12 +917,10 @@
         },
         {
           "level": 21,
-          "gems": 0,
           "coins": 1000
         },
         {
           "level": 22,
-          "gems": 0,
           "coins": 1000
         },
         {
@@ -1066,23 +930,19 @@
         },
         {
           "level": 24,
-          "gems": 0,
           "coins": 1000
         },
         {
           "level": 25,
-          "gems": 0,
           "coins": 1000
         }
       ]
     },
     {
       "id": 8,
-      "active": true,
       "header": "#1/asuKDhx.jpg",
       "donkey": "#1/8N0Cpx0.png",
       "title": "High Roller Season",
-      "days": 14,
       "date": "08.06.2015",
       "date_end": "05.07.2015",
       "prizes": [
@@ -1095,7 +955,6 @@
         },
         {
           "level": 2,
-          "gems": 0,
           "coins": 3000
         },
         {
@@ -1105,19 +964,16 @@
         },
         {
           "level": 4,
-          "gems": 0,
           "coins": 3000,
           "extra_type": "donkey",
           "extra": "#47"
         },
         {
           "level": 5,
-          "gems": 0,
           "coins": 2000
         },
         {
           "level": 6,
-          "gems": 0,
           "coins": 2000
         },
         {
@@ -1129,17 +985,14 @@
         },
         {
           "level": 8,
-          "gems": 0,
           "coins": 2000
         },
         {
           "level": 9,
-          "gems": 0,
           "coins": 2000
         },
         {
           "level": 10,
-          "gems": 0,
           "coins": 2000,
           "extra_type": "paintjob",
           "extra": "8"
@@ -1151,19 +1004,16 @@
         },
         {
           "level": 12,
-          "gems": 0,
           "coins": 2000
         },
         {
           "level": 13,
-          "gems": 0,
           "coins": 2000,
           "extra_type": "donkey",
           "extra": "#45"
         },
         {
           "level": 14,
-          "gems": 0,
           "coins": 2000
         },
         {
@@ -1173,17 +1023,14 @@
         },
         {
           "level": 16,
-          "gems": 0,
           "coins": 1000
         },
         {
           "level": 17,
-          "gems": 0,
           "coins": 1000
         },
         {
           "level": 18,
-          "gems": 0,
           "coins": 1000,
           "extra_type": "donkey",
           "extra": "#44"
@@ -1195,17 +1042,14 @@
         },
         {
           "level": 20,
-          "gems": 0,
           "coins": 1000
         },
         {
           "level": 21,
-          "gems": 0,
           "coins": 1000
         },
         {
           "level": 22,
-          "gems": 0,
           "coins": 1000
         },
         {
@@ -1215,12 +1059,140 @@
         },
         {
           "level": 24,
-          "gems": 0,
           "coins": 1000
         },
         {
           "level": 25,
-          "gems": 0,
+          "coins": 1000
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "active": true,
+      "header": "#1/tBHSM2Y.jpg",
+      "donkey": "#1/3DNnvmr.png",
+      "title": "Sunburn Season",
+      "date": "05.07.2015",
+      "date_end": "02.08.2015",
+      "prizes": [
+        {
+          "level": 1,
+          "gems": 10,
+          "coins": 10000,
+          "extra_type": "donkey",
+          "extra": "#53"
+        },
+        {
+          "level": 2,
+          "coins": 3000
+        },
+        {
+          "level": 3,
+          "gems": 5,
+          "coins": 3000
+        },
+        {
+          "level": 4,
+          "coins": 3000,
+          "extra_type": "donkey",
+          "extra": "#52"
+        },
+        {
+          "level": 5,
+          "coins": 2000
+        },
+        {
+          "level": 6,
+          "coins": 2000
+        },
+        {
+          "level": 7,
+          "gems": 5,
+          "coins": 2000,
+          "extra_type": "donkey",
+          "extra": "#51"
+        },
+        {
+          "level": 8,
+          "coins": 2000
+        },
+        {
+          "level": 9,
+          "coins": 2000
+        },
+        {
+          "level": 10,
+          "coins": 2000,
+          "extra_type": "paintjob",
+          "extra": "9"
+        },
+        {
+          "level": 11,
+          "gems": 5,
+          "coins": 2000
+        },
+        {
+          "level": 12,
+          "coins": 2000
+        },
+        {
+          "level": 13,
+          "coins": 2000,
+          "extra_type": "donkey",
+          "extra": "#50"
+        },
+        {
+          "level": 14,
+          "coins": 2000
+        },
+        {
+          "level": 15,
+          "gems": 5,
+          "coins": 2000
+        },
+        {
+          "level": 16,
+          "coins": 1000
+        },
+        {
+          "level": 17,
+          "coins": 1000
+        },
+        {
+          "level": 18,
+          "coins": 1000,
+          "extra_type": "donkey",
+          "extra": "#49"
+        },
+        {
+          "level": 19,
+          "gems": 5,
+          "coins": 1000
+        },
+        {
+          "level": 20,
+          "coins": 1000
+        },
+        {
+          "level": 21,
+          "coins": 1000
+        },
+        {
+          "level": 22,
+          "coins": 1000
+        },
+        {
+          "level": 23,
+          "gems": 5,
+          "coins": 1000
+        },
+        {
+          "level": 24,
+          "coins": 1000
+        },
+        {
+          "level": 25,
           "coins": 1000
         }
       ]
