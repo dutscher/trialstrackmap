@@ -1,10 +1,10 @@
 {
   "stats": {
-    "update": "09.07.2015",
-    "rank": "77",
+    "update": "20.07.2015",
+    "rank": "131",
     "uplay": "Android: dutscher_sbf",
     "level": "45",
-    "app_version": "3.2.4",
+    "app_version": "3.3.0",
     "avatar": "https://uplay-avatars.s3.amazonaws.com/c58587cb-75c5-4a13-a359-1a6b01a116d0/default_146_146.png"
   },
   "credits": [
@@ -123,6 +123,11 @@
       "index": 12,
       "class": "secret",
       "color": "AB9A48"
+    },
+    {
+      "index": 13,
+      "class": "agent",
+      "color": "F5970F"
     }
   ],
   "tiers": [

@@ -1820,12 +1820,15 @@
   },
   {
     "id": 148,
-    "coords": "",
+    "coords": "1561,2164,60",
     "tier": 0,
     "cats": "12",
     "prio": 2,
     "startline": "#1/kWF7aGW.jpg",
-    "forum_link": "http://forums.ubi.com/showthread.php/1088856-!!!Rocks-Off-map"
+    "forum_links": [
+      "http://forums.ubi.com/showthread.php/1088856-!!!Rocks-Off-map",
+      "http://forums.ubi.com/showthread.php/1222906-Rocks-Off-map-update"
+    ]
   },
   {
     "id": 153,
@@ -1834,7 +1837,7 @@
     "cats": "12",
     "prio": 3,
     "startline": "#1/CfvLaOZ.jpg",
-    "forum_link": "http://forums.ubi.com/showthread.php/1104009-!!!-Prod22-Maria-2-map"
+    "forum_links": "http://forums.ubi.com/showthread.php/1104009-!!!-Prod22-Maria-2-map"
   },
   {
     "id": 154,
@@ -1851,5 +1854,13 @@
     "cats": "12",
     "prio": 5,
     "startline": "#1/SwOtCLF.jpg"
+  },
+  // agent tracks
+  {
+    "id": 156,
+    "coords": "",
+    "tier": 0,
+    "cats": "13",
+    "prio": 1
   }
 ]
