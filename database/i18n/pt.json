@@ -1,3 +1,4 @@
+
 {
   "page": {
     "title": "Trials Frontier Mapa do Mundo",
@@ -9,12 +10,12 @@
       "stats": "Estatísticas",
       "uplayID": "Uplay",
       "level": "Nível",
-      "globalRang": "Ranking Global",
+      "globalRang": "Classificação Global",
       "appVersion": "Versão do Aplicativo",
       "credits": "Creditos",
       "uplayFriends": "Amigos no Uplay",
       "usefullLinks": "Links úteis",
-      "comments": "Comentárioss",
+      "comments": "Comentários",
       "toggleMe": "Mostrar"
     },
     "rightSidebar": {
@@ -69,7 +70,7 @@
     "10": "China",
     "11": "Inverno",
     "12": "Vazado",
-    "13": "Agents"
+    "13": "Agentes"
   },
   "tiers": {
     "1": "Nível 1",
@@ -97,7 +98,7 @@
     "day_short": "d",
     "prices": "Prêmios",
     "donkey_state": "Estado Donkey",
-    "top20_legends": "Top 20 Lendas"
+    "top20_legends": "Lendas Top 20"
   },
   "tracks": {
     "1": "Penhasco Árido",
@@ -255,7 +256,7 @@
     "153": "!!!-Prod22 Maria 2",
     "154": "!!!-Prod28 Ukkis 1",
     "155": "!!!-Prod27 Maria 2",
-    "156": "Forgotten Factory",
+    "156": "Fábrica Esquecida",
     "157": "Rigged Roadway"
   }
 }
