@@ -392,7 +392,7 @@
   },
   {
     "id": 22,
-    "coords": "1147,2255,60",
+    "coords": "1063,2154,60",
     "tier": 1,
     "cats": "7",
     "startline": "#2/960x540q90/538/f5jXf0.png",
@@ -1819,18 +1819,6 @@
     "startline": "#1/TBt2uKy.png"
   },
   {
-    "id": 148,
-    "coords": "1561,2164,60",
-    "tier": 0,
-    "cats": "12",
-    "prio": 2,
-    "startline": "#1/kWF7aGW.jpg",
-    "forum_links": [
-      "http://forums.ubi.com/showthread.php/1088856-!!!Rocks-Off-map",
-      "http://forums.ubi.com/showthread.php/1222906-Rocks-Off-map-update"
-    ]
-  },
-  {
     "id": 153,
     "coords": "",
     "tier": 0,
@@ -1857,18 +1845,31 @@
   },
   // agent tracks
   {
-    "id": 156,
-    "coords": "",
-    "tier": 0,
-    "cats": "13",
-    "prio": 1
-  },
-  {
     "id": 157,
     "coords": "",
-    "tier": 0,
+    "tier": 1,
     "cats": "13",
     "prio": 2,
     "startline": "#1/5eRQ3p2.png"
+  },
+  {
+    "id": 156,
+    "coords": "1260,2049,60",
+    "tier": 1,
+    "cats": "13",
+    "prio": 1,
+    "startline": "#1/2AySuC7.png"
+  },
+  {
+    "id": 148,
+    "coords": "1561,2164,60",
+    "tier": 2,
+    "cats": "13",
+    "prio": 3,
+    "startline": "#1/kWF7aGW.jpg",
+    "forum_links": [
+      "http://forums.ubi.com/showthread.php/1088856-!!!Rocks-Off-map",
+      "http://forums.ubi.com/showthread.php/1222906-Rocks-Off-map-update"
+    ]
   }
 ]
