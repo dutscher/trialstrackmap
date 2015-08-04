@@ -108,6 +108,8 @@
                 <li>
                     <div class="wrap tierlegend">
                         <h2>{{'page.rightSidebar.tracks'|translate}} ({{::data.tracks.length}} total)</h2>
+                        <h3 ng-bind-html="::data.tracks|listPlayable"></h3>
+                        <hr>
                         <div class="mb10">
                             <h3>{{'page.rightSidebar.legend'|translate}}</h3>
                             <span ng-repeat="cat in data.map.cats" class="{{::cat.class}} with-cursor" show-cat-on-map="{cat:cat,catIndex:$index+1,tracks:data.tracks}">

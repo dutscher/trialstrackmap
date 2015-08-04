@@ -10,14 +10,15 @@
       "6": "Luchador Paintjob for Bronco",
       "7": "Scales Paintjob for Marauder",
       "8": "Lava Paintjob for Armadillo",
-      "9": "Spirits Paintjob for Berserker"
+      "9": "Spirits Paintjob for Berserker",
+      "10": "Footprint Paintjob for Marauder",
+      "11": "First Paintjob for Donkey"
     }
   },
   "seasons": [
     {
       "id": 1,
       "header": "#1/n4IpsNg.jpg",
-      "donkey": "#1/El0isBD.png",
       "title": "Opening Season",
       "days": 50,
       "date": "12.12.2014",
@@ -169,7 +170,6 @@
     {
       "id": 2,
       "header": "#1/6GM60c6.jpg",
-      "donkey": "#1/Q0c3rHo.png",
       "title": "Winter Season",
       "days": 28,
       "date": "09.02.2015",
@@ -309,7 +309,6 @@
     {
       "id": 3,
       "header": "#1/Q6mNVvf.jpg",
-      "donkey": "#1/6WYXI8j.png",
       "title": "Blitz Season",
       "days": 6,
       "date": "09.03.2015",
@@ -433,7 +432,6 @@
     {
       "id": 4,
       "header": "#1/BonUHCB.jpg",
-      "donkey": "#1/wDUXriM.png",
       "title": "Spring Season",
       "days": 30,
       "date": "16.03.2015",
@@ -559,7 +557,6 @@
     {
       "id": 5,
       "header": "#1/cXKyV9K.jpg",
-      "donkey": "#1/p6WJjTs.png",
       "title": "Donkey Season",
       "days": 28,
       "date": "16.04.2015",
@@ -689,7 +686,6 @@
     {
       "id": 6,
       "header": "#1/kKdrr62.jpg",
-      "donkey": "#1/FIwbI0U.png",
       "title": "Blitz Season II",
       "date": "14.05.2015",
       "date_end": "25.05.2015",
@@ -816,7 +812,6 @@
     {
       "id": 7,
       "header": "#1/1AKsFv9.jpg",
-      "donkey": "#1/IQUiutp.png",
       "title": "Summer Season",
       "date": "25.05.2015",
       "date_end": "08.06.2015",
@@ -941,7 +936,6 @@
     {
       "id": 8,
       "header": "#1/asuKDhx.jpg",
-      "donkey": "#1/8N0Cpx0.png",
       "title": "High Roller Season",
       "date": "08.06.2015",
       "date_end": "05.07.2015",
@@ -1069,12 +1063,10 @@
     },
     {
       "id": 9,
-      "active": true,
       "header": "#1/tBHSM2Y.jpg",
-      "donkey": "#1/3DNnvmr.png",
       "title": "Sunburn Season",
       "date": "05.07.2015",
-      "date_end": "02.08.2015",
+      "date_end": "03.08.2015",
       "prizes": [
         {
           "level": 1,
@@ -1185,6 +1177,133 @@
         {
           "level": 23,
           "gems": 5,
+          "coins": 1000
+        },
+        {
+          "level": 24,
+          "coins": 1000
+        },
+        {
+          "level": 25,
+          "coins": 1000
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "active": true,
+      "header": "#1/osbQMmH.jpg",
+      "title": "Blitz Season 3",
+      "date": "03.08.2015",
+      "date_end": "16.08.2015",
+      "prizes": [
+        {
+          "level": 1,
+          "gems": 10,
+          "coins": 10000,
+          "extra_type": "paintjob",
+          "extra": "11"
+        },
+        {
+          "level": 2,
+          "coins": 3000
+        },
+        {
+          "level": 3,
+          "coins": 3000
+        },
+        {
+          "level": 4,
+          "coins": 3000,
+          "extra_type": "donkey-new",
+          "extra": "#56",
+          "gems": 5
+        },
+        {
+          "level": 5,
+          "coins": 2000,
+          "gems": 5
+        },
+        {
+          "level": 6,
+          "coins": 2000
+        },
+        {
+          "level": 7,
+          "coins": 2000
+        },
+        {
+          "level": 8,
+          "coins": 2000,
+          "extra_type": "paintjob",
+          "extra": "10"
+        },
+        {
+          "level": 9,
+          "coins": 2000
+        },
+        {
+          "level": 10,
+          "coins": 2000,
+          "gems": 5
+        },
+        {
+          "level": 11,
+          "coins": 2000
+        },
+        {
+          "level": 12,
+          "coins": 2000
+        },
+        {
+          "level": 13,
+          "coins": 2000,
+          "gems": 5
+        },
+        {
+          "level": 14,
+          "coins": 2000
+        },
+        {
+          "level": 15,
+          "coins": 2000,
+          "extra_type": "donkey-new",
+          "extra": "#55"
+        },
+        {
+          "level": 16,
+          "coins": 1000
+        },
+        {
+          "level": 17,
+          "gems": 5,
+          "coins": 1000
+        },
+        {
+          "level": 18,
+          "coins": 2000
+        },
+        {
+          "level": 19,
+          "coins": 1000
+        },
+        {
+          "level": 20,
+          "coins": 1000,
+          "extra_type": "paintjob",
+          "extra": "5"
+        },
+        {
+          "level": 21,
+          "gems": 5,
+          "coins": 1000
+        },
+        {
+          "level": 22,
+          "coins": 1000
+        },
+        {
+          "level": 23,
           "coins": 1000
         },
         {
