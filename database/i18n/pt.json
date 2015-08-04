@@ -21,6 +21,10 @@
     "rightSidebar": {
       "legend": "Legenda",
       "tracks": "Pistas",
+      "on_map": "on map",
+      "only_bunker": "only bunker",
+      "leaked": "leaked",
+      "with_video": "with video",
       "searchForTrack": "Procurar Pista",
       "tier": "Nível"
     },

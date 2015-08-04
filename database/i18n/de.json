@@ -20,6 +20,10 @@
     "rightSidebar": {
       "legend": "Legende",
       "tracks": "Strecken",
+      "on_map": "auf der Karte",
+      "only_bunker": "nur im Bunker",
+      "leaked": "Leaked",
+      "with_video": "mit Video",
       "searchForTrack": "Suche nach einer Strecke",
       "tier": "Stufe"
     },
