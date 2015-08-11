@@ -21,10 +21,10 @@
     "rightSidebar": {
       "legend": "Legenda",
       "tracks": "Pistas",
-      "on_map": "on map",
-      "only_bunker": "only bunker",
-      "leaked": "leaked",
-      "with_video": "with video",
+      "on_map": "no mapa",
+      "only_bunker": "somente no bunker",
+      "leaked": "vazado",
+      "with_video": "com vídeo",
       "searchForTrack": "Procurar Pista",
       "tier": "Nível"
     },
@@ -62,7 +62,7 @@
     }
   },
   "cats": {
-    "1": "Ilha Hardcore",
+    "1": "Ilha do Desafio",
     "2": "Trocas A.N.B.A",
     "3": "Máquina Caça-Níquel",
     "4": "Roda dos Itens",
