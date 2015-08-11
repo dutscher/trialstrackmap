@@ -1878,5 +1878,12 @@
       "http://forums.ubi.com/showthread.php/1088856-!!!Rocks-Off-map",
       "http://forums.ubi.com/showthread.php/1222906-Rocks-Off-map-update"
     ]
+  },
+  {
+    "id": 158,
+    "coords": "",
+    "tier": 2,
+    "cats": "13",
+    "prio": 4
   }
 ]
