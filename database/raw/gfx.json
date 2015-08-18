@@ -115,9 +115,10 @@
       "selector": "i.lang.lang_pt"
     },
     "part": {
-      "src": "#1/vX7YYMs.png",
+      "src": "#1/QBz8k4t.jpg",
       "lSrc": "#0/currencies/parts.png",
-      "selector": "i.part"
+      "selector": "i.part",
+      "sprite": true
     },
     "parts": {
       "src": "#1/uSLJtjP.png",

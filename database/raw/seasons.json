@@ -1,6 +1,7 @@
 {
   "prizes": {
     "donkey": "The Donkey Blueprint",
+    "parts": "Part",
     "paintjob": {
       "1": "Neon Paintjob for Tango",
       "2": "Aloha Paintjob for Bronco",
@@ -1191,7 +1192,6 @@
     },
     {
       "id": 10,
-      "active": true,
       "header": "#1/osbQMmH.jpg",
       "title": "Blitz Season 3",
       "date": "03.08.2015",
@@ -1313,6 +1313,164 @@
         {
           "level": 25,
           "coins": 1000
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "active": true,
+      "header": "#1/u07iEav.jpg",
+      "title": "Agent Season",
+      "date": "16.08.2015",
+      "date_end": "13.09.2015",
+      "prizes": [
+        {
+          "level": 1,
+          "extra_type": "part",
+          "extra": "spark-5",
+          "coins": 8000,
+          "gems": 10
+        },
+        {
+          "level": 2,
+          "extra_type": "part",
+          "extra": "gear-4",
+          "coins": 4000
+        },
+        {
+          "level": 3,
+          "extra_type": "donkey-new",
+          "extra": "#60",
+          "coins": 3000,
+          "gems": 6
+        },
+        {
+          "level": 4,
+          "extra_type": "part",
+          "extra": "piston-4",
+          "coins": 2000
+        },
+        {
+          "level": 5,
+          "extra_type": "donkey-new",
+          "extra": "#59",
+          "coins": 1500,
+          "gems": 4
+        },
+        {
+          "level": 6,
+          "extra_type": "part",
+          "extra": "bearing-3",
+          "coins": 1500
+        },
+        {
+          "level": 7,
+          "extra_type": "donkey-new",
+          "extra": "#58",
+          "coins": 1500
+        },
+        {
+          "level": 8,
+          "extra_type": "part",
+          "extra": "pipe-3",
+          "coins": 1500
+        },
+        {
+          "level": 9,
+          "extra_type": "donkey-new",
+          "extra": "#57",
+          "coins": 1500,
+          "gems": 4
+        },
+        {
+          "level": 10,
+          "extra_type": "paintjob",
+          "extra": "1",
+          "coins": 1000
+        },
+        {
+          "level": 11,
+          "extra_type": "donkey-new",
+          "extra": "#57",
+          "gems": 3,
+          "coins": 1000
+        },
+        {
+          "level": 12,
+          "extra_type": "part",
+          "extra": "spring-2",
+          "coins": 1000
+        },
+        {
+          "level": 13,
+          "coins": 1000,
+          "gems": 2
+        },
+        {
+          "level": 14,
+          "extra_type": "part",
+          "extra": "bolt-1",
+          "coins": 1000
+        },
+        {
+          "level": 15,
+          "gems": 1,
+          "coins": 750
+        },
+        {
+          "level": 16,
+          "extra_type": "part",
+          "extra": "nut-1",
+          "coins": 750
+        },
+        {
+          "level": 17,
+          "gems": 1,
+          "coins": 750
+        },
+        {
+          "level": 18,
+          "extra_type": "part",
+          "extra": "bolt-1",
+          "coins": 750
+        },
+        {
+          "level": 19,
+          "gems": 1,
+          "coins": 750
+        },
+        {
+          "level": 20,
+          "extra_type": "part",
+          "extra": "nut-1",
+          "coins": 750
+        },
+        {
+          "level": 21,
+          "gems": 1,
+          "coins": 750
+        },
+        {
+          "level": 22,
+          "extra_type": "part",
+          "extra": "bolt-1",
+          "coins": 750
+        },
+        {
+          "level": 23,
+          "gems": 1,
+          "coins": 750
+        },
+        {
+          "level": 24,
+          "extra_type": "part",
+          "extra": "nut-1",
+          "coins": 750
+        },
+        {
+          "level": 25,
+          "gems": 1,
+          "coins": 750
         }
       ]
     }

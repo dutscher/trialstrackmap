@@ -53,7 +53,7 @@
                             <i class="season-level-{{::level.level}} seasons"></i>
                         </td>
                         <td title="{{::level.title}}">
-                            <i ng-if="level.extra" class="season-extra-{{::level.css_selector}} seasons"></i>
+                            <i ng-if="level.extra" class="season-extra-{{::level.css_selector}} {{::level.sprite}}"></i>
                         </td>
                         <td class="right">
                             + {{::level.coins}} <i class="coins"></i><br />
@@ -69,7 +69,7 @@
                 <div ng-repeat="extra in season.summary.extras" title="{{extra.title}}">
                     +
                     <span ng-if="extra.amount > 1">{{::extra.amount}} x</span>
-                    <i class="season-extra-{{::extra.css_selector}} seasons"></i>
+                    <i class="season-extra-{{::extra.css_selector}} {{::extra.sprite}}"></i>
                 </div>
             </div>
 
