@@ -29,7 +29,7 @@ h1, h2, h3{
     text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
-.seasons-list{white-space:nowrap}
+.seasons-list{white-space:nowrap;display: flex;}
 .season-container{display:inline-block;width:300px;margin-right:10px;vertical-align:top}
 .season-container .season-banner{width:300px;height:41px}
 .season-container .season-bike-state{width:300px;height:169px}
