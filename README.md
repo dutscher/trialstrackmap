@@ -98,3 +98,9 @@ $ grunt server
 
 > # FatalDragon69
 > awesome job you've done with the map by the way
+
+> # xitooner
+> We are proud of you too dutscher_sbf.
+
+> # yoshiki-aoki
+> I’m so proud of you
