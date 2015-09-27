@@ -384,3 +384,8 @@ img.trackmap.loaded{
 	left:-10000px;
 	top:-10000px;
 }
+
+.without-coords {
+    font-size: 14px;
+    margin-left: 14px;
+}
