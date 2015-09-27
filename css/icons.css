@@ -27,3 +27,6 @@ i[class^="medal-"]{
 [part-list] i:last-child, [part-list] span:last-child{
     margin-right:0;
 }
+.hardcore-2 {
+    text-shadow:0px 1px 0px #FF00C3;
+}

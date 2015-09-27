@@ -73,7 +73,9 @@
     "10": "China",
     "11": "Winter",
     "12": "Leaked",
-    "13": "Agenten"
+    "13": "Agenten",
+    "14": "Etremes Trackpack 2",
+    "15": "Rodeo"
   },
   "tiers": {
     "1": "Stufe 1",
@@ -262,6 +264,20 @@
     "157": "Manipulierte Fahrbahn",
     "158": "Barren Steps",
     "148": "Rocks Off",
-    "159": "Villainous Hideout"
+    "159": "Villainous Hideout",
+    "160": "Fatality Lane",
+    "161": "Girder Precinct",
+    "162": "Stuntman Plaza",
+    "163": "Rite Passage",
+    "164": "Merchandise Stash",
+    "165": "Grease Transit",
+    "166": "Collapsed Orchard",
+    "167": "Crow Nest",
+    "168": "Vagrant Camp",
+    "169": "Gem Quarry",
+    "170": "Unknown",
+    "171": "Tribal Homestead",
+    "172": "Toxin Harvest",
+    "173": "The Big Swing"
   }
 }

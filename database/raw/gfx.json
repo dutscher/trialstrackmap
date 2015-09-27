@@ -1,10 +1,10 @@
 {
   "images": {
     "trackmap": {
-      "src": "#1/ZS9wNeD.jpg",
+      "src": "#1/pXQmj04.jpg",
       "lSrc": "#0/trackmap.en.jpg",
       "alt": "Trails Frontier Trackmap",
-      "dim": "3051x2495"
+      "dim": "3614x2495"
     },
     "candy": {
       "src": "#1/HuTSmQ0.png",
@@ -141,7 +141,7 @@
       "selector": "i.coins"
     },
     "seasons": {
-      "src": "#1/IN7H1pN.jpg",
+      "src": "#1/Xvr5aV1.jpg",
       "lSrc": "#0/sprites/seasons.jpg",
       "selector": "i.seasons",
       "sprite": true

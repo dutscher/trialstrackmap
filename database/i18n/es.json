@@ -73,7 +73,9 @@
     "10": "China",
     "11": "Invierno",
     "12": "Filtrado",
-    "13": "Agentes"
+    "13": "Agentes",
+    "14": "Challenge Track Pack 2",
+    "15": "Rodeo"
   },
   "tiers": {
     "1": "Nivel 1",
@@ -262,6 +264,20 @@
     "157": "Carretera manipulado",
     "158": "Peldaños baldíos",
     "148": "Desde las rocas",
-    "159": "Escondite de villanos"
+    "159": "Escondite de villanos",
+    "160": "Fatality Lane",
+    "161": "Girder Precinct",
+    "162": "Stuntman Plaza",
+    "163": "Rite Passage",
+    "164": "Merchandise Stash",
+    "165": "Grease Transit",
+    "166": "Collapsed Orchard",
+    "167": "Crow Nest",
+    "168": "Vagrant Camp",
+    "169": "Gem Quarry",
+    "170": "Unknown",
+    "171": "Tribal Homestead",
+    "172": "Toxin Harvest",
+    "173": "The Big Swing"
   }
 }

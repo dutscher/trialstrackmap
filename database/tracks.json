@@ -2,7 +2,7 @@
   // "tier 1 / story"
   {
     "id": 1,
-    "coords": "1769,1294,60",
+    "coords": "2282,1298,60",
     "tier": 1,
     "cats": "7,6",
     "startline": "#2/960x540q90/674/A9zhs0.png",
@@ -18,7 +18,7 @@
   },
   {
     "id": 2,
-    "coords": "1651,1269,60",
+    "coords": "2161,1269,60",
     "tier": 1,
     "cats": "7",
     "startline": "#2/960x540q90/743/nbiK9G.png",
@@ -27,7 +27,7 @@
   },
   {
     "id": 3,
-    "coords": "1554,1181,60",
+    "coords": "2067,1181,60",
     "tier": 1,
     "cats": "7",
     "startline": "#2/960x540q90/904/umi4EQ.png",
@@ -42,7 +42,7 @@
   },
   {
     "id": 4,
-    "coords": "1421,1260,60",
+    "coords": "1934,1260,60",
     "tier": 1,
     "cats": "7",
     "startline": "#2/960x540q90/537/eTQc0D.png",
@@ -51,7 +51,7 @@
   },
   {
     "id": 5,
-    "coords": "1395,1085,60",
+    "coords": "1908,1085,60",
     "tier": 1,
     "cats": "7",
     "startline": "#2/960x540q90/910/qxTNCL.png",
@@ -60,7 +60,7 @@
   },
   {
     "id": 6,
-    "coords": "1160,1167,60",
+    "coords": "1673,1167,60",
     "tier": 1,
     "cats": "7",
     "startline": "#2/960x540q90/674/urC3au.png",
@@ -83,7 +83,7 @@
   },
   {
     "id": 7,
-    "coords": "1048,1233,60",
+    "coords": "1561,1233,60",
     "tier": 1,
     "cats": "7,6",
     "startline": "#2/960x540q90/537/rjcWQs.png",
@@ -103,7 +103,7 @@
   },
   {
     "id": 8,
-    "coords": "1002,1340,60",
+    "coords": "1514,1332,60",
     "tier": 1,
     "cats": "7,6",
     "startline": "#2/960x540q90/537/Q8Z8Fk.png",
@@ -127,7 +127,7 @@
   },
   {
     "id": 9,
-    "coords": "1069,1447,60",
+    "coords": "1581,1447,60",
     "tier": 1,
     "cats": "7,6",
     "startline": "#2/960x540q90/910/WmTlq5.png",
@@ -147,7 +147,7 @@
   },
   {
     "id": 10,
-    "coords": "1202,1492,60",
+    "coords": "1716,1492,60",
     "tier": 1,
     "cats": "7",
     "startline": "#2/960x540q90/673/SoJw2I.png",
@@ -170,7 +170,7 @@
   },
   {
     "id": 11,
-    "coords": "1192,1651,60",
+    "coords": "1706,1651,60",
     "tier": 1,
     "cats": "7",
     "startline": "#2/960x540q90/902/RnN6t8.png",
@@ -193,7 +193,7 @@
   },
   {
     "id": 12,
-    "coords": "1331,1615,60",
+    "coords": "1847,1615,60",
     "tier": 1,
     "cats": "7",
     "startline": "#2/960x540q90/661/5SRfCd.png",
@@ -212,7 +212,7 @@
   },
   {
     "id": 13,
-    "coords": "1270,1768,60",
+    "coords": "1779,1768,60",
     "tier": 1,
     "cats": "7,6",
     "startline": "#2/960x540q90/909/6lBroZ.png",
@@ -228,7 +228,7 @@
   },
   {
     "id": 14,
-    "coords": "1357,1882,60",
+    "coords": "1867,1882,60",
     "tier": 1,
     "cats": "7",
     "startline": "#2/960x540q90/540/IbB3bo.png",
@@ -247,7 +247,7 @@
   },
   {
     "id": 15,
-    "coords": "1213,1906,60",
+    "coords": "1728,1906,60",
     "tier": 1,
     "cats": "7",
     "startline": "#2/960x540q90/661/etbnos.png",
@@ -266,7 +266,7 @@
   },
   {
     "id": 16,
-    "coords": "1053,1928,60",
+    "coords": "1567,1928,60",
     "tier": 1,
     "cats": "7",
     "startline": "http://s4.postimg.org/yt5tx72ct/Screenshot_2015_03_25_07_44_21.png",
@@ -293,7 +293,7 @@
   },
   {
     "id": 17,
-    "coords": "937,1876,60",
+    "coords": "1450,1876,60",
     "tier": 1,
     "cats": "7,6",
     "startline": "#2/960x540q90/743/SoOMAu.png",
@@ -317,7 +317,7 @@
   },
   {
     "id": 18,
-    "coords": "897,1723,60",
+    "coords": "1414,1722,60",
     "tier": 1,
     "cats": "7",
     "startline": "#2/960x540q90/911/ENLrQI.png",
@@ -344,7 +344,7 @@
   },
   {
     "id": 19,
-    "coords": "815,1608,60",
+    "coords": "1329,1613,60",
     "tier": 1,
     "cats": "7,6",
     "startline": "#2/960x540q90/912/abzQDs.png",
@@ -368,7 +368,7 @@
   },
   {
     "id": 20,
-    "coords": "857,1484,60",
+    "coords": "1372,1484,60",
     "tier": 1,
     "cats": "7",
     "startline": "#2/960x540q90/661/FwItRu.png",
@@ -377,7 +377,7 @@
   },
   {
     "id": 21,
-    "coords": "792,1378,60",
+    "coords": "1301,1378,60",
     "tier": 1,
     "cats": "7",
     "startline": "#2/960x540q90/909/Tjjyck.png",
@@ -392,7 +392,7 @@
   },
   {
     "id": 22,
-    "coords": "1063,2154,60",
+    "coords": "1600,2129,60",
     "tier": 1,
     "cats": "7",
     "startline": "#2/960x540q90/538/f5jXf0.png",
@@ -411,7 +411,7 @@
   },
   {
     "id": 23,
-    "coords": "945,1112,60",
+    "coords": "1461,1119,60",
     "tier": 1,
     "cats": "7",
     "startline": "#2/1136x640q90/538/I7mg4I.jpg",
@@ -421,7 +421,7 @@
   // tier 1 / timemachine
   {
     "id": 24,
-    "coords": "1823,1375,60",
+    "coords": "2378,1405,60",
     "tier": 1,
     "cats": "5",
     "startline": "#2/960x540q90/540/gPRBg2.png",
@@ -430,7 +430,7 @@
   },
   {
     "id": 25,
-    "coords": "1925,1462,60",
+    "coords": "2460,1485,60",
     "tier": 1,
     "cats": "5",
     "startline": "#2/960x540q90/909/iUuAJN.png",
@@ -439,7 +439,7 @@
   },
   {
     "id": 26,
-    "coords": "1842,1565,60",
+    "coords": "2362,1565,60",
     "tier": 1,
     "cats": "5,6",
     "startline": "#2/960x540q90/902/QIUH1F.png",
@@ -450,7 +450,7 @@
   // tier 1 / lootwheel
   {
     "id": 27,
-    "coords": "721,1264,60",
+    "coords": "1232,1264,60",
     "tier": 1,
     "cats": "4",
     "startline": "#2/960x540q90/745/Tczjnt.png",
@@ -459,7 +459,7 @@
   },
   {
     "id": 28,
-    "coords": "1045,1646,60",
+    "coords": "1558,1646,60",
     "tier": 1,
     "cats": "4,6",
     "startline": "#2/960x540q90/540/zrpPVQ.png",
@@ -469,7 +469,7 @@
   },
   {
     "id": 29,
-    "coords": "1072,1055,60",
+    "coords": "1585,1055,60",
     "tier": 1,
     "cats": "4",
     "startline": "#2/1136x640q90/537/clkqXV.jpg",
@@ -478,7 +478,7 @@
   },
   {
     "id": 30,
-    "coords": "1211,1002,60",
+    "coords": "1723,1002,60",
     "tier": 1,
     "cats": "4",
     "startline": "#2/1136x640q90/540/XQJ8Eh.jpg",
@@ -487,7 +487,7 @@
   },
   {
     "id": 31,
-    "coords": "1415,1717,60",
+    "coords": "1928,1717,60",
     "tier": 1,
     "cats": "4",
     "startline": "#2/1136x640q90/661/lW9jbG.jpg",
@@ -497,7 +497,7 @@
   // tier 1 / slotmachine
   {
     "id": 32,
-    "coords": "1480,1972,60",
+    "coords": "1993,1972,60",
     "tier": 1,
     "cats": "3",
     "startline": "#2/960x540q90/673/FkNAne.png",
@@ -507,7 +507,7 @@
   },
   {
     "id": 33,
-    "coords": "1690,2024,60",
+    "coords": "2204,2024,60",
     "tier": 1,
     "cats": "3",
     "startline": "#2/960x540q90/540/arIWYD.png",
@@ -517,7 +517,7 @@
   },
   {
     "id": 34,
-    "coords": "1852,2091,60",
+    "coords": "2365,2091,60",
     "tier": 1,
     "cats": "3",
     "startline": "#2/960x540q90/746/xCRuFY.png",
@@ -527,7 +527,7 @@
   },
   {
     "id": 35,
-    "coords": "1988,2056,60",
+    "coords": "2501,2056,60",
     "tier": 1,
     "cats": "3",
     "startline": "#2/960x540q90/746/qwnrYQ.png",
@@ -537,7 +537,7 @@
   },
   {
     "id": 36,
-    "coords": "2132,2126,60",
+    "coords": "2644,2126,60",
     "tier": 1,
     "cats": "3",
     "startline": "#2/960x540q90/908/I2AkQt.png",
@@ -547,7 +547,7 @@
   },
   {
     "id": 37,
-    "coords": "2286,2181,60",
+    "coords": "2799,2181,60",
     "tier": 1,
     "cats": "3,6",
     "startline": "#2/960x540q90/742/z3BStr.png",
@@ -558,7 +558,7 @@
   },
   {
     "id": 38,
-    "coords": "838,1202,60",
+    "coords": "1352,1202,60",
     "tier": 1,
     "cats": "3",
     "startline": "#2/1136x640q50/674/NWBxGp.jpg",
@@ -569,7 +569,7 @@
   // tier 1 / swamp
   {
     "id": 39,
-    "coords": "1244,1328,60",
+    "coords": "1759,1317,60",
     "tier": 1,
     "cats": "2,6",
     "startline": "#2/960x540q90/674/SrCQMU.png",
@@ -579,7 +579,7 @@
   },
   {
     "id": 40,
-    "coords": "1319,1409,60",
+    "coords": "1834,1409,60",
     "tier": 1,
     "cats": "2",
     "startline": "#2/960x540q90/540/tDcQ2s.png",
@@ -588,7 +588,7 @@
   },
   {
     "id": 41,
-    "coords": "1404,1492,60",
+    "coords": "1922,1519,60",
     "tier": 1,
     "cats": "2",
     "startline": "#2/960x540q90/742/l0ygqH.png",
@@ -597,7 +597,7 @@
   },
   {
     "id": 42,
-    "coords": "1576,1439,60",
+    "coords": "2038,1615,60",
     "tier": 1,
     "cats": "2",
     "startline": "#2/960x540q90/912/lSC4eC.png",
@@ -607,7 +607,7 @@
   // tier 1 / island
   {
     "id": 43,
-    "coords": "1977,1033,60",
+    "coords": "2491,1033,60",
     "tier": 1,
     "cats": "1",
     "startline": "#2/960x540q90/540/GNH4XM.png",
@@ -616,7 +616,7 @@
   },
   {
     "id": 44,
-    "coords": "2099,1120,60",
+    "coords": "2612,1120,60",
     "tier": 1,
     "cats": "1",
     "startline": "#2/960x540q90/743/MgLPO5.png",
@@ -625,7 +625,7 @@
   },
   {
     "id": 45,
-    "coords": "2270,1174,60",
+    "coords": "2782,1174,60",
     "tier": 1,
     "cats": "1",
     "startline": "#2/960x540q90/745/IFYn58.png",
@@ -634,7 +634,7 @@
   },
   {
     "id": 46,
-    "coords": "2135,1259,60",
+    "coords": "2646,1259,60",
     "tier": 1,
     "cats": "1",
     "startline": "#2/960x540q90/673/ISTewH.png",
@@ -643,7 +643,7 @@
   },
   {
     "id": 47,
-    "coords": "2298,1345,60",
+    "coords": "2812,1345,60",
     "tier": 1,
     "cats": "1",
     "startline": "#2/960x540q90/661/IcNaTb.png",
@@ -652,17 +652,17 @@
   },
   {
     "id": 48,
-    "coords": "2447,1324,60",
+    "coords": "2961,1324,60",
     "tier": 1,
     "cats": "1",
     "startline": "#2/960x540q90/742/a6E1YL.png",
     "prio": -1,
     "oid": 1179
   },
-  // tier 1 / pumpkin
+  // pumpkin
   {
     "id": 49,
-    "coords": "772,1817,60",
+    "coords": "1284,1817,60",
     "tier": 1,
     "cats": "8",
     "startline": "http://s14.postimg.org/gw6wpldup/Pumpkin_Patch.png",
@@ -670,17 +670,35 @@
   },
   {
     "id": 50,
-    "coords": "679,1687,60",
+    "coords": "1196,1687,60",
     "tier": 1,
     "cats": "8",
     "startline": "http://s13.postimg.org/m4e1nvxfr/Doom_Drop.png",
     "prio": -1,
     "oid": 1189
   },
+  {
+    "id": 89,
+    "coords": "1094,1592,60",
+    "tier": 2,
+    "cats": "8",
+    "startline": "http://s8.postimg.org/vjbjo35np/terror_tower.jpg",
+    "prio": -1,
+    "oid": 1204
+  },
+  {
+    "id": 90,
+    "coords": "1154,1451,60",
+    "tier": 2,
+    "cats": "8",
+    "startline": "http://s28.postimg.org/wm5lsndsd/HAunted_Hallows.jpg",
+    "prio": -1,
+    "oid": 1205
+  },
   // tier 2 / story
   {
     "id": 51,
-    "coords": "888,2028,60",
+    "coords": "1405,2028,60",
     "tier": 2,
     "cats": "7",
     "startline": "#2/960x540q90/537/1rWH2L.png",
@@ -711,7 +729,7 @@
   },
   {
     "id": 52,
-    "coords": "772,2143,60",
+    "coords": "1285,2143,60",
     "tier": 2,
     "cats": "7",
     "startline": "#2/960x540q90/673/g5ZfDm.png",
@@ -726,7 +744,7 @@
   },
   {
     "id": 53,
-    "coords": "838,2277,60",
+    "coords": "1351,2277,60",
     "tier": 2,
     "cats": "7",
     "startline": "#2/960x540q90/540/QHpTyK.png",
@@ -745,7 +763,7 @@
   },
   {
     "id": 54,
-    "coords": "693,2315,60",
+    "coords": "1204,2315,60",
     "tier": 2,
     "cats": "7",
     "startline": "#2/960x540q90/902/2UWKc8.png",
@@ -764,7 +782,7 @@
   },
   {
     "id": 55,
-    "coords": "573,2207,60",
+    "coords": "1090,2207,60",
     "tier": 2,
     "cats": "7",
     "startline": "#2/960x540q90/674/hbQusK.png",
@@ -783,7 +801,7 @@
   },
   {
     "id": 56,
-    "coords": "625,2055,60",
+    "coords": "1137,2055,60",
     "tier": 2,
     "cats": "7,6",
     "startline": "#2/960x540q90/745/7lKcMf.png",
@@ -803,7 +821,7 @@
   },
   {
     "id": 57,
-    "coords": "591,1891,60",
+    "coords": "1102,1891,60",
     "tier": 2,
     "cats": "7",
     "startline": "#2/960x540q90/673/BjuM5B.png",
@@ -834,7 +852,7 @@
   },
   {
     "id": 58,
-    "coords": "513,1763,60",
+    "coords": "1024,1763,60",
     "tier": 2,
     "cats": "7",
     "startline": "#2/960x540q90/674/KLQNzb.png",
@@ -857,7 +875,7 @@
   },
   {
     "id": 59,
-    "coords": "388,1687,60",
+    "coords": "901,1687,60",
     "tier": 2,
     "cats": "7",
     "startline": "#2/960x540q90/673/eoto0a.png",
@@ -880,7 +898,7 @@
   },
   {
     "id": 60,
-    "coords": "328,1506,60",
+    "coords": "843,1506,60",
     "tier": 2,
     "cats": "7,6",
     "startline": "#2/960x540q90/902/b0FHRn.png",
@@ -904,7 +922,7 @@
   },
   {
     "id": 61,
-    "coords": "217,1743,60",
+    "coords": "732,1743,60",
     "tier": 2,
     "cats": "7",
     "startline": "#2/960x540q90/537/Ww0wlP.png",
@@ -931,7 +949,7 @@
   },
   {
     "id": 62,
-    "coords": "137,1605,60",
+    "coords": "649,1605,60",
     "tier": 2,
     "cats": "7",
     "startline": "#2/960x540q90/661/JQMGix.png",
@@ -950,7 +968,7 @@
   },
   {
     "id": 63,
-    "coords": "180,1443,60",
+    "coords": "694,1443,60",
     "tier": 2,
     "cats": "7",
     "startline": "#2/960x540q90/661/eJrZSm.png",
@@ -959,7 +977,7 @@
   },
   {
     "id": 64,
-    "coords": "127,1288,60",
+    "coords": "641,1291,60",
     "tier": 2,
     "cats": "7,6",
     "startline": "#2/960x540q90/904/dCyuNR.png",
@@ -975,7 +993,7 @@
   },
   {
     "id": 65,
-    "coords": "239,1176,60",
+    "coords": "751,1176,60",
     "tier": 2,
     "cats": "7",
     "startline": "#2/960x540q90/904/ZYjOAV.png",
@@ -994,7 +1012,7 @@
   },
   {
     "id": 66,
-    "coords": "251,992,60",
+    "coords": "763,992,60",
     "tier": 2,
     "cats": "7",
     "startline": "#2/960x540q90/913/exb8VT.png",
@@ -1013,7 +1031,7 @@
   },
   {
     "id": 67,
-    "coords": "142,889,60",
+    "coords": "656,889,60",
     "tier": 2,
     "cats": "7",
     "startline": "#2/960x540q90/540/5lMySD.png",
@@ -1028,7 +1046,7 @@
   },
   {
     "id": 68,
-    "coords": "85,746,60",
+    "coords": "600,746,60",
     "tier": 2,
     "cats": "7",
     "startline": "#2/960x540q90/911/hsEvMU.png",
@@ -1037,7 +1055,7 @@
   },
   {
     "id": 69,
-    "coords": "232,686,60",
+    "coords": "744,686,60",
     "tier": 2,
     "cats": "7",
     "startline": "#2/960x540q90/540/cpDZWr.png",
@@ -1052,7 +1070,7 @@
   },
   {
     "id": 70,
-    "coords": "447,1428,60",
+    "coords": "962,1428,60",
     "tier": 2,
     "cats": "7",
     "startline": "#1/WLPUA9D.png",
@@ -1062,7 +1080,7 @@
   // tier 2 / lootwheel
   {
     "id": 71,
-    "coords": "345,600,60",
+    "coords": "861,600,60",
     "tier": 2,
     "cats": "4",
     "startline": "#2/960x540q90/913/dUo0Am.png",
@@ -1071,7 +1089,7 @@
   },
   {
     "id": 72,
-    "coords": "99,1064,60",
+    "coords": "614,1064,60",
     "tier": 2,
     "cats": "4",
     "startline": "#2/960x540q90/912/qc3iHB.png",
@@ -1080,7 +1098,7 @@
   },
   {
     "id": 73,
-    "coords": "470,655,60",
+    "coords": "984,655,60",
     "tier": 2,
     "cats": "4",
     "startline": "#2/1136x640q90/743/HIRiYs.jpg",
@@ -1089,7 +1107,7 @@
   },
   {
     "id": 74,
-    "coords": "689,648,60",
+    "coords": "1201,643,60",
     "tier": 2,
     "cats": "4",
     "startline": "#2/1136x640q90/673/SSYZg8.jpg",
@@ -1098,7 +1116,7 @@
   },
   {
     "id": 75,
-    "coords": "444,1277,60",
+    "coords": "956,1277,60",
     "tier": 2,
     "cats": "4,6",
     "startline": "#2/1136x640q90/903/jVnGX3.jpg",
@@ -1108,7 +1126,7 @@
   },
   {
     "id": 76,
-    "coords": "269,2367,60",
+    "coords": "783,2367,60",
     "tier": 2,
     "cats": "4",
     "startline": "#2/1136x640q90/913/7osrU4.jpg",
@@ -1117,7 +1135,7 @@
   },
   {
     "id": 77,
-    "coords": "584,579,60",
+    "coords": "1098,579,60",
     "tier": 2,
     "cats": "4",
     "startline": "#2/1136x640q90/746/TPdkFP.jpg",
@@ -1127,7 +1145,7 @@
   // tier 2 / slotmachine
   {
     "id": 78,
-    "coords": "388,1948,60",
+    "coords": "903,1948,60",
     "tier": 2,
     "cats": "3",
     "startline": "#2/960x540q90/674/xFuPLU.png",
@@ -1136,7 +1154,7 @@
   },
   {
     "id": 79,
-    "coords": "165,1923,60",
+    "coords": "680,1923,60",
     "tier": 2,
     "cats": "3",
     "startline": "#2/960x540q90/540/bDBzlO.png",
@@ -1146,7 +1164,7 @@
   },
   {
     "id": 80,
-    "coords": "138,2079,60",
+    "coords": "650,2079,60",
     "tier": 2,
     "cats": "3",
     "startline": "#2/960x540q50/674/3OjIvX.png",
@@ -1156,7 +1174,7 @@
   },
   {
     "id": 81,
-    "coords": "298,2149,60",
+    "coords": "814,2149,60",
     "tier": 2,
     "cats": "3",
     "startline": "#2/960x540q90/538/rTr1eo.png",
@@ -1166,7 +1184,7 @@
   },
   {
     "id": 82,
-    "coords": "122,2262,60",
+    "coords": "640,2262,60",
     "tier": 2,
     "cats": "3",
     "startline": "#2/960x540q90/746/4U1rGH.png",
@@ -1176,7 +1194,7 @@
   },
   {
     "id": 83,
-    "coords": "423,2233,60",
+    "coords": "936,2233,60",
     "tier": 2,
     "cats": "3",
     "startline": "#2/1136x640q90/674/oxaSIF.jpg",
@@ -1186,7 +1204,7 @@
   },
   {
     "id": 84,
-    "coords": "438,2403,60",
+    "coords": "953,2403,60",
     "tier": 2,
     "cats": "3",
     "startline": "#2/1136x640q90/743/nZAvSc.jpg",
@@ -1197,7 +1215,7 @@
   // tier 2 / swamp
   {
     "id": 85,
-    "coords": "1680,1533,60",
+    "coords": "2092,1734,60",
     "tier": 2,
     "cats": "2",
     "startline": "#2/960x540q90/661/u9pskI.png",
@@ -1206,7 +1224,7 @@
   },
   {
     "id": 86,
-    "coords": "1528,1622,60",
+    "coords": "2176,1858,60",
     "tier": 2,
     "cats": "2",
     "startline": "#2/960x540q90/743/HTkznX.png",
@@ -1215,7 +1233,7 @@
   },
   {
     "id": 87,
-    "coords": "1679,1706,60",
+    "coords": "2362,1811,60",
     "tier": 2,
     "cats": "2",
     "startline": "#2/960x540q90/673/u7Zr8M.png",
@@ -1224,36 +1242,17 @@
   },
   {
     "id": 88,
-    "coords": "1744,1833,60",
+    "coords": "2529,1774,60",
     "tier": 2,
     "cats": "2",
     "startline": "#2/960x540q90/537/Whcepd.png",
     "prio": -1,
     "oid": 1155
   },
-  // tier 2 / pumpkin
-  {
-    "id": 89,
-    "coords": "581,1592,60",
-    "tier": 2,
-    "cats": "8",
-    "startline": "http://s8.postimg.org/vjbjo35np/terror_tower.jpg",
-    "prio": -1,
-    "oid": 1204
-  },
-  {
-    "id": 90,
-    "coords": "639,1451,60",
-    "tier": 2,
-    "cats": "8",
-    "startline": "http://s28.postimg.org/wm5lsndsd/HAunted_Hallows.jpg",
-    "prio": -1,
-    "oid": 1205
-  },
   // tier 2 / china
   {
     "id": 131,
-    "coords": "326,808,60",
+    "coords": "840,812,60",
     "tier": 2,
     "cats": "10",
     "startline": "#1/GTyyz4k.jpg",
@@ -1262,7 +1261,7 @@
   // tier 3 / story
   {
     "id": 91,
-    "coords": "1825,1189,60",
+    "coords": "2337,1189,60",
     "tier": 3,
     "cats": "7,6",
     "startline": "#2/960x540q90/902/nCLqTm.png",
@@ -1272,7 +1271,7 @@
   },
   {
     "id": 92,
-    "coords": "1743,1101,60",
+    "coords": "2251,1101,60",
     "tier": 3,
     "cats": "7",
     "startline": "#2/960x540q90/540/w17AZn.png",
@@ -1281,7 +1280,7 @@
   },
   {
     "id": 93,
-    "coords": "1628,1007,60",
+    "coords": "2141,1007,60",
     "tier": 3,
     "cats": "7",
     "startline": "#2/960x540q90/743/ZKuDNu.png",
@@ -1291,7 +1290,7 @@
   },
   {
     "id": 94,
-    "coords": "1712,898,60",
+    "coords": "2224,898,60",
     "tier": 3,
     "cats": "7,6",
     "startline": "#2/960x540q90/673/tl5qdk.png",
@@ -1301,7 +1300,7 @@
   },
   {
     "id": 95,
-    "coords": "1767,779,60",
+    "coords": "2283,779,60",
     "tier": 3,
     "cats": "7",
     "startline": "#2/960x540q90/746/YZ95V3.png",
@@ -1310,7 +1309,7 @@
   },
   {
     "id": 96,
-    "coords": "1846,686,60",
+    "coords": "2362,686,60",
     "tier": 3,
     "cats": "7",
     "startline": "#2/960x540q90/540/iOVLf4.png",
@@ -1319,7 +1318,7 @@
   },
   {
     "id": 97,
-    "coords": "2011,637,60",
+    "coords": "2524,637,60",
     "tier": 3,
     "cats": "7",
     "startline": "#2/960x540q90/537/FFH7g9.png",
@@ -1328,7 +1327,7 @@
   },
   {
     "id": 98,
-    "coords": "2141,564,60",
+    "coords": "2654,564,60",
     "tier": 3,
     "cats": "7",
     "startline": "#2/960x540q90/537/VUbey6.png",
@@ -1337,7 +1336,7 @@
   },
   {
     "id": 99,
-    "coords": "2267,498,60",
+    "coords": "2781,498,60",
     "tier": 3,
     "cats": "7,6",
     "startline": "#2/960x540q90/673/xQBgbK.png",
@@ -1347,7 +1346,7 @@
   },
   {
     "id": 100,
-    "coords": "2430,434,60",
+    "coords": "2944,434,60",
     "tier": 3,
     "cats": "7,6",
     "startline": "#2/960x540q90/661/nzlyVp.png",
@@ -1357,7 +1356,7 @@
   },
   {
     "id": 101,
-    "coords": "2584,373,60",
+    "coords": "3098,373,60",
     "tier": 3,
     "cats": "7,6",
     "startline": "#2/960x540q90/673/xLgY1c.png",
@@ -1367,7 +1366,7 @@
   },
   {
     "id": 102,
-    "coords": "2694,472,60",
+    "coords": "3210,472,60",
     "tier": 3,
     "cats": "7",
     "startline": "#2/960x540q90/910/9AlDlt.png",
@@ -1376,7 +1375,7 @@
   },
   {
     "id": 103,
-    "coords": "1702,622,60",
+    "coords": "2218,622,60",
     "tier": 3,
     "cats": "7",
     "startline": "http://s10.postimg.org/exo8yf6eh/Dark_Machine.jpg",
@@ -1386,7 +1385,7 @@
   // tier 3 / lootwheel
   {
     "id": 104,
-    "coords": "1956,838,60",
+    "coords": "2470,838,60",
     "tier": 3,
     "cats": "4,6",
     "startline": "#2/960x540q90/913/pBWInd.png",
@@ -1396,7 +1395,7 @@
   },
   {
     "id": 105,
-    "coords": "1551,712,60",
+    "coords": "2063,712,60",
     "tier": 3,
     "cats": "4",
     "startline": "#2/1136x640q90/540/Ur5tSl.jpg",
@@ -1405,7 +1404,7 @@
   },
   {
     "id": 106,
-    "coords": "1576,574,60",
+    "coords": "2089,574,60",
     "tier": 3,
     "cats": "4,6",
     "startline": "#2/1136x640q90/673/5VaxTv.jpg",
@@ -1415,7 +1414,7 @@
   },
   {
     "id": 107,
-    "coords": "1772,421,60",
+    "coords": "2335,434,60",
     "tier": 3,
     "cats": "4",
     "startline": "#2/1136x640q90/661/ZrtvL2.jpg",
@@ -1424,7 +1423,7 @@
   },
   {
     "id": 108,
-    "coords": "2075,753,60",
+    "coords": "2586,753,60",
     "tier": 3,
     "cats": "4",
     "startline": "#2/1136x640q90/912/ngyoRn.jpg",
@@ -1434,7 +1433,7 @@
   // tier 3 / slotmachine
   {
     "id": 109,
-    "coords": "1841,948,60",
+    "coords": "2358,948,60",
     "tier": 3,
     "cats": "3",
     "startline": "#2/960x540q90/540/y9SOpd.png",
@@ -1444,7 +1443,7 @@
   },
   {
     "id": 110,
-    "coords": "1617,819,60",
+    "coords": "2132,819,60",
     "tier": 3,
     "cats": "3,6",
     "startline": "#2/960x540q90/661/khjHQh.png",
@@ -1455,7 +1454,7 @@
   },
   {
     "id": 111,
-    "coords": "2248,1819,60",
+    "coords": "2976,2010,60",
     "tier": 3,
     "cats": "3",
     "startline": "#2/960x540q90/661/0E6JzC.png",
@@ -1465,7 +1464,7 @@
   },
   {
     "id": 112,
-    "coords": "1887,524,60",
+    "coords": "2408,570,60",
     "tier": 3,
     "cats": "3",
     "startline": "#2/960x540q90/902/JA0fUq.png",
@@ -1475,7 +1474,7 @@
   // tier 3 / swamp
   {
     "id": 113,
-    "coords": "1928,1848,60",
+    "coords": "2704,1814,60",
     "tier": 3,
     "cats": "2",
     "startline": "#2/960x540q90/661/5Bs1mS.png",
@@ -1484,7 +1483,7 @@
   },
   {
     "id": 114,
-    "coords": "2105,1925,60",
+    "coords": "2828,1925,60",
     "tier": 3,
     "cats": "2",
     "startline": "#2/960x540q90/537/zCjS04.png",
@@ -1494,7 +1493,7 @@
   // tier 1 / the bunker
   {
     "id": 115,
-    "coords": "2218,1481,60",
+    "coords": "2731,1481,60",
     "tier": 1,
     "cats": "9",
     "startline": "http://s4.postimg.org/5vk5etnkd/Underground_Slopes.png",
@@ -1504,7 +1503,7 @@
   },
   {
     "id": 116,
-    "coords": "2287,1611,60",
+    "coords": "2801,1611,60",
     "tier": 1,
     "cats": "9",
     "startline": "http://s24.postimg.org/7nud3hoad/Abandoned_Mine.png",
@@ -1514,7 +1513,7 @@
   },
   {
     "id": 117,
-    "coords": "2437,1630,60",
+    "coords": "2948,1630,60",
     "tier": 1,
     "cats": "9",
     "startline": "http://s30.postimg.org/e33ogb8qp/Unstable_Tunnel.png",
@@ -1524,7 +1523,7 @@
   },
   {
     "id": 118,
-    "coords": "2571,1561,60",
+    "coords": "3087,1561,60",
     "tier": 1,
     "cats": "9",
     "startline": "http://s8.postimg.org/vco5h0mo5/Processing_Center.png",
@@ -1534,7 +1533,7 @@
   },
   {
     "id": 119,
-    "coords": "2636,1430,60",
+    "coords": "3150,1430,60",
     "tier": 1,
     "cats": "9",
     "startline": "http://s17.postimg.org/jm1g411n3/Cave_Crossing.png",
@@ -1544,7 +1543,7 @@
   },
   {
     "id": 120,
-    "coords": "2795,1503,60",
+    "coords": "3307,1503,60",
     "tier": 1,
     "cats": "9",
     "startline": "http://s24.postimg.org/yo011z7h1/Forbidden_Path.png",
@@ -1554,7 +1553,7 @@
   },
   {
     "id": 121,
-    "coords": "2846,1403,60",
+    "coords": "3358,1403,60",
     "tier": 2,
     "cats": "9",
     "prio": 7,
@@ -1564,7 +1563,7 @@
   },
   {
     "id": 122,
-    "coords": "2759,1286,60",
+    "coords": "3272,1286,60",
     "tier": 2,
     "cats": "9",
     "startline": "#1/zAl04fe.jpg",
@@ -1574,7 +1573,7 @@
   },
   {
     "id": 124,
-    "coords": "2812,1170,60",
+    "coords": "3325,1170,60",
     "tier": 2,
     "cats": "9",
     "startline": "#1/i9fHrst.jpg",
@@ -1584,7 +1583,7 @@
   },
   {
     "id": 125,
-    "coords": "2693,1032,60",
+    "coords": "3205,1032,60",
     "tier": 2,
     "cats": "9",
     "startline": "#1/3OSJaid.jpg",
@@ -1594,7 +1593,7 @@
   },
   {
     "id": 126,
-    "coords": "2549,1121,60",
+    "coords": "3064,1121,60",
     "tier": 2,
     "cats": "9",
     "startline": "#1/n4qivTJ.jpg",
@@ -1604,7 +1603,7 @@
   },
   {
     "id": 127,
-    "coords": "2414,1063,60",
+    "coords": "2929,1063,60",
     "tier": 3,
     "cats": "9",
     "startline": "#1/T1SEQDj.jpg",
@@ -1614,7 +1613,7 @@
   },
   {
     "id": 128,
-    "coords": "2527,944,60",
+    "coords": "3038,944,60",
     "tier": 3,
     "cats": "9",
     "startline": "#1/DioLKyE.jpg",
@@ -1624,7 +1623,7 @@
   },
   {
     "id": 129,
-    "coords": "2407,876,60",
+    "coords": "2919,876,60",
     "tier": 3,
     "cats": "9",
     "startline": "#1/0dShahO.png",
@@ -1634,7 +1633,7 @@
   },
   {
     "id": 130,
-    "coords": "2278,952,60",
+    "coords": "2791,952,60",
     "tier": 3,
     "cats": "9",
     "startline": "#1/h9urlsP.png",
@@ -1644,7 +1643,7 @@
   },
   {
     "id": 123,
-    "coords": "2196,854,60",
+    "coords": "2709,854,60",
     "tier": 3,
     "cats": "9",
     "startline": "#1/loD59O1.png",
@@ -1686,7 +1685,7 @@
   // winter tracks
   {
 	"id": 135,
-	"coords": "1476,920,60",
+	"coords": "2003,939,60",
 	"tier": 1,
 	"cats": "11",
 	"prio": 1,
@@ -1694,7 +1693,7 @@
   },
   {
 	"id": 136,
-	"coords": "1405,810,60",
+	"coords": "1930,838,60",
 	"tier": 1,
 	"cats": "11",
 	"prio": 2,
@@ -1702,7 +1701,7 @@
   },
   {
 	"id": 137,
-	"coords": "1279,731,60",
+	"coords": "1833,748,60",
 	"tier": 1,
 	"cats": "11",
 	"prio": 3,
@@ -1710,7 +1709,7 @@
   },
   {
 	"id": 138,
-	"coords": "1168,799,60",
+	"coords": "1704,812,60",
 	"tier": 1,
 	"cats": "11",
 	"prio": 4,
@@ -1718,7 +1717,7 @@
   },
   {
     "id": 139,
-    "coords": "1106,902,60",
+    "coords": "1620,915,60",
     "tier": 1,
     "cats": "11",
     "prio": 5,
@@ -1726,7 +1725,7 @@
   },
   {
     "id": 140,
-    "coords": "977,957,60",
+    "coords": "1491,958,60",
     "tier": 1,
     "cats": "11",
     "prio": 6,
@@ -1734,7 +1733,7 @@
   },
   {
     "id": 141,
-    "coords": "838,1033,60",
+    "coords": "1351,1038,60",
     "tier": 1,
     "cats": "11",
     "prio": 7,
@@ -1742,7 +1741,7 @@
   },
   {
     "id": 142,
-    "coords": "703,1089,60",
+    "coords": "1218,1085,60",
     "tier": 2,
     "cats": "11",
     "prio": 8,
@@ -1750,7 +1749,7 @@
   },
   {
     "id": 143,
-    "coords": "549,1145,60",
+    "coords": "1064,1143,60",
     "tier": 2,
     "cats": "11",
     "prio": 9,
@@ -1758,7 +1757,7 @@
   },
   {
     "id": 144,
-    "coords": "431,1061,60",
+    "coords": "942,1064,60",
     "tier": 2,
     "cats": "11",
     "prio": 10,
@@ -1766,7 +1765,7 @@
   },
   {
     "id": 145,
-    "coords": "454,917,60",
+    "coords": "968,930,60",
     "tier": 2,
     "cats": "11",
     "prio": 11,
@@ -1774,7 +1773,7 @@
   },
   {
     "id": 146,
-    "coords": "546,806,60",
+    "coords": "1058,818,60",
     "tier": 2,
     "cats": "11",
     "prio": 12,
@@ -1782,7 +1781,7 @@
   },
   {
     "id": 149,
-    "coords": "686,926,60",
+    "coords": "1200,929,60",
     "tier": 3,
     "cats": "11",
     "prio": 13,
@@ -1790,7 +1789,7 @@
   },
   {
     "id": 150,
-    "coords": "849,880,60",
+    "coords": "1353,901,60",
     "tier": 3,
     "cats": "11",
     "prio": 14,
@@ -1798,7 +1797,7 @@
   },
   {
     "id": 151,
-    "coords": "944,782,60",
+    "coords": "1446,803,60",
     "tier": 3,
     "cats": "11",
     "prio": 15,
@@ -1806,7 +1805,7 @@
   },
   {
     "id": 152,
-    "coords": "810,725,60",
+    "coords": "1300,751,60",
     "tier": 3,
     "cats": "11",
     "prio": 16,
@@ -1861,7 +1860,7 @@
   },
   {
     "id": 156,
-    "coords": "1260,2049,60",
+    "coords": "1772,2048,60",
     "tier": 1,
     "cats": "13",
     "prio": 1,
@@ -1869,7 +1868,7 @@
   },
   {
     "id": 148,
-    "coords": "1561,2164,60",
+    "coords": "2086,2132,60",
     "tier": 2,
     "cats": "13",
     "prio": 3,
@@ -1881,7 +1880,7 @@
   },
   {
     "id": 158,
-    "coords": "1393,2140,60",
+    "coords": "1929,2111,60",
     "tier": 2,
     "cats": "13",
     "prio": 4,
@@ -1889,9 +1888,122 @@
   },
   {
     "id": 159,
-    "coords": "",
+    "coords": "2262,2213,60",
     "tier": 2,
     "cats": "13",
+    "prio": 5,
+    "startline": "#1/???"
+  },
+  // tier 2 hardcore
+  {
+    "id": 160,
+    "coords": "1377,663,60",
+    "tier": 2,
+    "cats": "14",
+    "prio": 1,
+    "startline": "#1/eEWlRYvl.jpg"
+  },
+  {
+    "id": 161,
+    "coords": "1523,620,60",
+    "tier": 2,
+    "cats": "14",
+    "prio": 2,
+    "startline": "#1/1n8T4zsl.jpg"
+  },
+  {
+    "id": 162,
+    "coords": "1482,505,60",
+    "tier": 2,
+    "cats": "14",
+    "prio": 3,
+    "startline": "#1/u5dPnt7l.jpg"
+  },
+  {
+    "id": 163,
+    "coords": "1625,410,60",
+    "tier": 2,
+    "cats": "14",
+    "prio": 4,
+    "startline": "#1/22YFnw0l.jpg"
+  },
+  {
+    "id": 164,
+    "coords": "1702,550,60",
+    "tier": 2,
+    "cats": "14",
+    "prio": 5,
+    "startline": "#1/oRS82vol.jpg"
+  },
+  {
+    "id": 165,
+    "coords": "1876,604,60",
+    "tier": 2,
+    "cats": "14",
+    "prio": 6,
+    "startline": "#1/q4i5WaEl.jpg"
+  },
+  // rodeo
+  {
+    "id": 166,
+    "coords": "",
+    "tier": 1,
+    "cats": "15",
+    "prio": 1
+  },
+  // rodeo weekly tracks
+  {
+    "id": 167,
+    "coords": "1520,2289,60",
+    "tier": 1,
+    "cats": "15",
+    "prio": 2,
+    "startline": "http://s2.postimg.org/j87dx1qzd/Screenshot_2015_09_17_16_34_39.png"
+  },
+  {
+    "id": 168,
+    "coords": "1701,2362,60",
+    "tier": 1,
+    "cats": "15",
+    "prio": 3,
+    "startline": "#1/LA1gwyV.jpg"
+  },
+  {
+    "id": 169,
+    "coords": "",
+    "tier": 1,
+    "cats": "15",
+    "prio": 4
+  },
+  {
+    "id": 170,
+    "coords": "",
+    "tier": 1,
+    "cats": "15",
     "prio": 5
+  },
+  // rodeo horseshoe tracks
+  {
+    "id": 171,
+    "coords": "2232,1472,60",
+    "tier": 1,
+    "cats": "15",
+    "prio": 1,
+    "startline": "#1/X1u0ImL.jpg"
+  },
+  {
+    "id": 172,
+    "coords": "",
+    "tier": 1,
+    "cats": "15",
+    "prio": 2,
+    "startline": "#1/NYwJJrz.jpg"
+  },
+  {
+    "id": 173,
+    "coords": "",
+    "tier": 1,
+    "cats": "15",
+    "prio": 3
   }
 ]
