@@ -1852,7 +1852,7 @@
   // agent tracks
   {
     "id": 157,
-    "coords": "",
+    "only_event": true,
     "tier": 1,
     "cats": "13",
     "prio": 2,
@@ -1946,7 +1946,7 @@
   // rodeo
   {
     "id": 166,
-    "coords": "",
+    "only_event": true,
     "tier": 1,
     "cats": "15",
     "prio": 1
@@ -1993,7 +1993,7 @@
   },
   {
     "id": 172,
-    "coords": "",
+    "coords": "2117,1398,60",
     "tier": 1,
     "cats": "15",
     "prio": 2,
@@ -2001,9 +2001,10 @@
   },
   {
     "id": 173,
-    "coords": "",
+    "coords": "2455,352,60",
     "tier": 1,
     "cats": "15",
-    "prio": 3
+    "prio": 3,
+    "startline": "#1/nx4NZ6x.jpg"
   }
 ]
