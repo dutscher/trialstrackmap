@@ -1,0 +1,403 @@
+{
+  "prizes": {
+    "stallion": "Stallion Bike Blueprint Piece (Collect 50 to Build)",
+    "track": {
+      "1": "The Big Swing",
+      "2": "Toxin Harvest",
+      "3": "Tribal Homestead"
+    },
+    "custom_part": {
+      "1": "The Gunslinger Top Piece",
+      "2": "The Sheriff Top Piece",
+      "3": "The Gunslinger Middle Piece",
+      "4": "The Gunslinger Bottom Piece",
+      "5": "The Convict Top Piece",
+      "6": "The Sheriff Middle Piece",
+      "7": "The Sheriff Bottom Piece",
+      "8": "The Convict Middle Piece",
+      "9": "The Convict Bottom Piece"
+    },
+    "paintjob": {
+      "1": "Snowy paint job for Stallion (More at home on icy plains, but equally fast on the frontier)",
+      "2": "Palomino paint job for the Stallion (Golden, like the medals you'll win with this paint job!)",
+      "3": "Cowhide paint job for the Armadillo (Old Annabelle was never this quick!)"
+    }
+  },
+  "event_prizes": [
+    {
+      "amount": 50000,
+      "prize": "stallion"
+    },
+    {
+      "amount": 49500,
+      "prize": "track",
+      "prize_extra": 1
+    },
+    {
+      "amount": 49000,
+      "prize": "stallion"
+    },
+    {
+      "amount": 48500,
+      "prize": "gems",
+      "prize_extra": 10
+    },
+    {
+      "amount": 48000,
+      "prize": "stallion"
+    },
+    {
+      "amount": 47500,
+      "prize": "coins",
+      "prize_extra": 20000
+    },
+    {
+      "amount": 47000,
+      "prize": "stallion"
+    },
+    {
+      "amount": 46000,
+      "prize": "stallion"
+    },
+    {
+      "amount": 45000,
+      "prize": "stallion"
+    },
+    {
+      "amount": 44000,
+      "prize": "custom_part",
+      "prize_extra": 1
+    },
+    {
+      "amount": 43500,
+      "prize": "gems",
+      "prize_extra": 10
+    },
+    {
+      "amount": 43000,
+      "prize": "stallion"
+    },
+    {
+      "amount": 42500,
+      "prize": "paintjob",
+      "prize_extra": 1
+    },
+    {
+      "amount": 42000,
+      "prize": "stallion"
+    },
+    {
+      "amount": 41500,
+      "prize": "gems",
+      "prize_extra": 10
+    },
+    {
+      "amount": 41000,
+      "prize": "stallion"
+    },
+    {
+      "amount": 40500,
+      "prize": "custom_part",
+      "prize_extra": 2
+    },
+    {
+      "amount": 40000,
+      "prize": "stallion"
+    },
+    {
+      "amount": 39000,
+      "prize": "stallion"
+    },
+    {
+      "amount": 38000,
+      "prize": "stallion"
+    },
+    {
+      "amount": 37500,
+      "prize": "coins",
+      "prize_extra": 10000
+    },
+    {
+      "amount": 37000,
+      "prize": "stallion"
+    },
+    {
+      "amount": 36500,
+      "prize": "custom_part",
+      "prize_extra": 3
+    },
+    {
+      "amount": 36000,
+      "prize": "stallion"
+    },
+    {
+      "amount": 35000,
+      "prize": "stallion"
+    },
+    {
+      "amount": 34500,
+      "prize": "track",
+      "prize_extra": 2
+    },
+    {
+      "amount": 34000,
+      "prize": "stallion"
+    },
+    {
+      "amount": 33500,
+      "prize": "coins",
+      "prize_extra": 10000
+    },
+    {
+      "amount": 33000,
+      "prize": "stallion"
+    },
+    {
+      "amount": 32000,
+      "prize": "stallion"
+    },
+    {
+      "amount": 31500,
+      "prize": "custom_part",
+      "prize_extra": 4
+    },
+    {
+      "amount": 31000,
+      "prize": "stallion"
+    },
+    {
+      "amount": 30000,
+      "prize": "stallion"
+    },
+    {
+      "amount": 29500,
+      "prize": "coins",
+      "prize_extra": 10000
+    },
+    {
+      "amount": 29000,
+      "prize": "stallion"
+    },
+    {
+      "amount": 28500,
+      "prize": "custom_part",
+      "prize_extra": 5
+    },
+    {
+      "amount": 28000,
+      "prize": "stallion"
+    },
+    {
+      "amount": 27500,
+      "prize": "gems",
+      "prize_extra": 5
+    },
+    {
+      "amount": 27000,
+      "prize": "stallion"
+    },
+    {
+      "amount": 26000,
+      "prize": "stallion"
+    },
+    {
+      "amount": 25500,
+      "prize": "custom_part",
+      "prize_extra": 6
+    },
+    {
+      "amount": 25000,
+      "prize": "stallion"
+    },
+    {
+      "amount": 24500,
+      "prize": "coins",
+      "prize_extra": 10000
+    },
+    {
+      "amount": 24000,
+      "prize": "stallion"
+    },
+    {
+      "amount": 23000,
+      "prize": "stallion"
+    },
+    {
+      "amount": 22500,
+      "prize": "track",
+      "prize_extra": 3
+    },
+    {
+      "amount": 22000,
+      "prize": "stallion"
+    },
+    {
+      "amount": 21500,
+      "prize": "paintjob",
+      "prize_extra": 2
+    },
+    {
+      "amount": 21000,
+      "prize": "stallion"
+    },
+    {
+      "amount": 20000,
+      "prize": "stallion"
+    },
+    {
+      "amount": 19500,
+      "prize": "coins",
+      "prize_extra": 10000
+    },
+    {
+      "amount": 19000,
+      "prize": "stallion"
+    },
+    {
+      "amount": 18500,
+      "prize": "custom_part",
+      "prize_extra": 7
+    },
+    {
+      "amount": 18000,
+      "prize": "stallion"
+    },
+    {
+      "amount": 17500,
+      "prize": "gems",
+      "prize_extra": 5
+    },
+    {
+      "amount": 17000,
+      "prize": "stallion"
+    },
+    {
+      "amount": 16000,
+      "prize": "stallion"
+    },
+    {
+      "amount": 15500,
+      "prize": "coins",
+      "prize_extra": 5000
+    },
+    {
+      "amount": 15000,
+      "prize": "stallion"
+    },
+    {
+      "amount": 14000,
+      "prize": "stallion"
+    },
+    {
+      "amount": 13500,
+      "prize": "paintjob",
+      "prize_extra": 3
+    },
+    {
+      "amount": 13000,
+      "prize": "stallion"
+    },
+    {
+      "amount": 12000,
+      "prize": "stallion"
+    },
+    {
+      "amount": 11500,
+      "prize": "coins",
+      "prize_extra": 5000
+    },
+    {
+      "amount": 11000,
+      "prize": "stallion"
+    },
+    {
+      "amount": 10000,
+      "prize": "stallion"
+    },
+    {
+      "amount": 9500,
+      "prize": "custom_part",
+      "prize_extra": 8
+    },
+    {
+      "amount": 9000,
+      "prize": "stallion"
+    },
+    {
+      "amount": 8000,
+      "prize": "stallion"
+    },
+    {
+      "amount": 7500,
+      "prize": "coins",
+      "prize_extra": 5000
+    },
+    {
+      "amount": 7000,
+      "prize": "stallion"
+    },
+    {
+      "amount": 6000,
+      "prize": "stallion"
+    },
+    {
+      "amount": 5500,
+      "prize": "coins",
+      "prize_extra": 5000
+    },
+    {
+      "amount": 5000,
+      "prize": "stallion"
+    },
+    {
+      "amount": 4500,
+      "prize": "gems",
+      "prize_extra": 5
+    },
+    {
+      "amount": 4000,
+      "prize": "stallion"
+    },
+    {
+      "amount": 3500,
+      "prize": "coins",
+      "prize_extra": 5000
+    },
+    {
+      "amount": 3000,
+      "prize": "stallion"
+    },
+    {
+      "amount": 2500,
+      "prize": "coins",
+      "prize_extra": 5000
+    },
+    {
+      "amount": 2000,
+      "prize": "stallion"
+    },
+    {
+      "amount": 1600,
+      "prize": "custom_part",
+      "prize_extra": 9
+    },
+    {
+      "amount": 1200,
+      "prize": "coins",
+      "prize_extra": 5000
+    },
+    {
+      "amount": 1000,
+      "prize": "stallion"
+    },
+    {
+      "amount": 500,
+      "prize": "coins",
+      "prize_extra": 1000
+    },
+    {
+      "amount": 100,
+      "prize": "stallion"
+    }
+  ]
+}
