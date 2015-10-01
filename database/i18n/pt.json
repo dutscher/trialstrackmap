@@ -23,7 +23,7 @@
       "tracks": "Pistas",
       "on_map": "No mapa",
       "without_coords": "Sem coordenadas",
-      "not_released": "Não laçado ainda",
+      "not_released": "Não lançado ainda",
       "only_event": "Tarefa de evento",
       "only_bunker": "Somente no bunker",
       "leaked": "Vazado",
@@ -56,7 +56,7 @@
       "faults": "Erros",
       "fuel": "Gasolina",
       "gems": "Gemas",
-      "chips": "Chips",
+      "chips": "Fichas",
       "parts": {
         "head": "Peças",
         "all": "Mostrar Tudo",
@@ -279,7 +279,7 @@
     "167": "Ninho do Corvo",
     "168": "Acampamento Errante",
     "169": "Pedreira Preciosa",
-    "170": "Amusement Pit",
+    "170": "Fosso de Diversão",
     "171": "Propriedade Tribal",
     "172": "Colheita Tóxica",
     "173": "Grande Balanço"
