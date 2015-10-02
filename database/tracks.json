@@ -1970,15 +1970,16 @@
   },
   {
     "id": 169,
-    "coords": "",
-    "tier": 1,
+    "coords": "1910,2314,60",
+    "tier": 2,
     "cats": "15",
-    "prio": 4
+    "prio": 4,
+    "startline": "#1/Sif5tdO.png"
   },
   {
     "id": 170,
     "coords": "",
-    "tier": 1,
+    "tier": 2,
     "cats": "15",
     "prio": 5
   },
@@ -1986,7 +1987,7 @@
   {
     "id": 171,
     "coords": "2232,1472,60",
-    "tier": 1,
+    "tier": 2,
     "cats": "15",
     "prio": 1,
     "startline": "#1/X1u0ImL.jpg"
@@ -1994,7 +1995,7 @@
   {
     "id": 172,
     "coords": "2117,1398,60",
-    "tier": 1,
+    "tier": 2,
     "cats": "15",
     "prio": 2,
     "startline": "#1/nx4NZ6x.jpg"
@@ -2002,9 +2003,9 @@
   {
     "id": 173,
     "coords": "2455,352,60",
-    "tier": 1,
+    "tier": 2,
     "cats": "15",
     "prio": 3,
-    "startline": "#1/NYwJJrz.jpg"
+    "startline": "#1/cNiITYe.png"
   }
 ]
