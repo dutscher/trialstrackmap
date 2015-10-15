@@ -22,8 +22,8 @@
       "tracks": "Strecken",
       "on_map": "auf der Karte",
       "without_coords": "ohne Koordinaten",
-      "not_released": "noch nicht verfügbar",
-      "only_event": "nur über Event einstieg",
+      "not_released": "noch nicht auf der Karte",
+      "only_event": "nur per Event spielbar",
       "only_bunker": "nur im Bunker",
       "leaked": "Leaked",
       "with_video": "mit Video",
@@ -77,8 +77,7 @@
     "11": "Winter",
     "12": "Leaked",
     "13": "Agenten",
-    "14": "Etremes Trackpack 2",
-    "15": "Rodeo"
+    "14": "Rodeo"
   },
   "tiers": {
     "1": "Stufe 1",
@@ -281,6 +280,19 @@
     "170": "Lasterhöhle",
     "171": "Stammesgehöft",
     "172": "Gifternte",
-    "173": "Der große Schwung"
+    "173": "Der große Schwung",
+    "174": "Lift of Doom",
+    "175": "Spider Kingdom",
+    "176": "Pumpking Desert",
+    "177": "Devil Hopping",
+    "178": "Dark Sands",
+    "179": "Crow Roofs",
+    "180": "",
+    "181": "",
+    "182": "",
+    "183": "Hops of Fury",
+    "184": "Ruins of Despair",
+    "185": "Black Forest",
+    "186": "Fest Mine"
   }
 }

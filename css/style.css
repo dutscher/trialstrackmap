@@ -389,3 +389,7 @@ img.trackmap.loaded{
     font-size: 14px;
     margin-left: 14px;
 }
+.stats-track-names {
+    margin-left: 19px;
+    padding-bottom: 5px;
+}

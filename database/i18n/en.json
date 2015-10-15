@@ -22,9 +22,9 @@
       "tracks": "Tracks",
       "on_map": "on map",
       "without_coords": "without coordinates",
-      "not_released": "not released yet",
+      "not_released": "not on map or released",
       "only_bunker": "only bunker",
-      "only_event": "only event entry",
+      "only_event": "only playable by event",
       "leaked": "leaked",
       "with_video": "with video",
       "searchForTrack": "search for track",
@@ -64,7 +64,7 @@
     }
   },
   "cats": {
-    "1": "Hardcore Island",
+    "1": "Hardcore Tracks",
     "2": "Swamp A.N.B.A",
     "3": "Slotmachine",
     "4": "Lootwheel",
@@ -77,8 +77,7 @@
     "11": "Winter",
     "12": "Leaked",
     "13": "Agents",
-    "14": "Challenge Track Pack 2",
-    "15": "Rodeo"
+    "14": "Rodeo"
   },
   "tiers": {
     "1": "Tier 1",
@@ -281,6 +280,19 @@
     "170": "Amusement Pit",
     "171": "Tribal Homestead",
     "172": "Toxin Harvest",
-    "173": "The Big Swing"
+    "173": "The Big Swing",
+    "174": "Lift of Doom",
+    "175": "Spider Kingdom",
+    "176": "Pumpking Desert",
+    "177": "Devil Hopping",
+    "178": "Dark Sands",
+    "179": "Crow Roofs",
+    "180": "",
+    "181": "",
+    "182": "",
+    "183": "Hops of Fury",
+    "184": "Ruins of Despair",
+    "185": "Black Forest",
+    "186": "Fest Mine"
   }
 }

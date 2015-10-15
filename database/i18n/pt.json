@@ -23,8 +23,8 @@
       "tracks": "Pistas",
       "on_map": "No mapa",
       "without_coords": "Sem coordenadas",
-      "not_released": "Não lançado ainda",
-      "only_event": "Tarefa de evento",
+      "not_released": "not on map or released",
+      "only_event": "only playable by event",
       "only_bunker": "Somente no bunker",
       "leaked": "Vazado",
       "with_video": "Com vídeo",
@@ -78,8 +78,7 @@
     "11": "Inverno",
     "12": "Vazado",
     "13": "Agentes",
-    "14": "Pacote de Desafio 2",
-    "15": "Rodeio"
+    "14": "Rodeio"
   },
   "tiers": {
     "1": "Nível 1",
@@ -282,6 +281,19 @@
     "170": "Fosso de Diversão",
     "171": "Propriedade Tribal",
     "172": "Colheita Tóxica",
-    "173": "Grande Balanço"
+    "173": "Grande Balanço",
+    "174": "Lift of Doom",
+    "175": "Spider Kingdom",
+    "176": "Pumpking Desert",
+    "177": "Devil Hopping",
+    "178": "Dark Sands",
+    "179": "Crow Roofs",
+    "180": "",
+    "181": "",
+    "182": "",
+    "183": "Hops of Fury",
+    "184": "Ruins of Despair",
+    "185": "Black Forest",
+    "186": "Fest Mine"
   }
 }

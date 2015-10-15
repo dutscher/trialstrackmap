@@ -1899,7 +1899,7 @@
     "id": 160,
     "coords": "1377,663,60",
     "tier": 2,
-    "cats": "14",
+    "cats": "1",
     "prio": 1,
     "startline": "http://s12.postimg.org/iqc8b82a5/Screenshot_2015_10_09_15_20_33.png"
   },
@@ -1907,7 +1907,7 @@
     "id": 161,
     "coords": "1523,620,60",
     "tier": 2,
-    "cats": "14",
+    "cats": "1",
     "prio": 2,
     "startline": "http://s12.postimg.org/jel2u60zx/Screenshot_2015_10_09_15_21_02.png"
   },
@@ -1915,7 +1915,7 @@
     "id": 162,
     "coords": "1482,505,60",
     "tier": 2,
-    "cats": "14",
+    "cats": "1",
     "prio": 3,
     "startline": "http://s12.postimg.org/rck39k3nx/Screenshot_2015_10_09_15_21_34.png"
   },
@@ -1923,7 +1923,7 @@
     "id": 163,
     "coords": "1625,410,60",
     "tier": 2,
-    "cats": "14",
+    "cats": "1",
     "prio": 4,
     "startline": "http://s12.postimg.org/8ub5bkwi5/Screenshot_2015_10_09_15_22_05.png"
   },
@@ -1931,7 +1931,7 @@
     "id": 164,
     "coords": "1702,550,60",
     "tier": 2,
-    "cats": "14",
+    "cats": "1",
     "prio": 5,
     "startline": "http://s12.postimg.org/7vzdn18jx/Screenshot_2015_10_09_15_22_31.png"
   },
@@ -1939,7 +1939,7 @@
     "id": 165,
     "coords": "1876,604,60",
     "tier": 2,
-    "cats": "14",
+    "cats": "1",
     "prio": 6,
     "startline": "http://s12.postimg.org/d4uekwqz1/Screenshot_2015_10_09_15_23_05.png"
   },
@@ -1948,15 +1948,16 @@
     "id": 166,
     "only_event": true,
     "tier": 1,
-    "cats": "15",
-    "prio": 1
+    "cats": "14",
+    "prio": 1,
+    "startline": "#1/1AF609s.jpg"
   },
   // rodeo weekly tracks
   {
     "id": 167,
     "coords": "1520,2289,60",
     "tier": 1,
-    "cats": "15",
+    "cats": "14",
     "prio": 2,
     "startline": "http://s2.postimg.org/j87dx1qzd/Screenshot_2015_09_17_16_34_39.png"
   },
@@ -1964,7 +1965,7 @@
     "id": 168,
     "coords": "1701,2362,60",
     "tier": 1,
-    "cats": "15",
+    "cats": "14",
     "prio": 3,
     "startline": "#1/LA1gwyV.jpg"
   },
@@ -1972,7 +1973,7 @@
     "id": 169,
     "coords": "1910,2314,60",
     "tier": 2,
-    "cats": "15",
+    "cats": "14",
     "prio": 4,
     "startline": "http://s4.postimg.org/cv6lk2azx/Screenshot_2015_10_01_15_20_08.png"
   },
@@ -1980,7 +1981,7 @@
     "id": 170,
     "coords": "2101,2348,60",
     "tier": 2,
-    "cats": "15",
+    "cats": "14",
     "prio": 5,
     "startline": "#1/jNx4fQu.png"
   },
@@ -1989,7 +1990,7 @@
     "id": 171,
     "coords": "2232,1472,60",
     "tier": 2,
-    "cats": "15",
+    "cats": "14",
     "prio": 1,
     "startline": "#1/X1u0ImL.jpg"
   },
@@ -1997,7 +1998,7 @@
     "id": 172,
     "coords": "2117,1398,60",
     "tier": 2,
-    "cats": "15",
+    "cats": "14",
     "prio": 2,
     "startline": "#1/nx4NZ6x.jpg"
   },
@@ -2005,8 +2006,106 @@
     "id": 173,
     "coords": "2455,352,60",
     "tier": 2,
-    "cats": "15",
+    "cats": "14",
     "prio": 3,
     "startline": "#1/cNiITYe.png"
+  },
+  // halloween #2
+  {
+    "id": 174,
+    "coords": "",
+    "tier": 1,
+    "cats": "8",
+    "prio": 1,
+    "startline": "#1/xOjFZpD.png"
+  },
+  {
+    "id": 175,
+    "coords": "",
+    "tier": 1,
+    "cats": "8",
+    "prio": 2,
+    "startline": "#1/A489CAu.png"
+  },
+  {
+    "id": 176,
+    "coords": "",
+    "tier": 1,
+    "cats": "8",
+    "prio": 3
+  },
+  {
+    "id": 177,
+    "coords": "",
+    "tier": 1,
+    "cats": "8",
+    "prio": 4
+  },
+  {
+    "id": 178,
+    "coords": "",
+    "tier": 1,
+    "cats": "8",
+    "prio": 5
+  },
+  {
+    "id": 179,
+    "coords": "",
+    "tier": 1,
+    "cats": "8",
+    "prio": 6
+  },
+  {
+    "id": 180,
+    "coords": "",
+    "tier": 1,
+    "cats": "8",
+    "prio": 7
+  },
+  {
+    "id": 181,
+    "coords": "",
+    "tier": 1,
+    "cats": "8",
+    "prio": 8
+  },
+  {
+    "id": 182,
+    "coords": "",
+    "tier": 1,
+    "cats": "8",
+    "prio": 9
+  },
+  {
+    "id": 183,
+    "coords": "",
+    "tier": 1,
+    "cats": "8",
+    "prio": 10,
+    "startline": "#1/aKYcj6h.png"
+  },
+  {
+    "id": 184,
+    "coords": "",
+    "tier": 1,
+    "cats": "8",
+    "prio": 11,
+    "startline": "#1/ybwrp3U.png"
+  },
+  {
+    "id": 185,
+    "coords": "",
+    "tier": 1,
+    "cats": "8",
+    "prio": 12,
+    "startline": "#1/NIeJBpr.png"
+  },
+  {
+    "id": 186,
+    "coords": "",
+    "tier": 1,
+    "cats": "8",
+    "prio": 13,
+    "startline": "#1/nYsytXW.png"
   }
 ]
