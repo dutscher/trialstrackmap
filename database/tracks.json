@@ -572,7 +572,7 @@
     "coords": "1759,1317,60",
     "tier": 1,
     "cats": "2,6",
-    "startline": "#/P6kpnur.png",
+    "startline": "#1/P6kpnur.png",
     "datacube": "#1/Xiak0Sv.jpg",
     "prio": -1,
     "oid": 1152
@@ -981,7 +981,7 @@
     "tier": 2,
     "cats": "7,6",
     "startline": "1#/vTxA8BN.png",
-    "datacube": "#1/Xiak0Sv.jpg",
+    "datacube": "#1/VzNHYxr.jpg",
     "candys": [
       {
         "src": "#1/GjUWER4.png",
