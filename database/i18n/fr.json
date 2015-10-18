@@ -71,13 +71,14 @@
     "5": "Machine à temps",
     "6": "Data Cube",
     "7": "Histoire",
-    "8": "Halloween",
+    "8": "Halloween 2014",
     "9": "Bunker",
     "10": "Chine",
     "11": "Hiver",
     "12": "Fuite",
     "13": "Agents",
-    "14": "Rodeo"
+    "14": "Rodeo",
+    "15": "Halloween 2015"
   },
   "tiers": {
     "1": "Étage 1",
@@ -273,7 +274,7 @@
     "163": "Passage du rite",
     "164": "Planque de marchandise",
     "165": "Passage graisseux",
-    "166": "Effondré verger",
+    "166": "Verger Effondré",
     "167": "Nid de Corbeaux",
     "168": "Camp de Vagabonds",
     "169": "Carrière aux joyaux",

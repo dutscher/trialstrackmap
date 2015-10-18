@@ -1,6 +1,6 @@
 {
   "stats": {
-    "update": "15.10.2015",
+    "update": "18.10.2015",
     "rank": "63",
     "uplay": "Android: dutscher_sbf",
     "level": "47",
@@ -101,7 +101,7 @@
     },
     {
       "index": 8,
-      "class": "pumpkin",
+      "class": "halloween-2014",
       "color": "EC7000"
     },
     {
@@ -133,6 +133,11 @@
       "index": 14,
       "class": "rodeo",
       "color": "00FF00"
+    },
+    {
+      "index": 15,
+      "class": "halloween-2015",
+      "color": "EC7000"
     }
   ],
   "tiers": [

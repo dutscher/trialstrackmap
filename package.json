@@ -10,7 +10,9 @@
     "grunt-contrib-clean": "0.6.0",
     "grunt-concat-json": "0.0.6",
     "grunt-minjson": "0.1.1",
-    "strip-json-comments": "1.0.2"
+    "strip-json-comments": "1.0.2",
+    "time-grunt": "1.2.1",
+    "jit-grunt": "0.9.1"
   },
   "engine": "node 0.10.32"
 }

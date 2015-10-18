@@ -71,13 +71,14 @@
     "5": "Zeitmaschine",
     "6": "Data Cube",
     "7": "Story",
-    "8": "Halloween",
+    "8": "Halloween 2014",
     "9": "Der Bunker",
     "10": "China",
     "11": "Winter",
     "12": "Leaked",
     "13": "Agenten",
-    "14": "Rodeo"
+    "14": "Rodeo",
+    "15": "Halloween 2015"
   },
   "tiers": {
     "1": "Stufe 1",
@@ -281,18 +282,18 @@
     "171": "Stammesgehöft",
     "172": "Gifternte",
     "173": "Der große Schwung",
-    "174": "Lift of Doom",
-    "175": "Spider Kingdom",
-    "176": "Pumpking Desert",
-    "177": "Devil Hopping",
-    "178": "Dark Sands",
+    "174": "Aufzug des Verderbens",
+    "175": "Spinnenkönigreich",
+    "176": "Kürbiswüste",
+    "177": "Teufelssprünge",
+    "178": "Schwarzer Sand",
     "179": "Crow Roofs",
     "180": "",
     "181": "",
     "182": "",
-    "183": "Hops of Fury",
-    "184": "Ruins of Despair",
-    "185": "Black Forest",
-    "186": "Fest Mine"
+    "183": "Zornessprünge",
+    "184": "Ruinen der Verzweiflung",
+    "185": "Schwarzwald",
+    "186": "Festmine"
   }
 }

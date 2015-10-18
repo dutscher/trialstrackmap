@@ -9,6 +9,9 @@ module.exports = function(grunt) {
     var backupDateObj = new Date(),
         backupDate = backupDateObj.getFullYear()+''+pad(backupDateObj.getMonth()+1,2)+''+pad(backupDateObj.getDate(),2)
 
+    require('jit-grunt')(grunt);
+    require('time-grunt')(grunt);
+
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
 
@@ -145,16 +148,10 @@ module.exports = function(grunt) {
         }
     })
 
-    grunt.loadNpmTasks('grunt-shell')
-    grunt.loadNpmTasks('grunt-minjson')
-    grunt.loadNpmTasks('grunt-concat-json')
-    grunt.loadNpmTasks('grunt-contrib-copy')
-    grunt.loadNpmTasks('grunt-contrib-concat')
-    grunt.loadNpmTasks('grunt-contrib-uglify')
     var stripJsonComments = require('strip-json-comments')
     //grunt.loadNpmTasks('grunt-contrib-clean')
 
-    grunt.registerTask('default')
+    grunt.registerTask('default', ['deploy', 'server'])
 
     grunt.registerTask('mergePublicTimesToDatabase', function(){
         // backup
@@ -226,7 +223,11 @@ module.exports = function(grunt) {
         'copy:i18nToDist',
         'copy:rawToDist',
         'concat:dist',
-        'concat:vendor',
+        'concat:vendor'
+    ])
+
+    grunt.registerTask('finalDeploy', [
+        'deploy',
         'uglify:dist',
         'minjson:dist',
         'minjson:distI18n'
