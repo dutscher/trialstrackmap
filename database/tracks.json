@@ -855,7 +855,7 @@
     "coords": "1024,1763,60",
     "tier": 2,
     "cats": "7",
-    "startline": "#1/WA4UkWa.png",
+    "startline": "#1/a0vRMiU.png",
     "candys": [
       {
         "src": "#1/x7J8Laq.png",
@@ -949,7 +949,7 @@
   },
   {
     "id": 62,
-    "coords": "649,1605,60",
+    "coords": "649,1620,60",
     "tier": 2,
     "cats": "7",
     "startline": "#1/ppg6omJ.png",
@@ -1167,7 +1167,7 @@
     "coords": "650,2079,60",
     "tier": 2,
     "cats": "3",
-    "startline": "#1/m6vnEud.png",
+    "startline": "#1/AeseUY8.png",
     "prio": -1,
     "level": 11,
     "oid": 1140
@@ -2049,10 +2049,11 @@
   },
   {
     "id": 179,
-    "coords": "",
-    "tier": 1,
+    "coords": "498,1686,60",
+    "tier": 2,
     "cats": "15",
-    "prio": 6
+    "prio": 6,
+    "startline": "#1/3HyBeYa.png"
   },
   {
     "id": 180,

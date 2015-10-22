@@ -27,9 +27,9 @@ table,.box,.classic-link{color:#ffee99}
     -moz-border-image:-moz-linear-gradient(bottom, #6a4229, #d2c3ab) 1 10%;
     -o-border-image:-o-linear-gradient(bottom, #6a4229, #d2c3ab) 1 10%;
     border-image:linear-gradient(to top, #6a4229, #d2c3ab) 1 10%;
-    -webkit-box-shadow: inset -0px 0px 10px 10px rgba(0, 0, 0, 0.25); /* WebKit */
-    -moz-box-shadow: inset -0px 0px 10px 10px rgba(0, 0, 0, 0.25); /* Firefox */
-    box-shadow: inset -0px 0px 10px 10px rgba(0, 0, 0, 0.25); /* Standard */
+    -webkit-box-shadow: inset -0px 0 10px 10px rgba(0, 0, 0, 0.25); /* WebKit */
+    -moz-box-shadow: inset -0px 0 10px 10px rgba(0, 0, 0, 0.25); /* Firefox */
+    box-shadow: inset -0px 0 10px 10px rgba(0, 0, 0, 0.25); /* Standard */
     position: relative;
 }
 table,.box{background:rgba(0,0,0,0.55)}
