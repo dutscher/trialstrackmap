@@ -1379,6 +1379,9 @@
     "tier": 3,
     "cats": "7",
     "startline": "#1/X2yijkl.jpg",
+    "helper": [
+      {"The End":"#1/ukz6W5j.jpg"}
+    ],
     "prio": -1,
     "oid": 1143
   },
