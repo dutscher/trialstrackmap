@@ -136,7 +136,7 @@
 
     <img src="blank.png" class="track-pointer" usemap="#trackmap" />
 
-    <img ng-src="{{::data.images.trackmap.src|imageHoster:data.imagehoster}}" ng-load="trackmapReady = true" class="trackmap" alt="{{::data.images.trackmap.alt}}" ng-class="{'loading':!trackmapReady,'loaded':trackmapReady}" pinch-zoom="canvas" />
+    <img ng-src="{{::data.images.trackmap.src|hoster:data.hoster}}" ng-load="trackmapReady = true" class="trackmap" alt="{{::data.images.trackmap.alt}}" ng-class="{'loading':!trackmapReady,'loaded':trackmapReady}" pinch-zoom="canvas" />
 
     <map name="trackmap">
         <area ng-repeat="track in tracks" shape="circle" alt="{{'tracks.'+track.id|translate}}" title="{{'tracks.'+track.id|translate}}" coords="{{track.genCoords||'0,0,0'}}" href="#" show-track-in-modal="startline" />

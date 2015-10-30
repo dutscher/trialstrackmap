@@ -1,8 +1,8 @@
 {
   "images": {
     "trackmap": {
-      "src": "#1/fzkWbbK.jpg",
-      "lSrc": "#0/trackmap.151022.en.jpg",
+      "src": "#1/VxjyQao.jpg",
+      "lSrc": "#0/trackmap.151029.en.jpg",
       "alt": "Trails Frontier Trackmap",
       "dim": "3614x2495"
     },
@@ -147,10 +147,10 @@
       "sprite": true
     }
   },
-  "imagehoster": {
-    "#0/": "http://localhost:8001/gfx/",
-    "#1/": "http://i.imgur.com/",
-    "#2/": "https://imagizer.imageshack.us/v2/",
+  "hoster": {
+    "#0/": "//localhost:8001/gfx/",
+    "#1/": "//i.imgur.com/",
+    "#2/": "//www.youtube.com/channel/",
     "#3/": "//www.youtube.com/embed/"
   }
 }

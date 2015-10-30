@@ -5,8 +5,6 @@
     "coords": "2282,1298,60",
     "tier": 1,
     "cats": "7,6",
-    "startline": "#1/be3r4VM.png",
-    "datacube": "#1/nyFyDaj.jpg",
     "candys": [
       {
         "src": "#1/56M8I5S.png",
@@ -21,7 +19,6 @@
     "coords": "2161,1269,60",
     "tier": 1,
     "cats": "7",
-    "startline": "#1/TPkHtDX.png",
     "prio": 1,
     "oid": 100
   },
@@ -30,7 +27,6 @@
     "coords": "2067,1181,60",
     "tier": 1,
     "cats": "7",
-    "startline": "#1/EMrIBmD.png",
     "candys": [
       {
         "src": "#1/r6vcrS6.png",
@@ -45,7 +41,6 @@
     "coords": "1934,1260,60",
     "tier": 1,
     "cats": "7",
-    "startline": "#1/buDuVFq.png",
     "prio": 3,
     "oid": 1033
   },
@@ -54,7 +49,6 @@
     "coords": "1908,1085,60",
     "tier": 1,
     "cats": "7",
-    "startline": "#1/xW3iR3Y.png",
     "prio": 20,
     "oid": 1
   },
@@ -63,7 +57,6 @@
     "coords": "1673,1167,60",
     "tier": 1,
     "cats": "7",
-    "startline": "#1/J7hwtjz.png",
     "candys": [
       {
         "src": "#1/kLv5mr7.png",
@@ -86,8 +79,6 @@
     "coords": "1561,1233,60",
     "tier": 1,
     "cats": "7,6",
-    "startline": "#1/yFugkDc.png",
-    "datacube": "#1/mTZRhHx.jpg",
     "candys": [
       {
         "src": "#1/kWZzNUb.png",
@@ -106,8 +97,6 @@
     "coords": "1514,1332,60",
     "tier": 1,
     "cats": "7,6",
-    "startline": "#1/OGgM8Y4.png",
-    "datacube": "#1/CKg2rVP.jpg",
     "candys": [
       {
         "src": "#1/3cY6wkH.png",
@@ -130,8 +119,6 @@
     "coords": "1581,1447,60",
     "tier": 1,
     "cats": "7,6",
-    "startline": "#1/WbSZrru.png",
-    "datacube": "#1/NN6Tf1s.jpg",
     "candys": [
       {
         "src": "#1/KS1z5sC.png",
@@ -150,7 +137,6 @@
     "coords": "1716,1492,60",
     "tier": 1,
     "cats": "7",
-    "startline": "#1/YGKEkBL.png",
     "candys": [
       {
         "src": "#1/XbG4BSR.png",
@@ -173,7 +159,6 @@
     "coords": "1706,1651,60",
     "tier": 1,
     "cats": "7",
-    "startline": "#1/Xiyv4Jm.png",
     "candys": [
       {
         "src": "#1/FPH4Aal.png",
@@ -196,7 +181,6 @@
     "coords": "1847,1615,60",
     "tier": 1,
     "cats": "7",
-    "startline": "#1/1PHX6yj.png",
     "candys": [
       {
         "src": "#1/ubNKg7h.png",
@@ -215,8 +199,6 @@
     "coords": "1779,1768,60",
     "tier": 1,
     "cats": "7,6",
-    "startline": "#1/rj2peqx.png",
-    "datacube": "#1/Vja2lWM.jpg",
     "candys": [
       {
         "src": "#1/85WUrjT.png",
@@ -231,7 +213,6 @@
     "coords": "1867,1882,60",
     "tier": 1,
     "cats": "7",
-    "startline": "#1/kb57CnX.png",
     "candys": [
       {
         "src": "#1/yhSN3bl.png",
@@ -250,7 +231,6 @@
     "coords": "1728,1906,60",
     "tier": 1,
     "cats": "7",
-    "startline": "#1/1XMCvuB.png",
     "candys": [
       {
         "src": "#1/2c7A2WZ.png",
@@ -269,7 +249,6 @@
     "coords": "1567,1928,60",
     "tier": 1,
     "cats": "7",
-    "startline": "#1/wKrxXzJ.png",
     "candys": [
       {
         "src": "#1/zyp6rrp.png",
@@ -296,8 +275,6 @@
     "coords": "1450,1876,60",
     "tier": 1,
     "cats": "7,6",
-    "startline": "#1/wH6mChC.png",
-    "datacube": "#1/upS1tZd.jpg",
     "candys": [
       {
         "src": "#1/KwLpj46.png",
@@ -320,7 +297,6 @@
     "coords": "1414,1722,60",
     "tier": 1,
     "cats": "7",
-    "startline": "#1/T7dwV60.png",
     "candys": [
       {
         "src": "#1/m7wKTCo.png",
@@ -347,8 +323,6 @@
     "coords": "1329,1613,60",
     "tier": 1,
     "cats": "7,6",
-    "startline": "#1/dq01NPz.png",
-    "datacube": "#1/nIOtYvc.jpg",
     "candys": [
       {
         "src": "#1/ErQAU1p.png",
@@ -371,7 +345,6 @@
     "coords": "1372,1484,60",
     "tier": 1,
     "cats": "7",
-    "startline": "#1/yvSO9m1.png",
     "prio": 19,
     "oid": 1088
   },
@@ -380,7 +353,6 @@
     "coords": "1301,1378,60",
     "tier": 1,
     "cats": "7",
-    "startline": "#1/L6eXIFJ.png",
     "candys": [
       {
         "src": "#1/7NKn83I.png",
@@ -395,7 +367,6 @@
     "coords": "1600,2129,60",
     "tier": 1,
     "cats": "7",
-    "startline": "#1/2gO7FGl.png",
     "candys": [
       {
         "src": "#1/EbrwH6V.png",
@@ -414,7 +385,6 @@
     "coords": "1461,1119,60",
     "tier": 1,
     "cats": "7",
-    "startline": "#1/9DpPkH1.jpg",
     "prio": -1,
     "oid": 1178
   },
@@ -424,7 +394,6 @@
     "coords": "2378,1405,60",
     "tier": 1,
     "cats": "5",
-    "startline": "#1/httf87e.png",
     "prio": -1,
     "oid": 1126
   },
@@ -433,7 +402,6 @@
     "coords": "2460,1485,60",
     "tier": 1,
     "cats": "5",
-    "startline": "#1/IlDANyH.png",
     "prio": -1,
     "oid": 1131
   },
@@ -442,8 +410,6 @@
     "coords": "2354,1560,60",
     "tier": 1,
     "cats": "5,6",
-    "startline": "#1/DjzFibN.png",
-    "datacube": "#1/c7QuxWP.jpg",
     "prio": 21,
     "oid": 1134
   },
@@ -453,7 +419,6 @@
     "coords": "1232,1264,60",
     "tier": 1,
     "cats": "4",
-    "startline": "#1/SNlrA36.png",
     "prio": -1,
     "oid": 1167
   },
@@ -462,8 +427,6 @@
     "coords": "1558,1646,60",
     "tier": 1,
     "cats": "4,6",
-    "startline": "#1/3pgyvBN.png",
-    "datacube": "#1/zba9I0p.jpg",
     "prio": 23,
     "oid": 1123
   },
@@ -472,7 +435,6 @@
     "coords": "1585,1055,60",
     "tier": 1,
     "cats": "4",
-    "startline": "#1/hZhWJ2k.jpg",
     "prio": -1,
     "oid": 1135
   },
@@ -481,7 +443,6 @@
     "coords": "1723,1002,60",
     "tier": 1,
     "cats": "4",
-    "startline": "#1/uQ3iZic.jpg",
     "prio": -1,
     "oid": 1156
   },
@@ -490,7 +451,6 @@
     "coords": "1928,1717,60",
     "tier": 1,
     "cats": "4",
-    "startline": "#1/HnxII1F.jpg",
     "prio": -1,
     "oid": 1181
   },
@@ -500,7 +460,6 @@
     "coords": "1993,1972,60",
     "tier": 1,
     "cats": "3",
-    "startline": "#1/nBtkth8.png",
     "prio": -1,
     "level": 1,
     "oid": 1113
@@ -510,7 +469,6 @@
     "coords": "2204,2024,60",
     "tier": 1,
     "cats": "3",
-    "startline": "#1/HZ5tmRy.png",
     "prio": -1,
     "level": 2,
     "oid": 1116
@@ -520,7 +478,6 @@
     "coords": "2365,2091,60",
     "tier": 1,
     "cats": "3",
-    "startline": "#1/Jz7x33C.png",
     "prio": -1,
     "level": 5,
     "oid": 1048
@@ -530,7 +487,6 @@
     "coords": "2501,2056,60",
     "tier": 1,
     "cats": "3",
-    "startline": "#1/wCLe6uP.png",
     "prio": -1,
     "level": 7,
     "oid": 1120
@@ -540,7 +496,6 @@
     "coords": "2644,2126,60",
     "tier": 1,
     "cats": "3",
-    "startline": "#1/OrMsGdl.png",
     "prio": -1,
     "level": 4,
     "oid": 1115
@@ -550,8 +505,6 @@
     "coords": "2799,2181,60",
     "tier": 1,
     "cats": "3,6",
-    "startline": "#1/mRyDWzi.png",
-    "datacube": "#1/HnCtoVT.jpg",
     "prio": -1,
     "level": 8,
     "oid": 1122
@@ -561,7 +514,6 @@
     "coords": "1352,1202,60",
     "tier": 1,
     "cats": "3",
-    "startline": "#1/4YQ6cRK.jpg",
     "prio": -1,
     "level": 6,
     "oid": 1141
@@ -572,8 +524,6 @@
     "coords": "1759,1317,60",
     "tier": 1,
     "cats": "2,6",
-    "startline": "#1/P6kpnur.png",
-    "datacube": "#1/Xiak0Sv.jpg",
     "prio": -1,
     "oid": 1152
   },
@@ -582,7 +532,6 @@
     "coords": "1834,1409,60",
     "tier": 1,
     "cats": "2",
-    "startline": "#1/IxTWmZf.png",
     "prio": -1,
     "oid": 1148
   },
@@ -591,7 +540,6 @@
     "coords": "1933,1505,60",
     "tier": 1,
     "cats": "2",
-    "startline": "#1/4rsyIjF.png",
     "prio": -1,
     "oid": 1149
   },
@@ -600,7 +548,6 @@
     "coords": "2047,1611,60",
     "tier": 1,
     "cats": "2",
-    "startline": "#1/8aRPBWw.png",
     "prio": -1,
     "oid": 1153
   },
@@ -610,7 +557,6 @@
     "coords": "2491,1033,60",
     "tier": 1,
     "cats": "1",
-    "startline": "#1/oaphoN9.png",
     "prio": -1,
     "oid": 1172
   },
@@ -619,7 +565,6 @@
     "coords": "2612,1120,60",
     "tier": 1,
     "cats": "1",
-    "startline": "#1/H8IchSp.png",
     "prio": -1,
     "oid": 1180
   },
@@ -628,7 +573,6 @@
     "coords": "2782,1174,60",
     "tier": 1,
     "cats": "1",
-    "startline": "#1/1gyY1Uu.png",
     "prio": -1,
     "oid": 1171
   },
@@ -637,7 +581,6 @@
     "coords": "2646,1259,60",
     "tier": 1,
     "cats": "1",
-    "startline": "#1/BYvmzKN.png",
     "prio": -1,
     "oid": 1170
   },
@@ -646,7 +589,6 @@
     "coords": "2812,1345,60",
     "tier": 1,
     "cats": "1",
-    "startline": "#1/lQR0G7Q.png",
     "prio": -1,
     "oid": 1168
   },
@@ -655,7 +597,6 @@
     "coords": "2961,1324,60",
     "tier": 1,
     "cats": "1",
-    "startline": "#1/WA4UkWa.png",
     "prio": -1,
     "oid": 1179
   },
@@ -665,7 +606,6 @@
     "coords": "1284,1817,60",
     "tier": 1,
     "cats": "8",
-    "startline": "#1/ziqHQDu.png",
     "prio": -1
   },
   {
@@ -673,7 +613,6 @@
     "coords": "1196,1687,60",
     "tier": 1,
     "cats": "8",
-    "startline": "#1/Osjmpjy.png",
     "prio": -1,
     "oid": 1189
   },
@@ -682,7 +621,6 @@
     "coords": "1094,1592,60",
     "tier": 2,
     "cats": "8",
-    "startline": "#1/AB9cQ5Q.jpg",
     "prio": -1,
     "oid": 1204
   },
@@ -691,7 +629,6 @@
     "coords": "1154,1451,60",
     "tier": 2,
     "cats": "8",
-    "startline": "#1/1SW4EEz.jpg",
     "prio": -1,
     "oid": 1205
   },
@@ -701,7 +638,6 @@
     "coords": "1405,2028,60",
     "tier": 2,
     "cats": "7",
-    "startline": "#1/atxnIuz.png",
     "candys": [
       {
         "src": "#1/2SPthk3.png",
@@ -732,7 +668,6 @@
     "coords": "1285,2143,60",
     "tier": 2,
     "cats": "7",
-    "startline": "#1/xfW1UnX.png",
     "candys": [
       {
         "src": "#1/GYVrXyI.png",
@@ -747,7 +682,6 @@
     "coords": "1351,2277,60",
     "tier": 2,
     "cats": "7",
-    "startline": "#1/DkdFcH2.png",
     "candys": [
       {
         "src": "#1/kI86irv.png",
@@ -766,7 +700,6 @@
     "coords": "1204,2315,60",
     "tier": 2,
     "cats": "7",
-    "startline": "#1/npwMPhk.png",
     "candys": [
       {
         "src": "#1/Z2rd7fB.png",
@@ -785,7 +718,6 @@
     "coords": "1090,2207,60",
     "tier": 2,
     "cats": "7",
-    "startline": "#1/m6vnEud.png",
     "candys": [
       {
         "src": "#1/LcMbBvl.png",
@@ -804,8 +736,6 @@
     "coords": "1137,2055,60",
     "tier": 2,
     "cats": "7,6",
-    "startline": "#1/thrQWBY.png",
-    "datacube": "#1/Pblf4io.jpg",
     "candys": [
       {
         "src": "#1/Qk680Mi.png",
@@ -824,7 +754,6 @@
     "coords": "1102,1891,60",
     "tier": 2,
     "cats": "7",
-    "startline": "#1/qiTHiFv.png",
     "candys": [
       {
         "src": "#1/x4A9ym3.png",
@@ -855,7 +784,6 @@
     "coords": "1024,1763,60",
     "tier": 2,
     "cats": "7",
-    "startline": "#1/a0vRMiU.png",
     "candys": [
       {
         "src": "#1/x7J8Laq.png",
@@ -878,7 +806,6 @@
     "coords": "901,1687,60",
     "tier": 2,
     "cats": "7",
-    "startline": "#1/wPO8z7u.png",
     "candys": [
       {
         "src": "#1/cBQE4tY.png",
@@ -901,8 +828,6 @@
     "coords": "843,1506,60",
     "tier": 2,
     "cats": "7,6",
-    "startline": "#1/pKE3ueS.png",
-    "datacube": "#1/yraAw8i.jpg",
     "candys": [
       {
         "src": "#1/gvm55wo.png",
@@ -925,7 +850,6 @@
     "coords": "732,1743,60",
     "tier": 2,
     "cats": "7",
-    "startline": "#1/UohXYKD.png",
     "candys": [
       {
         "src": "#1/j6PcN8K.png",
@@ -952,7 +876,6 @@
     "coords": "649,1620,60",
     "tier": 2,
     "cats": "7",
-    "startline": "#1/ppg6omJ.png",
     "candys": [
       {
         "src": "#1/a7HsyDS.png",
@@ -971,7 +894,6 @@
     "coords": "694,1443,60",
     "tier": 2,
     "cats": "7",
-    "startline": "#1/5ETNHMw.png",
     "prio": -1,
     "oid": 1056
   },
@@ -980,8 +902,6 @@
     "coords": "641,1291,60",
     "tier": 2,
     "cats": "7,6",
-    "startline": "#1/vTxA8BN.png",
-    "datacube": "#1/VzNHYxr.jpg",
     "candys": [
       {
         "src": "#1/GjUWER4.png",
@@ -996,7 +916,6 @@
     "coords": "751,1176,60",
     "tier": 2,
     "cats": "7",
-    "startline": "#1/sMoXuWP.png",
     "candys": [
       {
         "src": "#1/pIrJJja.png",
@@ -1015,7 +934,6 @@
     "coords": "763,992,60",
     "tier": 2,
     "cats": "7",
-    "startline": "#1/8qt2vCT.png",
     "candys": [
       {
         "src": "#1/aToNr9C.png",
@@ -1034,7 +952,6 @@
     "coords": "656,889,60",
     "tier": 2,
     "cats": "7",
-    "startline": "#1/BTSP7gn.png",
     "candys": [
       {
         "src": "#1/7ctfoN9.png",
@@ -1049,7 +966,6 @@
     "coords": "600,746,60",
     "tier": 2,
     "cats": "7",
-    "startline": "#1/dpcBcwl.png",
     "prio": -1,
     "oid": 1100
   },
@@ -1058,7 +974,6 @@
     "coords": "744,686,60",
     "tier": 2,
     "cats": "7",
-    "startline": "#1/ozrSQmW.png",
     "candys": [
       {
         "src": "#1/x0ZcEKO.png",
@@ -1073,7 +988,6 @@
     "coords": "962,1428,60",
     "tier": 2,
     "cats": "7",
-    "startline": "#1/WLPUA9D.png",
     "prio": -1,
     "oid": 1094
   },
@@ -1083,7 +997,6 @@
     "coords": "861,600,60",
     "tier": 2,
     "cats": "4",
-    "startline": "#1/3hDsRZO.png",
     "prio": -1,
     "oid": 1108
   },
@@ -1092,7 +1005,6 @@
     "coords": "614,1064,60",
     "tier": 2,
     "cats": "4",
-    "startline": "#1/ADx48TK.png",
     "prio": -1,
     "oid": 1166
   },
@@ -1101,7 +1013,6 @@
     "coords": "984,655,60",
     "tier": 2,
     "cats": "4",
-    "startline": "#1/q60Z6UK.jpg",
     "prio": -1,
     "oid": 1105
   },
@@ -1110,7 +1021,6 @@
     "coords": "1201,643,60",
     "tier": 2,
     "cats": "4",
-    "startline": "#1/OGE0YX9.jpg",
     "prio": -1,
     "oid": 1129
   },
@@ -1119,8 +1029,6 @@
     "coords": "956,1277,60",
     "tier": 2,
     "cats": "4,6",
-    "startline": "#1/yopSM5Y.jpg",
-    "datacube": "#1/FXGOImu.jpg",
     "prio": -1,
     "oid": 1130
   },
@@ -1129,7 +1037,6 @@
     "coords": "783,2367,60",
     "tier": 2,
     "cats": "4",
-    "startline": "#1/baDn63P.jpg",
     "prio": -1,
     "oid": 1112
   },
@@ -1138,7 +1045,6 @@
     "coords": "1098,579,60",
     "tier": 2,
     "cats": "4",
-    "startline": "#1/dDtBgQK.jpg",
     "prio": -1,
     "oid": 1127
   },
@@ -1148,7 +1054,6 @@
     "coords": "903,1948,60",
     "tier": 2,
     "cats": "3",
-    "startline": "#1/fmxb4dF.png",
     "prio": -1,
     "level": 9
   },
@@ -1157,7 +1062,6 @@
     "coords": "680,1923,60",
     "tier": 2,
     "cats": "3",
-    "startline": "#1/5eW0HD5.png",
     "prio": -1,
     "level": 10,
     "oid": 1121
@@ -1167,7 +1071,6 @@
     "coords": "650,2079,60",
     "tier": 2,
     "cats": "3",
-    "startline": "#1/AeseUY8.png",
     "prio": -1,
     "level": 11,
     "oid": 1140
@@ -1177,7 +1080,6 @@
     "coords": "814,2149,60",
     "tier": 2,
     "cats": "3",
-    "startline": "#1/vRfL8th.png",
     "prio": -1,
     "level": 14,
     "oid": 1136
@@ -1187,7 +1089,6 @@
     "coords": "640,2262,60",
     "tier": 2,
     "cats": "3",
-    "startline": "#1/zb1Mvst.png",
     "prio": -1,
     "level": 13,
     "oid": 1110
@@ -1197,7 +1098,6 @@
     "coords": "936,2233,60",
     "tier": 2,
     "cats": "3",
-    "startline": "#1/lfZstlt.jpg",
     "prio": -1,
     "level": 16,
     "oid": 1137
@@ -1207,7 +1107,6 @@
     "coords": "953,2403,60",
     "tier": 2,
     "cats": "3",
-    "startline": "#1/R0NI8mG.jpg",
     "prio": -1,
     "level": 17,
     "oid": 1111
@@ -1218,7 +1117,6 @@
     "coords": "2092,1734,60",
     "tier": 2,
     "cats": "2",
-    "startline": "#1/CKkkab2.png",
     "prio": -1,
     "oid": 1145
   },
@@ -1227,7 +1125,6 @@
     "coords": "2176,1858,60",
     "tier": 2,
     "cats": "2",
-    "startline": "#1/JJ5MysH.png",
     "prio": -1,
     "oid": 1151
   },
@@ -1236,7 +1133,6 @@
     "coords": "2362,1811,60",
     "tier": 2,
     "cats": "2",
-    "startline": "#1/YvH4Hno.png",
     "prio": -1,
     "oid": 1154
   },
@@ -1245,7 +1141,6 @@
     "coords": "2529,1774,60",
     "tier": 2,
     "cats": "2",
-    "startline": "#1/WmXbGAe.png",
     "prio": -1,
     "oid": 1155
   },
@@ -1255,7 +1150,6 @@
     "coords": "840,812,60",
     "tier": 2,
     "cats": "10",
-    "startline": "#1/GTyyz4k.jpg",
     "oid": 1226
   },
   // tier 3 / story
@@ -1264,8 +1158,6 @@
     "coords": "2337,1189,60",
     "tier": 3,
     "cats": "7,6",
-    "startline": "#1/9BCDg8K.png",
-    "datacube": "#1/IHNnMgS.jpg",
     "prio": -1,
     "oid": 1082
   },
@@ -1274,7 +1166,6 @@
     "coords": "2251,1101,60",
     "tier": 3,
     "cats": "7",
-    "startline": "#1/PP5TpTq.png",
     "prio": -1,
     "oid": 1091
   },
@@ -1283,8 +1174,6 @@
     "coords": "2141,1007,60",
     "tier": 3,
     "cats": "7",
-    "startline": "#1/7AdBVix.png",
-
     "prio": -1,
     "oid": 1074
   },
@@ -1293,8 +1182,6 @@
     "coords": "2224,898,60",
     "tier": 3,
     "cats": "7,6",
-    "startline": "#1/Gs23hII.png",
-    "datacube": "#1/RkUGHU3.jpg",
     "prio": -1,
     "oid": 1027
   },
@@ -1303,7 +1190,6 @@
     "coords": "2283,779,60",
     "tier": 3,
     "cats": "7",
-    "startline": "#1/DBDUEOV.png",
     "prio": -1,
     "oid": 8
   },
@@ -1312,7 +1198,6 @@
     "coords": "2362,686,60",
     "tier": 3,
     "cats": "7",
-    "startline": "#1/QM2tEYC.png",
     "prio": -1,
     "oid": 65010
   },
@@ -1321,7 +1206,6 @@
     "coords": "2524,637,60",
     "tier": 3,
     "cats": "7",
-    "startline": "#1/05A3lmp.png",
     "prio": -1,
     "oid": 1089
   },
@@ -1330,7 +1214,6 @@
     "coords": "2654,564,60",
     "tier": 3,
     "cats": "7",
-    "startline": "#1/5VCLZil.png",
     "prio": -1,
     "oid": 1092
   },
@@ -1339,8 +1222,6 @@
     "coords": "2781,498,60",
     "tier": 3,
     "cats": "7,6",
-    "startline": "#1/0WqIZ1h.png",
-    "datacube": "#1/KR5GUDd.jpg",
     "prio": -1,
     "oid": 1093
   },
@@ -1349,8 +1230,6 @@
     "coords": "2944,434,60",
     "tier": 3,
     "cats": "7,6",
-    "startline": "#1/73h19lm.png",
-    "datacube": "#1/MmZT7Qf.jpg",
     "prio": -1,
     "oid": 1054
   },
@@ -1359,8 +1238,6 @@
     "coords": "3098,373,60",
     "tier": 3,
     "cats": "7,6",
-    "startline": "#1/mP6Gh0K.png",
-    "datacube": "#1/5tEPIbc.jpg",
     "prio": -1,
     "oid": 1084
   },
@@ -1369,7 +1246,6 @@
     "coords": "3210,472,60",
     "tier": 3,
     "cats": "7",
-    "startline": "#1/qtidyFz.png",
     "prio": -1,
     "oid": 1101
   },
@@ -1378,9 +1254,10 @@
     "coords": "2218,622,60",
     "tier": 3,
     "cats": "7",
-    "startline": "#1/X2yijkl.jpg",
     "helper": [
-      {"The End":"#1/ukz6W5j.jpg"}
+      {
+        "The End": "#1/ukz6W5j.jpg"
+      }
     ],
     "prio": -1,
     "oid": 1143
@@ -1391,8 +1268,6 @@
     "coords": "2470,838,60",
     "tier": 3,
     "cats": "4,6",
-    "startline": "#1/SK8V99p.png",
-    "datacube": "#1/1shucej.jpg",
     "prio": -1,
     "oid": 1125
   },
@@ -1401,7 +1276,6 @@
     "coords": "2063,712,60",
     "tier": 3,
     "cats": "4",
-    "startline": "#1/Cf8W7HQ.jpg",
     "prio": -1,
     "oid": 1107
   },
@@ -1410,8 +1284,6 @@
     "coords": "2089,574,60",
     "tier": 3,
     "cats": "4,6",
-    "startline": "#1/uBzWQbc.jpg",
-    "datacube": "#1/wkEAdOh.jpg",
     "prio": -1,
     "oid": 1132
   },
@@ -1420,7 +1292,6 @@
     "coords": "2335,434,60",
     "tier": 3,
     "cats": "4",
-    "startline": "#1/kL2M67m.jpg",
     "prio": -1,
     "oid": 1146
   },
@@ -1429,7 +1300,6 @@
     "coords": "2586,753,60",
     "tier": 3,
     "cats": "4",
-    "startline": "#1/liRFyvQ.jpg",
     "prio": -1,
     "oid": 1124
   },
@@ -1439,7 +1309,6 @@
     "coords": "2358,948,60",
     "tier": 3,
     "cats": "3",
-    "startline": "#1/CtLiuQm.png",
     "prio": -1,
     "level": 12,
     "oid": 1144
@@ -1449,8 +1318,6 @@
     "coords": "2132,819,60",
     "tier": 3,
     "cats": "3,6",
-    "startline": "#1/QQ3j0rT.png",
-    "datacube": "#1/oGQKTsI.jpg",
     "prio": -1,
     "level": 16,
     "oid": 1119
@@ -1460,7 +1327,6 @@
     "coords": "2976,2010,60",
     "tier": 3,
     "cats": "3",
-    "startline": "#1/7teBQB2.png",
     "prio": -1,
     "level": 17,
     "oid": 1147
@@ -1470,7 +1336,6 @@
     "coords": "2408,570,60",
     "tier": 3,
     "cats": "3",
-    "startline": "#1/iey8hIz.png",
     "prio": -1,
     "level": 18
   },
@@ -1480,7 +1345,6 @@
     "coords": "2704,1814,60",
     "tier": 3,
     "cats": "2",
-    "startline": "#1/S1cJFYd.png",
     "prio": -1,
     "oid": 1150
   },
@@ -1489,7 +1353,6 @@
     "coords": "2828,1925,60",
     "tier": 3,
     "cats": "2",
-    "startline": "#1/ClC031y.png",
     "prio": -1,
     "oid": 1157
   },
@@ -1499,7 +1362,6 @@
     "coords": "2731,1481,60",
     "tier": 1,
     "cats": "9",
-    "startline": "#1/UKLQWCa.png",
     "prio": 1,
     "chips": 200,
     "oid": 1209
@@ -1509,7 +1371,6 @@
     "coords": "2801,1611,60",
     "tier": 1,
     "cats": "9",
-    "startline": "#1/9cldqUA.png",
     "prio": 2,
     "chips": 500,
     "oid": 1197
@@ -1519,7 +1380,6 @@
     "coords": "2948,1630,60",
     "tier": 1,
     "cats": "9",
-    "startline": "#1/VmeADiD.png",
     "prio": 3,
     "chips": 1000,
     "oid": 1195
@@ -1529,7 +1389,6 @@
     "coords": "3087,1561,60",
     "tier": 1,
     "cats": "9",
-    "startline": "#1/cya5SJU.png",
     "prio": 4,
     "chips": 1500,
     "oid": 1210
@@ -1539,7 +1398,6 @@
     "coords": "3150,1430,60",
     "tier": 1,
     "cats": "9",
-    "startline": "#1/fmL9Mt7.png",
     "prio": 5,
     "chips": 2500,
     "oid": 1193
@@ -1549,7 +1407,6 @@
     "coords": "3307,1503,60",
     "tier": 1,
     "cats": "9",
-    "startline": "#1/HJMtNrt.png",
     "prio": 6,
     "chips": 5000,
     "oid": 1199
@@ -1560,7 +1417,6 @@
     "tier": 2,
     "cats": "9",
     "prio": 7,
-    "startline": "#1/x63XVgj.jpg",
     "chips": 7500,
     "oid": 1194
   },
@@ -1569,7 +1425,6 @@
     "coords": "3272,1286,60",
     "tier": 2,
     "cats": "9",
-    "startline": "#1/zAl04fe.jpg",
     "prio": 8,
     "chips": 10000,
     "oid": 1196
@@ -1579,7 +1434,6 @@
     "coords": "3325,1170,60",
     "tier": 2,
     "cats": "9",
-    "startline": "#1/i9fHrst.jpg",
     "prio": 9,
     "chips": 12500,
     "oid": 1208
@@ -1589,7 +1443,6 @@
     "coords": "3205,1032,60",
     "tier": 2,
     "cats": "9",
-    "startline": "#1/3OSJaid.jpg",
     "prio": 10,
     "chips": 15000,
     "oid": 1207
@@ -1599,7 +1452,6 @@
     "coords": "3064,1121,60",
     "tier": 2,
     "cats": "9",
-    "startline": "#1/n4qivTJ.jpg",
     "prio": 11,
     "chips": 17500,
     "oid": 1192
@@ -1609,7 +1461,6 @@
     "coords": "2929,1063,60",
     "tier": 3,
     "cats": "9",
-    "startline": "#1/T1SEQDj.jpg",
     "prio": 12,
     "chips": 20000,
     "oid": 1191
@@ -1619,7 +1470,6 @@
     "coords": "3038,944,60",
     "tier": 3,
     "cats": "9",
-    "startline": "#1/DioLKyE.jpg",
     "prio": 13,
     "chips": 25000,
     "oid": 1202
@@ -1629,7 +1479,6 @@
     "coords": "2919,876,60",
     "tier": 3,
     "cats": "9",
-    "startline": "#1/0dShahO.png",
     "prio": 14,
     "chips": 30000,
     "oid": 1198
@@ -1639,7 +1488,6 @@
     "coords": "2791,952,60",
     "tier": 3,
     "cats": "9",
-    "startline": "#1/h9urlsP.png",
     "prio": 15,
     "chips": 35000,
     "oid": 1203
@@ -1649,7 +1497,6 @@
     "coords": "2709,854,60",
     "tier": 3,
     "cats": "9",
-    "startline": "#1/loD59O1.png",
     "prio": 16,
     "chips": 40000,
     "oid": 1201
@@ -1660,7 +1507,6 @@
     "coords": "",
     "tier": 1,
     "cats": "9",
-    "startline": "#1/57aanHz.png",
     "prio": 17,
     "oid": 1233,
     "only_bunker": true
@@ -1670,7 +1516,6 @@
     "coords": "",
     "tier": 1,
     "cats": "9",
-    "startline": "#1/9NAKyEN.png",
     "prio": 18,
     "oid": 1211,
     "only_bunker": true
@@ -1680,139 +1525,122 @@
     "coords": "",
     "tier": 1,
     "cats": "9",
-    "startline": "#1/9jJCrwD.png",
     "prio": 19,
     "oid": 1212,
     "only_bunker": true
   },
   // winter tracks
   {
-	"id": 135,
-	"coords": "2003,939,60",
-	"tier": 1,
-	"cats": "11",
-	"prio": 1,
-	"startline": "#1/SlBw1DX.png"
+    "id": 135,
+    "coords": "2003,939,60",
+    "tier": 1,
+    "cats": "11",
+    "prio": 1
   },
   {
-	"id": 136,
-	"coords": "1930,838,60",
-	"tier": 1,
-	"cats": "11",
-	"prio": 2,
-	"startline": "#1/vHAT1KF.png"
+    "id": 136,
+    "coords": "1930,838,60",
+    "tier": 1,
+    "cats": "11",
+    "prio": 2
   },
   {
-	"id": 137,
-	"coords": "1833,748,60",
-	"tier": 1,
-	"cats": "11",
-	"prio": 3,
-	"startline": "#1/mLYMDUs.png"
+    "id": 137,
+    "coords": "1833,748,60",
+    "tier": 1,
+    "cats": "11",
+    "prio": 3
   },
   {
-	"id": 138,
-	"coords": "1704,812,60",
-	"tier": 1,
-	"cats": "11",
-	"prio": 4,
-	"startline": "#1/Hv6SQHM.png"
+    "id": 138,
+    "coords": "1704,812,60",
+    "tier": 1,
+    "cats": "11",
+    "prio": 4
   },
   {
     "id": 139,
     "coords": "1620,915,60",
     "tier": 1,
     "cats": "11",
-    "prio": 5,
-    "startline": "#1/JW9tsuw.png"
+    "prio": 5
   },
   {
     "id": 140,
     "coords": "1491,958,60",
     "tier": 1,
     "cats": "11",
-    "prio": 6,
-    "startline": "#1/PlzSmJ7.png"
+    "prio": 6
   },
   {
     "id": 141,
     "coords": "1351,1038,60",
     "tier": 1,
     "cats": "11",
-    "prio": 7,
-    "startline": "#1/5hc4LQw.png"
+    "prio": 7
   },
   {
     "id": 142,
     "coords": "1218,1085,60",
     "tier": 2,
     "cats": "11",
-    "prio": 8,
-    "startline": "#1/QmAdItd.png"
+    "prio": 8
   },
   {
     "id": 143,
     "coords": "1064,1143,60",
     "tier": 2,
     "cats": "11",
-    "prio": 9,
-    "startline": "#1/jStRNQU.png"
+    "prio": 9
   },
   {
     "id": 144,
     "coords": "942,1064,60",
     "tier": 2,
     "cats": "11",
-    "prio": 10,
-    "startline": "#1/qfM8Kdd.png"
+    "prio": 10
   },
   {
     "id": 145,
     "coords": "968,930,60",
     "tier": 2,
     "cats": "11",
-    "prio": 11,
-    "startline": "#1/KdWsMi3.png"
+    "prio": 11
   },
   {
     "id": 146,
     "coords": "1058,818,60",
     "tier": 2,
     "cats": "11",
-    "prio": 12,
-    "startline": "#1/hJo7aXn.png"
+    "prio": 12
   },
   {
     "id": 149,
     "coords": "1200,929,60",
     "tier": 3,
     "cats": "11",
-    "prio": 13,
-    "startline": "#1/DvkHvGi.png"
+    "prio": 13
   },
   {
     "id": 150,
     "coords": "1353,901,60",
     "tier": 3,
     "cats": "11",
-    "prio": 14,
-    "startline": "#1/6yIo86N.png"
+    "prio": 14
   },
   {
     "id": 151,
     "coords": "1446,803,60",
     "tier": 3,
     "cats": "11",
-    "prio": 15,
-    "startline": "#1/gf4L7h2.png"
+    "prio": 15
   },
   {
     "id": 152,
     "coords": "1300,751,60",
     "tier": 3,
     "cats": "11",
-    "prio": 16,
-    "startline": "#1/u4HnJFV.png"
+    "prio": 16
   },
   // leaked tracks
   {
@@ -1821,7 +1649,6 @@
     "tier": 0,
     "cats": "12",
     "prio": 1,
-    "startline": "#1/TBt2uKy.png",
     "leaked": true
   },
   {
@@ -1830,7 +1657,6 @@
     "tier": 0,
     "cats": "12",
     "prio": 3,
-    "startline": "#1/CfvLaOZ.jpg",
     "forum_links": "http://forums.ubi.com/showthread.php/1104009-!!!-Prod22-Maria-2-map",
     "leaked": true
   },
@@ -1840,7 +1666,6 @@
     "tier": 0,
     "cats": "12",
     "prio": 4,
-    "startline": "#1/dyWWbC1.png",
     "leaked": true
   },
   {
@@ -1849,7 +1674,6 @@
     "tier": 0,
     "cats": "12",
     "prio": 5,
-    "startline": "#1/SwOtCLF.jpg",
     "leaked": true
   },
   // agent tracks
@@ -1858,40 +1682,35 @@
     "only_event": true,
     "tier": 1,
     "cats": "13",
-    "prio": 2,
-    "startline": "#1/5eRQ3p2.png"
+    "prio": 2
   },
   {
     "id": 156,
     "coords": "1772,2048,60",
     "tier": 1,
     "cats": "13",
-    "prio": 1,
-    "startline": "#1/2AySuC7.png"
+    "prio": 1
   },
   {
     "id": 148,
     "coords": "2086,2132,60",
     "tier": 2,
     "cats": "13",
-    "prio": 3,
-    "startline": "#1/kWF7aGW.jpg"
+    "prio": 3
   },
   {
     "id": 158,
     "coords": "1929,2111,60",
     "tier": 2,
     "cats": "13",
-    "prio": 4,
-    "startline": "#1/FxyZnmZ.png"
+    "prio": 4
   },
   {
     "id": 159,
     "coords": "2262,2213,60",
     "tier": 2,
     "cats": "13",
-    "prio": 5,
-    "startline": "#1/???"
+    "prio": 5
   },
   // tier 2 hardcore
   {
@@ -1899,48 +1718,42 @@
     "coords": "1377,663,60",
     "tier": 2,
     "cats": "1",
-    "prio": 1,
-    "startline": "#1/GxZflhE.png"
+    "prio": 1
   },
   {
     "id": 161,
     "coords": "1523,620,60",
     "tier": 2,
     "cats": "1",
-    "prio": 2,
-    "startline": "#1/zvPHI0D.png"
+    "prio": 2
   },
   {
     "id": 162,
     "coords": "1482,505,60",
     "tier": 2,
     "cats": "1",
-    "prio": 3,
-    "startline": "#1/IFmNdNM.png"
+    "prio": 3
   },
   {
     "id": 163,
     "coords": "1625,410,60",
     "tier": 2,
     "cats": "1",
-    "prio": 4,
-    "startline": "#1/RsiWPM9.png"
+    "prio": 4
   },
   {
     "id": 164,
     "coords": "1702,550,60",
     "tier": 2,
     "cats": "1",
-    "prio": 5,
-    "startline": "#1/dOQVwsd.png"
+    "prio": 5
   },
   {
     "id": 165,
     "coords": "1876,604,60",
     "tier": 2,
     "cats": "1",
-    "prio": 6,
-    "startline": "#1/Nw4XrJ6.png"
+    "prio": 6
   },
   // rodeo
   {
@@ -1948,8 +1761,7 @@
     "only_event": true,
     "tier": 1,
     "cats": "14",
-    "prio": 1,
-    "startline": "#1/1AF609s.jpg"
+    "prio": 1
   },
   // rodeo weekly tracks
   {
@@ -1957,32 +1769,28 @@
     "coords": "1520,2289,60",
     "tier": 1,
     "cats": "14",
-    "prio": 2,
-    "startline": "#1/SbcuKGk.png"
+    "prio": 2
   },
   {
     "id": 168,
     "coords": "1701,2362,60",
     "tier": 1,
     "cats": "14",
-    "prio": 3,
-    "startline": "#1/LA1gwyV.jpg"
+    "prio": 3
   },
   {
     "id": 169,
     "coords": "1910,2314,60",
     "tier": 2,
     "cats": "14",
-    "prio": 4,
-    "startline": "#1/t1NeK2y.png"
+    "prio": 4
   },
   {
     "id": 170,
     "coords": "2101,2348,60",
     "tier": 2,
     "cats": "14",
-    "prio": 5,
-    "startline": "#1/jNx4fQu.png"
+    "prio": 5
   },
   // rodeo horseshoe tracks
   {
@@ -1990,24 +1798,21 @@
     "coords": "2121,1449,60",
     "tier": 2,
     "cats": "14",
-    "prio": 1,
-    "startline": "#1/X1u0ImL.jpg"
+    "prio": 1
   },
   {
     "id": 172,
     "coords": "2268,1689,60",
     "tier": 2,
     "cats": "14",
-    "prio": 2,
-    "startline": "#1/nx4NZ6x.jpg"
+    "prio": 2
   },
   {
     "id": 173,
     "coords": "2455,352,60",
     "tier": 2,
     "cats": "14",
-    "prio": 3,
-    "startline": "#1/cNiITYe.png"
+    "prio": 3
   },
   // halloween #2
   {
@@ -2015,48 +1820,42 @@
     "coords": "808,1834,60",
     "tier": 1,
     "cats": "15",
-    "prio": 1,
-    "startline": "#1/xOjFZpD.png"
+    "prio": 1
   },
   {
     "id": 175,
     "coords": "616,1817,60",
     "tier": 1,
     "cats": "15",
-    "prio": 2,
-    "startline": "#1/A489CAu.png"
+    "prio": 2
   },
   {
     "id": 176,
     "coords": "510,1882,60",
     "tier": 2,
     "cats": "15",
-    "prio": 3,
-    "startline": "#1/hW5H3fD.png"
+    "prio": 3
   },
   {
     "id": 177,
     "coords": "479,1988,60",
     "tier": 2,
     "cats": "15",
-    "prio": 4,
-    "startline": "#1/mSE7k3B.png"
+    "prio": 4
   },
   {
     "id": 178,
     "coords": "466,2112,60",
     "tier": 2,
     "cats": "15",
-    "prio": 5,
-    "startline": "#1/ymY1C0Q.png"
+    "prio": 5
   },
   {
     "id": 179,
     "coords": "498,1686,60",
     "tier": 2,
     "cats": "15",
-    "prio": 6,
-    "startline": "#1/3HyBeYa.png"
+    "prio": 6
   },
   {
     "id": 180,
@@ -2084,31 +1883,27 @@
     "coords": "534,1532,60",
     "tier": 1,
     "cats": "15",
-    "prio": 10,
-    "startline": "#1/aKYcj6h.png"
+    "prio": 10
   },
   {
     "id": 184,
     "coords": "429,1468,60",
     "tier": 1,
     "cats": "15",
-    "prio": 11,
-    "startline": "#1/ybwrp3U.png"
+    "prio": 11
   },
   {
     "id": 185,
     "coords": "337,1410,60",
     "tier": 1,
     "cats": "15",
-    "prio": 12,
-    "startline": "#1/NIeJBpr.png"
+    "prio": 12
   },
   {
     "id": 186,
     "coords": "385,1299,60",
     "tier": 3,
     "cats": "15",
-    "prio": 13,
-    "startline": "#1/nYsytXW.png"
+    "prio": 13
   }
 ]

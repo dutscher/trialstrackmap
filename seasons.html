@@ -22,7 +22,7 @@
 
     <div class="seasons-list">
         <div class="box season-container" ng-repeat="season in filteredArray" season-list-ready>
-            <img class="season-banner" ng-src="{{season.header|imageHoster:data.imagehoster}}" />
+            <img class="season-banner" ng-src="{{season.header|hoster:data.hoster}}" />
 
             <hr />
 
@@ -39,8 +39,8 @@
 
             <div ng-if="season.donkey">
                 <h2>{{'seasons.donkey_state'|translate}}</h2>
-                <a href="{{::season.donkey|imageHoster:data.imagehoster}}" target="_blank">
-                    <img class="season-bike-state" ng-src="{{::season.donkey|imageHoster:data.imagehoster}}" />
+                <a href="{{::season.donkey|hoster:data.hoster}}" target="_blank">
+                    <img class="season-bike-state" ng-src="{{::season.donkey|hoster:data.hoster}}" />
                 </a>
             </div>
 
