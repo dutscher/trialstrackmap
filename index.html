@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="trialsTrackmap" ng-controller="trackmap">
 <head>
-    <title page-title></title>
+    <title page-title>Trials Frontier Trackmap</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="stylesheet" type="text/css" href="css/icons.css" />
+    <link rel="stylesheet" type="text/css" href="css/style-common.css" />
+    <link rel="stylesheet" type="text/css" href="css/style-icons.css" />
 
     <meta property="og:title" content="Trials Frontier Trackmap | Guide for Data-Cubes, Candies & Youtube How-tos" />
     <meta property="og:url" content="http://trialstrackmap.sb-f.de/" />
@@ -16,69 +17,78 @@
     <style preload-images></style>
 </head>
 <body class="en" hm-swipe-left="handleSidebars($event,'right','toggleLeft')" hm-swipe-right="handleSidebars($event,'left','toggleRight')">
+
+    <div class="only-landscape">
+        <div class="wrap">
+            <i class="orientation"></i> <br/>
+            {%'page.onlyLandscape'|translate%}
+        </div>
+    </div>
+
     <nav class="new-sidebar left">
         <div class="handler" ng-click="handleSidebars($event,'left')"></div>
         <div class="content">
             <ul>
                 <li>
                     <div class="wrap">
-                        <h2>{{'page.title'|translate}}</h2>
+                        <h2>{%'page.title'|translate%}</h2>
 
                         <div language-select></div>
 
                         <hr>
 
-                        {{'page.leftSidebar.update'|translate}}: {{::data.map.stats.update}}<br/>
+                        {%'page.leftSidebar.update'|translate%}: {%::data.map.stats.update%}<br/>
 
                         <hr>
 
-                        <a href="/seasons.html" target="_blank">{{'page.leftSidebar.goToSeasons'|translate}} &raquo;</a>
-                        <a href="/times.html" target="_blank">{{'page.leftSidebar.goToMedals'|translate}} &raquo;</a>
-                        <a href="/anniversary.html" target="_blank">{{'page.leftSidebar.goToAnniversary'|translate}} &raquo;</a>
+                        <a href="/dist/seasons.html" target="_blank">{%'page.leftSidebar.goToSeasons'|translate%} &raquo;</a>
+                        <a href="/dist/table.html" target="_blank">{%'page.leftSidebar.goToMedals'|translate%} &raquo;</a>
+                        <a href="/dist/table-improve.html" target="_blank">{%'page.leftSidebar.goToImprove'|translate%} &raquo;</a>
+                        <a href="/dist/anniversary.html" target="_blank">{%'page.leftSidebar.goToAnniversary'|translate%} &raquo;</a>
                     </div>
                 </li>
                 <li>
                     <div class="wrap">
-                        <h2>{{'page.leftSidebar.stats'|translate}}</h2>
-                        {{'page.leftSidebar.uplayID'|translate}}: {{::data.map.stats.uplay}}<br/>
-                        {{'page.leftSidebar.level'|translate}}: {{::data.map.stats.level}}<br/>
-                        {{'page.leftSidebar.globalRang'|translate}}: {{::data.map.stats.rank}}<br/>
-                        {{'page.leftSidebar.appVersion'|translate}}: {{::data.map.stats.app_version}}<br/>
+                        <h2>{%'page.leftSidebar.stats'|translate%}</h2>
+                        {%'page.leftSidebar.uplayID'|translate%}: {%::data.map.stats.uplay%}<br/>
+                        {%'page.leftSidebar.level'|translate%}: {%::data.map.stats.level%}<br/>
+                        {%'page.leftSidebar.globalRang'|translate%}: {%::data.map.stats.rank%}<br/>
+                        {%'page.leftSidebar.appVersion'|translate%}: {%::data.map.stats.app_version%}<br/>
                     </div>
                 </li>
                 <li>
                     <div class="wrap tierlegend">
-                        <h2 class="with-cursor">{{'page.leftSidebar.usefullLinks'|translate}}</h2>
-                        <a ng-repeat="link in data.map.usefull_links" href="{{::link.href}}" target="_blank" ng-bind-html="link.title|comingSoon"></a>
+                        <h2 class="with-cursor">{%'page.leftSidebar.usefullLinks'|translate%}</h2>
+                        <a ng-repeat="link in data.map.usefull_links" href="{%::link.href%}" target="_blank" ng-bind-html="link.title"></a>
                     </div>
                 </li>
                 <li>
                     <div class="wrap with-select">
-                        <h2 class="with-cursor" ng-click="visibility('friendsVisible')">{{'page.leftSidebar.uplayFriends'|translate}} ({{::data.friends.length}})</h2>
+                        <h2 class="with-cursor" ng-click="visibility('friendsVisible')">{%'page.leftSidebar.uplayFriends'|translate%} ({%::data.friends.length%})</h2>
                         <div ng-show="friendsVisible">
                             <div friendlist="data.friends"></div>
                         </div>
-                        <div class="with-cursor" ng-click="visibility('friendsVisible')" ng-hide="friendsVisible">{{'page.leftSidebar.toggleMe'|translate}}</div>
+                        <span class="with-cursor" ng-click="visibility('friendsVisible')" ng-hide="friendsVisible">{%'page.leftSidebar.toggleMe'|translate%}</span>
                     </div>
                 </li>
                 <li>
                     <div class="wrap tierlegend">
-                        <h2 class="with-cursor" ng-click="visibility('creditsVisible')">{{'page.leftSidebar.credits'|translate}} ({{::data.map.credits.length}})</h2>
+                        <h2 class="with-cursor" ng-click="visibility('creditsVisible')">{%'page.leftSidebar.credits'|translate%} ({%::data.map.credits.length%})</h2>
                         <div ng-show="creditsVisible">
-                            <a ng-repeat="credit in data.map.credits" ng-if="credit.href" href="{{::credit.href}}" target="_blank" ng-bind-html="credit.text|comingSoon"></a>
-                            <span class="like-a" ng-repeat="credit in data.map.credits" ng-if="!credit.href" ng-bind-html="credit.text|comingSoon"></span>
+                            <a ng-repeat="credit in data.map.credits" ng-if="credit.href" href="{%::credit.href%}" target="_blank" ng-bind-html="credit.text"></a>
+                            <span class="like-a" ng-repeat="credit in data.map.credits" ng-if="!credit.href" ng-bind-html="credit.text"></span>
                         </div>
-                        <div class="with-cursor" ng-click="visibility('creditsVisible')" ng-hide="creditsVisible">{{'page.leftSidebar.toggleMe'|translate}}</div>
+                        <span class="with-cursor" ng-click="visibility('creditsVisible')" ng-hide="creditsVisible">{%'page.leftSidebar.toggleMe'|translate%}</span>
                     </div>
                 </li>
                 <li>
                     <div class="wrap tierlegend">
-                        <h2 class="with-cursor" ng-click="visibility('disqusVisible')"><a href="#disqus_thread" style="text-decoration:none;">{{'page.leftSidebar.comments'|translate}}</a></h2>
+                        <h2 class="with-cursor" ng-click="visibility('disqusVisible')"><a href="#disqus_thread" style="text-decoration:none;">{%'page.leftSidebar.comments'|translate%}</a></h2>
                         <div ng-show="disqusVisible">
                             <div id="disqus_thread"></div>
                             <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                         </div>
-                        <div class="with-cursor" ng-click="visibility('disqusVisible')" ng-hide="disqusVisible">{{'page.leftSidebar.toggleMe'|translate}}</div>
+                        <span class="with-cursor" ng-click="visibility('disqusVisible')" ng-hide="disqusVisible">{%'page.leftSidebar.toggleMe'|translate%}</span>
                     </div>
                 </li>
             </ul>
@@ -91,35 +101,35 @@
             <ul>
                 <li>
                     <div class="wrap tierlegend">
-                        <h2 class="with-cursor" ng-click="visibility('statsVisible')">{{'page.rightSidebar.tracks'|translate}} ({{::data.tracks.length}} total)</h2>
+                        <h2 class="with-cursor" ng-click="visibility('statsVisible')">{%'page.rightSidebar.tracks'|translate%} ({%::data.tracks.length%} total)</h2>
                         <div ng-show="statsVisible">
-                            <span track-stats="{tracks:data.tracks,cats:data.map.cats}"></span>
+                            <span track-stats="{tracks:data.tracks}"></span>
                         </div>
-                        <div class="with-cursor" ng-click="visibility('statsVisible')" ng-hide="statsVisible">{{'page.leftSidebar.toggleMe'|translate}}</div>
+                        <span class="with-cursor" ng-click="visibility('statsVisible')" ng-hide="statsVisible">{%'page.leftSidebar.toggleMe'|translate%}</span>
                     </div>
                 </li>
                 <li>
                     <div class="wrap tierlegend">
-                        <h2 class="with-cursor" ng-click="visibility('legendVisible')">{{'page.rightSidebar.legend'|translate}}</h2>
+                        <h2 class="with-cursor" ng-click="visibility('legendVisible')">{%'page.rightSidebar.legend'|translate%}</h2>
                         <div ng-show="legendVisible">
-                            <span ng-repeat="cat in data.map.cats" class="{{::cat.class}} with-cursor" show-cat-on-map="{cat:cat,catIndex:$index+1,tracks:data.tracks}">
-                                {{'cats.'+cat.index|translate}} ({{::(data.tracks|catTracks:$index+1).length}})
+                            <span ng-repeat="cat in data.map.cats" class="{%::cat.class%} with-cursor" show-cat-on-map="{cat:cat,catIndex:$index+1,tracks:data.tracks}">
+                                {%'cats.'+cat.index|translate%} ({%::(data.tracks|catAndTierTracks:$index+1).length%})
                             </span>
                         </div>
-                        <div class="with-cursor" ng-click="visibility('legendVisible')" ng-hide="legendVisible">{{'page.leftSidebar.toggleMe'|translate}}</div>
+                        <span class="with-cursor" ng-click="visibility('legendVisible')" ng-hide="legendVisible">{%'page.leftSidebar.toggleMe'|translate%}</span>
                     </div>
                 </li>
                 <li>
                     <div class="wrap tierlegend">
-                        <h2>{{'page.rightSidebar.tracks'|translate}}</h2>
+                        <h2>{%'page.rightSidebar.tracks'|translate%}</h2>
                         <div class="mb10">
-                            <input type="text" ng-model="searchTrack" ng-model-options="{debounce:500}" class="search" placeholder="{{'page.rightSidebar.searchForTrack'|translate}}" />
+                            <input type="text" ng-model="searchTrack" ng-model-options="{debounce:500}" class="search" placeholder="{%'page.rightSidebar.searchForTrack'|translate%}" />
                         </div>
                         <div ng-repeat="tier in tierlegend" class="tierwrap">
                             <hr>
-                            <h3>{{'page.rightSidebar.tier'|translate}} {{::tier.number}}</h3>
-                            <span ng-repeat="catClass in repeatObject(tier.cats)" class="{{::catClass}} trackwrap">
-                                 <span ng-repeat="track in tier.cats[catClass]" track-in-sidebar="{track:track,catClass:catClass,cats:data.map.cats}"></span>
+                            <h3>{%'page.rightSidebar.tier'|translate%} {%::tier.number%}</h3>
+                            <span ng-repeat="catClass in repeatObject(tier.cats)" class="{%::catClass%} trackwrap">
+                                 <span ng-repeat="track in tier.cats[catClass]" track-in-sidebar="{track:track,catClass:catClass}"></span>
                             </span>
                         </div>
                     </div>
@@ -136,10 +146,10 @@
 
     <img src="blank.png" class="track-pointer" usemap="#trackmap" />
 
-    <img ng-src="{{::data.images.trackmap.src|hoster:data.hoster}}" ng-load="trackmapReady = true" class="trackmap" alt="{{::data.images.trackmap.alt}}" ng-class="{'loading':!trackmapReady,'loaded':trackmapReady}" pinch-zoom="canvas" />
+    <img ng-src="{%::data.images.trackmap.src|hoster:data.hoster%}" ng-load="trackmapReady = true" class="trackmap" alt="{%::data.images.trackmap.alt%}" ng-class="{'loading':!trackmapReady,'loaded':trackmapReady}" pinch-zoom="canvas" />
 
     <map name="trackmap">
-        <area ng-repeat="track in tracks" shape="circle" alt="{{'tracks.'+track.id|translate}}" title="{{'tracks.'+track.id|translate}}" coords="{{track.genCoords||'0,0,0'}}" href="#" show-track-in-modal="startline" />
+        <area ng-repeat="track in tracks" shape="circle" alt="{%'tracks.'+track.id|translate%}" title="{%'tracks.'+track.id|translate%}" coords="{%track.genCoords||'0,0,0'%}" href="#" show-track-in-modal="startline" />
     </map>
 
     <script type="text/javascript">

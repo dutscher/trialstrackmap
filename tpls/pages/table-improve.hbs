@@ -1,0 +1,78 @@
+{{#extend "default"}}
+    {{#content "title" mode="prepend"}}
+        Table to improve your times -
+    {{/content}}
+
+    {{#content "styles" mode="prepend"}}
+        <link rel="stylesheet" type="text/css" href="../css/style-table.css" />
+        <style map-colors></style>
+    {{/content}}
+
+    {{#content "ctrl"}}ng-controller="trackmap"{{/content}}
+
+    {{#content "body"}}
+        {{#with map}}
+            <div ng-controller="trackTimes">
+                <div ng-init="pageReady = false" ng-hide="pageReady" class="loader spin"></div>
+                <div class="page-body is-loading" data-finished="pageReady">
+
+                    {{> table-navigation deactivateParts=true activateMode=true withImproveImportExport=true}}
+
+                    <div class="box no-pad" sticky-thead>
+                        <table class="w100">
+                            <thead>
+                            <tr>
+                                <th rowspan="2" width="10" table-sorter="catIndex"></th>
+                                <th rowspan="2" width="35" table-sorter="id">ID</th>
+                                <th rowspan="2" width="35" table-sorter="tier">{%'page.timesTable.tier'|translate%}</th>
+                                <th rowspan="2" width="200" table-sorter="trackName">{%'page.timesTable.trackName'|translate%}</th>
+                                <th rowspan="2" width="50" table-sorter="myRank" title="{%'page.timesTable.improve.myRank'|translate%}">
+                                    <i class="rank"></i>
+                                </th>
+                                <th rowspan="2" table-sorter="differenceTime" title="{%'page.timesTable.improve.myTime'|translate%}">
+                                    <i class="timer"></i>
+                                </th>
+                                <th rowspan="2" table-sorter="differenceTimeWR" title="{%'page.timesTable.improve.worldRecord'|translate%}">
+                                    <i class="global"></i>
+                                </th>
+                                <th title="{%'page.timesTable.platinum'|translate%}">
+                                    <i class="medal-platinum"></i>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th title="{%'page.timesTable.time'|translate%}" ng-click="sort('platinum')"><i class="timer"></i></th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr ng-repeat="track in filteredArray = (data.tracks|showCatAndTier:selectedCat:selectedTier|filter:search|showParts:selectedPart:selectedPartLevel|improveSorter:selectedSort:selectedSortType)">
+                                <td cats-as-class="{track:track}" class="not-hover"></td>
+                                <td class="center">
+                                    {%::track.id%}
+                                </td>
+                                <td class="center">
+                                    {%::track.tier%}
+                                </td>
+                                <td ng-class="{'public-change':track.timesDB.public}">
+                                    {%track.i18n|stripLevel%}
+                                </td>
+                                <td class="center no-pad with-cursor" edit-improve="myRank">
+                                    {%track.improve[selectedMode][selectedBike].myRank%}
+                                </td>
+                                <td class="center no-pad with-cursor" edit-improve="myTime">
+                                    {%track.improve[selectedMode][selectedBike].myTime|convertTime%}
+                                    <span difference-time="track.improve[selectedMode][selectedBike].differenceTime"></span>
+                                </td>
+                                <td class="center no-pad" title="{%track.times.worldRecord[selectedMode][selectedBike].rider%}">
+                                    {%track.times.worldRecord[selectedMode][selectedBike].time|convertTime%}
+                                    <span difference-time="track.improve[selectedMode][selectedBike].differenceTimeWR"></span>
+                                </td>
+                                <td class="center" ng-bind-html="track.times.platinum.time|convertTime"></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        {{/with}}
+    {{/content}}
+{{/extend}}

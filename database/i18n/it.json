@@ -1,10 +1,12 @@
 {
   "page": {
     "title": "Mappa Trials Frontier",
+    "onlyLandscape": "Switch your device to landscape!",
     "leftSidebar": {
       "update": "Aggiornamento",
       "goToSeasons": "Panoramica Stagione",
       "goToMedals": "Medaglie & Oggetti da Costruzione",
+      "goToImprove": "Improve your times table",
       "goToAnniversary": "Pagina dell'Anniversario",
       "stats": "Stato",
       "uplayID": "Uplay",
@@ -34,7 +36,10 @@
       "chipsAmount": "Gettoni",
       "startline": "Linea di partenza",
       "datacubeGuide": "Guida Cubi di Dati",
-      "driveThrough": "Percorri la traccia",
+      "walkthroughBy": "by",
+      "walkthrough": "Walktrough",
+      "walkthrough-platinum": "Platinum Medal Walkthrough",
+      "walkthrough-top10": "Top 10 Tutorial",
       "medals": {
         "silver": "Argento",
         "gold": "Oro",
@@ -60,6 +65,14 @@
         "head": "Oggetti da Costruzione",
         "all": "mostra tutto",
         "allLevels": "mostra tutti i livelli"
+      },
+      "tier": "Tier",
+      "allTiers": "all tiers",
+      "improve": {
+        "myRank": "My rank",
+        "myTime": "My time",
+        "worldRecord": "Worldrecord",
+        "edit": "Set a new value for"
       }
     }
   },
@@ -290,7 +303,7 @@
     "179": "Crow Roofs",
     "180": "Curves of Destiny",
     "181": "City Blues",
-    "182": "",
+    "182": "Death Wheel",
     "183": "Hops of Fury",
     "184": "Ruins of Despair",
     "185": "Black Forest",

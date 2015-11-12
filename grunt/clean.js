@@ -11,5 +11,18 @@ module.exports = {
                 ]
             }
         ]
+    },
+    assemble: {
+        options: {
+            force: true
+        },
+        files: [
+            {
+                dot: true,
+                src: [
+                    "dist/*.html"
+                ]
+            }
+        ]
     }
 };

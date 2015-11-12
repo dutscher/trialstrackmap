@@ -1,0 +1,23 @@
+body {
+    margin: 0
+}
+
+canvas {
+    z-index: 1;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0
+}
+
+img {
+    position: relative;
+    z-index: 0;
+    display: block
+}
+
+[copy-text] {
+    opacity: 0;
+    position: absolute;
+    left: -1000px
+}

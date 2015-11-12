@@ -1,8 +1,8 @@
 {
   "images": {
     "trackmap": {
-      "src": "#1/VxjyQao.jpg",
-      "lSrc": "#0/trackmap.151029.en.jpg",
+      "src": "#1/uXSdVpG.jpg",
+      "lSrc": "#0/trackmap.151112.en.jpg",
       "alt": "Trails Frontier Trackmap",
       "dim": "3614x2495"
     },
@@ -61,23 +61,18 @@
     },
     "timer": {
       "src": "#1/GLuwunX.png",
-      "lSrc": "#0/currenies/timer.png",
+      "lSrc": "#0/picto/timer.png",
       "selector": "i.timer"
     },
     "faults": {
       "src": "#1/ZDhEx6w.png",
-      "lSrc": "#0/currenies/faults.png",
+      "lSrc": "#0/picto/faults.png",
       "selector": "i.faults"
     },
     "chips": {
       "src": "#1/G2ltTBu.png",
-      "lSrc": "#0/currenies/chips.png",
+      "lSrc": "#0/picto/chips.png",
       "selector": "i.chips"
-    },
-    "youtube": {
-      "src": "#1/xj2UqWG.png",
-      "lSrc": "#0/items/youtube.png",
-      "selector": "i.youtube"
     },
     "i18n_de": {
       "src": "#1/f2m614V.png",
@@ -116,7 +111,7 @@
     },
     "part": {
       "src": "#1/QBz8k4t.jpg",
-      "lSrc": "#0/currencies/parts.png",
+      "lSrc": "#0/picto/parts.png",
       "selector": "i.part",
       "sprite": true
     },
@@ -127,24 +122,59 @@
     },
     "fuel": {
       "src": "#1/GQOVBiF.png",
-      "lSrc": "#0/currencies/fuel.png",
+      "lSrc": "#0/picto/fuel.png",
       "selector": "i.fuel"
     },
     "gems": {
       "src": "#1/r2cpUF5.png",
-      "lSrc": "#0/currencies/gems.png",
+      "lSrc": "#0/picto/gems.png",
       "selector": "i.gems"
     },
     "coins": {
       "src": "#1/Dfmbyzl.png",
-      "lSrc": "#0/currencies/coins.png",
+      "lSrc": "#0/picto/coins.png",
       "selector": "i.coins"
+    },
+    "global": {
+      "src": "#1/t5ppH83.png",
+      "lSrc": "#0/picto/global.png",
+      "selector": "i.global"
+    },
+    "rank": {
+      "src": "#1/rNMKloQ.png",
+      "lSrc": "#0/picto/rank.png",
+      "selector": "i.rank"
+    },
+    "arrow": {
+      "src": "#1/iDyNPow.png",
+      "lSrc": "#0/picto/arrow.png",
+      "selector": "i.arrow"
     },
     "seasons": {
       "src": "#1/Xvr5aV1.jpg",
       "lSrc": "#0/sprites/seasons.jpg",
       "selector": "i.seasons",
       "sprite": true
+    },
+    "orientation": {
+      "src": "#1/AxTmdAj.png",
+      "lSrc": "#0/picto/orientation.png",
+      "selector": "i.orientation"
+    },
+    "youtube": {
+      "src": "#1/xj2UqWG.png",
+      "lSrc": "#0/items/youtube.png",
+      "selector": "i.youtube"
+    },
+    "youtube-top10": {
+      "src": "#1/FMCoIFS.png",
+      "lSrc": "#0/items/youtube-top10.png",
+      "selector": "i.youtube-top10"
+    },
+    "youtube-platinum": {
+      "src": "#1/oYBibpe.png",
+      "lSrc": "#0/items/youtube-plat.png",
+      "selector": "i.youtube-platinum"
     }
   },
   "hoster": {

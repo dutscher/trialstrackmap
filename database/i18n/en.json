@@ -1,10 +1,12 @@
 {
   "page": {
     "title": "Trials Frontier Trackmap",
+    "onlyLandscape": "Switch your device to landscape!",
     "leftSidebar": {
       "update": "Update",
-      "goToSeasons": "Season Overview",
-      "goToMedals": "Medals & Parts Table",
+      "goToSeasons": "Season overview",
+      "goToMedals": "Medals & parts table",
+      "goToImprove": "Improve your times table",
       "goToAnniversary": "Anniversary page",
       "stats": "Stats",
       "uplayID": "Uplay",
@@ -34,7 +36,10 @@
       "chipsAmount": "Chips amount",
       "startline": "Startline",
       "datacubeGuide": "Datacube Guide",
-      "driveThrough": "Drive through",
+      "walkthroughBy": "by",
+      "walkthrough": "Walktrough",
+      "walkthrough-platinum": "Platinum Medal Walkthrough",
+      "walkthrough-top10": "Top 10 Tutorial",
       "medals": {
         "silver": "Silver",
         "gold": "Gold",
@@ -48,7 +53,7 @@
       "silver": "silver",
       "gold": "gold",
       "platinum": "platinum",
-      "tracksAmount": "tracks visible",
+      "tracksAmount": "Tracks visible",
       "id": "ID",
       "trackName": "Track Name",
       "time": "Time",
@@ -60,6 +65,28 @@
         "head": "Parts",
         "all": "show all",
         "allLevels": "show all levels"
+      },
+      "filter": "Filter",
+      "categories": "Categories",
+      "device": "Device",
+      "bikeType": "Bike",
+      "tier": "Tier",
+      "allTiers": "all tiers",
+      "improve": {
+        "myRank": "My rank",
+        "myTime": "My time",
+        "worldRecord": "Worldrecord",
+        "edit": "Set a new value for",
+        "editMyTime": "Only insert digits! Your time 0:09.846 -> insert 9846 ;)",
+        "import": "Import",
+        "importFile": "Via .json file",
+        "importUrl": "Via URL to a .json file",
+        "chooseImportUrl": "Insert a url to the exported .json file!",
+        "confirmImport": "Do you want to import the times from",
+        "successfullImport": "Well done, file successfully imported",
+        "export": "Export",
+        "exportFile": "your times to a .json file",
+        "print": "Print version"
       }
     }
   },
@@ -290,7 +317,7 @@
     "179": "Crow Roofs",
     "180": "Curves of Destiny",
     "181": "City Blues",
-    "182": "",
+    "182": "Death Wheel",
     "183": "Hops of Fury",
     "184": "Ruins of Despair",
     "185": "Black Forest",

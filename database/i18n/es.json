@@ -1,10 +1,12 @@
 ﻿{
   "page": {
     "title": "Mapa Trials Frontier",
+    "onlyLandscape": "Apague el dispositivo al paisaje!",
     "leftSidebar": {
       "update": "Actualización",
       "goToSeasons": "Resumen Temporadas",
       "goToMedals": "Tabla de Medallas y Partes",
+      "goToImprove": "Improve your times table",
       "goToAnniversary": "Página Aniversario",
       "stats": "Estadísticas",
       "uplayID": "Uplay",
@@ -20,13 +22,13 @@
     "rightSidebar": {
       "legend": "Leyenda",
       "tracks": "Pistas",
-      "on_map": "on map",
-      "without_coords": "without coordinates",
-      "not_released": "not on map or released",
-      "only_event": "only playable by event",
-      "only_bunker": "only bunker",
-      "leaked": "leaked",
-      "with_video": "with video",
+      "on_map": "en el mapa",
+      "without_coords": "sin coordenadas",
+      "not_released": "ni en el mapa ni publicadas",
+      "only_event": "solo jugables por evento",
+      "only_bunker": "solo en búnker",
+      "leaked": "filtradas",
+      "with_video": "con vídeo",
       "searchForTrack": "Buscar pista",
       "tier": "Nivel"
     },
@@ -34,7 +36,10 @@
       "chipsAmount": "Cantidad de fichas",
       "startline": "Línea de salida",
       "datacubeGuide": "Guía cubos de datos",
-      "driveThrough": "Pilotaje",
+      "walkthroughBy": "by",
+      "walkthrough": "Walktrough",
+      "walkthrough-platinum": "Platinum Medal Walkthrough",
+      "walkthrough-top10": "Top 10 Tutorial",
       "medals": {
         "silver": "Plata",
         "gold": "Oro",
@@ -60,6 +65,14 @@
         "head": "Partes",
         "all": "mostrar todas",
         "allLevels": "mostrar todos los niveles"
+      },
+      "tier": "Tier",
+      "allTiers": "all tiers",
+      "improve": {
+        "myRank": "My rank",
+        "myTime": "My time",
+        "worldRecord": "Worldrecord",
+        "edit": "Set a new value for"
       }
     }
   },
@@ -282,18 +295,18 @@
     "171": "Hogar tribal",
     "172": "Cosecha tóxica",
     "173": "El gran columpio",
-    "174": "Lift of Doom",
-    "175": "Spider Kingdom",
-    "176": "Pumpking Desert",
-    "177": "Devil Hopping",
-    "178": "Dark Sands",
-    "179": "Crow Roofs",
-    "180": "Curves of Destiny",
-    "181": "City Blues",
-    "182": "",
-    "183": "Hops of Fury",
-    "184": "Ruins of Despair",
-    "185": "Black Forest",
-    "186": "Fest Mine"
+    "174": "Ascenso de perdición",
+    "175": "Reino araña",
+    "176": "Desierto calabaza",
+    "177": "Saltos demoníacos",
+    "178": "Arenas oscuras",
+    "179": "Tejados de cuervos",
+    "180": "Curvas del destino",
+    "181": "Blues de la ciudad",
+    "182": "Rueda mortal",
+    "183": "Botes de furia",
+    "184": "Ruinas de la desesperación",
+    "185": "Bosque negro",
+    "186": "Mina festival"
   }
 }

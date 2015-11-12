@@ -1,0 +1,70 @@
+{{#extend "default"}}
+    {{#content "title-override"}}true{{/content}}
+    {{#content "title" mode="prepend"}}
+        {{#with seasons}}
+            Seasons ({{_seasons.length}}) overview  -
+        {{/with}}
+    {{/content}}
+
+    {{#content "styles" mode="append"}}
+        <link rel="stylesheet" type="text/css" href="../css/style-seasons.css"/>
+    {{/content}}
+
+    {{#content "body"}}
+        {{#with seasons}}
+            <div class="season-page" ng-controller="seasonsNew">
+                <div ng-init="pageReady = false" ng-hide="pageReady" class="loader spin"></div>
+                <div class="page-body is-loading" data-finished="pageReady">
+                    {{> season-navigation}}
+
+                    <div class="seasons-list">
+                        {{#each-reverse _seasons}}
+                            <div class="box season-container">
+                                <img class="season-banner" ng-src="{%'{{header}}'|hoster:data.hoster%}"/>
+
+                                <div class="season-times">
+                                    <strong>#{%'{{id}}'|leadingZero:2%}</strong>
+
+                        <span>{%'seasons.date'|translate%}: {%'{{date}}'|truncateYearOnActive:{{#if active}}
+                            true{{else}}false{{/if}}%}</span> <br/>
+                        <span>{%'seasons.date_end{{#if active}}s{{/if}}'|translate%}: {%'{{date_end}}
+                            '|truncateYearOnActive:{{#if active}}true{{else}}false{{/if}}%}</span>
+
+                                    {{#if active}}
+                                        <span class="countdown" date-start="{{date}}" date-end="{{date_end}}"></span>
+                                    {{/if}}
+                                </div>
+
+                                <hr {{#if active}}class="protect-countdown"{{/if}}>
+
+                                <h2>{%'seasons.prices'|translate%}</h2>
+
+                                <div class="season-prizes" stop-scroll>
+                                    <table>
+                                        {{#each prizes}}
+                                            <tr>
+                                                <td>
+                                                    <i class="season-level-{{level}} seasons"></i>
+                                                </td>
+                                                <td title="{{title}}">
+                                                <span class="season-prize" data-extra="{{extra}}"
+                                                      data-extra-type="{{extra_type}}"></span>
+                                                </td>
+                                                <td class="right">
+                                                    + {{coins}} <i class="coins"></i><br/>
+                                                    + {{#if gems}}{{gems}}{{else}}0{{/if}} <i class="gems"></i>
+                                                </td>
+                                            </tr>
+                                        {{/each}}
+                                    </table>
+                                </div>
+
+                                <div class="season-summary" data-season-id="{{id}}"></div>
+                            </div>
+                        {{/each-reverse}}
+                    </div>
+                </div>
+            </div>
+        {{/with}}
+    {{/content}}
+{{/extend}}

@@ -1,0 +1,68 @@
+i.lang {
+    width: 25px;
+    height: 16px;
+    cursor: pointer;
+    display: inline-block;
+    background-size: cover !important;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+i.lang:last-child {
+    margin-right: 0;
+}
+
+i.candy,
+i.startline,
+i.data-cube,
+i[class^="medal-"],
+i.faults,
+i.timer,
+i.chips,
+i.orientation,
+i.youtube,
+i.youtube-platinum,
+i.youtube-top10,
+i.fuel,
+i.parts,
+i.gems,
+i.global,
+i.rank,
+i.arrow,
+i.coins {
+    display: inline-block;
+    background-size: cover !important;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+i.orientation {
+    width: 60px;
+    height: 60px;
+}
+
+i.arrow.desc {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+}
+
+i[class^="medal-"] {
+    width: 40px;
+    height: 40px;
+}
+
+[part-list] i, [part-list] span {
+    margin-right: 3px;
+}
+
+[part-list] i:last-child, [part-list] span:last-child {
+    margin-right: 0;
+}
+
+.hardcore-2 {
+    text-shadow: 0 1px 0 #FF00C3;
+}

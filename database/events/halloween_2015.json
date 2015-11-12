@@ -1,0 +1,135 @@
+{
+  "currencies": {
+    "grinding": "pumkins to race against halloween queen to get coins",
+    "amount": "halloween coins"
+  },
+  "prizes": {
+    "track": {
+      "1": "Lift of Doom",
+      "2": "Spider Kingdom",
+      "3": "Pumkin Desert",
+      "4": "Devil Hopping",
+      "5": "Dark Sands"
+    },
+    "custom_part": {
+      "1": "The Hillbilly Killer Boots",
+      "2": "Pumkin King Pants",
+      "3": "The Hillbilly Killer Overalls (One Size fits all serial killers.)",
+      "4": "Pumkin King Shirt (Itchy hay included)",
+      "5": "Pumkin King Head (Wil leave goop in hair.)",
+      "6": "The Hillbilly Killer Mask (Protects against teenage blood spurts.)"
+    },
+    "paintjob": {
+      "1": "Batwing Paint Job for Berserker (Become protector of the night!)",
+      "2": "Redlynx Paint Jon for Tango (Show some Redlynx love!)",
+      "3": "Skelly Paint Job for Stallion (Who's the cute little death-mare?)"
+    }
+  },
+  "event_prizes": [
+    {
+      "amount": 30000,
+      "prize": "track",
+      "prize_extra": 5
+    },
+    {
+      "amount": 27500,
+      "prize": "custom_part",
+      "prize_extra": 6
+    },
+    {
+      "amount": 22500,
+      "prize": "track",
+      "prize_extra": 4
+    },
+    {
+      "amount": 20000,
+      "prize": "custom_part",
+      "prize_extra": 5
+    },
+    {
+      "amount": 17500,
+      "prize": "paintjob",
+      "prize_extra": 3
+    },
+    {
+      "amount": 15500,
+      "prize": "gems",
+      "prize_extra": 30
+    },
+    {
+      "amount": 13500,
+      "prize": "coins",
+      "prize_extra": 30000
+    },
+    {
+      "amount": 12000,
+      "prize": "track",
+      "prize_extra": 3
+    },
+    {
+      "amount": 10500,
+      "prize": "custom_part",
+      "prize_extra": 4
+    },
+    {
+      "amount": 9000,
+      "prize": "custom_part",
+      "prize_extra": 3
+    },
+    {
+      "amount": 7700,
+      "prize": "gems",
+      "prize_extra": 20
+    },
+    {
+      "amount": 6500,
+      "prize": "custom_part",
+      "prize_extra": 2
+    },
+    {
+      "amount": 5400,
+      "prize": "coins",
+      "prize_extra": 15000
+    },
+    {
+      "amount": 4400,
+      "prize": "custom_part",
+      "prize_extra": 1
+    },
+    {
+      "amount": 3500,
+      "prize": "paintjob",
+      "prize_extra": 2
+    },
+    {
+      "amount": 2700,
+      "prize": "track",
+      "prize_extra": 2
+    },
+    {
+      "amount": 2000,
+      "prize": "gems",
+      "prize_extra": 10
+    },
+    {
+      "amount": 1400,
+      "prize": "coins",
+      "prize_extra": 8000
+    },
+    {
+      "amount": 900,
+      "prize": "track",
+      "prize_extra": 1
+    },
+    {
+      "amount": 500,
+      "prize": "coins",
+      "prize_extra": 4000
+    },
+    {
+      "amount": 200,
+      "prize": "paintjob",
+      "prize_extra": 1
+    }
+  ]
+}

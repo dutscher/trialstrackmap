@@ -1,0 +1,18 @@
+{{#extend "default"}}
+    {{#content "title-override"}}true{{/content}}
+    {{#content "title" mode="prepend"}}
+        Anniversary Page 2015 -
+    {{/content}}
+
+    {{#content "styles" mode="append"}}
+        <link rel="stylesheet" type="text/css" href="../css/style-anniversary.css"/>
+    {{/content}}
+
+    {{#content "body"}}
+        <div ng-init="pageReady = false" ng-hide="pageReady" class="loader spin"></div>
+        <div class="page-body is-loading" ng-class="{'is-ready':pageReady}">
+            {{> navigation}}
+            <img ng-src="//i.imgur.com/bLqIuu9.jpg" ng-load="pageReady = true" alt="one year trials frontier" />
+        </div>
+    {{/content}}
+{{/extend}}

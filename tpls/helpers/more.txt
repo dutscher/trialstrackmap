@@ -1,0 +1,1 @@
+https://github.com/diy/handlebars-helpers/tree/master/lib

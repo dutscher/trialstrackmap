@@ -1,0 +1,23 @@
+{{#extend "default"}}
+    {{#content "title-override"}}true{{/content}}
+    {{#content "title" mode="prepend"}}
+        Track locations -
+    {{/content}}
+
+    {{#content "styles"}}
+        <link rel="stylesheet" type="text/css" href="../css/style-locations.css" />
+    {{/content}}
+
+    {{#content "ctrl"}}ng-controller="trackmap"{{/content}}
+
+    {{#content "body"}}
+        <div ng-init="pageReady = false" ng-hide="pageReady" class="loader spin"></div>
+            <div class="page-body is-loading" ng-class="{'is-ready':pageReady}">
+
+            <textarea copy-text></textarea>
+            <canvas canvas-pointer></canvas>
+
+            <img ng-src="{%::data.images.trackmap.src|hoster:data.hoster%}" ng-load="pageReady = true" />
+        </div>
+    {{/content}}
+{{/extend}}

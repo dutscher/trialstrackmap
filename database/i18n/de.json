@@ -1,10 +1,12 @@
 {
   "page": {
     "title": "Trials Frontier Streckenkarte",
+    "onlyLandscape": "Dreh dein Gerät auf quer!",
     "leftSidebar": {
       "update": "Letzte Änderungen",
       "goToSeasons": "Saison Übersicht",
       "goToMedals": "Medaillen & Teile Tabelle",
+      "goToImprove": "Verbessere deine Strekenzeiten",
 	  "goToAnniversary": "Jubiläums Seite",
       "stats": "Stats",
       "uplayID": "Uplay",
@@ -34,7 +36,11 @@
       "chipsAmount": "Chips menge",
       "startline": "Startlinie",
       "datacubeGuide": "Datacube Helfer",
-      "driveThrough": "Anleitung",
+      "tutorial": "Anleitung",
+      "walkthroughBy": "von",
+      "walkthrough": "Videofahrt",
+      "walkthrough-platinum": "Platin Medallien Tutorial",
+      "walkthrough-top10": "Top 10 Tutorial",
       "medals": {
         "silver": "Silber",
         "gold": "Gold",
@@ -60,6 +66,14 @@
         "head": "Teile",
         "all": "zeige alle",
         "allLevels": "zeige alle Stufen"
+      },
+      "tier": "Stufe",
+      "allTiers": "alle Stufen",
+      "improve": {
+        "myRank": "Mein Rang",
+        "myTime": "Meine Zeit",
+        "worldRecord": "Weltrekord",
+        "edit": "Setze einen neuen Wert für"
       }
     }
   },
@@ -290,7 +304,7 @@
     "179": "Crow Roofs",
     "180": "Curves of Destiny",
     "181": "City Blues",
-    "182": "",
+    "182": "Death Wheel",
     "183": "Zornessprünge",
     "184": "Ruinen der Verzweiflung",
     "185": "Schwarzwald",

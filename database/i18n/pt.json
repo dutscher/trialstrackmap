@@ -1,11 +1,12 @@
-
 {
   "page": {
     "title": "Trials Frontier Mapa do Mundo",
+    "onlyLandscape": "Switch your device to landscape!",
     "leftSidebar": {
       "update": "Update",
       "goToSeasons": "Resumo da Temporada",
       "goToMedals": "Medalhas e Peças",
+      "goToImprove": "Improve your times table",
       "goToAnniversary": "Página de Aniversário",
       "stats": "Estatísticas",
       "uplayID": "Uplay",
@@ -35,7 +36,10 @@
       "chipsAmount": "Quantidade de Fichas",
       "startline": "Linha de Começo",
       "datacubeGuide": "Guia de Cubos de Dados",
-      "driveThrough": "Dirija Através",
+      "walkthroughBy": "by",
+      "walkthrough": "Walktrough",
+      "walkthrough-platinum": "Platinum Medal Walkthrough",
+      "walkthrough-top10": "Top 10 Tutorial",
       "medals": {
         "silver": "Prata",
         "gold": "Ouro",
@@ -61,6 +65,14 @@
         "head": "Peças",
         "all": "Mostrar Tudo",
         "allLevels": "Mostrar Todas as Pistas"
+      },
+      "tier": "Tier",
+      "allTiers": "all tiers",
+      "improve": {
+        "myRank": "My rank",
+        "myTime": "My time",
+        "worldRecord": "Worldrecord",
+        "edit": "Set a new value for"
       }
     }
   },
@@ -291,7 +303,7 @@
     "179": "Cume dos Corvos",
     "180": "Curvas do Destino",
     "181": "Melancolia Urbana",
-    "182": "",
+    "182": "Death Wheel",
     "183": "Saltos da Fúria",
     "184": "Ruínas do Desespero",
     "185": "Floresta Negra",

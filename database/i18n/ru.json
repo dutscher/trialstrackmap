@@ -1,10 +1,12 @@
 {
   "page": {
     "title": "Карта Trials Frontier",
+    "onlyLandscape": "Switch your device to landscape!",
     "leftSidebar": {
       "update": "Обновлено",
       "goToSeasons": "Обзор Сезонов",
       "goToMedals": "Таблица Медалей и Запчастей",
+      "goToImprove": "Improve your times table",
       "goToAnniversary": "Годовщина страницы",
       "stats": "Статистика",
       "uplayID": "Uplay",
@@ -34,7 +36,10 @@
       "chipsAmount": "Кол-во фишек",
       "startline": "Стартовая черта",
       "datacubeGuide": "Поиск Дата Куба",
-      "driveThrough": "Видео прохождения",
+      "walkthroughBy": "by",
+      "walkthrough": "Walktrough",
+      "walkthrough-platinum": "Platinum Medal Walkthrough",
+      "walkthrough-top10": "Top 10 Tutorial",
       "medals": {
         "silver": "Серебро",
         "gold": "Золото",
@@ -60,6 +65,14 @@
         "head": "Запчасти",
         "all": "показать все",
         "allLevels": "показать все уровни"
+      },
+      "tier": "Tier",
+      "allTiers": "all tiers",
+      "improve": {
+        "myRank": "My rank",
+        "myTime": "My time",
+        "worldRecord": "Worldrecord",
+        "edit": "Set a new value for"
       }
     }
   },
@@ -290,7 +303,7 @@
     "179": "Crow Roofs",
     "180": "Curves of Destiny",
     "181": "City Blues",
-    "182": "",
+    "182": "Death Wheel",
     "183": "Hops of Fury",
     "184": "Ruins of Despair",
     "185": "Black Forest",

@@ -3,27 +3,17 @@
 * livesite: http://trialstrackmap.sb-f.de
 * seasons overview: http://trialstrackmap.sb-f.de/seasons.html
 * time and parts table: http://trialstrackmap.sb-f.de/times.html
-* locations ma: http://trialstrackmap.sb-f.de/locations.html
+* locations map: http://trialstrackmap.sb-f.de/locations.html
 * forum thread: http://forums.ubi.com/showthread.php/939397-Trackmap
 
 # requirements
 * nodeJS
 * npm install -g grunt
-* pyhton (simpleserver) port 8001
 
 # setup
 ```
 $ git clone https://github.com/dutscher/trialstrackmap.git
 $ npm install
-$ grunt server
-```
-
-# grunt
-```
-// concat all the database json, javascript libs and minify them for dist
-$ grunt deploy
-
-// starts a simple pyhton server
 $ grunt server
 ```
 

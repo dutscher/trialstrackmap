@@ -1,0 +1,75 @@
+<div class="box make-sticky">
+    <a href="/index.html" class="classic-link">< {%'page.timesTable.back'|translate%}</a>
+    |
+    {{> language-select}}
+    |
+    {%'page.timesTable.tracksAmount'|translate%}: {%filteredArray.length%}
+    <br/>
+    {%'page.timesTable.filter'|translate%}:
+    <input type="text" placeholder="{%'page.rightSidebar.searchForTrack'|translate%}" ng-model="search"
+           ng-change="saveSearch()" />
+    <i class="faults with-cursor" ng-if="search != ''" ng-click="clearSearch()"></i>
+    {{#xif "this.activateMode"}}
+    |
+    {%'page.timesTable.device'|translate%}:
+    <select ng-model="selectedMode" ng-change="setMode()">
+        <option value="android" selected>Android</option>
+        <option value="ios">iOS</option>
+    </select>
+    |
+    {%'page.timesTable.bikeType'|translate%}:
+    <select ng-model="selectedBike" ng-change="setBike()">
+        <option value="normal" selected>Normal</option>
+        <option value="donkey">Donkey</option>
+        <option value="crazy">Crazy</option>
+    </select>
+    {{/xif}}
+    |
+    {%'page.timesTable.categories'|translate%}:
+    <select ng-model="selectedCat" ng-change="setCat()">
+        <option value="" selected>{%'page.timesTable.parts.all'|translate%}</option>
+        <option ng-repeat="cat in data.map.cats" class="{%::cat.class%}-bg"
+                ng-selected="selectedCat == cat.index"
+                value="{%cat.index%}">
+            {%'cats.'+cat.index|translate%}
+            ({%trackSum = (data.tracks|catAndTierTracks:cat.index:selectedTier).length%})
+        </option>
+    </select>
+    <select ng-model="selectedTier" ng-change="setTier()">
+        <option value="" selected>{%'page.timesTable.allTiers'|translate%}</option>
+        <option value="1">{%'tiers.1'|translate%}</option>
+        <option value="2">{%'tiers.2'|translate%}</option>
+        <option value="3">{%'tiers.3'|translate%}</option>
+    </select>
+    {{#xif "!this.deactivateParts"}}
+    |
+    {%'page.timesTable.parts.head'|translate%}:
+    <select ng-model="selectedPart" ng-change="setParts()">
+        <option value="" selected>{%'page.timesTable.parts.all'|translate%}</option>
+        <option value="1">{%'parts.1'|translate%}</option>
+        <option value="2">{%'parts.2'|translate%}</option>
+        <option value="3">{%'parts.3'|translate%}</option>
+        <option value="4">{%'parts.4'|translate%}</option>
+        <option value="5">{%'parts.5'|translate%}</option>
+        <option value="6">{%'parts.6'|translate%}</option>
+        <option value="7">{%'parts.7'|translate%}</option>
+        <option value="8">{%'parts.8'|translate%}</option>
+        <option value="9">{%'parts.9'|translate%}</option>
+        <option value="10">{%'parts.10'|translate%}</option>
+    </select>
+    <select ng-model="selectedPartLevel" ng-change="setParts(true)">
+        <option value="" selected>{%'page.timesTable.parts.allLevels'|translate%}</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+    </select>
+    {{/xif}}
+    {{#xif "this.withImproveImportExport"}}
+        <br />
+        {%'page.timesTable.improve.import'|translate%}:
+        <span improve-import></span>
+        {%'page.timesTable.improve.export'|translate%}:
+        <span improve-export></span>
+        <a href="table-improve-print.html" target="blank" class="classic-link">{%'page.timesTable.improve.print'|translate%}>></a>
+    {{/xif}}
+</div>

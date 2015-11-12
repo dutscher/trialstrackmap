@@ -2,21 +2,13 @@
   // "tier 1 / story"
   {
     "id": 1,
-    "coords": "2282,1298,60",
     "tier": 1,
     "cats": "7,6",
-    "candys": [
-      {
-        "src": "#1/56M8I5S.png",
-        "title": "20.Denial"
-      }
-    ],
     "prio": 12,
     "oid": 1068
   },
   {
     "id": 2,
-    "coords": "2161,1269,60",
     "tier": 1,
     "cats": "7",
     "prio": 1,
@@ -24,21 +16,13 @@
   },
   {
     "id": 3,
-    "coords": "2067,1181,60",
     "tier": 1,
     "cats": "7",
-    "candys": [
-      {
-        "src": "#1/r6vcrS6.png",
-        "title": "11.Hidden Goodies"
-      }
-    ],
     "prio": 2,
     "oid": 1097
   },
   {
     "id": 4,
-    "coords": "1934,1260,60",
     "tier": 1,
     "cats": "7",
     "prio": 3,
@@ -46,7 +30,6 @@
   },
   {
     "id": 5,
-    "coords": "1908,1085,60",
     "tier": 1,
     "cats": "7",
     "prio": 20,
@@ -54,295 +37,104 @@
   },
   {
     "id": 6,
-    "coords": "1673,1167,60",
     "tier": 1,
     "cats": "7",
-    "candys": [
-      {
-        "src": "#1/kLv5mr7.png",
-        "title": "01.Spinning Around"
-      },
-      {
-        "src": "#1/qIpxZER.png",
-        "title": "04.Candy In The Sky"
-      },
-      {
-        "src": "#1/RLCi8rc.png",
-        "title": "26.Saccharine Adventure"
-      }
-    ],
     "prio": 4,
     "oid": 2
   },
   {
     "id": 7,
-    "coords": "1561,1233,60",
     "tier": 1,
     "cats": "7,6",
-    "candys": [
-      {
-        "src": "#1/kWZzNUb.png",
-        "title": "06.Artificial Sweetener"
-      },
-      {
-        "src": "#1/TgrSQH0.png",
-        "title": "22.Prophecy"
-      }
-    ],
     "prio": 5,
     "oid": 1036
   },
   {
     "id": 8,
-    "coords": "1514,1332,60",
     "tier": 1,
     "cats": "7,6",
-    "candys": [
-      {
-        "src": "#1/3cY6wkH.png",
-        "title": "07.Sugary Challenge"
-      },
-      {
-        "src": "#1/2mKs819.png",
-        "title": "25.Land Of Sugar"
-      },
-      {
-        "src": "#1/r8dAel5.png",
-        "title": "27.Bonbon Voyage"
-      }
-    ],
     "prio": 6,
     "oid": 1106
   },
   {
     "id": 9,
-    "coords": "1581,1447,60",
     "tier": 1,
     "cats": "7,6",
-    "candys": [
-      {
-        "src": "#1/KS1z5sC.png",
-        "title": "02.Candy Reborn"
-      },
-      {
-        "src": "#1/36LwZm7.png",
-        "title": "18.Worthy Champion"
-      }
-    ],
     "prio": 7,
     "oid": 4
   },
   {
     "id": 10,
-    "coords": "1716,1492,60",
     "tier": 1,
     "cats": "7",
-    "candys": [
-      {
-        "src": "#1/XbG4BSR.png",
-        "title": "09.Sweet Dreams"
-      },
-      {
-        "src": "#1/fqC2VV1.png",
-        "title": "17.Candy Rush"
-      },
-      {
-        "src": "#1/o1Xali4.png",
-        "title": "23.Revelations Galore"
-      }
-    ],
     "prio": 8,
     "oid": 1062
   },
   {
     "id": 11,
-    "coords": "1706,1651,60",
     "tier": 1,
     "cats": "7",
-    "candys": [
-      {
-        "src": "#1/FPH4Aal.png",
-        "title": "06.Artificial Sweetener"
-      },
-      {
-        "src": "#1/kCzZR4Q.png",
-        "title": "16.Up for Grabs"
-      },
-      {
-        "src": "#1/kwnDPDq.png",
-        "title": "27.Bonbon Voyage"
-      }
-    ],
     "prio": 9,
     "oid": 1037
   },
   {
     "id": 12,
-    "coords": "1847,1615,60",
     "tier": 1,
     "cats": "7",
-    "candys": [
-      {
-        "src": "#1/ubNKg7h.png",
-        "title": "04.Candy In The Sky"
-      },
-      {
-        "src": "#1/3DBLBw3.png",
-        "title": "15.Stashing Away"
-      }
-    ],
     "prio": -1,
     "oid": 1083
   },
   {
     "id": 13,
-    "coords": "1779,1768,60",
     "tier": 1,
     "cats": "7,6",
-    "candys": [
-      {
-        "src": "#1/85WUrjT.png",
-        "title": "22.Prophecy"
-      }
-    ],
     "prio": 10,
     "oid": 1090
   },
   {
     "id": 14,
-    "coords": "1867,1882,60",
     "tier": 1,
     "cats": "7",
-    "candys": [
-      {
-        "src": "#1/yhSN3bl.png",
-        "title": "13.Hard Bargain"
-      },
-      {
-        "src": "#1/micPpYe.png",
-        "title": "25.Land Of Sugar"
-      }
-    ],
     "prio": 11,
     "oid": 1024
   },
   {
     "id": 15,
-    "coords": "1728,1906,60",
     "tier": 1,
     "cats": "7",
-    "candys": [
-      {
-        "src": "#1/2c7A2WZ.png",
-        "title": "01.Spinning Around"
-      },
-      {
-        "src": "#1/jWA6DuY.png",
-        "title": "04.Candy In The Sky"
-      }
-    ],
     "prio": 13,
     "oid": 1075
   },
   {
     "id": 16,
-    "coords": "1567,1928,60",
     "tier": 1,
     "cats": "7",
-    "candys": [
-      {
-        "src": "#1/zyp6rrp.png",
-        "title": "08.One With The Candy"
-      },
-      {
-        "src": "#1/670WDNa.png",
-        "title": "11.Hidden Goodies"
-      },
-      {
-        "src": "#1/Cpb7k9i.png",
-        "title": "18.Worthy Champion"
-      },
-      {
-        "src": "#1/4bfvHrV.png",
-        "title": "19.Half A Kingdom"
-      }
-    ],
     "prio": 14,
     "oid": 1041
   },
   {
     "id": 17,
-    "coords": "1450,1876,60",
     "tier": 1,
     "cats": "7,6",
-    "candys": [
-      {
-        "src": "#1/KwLpj46.png",
-        "title": "10.Hunt Continues"
-      },
-      {
-        "src": "#1/Wbuavf3.png",
-        "title": "17.candy Rush"
-      },
-      {
-        "src": "#1/keFmDCh.png",
-        "title": "27.Bonbon Voyage"
-      }
-    ],
     "prio": 15,
     "oid": 1069
   },
   {
     "id": 18,
-    "coords": "1414,1722,60",
     "tier": 1,
     "cats": "7",
-    "candys": [
-      {
-        "src": "#1/m7wKTCo.png",
-        "title": "07.Sugary Challenge"
-      },
-      {
-        "src": "#1/E9ETPnp.png",
-        "title": "13.Hard Bargain"
-      },
-      {
-        "src": "#1/Kic7iZN.png",
-        "title": "16.Up For Grabs"
-      },
-      {
-        "src": "#1/ltgjsaR.png",
-        "title": "24.Down The River"
-      }
-    ],
     "prio": 17,
     "oid": 1032
   },
   {
     "id": 19,
-    "coords": "1329,1613,60",
     "tier": 1,
     "cats": "7,6",
-    "candys": [
-      {
-        "src": "#1/ErQAU1p.png",
-        "title": "12.Fair Trade"
-      },
-      {
-        "src": "#1/Vm5H1mx.png",
-        "title": "18.Worthy Champion"
-      },
-      {
-        "src": "#1/kHnSfkR.png",
-        "title": "21.Mind Games"
-      }
-    ],
     "prio": 18,
     "oid": 1023
   },
   {
     "id": 20,
-    "coords": "1372,1484,60",
     "tier": 1,
     "cats": "7",
     "prio": 19,
@@ -350,39 +142,20 @@
   },
   {
     "id": 21,
-    "coords": "1301,1378,60",
     "tier": 1,
     "cats": "7",
-    "candys": [
-      {
-        "src": "#1/7NKn83I.png",
-        "title": "02.Candy Reborn"
-      }
-    ],
     "prio": 22,
     "oid": 1087
   },
   {
     "id": 22,
-    "coords": "1600,2129,60",
     "tier": 1,
     "cats": "7",
-    "candys": [
-      {
-        "src": "#1/EbrwH6V.png",
-        "title": "13.Hard Bargain"
-      },
-      {
-        "src": "#1/KYZ2474.png",
-        "title": "26.Saccharine Adventure"
-      }
-    ],
     "prio": 16,
     "oid": 1133
   },
   {
     "id": 23,
-    "coords": "1461,1119,60",
     "tier": 1,
     "cats": "7",
     "prio": -1,
@@ -391,7 +164,6 @@
   // tier 1 / timemachine
   {
     "id": 24,
-    "coords": "2378,1405,60",
     "tier": 1,
     "cats": "5",
     "prio": -1,
@@ -399,7 +171,6 @@
   },
   {
     "id": 25,
-    "coords": "2460,1485,60",
     "tier": 1,
     "cats": "5",
     "prio": -1,
@@ -407,7 +178,6 @@
   },
   {
     "id": 26,
-    "coords": "2354,1560,60",
     "tier": 1,
     "cats": "5,6",
     "prio": 21,
@@ -416,7 +186,6 @@
   // tier 1 / lootwheel
   {
     "id": 27,
-    "coords": "1232,1264,60",
     "tier": 1,
     "cats": "4",
     "prio": -1,
@@ -424,7 +193,6 @@
   },
   {
     "id": 28,
-    "coords": "1558,1646,60",
     "tier": 1,
     "cats": "4,6",
     "prio": 23,
@@ -432,7 +200,6 @@
   },
   {
     "id": 29,
-    "coords": "1585,1055,60",
     "tier": 1,
     "cats": "4",
     "prio": -1,
@@ -440,7 +207,6 @@
   },
   {
     "id": 30,
-    "coords": "1723,1002,60",
     "tier": 1,
     "cats": "4",
     "prio": -1,
@@ -448,7 +214,6 @@
   },
   {
     "id": 31,
-    "coords": "1928,1717,60",
     "tier": 1,
     "cats": "4",
     "prio": -1,
@@ -457,7 +222,6 @@
   // tier 1 / slotmachine
   {
     "id": 32,
-    "coords": "1993,1972,60",
     "tier": 1,
     "cats": "3",
     "prio": -1,
@@ -466,7 +230,6 @@
   },
   {
     "id": 33,
-    "coords": "2204,2024,60",
     "tier": 1,
     "cats": "3",
     "prio": -1,
@@ -475,7 +238,6 @@
   },
   {
     "id": 34,
-    "coords": "2365,2091,60",
     "tier": 1,
     "cats": "3",
     "prio": -1,
@@ -484,7 +246,6 @@
   },
   {
     "id": 35,
-    "coords": "2501,2056,60",
     "tier": 1,
     "cats": "3",
     "prio": -1,
@@ -493,7 +254,6 @@
   },
   {
     "id": 36,
-    "coords": "2644,2126,60",
     "tier": 1,
     "cats": "3",
     "prio": -1,
@@ -502,7 +262,6 @@
   },
   {
     "id": 37,
-    "coords": "2799,2181,60",
     "tier": 1,
     "cats": "3,6",
     "prio": -1,
@@ -511,7 +270,6 @@
   },
   {
     "id": 38,
-    "coords": "1352,1202,60",
     "tier": 1,
     "cats": "3",
     "prio": -1,
@@ -521,7 +279,6 @@
   // tier 1 / swamp
   {
     "id": 39,
-    "coords": "1759,1317,60",
     "tier": 1,
     "cats": "2,6",
     "prio": -1,
@@ -529,7 +286,6 @@
   },
   {
     "id": 40,
-    "coords": "1834,1409,60",
     "tier": 1,
     "cats": "2",
     "prio": -1,
@@ -537,7 +293,6 @@
   },
   {
     "id": 41,
-    "coords": "1933,1505,60",
     "tier": 1,
     "cats": "2",
     "prio": -1,
@@ -545,7 +300,6 @@
   },
   {
     "id": 42,
-    "coords": "2047,1611,60",
     "tier": 1,
     "cats": "2",
     "prio": -1,
@@ -554,7 +308,6 @@
   // tier 1 / island
   {
     "id": 43,
-    "coords": "2491,1033,60",
     "tier": 1,
     "cats": "1",
     "prio": -1,
@@ -562,7 +315,6 @@
   },
   {
     "id": 44,
-    "coords": "2612,1120,60",
     "tier": 1,
     "cats": "1",
     "prio": -1,
@@ -570,7 +322,6 @@
   },
   {
     "id": 45,
-    "coords": "2782,1174,60",
     "tier": 1,
     "cats": "1",
     "prio": -1,
@@ -578,7 +329,6 @@
   },
   {
     "id": 46,
-    "coords": "2646,1259,60",
     "tier": 1,
     "cats": "1",
     "prio": -1,
@@ -586,7 +336,6 @@
   },
   {
     "id": 47,
-    "coords": "2812,1345,60",
     "tier": 1,
     "cats": "1",
     "prio": -1,
@@ -594,7 +343,6 @@
   },
   {
     "id": 48,
-    "coords": "2961,1324,60",
     "tier": 1,
     "cats": "1",
     "prio": -1,
@@ -603,14 +351,12 @@
   // pumpkin
   {
     "id": 49,
-    "coords": "1284,1817,60",
     "tier": 1,
     "cats": "8",
     "prio": -1
   },
   {
     "id": 50,
-    "coords": "1196,1687,60",
     "tier": 1,
     "cats": "8",
     "prio": -1,
@@ -618,7 +364,6 @@
   },
   {
     "id": 89,
-    "coords": "1094,1592,60",
     "tier": 2,
     "cats": "8",
     "prio": -1,
@@ -626,7 +371,6 @@
   },
   {
     "id": 90,
-    "coords": "1154,1451,60",
     "tier": 2,
     "cats": "8",
     "prio": -1,
@@ -635,263 +379,90 @@
   // tier 2 / story
   {
     "id": 51,
-    "coords": "1405,2028,60",
     "tier": 2,
     "cats": "7",
-    "candys": [
-      {
-        "src": "#1/2SPthk3.png",
-        "title": "09.Sweet Dreams"
-      },
-      {
-        "src": "#1/UuZXg9C.png",
-        "title": "12.Fair Trade"
-      },
-      {
-        "src": "#1/M1bKRrz.png",
-        "title": "15.Stashing Away"
-      },
-      {
-        "src": "#1/9bSkOFG.png",
-        "title": "19.Half A Kingdom"
-      },
-      {
-        "src": "#1/2QSrZbQ.png",
-        "title": "23.Revelations Galore"
-      }
-    ],
     "prio": 1,
     "oid": 1070
   },
   {
     "id": 52,
-    "coords": "1285,2143,60",
     "tier": 2,
     "cats": "7",
-    "candys": [
-      {
-        "src": "#1/GYVrXyI.png",
-        "title": "11.Hidden Goodies"
-      }
-    ],
     "prio": 2,
     "oid": 1099
   },
   {
     "id": 53,
-    "coords": "1351,2277,60",
     "tier": 2,
     "cats": "7",
-    "candys": [
-      {
-        "src": "#1/kI86irv.png",
-        "title": "17.Candy Rush"
-      },
-      {
-        "src": "#1/teC9xw0.png",
-        "title": "21.Mind Games"
-      }
-    ],
     "prio": 3,
     "oid": 1051
   },
   {
     "id": 54,
-    "coords": "1204,2315,60",
     "tier": 2,
     "cats": "7",
-    "candys": [
-      {
-        "src": "#1/Z2rd7fB.png",
-        "title": "05.Candy Prophet"
-      },
-      {
-        "src": "#1/QgMOBXV.png",
-        "title": "15.Stashing Away"
-      }
-    ],
     "prio": 4,
     "oid": 1034
   },
   {
     "id": 55,
-    "coords": "1090,2207,60",
     "tier": 2,
     "cats": "7",
-    "candys": [
-      {
-        "src": "#1/LcMbBvl.png",
-        "title": "09.Sweet Dreams"
-      },
-      {
-        "src": "#1/bxi2o4L.png",
-        "title": "27.Bonbon Voyage"
-      }
-    ],
     "prio": -1,
     "oid": 1040
   },
   {
     "id": 56,
-    "coords": "1137,2055,60",
     "tier": 2,
     "cats": "7,6",
-    "candys": [
-      {
-        "src": "#1/Qk680Mi.png",
-        "title": "05.Candy Prophet"
-      },
-      {
-        "src": "#1/ERh4Och.png",
-        "title": "19.Half A Kingdom"
-      }
-    ],
     "prio": -1,
     "oid": 1072
   },
   {
     "id": 57,
-    "coords": "1102,1891,60",
     "tier": 2,
     "cats": "7",
-    "candys": [
-      {
-        "src": "#1/x4A9ym3.png",
-        "title": "08.One With The Candy"
-      },
-      {
-        "src": "#1/1NLroYo.png",
-        "title": "12.Fair Trade"
-      },
-      {
-        "src": "#1/uw7KKhA.png",
-        "title": "16.Up For Grabs"
-      },
-      {
-        "src": "#1/Cf0NpJW.png",
-        "title": "23.Revelations Galore"
-      },
-      {
-        "src": "#1/fHxaVuR.png",
-        "title": "26.Saccharine Adventure"
-      }
-    ],
     "prio": -1,
     "oid": 1045
   },
   {
     "id": 58,
-    "coords": "1024,1763,60",
     "tier": 2,
     "cats": "7",
-    "candys": [
-      {
-        "src": "#1/x7J8Laq.png",
-        "title": "03.Sweet Method"
-      },
-      {
-        "src": "#1/IwdA5w3.png",
-        "title": "10.Hunt Continues"
-      },
-      {
-        "src": "#1/vBO72TD.png",
-        "title": "25.Land Of Sugar"
-      }
-    ],
     "prio": -1,
     "oid": 1055
   },
   {
     "id": 59,
-    "coords": "901,1687,60",
     "tier": 2,
     "cats": "7",
-    "candys": [
-      {
-        "src": "#1/cBQE4tY.png",
-        "title": "06.Artificial Sweetener"
-      },
-      {
-        "src": "#1/H6DjBM7.png",
-        "title": "10.Hunt Continues"
-      },
-      {
-        "src": "#1/lsy1rV6.png",
-        "title": "24.Down The River"
-      }
-    ],
     "prio": -1,
     "oid": 1050
   },
   {
     "id": 60,
-    "coords": "843,1506,60",
     "tier": 2,
     "cats": "7,6",
-    "candys": [
-      {
-        "src": "#1/gvm55wo.png",
-        "title": "03.Sweet Method"
-      },
-      {
-        "src": "#1/btaYxiT.png",
-        "title": "14.Visions"
-      },
-      {
-        "src": "#1/VGf2SIK.png",
-        "title": "22.Prophecy"
-      }
-    ],
     "prio": -1,
     "oid": 1052
   },
   {
     "id": 61,
-    "coords": "732,1743,60",
     "tier": 2,
     "cats": "7",
-    "candys": [
-      {
-        "src": "#1/j6PcN8K.png",
-        "title": "01.Spinning Around"
-      },
-      {
-        "src": "#1/w3GIv0A.png",
-        "title": "03.Sweet Method"
-      },
-      {
-        "src": "#1/UyQmQHl.png",
-        "title": "14.Visions"
-      },
-      {
-        "src": "#1/PmILlcB.png",
-        "title": "20.Denial"
-      }
-    ],
     "prio": -1,
     "oid": 1085
   },
   {
     "id": 62,
-    "coords": "649,1620,60",
     "tier": 2,
     "cats": "7",
-    "candys": [
-      {
-        "src": "#1/a7HsyDS.png",
-        "title": "14.Visions"
-      },
-      {
-        "src": "#1/sIHIMoW.png",
-        "title": "24.Down The River"
-      }
-    ],
     "prio": -1,
     "oid": 1026
   },
   {
     "id": 63,
-    "coords": "694,1443,60",
     "tier": 2,
     "cats": "7",
     "prio": -1,
@@ -899,71 +470,34 @@
   },
   {
     "id": 64,
-    "coords": "641,1291,60",
     "tier": 2,
     "cats": "7,6",
-    "candys": [
-      {
-        "src": "#1/GjUWER4.png",
-        "title": "02.Candy Reborn"
-      }
-    ],
     "prio": -1,
     "oid": 1029
   },
   {
     "id": 65,
-    "coords": "751,1176,60",
     "tier": 2,
     "cats": "7",
-    "candys": [
-      {
-        "src": "#1/pIrJJja.png",
-        "title": "05.Candy Prophet"
-      },
-      {
-        "src": "#1/Qf4y7yC.png",
-        "title": "26.Saccharine Adventure"
-      }
-    ],
     "prio": -1,
     "oid": 1031
   },
   {
     "id": 66,
-    "coords": "763,992,60",
     "tier": 2,
     "cats": "7",
-    "candys": [
-      {
-        "src": "#1/aToNr9C.png",
-        "title": "07.Sugary Challenge"
-      },
-      {
-        "src": "#1/ZMgcd1H.png",
-        "title": "20.Denial"
-      }
-    ],
     "prio": -1,
     "oid": 1098
   },
   {
     "id": 67,
-    "coords": "656,889,60",
     "tier": 2,
     "cats": "7",
-    "candys": [
-      {
-        "src": "#1/7ctfoN9.png",
-        "title": "08.One With The Candy"
-      }
-    ],
     "prio": -1,
     "oid": 1095
   },
   {
     "id": 68,
-    "coords": "600,746,60",
     "tier": 2,
     "cats": "7",
     "prio": -1,
@@ -971,21 +505,13 @@
   },
   {
     "id": 69,
-    "coords": "744,686,60",
     "tier": 2,
     "cats": "7",
-    "candys": [
-      {
-        "src": "#1/x0ZcEKO.png",
-        "title": "21.Mind Games"
-      }
-    ],
     "prio": -1,
     "oid": 1102
   },
   {
     "id": 70,
-    "coords": "962,1428,60",
     "tier": 2,
     "cats": "7",
     "prio": -1,
@@ -994,7 +520,6 @@
   // tier 2 / lootwheel
   {
     "id": 71,
-    "coords": "861,600,60",
     "tier": 2,
     "cats": "4",
     "prio": -1,
@@ -1002,7 +527,6 @@
   },
   {
     "id": 72,
-    "coords": "614,1064,60",
     "tier": 2,
     "cats": "4",
     "prio": -1,
@@ -1010,7 +534,6 @@
   },
   {
     "id": 73,
-    "coords": "984,655,60",
     "tier": 2,
     "cats": "4",
     "prio": -1,
@@ -1018,7 +541,6 @@
   },
   {
     "id": 74,
-    "coords": "1201,643,60",
     "tier": 2,
     "cats": "4",
     "prio": -1,
@@ -1026,7 +548,6 @@
   },
   {
     "id": 75,
-    "coords": "956,1277,60",
     "tier": 2,
     "cats": "4,6",
     "prio": -1,
@@ -1034,7 +555,6 @@
   },
   {
     "id": 76,
-    "coords": "783,2367,60",
     "tier": 2,
     "cats": "4",
     "prio": -1,
@@ -1042,7 +562,6 @@
   },
   {
     "id": 77,
-    "coords": "1098,579,60",
     "tier": 2,
     "cats": "4",
     "prio": -1,
@@ -1051,7 +570,6 @@
   // tier 2 / slotmachine
   {
     "id": 78,
-    "coords": "903,1948,60",
     "tier": 2,
     "cats": "3",
     "prio": -1,
@@ -1059,7 +577,6 @@
   },
   {
     "id": 79,
-    "coords": "680,1923,60",
     "tier": 2,
     "cats": "3",
     "prio": -1,
@@ -1068,7 +585,6 @@
   },
   {
     "id": 80,
-    "coords": "650,2079,60",
     "tier": 2,
     "cats": "3",
     "prio": -1,
@@ -1077,7 +593,6 @@
   },
   {
     "id": 81,
-    "coords": "814,2149,60",
     "tier": 2,
     "cats": "3",
     "prio": -1,
@@ -1086,7 +601,6 @@
   },
   {
     "id": 82,
-    "coords": "640,2262,60",
     "tier": 2,
     "cats": "3",
     "prio": -1,
@@ -1095,7 +609,6 @@
   },
   {
     "id": 83,
-    "coords": "936,2233,60",
     "tier": 2,
     "cats": "3",
     "prio": -1,
@@ -1104,7 +617,6 @@
   },
   {
     "id": 84,
-    "coords": "953,2403,60",
     "tier": 2,
     "cats": "3",
     "prio": -1,
@@ -1114,7 +626,6 @@
   // tier 2 / swamp
   {
     "id": 85,
-    "coords": "2092,1734,60",
     "tier": 2,
     "cats": "2",
     "prio": -1,
@@ -1122,7 +633,6 @@
   },
   {
     "id": 86,
-    "coords": "2176,1858,60",
     "tier": 2,
     "cats": "2",
     "prio": -1,
@@ -1130,7 +640,6 @@
   },
   {
     "id": 87,
-    "coords": "2362,1811,60",
     "tier": 2,
     "cats": "2",
     "prio": -1,
@@ -1138,7 +647,6 @@
   },
   {
     "id": 88,
-    "coords": "2529,1774,60",
     "tier": 2,
     "cats": "2",
     "prio": -1,
@@ -1147,7 +655,6 @@
   // tier 2 / china
   {
     "id": 131,
-    "coords": "840,812,60",
     "tier": 2,
     "cats": "10",
     "oid": 1226
@@ -1155,7 +662,6 @@
   // tier 3 / story
   {
     "id": 91,
-    "coords": "2337,1189,60",
     "tier": 3,
     "cats": "7,6",
     "prio": -1,
@@ -1163,7 +669,6 @@
   },
   {
     "id": 92,
-    "coords": "2251,1101,60",
     "tier": 3,
     "cats": "7",
     "prio": -1,
@@ -1171,7 +676,6 @@
   },
   {
     "id": 93,
-    "coords": "2141,1007,60",
     "tier": 3,
     "cats": "7",
     "prio": -1,
@@ -1179,7 +683,6 @@
   },
   {
     "id": 94,
-    "coords": "2224,898,60",
     "tier": 3,
     "cats": "7,6",
     "prio": -1,
@@ -1187,7 +690,6 @@
   },
   {
     "id": 95,
-    "coords": "2283,779,60",
     "tier": 3,
     "cats": "7",
     "prio": -1,
@@ -1195,7 +697,6 @@
   },
   {
     "id": 96,
-    "coords": "2362,686,60",
     "tier": 3,
     "cats": "7",
     "prio": -1,
@@ -1203,7 +704,6 @@
   },
   {
     "id": 97,
-    "coords": "2524,637,60",
     "tier": 3,
     "cats": "7",
     "prio": -1,
@@ -1211,7 +711,6 @@
   },
   {
     "id": 98,
-    "coords": "2654,564,60",
     "tier": 3,
     "cats": "7",
     "prio": -1,
@@ -1219,7 +718,6 @@
   },
   {
     "id": 99,
-    "coords": "2781,498,60",
     "tier": 3,
     "cats": "7,6",
     "prio": -1,
@@ -1227,7 +725,6 @@
   },
   {
     "id": 100,
-    "coords": "2944,434,60",
     "tier": 3,
     "cats": "7,6",
     "prio": -1,
@@ -1235,7 +732,6 @@
   },
   {
     "id": 101,
-    "coords": "3098,373,60",
     "tier": 3,
     "cats": "7,6",
     "prio": -1,
@@ -1243,7 +739,6 @@
   },
   {
     "id": 102,
-    "coords": "3210,472,60",
     "tier": 3,
     "cats": "7",
     "prio": -1,
@@ -1251,7 +746,6 @@
   },
   {
     "id": 103,
-    "coords": "2218,622,60",
     "tier": 3,
     "cats": "7",
     "helper": [
@@ -1265,7 +759,6 @@
   // tier 3 / lootwheel
   {
     "id": 104,
-    "coords": "2470,838,60",
     "tier": 3,
     "cats": "4,6",
     "prio": -1,
@@ -1273,7 +766,6 @@
   },
   {
     "id": 105,
-    "coords": "2063,712,60",
     "tier": 3,
     "cats": "4",
     "prio": -1,
@@ -1281,7 +773,6 @@
   },
   {
     "id": 106,
-    "coords": "2089,574,60",
     "tier": 3,
     "cats": "4,6",
     "prio": -1,
@@ -1289,7 +780,6 @@
   },
   {
     "id": 107,
-    "coords": "2335,434,60",
     "tier": 3,
     "cats": "4",
     "prio": -1,
@@ -1297,7 +787,6 @@
   },
   {
     "id": 108,
-    "coords": "2586,753,60",
     "tier": 3,
     "cats": "4",
     "prio": -1,
@@ -1306,7 +795,6 @@
   // tier 3 / slotmachine
   {
     "id": 109,
-    "coords": "2358,948,60",
     "tier": 3,
     "cats": "3",
     "prio": -1,
@@ -1315,7 +803,6 @@
   },
   {
     "id": 110,
-    "coords": "2132,819,60",
     "tier": 3,
     "cats": "3,6",
     "prio": -1,
@@ -1324,7 +811,6 @@
   },
   {
     "id": 111,
-    "coords": "2976,2010,60",
     "tier": 3,
     "cats": "3",
     "prio": -1,
@@ -1333,7 +819,6 @@
   },
   {
     "id": 112,
-    "coords": "2408,570,60",
     "tier": 3,
     "cats": "3",
     "prio": -1,
@@ -1342,7 +827,6 @@
   // tier 3 / swamp
   {
     "id": 113,
-    "coords": "2704,1814,60",
     "tier": 3,
     "cats": "2",
     "prio": -1,
@@ -1350,7 +834,6 @@
   },
   {
     "id": 114,
-    "coords": "2828,1925,60",
     "tier": 3,
     "cats": "2",
     "prio": -1,
@@ -1359,7 +842,6 @@
   // tier 1 / the bunker
   {
     "id": 115,
-    "coords": "2731,1481,60",
     "tier": 1,
     "cats": "9",
     "prio": 1,
@@ -1368,7 +850,6 @@
   },
   {
     "id": 116,
-    "coords": "2801,1611,60",
     "tier": 1,
     "cats": "9",
     "prio": 2,
@@ -1377,7 +858,6 @@
   },
   {
     "id": 117,
-    "coords": "2948,1630,60",
     "tier": 1,
     "cats": "9",
     "prio": 3,
@@ -1386,7 +866,6 @@
   },
   {
     "id": 118,
-    "coords": "3087,1561,60",
     "tier": 1,
     "cats": "9",
     "prio": 4,
@@ -1395,7 +874,6 @@
   },
   {
     "id": 119,
-    "coords": "3150,1430,60",
     "tier": 1,
     "cats": "9",
     "prio": 5,
@@ -1404,7 +882,6 @@
   },
   {
     "id": 120,
-    "coords": "3307,1503,60",
     "tier": 1,
     "cats": "9",
     "prio": 6,
@@ -1413,7 +890,6 @@
   },
   {
     "id": 121,
-    "coords": "3358,1403,60",
     "tier": 2,
     "cats": "9",
     "prio": 7,
@@ -1422,7 +898,6 @@
   },
   {
     "id": 122,
-    "coords": "3272,1286,60",
     "tier": 2,
     "cats": "9",
     "prio": 8,
@@ -1431,7 +906,6 @@
   },
   {
     "id": 124,
-    "coords": "3325,1170,60",
     "tier": 2,
     "cats": "9",
     "prio": 9,
@@ -1440,7 +914,6 @@
   },
   {
     "id": 125,
-    "coords": "3205,1032,60",
     "tier": 2,
     "cats": "9",
     "prio": 10,
@@ -1449,7 +922,6 @@
   },
   {
     "id": 126,
-    "coords": "3064,1121,60",
     "tier": 2,
     "cats": "9",
     "prio": 11,
@@ -1458,7 +930,6 @@
   },
   {
     "id": 127,
-    "coords": "2929,1063,60",
     "tier": 3,
     "cats": "9",
     "prio": 12,
@@ -1467,7 +938,6 @@
   },
   {
     "id": 128,
-    "coords": "3038,944,60",
     "tier": 3,
     "cats": "9",
     "prio": 13,
@@ -1476,7 +946,6 @@
   },
   {
     "id": 129,
-    "coords": "2919,876,60",
     "tier": 3,
     "cats": "9",
     "prio": 14,
@@ -1485,7 +954,6 @@
   },
   {
     "id": 130,
-    "coords": "2791,952,60",
     "tier": 3,
     "cats": "9",
     "prio": 15,
@@ -1494,7 +962,6 @@
   },
   {
     "id": 123,
-    "coords": "2709,854,60",
     "tier": 3,
     "cats": "9",
     "prio": 16,
@@ -1504,7 +971,6 @@
   // hidden bunker tracks
   {
     "id": 132,
-    "coords": "",
     "tier": 1,
     "cats": "9",
     "prio": 17,
@@ -1513,7 +979,6 @@
   },
   {
     "id": 133,
-    "coords": "",
     "tier": 1,
     "cats": "9",
     "prio": 18,
@@ -1522,7 +987,6 @@
   },
   {
     "id": 134,
-    "coords": "",
     "tier": 1,
     "cats": "9",
     "prio": 19,
@@ -1532,112 +996,96 @@
   // winter tracks
   {
     "id": 135,
-    "coords": "2003,939,60",
     "tier": 1,
     "cats": "11",
     "prio": 1
   },
   {
     "id": 136,
-    "coords": "1930,838,60",
     "tier": 1,
     "cats": "11",
     "prio": 2
   },
   {
     "id": 137,
-    "coords": "1833,748,60",
     "tier": 1,
     "cats": "11",
     "prio": 3
   },
   {
     "id": 138,
-    "coords": "1704,812,60",
     "tier": 1,
     "cats": "11",
     "prio": 4
   },
   {
     "id": 139,
-    "coords": "1620,915,60",
     "tier": 1,
     "cats": "11",
     "prio": 5
   },
   {
     "id": 140,
-    "coords": "1491,958,60",
     "tier": 1,
     "cats": "11",
     "prio": 6
   },
   {
     "id": 141,
-    "coords": "1351,1038,60",
     "tier": 1,
     "cats": "11",
     "prio": 7
   },
   {
     "id": 142,
-    "coords": "1218,1085,60",
     "tier": 2,
     "cats": "11",
     "prio": 8
   },
   {
     "id": 143,
-    "coords": "1064,1143,60",
     "tier": 2,
     "cats": "11",
     "prio": 9
   },
   {
     "id": 144,
-    "coords": "942,1064,60",
     "tier": 2,
     "cats": "11",
     "prio": 10
   },
   {
     "id": 145,
-    "coords": "968,930,60",
     "tier": 2,
     "cats": "11",
     "prio": 11
   },
   {
     "id": 146,
-    "coords": "1058,818,60",
     "tier": 2,
     "cats": "11",
     "prio": 12
   },
   {
     "id": 149,
-    "coords": "1200,929,60",
     "tier": 3,
     "cats": "11",
     "prio": 13
   },
   {
     "id": 150,
-    "coords": "1353,901,60",
     "tier": 3,
     "cats": "11",
     "prio": 14
   },
   {
     "id": 151,
-    "coords": "1446,803,60",
     "tier": 3,
     "cats": "11",
     "prio": 15
   },
   {
     "id": 152,
-    "coords": "1300,751,60",
     "tier": 3,
     "cats": "11",
     "prio": 16
@@ -1645,7 +1093,6 @@
   // leaked tracks
   {
     "id": 147,
-    "coords": "",
     "tier": 0,
     "cats": "12",
     "prio": 1,
@@ -1653,7 +1100,6 @@
   },
   {
     "id": 153,
-    "coords": "",
     "tier": 0,
     "cats": "12",
     "prio": 3,
@@ -1662,7 +1108,6 @@
   },
   {
     "id": 154,
-    "coords": "",
     "tier": 0,
     "cats": "12",
     "prio": 4,
@@ -1670,7 +1115,6 @@
   },
   {
     "id": 155,
-    "coords": "",
     "tier": 0,
     "cats": "12",
     "prio": 5,
@@ -1686,28 +1130,24 @@
   },
   {
     "id": 156,
-    "coords": "1772,2048,60",
     "tier": 1,
     "cats": "13",
     "prio": 1
   },
   {
     "id": 148,
-    "coords": "2086,2132,60",
     "tier": 2,
     "cats": "13",
     "prio": 3
   },
   {
     "id": 158,
-    "coords": "1929,2111,60",
     "tier": 2,
     "cats": "13",
     "prio": 4
   },
   {
     "id": 159,
-    "coords": "2262,2213,60",
     "tier": 2,
     "cats": "13",
     "prio": 5
@@ -1715,42 +1155,36 @@
   // tier 2 hardcore
   {
     "id": 160,
-    "coords": "1377,663,60",
     "tier": 2,
     "cats": "1",
     "prio": 1
   },
   {
     "id": 161,
-    "coords": "1523,620,60",
     "tier": 2,
     "cats": "1",
     "prio": 2
   },
   {
     "id": 162,
-    "coords": "1482,505,60",
     "tier": 2,
     "cats": "1",
     "prio": 3
   },
   {
     "id": 163,
-    "coords": "1625,410,60",
     "tier": 2,
     "cats": "1",
     "prio": 4
   },
   {
     "id": 164,
-    "coords": "1702,550,60",
     "tier": 2,
     "cats": "1",
     "prio": 5
   },
   {
     "id": 165,
-    "coords": "1876,604,60",
     "tier": 2,
     "cats": "1",
     "prio": 6
@@ -1766,28 +1200,24 @@
   // rodeo weekly tracks
   {
     "id": 167,
-    "coords": "1520,2289,60",
     "tier": 1,
     "cats": "14",
     "prio": 2
   },
   {
     "id": 168,
-    "coords": "1701,2362,60",
     "tier": 1,
     "cats": "14",
     "prio": 3
   },
   {
     "id": 169,
-    "coords": "1910,2314,60",
     "tier": 2,
     "cats": "14",
     "prio": 4
   },
   {
     "id": 170,
-    "coords": "2101,2348,60",
     "tier": 2,
     "cats": "14",
     "prio": 5
@@ -1795,115 +1225,103 @@
   // rodeo horseshoe tracks
   {
     "id": 171,
-    "coords": "2121,1449,60",
-    "tier": 2,
+    "tier": 1,
     "cats": "14",
     "prio": 1
   },
   {
     "id": 172,
-    "coords": "2268,1689,60",
     "tier": 2,
     "cats": "14",
     "prio": 2
   },
   {
     "id": 173,
-    "coords": "2455,352,60",
-    "tier": 2,
+    "tier": 3,
     "cats": "14",
     "prio": 3
   },
   // halloween #2
   {
     "id": 174,
-    "coords": "808,1834,60",
     "tier": 1,
     "cats": "15",
     "prio": 1
   },
   {
     "id": 175,
-    "coords": "616,1817,60",
     "tier": 1,
     "cats": "15",
     "prio": 2
   },
   {
     "id": 176,
-    "coords": "510,1882,60",
     "tier": 2,
     "cats": "15",
     "prio": 3
   },
   {
     "id": 177,
-    "coords": "479,1988,60",
     "tier": 2,
     "cats": "15",
     "prio": 4
   },
   {
     "id": 178,
-    "coords": "466,2112,60",
     "tier": 2,
     "cats": "15",
     "prio": 5
   },
   {
     "id": 179,
-    "coords": "498,1686,60",
     "tier": 2,
     "cats": "15",
     "prio": 6
   },
   {
     "id": 180,
-    "coords": "",
-    "tier": 1,
+    "tier": 2,
     "cats": "15",
     "prio": 7
   },
   {
     "id": 181,
-    "coords": "",
     "tier": 1,
     "cats": "15",
     "prio": 8
   },
   {
     "id": 182,
-    "coords": "",
-    "tier": 1,
+    "tier": 3,
     "cats": "15",
     "prio": 9
   },
   {
     "id": 183,
-    "coords": "534,1532,60",
     "tier": 1,
     "cats": "15",
-    "prio": 10
+    "prio": 10,
+    "halloween2_trackpack": true
   },
   {
     "id": 184,
-    "coords": "429,1468,60",
     "tier": 1,
     "cats": "15",
-    "prio": 11
+    "prio": 11,
+    "halloween2_trackpack": true
   },
   {
     "id": 185,
-    "coords": "337,1410,60",
     "tier": 1,
     "cats": "15",
-    "prio": 12
+    "prio": 12,
+    "halloween2_trackpack": true
   },
   {
     "id": 186,
-    "coords": "385,1299,60",
     "tier": 3,
     "cats": "15",
-    "prio": 13
+    "prio": 13,
+    "halloween2_trackpack": true
   }
 ]

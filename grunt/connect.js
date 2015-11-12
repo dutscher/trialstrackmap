@@ -1,5 +1,11 @@
 module.exports = function(grunt){
 
+    grunt.registerTask("server", [
+        "deploy",
+        "connect:dist",
+        "watch"
+    ]);
+
     var rewrite = require("connect-modrewrite"),
         config = require("./connect-config.json5"),
         rules = require("./connect-rewrite-rules.json5");

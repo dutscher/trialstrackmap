@@ -19,6 +19,17 @@ module.exports = {
             livereload: true
         }
     },
+    assemble: {
+        files: [
+            "./tpls/**/*.hbs"
+        ],
+        tasks: [
+            "deployHtml"
+        ],
+        options: {
+            livereload: true
+        }
+    },
     database: {
         files: [
             "database/**/*.{json,json5}"

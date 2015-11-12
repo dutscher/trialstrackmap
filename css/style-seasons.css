@@ -1,125 +1,325 @@
-body{margin:10px;font-family:Arial, Helvetica, sans-serif;background:#3a281d}
-.box{background:#6a4229;margin-bottom:10px;padding:5px}
-.classic-link{color:#000;font-weight:bold;text-decoration:none}
-.box,.classic-link{color:#ffee99}
-.box{
-    border-width: 2px;
-    border-style: solid;
-    border-top:2px solid #d2c3ab;
-    border-bottom:2px solid #6a4229;
-    -webkit-border-image:-webkit-gradient(linear, 0 100%, 0 0, from(#cfb781), to(#6a4229)) 1 10%;
-    -webkit-border-image:-webkit-linear-gradient(bottom, #6a4229, #d2c3ab) 1 10%;
-    -moz-border-image:-moz-linear-gradient(bottom, #6a4229, #d2c3ab) 1 10%;
-    -o-border-image:-o-linear-gradient(bottom, #6a4229, #d2c3ab) 1 10%;
-    border-image:linear-gradient(to top, #6a4229, #d2c3ab) 1 10%;
-    background:rgba(0,0,0,0.55);
-    -webkit-box-shadow: inset -0px 0px 10px 10px rgba(0, 0, 0, 0.25); /* WebKit */
-    -moz-box-shadow: inset -0px 0px 10px 10px rgba(0, 0, 0, 0.25); /* Firefox */
-    box-shadow: inset -0px 0px 10px 10px rgba(0, 0, 0, 0.25); /* Standard */
-}
-.no-pad{padding:0}
-hr{
-    border:none;
-    height:2px;
-    background:#6a4229;
+body, .season-page {
+    display: flex;
 }
 
-h1, h2, h3{
-    color:#61d4d7;
+.no-pad {
+    padding: 0
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background: #6a4229;
+}
+
+h1, h2, h3 {
+    color: #61d4d7;
     text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    margin: 5px 0;
 }
 
-.seasons-list{white-space:nowrap;display: flex;}
-.season-container{display:inline-block;width:300px;margin-right:10px;vertical-align:top}
-.season-container .season-banner{width:300px;height:41px}
-.season-container .season-bike-state{width:300px;height:169px}
-.season-times{position:relative}
-.season-times strong{font-size:33px;float:left;margin-right:5px}
-.season-times span{position:relative}
-.season-prizes{height:150px;overflow:scroll;overflow-x:hidden}
-.season-summary{
+.seasons-list {
+}
+
+@media (min-width:600px) {
+    .seasons-list {
+        white-space: nowrap;
+        display: flex;
+    }
+}
+
+.season-container {
+    display: inline-block;
+    vertical-align: top
+}
+
+@media (min-width:600px) {
+    .season-container {
+        width: 300px;
+        margin-right: 10px;
+    }
+    .season-container:last-child {
+        margin-right: 0;
+    }
+}
+
+.season-container .season-banner {
+    width: 100%;
+}
+
+@media (min-width:600px) {
+    .season-container .season-banner {
+        width: 300px;
+        height: 41px;
+    }
+}
+
+.season-container .season-bike-state {
+    width: 300px;
+    height: 169px
+}
+
+.season-times {
+    position: relative
+}
+
+.season-times strong {
+    font-size: 33px;
+    float: left;
+    margin-right: 5px
+}
+
+.season-times span {
+    position: relative
+}
+
+.season-prizes {
+    height: 150px;
+    overflow: scroll;
+    overflow-x: hidden
+}
+
+.season-summary {
     border-top: double 6px #ffee99;
     text-align: right;
     padding-top: 10px;
     margin-top: 10px;
 }
 
-.season-times [countdown]{
+.season-times .countdown {
     position: absolute;
-    right:0;
-    top:10px;
+    right: 0;
+    top: 37px;
+    color: #61d4d7;
+    font-weight: bold;
 }
 
-table{
-    width:100%;
+.protect-countdown {
+    margin-right: 100px;
+}
+
+table {
+    width: 100%;
     border-spacing: 0;
     table-layout: fixed;
-    padding-right:5px;
-}
-td{padding:0;height:50px}
-td.right{
-    text-align:right;
+    padding-right: 5px;
 }
 
-i[class^="season-"]{
-    width:40px;
-    height:40px;
-    display:inline-block;
+td {
+    padding: 0;
+    height: 50px
+}
+
+td.right {
+    text-align: right;
+}
+
+i[class^="season-"] {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
     vertical-align: middle;
 }
-.season-level-1{background-position:0 0}
-.season-level-2{background-position:0 -40px}
-.season-level-3{background-position:0 -80px}
-.season-level-4{background-position:0 -120px}
-.season-level-5{background-position:0 -160px}
-.season-level-6{background-position:-40px 0}
-.season-level-7{background-position:-40px -40px}
-.season-level-8{background-position:-40px -80px}
-.season-level-9{background-position:-40px -120px}
-.season-level-10{background-position:-40px -160px}
-.season-level-11{background-position:-80px 0}
-.season-level-12{background-position:-80px -40px}
-.season-level-13{background-position:-80px -80px}
-.season-level-14{background-position:-80px -120px}
-.season-level-15{background-position:-80px -160px}
-.season-level-16{background-position:-120px 0}
-.season-level-17{background-position:-120px -40px}
-.season-level-18{background-position:-120px -80px}
-.season-level-19{background-position:-120px -120px}
-.season-level-20{background-position:-120px -160px}
-.season-level-21{background-position:-160px 0}
-.season-level-22{background-position:-160px -80px}
-.season-level-23{background-position:-160px -80px}
-.season-level-24{background-position:-160px -120px}
-.season-level-25{background-position:-160px -160px}
-.season-extra-donkey{background-position:-200px 0}
-.season-extra-paintjob-1{background-position:-200px -40px}
-.season-extra-paintjob-2{background-position:-200px -80px}
-.season-extra-paintjob-3{background-position:-200px -120px}
-.season-extra-paintjob-4{background-position:-200px -160px}
-.season-extra-paintjob-5{background-position:-240px 0}
-.season-extra-paintjob-6{background-position:-240px -40px}
-.season-extra-paintjob-7{background-position:-240px -80px}
-.season-extra-paintjob-8{background-position:-240px -120px}
-.season-extra-paintjob-9{background-position:-240px -160px}
-.season-extra-paintjob-10{background-position:-280px 0}
-.season-extra-donkey-new{background-position:-280px -40px}
-.season-extra-paintjob-11{background-position:-280px -80px}
-.season-extra-doughnut{background-position:-280px -120px}
 
-i[class^="season-extra-part-"]{
+.season-level-1 {
+    background-position: 0 0
+}
+
+.season-level-2 {
+    background-position: 0 -40px
+}
+
+.season-level-3 {
+    background-position: 0 -80px
+}
+
+.season-level-4 {
+    background-position: 0 -120px
+}
+
+.season-level-5 {
+    background-position: 0 -160px
+}
+
+.season-level-6 {
+    background-position: -40px 0
+}
+
+.season-level-7 {
+    background-position: -40px -40px
+}
+
+.season-level-8 {
+    background-position: -40px -80px
+}
+
+.season-level-9 {
+    background-position: -40px -120px
+}
+
+.season-level-10 {
+    background-position: -40px -160px
+}
+
+.season-level-11 {
+    background-position: -80px 0
+}
+
+.season-level-12 {
+    background-position: -80px -40px
+}
+
+.season-level-13 {
+    background-position: -80px -80px
+}
+
+.season-level-14 {
+    background-position: -80px -120px
+}
+
+.season-level-15 {
+    background-position: -80px -160px
+}
+
+.season-level-16 {
+    background-position: -120px 0
+}
+
+.season-level-17 {
+    background-position: -120px -40px
+}
+
+.season-level-18 {
+    background-position: -120px -80px
+}
+
+.season-level-19 {
+    background-position: -120px -120px
+}
+
+.season-level-20 {
+    background-position: -120px -160px
+}
+
+.season-level-21 {
+    background-position: -160px 0
+}
+
+.season-level-22 {
+    background-position: -160px -80px
+}
+
+.season-level-23 {
+    background-position: -160px -80px
+}
+
+.season-level-24 {
+    background-position: -160px -120px
+}
+
+.season-level-25 {
+    background-position: -160px -160px
+}
+
+.season-extra-donkey {
+    background-position: -200px 0
+}
+
+.season-extra-paintjob-1 {
+    background-position: -200px -40px
+}
+
+.season-extra-paintjob-2 {
+    background-position: -200px -80px
+}
+
+.season-extra-paintjob-3 {
+    background-position: -200px -120px
+}
+
+.season-extra-paintjob-4 {
+    background-position: -200px -160px
+}
+
+.season-extra-paintjob-5 {
+    background-position: -240px 0
+}
+
+.season-extra-paintjob-6 {
+    background-position: -240px -40px
+}
+
+.season-extra-paintjob-7 {
+    background-position: -240px -80px
+}
+
+.season-extra-paintjob-8 {
+    background-position: -240px -120px
+}
+
+.season-extra-paintjob-9 {
+    background-position: -240px -160px
+}
+
+.season-extra-paintjob-10 {
+    background-position: -280px 0
+}
+
+.season-extra-donkey-new {
+    background-position: -280px -40px
+}
+
+.season-extra-paintjob-11 {
+    background-position: -280px -80px
+}
+
+.season-extra-doughnut {
+    background-position: -280px -120px
+}
+
+i[class^="season-extra-part-"] {
     width: 33.337px;
     height: 33.337px;
     display: inline-block;
     background-size: 174px 333.337px !important;
 }
-.season-extra-part-pipe-5{background-position:-138px -199.667px}
-.season-extra-part-spark-5{background-position:-138px -166.667px}
-.season-extra-part-gear-4{background-position:-99.667px -300px}
-.season-extra-part-gear-5{background-position:-138px -300px}
-.season-extra-part-piston-4{background-position:-99.667px -266.667px}
-.season-extra-part-bearing-3{background-position:-66.667px -233.334px}
-.season-extra-part-pipe-3{background-position:-66.667px -200px}
-.season-extra-part-spring-2{background-position:-33.334px -33.334px}
-.season-extra-part-bolt-1{background-position:-0px -66.667px}
-.season-extra-part-nut-1{background-position:-0px -100px}
+
+.season-extra-part-pipe-5 {
+    background-position: -138px -199.667px
+}
+
+.season-extra-part-spark-5 {
+    background-position: -138px -166.667px
+}
+
+.season-extra-part-gear-4 {
+    background-position: -99.667px -300px
+}
+
+.season-extra-part-gear-5 {
+    background-position: -138px -300px
+}
+
+.season-extra-part-piston-4 {
+    background-position: -99.667px -266.667px
+}
+
+.season-extra-part-bearing-3 {
+    background-position: -66.667px -233.334px
+}
+
+.season-extra-part-pipe-3 {
+    background-position: -66.667px -200px
+}
+
+.season-extra-part-spring-2 {
+    background-position: -33.334px -33.334px
+}
+
+.season-extra-part-bolt-1 {
+    background-position: -0px -66.667px
+}
+
+.season-extra-part-nut-1 {
+    background-position: -0px -100px
+}
