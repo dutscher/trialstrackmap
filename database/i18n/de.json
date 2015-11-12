@@ -36,7 +36,6 @@
       "chipsAmount": "Chips menge",
       "startline": "Startlinie",
       "datacubeGuide": "Datacube Helfer",
-      "tutorial": "Anleitung",
       "walkthroughBy": "von",
       "walkthrough": "Videofahrt",
       "walkthrough-platinum": "Platin Medallien Tutorial",
@@ -67,13 +66,27 @@
         "all": "zeige alle",
         "allLevels": "zeige alle Stufen"
       },
+      "filter": "Filter",
+      "categories": "Kategorien",
+      "device": "Gerätetyp",
+      "bikeType": "Motorad",
       "tier": "Stufe",
       "allTiers": "alle Stufen",
       "improve": {
-        "myRank": "Mein Rang",
+        "myRank": "Mein Platz",
         "myTime": "Meine Zeit",
         "worldRecord": "Weltrekord",
-        "edit": "Setze einen neuen Wert für"
+        "edit": "Füge einen neuen Wert ein für",
+        "editMyTime": "Bitte nur Zahlen eingeben! Deine Zeit 0:09.846 -> dann trage nur 9846 ein ;)",
+        "import": "Import",
+        "importFile": "Via .json Datei",
+        "importUrl": "Via URL von einer .json Datei",
+        "chooseImportUrl": "Füge die URL zu der vorher exportieren .json Datei ein!",
+        "confirmImport": "Willst du wirklich die Zeiten importieren vom",
+        "successfullImport": "Super geil, dein Import war erfolgreich!",
+        "export": "Export",
+        "exportFile": "deine Zeiten zu einer .json Datei",
+        "print": "Druck version"
       }
     }
   },

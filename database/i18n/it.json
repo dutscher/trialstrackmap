@@ -66,13 +66,27 @@
         "all": "mostra tutto",
         "allLevels": "mostra tutti i livelli"
       },
+      "filter": "Filter",
+      "categories": "Categories",
+      "device": "Device",
+      "bikeType": "Bike",
       "tier": "Tier",
       "allTiers": "all tiers",
       "improve": {
         "myRank": "My rank",
         "myTime": "My time",
         "worldRecord": "Worldrecord",
-        "edit": "Set a new value for"
+        "edit": "Set a new value for",
+        "editMyTime": "Only insert digits! Your time 0:09.846 -> insert 9846 ;)",
+        "import": "Import",
+        "importFile": "Via .json file",
+        "importUrl": "Via URL to a .json file",
+        "chooseImportUrl": "Insert a url to the exported .json file!",
+        "confirmImport": "Do you want to import the times from",
+        "successfullImport": "Well done, file successfully imported",
+        "export": "Export",
+        "exportFile": "your times to a .json file",
+        "print": "Print version"
       }
     }
   },
