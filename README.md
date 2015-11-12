@@ -1,9 +1,10 @@
 # trials trackmap made by dutscher
 
 * livesite: http://trialstrackmap.sb-f.de
-* seasons overview: http://trialstrackmap.sb-f.de/seasons.html
-* time and parts table: http://trialstrackmap.sb-f.de/times.html
-* locations map: http://trialstrackmap.sb-f.de/locations.html
+* seasons overview: http://trialstrackmap.sb-f.de/dist/seasons.html
+* time and parts table: http://trialstrackmap.sb-f.de/dist/table.html
+* seasons overview: http://trialstrackmap.sb-f.de/dist/table-improve.html
+* locations map: http://trialstrackmap.sb-f.de/dist/locations.html
 * forum thread: http://forums.ubi.com/showthread.php/939397-Trackmap
 
 # requirements
