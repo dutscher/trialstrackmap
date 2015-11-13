@@ -86,7 +86,10 @@
         "successfullImport": "Super geil, dein Import war erfolgreich!",
         "export": "Export",
         "exportFile": "deine Zeiten zu einer .json Datei",
-        "print": "Druck version"
+        "exportFileCsv": ".csv",
+        "print": "Drucken",
+        "printFilled": "Mit Daten befüllt",
+        "printEmpty": "Leere Variante"
       }
     }
   },

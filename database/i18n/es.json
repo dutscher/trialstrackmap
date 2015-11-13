@@ -86,7 +86,10 @@
         "successfullImport": "Well done, file successfully imported",
         "export": "Export",
         "exportFile": "your times to a .json file",
-        "print": "Print version"
+        "exportFileCsv": ".csv",
+        "print": "Print",
+        "printFilled": "Filled version",
+        "printEmpty": "Empty version"
       }
     }
   },

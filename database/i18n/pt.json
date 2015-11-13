@@ -86,7 +86,10 @@
         "successfullImport": "Feito, arquivo importado com sucesso",
         "export": "Exportar",
         "exportFile": "seus tempos para um arquivo .json",
-        "print": "Versão impressa"
+        "exportFileCsv": ".csv",
+        "print": "Imprimir",
+        "printFilled": "Versão preenchido",
+        "printEmpty": "Versão vazia"
       }
     }
   },
