@@ -1113,13 +1113,6 @@
     "prio": 4,
     "leaked": true
   },
-  {
-    "id": 155,
-    "tier": 0,
-    "cats": "12",
-    "prio": 5,
-    "leaked": true
-  },
   // agent tracks
   {
     "id": 157,
@@ -1323,5 +1316,42 @@
     "cats": "15",
     "prio": 13,
     "halloween2_trackpack": true
+  },
+  // trackpack tier 3
+  {
+    "id": 187,
+    "tier": 3,
+    "cats": "1",
+    "prio": 1
+  },
+  {
+    "id": 188,
+    "tier": 3,
+    "cats": "1",
+    "prio": 2
+  },
+  {
+    "id": 189,
+    "tier": 3,
+    "cats": "1",
+    "prio": 3
+  },
+  {
+    "id": 155,
+    "tier": 3,
+    "cats": "1",
+    "prio": 4
+  },
+  {
+    "id": 190,
+    "tier": 3,
+    "cats": "1",
+    "prio": 5
+  },
+  {
+    "id": 191,
+    "tier": 3,
+    "cats": "1",
+    "prio": 6
   }
 ]

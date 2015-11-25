@@ -4,7 +4,9 @@
     {{/content}}
 
     {{#content "styles" mode="prepend"}}
-        <link rel="stylesheet" type="text/css" href="../css/style-table.css" />
+        <link rel="stylesheet" type="text/css" href="../css/style-table.css{{cacheBuster}}" />
+        <link rel="stylesheet" type="text/css" href="../css/ngDialog.css{{cacheBuster}}" />
+        <link rel="stylesheet" type="text/css" href="../css/ngDialog-theme-default.css{{cacheBuster}}" />
         <style map-colors></style>
     {{/content}}
 
@@ -16,14 +18,13 @@
                 <div ng-init="pageReady = false" ng-hide="pageReady" class="loader spin"></div>
                 <div class="page-body is-loading" data-finished="pageReady">
 
-                    {{> table-navigation deactivateParts=true activateMode=true withImproveImportExport=true}}
+                    {{> table-navigation deactivateParts=true activateMode=true withMinInputs=true withImproveImportExport=true}}
 
                     <div class="box no-pad" sticky-thead>
                         <table class="w100">
                             <thead>
                             <tr>
                                 <th rowspan="2" width="10" table-sorter="catIndex"></th>
-                                <th rowspan="2" width="35" table-sorter="id">ID</th>
                                 <th rowspan="2" width="35" table-sorter="tier">{%'page.timesTable.tier'|translate%}</th>
                                 <th rowspan="2" width="200" table-sorter="trackName">{%'page.timesTable.trackName'|translate%}</th>
                                 <th rowspan="2" width="50" table-sorter="myRank" title="{%'page.timesTable.improve.myRank'|translate%}">
@@ -31,6 +32,9 @@
                                 </th>
                                 <th rowspan="2" table-sorter="differenceTime" title="{%'page.timesTable.improve.myTime'|translate%}">
                                     <i class="timer"></i>
+                                </th>
+                                <th rowspan="2" table-sorter="myGoal" title="{%'page.timesTable.improve.myGoal'|translate%}" ng-show="showMyGoal">
+                                    <i class="mygoal"></i>
                                 </th>
                                 <th rowspan="2" table-sorter="differenceTimeWR" title="{%'page.timesTable.improve.worldRecord'|translate%}">
                                     <i class="global"></i>
@@ -47,22 +51,23 @@
                             <tr ng-repeat="track in filteredArray = (data.tracks|showCatAndTier:selectedCat:selectedTier|filter:search|showParts:selectedPart:selectedPartLevel|improveSorter:selectedSort:selectedSortType)">
                                 <td cats-as-class="{track:track}" class="not-hover"></td>
                                 <td class="center">
-                                    {%::track.id%}
-                                </td>
-                                <td class="center">
                                     {%::track.tier%}
                                 </td>
                                 <td ng-class="{'public-change':track.timesDB.public}">
                                     {%track.i18n|stripLevel%}
                                 </td>
-                                <td class="center no-pad with-cursor" edit-improve="myRank">
+                                <td class="center no-pad with-cursor" edit-improve="myRank" check-min="{typeValue:minRank,value:track.improve[selectedMode][selectedBike].myRank}">
                                     {%track.improve[selectedMode][selectedBike].myRank%}
                                 </td>
-                                <td class="center no-pad with-cursor" edit-improve="myTime">
+                                <td class="center no-pad with-cursor" edit-improve="myTime" check-min="{typeValue:minDiff,value:track.improve[selectedMode][selectedBike].differenceTime.time}">
                                     {%track.improve[selectedMode][selectedBike].myTime|convertTime%}
                                     <span difference-time="track.improve[selectedMode][selectedBike].differenceTime"></span>
                                 </td>
-                                <td class="center no-pad" title="{%track.times.worldRecord[selectedMode][selectedBike].rider%}">
+                                <td class="center no-pad with-cursor" edit-improve="myGoal" ng-show="showMyGoal">
+                                    {%track.improve[selectedMode][selectedBike].myGoal|convertTime%}
+                                    <span difference-time="track.improve[selectedMode][selectedBike].differenceTimeMyGoal"></span>
+                                </td>
+                                <td class="center no-pad with-cursor" title="{%track.times.worldRecord[selectedMode][selectedBike].riderName%}" edit-worldrecord>
                                     {%track.times.worldRecord[selectedMode][selectedBike].time|convertTime%}
                                     <span difference-time="track.improve[selectedMode][selectedBike].differenceTimeWR"></span>
                                 </td>

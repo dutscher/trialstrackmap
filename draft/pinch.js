@@ -19,32 +19,37 @@
 
 function initWindow(){
     // When ready...
-    window.addEventListener('load',function() {
+    window.addEventListener("load",function() {
         // Set a timeout...
         setTimeout(function(){
             // Hide the address bar!
             window.scrollTo(0, 1);
         }, 0);
     });
-    window.addEventListener('resize',function() {
+    window.addEventListener("resize",function() {
         mask.dim = {
             w: eleMask.offsetWidth,
             h: eleMask.offsetHeight,
             r: eleMask.offsetWidth / eleMask.offsetHeight
-        }
+        };
+
+        mask.init(eleMask);
+        map.init(eleMap, settings);
+
     });
 }
 
-function initHammer(target){
-    var mc = new Hammer.Manager(target);
+function initHammer(element){
+    console.log("initHammer", element)
+    var mc = new Hammer.Manager(element);
 
     mc.add(new Hammer.Pan({ threshold: 0, pointers: 0 }));
-    mc.add(new Hammer.Pinch({ threshold: 0 })).recognizeWith( mc.get('pan') );
+    mc.add(new Hammer.Pinch({ threshold: 0 })).recognizeWith( mc.get("pan") );
 
-    mc.on('panstart panmove', onPan);
-    mc.on('pinchstart pinchmove', onPinch);
+    mc.on("panstart panmove", onPan);
+    mc.on("pinchstart pinchmove", onPinch);
 
-    mc.on('hammer.input', onFinal);
+    mc.on("hammer.input", onFinal);
 
     // desktop pinching via mousewheel
     function MouseWheelHandler(e) {
@@ -59,17 +64,19 @@ function initHammer(target){
         onScroll(delta,center);
     }
 
-    if (target.addEventListener) {
+    if (element.addEventListener) {
         // IE9, Chrome, Safari, Opera
-        target.addEventListener('mousewheel', MouseWheelHandler, false);
+        element.addEventListener("mousewheel", MouseWheelHandler, false);
         // Firefox
-        target.addEventListener('DOMMouseScroll', MouseWheelHandler, false);
+        element.addEventListener("DOMMouseScroll", MouseWheelHandler, false);
     }
 }
 
 var settings = {
     startScale: 1,
-    maxScale: 3,
+    maxScale: 1,
+    minScale: 0.45,
+    newMinScale: -1,
     fitHeight: false,
     fitWidth: false,
     panInBounds: true
@@ -105,6 +112,8 @@ var utils = {
             setX = bounds.x.max;
         else if(possibleX > bounds.x.max)
             setX = bounds.x.min;
+        else
+            setX = bounds.x.min;
 
         if(possibleY < bounds.y.min && possibleY > bounds.y.max)
             setY = possibleY;
@@ -120,11 +129,12 @@ var utils = {
     }
 };
 
-var eleMask = document.querySelector('.mapMask');
+var eleMask = document.querySelector(".mapMask");
 var mask = {
     dim: {},
     element: null,
     init: function(element){
+        console.log("mask.init", element)
         // dom element
         this.element = element;
 
@@ -132,6 +142,10 @@ var mask = {
         this.dim.w = element.offsetWidth;
         this.dim.h = element.offsetHeight;
         this.dim.r = element.offsetWidth / element.offsetHeight;
+
+        updatePanel({
+            window: this.dim
+        });
     },
     getCenter: function(){
         return {
@@ -140,7 +154,7 @@ var mask = {
         }
     }
 };
-var eleMap = document.querySelector('#map');
+var eleMap = document.querySelector("#map");
 var map = {
     element: null,
     tmp: {},
@@ -157,16 +171,24 @@ var map = {
         this.dim.h = element.height;
         this.dim.r = element.width / element.height;
 
+        if(settings.newMinScale === -1) {
+            settings.newMinScale = calcMinScale(map.transform.scale);
+        }
+
+        console.log(settings)
+
         // startScale
-        this.scale = this.tmp.startScale = settings.startScale || 1;
+        this.scale = this.tmp.startScale = settings.newMinScale !== -1 ? settings.newMinScale : (settings.startScale || 1);
+
+        console.log(this.scale)
 
         // check settings
         // fits the height
-        if('fitHeight' in settings && settings.fitHeight){
+        if("fitHeight" in settings && settings.fitHeight){
             this.scale = this.tmp.startScale = mask.dim.h / this.dim.h;
         }
         // fits the height
-        if('fitWidth' in settings && settings.fitWidth){
+        if("fitWidth" in settings && settings.fitWidth){
             this.scale = this.tmp.startScale = mask.dim.w / this.dim.w;
         }
 
@@ -204,16 +226,23 @@ var map = {
     },
     update: function(){
         var value = [
-            'translateX(' + this.transform.translate.x + 'px)',
-            'translateY(' + this.transform.translate.y + 'px)',
-            'scale(' + this.transform.scale + ', ' + this.transform.scale + ')'
+            "translateX(" + this.transform.translate.x + "px)",
+            "translateY(" + this.transform.translate.y + "px)",
+            "scale(" + this.transform.scale + ", " + this.transform.scale + ")"
         ];
 
-        value = value.join(' ');
+        value = value.join(" ");
         //mask.textContent = value;
         this.element.style.webkitTransform = value;
         this.element.style.mozTransform = value;
         this.element.style.transform = value;
+
+        updatePanel({
+            scale: this.transform.scale,
+            minScale: settings.newMinScale,
+            x: this.transform.translate.x,
+            y: this.transform.translate.y
+        });
     },
     panTo: function(newX, newY){
         var maskCenter = mask.getCenter(),
@@ -223,16 +252,27 @@ var map = {
             possibleY = -((bounds.y.min + (newY * this.scale)) - difference.h - maskCenter.y),
             coords = utils.stayInBounds(possibleX, possibleY);
 
-        this.transform.translate.x = coords.x;
-        this.transform.translate.y = coords.y;
+        this.transform.translate.x = map.tmp.lastX = coords.x;
+        this.transform.translate.y = map.tmp.lastY = coords.y;
 
         this.update();
     }
 };
 
+console.log(eleMap.naturalHeight, eleMap.naturalWidth)
+
+function calcMinScale(scale){
+    // calc new min and max
+    if(map.dim.w * scale < mask.dim.w) {
+        return mask.dim.w / map.dim.w;
+    } else {
+        return -1;
+    }
+}
+
 function onScroll(delta, center){
     var fakeEvent = {
-        type: 'pinchstart',
+        type: "pinchstart",
         center: center,
         scale: 0
     };
@@ -249,7 +289,7 @@ function onScroll(delta, center){
 }
 
 function onPinch(ev) {
-    if(ev.type == 'pinchstart') {
+    if(ev.type == "pinchstart") {
         map.tmp.initScale = map.scale || 1;
         map.tmp.panTo = {
             x: -(map.tmp.lastX - ev.center.x),
@@ -260,12 +300,14 @@ function onPinch(ev) {
     var newScale = map.tmp.initScale * ev.scale,
         setScale = 1;
 
+    settings.newMinScale = calcMinScale(newScale);
+
     switch(true){
         case newScale > settings.maxScale:
             setScale = settings.maxScale;
         break;
-        case newScale < 0:
-            setScale = 0;
+        case settings.newMinScale === -1 && newScale < settings.minScale || settings.newMinScale !== -1 && newScale < settings.newMinScale:
+            setScale = settings.newMinScale === -1 ? settings.minScale : settings.newMinScale;
         break;
         default:
             setScale = newScale;
@@ -279,7 +321,7 @@ function onPinch(ev) {
 }
 
 function onPan(ev) {
-    if(ev.type == 'panstart'){
+    if(ev.type == "panstart"){
         map.tmp.panScale = 1;
         map.tmp.panBounds = utils.calcBounds(map.tmp.panScale);
     }
@@ -288,8 +330,7 @@ function onPan(ev) {
         possibleY = map.tmp.lastY + ev.deltaY,
         coords = settings.panInBounds
             ? utils.stayInBounds(possibleX, possibleY, map.tmp.panBounds, map.tmp.panScale)
-            : {x:possibleX,y:possibleY}
-
+            : {x:possibleX,y:possibleY};
 
     map.transform.translate.x = coords.x;
     map.transform.translate.y = coords.y;
@@ -299,10 +340,19 @@ function onPan(ev) {
 
 function onFinal(ev) {
     if(ev.isFinal) {
-        console.log('final',JSON.stringify(map.transform,null))
+        //console.log("final",JSON.stringify(map.transform,null))
         map.tmp.lastX = map.transform.translate.x;
         map.tmp.lastY = map.transform.translate.y;
+
+        settings.newMinScale = calcMinScale(map.transform.scale);
     }
+}
+
+function updatePanel(data){
+    document.getElementById("scale").innerHTML = data.scale || "";
+    document.getElementById("minScale").innerHTML = data.minScale || "";
+    document.getElementById("x").innerHTML = data.x || "0";
+    document.getElementById("y").innerHTML = data.y || "0";
 }
 
 initWindow();

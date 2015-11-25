@@ -8,7 +8,7 @@ module.exports = function (grunt) {
         globalConfig: {}
     });
 
-        // Load grunt configurations automatically
+    // Load grunt configurations automatically
     require("load-grunt-config")(grunt, {
         jitGrunt: true,
         init: true,
@@ -29,7 +29,12 @@ module.exports = function (grunt) {
     ]);
 
     grunt.registerTask("finalDeploy", [
+        "doBackup",
         "deploy",
         "uglify:dist"
+    ]);
+
+    grunt.registerTask("doBackup", [
+        "backupMyJson"
     ]);
 };

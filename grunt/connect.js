@@ -1,6 +1,7 @@
 module.exports = function(grunt){
 
     grunt.registerTask("server", [
+        "doBackup",
         "deploy",
         "connect:dist",
         "watch"

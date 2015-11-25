@@ -14,7 +14,8 @@ module.exports = function (grunt) {
             partials: [
                 "tpls/partials/**/*.hbs",
                 "tpls/layouts/*.hbs"
-            ]
+            ],
+            cacheBuster: "?v=" + (new Date()).getTime()
         },
         default: {
             files: {

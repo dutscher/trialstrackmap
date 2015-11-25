@@ -1,0 +1,79 @@
+{{#extend "default"}}
+    {{#content "title" mode="prepend"}}
+        Temple of the legends -
+    {{/content}}
+
+    {{#content "styles" mode="prepend"}}
+        <link rel="stylesheet" type="text/css" href="../css/style-table.css{{cacheBuster}}" />
+        <link rel="stylesheet" type="text/css" href="../css/ngDialog.css{{cacheBuster}}" />
+        <link rel="stylesheet" type="text/css" href="../css/ngDialog-theme-default.css{{cacheBuster}}" />
+        <style map-colors></style>
+    {{/content}}
+
+    {{#content "ctrl"}}ng-controller="trackmap"{{/content}}
+
+    {{#content "body"}}
+        {{#with map}}
+            <div ng-controller="wrTemple">
+                <div ng-init="pageReady = false" ng-hide="pageReady" class="loader spin"></div>
+                <div class="page-body is-loading" data-finished="pageReady">
+
+                    {{> table-navigation-worldrecords}}
+
+                    <div class="box no-pad" sticky-thead>
+                        <table class="w100">
+                            <thead>
+                            <tr>
+                                <th width="50" rowspan="3">{%'page.worldRecordsTable.headId'|translate%}</th>
+                                <th rowspan="3" width="300">{%'page.worldRecordsTable.headRider'|translate%}</th>
+                                <th colspan="6">
+                                    {%'page.worldRecordsTable.headWorldrecords'|translate%}
+                                </th>
+                            </tr>
+                            <tr>
+                                <th colspan="3"><i class="device-android"></i></th>
+                                <th colspan="3"><i class="device-ios"></i></th>
+                            </tr>
+                            <tr>
+                                <th><i class="global"></i></th>
+                                <th><i class="donkey"></i></th>
+                                <th><i class="crazy"></i></th>
+                                <th><i class="global"></i></th>
+                                <th><i class="donkey"></i></th>
+                                <th><i class="crazy"></i></th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr ng-repeat="rider in filteredRider = data.rider|WRRiderSearch:search">
+                                <td class="center">
+                                    {%::rider.id%}
+                                </td>
+                                <td class="center" ng-bind-html="::rider.riderName|nameWithFlag">
+                                </td>
+                                <td class="center" hide-zero="{%::rider.WRAmount.android.normal%}">
+                                    {%::rider.WRAmount.android.normal%}
+                                </td>
+                                <td class="center" hide-zero="{%::rider.WRAmount.android.donkey%}">
+                                    {%::rider.WRAmount.android.donkey%}
+                                </td>
+                                <td class="center" hide-zero="{%::rider.WRAmount.android.crazy%}">
+                                    {%::rider.WRAmount.android.crazy%}
+                                </td>
+                                <td class="center" hide-zero="{%::rider.WRAmount.ios.normal%}">
+                                    {%::rider.WRAmount.ios.normal%}
+                                </td>
+                                <td class="center" hide-zero="{%::rider.WRAmount.ios.donkey%}">
+                                    {%::rider.WRAmount.ios.donkey%}
+                                </td>
+                                <td class="center" hide-zero="{%::rider.WRAmount.ios.crazy%}">
+                                    {%::rider.WRAmount.ios.crazy%}
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        {{/with}}
+    {{/content}}
+{{/extend}}

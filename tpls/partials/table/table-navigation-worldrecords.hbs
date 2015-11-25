@@ -1,0 +1,20 @@
+<div class="box make-sticky">
+    <a href="/index.html" class="classic-link">< {%'page.timesTable.back'|translate%}</a>
+    |
+    <a href="/dist/table-improve.html" class="classic-link" target="_blank">{%'page.leftSidebar.goToImprove'|translate%}</a>
+    |
+    {{> language-select}}
+    |
+    {%'page.worldRecordsTable.ridersAmount'|translate%}: {%repeatObject(filteredRider).length%}
+    <br />
+    {%'page.worldRecordsTable.filter'|translate%}:
+    <input type="text" placeholder="{%'page.worldRecordsTable.searchForRider'|translate%}"
+           select-on-click
+           ng-model="search"
+           ng-model-options="{debounce:500}"
+           ng-change="saveSearch()" />
+    <i class="faults with-cursor" ng-if="search != ''" ng-click="clearSearch()"></i>
+    |
+    {%'page.worldRecordsTable.addRider'|translate%}:
+    <span wr-rider-add></span>
+</div>

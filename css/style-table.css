@@ -9,6 +9,14 @@ th {
     vertical-align: bottom
 }
 
+th small,
+td small {
+    display: block;
+    font-size: 10px;
+    color: #8C7D48;
+    margin-top: -5px;
+}
+
 td {
     padding: 5px
 }
@@ -33,7 +41,7 @@ td.center {
     background: #A8A8A8
 }
 
-tr:hover td:not(:first-child) {
+tr:hover td:not(.not-hover) {
     background: #7f5033;
 }
 
@@ -59,13 +67,20 @@ label {
     cursor: pointer
 }
 
-button {
+button, .button {
+    font-family: Arial;
     background: #ffee99;
     color: #3f2a1f;
     border: 0;
     cursor: pointer;
+    font-size: 12px;
+    text-decoration: none;
+    padding: 2px 5px;
 }
-
+button:hover, .button:hover {
+    color: #ffee99;
+    background: #3f2a1f;
+}
 .public-change {
     text-decoration: underline;
     font-weight: bold
@@ -80,10 +95,7 @@ span.part-level {
 }
 
 table {
-    color: #ffee99
-}
-
-table {
+    color: #ffee99;
     background: rgba(0, 0, 0, 0.55)
 }
 
@@ -126,6 +138,20 @@ th, td {
 [improve-import] [improve-export] {
     position: relative;
 }
-[improve-import] .invisible-input {
+.invisible-input {
     display: none;
+}
+
+.over-min {
+    background: #841C0B;
+}
+
+.input-s {
+    width:60px;
+}
+
+.hide-zero {
+    color: #8C7D48;
+    opacity: .25;
+    background: rgba(0,0,0,1)
 }

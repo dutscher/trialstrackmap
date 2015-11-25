@@ -1,12 +1,17 @@
 <div class="box make-sticky">
     <a href="/index.html" class="classic-link">< {%'page.timesTable.back'|translate%}</a>
     |
+    <a href="/dist/wr-rider-temple.html" class="classic-link" target="_blank">{%'page.leftSidebar.goToWRRiderTemple'|translate%}</a>
+    |
     {{> language-select}}
     |
     {%'page.timesTable.tracksAmount'|translate%}: {%filteredArray.length%}
     <br/>
     {%'page.timesTable.filter'|translate%}:
-    <input type="text" placeholder="{%'page.rightSidebar.searchForTrack'|translate%}" ng-model="search"
+    <input type="text" placeholder="{%'page.rightSidebar.searchForTrack'|translate%}"
+           select-on-click
+           ng-model="search"
+           ng-model-options="{debounce:500}"
            ng-change="saveSearch()" />
     <i class="faults with-cursor" ng-if="search != ''" ng-click="clearSearch()"></i>
     {{#xif "this.activateMode"}}
@@ -64,16 +69,33 @@
         <option>3</option>
     </select>
     {{/xif}}
+
+    {{#xif "this.withMinInputs"}}
+        |
+        {%'page.timesTable.improve.minRank'|translate%}:
+        <input type="text" class="input-s" placeholder="{%'page.timesTable.improve.minRankPlaceholder'|translate%}"
+               select-on-click
+               ng-model="minRank"
+               ng-model-options="{debounce:500}"
+               ng-change="clearMinRank()" />
+        |
+        {%'page.timesTable.improve.minDifference'|translate%}:
+        <input type="text" class="input-s" placeholder="{%'page.timesTable.improve.minDifferencePlaceholder'|translate%}"
+               select-on-click
+               ng-model="minDiff"
+               ng-model-options="{debounce:500}"
+               ng-change="clearMinDiff()" />
+        |
+        {%'page.timesTable.improve.myGoalCheckbox'|translate%}:
+        <input type="checkbox" ng-model="showMyGoal" ng-change="saveMyGoal()" />
+    {{/xif}}
+
     {{#xif "this.withImproveImportExport"}}
         <br />
-        {%'page.timesTable.improve.import'|translate%}:
         <span improve-import></span>
-        {%'page.timesTable.improve.export'|translate%}:
         <span improve-export></span>
-        <span improve-export-csv></span>
         {%'page.timesTable.improve.print'|translate%}:
-        <a href="table-improve-print.html" target="blank" class="classic-link">{%'page.timesTable.improve.printFilled'|translate%}</a>
-        |
-        <a href="table-improve-print.html#empty=true" target="blank" class="classic-link">{%'page.timesTable.improve.printEmpty'|translate%}</a>
+        <a href="table-improve-print.html" target="blank" class="button">{%'page.timesTable.improve.printFilled'|translate%}</a>
+        <a href="table-improve-print.html#empty=true" target="blank" class="button">{%'page.timesTable.improve.printEmpty'|translate%}</a>
     {{/xif}}
 </div>

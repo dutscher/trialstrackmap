@@ -4,7 +4,7 @@
     {{/content}}
 
     {{#content "styles" mode="prepend"}}
-        <link rel="stylesheet" type="text/css" href="../css/style-table.css" />
+        <link rel="stylesheet" type="text/css" href="../css/style-table.css{{cacheBuster}}" />
         <style map-colors></style>
     {{/content}}
 
@@ -24,6 +24,7 @@
                             <tr>
                                 <!--<th rowspan="2" width="30">{%'page.timesTable.id'|translate%}</th>-->
                                 <th rowspan="2" width="5"></th>
+                                <th rowspan="2" width="35" table-sorter="tier">{%'page.timesTable.tier'|translate%}</th>
                                 <th rowspan="2" width="200">{%'page.timesTable.trackName'|translate%}</th>
                                 <th colspan="2" title="{%'page.timesTable.silver'|translate%}"><i
                                         class="medal-silver"></i>
@@ -60,6 +61,9 @@
                                     {%track.id%}
                                 </td>-->
                                 <td cats-as-class="{track:track}" class="not-hover"></td>
+                                <td class="center">
+                                    {%::track.tier%}
+                                </td>
                                 <td ng-class="{'public-change':track.timesDB.public}">
                                     {%track.i18n%}
                                 </td>

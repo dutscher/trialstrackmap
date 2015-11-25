@@ -6,8 +6,10 @@
       "update": "Letzte Änderungen",
       "goToSeasons": "Saison Übersicht",
       "goToMedals": "Medaillen & Teile Tabelle",
-      "goToImprove": "Verbessere deine Strekenzeiten",
+      "goToImprove": "Verbessere deine Streckenzeiten",
+      "goToWRRiderTemple": "WR-Rider-Tempel",
 	  "goToAnniversary": "Jubiläums Seite",
+      "goToThread": "gehe dazu ins Forum",
       "stats": "Stats",
       "uplayID": "Uplay",
       "level": "Level",
@@ -75,22 +77,120 @@
       "improve": {
         "myRank": "Mein Platz",
         "myTime": "Meine Zeit",
+        "myGoal": "Mein Ziel",
+        "myGoalCheckbox": "zeige die 'Mein Ziel' Spalte",
         "worldRecord": "Weltrekord",
-        "edit": "Füge einen neuen Wert ein für",
-        "editMyTime": "Bitte nur Zahlen eingeben! Deine Zeit 0:09.846 -> dann trage nur 9846 ein ;)",
-        "import": "Import",
-        "importFile": "Via .json Datei",
-        "importUrl": "Via URL von einer .json Datei",
-        "chooseImportUrl": "Füge die URL zu der vorher exportieren .json Datei ein!",
-        "confirmImport": "Willst du wirklich die Zeiten importieren vom",
-        "successfullImport": "Super geil, dein Import war erfolgreich!",
-        "export": "Export",
-        "exportFile": "deine Zeiten zu einer .json Datei",
-        "exportFileCsv": ".csv",
         "print": "Drucken",
         "printFilled": "Mit Daten befüllt",
-        "printEmpty": "Leere Variante"
+        "printEmpty": "Leere Variante",
+        "minRank": "Min. Rank",
+        "minRankPlaceholder": "10000",
+        "minDifference": "Min. Diff.",
+        "minDifferencePlaceholder": "0:10:000",
       }
+    },
+    "worldRecordsTable": {
+      "ridersAmount": "Riders Anzahl",
+      "headId": "ID",
+      "headRider": "Rider",
+      "headWorldrecords": "Weltrekorde",
+      "modes": "Android / iOS",
+      "filter": "Search",
+      "searchForRider": "a rider",
+      "addRider": "Add rider",
+      "addRiderButton": "for new WR"
+    }
+  },
+  "dialogs": {
+    "goTo": "go to",
+    "preview": "Preview",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "save": "Save",
+    "close": "Close",
+    "create": "Create",
+    "check": "Check",
+    "backup": "Backup",
+    "labels": {
+      "newTime": "New WR-time",
+      "riderName": "Rider name",
+      "userName": "Username",
+      "myRank": "MyRank",
+      "myTime": "MyTime",
+      "myGoal": "MyGoalTime",
+      "oldRank": "Current rank",
+      "chooseFile": "Choose file",
+      "choosedFile": "Current file",
+      "import": "Import",
+      "export": "Export",
+      "password": "Password",
+      "dontAskAgain": "Don't ask again!"
+    },
+    "placeholder": {
+      "newTime": "Your time 0:15.000 -> insert 15000",
+      "riderName": "Enter name of the WR-Rider",
+      "myRank": "Enter your newest rank"
+    },
+    "editWR": {
+      "header": "Edit World-Record (WR) for {%trackName%}",
+      "headerSaved": "World-Record is saved",
+      "oldRider": "Current WR-Rider",
+      "newRider": "Choosed WR-Rider",
+      "riderFound": "Rider found",
+      "confirmNewData": "Do you want to save the WR {%newTime%} made by {%riderName%}?",
+      "createRider": "Your riderName isn't exists. Do you want to add to the WR-Rider-Temple?",
+      "thanks": "Thanks that you add a new WR-Time. That's a big step for the community!"
+    },
+    "createRider": {
+      "header": "Create WR-Rider for Temple",
+      "confirmNewData": "Do you want to save the Rider {%riderName%} to the Temple?"
+    },
+    "editMyRank": {
+      "header": "Edit MyRank on {%trackName%}"
+    },
+    "editMyTime": {
+      "header": "Edit MyTime on {%trackName%}"
+    },
+    "editMyGoal": {
+      "header": "Edit MyGoal on {%trackName%}"
+    },
+    "import": {
+      "header": "Import your times",
+      "viaJsonFile": "via .json file",
+      "viaJsonFileUrl": "via .json file URL",
+      "enterJsonUrl": "enter the URL (http://...file.json)",
+      "viaStorage": "via online storage",
+      "enterYourId": "enter your storage ID",
+      "confirmHeader": "Confirm for import new data",
+      "confirmNewData": "Do you want to import the times from {%exportDate%}?",
+      "retrieveYourId": "Retrieve your ID",
+      "restoreHeader": "Here you can retrieve your ID.",
+      "enterYourUserName": "Please enter your username!",
+      "enterYourPassword": "Your ID was protected with a password."
+    },
+    "export": {
+      "header": "Export your times",
+      "toJsonFile": "to a .json file",
+      "toCsvFile": "to a .csv file",
+      "toStorage": "online",
+      "backupHeader": "Do you want to backup your ID?",
+      "enterUserName": "Enter your userName for the backup",
+      "enterPassword": "To protect your ID. It is optional."
+    },
+    "error": {
+      "noAccess": "Couldn't access to the url!",
+      "noAccessMyJson": "Couldn't access with '{%id%}' to myJson!",
+      "fileTooBig": "Your file is to big for import!",
+      "missingData": "Trackdata is missing",
+      "cantReadFile": "Error due reading import file: {%e%}!\nCheck console for details!",
+      "cantReadJson": "Error due parsing import file: {%e%}!\nCheck console for details!",
+      "wrongFileName": "Wrong filename for import! It must contain '{%fileName%}'",
+      "wrongFileType": "Your file has the wrong type! It must be '{%fileType%}'!\nCheck console for details!",
+      "noTimes": "No times in import data!\nCheck console for details!",
+      "userNameNotFound": "The username is not found.\nTherefore it's not possible to retrieve your ID.",
+      "wrongPassword": "Wrong password. No chance to retrieve your ID.",
+      "emptyPassword": "A password is needed.",
+      "cannotExport": "Your browser doesn't support saving files."
     }
   },
   "cats": {
@@ -229,7 +329,6 @@
     "88": "Glühwurmlandplatz",
     "89": "Terror-Turm",
     "90": "Phantom-Fest",
-    "131": "Große Mauer",
     "91": "Kranichauslauf",
     "92": "Kläranlage",
     "93": "Wüstengondel",
@@ -270,6 +369,7 @@
     "129": "Die Welle",
     "130": "Müllentsorgung",
     "123": "Traktions-Teststrecke",
+    "131": "Große Mauer",
     "132": "Bunny Hop",
     "133": "Stadt der Sünde",
     "134": "Bergrennen",
@@ -292,9 +392,8 @@
     "147": "!!!-Rear Wheel",
     "153": "!!!-Prod22 Maria 2",
     "154": "!!!-Prod28 Ukkis 1",
-    "155": "!!!-Prod27 Maria 2",
-    "156": "Vergessene Fabrik",
     "157": "Manipulierte Fahrbahn",
+    "156": "Vergessene Fabrik",
     "158": "Karge Schritte",
     "148": "Das Rockt",
     "159": "Teuflisches Versteck",
@@ -324,6 +423,12 @@
     "183": "Zornessprünge",
     "184": "Ruinen der Verzweiflung",
     "185": "Schwarzwald",
-    "186": "Festmine"
+    "186": "Festmine",
+    "187": "Prächtiger Mondschein",
+    "188": "Gewölbegekrabbel",
+    "189": "Abgebrannte Zinne",
+    "155": "Irrenhaus",
+    "190": "Holzwerk-Konclave",
+    "191": "Witwenmacher"
   }
 }

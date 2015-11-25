@@ -93,13 +93,14 @@ body {
 }
 
 .classic-link {
-    color: #000;
     font-weight: bold;
     text-decoration: none
 }
-
 .box, .classic-link {
     color: #ffee99
+}
+.classic-link:hover {
+    color: #775746;
 }
 
 .box {

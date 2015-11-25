@@ -1,8 +1,8 @@
 {
   "images": {
     "trackmap": {
-      "src": "#1/uXSdVpG.jpg",
-      "lSrc": "#0/trackmap.151112.en.jpg",
+      "src": "#1/j5dauYB.jpg",
+      "lSrc": "#0/trackmap.151123.en.jpg",
       "alt": "Trails Frontier Trackmap",
       "dim": "3614x2495"
     },
@@ -64,6 +64,11 @@
       "lSrc": "#0/picto/timer.png",
       "selector": "i.timer"
     },
+    "mygoal": {
+      "src": "#1/Fqg5qZv.png",
+      "lSrc": "#0/picto/mygoal.png",
+      "selector": "i.mygoal"
+    },
     "faults": {
       "src": "#1/ZDhEx6w.png",
       "lSrc": "#0/picto/faults.png",
@@ -108,6 +113,16 @@
       "src": "#1/V8Oz1hI.png",
       "lSrc": "#0/flags/pt.png",
       "selector": "i.lang.lang_pt"
+    },
+    "country_br": {
+      "src": "#1/ZcXTA05.png",
+      "lSrc": "#0/flags/br.png",
+      "selector": "i.lang.lang_br"
+    },
+    "country_us": {
+      "src": "#1/RT79ss2.png",
+      "lSrc": "#0/flags/us.png",
+      "selector": "i.lang.lang_us"
     },
     "part": {
       "src": "#1/QBz8k4t.jpg",
@@ -175,6 +190,26 @@
       "src": "#1/oYBibpe.png",
       "lSrc": "#0/items/youtube-plat.png",
       "selector": "i.youtube-platinum"
+    },
+    "device-android": {
+      "src": "#1/GCH28wI.png",
+      "lSrc": "#0/picto/android.png",
+      "selector": "i.device-android"
+    },
+    "device-ios": {
+      "src": "#1/fOtLeSq.png",
+      "lSrc": "#0/picto/apple.png",
+      "selector": "i.device-ios"
+    },
+    "crazy": {
+      "src": "#1/sXbKmfe.png",
+      "lSrc": "#0/picto/crazy.png",
+      "selector": "i.crazy"
+    },
+    "donkey": {
+      "src": "#1/HhQmHhp.png",
+      "lSrc": "#0/picto/donkey.png",
+      "selector": "i.donkey"
     }
   },
   "hoster": {

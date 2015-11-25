@@ -11,13 +11,27 @@ i.lang {
 i.lang:last-child {
     margin-right: 0;
 }
+i.lang.beside-name {
+    vertical-align: baseline;
+    position: relative;
+    bottom: -2px;
+    cursor: default;
+}
+i.lang.no-margin {
+    margin-right: 0;
+}
 
+i.crazy,
+i.donkey,
+i.device-android,
+i.device-ios,
 i.candy,
 i.startline,
 i.data-cube,
 i[class^="medal-"],
 i.faults,
 i.timer,
+i.mygoal,
 i.chips,
 i.orientation,
 i.youtube,
@@ -29,7 +43,8 @@ i.gems,
 i.global,
 i.rank,
 i.arrow,
-i.coins {
+i.coins
+{
     display: inline-block;
     background-size: cover !important;
     width: 20px;

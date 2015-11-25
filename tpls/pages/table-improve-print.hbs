@@ -4,58 +4,15 @@
     {{/content}}
 
     {{#content "styles"}}
+        <link rel="stylesheet" type="text/css" href="../css/style-table-improve-print.css{{cacheBuster}}" />
         <style map-colors></style>
-        <style>
-            body {
-                font-family: arial;
-                font-size: 0;
-                margin: 14px;
-                white-space: nowrap;
-            }
-            .block {
-                font-size: 12px;
-                margin-right: 14px;
-                display: inline-block;
-                vertical-align: top;
-            }
-            .block:last-child {
-                margin-right: 0;
-            }
-            table {
-                border-spacing: 0;
-                border-collapse: collapse;
-                empty-cells: show;
-            }
-            td {
-                border: solid 1px #000;
-                white-space: nowrap;
-            }
-            td.center {
-                text-align: center;
-            }
-            tr.headline td:first-child {
-                border-right: 0;
-            }
-            tr.headline td:last-child {
-                border-left: 0;
-                font-family: 'Arial Black', Gadget, sans-serif;
-            }
-            tr.spacer td {
-                border: 0;
-                height: 14px;
-            }
-            tr.spacer td:last-child {
-                font-family: 'Arial Black', Gadget, sans-serif;
-                font-size: 10px;
-            }
-        </style>
     {{/content}}
 
     {{#content "ctrl"}}ng-controller="trackmap"{{/content}}
 
     {{#content "body"}}
         {{#with map}}
-            <div ng-controller="trackTimes" ng-if="data.tracks">
+            <div ng-controller="trackTimes" ng-if="tracksReady" print-that="tracksReady">
 
                 <div style="float:left;display: none;font-size:10px">
                     <div ng-repeat="cat in data.map.cats" class="{%::cat.class%}-bg">
@@ -110,13 +67,13 @@
                         <tr print-spacer></tr>
                         <tr print-tracks="{tier:3,cat:'swamp'}"></tr>
                         <tr print-spacer></tr>
-                        <tr print-head="Hardcore Track Pack ({% (data.tracks|printTracks:1:'hardcore').length %} tracks)"></tr>
+                        <tr print-head="Winter ({% (data.tracks|printTracks:'all':'winter').length %} tracks)"></tr>
                         <tr print-spacer="Tier 1"></tr>
-                        <tr print-tracks="{tier:1,cat:'hardcore'}"></tr>
-                        <tr print-spacer></tr>
-                        <tr print-head="Hardcore Track Pack 2 ({% (data.tracks|printTracks:2:'hardcore').length %} tracks)"></tr>
+                        <tr print-tracks="{tier:1,cat:'winter'}"></tr>
                         <tr print-spacer="Tier 2"></tr>
-                        <tr print-tracks="{tier:2,cat:'hardcore'}"></tr>
+                        <tr print-tracks="{tier:2,cat:'winter'}"></tr>
+                        <tr print-spacer="Tier 3"></tr>
+                        <tr print-tracks="{tier:3,cat:'winter'}"></tr>
                     </table>
                 </div>
 
@@ -133,13 +90,17 @@
                         <tr print-spacer="PVP"></tr>
                         <tr print-tracks="{tier:1,cat:'bunker',with:'only_bunker'}"></tr>
                         <tr print-spacer></tr>
-                        <tr print-head="Winter ({% (data.tracks|printTracks:'all':'winter').length %} tracks)"></tr>
+                        <tr print-head="Hardcore Track Pack ({% (data.tracks|printTracks:1:'hardcore').length %} tracks)"></tr>
                         <tr print-spacer="Tier 1"></tr>
-                        <tr print-tracks="{tier:1,cat:'winter'}"></tr>
+                        <tr print-tracks="{tier:1,cat:'hardcore'}"></tr>
+                        <tr print-spacer></tr>
+                        <tr print-head="Hardcore Track Pack 2 ({% (data.tracks|printTracks:2:'hardcore').length %} tracks)"></tr>
                         <tr print-spacer="Tier 2"></tr>
-                        <tr print-tracks="{tier:2,cat:'winter'}"></tr>
+                        <tr print-tracks="{tier:2,cat:'hardcore'}"></tr>
+                        <tr print-spacer></tr>
+                        <tr print-head="Hardcore Track Pack 3 ({% (data.tracks|printTracks:3:'hardcore').length %} tracks)"></tr>
                         <tr print-spacer="Tier 3"></tr>
-                        <tr print-tracks="{tier:3,cat:'winter'}"></tr>
+                        <tr print-tracks="{tier:3,cat:'hardcore'}"></tr>
                     </table>
                 </div>
 

@@ -8,6 +8,8 @@
       "goToMedals": "Tabla de Medallas y Partes",
       "goToImprove": "Improve your times table",
       "goToAnniversary": "Página Aniversario",
+      "goToWRRiderTemple": "WR-Rider-Temple",
+      "goToThread": "go to the forum thread",
       "stats": "Estadísticas",
       "uplayID": "Uplay",
       "level": "Nivel",
@@ -75,22 +77,120 @@
       "improve": {
         "myRank": "My rank",
         "myTime": "My time",
+        "myGoal": "My goal",
+        "myGoalCheckbox": "Show myGoal cell",
         "worldRecord": "Worldrecord",
-        "edit": "Set a new value for",
-        "editMyTime": "Only insert digits! Your time 0:09.846 -> insert 9846 ;)",
-        "import": "Import",
-        "importFile": "Via .json file",
-        "importUrl": "Via URL to a .json file",
-        "chooseImportUrl": "Insert a url to the exported .json file!",
-        "confirmImport": "Do you want to import the times from",
-        "successfullImport": "Well done, file successfully imported",
-        "export": "Export",
-        "exportFile": "your times to a .json file",
-        "exportFileCsv": ".csv",
         "print": "Print",
-        "printFilled": "Filled version",
-        "printEmpty": "Empty version"
+        "printFilled": "Filled",
+        "printEmpty": "Empty",
+        "minRank": "Min. rank",
+        "minRankPlaceholder": "10000",
+        "minDifference": "Min. diff.",
+        "minDifferencePlaceholder": "0:10:000"
       }
+    },
+    "worldRecordsTable": {
+      "ridersAmount": "Riders total",
+      "headId": "ID",
+      "headRider": "Rider",
+      "headWorldrecords": "Worldrecords",
+      "modes": "Android / iOS",
+      "filter": "Search",
+      "searchForRider": "a rider",
+      "addRider": "Add rider",
+      "addRiderButton": "for new WR"
+    }
+  },
+  "dialogs": {
+    "goTo": "go to",
+    "preview": "Preview",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "save": "Save",
+    "close": "Close",
+    "create": "Create",
+    "check": "Check",
+    "backup": "Backup",
+    "labels": {
+      "newTime": "New WR-time",
+      "riderName": "Rider name",
+      "userName": "Username",
+      "myRank": "MyRank",
+      "myTime": "MyTime",
+      "myGoal": "MyGoalTime",
+      "oldRank": "Current rank",
+      "chooseFile": "Choose file",
+      "choosedFile": "Current file",
+      "import": "Import",
+      "export": "Export",
+      "password": "Password",
+      "dontAskAgain": "Don't ask again!"
+    },
+    "placeholder": {
+      "newTime": "Your time 0:15.000 -> insert 15000",
+      "riderName": "Enter name of the WR-Rider",
+      "myRank": "Enter your newest rank"
+    },
+    "editWR": {
+      "header": "Edit World-Record (WR) for {%trackName%}",
+      "headerSaved": "World-Record is saved",
+      "oldRider": "Current WR-Rider",
+      "newRider": "Choosed WR-Rider",
+      "riderFound": "Rider found",
+      "confirmNewData": "Do you want to save the WR {%newTime%} made by {%riderName%}?",
+      "createRider": "Your riderName isn't exists. Do you want to add to the WR-Rider-Temple?",
+      "thanks": "Thanks that you add a new WR-Time. That's a big step for the community!"
+    },
+    "createRider": {
+      "header": "Create WR-Rider for Temple",
+      "confirmNewData": "Do you want to save the Rider {%riderName%} to the Temple?"
+    },
+    "editMyRank": {
+      "header": "Edit MyRank on {%trackName%}"
+    },
+    "editMyTime": {
+      "header": "Edit MyTime on {%trackName%}"
+    },
+    "editMyGoal": {
+      "header": "Edit MyGoal on {%trackName%}"
+    },
+    "import": {
+      "header": "Import your times",
+      "viaJsonFile": "via .json file",
+      "viaJsonFileUrl": "via .json file URL",
+      "enterJsonUrl": "enter the URL (http://...file.json)",
+      "viaStorage": "via online storage",
+      "enterYourId": "enter your storage ID",
+      "confirmHeader": "Confirm for import new data",
+      "confirmNewData": "Do you want to import the times from {%exportDate%}?",
+      "retrieveYourId": "Retrieve your ID",
+      "restoreHeader": "Here you can retrieve your ID.",
+      "enterYourUserName": "Please enter your username!",
+      "enterYourPassword": "Your ID was protected with a password."
+    },
+    "export": {
+      "header": "Export your times",
+      "toJsonFile": "to a .json file",
+      "toCsvFile": "to a .csv file",
+      "toStorage": "online",
+      "backupHeader": "Do you want to backup your ID?",
+      "enterUserName": "Enter your userName for the backup",
+      "enterPassword": "To protect your ID. It is optional."
+    },
+    "error": {
+      "noAccess": "Couldn't access to the url!",
+      "noAccessMyJson": "Couldn't access with '{%id%}' to myJson!",
+      "fileTooBig": "Your file is to big for import!",
+      "missingData": "Trackdata is missing",
+      "cantReadFile": "Error due reading import file: {%e%}!\nCheck console for details!",
+      "cantReadJson": "Error due parsing import file: {%e%}!\nCheck console for details!",
+      "wrongFileName": "Wrong filename for import! It must contain '{%fileName%}'",
+      "wrongFileType": "Your file has the wrong type! It must be '{%fileType%}'!\nCheck console for details!",
+      "noTimes": "No times in import data!\nCheck console for details!",
+      "userNameNotFound": "The username is not found.\nTherefore it's not possible to retrieve your ID.",
+      "wrongPassword": "Wrong password. No chance to retrieve your ID.",
+      "emptyPassword": "A password is needed.",
+      "cannotExport": "Your browser doesn't support saving files."
     }
   },
   "cats": {
@@ -261,7 +361,6 @@
     "120": "Senda prohibida",
     "121": "Línea de entrega",
     "122": "Reino de cristal",
-    "123": "Campo de pruebas de tracciòn",
     "124": "Ollas de fundición",
     "125": "Gruta pesadilla",
     "126": "Almacenamiento explosivo",
@@ -269,6 +368,7 @@
     "128": "Pistas destruídas",
     "129": "El foso",
     "130": "Eliminación de desperdicios",
+    "123": "Campo de pruebas de tracciòn",
     "131": "Gran Muralla",
     "132": "Saltitos",
     "133": "Ciudad de las curvas",
@@ -292,9 +392,8 @@
     "147": "!!!-Rear Wheel",
     "153": "!!!-Prod22 Maria 2",
     "154": "!!!-Prod28 Ukkis 1",
-    "155": "!!!-Prod27 Maria 2",
-    "156": "Fábrica olvidada",
     "157": "Carretera amañada",
+    "156": "Fábrica olvidada",
     "158": "Peldaños baldíos",
     "148": "Desde las rocas",
     "159": "Escondite de villanos",
@@ -324,6 +423,12 @@
     "183": "Botes de furia",
     "184": "Ruinas de la desesperación",
     "185": "Bosque negro",
-    "186": "Mina festival"
+    "186": "Mina festival",
+    "187": "Grand Moonshine",
+    "188": "Vault Crawl",
+    "189": "Scorched Battlement",
+    "155": "Madhouse",
+    "190": "Woodwork Conclave",
+    "191": "Widowmaker"
   }
 }
