@@ -118,6 +118,7 @@
       "myRank": "MyRank",
       "myTime": "MyTime",
       "myGoal": "MyGoalTime",
+      "oldTime": "Current time",
       "oldRank": "Current rank",
       "chooseFile": "Choose file",
       "choosedFile": "Current file",
