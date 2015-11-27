@@ -8,8 +8,8 @@
       "goToMedals": "Medalhas e Peças",
       "goToImprove": "Tabela melhore seus tempos",
       "goToAnniversary": "Página de Aniversário",
-      "goToWRRiderTemple": "WR-Rider-Temple",
-      "goToThread": "go to the forum thread",
+      "goToWRRiderTemple": "WR-Templo-Pilotos",
+      "goToThread": "Ir para o fórum",
       "stats": "Estatísticas",
       "uplayID": "Uplay",
       "level": "Nível",
@@ -75,123 +75,123 @@
       "tier": "Nível",
       "allTiers": "Todos",
       "improve": {
-        "myRank": "My rank",
-        "myTime": "My time",
-        "myGoal": "My goal",
-        "myGoalCheckbox": "Show myGoal cell",
-        "worldRecord": "Worldrecord",
-        "print": "Print",
-        "printFilled": "Filled",
-        "printEmpty": "Empty",
-        "minRank": "Min. rank",
+        "myRank": "Minha posição",
+        "myTime": "Meu tempo",
+        "myGoal": "Meu objetivo",
+        "myGoalCheckbox": "Mostrar célula meuObjetivo",
+        "worldRecord": "Recorde Mundial",
+        "print": "Imprimir",
+        "printFilled": "Preenchido",
+        "printEmpty": "Vazio",
+        "minRank": "Posição min.",
         "minRankPlaceholder": "10000",
-        "minDifference": "Min. diff.",
+        "minDifference": "Diferença min.",
         "minDifferencePlaceholder": "0:10:000"
       }
     },
     "worldRecordsTable": {
-      "ridersAmount": "Riders total",
+      "ridersAmount": "Total de pilotos",
       "headId": "ID",
-      "headRider": "Rider",
-      "headWorldrecords": "Worldrecords",
+      "headRider": "Piloto",
+      "headWorldrecords": "Recordes Mundiais",
       "modes": "Android / iOS",
-      "filter": "Search",
-      "searchForRider": "a rider",
-      "addRider": "Add rider",
-      "addRiderButton": "for new WR"
+      "filter": "Procurar",
+      "searchForRider": "um piloto",
+      "addRider": "Adicionar Piloto",
+      "addRiderButton": "Para um novo WR"
     }
   },
   "dialogs": {
-    "goTo": "go to",
-    "preview": "Preview",
-    "cancel": "Cancel",
-    "confirm": "Confirm",
-    "save": "Save",
-    "close": "Close",
-    "create": "Create",
-    "check": "Check",
+    "goTo": "ir para",
+    "preview": "Visualizar",
+    "cancel": "Cancelar",
+    "confirm": "Confirmar",
+    "save": "Salvar",
+    "close": "Fechar",
+    "create": "Criar",
+    "check": "Checar",
     "backup": "Backup",
     "labels": {
-      "newTime": "New WR-time",
-      "riderName": "Rider name",
-      "userName": "Username",
-      "myRank": "MyRank",
-      "myTime": "MyTime",
-      "myGoal": "MyGoalTime",
-      "oldTime": "Current time",
-      "oldRank": "Current rank",
-      "chooseFile": "Choose file",
-      "choosedFile": "Current file",
-      "import": "Import",
-      "export": "Export",
-      "password": "Password",
-      "dontAskAgain": "Don't ask again!"
+      "newTime": "Novo recorde",
+      "riderName": "Nome do piloto",
+      "userName": "Nome de usuário",
+      "myRank": "MinhaPosição",
+      "myTime": "MeuTempo",
+      "myGoal": "MinhaMeta",
+      "oldTime": "Tempo atual",
+      "oldRank": "Posição atual",
+      "chooseFile": "Escolher arquivo",
+      "choosedFile": "Arquivo atual",
+      "import": "Importar",
+      "export": "Exportar",
+      "password": "Senha",
+      "dontAskAgain": "Não pergunte de novo!"
     },
     "placeholder": {
-      "newTime": "Your time 0:15.000 -> insert 15000",
-      "riderName": "Enter name of the WR-Rider",
-      "myRank": "Enter your newest rank"
+      "newTime": "Seu tempo 0:15.000 -> insira 15000",
+      "riderName": "Insira o nome do novo recordista",
+      "myRank": "Insira sua posição mais recente"
     },
     "editWR": {
-      "header": "Edit World-Record (WR) for {%trackName%}",
-      "headerSaved": "World-Record is saved",
-      "oldRider": "Current WR-Rider",
+      "header": "Editar Recorde Mundial (WR) para {%trackName%}",
+      "headerSaved": "Recorde Mundial salvo",
+      "oldRider": "Recordista atual",
       "newRider": "Choosed WR-Rider",
-      "riderFound": "Rider found",
-      "confirmNewData": "Do you want to save the WR {%newTime%} made by {%riderName%}?",
-      "createRider": "Your riderName isn't exists. Do you want to add to the WR-Rider-Temple?",
-      "thanks": "Thanks that you add a new WR-Time. That's a big step for the community!"
+      "riderFound": "Piloto encontrado",
+      "confirmNewData": "Você quer salvar o WR {%newTime%} feito por {%riderName%}?",
+      "createRider": "Seu nome de piloto não existe. Você quer adicionar ao WR-Templo-Pilotos?",
+      "thanks": "Obrigado por adicionar um novo WR. Isso é um grande passo para a comunidade!"
     },
     "createRider": {
-      "header": "Create WR-Rider for Temple",
-      "confirmNewData": "Do you want to save the Rider {%riderName%} to the Temple?"
+      "header": "Criar recordista para o Templo",
+      "confirmNewData": "Você quer salvar o piloto {%riderName%} no Templo?"
     },
     "editMyRank": {
-      "header": "Edit MyRank on {%trackName%}"
+      "header": "Editar minha posição em {%trackName%}"
     },
     "editMyTime": {
-      "header": "Edit MyTime on {%trackName%}"
+      "header": "Editar meu tempo em {%trackName%}"
     },
     "editMyGoal": {
-      "header": "Edit MyGoal on {%trackName%}"
+      "header": "Editar minha meta em {%trackName%}"
     },
     "import": {
-      "header": "Import your times",
-      "viaJsonFile": "via .json file",
-      "viaJsonFileUrl": "via .json file URL",
-      "enterJsonUrl": "enter the URL (http://...file.json)",
-      "viaStorage": "via online storage",
-      "enterYourId": "enter your storage ID",
-      "confirmHeader": "Confirm for import new data",
-      "confirmNewData": "Do you want to import the times from {%exportDate%}?",
-      "retrieveYourId": "Retrieve your ID",
-      "restoreHeader": "Here you can retrieve your ID.",
-      "enterYourUserName": "Please enter your username!",
-      "enterYourPassword": "Your ID was protected with a password."
+      "header": "Importe seus tempos",
+      "viaJsonFile": "via arquivo .json",
+      "viaJsonFileUrl": "via arquivo URL .json",
+      "enterJsonUrl": "insira o URL (http://...file.json)",
+      "viaStorage": "via armazenamento online",
+      "enterYourId": "insira seu ID de armazenamento",
+      "confirmHeader": "Confirme para importar novos dados",
+      "confirmNewData": "Você quer importar os tempos de {%exportDate%}?",
+      "retrieveYourId": "Recuperar seu ID",
+      "restoreHeader": "Aqui você pode recuperar seu ID.",
+      "enterYourUserName": "Por favor, insira seu nome de usuário!",
+      "enterYourPassword": "Seu ID foi protegido com senha."
     },
     "export": {
-      "header": "Export your times",
-      "toJsonFile": "to a .json file",
-      "toCsvFile": "to a .csv file",
+      "header": "Exporte seus tempos",
+      "toJsonFile": "para um arquivo .json",
+      "toCsvFile": "para um arquivo .csv",
       "toStorage": "online",
-      "backupHeader": "Do you want to backup your ID?",
-      "enterUserName": "Enter your userName for the backup",
-      "enterPassword": "To protect your ID. It is optional."
+      "backupHeader": "Você quer fazer Backup de seu ID?",
+      "enterUserName": "Insira seu nome de usuário para o backup",
+      "enterPassword": "Para proteger seu ID. Isso é opicional"
     },
     "error": {
-      "noAccess": "Couldn't access to the url!",
-      "noAccessMyJson": "Couldn't access with '{%id%}' to myJson!",
-      "fileTooBig": "Your file is to big for import!",
-      "missingData": "Trackdata is missing",
-      "cantReadFile": "Error due reading import file: {%e%}!\nCheck console for details!",
-      "cantReadJson": "Error due parsing import file: {%e%}!\nCheck console for details!",
-      "wrongFileName": "Wrong filename for import! It must contain '{%fileName%}'",
-      "wrongFileType": "Your file has the wrong type! It must be '{%fileType%}'!\nCheck console for details!",
-      "noTimes": "No times in import data!\nCheck console for details!",
-      "userNameNotFound": "The username is not found.\nTherefore it's not possible to retrieve your ID.",
-      "wrongPassword": "Wrong password. No chance to retrieve your ID.",
-      "emptyPassword": "A password is needed.",
-      "cannotExport": "Your browser doesn't support saving files."
+      "noAccess": "Não foi possível acessar o URL",
+      "noAccessMyJson": "Não foi possível acessar com '{%id%}' para meuJson!",
+      "fileTooBig": "Seu arquivo é muito grande para importar!",
+      "missingData": "Dados de pista faltando",
+      "cantReadFile": "Erro ao ler arquivo de importação: {%e%}!\nVerifique console para detalhes!",
+      "cantReadJson": "Erro ao analisar arquivo de importação: {%e%}!\nVerifique console para detalhes!",
+      "wrongFileName": "Nome de arquivo errado para importação! Isso deve conter '{%fileName%}'",
+      "wrongFileType": "Seu arquivo tem o tipo errado! Deve ser '{%fileType%}'!\nVerifique console para detalhes!",
+      "noTimes": "Sem tempos nos dados de Importação!\nVerifique console para detalhes!",
+      "userNameNotFound": "Nome de usuário nao encontrado.\nTherefore it's not possible to retrieve your ID.",
+      "wrongPassword": "Senha incorreta. Sem chance para recuperar o seu ID.",
+      "emptyPassword": "Uma senha é necessária.",
+      "cannotExport": "Seu navegador não pode salvar arquivos."
     }
   },
   "cats": {
@@ -425,11 +425,11 @@
     "184": "Ruínas do Desespero",
     "185": "Floresta Negra",
     "186": "Mina da Celebração",
-    "187": "Grand Moonshine",
-    "188": "Vault Crawl",
-    "189": "Scorched Battlement",
-    "155": "Madhouse",
-    "190": "Woodwork Conclave",
-    "191": "Widowmaker"
+    "187": "Luar Majestoso",
+    "188": "Rastejo Mortuário",
+    "189": "Muralha Chamuscada",
+    "155": "Hospício",
+    "190": "Conclave do Madeiro",
+    "191": "Fazedor de Viúvas"
   }
 }
