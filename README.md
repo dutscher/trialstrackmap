@@ -3,7 +3,8 @@
 * livesite: http://trialstrackmap.sb-f.de
 * seasons overview: http://trialstrackmap.sb-f.de/dist/seasons.html
 * time and parts table: http://trialstrackmap.sb-f.de/dist/table.html
-* seasons overview: http://trialstrackmap.sb-f.de/dist/table-improve.html
+* table improve: http://trialstrackmap.sb-f.de/dist/table-improve.html
+* wr-rider-temple: http://trialstrackmap.sb-f.de/dist/wr-rider-temple.html
 * locations map: http://trialstrackmap.sb-f.de/dist/locations.html
 * forum thread: http://forums.ubi.com/showthread.php/939397-Trackmap
 
@@ -19,6 +20,10 @@ $ grunt server
 ```
 
 # response of the community
+
+> # HUE-BR
+> it's really a nice big update , due
+> good work
 
 > # Davide Girgenti
 > you did an excellent job!
