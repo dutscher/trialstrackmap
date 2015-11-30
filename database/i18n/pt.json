@@ -125,7 +125,9 @@
       "import": "Importar",
       "export": "Exportar",
       "password": "Senha",
-      "dontAskAgain": "Não pergunte de novo!"
+      "dontAskAgain": "Não pergunte de novo!",
+      "openMyTime": "Open MyTime dialog after saving",
+      "autoExport": "Activate autoexporting"
     },
     "placeholder": {
       "newTime": "Seu tempo 0:15.000 -> insira 15000",
@@ -176,7 +178,9 @@
       "toStorage": "online",
       "backupHeader": "Você quer fazer Backup de seu ID?",
       "enterUserName": "Insira seu nome de usuário para o backup",
-      "enterPassword": "Para proteger seu ID. Isso é opicional"
+      "enterPassword": "Para proteger seu ID. Isso é opicional",
+      "successfullExportedHeader": "Successfull",
+      "successfullExported": "All your data was successfull exported."
     },
     "error": {
       "noAccess": "Não foi possível acessar o URL",

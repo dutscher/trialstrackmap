@@ -125,7 +125,9 @@
       "import": "Import",
       "export": "Export",
       "password": "Passwort",
-      "dontAskAgain": "Dieses Fenster nicht mehr anzeigen!"
+      "dontAskAgain": "Dieses Fenster nicht mehr anzeigen!",
+      "openMyTime": "Öffne Meine Zeite nach dem speichern",
+      "autoExport": "Aktiviere Autoexport"
     },
     "placeholder": {
       "newTime": "Deine Zeit 0:15.000 -> dann füge 15000 ein",
@@ -176,7 +178,9 @@
       "toStorage": "online",
       "backupHeader": "Willst du deine ID Sichern?",
       "enterUserName": "Füge einen Usernamen ein",
-      "enterPassword": "Verschlüsseln mit einem Passwort. Optional."
+      "enterPassword": "Verschlüsseln mit einem Passwort. Optional.",
+      "successfullExportedHeader": "Erfolgreich",
+      "successfullExported": "Deine Zeiten wurden erfolgreich gespeichert."
     },
     "error": {
       "noAccess": "Konnte keine Verbindung aufbauen!",
