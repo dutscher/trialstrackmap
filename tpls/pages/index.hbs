@@ -1,0 +1,181 @@
+{{#extend "default"}}
+    {{#content "htmlCtrl"}}ng-controller="trackmap" data-without="worldrecords"{{/content}}
+
+    {{assign "withRootPathes"}}
+
+    {{#content "styles" mode="append"}}
+        <link rel="stylesheet" type="text/css" href="css/style-map.css{{cacheBuster}}"/>
+        <style map-colors></style>
+    {{/content}}
+
+    {{#content "head" mode="append"}}
+        <meta property="og:title" content="Trials Frontier Trackmap | Guide for Data-Cubes, Candies & Youtube How-tos"/>
+        <meta property="og:url" content="http://trialstrackmap.sb-f.de/"/>
+        <meta property="og:image" content="http://i.imgur.com/8GekeNw.png"/>
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+    {{/content}}
+
+    {{#content "body"}}
+        <div class="only-landscape">
+            <div class="wrap">
+                <i class="orientation"></i> <br/>
+                {%'page.onlyLandscape'|translate%}
+            </div>
+        </div>
+
+        <nav class="new-sidebar left">
+            <div class="handler" ng-click="handleSidebars($event,'left')"></div>
+            <div class="content">
+                <ul>
+                    <li>
+                        <div class="wrap">
+                            <h2>{%'page.title'|translate%}</h2>
+
+                            <div language-select></div>
+
+                            <hr>
+
+                            {%'page.leftSidebar.update'|translate%}: {%'{{lastUpdateTime}}'|humanReadableDate%}<br/>
+
+                            <hr>
+
+                            <a href="/dist/seasons.html">{%'page.leftSidebar.goToSeasons'|translate%} &raquo;</a>
+                            <a href="/dist/table.html">{%'page.leftSidebar.goToMedals'|translate%} &raquo;</a>
+                            <a href="/dist/table-improve.html">{%'page.leftSidebar.goToImprove'|translate%} &raquo;</a>
+                            <a href="/dist/wr-rider-temple.html">{%'page.leftSidebar.goToWRRiderTemple'|translate%} &raquo;</a>
+                            <a href="/dist/anniversary.html">{%'page.leftSidebar.goToAnniversary'|translate%} &raquo;</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="wrap">
+                            <h2>{%'page.leftSidebar.stats'|translate%}</h2>
+                            {%'page.leftSidebar.uplayID'|translate%}: {%::data.map.stats.uplay%}<br/>
+                            {%'page.leftSidebar.level'|translate%}: {%::data.map.stats.level%}<br/>
+                            {%'page.leftSidebar.globalRang'|translate%}: {%::data.map.stats.rank%}<br/>
+                            {%'page.leftSidebar.appVersion'|translate%}: {%::data.map.stats.app_version%}<br/>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="wrap tierlegend">
+                            <h2 class="with-cursor">{%'page.leftSidebar.usefullLinks'|translate%}</h2>
+                            <a ng-repeat="link in data.map.usefull_links" href="{%::link.href%}" target="_blank"
+                               ng-bind-html="link.title"></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="wrap tierlegend">
+                            <h2 class="with-cursor" ng-click="visibility('creditsVisible')">
+                                {%'page.leftSidebar.credits'|translate%} ({%::data.map.credits.length%})</h2>
+
+                            <div ng-show="creditsVisible">
+                                <a ng-repeat="credit in data.map.credits" ng-if="credit.href" href="{%::credit.href%}"
+                                   target="_blank" ng-bind-html="credit.text"></a>
+                                    <span class="like-a" ng-repeat="credit in data.map.credits" ng-if="!credit.href"
+                                          ng-bind-html="credit.text"></span>
+                            </div>
+                            <span class="with-cursor" ng-click="visibility('creditsVisible')" ng-hide="creditsVisible">{%'page.leftSidebar.toggleMe'|translate%}</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="wrap tierlegend">
+                            <h2 class="with-cursor" ng-click="visibility('disqusVisible')"><a href="#disqus_thread"
+                                                                                              style="text-decoration:none;">{%'page.leftSidebar.comments'|translate%}</a>
+                            </h2>
+
+                            <div ng-show="disqusVisible">
+                                <a href="http://forums.ubi.com/showthread.php/939397-Trackmap" target="_blank">{%'page.leftSidebar.goToThread'|translate%}</a>
+                            </div>
+                            <span class="with-cursor" ng-click="visibility('disqusVisible')" ng-hide="disqusVisible">{%'page.leftSidebar.toggleMe'|translate%}</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <nav class="new-sidebar right">
+            <div class="handler" ng-click="handleSidebars($event,'right')"></div>
+            <div class="content">
+                <ul>
+                    <li>
+                        <div class="wrap tierlegend">
+                            <h2 class="with-cursor" ng-click="visibility('statsVisible')">
+                                {%'page.rightSidebar.tracks'|translate%} ({%::data.tracks.length%} total)</h2>
+
+                            <div ng-show="statsVisible">
+                                <span track-stats></span>
+                            </div>
+                            <span class="with-cursor" ng-click="visibility('statsVisible')" ng-hide="statsVisible">{%'page.leftSidebar.toggleMe'|translate%}</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="wrap tierlegend">
+                            <h2 class="with-cursor" ng-click="visibility('legendVisible')">
+                                {%'page.rightSidebar.legend'|translate%}</h2>
+
+                            <div ng-show="legendVisible">
+                                        <span class="{%::cat.class%} with-cursor"
+                                              ng-repeat="cat in data.map.cats"
+                                              show-cat-on-map="{cat:cat,catIndex:$index+1,tracks:data.tracks}">
+                                            {%'cats.'+cat.index|translate%} ({%::(data.tracks|catAndTierTracks:$index+1).length%})
+                                        </span>
+                            </div>
+                                    <span class="with-cursor"
+                                          ng-click="visibility('legendVisible')"
+                                          ng-hide="legendVisible">{%'page.leftSidebar.toggleMe'|translate%}</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="wrap tierlegend">
+                            <h2>{%'page.rightSidebar.tracks'|translate%}</h2>
+
+                            <div class="mb10">
+                                <input type="text"
+                                       class="search"
+                                       placeholder="{%'page.rightSidebar.searchForTrack'|translate%}"
+                                       ng-model="searchTrack"
+                                       ng-model-options="{debounce:500}"/>
+                            </div>
+                            <div ng-repeat="tier in tierlegend" class="tierwrap">
+                                <hr>
+                                <h3>{%'page.rightSidebar.tier'|translate%} {%::tier.number%}</h3>
+                                        <span ng-repeat="catClass in repeatObject(tier.cats)"
+                                              class="{%::catClass%} trackwrap">
+                                             <span ng-repeat="track in tier.cats[catClass]"
+                                                   track-in-sidebar="{track:track,catClass:catClass}"></span>
+                                        </span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="gallery-modal"></div>
+
+        <div ng-init="trackmapReady = false" ng-hide="trackmapReady && dataLoaded" class="loader spin"></div>
+
+        <div pinch-map>
+            <div zoom-here>
+                <canvas track-pointer></canvas>
+
+                <img hide-me-on-pan src="blank.png" class="track-pointer" usemap="#trackmap"/>
+
+                <img class="trackmap" alt="{%::data.images.trackmap.alt%}"
+                     ng-src="{%::data.images.trackmap.src|hoster:data.hoster%}"
+                     ng-load="trackmapReady = true"
+                     ng-class="{'loading':!trackmapReady && !dataLoaded,'all-loaded':trackmapReady && dataLoaded}"
+                        />
+
+                <map name="trackmap">
+                    <area ng-repeat="track in data.tracks"
+                          shape="circle" alt="{%'tracks.'+track.id|translate%}"
+                          title="{%'tracks.'+track.id|translate%}"
+                          coords="{%track.coords||'0,0,0'%}"
+                          href="#"
+                          show-track-in-modal="startline"/>
+                </map>
+            </div>
+        </div>
+    {{/content}}
+{{/extend}}
+{{unassign "withRootPathes"}}

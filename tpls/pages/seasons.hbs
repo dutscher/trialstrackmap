@@ -6,6 +6,7 @@
         {{/with}}
     {{/content}}
 
+    {{#content "data-event"}}data:loaded{{/content}}
     {{#content "styles" mode="append"}}
         <link rel="stylesheet" type="text/css" href="../css/style-seasons.css{{cacheBuster}}"/>
     {{/content}}
@@ -14,7 +15,7 @@
         {{#with seasons}}
             <div class="season-page" ng-controller="seasonsNew">
                 <div ng-init="pageReady = false" ng-hide="pageReady" class="loader spin"></div>
-                <div class="page-body is-loading" data-finished="pageReady">
+                <div class="page-body is-loading" data-event="data:loaded" data-finished="pageReady">
                     {{> season-navigation}}
 
                     <div class="seasons-list">

@@ -2,7 +2,8 @@ module.exports = function (grunt) {
 
     grunt.registerTask("deployHtml", [
         "clean:assemble",
-        "assemble"
+        "assemble",
+        "copy:indexToRoot"
     ]);
 
     return {
@@ -15,6 +16,7 @@ module.exports = function (grunt) {
                 "tpls/partials/**/*.hbs",
                 "tpls/layouts/*.hbs"
             ],
+            lastUpdateTime: (new Date()).getTime(),
             cacheBuster: "?v=" + (new Date()).getTime()
         },
         default: {

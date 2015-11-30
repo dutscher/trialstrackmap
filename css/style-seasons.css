@@ -89,13 +89,13 @@ h1, h2, h3 {
 .season-times .countdown {
     position: absolute;
     right: 0;
-    top: 37px;
+    top: 43px;
     color: #61d4d7;
     font-weight: bold;
 }
 
 .protect-countdown {
-    margin-right: 100px;
+    margin-right: 120px;
 }
 
 table {
@@ -284,42 +284,162 @@ i[class^="season-extra-part-"] {
     background-size: 174px 333.337px !important;
 }
 
-.season-extra-part-pipe-5 {
-    background-position: -138px -199.667px
+.season-extra-part-chain-1 {
+    background-position: 0 0
+}
+.season-extra-part-chain-2 {
+    background-position: -36px 0
+}
+.season-extra-part-chain-3 {
+    background-position: -70px 0
+}
+.season-extra-part-chain-4 {
+    background-position: 69px 0
+}
+.season-extra-part-chain-5 {
+    background-position: -141px 0
 }
 
-.season-extra-part-spark-5 {
-    background-position: -138px -166.667px
+.season-extra-part-gear-1 {
+    background-position: 0 -300px
 }
-
+.season-extra-part-gear-2 {
+    background-position: -36px -300px
+}
+.season-extra-part-gear-3 {
+    background-position: -70px -300px
+}
 .season-extra-part-gear-4 {
-    background-position: -99.667px -300px
+    background-position: -105px -300px
 }
-
 .season-extra-part-gear-5 {
-    background-position: -138px -300px
+    background-position: -141px -300px
 }
 
+.season-extra-part-piston-1 {
+    background-position: 0 -267px
+}
+.season-extra-part-piston-2 {
+    background-position: -36px -267px
+}
+.season-extra-part-piston-3 {
+    background-position: -70px -267px
+}
 .season-extra-part-piston-4 {
-    background-position: -99.667px -266.667px
+    background-position: -105px -267px
+}
+.season-extra-part-piston-5 {
+    background-position: -141.667px -267px
 }
 
+.season-extra-part-bearing-1 {
+    background-position: 0 -233.334px
+}
+.season-extra-part-bearing-2 {
+    background-position: -36px -233.334px
+}
 .season-extra-part-bearing-3 {
-    background-position: -66.667px -233.334px
+    background-position: -70px -233.334px
+}
+.season-extra-part-bearing-4 {
+    background-position: -105px -233.334px
+}
+.season-extra-part-bearing-5 {
+    background-position: -141px -233.334px
 }
 
+.season-extra-part-pipe-1 {
+    background-position: 0 -200px
+}
+.season-extra-part-pipe-2 {
+    background-position: -36px -200px
+}
 .season-extra-part-pipe-3 {
-    background-position: -66.667px -200px
+    background-position: -70px -200px
+}
+.season-extra-part-pipe-4 {
+    background-position: -105px -200px
+}
+.season-extra-part-pipe-5 {
+    background-position: -141px -200px
 }
 
+.season-extra-part-spring-1 {
+    background-position: 0 -33.334px
+}
 .season-extra-part-spring-2 {
-    background-position: -33.334px -33.334px
+    background-position: -36px -33.334px
+}
+.season-extra-part-spring-3 {
+    background-position: -70px -33.334px
+}
+.season-extra-part-spring-4 {
+    background-position: -100px -33.334px
+}
+.season-extra-part-spring-5 {
+    background-position: -141px -33.334px
 }
 
 .season-extra-part-bolt-1 {
-    background-position: -0px -66.667px
+    background-position: 0 -66.667px
+}
+.season-extra-part-bolt-2 {
+    background-position: -36px -66.667px
+}
+.season-extra-part-bolt-3 {
+    background-position: -70px -66.667px
+}
+.season-extra-part-bolt-4 {
+    background-position: -100px -66.667px
+}
+.season-extra-part-bolt-5 {
+    background-position: -141px -66.667px
 }
 
 .season-extra-part-nut-1 {
-    background-position: -0px -100px
+    background-position: 0 -100px
+}
+.season-extra-part-nut-2 {
+    background-position: -36px -100px
+}
+.season-extra-part-nut-3 {
+    background-position: -70px -100px
+}
+.season-extra-part-nut-4 {
+    background-position: -100px -100px
+}
+.season-extra-part-nut-5 {
+    background-position: -141px -100px
+}
+
+.season-extra-part-spark-1 {
+    background-position: 0 167px
+}
+.season-extra-part-spark-2 {
+    background-position: -36px 167px
+}
+.season-extra-part-spark-3 {
+    background-position: -70px 167px
+}
+.season-extra-part-spark-4 {
+    background-position: -100px 167px
+}
+.season-extra-part-spark-5 {
+    background-position: -141px 167px
+}
+
+.season-extra-part-sheet-1 {
+    background-position: 0 -467px
+}
+.season-extra-part-sheet-2 {
+    background-position: -36px -467px
+}
+.season-extra-part-sheet-3 {
+    background-position: -70px -467px
+}
+.season-extra-part-sheet-4 {
+    background-position: -100px -467px
+}
+.season-extra-part-sheet-5 {
+    background-position: -141px -467px
 }

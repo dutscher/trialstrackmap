@@ -116,31 +116,47 @@ a strong {
     position: relative;
     width: 35px;
 }
+
 .with-badge *:first-child {
     z-index: 2;
     position: relative;
 }
+
 .with-badge .badge {
     position: absolute;
-    color: #ffffff;
-    background: #6a4229;
-    top:1px;
-    left:0;
-    font-size:.7em;
-    width:18px;
-    height:18px;
-    text-align:center;
-    line-height:18px;
-    border-radius:50%;
-    box-shadow:0 0 1px #333;
+    color: #6a4229;
+    background: #fff;
+    top: 1px;
+    left: 0;
+    font-size: .7em;
+    height: 18px;
+    width: 35px;
+    text-align: center;
+    line-height: 18px;
+    border-radius: 50%;
+    box-shadow: 0 0 1px #333;
     z-index: 1;
     padding-left: 15px;
 }
+
 .with-badge:hover .badge {
-    background: #ffffff;
-    color: #6a4229;
+    background: #6a4229;
+    color: #fff;
 }
 
+.with-badge.youtube-badge .badge {
+    color: #fff;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7f0000+28,c30000+100 */
+    background: #7f0000; /* Old browsers */
+    background: -moz-linear-gradient(left, #7f0000 28%, #c30000 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #7f0000 28%,#c30000 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #7f0000 28%,#c30000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7f0000', endColorstr='#c30000',GradientType=1 ); /* IE6-9 */
+}
+.with-badge:hover.youtube-badge .badge {
+    color: #C30000;
+    background: #fff;
+}
 
 .tierlegend span.part-level {
     display: inline-block;
@@ -419,6 +435,7 @@ area:hover {
     display: block;
     width: 100%;
 }
+
 .gallery-modal .body .caption h3 {
     margin: 0;
     position: absolute;
@@ -529,10 +546,28 @@ img.trackmap.all-loaded {
 }
 
 [pinch-map] {
-    height:inherit;
+    height: inherit;
+    cursor: move; /* fallback if grab cursor is unsupported */
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
 }
+
+[pinch-map].on-pan {
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+}
+
 [zoom-here] {
     position: relative;
+}
+
+span[track-in-sidebar] {
+    display: block;
+}
+span[track-in-sidebar] span {
+    display: inline-block;
 }
 
 .only-landscape {

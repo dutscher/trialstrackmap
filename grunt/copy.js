@@ -39,6 +39,16 @@ module.exports = function (grunt) {
                     dest: "dist/"
                 }
             ]
+        },
+        indexToRoot: {
+            files: [
+                {
+                    flatten: true,
+                    expand: true,
+                    src: "dist/index.html",
+                    dest: "./"
+                }
+            ]
         }
     }
 };

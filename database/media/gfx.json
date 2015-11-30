@@ -125,14 +125,14 @@
       "selector": "i.lang.lang_us"
     },
     "part": {
-      "src": "#1/QBz8k4t.jpg",
-      "lSrc": "#0/picto/parts.png",
+      "src": "#1/rVMzYQM.png",
+      "lSrc": "#0/sprites/parts.png",
       "selector": "i.part",
       "sprite": true
     },
     "parts": {
       "src": "#1/uSLJtjP.png",
-      "lSrc": "#0/sprites/parts.png",
+      "lSrc": "#0/picto/parts.png",
       "selector": "i.parts"
     },
     "fuel": {

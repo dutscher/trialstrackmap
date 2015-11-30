@@ -95,107 +95,107 @@
       "headRider": "Rider",
       "headWorldrecords": "Weltrekorde",
       "modes": "Android / iOS",
-      "filter": "Search",
-      "searchForRider": "a rider",
-      "addRider": "Add rider",
-      "addRiderButton": "for new WR"
+      "filter": "Suche",
+      "searchForRider": "nach einem Rider",
+      "addRider": "Rider hinzufügen",
+      "addRiderButton": "für einen neuen WR"
     }
   },
   "dialogs": {
-    "goTo": "go to",
-    "preview": "Preview",
-    "cancel": "Cancel",
-    "confirm": "Confirm",
-    "save": "Save",
-    "close": "Close",
-    "create": "Create",
-    "check": "Check",
+    "goTo": "gehe zu",
+    "preview": "Vorschau",
+    "cancel": "abbrechen",
+    "confirm": "bestätigen",
+    "save": "speichern",
+    "close": "schließen",
+    "create": "create",
+    "check": "check",
     "backup": "Backup",
     "labels": {
-      "newTime": "New WR-time",
-      "riderName": "Rider name",
+      "newTime": "Neue WR-Zeit",
+      "riderName": "Ridername",
       "userName": "Username",
-      "myRank": "MyRank",
-      "myTime": "MyTime",
-      "myGoal": "MyGoalTime",
-      "oldTime": "Current time",
-      "oldRank": "Current rank",
-      "chooseFile": "Choose file",
-      "choosedFile": "Current file",
+      "myRank": "Mein Rank",
+      "myTime": "Meine Zeit",
+      "myGoal": "Meine Ziel Zeit",
+      "oldTime": "Aktuelle Zeit",
+      "oldRank": "Aktueller Rank",
+      "chooseFile": "Wähle Datei",
+      "choosedFile": "Gewählte Datei",
       "import": "Import",
       "export": "Export",
-      "password": "Password",
-      "dontAskAgain": "Don't ask again!"
+      "password": "Passwort",
+      "dontAskAgain": "Dieses Fenster nicht mehr anzeigen!"
     },
     "placeholder": {
-      "newTime": "Your time 0:15.000 -> insert 15000",
-      "riderName": "Enter name of the WR-Rider",
-      "myRank": "Enter your newest rank"
+      "newTime": "Deine Zeit 0:15.000 -> dann füge 15000 ein",
+      "riderName": "Füge den Namen des WR-Rider ein",
+      "myRank": "Füge deinen neuen Rank ein"
     },
     "editWR": {
-      "header": "Edit World-Record (WR) for {%trackName%}",
-      "headerSaved": "World-Record is saved",
-      "oldRider": "Current WR-Rider",
-      "newRider": "Choosed WR-Rider",
-      "riderFound": "Rider found",
-      "confirmNewData": "Do you want to save the WR {%newTime%} made by {%riderName%}?",
-      "createRider": "Your riderName isn't exists. Do you want to add to the WR-Rider-Temple?",
-      "thanks": "Thanks that you add a new WR-Time. That's a big step for the community!"
+      "header": "Bearbeite Welt-Rekord (WR) auf {%trackName%}",
+      "headerSaved": "Welt-Rekord wurde gespeichert",
+      "oldRider": "Aktueller WR-Rider",
+      "newRider": "Gewählter WR-Rider",
+      "riderFound": "Rider gefunden",
+      "confirmNewData": "Willst du wirklich den neuen WR {%newTime%} gemacht von {%riderName%} speichern?",
+      "createRider": "Dein Ridername existiert nicht. Willst du diesen im WR-Rider-Tempel anlegen?",
+      "thanks": "Danke für das hinzufügen des WR's. Das war ein großer Beitrag zur Community!"
     },
     "createRider": {
-      "header": "Create WR-Rider for Temple",
-      "confirmNewData": "Do you want to save the Rider {%riderName%} to the Temple?"
+      "header": "Erstelle einen WR-Rider im Tempel",
+      "confirmNewData": "Willst du wirklich den Rider {%riderName%} im Tempel hinzufügen?"
     },
     "editMyRank": {
-      "header": "Edit MyRank on {%trackName%}"
+      "header": "Bearbeite Meinen Rank auf {%trackName%}"
     },
     "editMyTime": {
-      "header": "Edit MyTime on {%trackName%}"
+      "header": "Bearbeite Meine Zeit auf {%trackName%}"
     },
     "editMyGoal": {
-      "header": "Edit MyGoal on {%trackName%}"
+      "header": "Bearbeite Meine Ziel Zeit auf {%trackName%}"
     },
     "import": {
-      "header": "Import your times",
-      "viaJsonFile": "via .json file",
-      "viaJsonFileUrl": "via .json file URL",
-      "enterJsonUrl": "enter the URL (http://...file.json)",
-      "viaStorage": "via online storage",
-      "enterYourId": "enter your storage ID",
-      "confirmHeader": "Confirm for import new data",
-      "confirmNewData": "Do you want to import the times from {%exportDate%}?",
-      "retrieveYourId": "Retrieve your ID",
-      "restoreHeader": "Here you can retrieve your ID.",
-      "enterYourUserName": "Please enter your username!",
-      "enterYourPassword": "Your ID was protected with a password."
+      "header": "Importiere deine Zeiten",
+      "viaJsonFile": "via .json Datei",
+      "viaJsonFileUrl": "via .json Datei URL",
+      "enterJsonUrl": "Füge eine URL (http://...file.json) ein",
+      "viaStorage": "via online Speicher",
+      "enterYourId": "Füge deine Speicher ID ein",
+      "confirmHeader": "Bestätige Import von neuen Daten",
+      "confirmNewData": "Willst du wirklich neue Daten vom {%exportDate%} importieren?",
+      "retrieveYourId": "Wiederherstellen deiner ID",
+      "restoreHeader": "Wiederherstellen deiner Speicher ID",
+      "enterYourUserName": "Füge deinen Username ein!",
+      "enterYourPassword": "Deine ID ist mit einerm Passwort geschützt."
     },
     "export": {
-      "header": "Export your times",
-      "toJsonFile": "to a .json file",
-      "toCsvFile": "to a .csv file",
+      "header": "Export deiner Zeiten",
+      "toJsonFile": "zu einer .json Datei",
+      "toCsvFile": "zu einer a .csv Datei",
       "toStorage": "online",
-      "backupHeader": "Do you want to backup your ID?",
-      "enterUserName": "Enter your userName for the backup",
-      "enterPassword": "To protect your ID. It is optional."
+      "backupHeader": "Willst du deine ID Sichern?",
+      "enterUserName": "Füge einen Usernamen ein",
+      "enterPassword": "Verschlüsseln mit einem Passwort. Optional."
     },
     "error": {
-      "noAccess": "Couldn't access to the url!",
-      "noAccessMyJson": "Couldn't access with '{%id%}' to myJson!",
-      "fileTooBig": "Your file is to big for import!",
-      "missingData": "Trackdata is missing",
-      "cantReadFile": "Error due reading import file: {%e%}!\nCheck console for details!",
-      "cantReadJson": "Error due parsing import file: {%e%}!\nCheck console for details!",
-      "wrongFileName": "Wrong filename for import! It must contain '{%fileName%}'",
-      "wrongFileType": "Your file has the wrong type! It must be '{%fileType%}'!\nCheck console for details!",
-      "noTimes": "No times in import data!\nCheck console for details!",
-      "userNameNotFound": "The username is not found.\nTherefore it's not possible to retrieve your ID.",
-      "wrongPassword": "Wrong password. No chance to retrieve your ID.",
-      "emptyPassword": "A password is needed.",
-      "cannotExport": "Your browser doesn't support saving files."
+      "noAccess": "Konnte keine Verbindung aufbauen!",
+      "noAccessMyJson": "Keine Verbindugn mit der '{%id%}' möglich auf myJson!",
+      "fileTooBig": "Deine gewählte Datei ist zu groß!",
+      "missingData": "Es wurden keine Trackzeiten gefunden.",
+      "cantReadFile": "Fehler beim lesen der Import Datei: {%e%}!\nBrowser console für mehr Details!",
+      "cantReadJson": "Fehler beim auslesen der Import Datei: {%e%}!\nBrowser console für mehr Details!",
+      "wrongFileName": "Falscher Dateiname für den Import! Es muss folgendes beinhalten '{%fileName%}'",
+      "wrongFileType": "Deine Datei ist vom falschen typ! Es muss '{%fileType%}' sein!\nBrowser console für mehr Details!",
+      "noTimes": "Keine Zeiten gefunden!\nBrowser console für mehr Details!",
+      "userNameNotFound": "Der Username wurde nicht gefunden.\nSomit ist kein wiederherstellen der Speicher ID möglich.",
+      "wrongPassword": "Falsches Password. Keine Chance die ID wiederherszustellen.",
+      "emptyPassword": "Ein Passwort wird benötigt.",
+      "cannotExport": "Dein Browser unterstütz kein speichern von Dateien"
     }
   },
   "cats": {
-    "1": "Extreme Insel",
+    "1": "Exteme Strecken",
     "2": "Sumpf A.N.B.A",
     "3": "Automat",
     "4": "Glücksrad",

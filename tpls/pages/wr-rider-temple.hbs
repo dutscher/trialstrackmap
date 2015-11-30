@@ -24,7 +24,6 @@
                         <table class="w100">
                             <thead>
                             <tr>
-                                <th width="50" rowspan="3">{%'page.worldRecordsTable.headId'|translate%}</th>
                                 <th rowspan="3" width="300">{%'page.worldRecordsTable.headRider'|translate%}</th>
                                 <th colspan="6">
                                     {%'page.worldRecordsTable.headWorldrecords'|translate%}
@@ -44,12 +43,8 @@
                             </tr>
                             </thead>
                             <tbody>
-                            <tr ng-repeat="rider in filteredRider = data.rider|WRRiderSearch:search">
-                                <td class="center">
-                                    {%::rider.id%}
-                                </td>
-                                <td class="center" ng-bind-html="::rider.riderName|nameWithFlag">
-                                </td>
+                            <tr ng-repeat="rider in filteredRider = data.rider|WRRiderSearch:search|WRRiderSort">
+                                <td class="center" ng-bind-html="::rider.riderName|nameWithFlag"></td>
                                 <td class="center" hide-zero="{%::rider.WRAmount.android.normal%}">
                                     {%::rider.WRAmount.android.normal%}
                                 </td>
