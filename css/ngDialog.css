@@ -96,5 +96,5 @@
 }
 
 body.ngdialog-open, html.ngdialog-open {
-    overflow: hidden
+    overflow: visible;
 }
