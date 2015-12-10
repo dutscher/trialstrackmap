@@ -138,6 +138,11 @@
       "index": 15,
       "class": "halloween-2015",
       "color": "EC7000"
+    },
+    {
+      "index": 16,
+      "class": "christmas",
+      "color": "ff0000"
     }
   ],
   "tiers": [

@@ -1353,5 +1353,36 @@
     "tier": 3,
     "cats": "1",
     "prio": 6
+  },
+  // christmas
+  {
+    "id": 192,
+    "tier": 2,
+    "cats": "16",
+    "prio": 1
+  },
+  {
+    "id": 193,
+    "tier": 2,
+    "cats": "16",
+    "prio": 2
+  },
+  {
+    "id": 194,
+    "tier": 2,
+    "cats": "16",
+    "prio": 3
+  },
+  {
+    "id": 195,
+    "tier": 2,
+    "cats": "16",
+    "prio": 4
+  },
+  {
+    "id": 196,
+    "tier": 2,
+    "cats": "16",
+    "prio": 5
   }
 ]

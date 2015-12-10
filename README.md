@@ -100,3 +100,6 @@ $ grunt server
 
 > # yoshiki-aoki
 > I’m so proud of you
+
+> # PL-k4kshi
+> I never had an occasion to say (because i think you deleted your Facebook account) that you did great job with this app

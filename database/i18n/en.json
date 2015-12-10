@@ -213,7 +213,8 @@
     "12": "Leaked",
     "13": "Agents",
     "14": "Rodeo",
-    "15": "Halloween 2015"
+    "15": "Halloween 2015",
+    "16": "Christmas 2015"
   },
   "tiers": {
     "1": "Tier 1",
@@ -434,6 +435,11 @@
     "189": "Scorched Battlement",
     "155": "Madhouse",
     "190": "Woodwork Conclave",
-    "191": "Widowmaker"
+    "191": "Widowmaker",
+    "192": "Skater Paradise",
+    "193": "Slick Slalom",
+    "194": "Week #2 Track",
+    "195": "Week #3 Track",
+    "196": "Week #4 Track"
   }
 }
