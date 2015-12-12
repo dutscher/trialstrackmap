@@ -23,7 +23,7 @@
                 <div class="block">
                     <table>
                         <tr print-cell-sizes></tr>
-                        <tr print-head="Tier 1 ({% (data.tracks|printTracks:1:'story,slot-machine,loot-wheel,swamp,time-machine').length %} tracks)"></tr>
+                        <tr print-head="Tier 1 ({% (data.tracks|printTracks:1:'story,slot-machine,loot-wheel,swamp,time-machine').length %})"></tr>
                         <tr print-spacer></tr>
                         <tr print-tracks="{tier:1,cat:'story'}"></tr>
                         <tr print-spacer></tr>
@@ -40,7 +40,7 @@
                 <div class="block">
                     <table>
                         <tr print-cell-sizes></tr>
-                        <tr print-head="Tier 2 ({% (data.tracks|printTracks:2:'story,slot-machine,loot-wheel,swamp,china').length %} tracks)"></tr>
+                        <tr print-head="Tier 2 ({% (data.tracks|printTracks:2:'story,slot-machine,loot-wheel,swamp,china').length %})"></tr>
                         <tr print-spacer></tr>
                         <tr print-tracks="{tier:2,cat:'story'}"></tr>
                         <tr print-spacer></tr>
@@ -57,7 +57,7 @@
                 <div class="block">
                     <table>
                         <tr print-cell-sizes></tr>
-                        <tr print-head="Tier 3 ({% (data.tracks|printTracks:3:'story,slot-machine,loot-wheel,swamp').length %} tracks)"></tr>
+                        <tr print-head="Tier 3 ({% (data.tracks|printTracks:3:'story,slot-machine,loot-wheel,swamp').length %})"></tr>
                         <tr print-spacer></tr>
                         <tr print-tracks="{tier:3,cat:'story'}"></tr>
                         <tr print-spacer></tr>
@@ -67,7 +67,7 @@
                         <tr print-spacer></tr>
                         <tr print-tracks="{tier:3,cat:'swamp'}"></tr>
                         <tr print-spacer></tr>
-                        <tr print-head="Winter ({% (data.tracks|printTracks:'all':'winter').length %} tracks)"></tr>
+                        <tr print-head="Winter ({% (data.tracks|printTracks:'all':'winter').length %})"></tr>
                         <tr print-spacer="Tier 1"></tr>
                         <tr print-tracks="{tier:1,cat:'winter'}"></tr>
                         <tr print-spacer="Tier 2"></tr>
@@ -80,7 +80,7 @@
                 <div class="block">
                     <table>
                         <tr print-cell-sizes></tr>
-                        <tr print-head="Bunker ({% (data.tracks|printTracks:'all':'bunker').length %} tracks)"></tr>
+                        <tr print-head="Bunker ({% (data.tracks|printTracks:'all':'bunker').length %})"></tr>
                         <tr print-spacer="Tier 1"></tr>
                         <tr print-tracks="{tier:1,cat:'bunker',without:'only_bunker'}"></tr>
                         <tr print-spacer="Tier 2"></tr>
@@ -90,15 +90,15 @@
                         <tr print-spacer="PVP"></tr>
                         <tr print-tracks="{tier:1,cat:'bunker',with:'only_bunker'}"></tr>
                         <tr print-spacer></tr>
-                        <tr print-head="Hardcore Track Pack ({% (data.tracks|printTracks:1:'hardcore').length %} tracks)"></tr>
+                        <tr print-head="Hardcore Track Pack ({% (data.tracks|printTracks:1:'hardcore').length %})"></tr>
                         <tr print-spacer="Tier 1"></tr>
                         <tr print-tracks="{tier:1,cat:'hardcore'}"></tr>
                         <tr print-spacer></tr>
-                        <tr print-head="Hardcore Track Pack 2 ({% (data.tracks|printTracks:2:'hardcore').length %} tracks)"></tr>
+                        <tr print-head="Hardcore Track Pack 2 ({% (data.tracks|printTracks:2:'hardcore').length %})"></tr>
                         <tr print-spacer="Tier 2"></tr>
                         <tr print-tracks="{tier:2,cat:'hardcore'}"></tr>
                         <tr print-spacer></tr>
-                        <tr print-head="Hardcore Track Pack 3 ({% (data.tracks|printTracks:3:'hardcore').length %} tracks)"></tr>
+                        <tr print-head="Hardcore Track Pack 3 ({% (data.tracks|printTracks:3:'hardcore').length %})"></tr>
                         <tr print-spacer="Tier 3"></tr>
                         <tr print-tracks="{tier:3,cat:'hardcore'}"></tr>
                     </table>
@@ -107,13 +107,13 @@
                 <div class="block">
                     <table>
                         <tr print-cell-sizes></tr>
-                        <tr print-head="Agent ({% (data.tracks|printTracks:'all':'agent':null:'only_event').length %} tracks)"></tr>
+                        <tr print-head="Agent ({% (data.tracks|printTracks:'all':'agent':null:'only_event').length %})"></tr>
                         <tr print-spacer="Tier 1"></tr>
                         <tr print-tracks="{tier:1,cat:'agent',without:'only_event'}"></tr>
                         <tr print-spacer="Tier 2"></tr>
                         <tr print-tracks="{tier:2,cat:'agent'}"></tr>
                         <tr print-spacer></tr>
-                        <tr print-head="Rodeo ({% (data.tracks|printTracks:'all':'rodeo':null:'only_event').length %} tracks)"></tr>
+                        <tr print-head="Rodeo ({% (data.tracks|printTracks:'all':'rodeo':null:'only_event').length %})"></tr>
                         <tr print-spacer="Tier 1"></tr>
                         <tr print-tracks="{tier:1,cat:'rodeo',without:'only_event'}"></tr>
                         <tr print-spacer="Tier 2"></tr>
@@ -121,13 +121,13 @@
                         <tr print-spacer="Tier 3"></tr>
                         <tr print-tracks="{tier:3,cat:'rodeo'}"></tr>
                         <tr print-spacer></tr>
-                        <tr print-head="Halloween ({% (data.tracks|printTracks:'all':'halloween-2014').length %} tracks)"></tr>
+                        <tr print-head="Halloween ({% (data.tracks|printTracks:'all':'halloween-2014').length %})"></tr>
                         <tr print-spacer="Tier 1"></tr>
                         <tr print-tracks="{tier:1,cat:'halloween-2014'}"></tr>
                         <tr print-spacer="Tier 2"></tr>
                         <tr print-tracks="{tier:2,cat:'halloween-2014'}"></tr>
                         <tr print-spacer></tr>
-                        <tr print-head="Halloween II ({% (data.tracks|printTracks:'all':'halloween-2015':null:'halloween2_trackpack').length %} tracks)"></tr>
+                        <tr print-head="Halloween II ({% (data.tracks|printTracks:'all':'halloween-2015':null:'halloween2_trackpack').length %})"></tr>
                         <tr print-spacer="Tier 1"></tr>
                         <tr print-tracks="{tier:1,cat:'halloween-2015',without:'halloween2_trackpack'}"></tr>
                         <tr print-spacer="Tier 2"></tr>
@@ -135,11 +135,24 @@
                         <tr print-spacer="Tier 3"></tr>
                         <tr print-tracks="{tier:3,cat:'halloween-2015',without:'halloween2_trackpack'}"></tr>
                         <tr print-spacer></tr>
-                        <tr print-head="Halloween II Trackpack ({% (data.tracks|printTracks:'all':'halloween-2015':'halloween2_trackpack').length %} tracks)"></tr>
+                        <tr print-head="Halloween II Trackpack ({% (data.tracks|printTracks:'all':'halloween-2015':'halloween2_trackpack').length %})"></tr>
                         <tr print-spacer="Tier 1"></tr>
                         <tr print-tracks="{tier:1,cat:'halloween-2015',with:'halloween2_trackpack'}"></tr>
                         <tr print-spacer="Tier 3"></tr>
                         <tr print-tracks="{tier:3,cat:'halloween-2015',with:'halloween2_trackpack'}"></tr>
+                    </table>
+                </div>
+
+                <div class="block">
+                    <table>
+                        <tr print-cell-sizes></tr>
+                        <tr print-head="Christmas ({% (data.tracks|printTracks:'all':'christmas').length %})"></tr>
+                        <tr print-spacer="Tier 1"></tr>
+                        <tr print-tracks="{tier:1,cat:'christmas'}"></tr>
+                        <tr print-spacer="Tier 2"></tr>
+                        <tr print-tracks="{tier:2,cat:'christmas'}"></tr>
+                        <tr print-spacer="Tier 3"></tr>
+                        <tr print-tracks="{tier:3,cat:'christmas'}"></tr>
                     </table>
                 </div>
             </div>

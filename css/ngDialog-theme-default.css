@@ -161,9 +161,14 @@
     padding: 5px;
 }
 
+.ngdialog.ngdialog-theme-default .body input[type="checkbox"] {
+    cursor: pointer;
+}
+
 .ngdialog.ngdialog-theme-default .body input.small {
     width: 150px;
 }
+
 .ngdialog.ngdialog-theme-default .body small > input {
     margin-left: 0;
     width: auto;
@@ -176,11 +181,13 @@
     overflow: hidden;
     word-wrap: break-word;
 }
+
 .ngdialog.ngdialog-theme-default .body input.inline,
 .ngdialog.ngdialog-theme-default .body small.inline {
     display: inline-block;
     vertical-align: top;
 }
+
 .ngdialog.ngdialog-theme-default .body small.inline {
     padding-top: 0;
     margin-left: 0;
@@ -215,6 +222,13 @@
     background: #6a4229;
     padding: 5px;
     border-bottom: dotted 1px #fce195;
+}
+
+.ngdialog.ngdialog-theme-default .body span.label-for-checkbox {
+    display: inline-block;
+    background: transparent;
+    border-bottom: 0;
+    padding: 0 5px;
 }
 
 .ngdialog.ngdialog-theme-default .body span:last-child {

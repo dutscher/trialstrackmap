@@ -9,9 +9,6 @@
     {{/content}}
 
     {{#content "head" mode="append"}}
-        <meta property="og:title" content="Trials Frontier Trackmap | Guide for Data-Cubes, Candies & Youtube How-tos"/>
-        <meta property="og:url" content="http://trialstrackmap.sb-f.de/"/>
-        <meta property="og:image" content="http://i.imgur.com/8GekeNw.png"/>
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
     {{/content}}
 
@@ -78,14 +75,17 @@
                     </li>
                     <li>
                         <div class="wrap tierlegend">
-                            <h2 class="with-cursor" ng-click="visibility('disqusVisible')"><a href="#disqus_thread"
-                                                                                              style="text-decoration:none;">{%'page.leftSidebar.comments'|translate%}</a>
+                            <h2 class="with-cursor" ng-click="visibility('disqusVisible')">
+                                <a href="#disqus_thread" style="text-decoration:none;">
+                                    {%'page.leftSidebar.comments'|translate%}</a>
                             </h2>
 
                             <div ng-show="disqusVisible">
-                                <a href="http://forums.ubi.com/showthread.php/939397-Trackmap" target="_blank">{%'page.leftSidebar.goToThread'|translate%}</a>
+                                <a href="http://forums.ubi.com/showthread.php/939397-Trackmap" target="_blank">
+                                    {%'page.leftSidebar.goToThread'|translate%}</a>
                             </div>
-                            <span class="with-cursor" ng-click="visibility('disqusVisible')" ng-hide="disqusVisible">{%'page.leftSidebar.toggleMe'|translate%}</span>
+                            <span class="with-cursor" ng-click="visibility('disqusVisible')" ng-hide="disqusVisible">
+                                {%'page.leftSidebar.toggleMe'|translate%}</span>
                         </div>
                     </li>
                 </ul>
@@ -160,11 +160,13 @@
 
                 <img hide-me-on-pan src="blank.png" class="track-pointer" usemap="#trackmap"/>
 
-                <img class="trackmap" alt="{%::data.images.trackmap.alt%}"
-                     ng-src="{%::data.images.trackmap.src|hoster:data.hoster%}"
-                     ng-load="trackmapReady = true"
+                {{#with gfx}}
+                <img class="trackmap" alt="{{images.trackmap.alt}}"
+                     src="{{hoster images.trackmap.src hoster}}"
+                     ng-init="trackmapReady = true"
                      ng-class="{'loading':!trackmapReady && !dataLoaded,'all-loaded':trackmapReady && dataLoaded}"
                         />
+                {{/with}}
 
                 <map name="trackmap">
                     <area ng-repeat="track in data.tracks"

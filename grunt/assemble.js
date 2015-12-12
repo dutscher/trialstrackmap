@@ -16,7 +16,9 @@ module.exports = function (grunt) {
                 "tpls/partials/**/*.hbs",
                 "tpls/layouts/*.hbs"
             ],
+            year: (new Date()).getFullYear(),
             lastUpdateTime: (new Date()).getTime(),
+            lastUpdateTimeISO: (new Date()).toISOString(),
             cacheBuster: "?v=" + (new Date()).getTime()
         },
         default: {
