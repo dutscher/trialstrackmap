@@ -126,8 +126,8 @@
       "export": "Exportar",
       "password": "Senha",
       "dontAskAgain": "Não pergunte de novo!",
-      "openMyTime": "Open MyTime dialog after saving",
-      "autoExport": "Activate autoexporting"
+      "openMyTime": "Abrir diálogo MeuTempo após salvar",
+      "autoExport": "Ativar auto-exportação"
     },
     "placeholder": {
       "newTime": "Seu tempo 0:15.000 -> insira 15000",
@@ -179,8 +179,8 @@
       "backupHeader": "Você quer fazer Backup de seu ID?",
       "enterUserName": "Insira seu nome de usuário para o backup",
       "enterPassword": "Para proteger seu ID. Isso é opicional",
-      "successfullExportedHeader": "Successfull",
-      "successfullExported": "All your data was successfull exported."
+      "successfullExportedHeader": "Sucesso",
+      "successfullExported": "Seus dados foram exportados com sucesso."
     },
     "error": {
       "noAccess": "Não foi possível acessar o URL",
@@ -214,7 +214,7 @@
     "13": "Agentes",
     "14": "Rodeio",
     "15": "Halloween 2015",
-    "16": "Christmas 2015"
+    "16": "Natak 2015"
   },
   "tiers": {
     "1": "Nível 1",
@@ -436,16 +436,16 @@
     "155": "Hospício",
     "190": "Conclave do Madeiro",
     "191": "Fazedor de Viúvas",
-    "192": "Skater Paradise",
-    "193": "Candyland",
-    "194": "Bell Tower",
-    "195": "Frost Carnival",
-    "196": "The Bell Pit",
-    "197": "Nightwatch Haven",
-    "198": "The Naughty List",
-    "199": "Slick Slalom",
-    "200": "Week #2 Track",
-    "201": "Week #3 Track",
-    "202": "Week #4 Track"
+    "192": "Paraíso do Skate",
+    "193": "Terra dos Doces",
+    "194": "Torre do Relógio",
+    "195": "Festival Congelado",
+    "196": "O Fosso de Minério",
+    "197": "Refúgio do Vigia Noturno",
+    "198": "A Lista dos Malvados",
+    "199": "Slalom Esperto",
+    "200": "Pista Semana #2",
+    "201": "Pista Semana #3",
+    "202": "Pista Semana #4"
   }
 }
