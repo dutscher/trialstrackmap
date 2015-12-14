@@ -163,9 +163,9 @@
                 {{#with gfx}}
                 <img class="trackmap" alt="{{images.trackmap.alt}}"
                      src="{{hoster images.trackmap.src hoster}}"
-                     ng-init="trackmapReady = true"
-                     ng-class="{'loading':!trackmapReady && !dataLoaded,'all-loaded':trackmapReady && dataLoaded}"
-                        />
+                     onload="this.isLoaded = true"
+                     image-loaded="trackmapReady = true"
+                     ng-class="{'loading':!trackmapReady && !dataLoaded,'all-loaded':trackmapReady && dataLoaded}" />
                 {{/with}}
 
                 <map name="trackmap">
