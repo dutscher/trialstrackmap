@@ -1401,24 +1401,28 @@
     "id": 199,
     "tier": 1,
     "cats": "16",
-    "prio": 8
+    "prio": 8,
+    "week": 1
   },
   {
     "id": 200,
     "tier": 1,
     "cats": "16",
-    "prio": 9
+    "prio": 9,
+    "week": 2
   },
   {
     "id": 201,
     "tier": 1,
     "cats": "16",
-    "prio": 10
+    "prio": 10,
+    "week": 3
   },
   {
     "id": 202,
     "tier": 1,
     "cats": "16",
-    "prio": 11
+    "prio": 11,
+    "week": 4
   }
 ]
