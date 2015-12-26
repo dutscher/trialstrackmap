@@ -48,7 +48,7 @@
                             </tr>
                             </thead>
                             <tbody>
-                            <tr ng-repeat="track in filteredArray = (data.tracks|showCatAndTier:selectedCat:selectedTier|filter:search|showParts:selectedPart:selectedPartLevel|improveSorter:selectedSort:selectedSortType)">
+                            <tr ng-repeat="track in filteredArray = (data.tracks|showCatAndTier:selectedCat:selectedTier|showParts:selectedPart:selectedPartLevel|improveSorter:selectedSort:selectedSortType|searchTrack:search)">
                                 <td cats-as-class="{track:track}" class="not-hover"></td>
                                 <td class="center">
                                     {%::track.tier%}
