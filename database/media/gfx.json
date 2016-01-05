@@ -2,7 +2,7 @@
   "images": {
     "trackmap": {
       "src": "#1/SZQt29A.jpg",
-      "lSrc": "#0/trackmap.151226.en.jpg",
+      "lSrc": "#0/trackmap.160105.en.jpg",
       "alt": "Trails Frontier Trackmap",
       "dim": "3614x2495"
     },
@@ -166,7 +166,7 @@
       "selector": "i.arrow"
     },
     "seasons": {
-      "src": "#1/Xvr5aV1.jpg",
+      "src": "#1/CaFDzLZ.jpg",
       "lSrc": "#0/sprites/seasons.jpg",
       "selector": "i.seasons",
       "sprite": true
