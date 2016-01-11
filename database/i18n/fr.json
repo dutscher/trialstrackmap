@@ -24,6 +24,7 @@
     "rightSidebar": {
       "legend": "Légende",
       "tracks": "Courses",
+      "released": "released",
       "on_map": "on map",
       "without_coords": "without coordinates",
       "not_released": "not on map or released",

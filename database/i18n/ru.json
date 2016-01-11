@@ -24,6 +24,7 @@
     "rightSidebar": {
       "legend": "Легенда",
       "tracks": "Трассы",
+      "released": "released",
       "on_map": "на карте",
       "without_coords": "без координат",
       "not_released": "not on map or released",

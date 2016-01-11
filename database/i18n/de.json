@@ -24,6 +24,7 @@
     "rightSidebar": {
       "legend": "Legende",
       "tracks": "Strecken",
+      "released": "Veröffentlicht",
       "on_map": "auf der Karte",
       "without_coords": "ohne Koordinaten",
       "not_released": "noch nicht auf der Karte",

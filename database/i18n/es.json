@@ -24,6 +24,7 @@
     "rightSidebar": {
       "legend": "Leyenda",
       "tracks": "Pistas",
+      "released": "released",
       "on_map": "en el mapa",
       "without_coords": "sin coordenadas",
       "not_released": "ni en el mapa ni publicadas",

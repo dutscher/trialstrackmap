@@ -24,6 +24,7 @@
     "rightSidebar": {
       "legend": "Legenda",
       "tracks": "Pistas",
+      "released": "released",
       "on_map": "No mapa",
       "without_coords": "Sem coordenadas",
       "not_released": "Fora do mapa ou não lançado",
