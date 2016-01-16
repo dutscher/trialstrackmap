@@ -1,7 +1,7 @@
 {
   "page": {
     "title": "Mapa Trials Frontier",
-    "onlyLandscape": "¿Cambie su dispositivo a horizontal!",
+    "onlyLandscape": "¡Cambie su dispositivo a horizontal!",
     "leftSidebar": {
       "update": "Actualización",
       "goToSeasons": "Resumen Temporadas",
@@ -24,7 +24,7 @@
     "rightSidebar": {
       "legend": "Leyenda",
       "tracks": "Pistas",
-      "released": "released",
+      "released": "publicadas",
       "on_map": "en el mapa",
       "without_coords": "sin coordenadas",
       "not_released": "ni en el mapa ni publicadas",
@@ -127,8 +127,8 @@
       "export": "Exportar",
       "password": "Contraseña",
       "dontAskAgain": "¡No preguntar de nuevo!",
-      "openMyTime": "Open MyTime dialog after saving",
-      "autoExport": "Activate autoexporting"
+      "openMyTime": "Abrir menú MiTiempo tras guardar",
+      "autoExport": "Activar autoexportar"
     },
     "placeholder": {
       "newTime": "Tu tiempo 0:15.000 -> insertar 15000",
@@ -180,8 +180,8 @@
       "backupHeader": "¿Quieres hacer backup de tu ID?",
       "enterUserName": "Introduce tu nombre de usuario para el backup",
       "enterPassword": "Para proteger tu ID. Es opcional.",
-      "successfullExportedHeader": "Successfull",
-      "successfullExported": "All your data was successfull exported."
+      "successfullExportedHeader": "Correcto",
+      "successfullExported": "Todos tus datos se exportaron correctamente."
     },
     "error": {
       "noAccess": "¡No se pudo acceder a la URL!",
@@ -215,7 +215,7 @@
     "13": "Agentes",
     "14": "Rodeo Molón",
     "15": "Halloween 2015",
-    "16": "Christmas 2015"
+    "16": "Navidad 2015"
   },
   "tiers": {
     "1": "Nivel 1",
@@ -437,16 +437,16 @@
     "155": "Manicomio",
     "190": "Cónclave maderero",
     "191": "Enviudador",
-    "192": "Skater Paradise",
-    "193": "Candyland",
-    "194": "Bell Tower",
-    "195": "Frost Carnival",
-    "196": "The Bell Pit",
-    "197": "Nightwatch Haven",
-    "198": "The Naughty List",
-    "199": "Slick Slalom",
-    "200": "Workshop Path",
-    "201": "Sled Loading Bay",
-    "202": "Present Village"
+    "192": "Paraíso del patinador",
+    "193": "País de los dulces",
+    "194": "Campanario",
+    "195": "Carnaval escarchado",
+    "196": "El foso de la campana",
+    "197": "Refugio de la guardia de la noche",
+    "198": "La lista de niños malos",
+    "199": "Eslalon resbaladizo",
+    "200": "Camino del taller",
+    "201": "Muelle de carga de trineos",
+    "202": "Aldea del regalo"
   }
 }
