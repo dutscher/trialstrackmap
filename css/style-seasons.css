@@ -287,6 +287,14 @@ i.season-extra-paintjob-12 {
     background-position: -320px 0
 }
 
+i.season-extra-paintjob-13 {
+    background-position: -320px -40px
+}
+
+i.season-extra-paintjob-14 {
+    background-position: -320px -80px
+}
+
 i[class^="season-extra-part-"] {
     width: 40px;
     height: 40px;
@@ -336,7 +344,7 @@ i.season-extra-part-bolt-3 {
     background-position: -80px -80px
 }
 i.season-extra-part-bolt-4 {
-    background-position: -100px -80px
+    background-position: -120px -80px
 }
 i.season-extra-part-bolt-5 {
     background-position: -160px -80px
@@ -352,7 +360,7 @@ i.season-extra-part-nut-3 {
     background-position: -80px -120px
 }
 i.season-extra-part-nut-4 {
-    background-position: -100px -120px
+    background-position: -120px -120px
 }
 i.season-extra-part-nut-5 {
     background-position: -160px -120px
@@ -368,7 +376,7 @@ i.season-extra-part-sheet-3 {
     background-position: -80px -160px
 }
 i.season-extra-part-sheet-4 {
-    background-position: -100px -160px
+    background-position: -120px -160px
 }
 i.season-extra-part-sheet-5 {
     background-position: -160px -160px
@@ -384,7 +392,7 @@ i.season-extra-part-spark-3 {
     background-position: -80px -200px
 }
 i.season-extra-part-spark-4 {
-    background-position: -100px -200px
+    background-position: -120px -200px
 }
 i.season-extra-part-spark-5 {
     background-position: -160px -200px

@@ -15,7 +15,9 @@
       "9": "Spirits Paintjob for Berserker",
       "10": "Footprint Paintjob for Marauder",
       "11": "Molten Paintjob for Donkey",
-      "12": "Pumpkin King Paintjob for Mantis"
+      "12": "Pumpkin King Paintjob for Mantis",
+      "13": "Sailor Paintjob for Bronco (Take on the seven seas with two wheels!)",
+      "14": "Fallout Paintjob for Donkey (Leave descruction and mayhem in your wake!)"
     },
     "doughnut": "Donkey Doughnut"
   },
@@ -2212,7 +2214,6 @@
     },
     {
       "id": 17,
-      "active": true,
       "header": "#1/9IxxwSG.jpg",
       "title": "Blitz IV",
       "date": "31.12.2015",
@@ -2347,6 +2348,152 @@
           "level": 24,
           "extra_type": "part",
           "extra": "sheet-1",
+          "coins": 750
+        },
+        {
+          "level": 25,
+          "coins": 750
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "active": true,
+      "header": "#1/KYGrpHt.jpg",
+      "title": "Battlefield Season",
+      "date": "17.01.2016",
+      "date_end": "07.02.2016",
+      "prizes": [
+        {
+          "level": 1,
+          "extra_type": "paintjob",
+          "extra": "13",
+          "coins": 9000,
+          "gems": 10
+        },
+        {
+          "level": 2,
+          "extra_type": "doughnut",
+          "coins": 4000
+        },
+        {
+          "level": 3,
+          "extra_type": "doughnut",
+          "coins": 3000
+        },
+        {
+          "level": 4,
+          "extra_type": "doughnut",
+          "coins": 2000
+        },
+        {
+          "level": 5,
+          "extra_type": "doughnut",
+          "coins": 1500
+        },
+        {
+          "level": 6,
+          "extra_type": "part",
+          "extra": "nut-4",
+          "coins": 1500
+        },
+        {
+          "level": 7,
+          "extra_type": "part",
+          "extra": "gear-4",
+          "coins": 1500
+        },
+        {
+          "level": 8,
+          "extra_type": "doughnut",
+          "coins": 1500
+        },
+        {
+          "level": 9,
+          "extra_type": "doughnut",
+          "coins": 1500
+        },
+        {
+          "level": 10,
+          "extra_type": "paintjob",
+          "extra": "14",
+          "coins": 1000,
+          "gems": 5
+        },
+        {
+          "level": 11,
+          "extra_type": "doughnut",
+          "coins": 1000
+        },
+        {
+          "level": 12,
+          "extra_type": "doughnut",
+          "coins": 1000
+        },
+        {
+          "level": 13,
+          "extra_type": "doughnut",
+          "coins": 1000
+        },
+        {
+          "level": 14,
+          "extra_type": "doughnut",
+          "coins": 1000
+        },
+        {
+          "level": 15,
+          "extra_type": "unlimited-fuel",
+          "coins": 1000,
+          "gems": 5
+        },
+        {
+          "level": 16,
+          "extra_type": "part",
+          "extra": "chain-3",
+          "coins": 1000
+        },
+        {
+          "level": 17,
+          "extra_type": "part",
+          "extra": "sheet-3",
+          "coins": 1000
+        },
+        {
+          "level": 18,
+          "extra_type": "doughnut",
+          "coins": 1000
+        },
+        {
+          "level": 19,
+          "extra_type": "doughnut",
+          "coins": 1000
+        },
+        {
+          "level": 20,
+          "extra_type": "unlimited-fuel",
+          "coins": 750,
+          "gems": 5
+        },
+        {
+          "level": 21,
+          "extra_type": "doughnut",
+          "coins": 750
+        },
+        {
+          "level": 22,
+          "extra_type": "doughnut",
+          "coins": 750
+        },
+        {
+          "level": 23,
+          "extra_type": "part",
+          "extra": "spring-1",
+          "coins": 750
+        },
+        {
+          "level": 24,
+          "extra_type": "part",
+          "extra": "pipe-1",
           "coins": 750
         },
         {
