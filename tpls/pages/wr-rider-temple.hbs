@@ -1,4 +1,5 @@
 {{#extend "default"}}
+    {{#content "title-override"}}true{{/content}}
     {{#content "title" mode="prepend"}}
         Temple of the legends -
     {{/content}}
@@ -23,47 +24,44 @@
                     <div class="box no-pad" sticky-thead>
                         <table class="w100">
                             <thead>
-                            <tr>
-                                <th rowspan="3" width="300">{%'page.worldRecordsTable.headRider'|translate%}</th>
-                                <th colspan="6">
-                                    {%'page.worldRecordsTable.headWorldrecords'|translate%}
-                                </th>
-                            </tr>
-                            <tr>
-                                <th colspan="3"><i class="device-android"></i></th>
-                                <th colspan="3"><i class="device-ios"></i></th>
-                            </tr>
-                            <tr>
-                                <th><i class="global"></i></th>
-                                <th><i class="donkey"></i></th>
-                                <th><i class="crazy"></i></th>
-                                <th><i class="global"></i></th>
-                                <th><i class="donkey"></i></th>
-                                <th><i class="crazy"></i></th>
-                            </tr>
+                                <tr>
+                                    <th class="rider-name" width="25"></th>
+                                    <th class="rider-name" width="200">
+                                        <i class="device-android"></i>
+                                        {%'page.worldRecordsTable.headRider'|translate%}
+                                    </th>
+                                    <th table-sorter="android|normal"><i class="global"></i></th>
+                                    <th table-sorter="android|donkey"><i class="donkey"></i></th>
+                                    <th table-sorter="android|crazy"><i class="crazy"></i></th>
+                                    <th class="rider-name" width="25"></th>
+                                    <th class="rider-name" width="200">
+                                        <i class="device-ios"></i>
+                                        {%'page.worldRecordsTable.headRider'|translate%}
+                                    </th>
+                                    <th table-sorter="ios|normal"><i class="global"></i></th>
+                                    <th table-sorter="ios|donkey"><i class="donkey"></i></th>
+                                    <th table-sorter="ios|crazy"><i class="crazy"></i></th>
+                                </tr>
                             </thead>
                             <tbody>
-                            <tr ng-repeat="rider in filteredRider = data.rider|WRRiderSearch:search|WRRiderSort">
-                                <td class="center" ng-bind-html="::rider.riderName|nameWithFlag"></td>
-                                <td class="center" hide-zero="{%::rider.WRAmount.android.normal%}">
-                                    {%::rider.WRAmount.android.normal%}
-                                </td>
-                                <td class="center" hide-zero="{%::rider.WRAmount.android.donkey%}">
-                                    {%::rider.WRAmount.android.donkey%}
-                                </td>
-                                <td class="center" hide-zero="{%::rider.WRAmount.android.crazy%}">
-                                    {%::rider.WRAmount.android.crazy%}
-                                </td>
-                                <td class="center" hide-zero="{%::rider.WRAmount.ios.normal%}">
-                                    {%::rider.WRAmount.ios.normal%}
-                                </td>
-                                <td class="center" hide-zero="{%::rider.WRAmount.ios.donkey%}">
-                                    {%::rider.WRAmount.ios.donkey%}
-                                </td>
-                                <td class="center" hide-zero="{%::rider.WRAmount.ios.crazy%}">
-                                    {%::rider.WRAmount.ios.crazy%}
-                                </td>
-                            </tr>
+                                <tr ng-repeat="rider in sortedRider">
+                                    <td class="center rider-name">{%::$index+1|leadingZero%}.</td>
+                                    <td class="center rider-name" ng-bind-html="::rider.android.riderName|nameWithFlag" width="150"></td>
+                                    <td class="center" show-amount="{%::rider.android.WRAmount.android.normal%}"></td>
+                                    <td class="center" show-amount="{%::rider.android.WRAmount.android.donkey%}"></td>
+                                    <td class="center" show-amount="{%::rider.android.WRAmount.android.crazy%}"></td>
+                                    <td class="center rider-name">{%::$index+1|leadingZero%}.</td>
+                                    <td class="center rider-name" ng-bind-html="::rider.ios.riderName|nameWithFlag" width="150"></td>
+                                    <td class="center" show-amount="{%::rider.ios.WRAmount.ios.normal%}"></td>
+                                    <td class="center" show-amount="{%::rider.ios.WRAmount.ios.donkey%}"></td>
+                                    <td class="center" show-amount="{%::rider.ios.WRAmount.ios.crazy%}"></td>
+                                </tr>
+                                <tr>
+                                    <td class="center" colspan="10" ng-bind-html="tailRider.length"></td>
+                                </tr>
+                                <tr ng-repeat="rider in tailRider">
+                                    <td class="center rider-name" colspan="10" ng-bind-html="::rider.riderName|nameWithFlag"></td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>

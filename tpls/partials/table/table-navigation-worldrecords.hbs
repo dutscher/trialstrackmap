@@ -5,8 +5,9 @@
     |
     {{> language-select}}
     |
-    {%'page.worldRecordsTable.ridersAmount'|translate%}: {%repeatObject(filteredRider).length%}
+    {%'page.worldRecordsTable.ridersAmount'|translate%}: {% allRider %}
     <br />
+    {{!
     {%'page.worldRecordsTable.filter'|translate%}:
     <input type="text" placeholder="{%'page.worldRecordsTable.searchForRider'|translate%}"
            select-on-click
@@ -15,6 +16,7 @@
            ng-change="saveSearch()" />
     <i class="faults with-cursor" ng-if="search != ''" ng-click="clearSearch()"></i>
     |
+    }}
     {%'page.worldRecordsTable.addRider'|translate%}:
     <span wr-rider-add></span>
 </div>

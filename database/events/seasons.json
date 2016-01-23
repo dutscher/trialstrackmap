@@ -2367,7 +2367,7 @@
         {
           "level": 1,
           "extra_type": "paintjob",
-          "extra": "13",
+          "extra": "14",
           "coins": 9000,
           "gems": 10
         },
@@ -2416,7 +2416,7 @@
         {
           "level": 10,
           "extra_type": "paintjob",
-          "extra": "14",
+          "extra": "13",
           "coins": 1000,
           "gems": 5
         },

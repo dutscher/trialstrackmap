@@ -111,15 +111,15 @@
                                 {%'page.rightSidebar.legend'|translate%}</h2>
 
                             <div ng-show="legendVisible">
-                                        <span class="{%::cat.class%} with-cursor"
-                                              ng-repeat="cat in data.map.cats"
-                                              show-cat-on-map="{cat:cat,catIndex:$index+1,tracks:data.tracks}">
-                                            {%'cats.'+cat.index|translate%} ({%::(data.tracks|catAndTierTracks:$index+1).length%})
-                                        </span>
+                                <span class="{%::cat.class%} with-cursor"
+                                      ng-repeat="cat in data.map.cats"
+                                      show-cat-on-map="{cat:cat,catIndex:$index+1,tracks:data.tracks}">
+                                    {%'cats.'+cat.index|translate%} ({%::(data.tracks|catAndTierTracks:$index+1).length%})
+                                </span>
                             </div>
-                                    <span class="with-cursor"
-                                          ng-click="visibility('legendVisible')"
-                                          ng-hide="legendVisible">{%'page.leftSidebar.toggleMe'|translate%}</span>
+                                <span class="with-cursor"
+                                      ng-click="visibility('legendVisible')"
+                                      ng-hide="legendVisible">{%'page.leftSidebar.toggleMe'|translate%}</span>
                         </div>
                     </li>
                     <li>
