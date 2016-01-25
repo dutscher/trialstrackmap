@@ -1,0 +1,17 @@
+.garage {
+    position: relative;
+}
+
+.garage .paintjob {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+}
+
+.garage .background {
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    top: 0;
+}
