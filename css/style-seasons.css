@@ -294,6 +294,12 @@ i.season-extra-paintjob-14 {
 i.season-extra-paintjob-13 {
     background-position: -320px -80px
 }
+i.season-extra-paintjob-15 {
+    background-position: -320px -120px
+}
+i.season-extra-paintjob-16 {
+    background-position: -320px -160px
+}
 
 i[class^="season-extra-part-"] {
     width: 40px;
