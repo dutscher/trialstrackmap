@@ -34,7 +34,7 @@ img.track-pointer {
     z-index: 2
 }
 
-canvas[track-pointer] {
+canvas[canvas-track-pointer] {
     z-index: 1;
     display: block;
     position: absolute;

@@ -100,6 +100,10 @@
       "searchForRider": "a rider",
       "addRider": "Add rider",
       "addRiderButton": "for new WR"
+    },
+    "ferryTo": {
+      "1": "Main Trackmap",
+      "2": "New World"
     }
   },
   "dialogs": {
@@ -447,6 +451,9 @@
     "199": "Скользкий слалом",
     "200": "Тропа мастеров",
     "201": "Санная погрузка",
-    "202": "Подарочная деревня"
+    "202": "Подарочная деревня",
+    "203": "Concealed Entryway",
+    "204": "Petrol Falls Path",
+    "205": "Trial of Courage"
   }
 }

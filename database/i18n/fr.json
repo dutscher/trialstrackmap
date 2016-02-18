@@ -100,6 +100,10 @@
       "searchForRider": "a rider",
       "addRider": "Add rider",
       "addRiderButton": "for new WR"
+    },
+    "ferryTo": {
+      "1": "Main Trackmap",
+      "2": "New World"
     }
   },
   "dialogs": {
@@ -447,6 +451,9 @@
     "199": "Slick Slalom",
     "200": "Workshop PathW",
     "201": "Sled Loading Bay",
-    "202": "Present Village"
+    "202": "Present Village",
+    "203": "Concealed Entryway",
+    "204": "Petrol Falls Path",
+    "205": "Trial of Courage"
   }
 }

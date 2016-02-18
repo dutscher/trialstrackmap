@@ -100,6 +100,10 @@
       "searchForRider": "corredor",
       "addRider": "Añadir corredor",
       "addRiderButton": "para nuevo récord"
+    },
+    "ferryTo": {
+      "1": "Main Trackmap",
+      "2": "New World"
     }
   },
   "dialogs": {
@@ -447,6 +451,9 @@
     "199": "Eslalon resbaladizo",
     "200": "Camino del taller",
     "201": "Muelle de carga de trineos",
-    "202": "Aldea del regalo"
+    "202": "Aldea del regalo",
+    "203": "Concealed Entryway",
+    "204": "Petrol Falls Path",
+    "205": "Trial of Courage"
   }
 }

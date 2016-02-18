@@ -140,6 +140,11 @@
       "index": 16,
       "class": "christmas",
       "color": "ff0000"
+    },
+    {
+      "index": 17,
+      "class": "new-world",
+      "color": "0040ff"
     }
   ],
   "tiers": [

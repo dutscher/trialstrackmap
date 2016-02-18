@@ -154,7 +154,7 @@
 
         <div pinch-map>
             <div zoom-here>
-                <canvas track-pointer></canvas>
+                <canvas canvas-track-pointer></canvas>
 
                 <img hide-me-on-pan src="blank.png" class="track-pointer" usemap="#trackmap"/>
 
@@ -166,14 +166,7 @@
                      ng-class="{'loading':!trackmapReady && !dataLoaded,'all-loaded':trackmapReady && dataLoaded}" />
                 {{/with}}
 
-                <map name="trackmap">
-                    <area ng-repeat="track in data.tracks"
-                          shape="circle" alt="{%'tracks.'+track.id|translate%}"
-                          title="{%'tracks.'+track.id|translate%}"
-                          coords="{%track.coords||'0,0,0'%}"
-                          href="#"
-                          show-track-in-modal="startline"/>
-                </map>
+                <map name="trackmap" track-pointer></map>
             </div>
         </div>
     {{/content}}

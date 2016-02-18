@@ -17,7 +17,13 @@
             <textarea copy-text></textarea>
             <canvas canvas-pointer></canvas>
 
-            <img ng-src="{%::data.images.trackmap.src|hoster:data.hoster%}" ng-load="pageReady = true" />
+            {{#with gfx}}
+                <img class="trackmap" alt="{{images.trackmap.alt}}"
+                     src="{{hoster images.trackmap.src hoster}}"
+                     onload="this.isLoaded = true"
+                     image-loaded="pageReady = true"
+                     ng-class="{'loading':!trackmapReady && !dataLoaded,'all-loaded':trackmapReady && dataLoaded}" />
+            {{/with}}
         </div>
     {{/content}}
 {{/extend}}
