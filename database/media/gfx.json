@@ -1,16 +1,18 @@
 {
   "images": {
-    "trackmap": {
-      "src": "#1/muMCeGl.jpg",
-      "lSrc": "#0/trackmap.160218.en.jpg",
-      "alt": "Trails Frontier Trackmap",
-      "dim": "3614x2495"
-    },
-    "trackmap2": {
-      "src": "#1/yfub7dD.jpg",
-      "lSrc": "#0/trackmap_2.160218.en.jpg",
-      "alt": "Trails Frontier Trackmap",
-      "dim": "1525x2500"
+    "trackmaps": {
+      "1": {
+        "src": "#1/muMCeGl.jpg",
+        "lSrc": "#0/trackmap.160218.en.jpg",
+        "alt": "Trails Frontier Trackmap",
+        "dim": "3614x2495"
+      },
+      "2": {
+        "src": "#1/yfub7dD.jpg",
+        "lSrc": "#0/trackmap_2.160218.en.jpg",
+        "alt": "Trails Frontier Trackmap",
+        "dim": "1525x2500"
+      }
     },
     "candy": {
       "src": "#1/HuTSmQ0.png",

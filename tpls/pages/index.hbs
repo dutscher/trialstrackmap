@@ -136,11 +136,11 @@
                             <div ng-repeat="tier in tierlegend" class="tierwrap">
                                 <hr>
                                 <h3>{%'page.rightSidebar.tier'|translate%} {%::tier.number%}</h3>
-                                        <span ng-repeat="catClass in repeatObject(tier.cats)"
-                                              class="{%::catClass%} trackwrap">
-                                             <span ng-repeat="track in tier.cats[catClass]"
-                                                   track-in-sidebar="{track:track,catClass:catClass}"></span>
-                                        </span>
+                                    <span ng-repeat="catClass in repeatObject(tier.cats)"
+                                          class="{%::catClass%} trackwrap">
+                                         <span ng-repeat="track in tier.cats[catClass]"
+                                               track-in-sidebar="{track:track,catClass:catClass}"></span>
+                                    </span>
                             </div>
                         </div>
                     </li>
@@ -149,7 +149,6 @@
         </nav>
 
         <div class="gallery-modal"></div>
-
         <div ng-init="trackmapReady = false" ng-hide="trackmapReady && dataLoaded" class="loader spin"></div>
 
         <div pinch-map>
@@ -159,11 +158,11 @@
                 <img hide-me-on-pan src="blank.png" class="track-pointer" usemap="#trackmap"/>
 
                 {{#with gfx}}
-                <img class="trackmap" alt="{{images.trackmap.alt}}"
-                     src="{{hoster images.trackmap.src hoster}}"
-                     onload="this.isLoaded = true"
-                     image-loaded="trackmapReady = true"
-                     ng-class="{'loading':!trackmapReady && !dataLoaded,'all-loaded':trackmapReady && dataLoaded}" />
+                    <img class="trackmap" world="{% selectedWorld %}" alt="{% worldAlt %}"
+                         ng-src="{% worldImage %}"
+                         onload="this.isLoaded = true"
+                         image-loaded="trackmapReady = true"
+                         ng-class="{'loading':!trackmapReady && !dataLoaded,'all-loaded':trackmapReady && dataLoaded}"/>
                 {{/with}}
 
                 <map name="trackmap" track-pointer></map>

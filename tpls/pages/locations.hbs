@@ -18,8 +18,8 @@
             <canvas canvas-pointer></canvas>
 
             {{#with gfx}}
-                <img class="trackmap" alt="{{images.trackmap.alt}}"
-                     src="{{hoster images.trackmap.src hoster}}"
+                <img class="trackmap" alt="{{images.trackmap.1.alt}}"
+                     src="{{hoster images.trackmap.1.src hoster}}"
                      onload="this.isLoaded = true"
                      image-loaded="pageReady = true"
                      ng-class="{'loading':!trackmapReady && !dataLoaded,'all-loaded':trackmapReady && dataLoaded}" />
