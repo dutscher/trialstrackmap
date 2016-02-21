@@ -9,18 +9,18 @@ module.exports = function(grunt){
 
     var rewrite = require("connect-modrewrite"),
         config = require("./connect-config.json5"),
-        rules = require("./connect-rewrite-rules.json5");
+        rules = require("./connect-rewrite-rules.json5"),
+        serveStatic = require('serve-static');
 
     return {
         options: {
             port: config.port,
             livereload: config.livereload,
             hostname: config.hostname,
-            middleware: function(connect, options) {
-                var middleware = [];
+            middleware: function(connect, options, middlewares) {
 
                 // 1. mod-rewrite behavior
-                middleware.push(rewrite(rules));
+                middlewares.unshift(rewrite(rules));
 
                 // 2. original middleware behavior
                 var base = typeof options == "object" && options.base[0].hasOwnProperty("path") ? options.base[0].path : options.base;
@@ -28,10 +28,10 @@ module.exports = function(grunt){
                     base = [base];
                 }
                 base.forEach(function(path) {
-                    middleware.push(connect.static(path));
+                    middlewares.unshift(serveStatic(path));
                 });
 
-                return middleware;
+                return middlewares;
             }
         },
         /**

@@ -1,7 +1,9 @@
 module.exports = function (grunt) {
 
     require("json5/lib/require");
-    require("time-grunt")(grunt);
+    if (grunt.option("with-time")) {
+        require("time-grunt")(grunt);
+    }
 
     grunt.initConfig({
         pkg: grunt.file.readJSON("package.json"),
