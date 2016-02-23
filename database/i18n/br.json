@@ -8,7 +8,7 @@
       "goToMedals": "Medalhas e Peças",
       "goToImprove": "Tabela melhore seus tempos",
       "goToAnniversary": "Página de Aniversário",
-      "goToWRRiderTemple": "Templo-dos-Recordistas",
+      "goToWRRiderTemple": "WR-Templo-Pilotos",
       "goToThread": "Ir para o fórum",
       "stats": "Estatísticas",
       "uplayID": "Uplay",
@@ -24,7 +24,7 @@
     "rightSidebar": {
       "legend": "Legenda",
       "tracks": "Pistas",
-      "released": "lançadas",
+      "released": "released",
       "on_map": "No mapa",
       "without_coords": "Sem coordenadas",
       "not_released": "Fora do mapa ou não lançado",
@@ -102,8 +102,8 @@
       "addRiderButton": "Para um novo WR"
     },
     "ferryTo": {
-      "1": "Mapa principal",
-      "2": "Novo mundo"
+      "1": "Main Trackmap",
+      "2": "New World"
     }
   },
   "dialogs": {
@@ -452,8 +452,8 @@
     "200": "Caminho da Oficina",
     "201": "Estacionamento de Trenós",
     "202": "Vila do Presente",
-    "203": "Entrada Oculta",
-    "204": "Cachoeira do Petróleo",
-    "205": "Prova da Coragem"
+    "203": "Concealed Entryway",
+    "204": "Petrol Falls Path",
+    "205": "Trial of Courage"
   }
 }
