@@ -8,7 +8,7 @@
       "goToMedals": "Medalhas e Peças",
       "goToImprove": "Tabela melhore seus tempos",
       "goToAnniversary": "Página de Aniversário",
-      "goToWRRiderTemple": "WR-Templo-Pilotos",
+      "goToWRRiderTemple": "Templo dos recordistas",
       "goToThread": "Ir para o fórum",
       "stats": "Estatísticas",
       "uplayID": "Uplay",
@@ -24,7 +24,7 @@
     "rightSidebar": {
       "legend": "Legenda",
       "tracks": "Pistas",
-      "released": "released",
+      "released": "lançado",
       "on_map": "No mapa",
       "without_coords": "Sem coordenadas",
       "not_released": "Fora do mapa ou não lançado",
@@ -102,8 +102,8 @@
       "addRiderButton": "Para um novo WR"
     },
     "ferryTo": {
-      "1": "Main Trackmap",
-      "2": "New World"
+      "1": "Mapa Principal",
+      "2": "Novo Mundo"
     }
   },
   "dialogs": {
@@ -143,7 +143,7 @@
       "header": "Editar Recorde Mundial (WR) para {%trackName%}",
       "headerSaved": "Recorde Mundial salvo",
       "oldRider": "Recordista atual",
-      "newRider": "Choosed WR-Rider",
+      "newRider": "WR-Piloto escolhido",
       "riderFound": "Piloto encontrado",
       "confirmNewData": "Você quer salvar o WR {%newTime%} feito por {%riderName%}?",
       "createRider": "Seu nome de piloto não existe. Você quer adicionar ao WR-Templo-Pilotos?",
@@ -452,8 +452,8 @@
     "200": "Caminho da Oficina",
     "201": "Estacionamento de Trenós",
     "202": "Vila do Presente",
-    "203": "Concealed Entryway",
-    "204": "Petrol Falls Path",
-    "205": "Trial of Courage"
+    "203": "Entrada Oculta",
+    "204": "Cachoeira do Petróleo",
+    "205": "Prova da Coragem"
   }
 }
