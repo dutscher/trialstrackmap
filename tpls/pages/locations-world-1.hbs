@@ -15,11 +15,11 @@
             <div class="page-body is-loading" ng-class="{'is-ready':pageReady}">
 
             <textarea copy-text></textarea>
-            <canvas canvas-pointer></canvas>
+            <canvas canvas-pointer="{world:1}"></canvas>
 
             {{#with gfx}}
-                <img class="trackmap" alt="{{images.trackmap.1.alt}}"
-                     src="{{hoster images.trackmap.1.src hoster}}"
+                <img class="trackmap" alt="{{images.trackmaps.1.alt}}"
+                     src="{{hoster images.trackmaps.1.src hoster}}"
                      onload="this.isLoaded = true"
                      image-loaded="pageReady = true"
                      ng-class="{'loading':!trackmapReady && !dataLoaded,'all-loaded':trackmapReady && dataLoaded}" />
