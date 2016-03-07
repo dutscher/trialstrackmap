@@ -4,7 +4,7 @@
     "parts": "Part",
     "unlimited_fuel": "Unlimited Fuel",
     "doughnut": "Donkey Doughnut",
-    "paintjob": {
+    "paintjobs": {
       "1": "Neon Paintjob for Tango",
       "2": "Aloha Paintjob for Bronco",
       "3": "Medic Paintjob for Bronco",
@@ -23,7 +23,7 @@
       "16": "Mithril Paintjob for Mantis (Leave descruction and mayhem in your wake!)",
       "17": "Hippie Paintjob for Riptide (Peace, love an speed!)"
     },
-    "track": {
+    "tracks": {
       "1": "KTM Course (Reveal the hidden location of KTM Course!)"
     }
   },
@@ -127,7 +127,7 @@
           "gems": 10,
           "coins": 5000,
           "extra_type": "paintjob",
-          "extra": "2"
+          "extra": 2
         },
         {
           "level": 16,
@@ -152,7 +152,7 @@
           "gems": 5,
           "coins": 3000,
           "extra_type": "paintjob",
-          "extra": "1"
+          "extra": 1
         },
         {
           "level": 21,
@@ -216,7 +216,7 @@
           "level": 5,
           "coins": 2000,
           "extra_type": "paintjob",
-          "extra": "4"
+          "extra": 4
         },
         {
           "level": 6,
@@ -266,7 +266,7 @@
           "gems": 5,
           "coins": 2000,
           "extra_type": "paintjob",
-          "extra": "3"
+          "extra": 3
         },
         {
           "level": 16,
@@ -599,7 +599,7 @@
           "level": 5,
           "coins": 2000,
           "extra_type": "paintjob",
-          "extra": "5"
+          "extra": 5
         },
         {
           "level": 6,
@@ -647,7 +647,7 @@
           "gems": 5,
           "coins": 2000,
           "extra_type": "paintjob",
-          "extra": "1"
+          "extra": 1
         },
         {
           "level": 16,
@@ -750,7 +750,7 @@
           "gems": 5,
           "coins": 2000,
           "extra_type": "paintjob",
-          "extra": "6"
+          "extra": 6
         },
         {
           "level": 11,
@@ -874,7 +874,7 @@
           "gems": 5,
           "coins": 2000,
           "extra_type": "paintjob",
-          "extra": "7"
+          "extra": 7
         },
         {
           "level": 11,
@@ -1001,7 +1001,7 @@
           "level": 10,
           "coins": 2000,
           "extra_type": "paintjob",
-          "extra": "8"
+          "extra": 8
         },
         {
           "level": 11,
@@ -1129,7 +1129,7 @@
           "level": 10,
           "coins": 2000,
           "extra_type": "paintjob",
-          "extra": "9"
+          "extra": 9
         },
         {
           "level": 11,
@@ -1213,7 +1213,7 @@
           "gems": 10,
           "coins": 10000,
           "extra_type": "paintjob",
-          "extra": "11"
+          "extra": 11
         },
         {
           "level": 2,
@@ -1247,7 +1247,7 @@
           "level": 8,
           "coins": 2000,
           "extra_type": "paintjob",
-          "extra": "10"
+          "extra": 10
         },
         {
           "level": 9,
@@ -1302,7 +1302,7 @@
           "level": 20,
           "coins": 1000,
           "extra_type": "paintjob",
-          "extra": "5"
+          "extra": 5
         },
         {
           "level": 21,
@@ -1395,7 +1395,7 @@
         {
           "level": 10,
           "extra_type": "paintjob",
-          "extra": "1",
+          "extra": 1,
           "coins": 1000
         },
         {
@@ -1494,7 +1494,7 @@
         {
           "level": 1,
           "extra_type": "paintjob",
-          "extra": "11",
+          "extra": 11,
           "coins": 8000,
           "gems": 10
         },
@@ -2228,7 +2228,7 @@
         {
           "level": 1,
           "extra_type": "paintjob",
-          "extra": "12",
+          "extra": 12,
           "coins": 8000,
           "gems": 10
         },
@@ -2372,7 +2372,7 @@
         {
           "level": 1,
           "extra_type": "paintjob",
-          "extra": "14",
+          "extra": 14,
           "coins": 9000,
           "gems": 10
         },
@@ -2421,7 +2421,7 @@
         {
           "level": 10,
           "extra_type": "paintjob",
-          "extra": "13",
+          "extra": 13,
           "coins": 1000,
           "gems": 5
         },
@@ -2520,7 +2520,7 @@
         {
           "level": 1,
           "extra_type": "paintjob",
-          "extra": "16",
+          "extra": 16,
           "coins": 9000,
           "gems": 10
         },
@@ -2570,7 +2570,7 @@
         {
           "level": 10,
           "extra_type": "paintjob",
-          "extra": "15",
+          "extra": 15,
           "coins": 1000,
           "gems": 5
         },

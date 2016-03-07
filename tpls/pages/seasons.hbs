@@ -13,7 +13,7 @@
 
     {{#content "body"}}
         {{#with seasons}}
-            <div class="season-page" ng-controller="seasonsNew">
+            <div class="season-page" ng-controller="seasons">
                 <div ng-init="pageReady = false" ng-hide="pageReady" class="loader spin"></div>
                 <div class="page-body is-loading" data-event="data:loaded" data-finished="pageReady">
                     {{> season-navigation}}
