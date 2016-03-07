@@ -3,6 +3,7 @@
     "donkey": "The Donkey Blueprint",
     "parts": "Part",
     "unlimited_fuel": "Unlimited Fuel",
+    "doughnut": "Donkey Doughnut",
     "paintjob": {
       "1": "Neon Paintjob for Tango",
       "2": "Aloha Paintjob for Bronco",
@@ -19,9 +20,12 @@
       "13": "Sailor Paintjob for Bronco (Take on the seven seas with two wheels!)",
       "14": "Fallout Paintjob for Donkey (Leave descruction and mayhem in your wake!)",
       "15": "Raven Paintjob for Bronco (A bad omen? For your opponents maybe?)",
-      "16": "Mithril Paintjob for Mantis (Leave descruction and mayhem in your wake!)"
+      "16": "Mithril Paintjob for Mantis (Leave descruction and mayhem in your wake!)",
+      "17": "Hippie Paintjob for Riptide (Peace, love an speed!)"
     },
-    "doughnut": "Donkey Doughnut"
+    "track": {
+      "1": "KTM Course (Reveal the hidden location of KTM Course!)"
+    }
   },
   "_seasons": [
     {
@@ -2505,7 +2509,6 @@
     },
     {
       "id": 19,
-      "active": true,
       "header": "#1/6Qxvg4f.jpg",
       "title": "Candy Rush Season",
       "date": "08.02.2016",
@@ -2651,6 +2654,159 @@
         },
         {
           "level": 25,
+          "coins": 750
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "active": true,
+      "header": "#1/fwOhVAm.jpg",
+      "title": "KTM Season",
+      "date": "28.02.2016",
+      "date_end": "27.03.2016",
+      "duration": "4h",
+      "free_showdowns": "3",
+      "ticket_regain": "30m",
+      "prizes": [
+        {
+          "level": 1,
+          "extra_type": "track",
+          "extra": 1,
+          "coins": 10000,
+          "gems": 10
+        },
+        {
+          "level": 2,
+          "extra_type": "doughnut",
+          "coins": 5000
+        },
+        {
+          "level": 3,
+          "extra_type": "part",
+          "extra": "spark-5",
+          "coins": 5000,
+          "gems": 7
+        },
+        {
+          "level": 4,
+          "extra_type": "doughnut",
+          "coins": 2500
+        },
+        {
+          "level": 5,
+          "extra_type": "unlimited-fuel",
+          "coins": 2500,
+          "gems": 5
+        },
+        {
+          "level": 6,
+          "extra_type": "part",
+          "extra": "sheet-4",
+          "coins": 2000
+        },
+        {
+          "level": 7,
+          "extra_type": "unlimited-fuel",
+          "coins": 2000
+        },
+        {
+          "level": 8,
+          "extra_type": "doughnut",
+          "coins": 2000
+        },
+        {
+          "level": 9,
+          "extra_type": "part",
+          "extra": "pipe-3",
+          "coins": 1500
+        },
+        {
+          "level": 10,
+          "extra_type": "part",
+          "extra": "sheet-2",
+          "coins": 1500,
+          "gems": 5
+        },
+        {
+          "level": 11,
+          "extra_type": "unlimited-fuel",
+          "coins": 1500
+        },
+        {
+          "level": 12,
+          "extra_type": "doughnut",
+          "coins": 1000
+        },
+        {
+          "level": 13,
+          "extra_type": "doughnut",
+          "coins": 1000
+        },
+        {
+          "level": 14,
+          "extra_type": "doughnut",
+          "coins": 1000
+        },
+        {
+          "level": 15,
+          "extra_type": "paintjob",
+          "extra": 17,
+          "coins": 1000,
+          "gems": 5
+        },
+        {
+          "level": 16,
+          "extra_type": "doughnut",
+          "coins": 1000
+        },
+        {
+          "level": 17,
+          "extra_type": "part",
+          "extra": "spring-4",
+          "coins": 1000
+        },
+        {
+          "level": 18,
+          "extra_type": "doughnut",
+          "coins": 750
+        },
+        {
+          "level": 19,
+          "extra_type": "part",
+          "extra": "gear-1",
+          "coins": 750
+        },
+        {
+          "level": 20,
+          "extra_type": "coins-gems",
+          "coins": 750,
+          "gems": 5
+        },
+        {
+          "level": 21,
+          "extra_type": "doughnut",
+          "coins": 750
+        },
+        {
+          "level": 22,
+          "extra_type": "unlimited-fuel",
+          "coins": 750
+        },
+        {
+          "level": 23,
+          "extra_type": "doughnut",
+          "coins": 750
+        },
+        {
+          "level": 24,
+          "extra_type": "part",
+          "extra": "nut-1",
+          "coins": 750
+        },
+        {
+          "level": 25,
+          "extra_type": "coins",
           "coins": 750
         }
       ]

@@ -1,5 +1,6 @@
 # trials trackmap made by dutscher
 
+* GFX repo: https://github.com/dutscher/trialstrackmap-gfx
 * livesite: http://trialstrackmap.sb-f.de
 * seasons overview: http://trialstrackmap.sb-f.de/dist/seasons.html
 * time and parts table: http://trialstrackmap.sb-f.de/dist/table.html
