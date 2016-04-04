@@ -23,7 +23,7 @@ module.exports = function (grunt) {
         "concatDatabase",
         "copy:i18nToDist",
         "copy:rawToDist",
-        "less:dist",
+        "convertLess",
         "concat:dist",
         "concat:vendor",
         "minjson:dist",

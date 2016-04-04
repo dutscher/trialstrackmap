@@ -9,19 +9,21 @@
 
     {{#content "body"}}
         {{#with ../paintjobs}}
+            <div style="display:flex;">
             {{#each bikes}}
-                <div style="display:inline-block;border:1px solid #000;overflow:hidden;" title="{{bikename @key ../../map.database.bikes}}">
-                    <span style="display:block;white-space:nowrap;">
+                <div style="display:inline-block;overflow:hidden;vertical-align:top;" title="{{bikename @key ../../map.database.bikes}}">
+                    <span style="display:block;white-space:nowrap;padding:0 5px;color:#fff;text-align:center;">
                         {{bikename @key ../../map.database.bikes}} ({{this.length}})
                     </span>
                     {{#each this}}
-                        <i class="paintjob paintjob-{{@../key}}-{{add @key 1}}" title="{{name}}"></i>
-                        <i class="paintjob-icon paintjob-icon-{{@../key}}-{{add @key 1}}" title="{{name}}"></i>
-                        <br />
+                    <span style="display:block;white-space:nowrap;" title="{{name}}">
+                        <i class="paintjob paintjob-{{@../key}}-{{add @key 1}}"></i>
+                        <i class="paintjob-icon paintjob-icon-{{@../key}}-{{add @key 1}}"></i>
+                    </span>
                     {{/each}}
                 </div>
             {{/each}}
+            </div>
         {{/with}}
     {{/content}}
-
 {{/extend}}

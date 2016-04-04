@@ -2,13 +2,13 @@
   "images": {
     "trackmaps": {
       "1": {
-        "src": "#1/muMCeGl.jpg",
+        "src": "#1/ys97yr1.jpg",
         "lSrc": "#0/map/trackmap.1.160403.en.jpg",
         "alt": "Trails Frontier Trackmap",
         "dim": "3614x2495"
       },
       "2": {
-        "src": "#1/GxihVPP.jpg",
+        "src": "#1/xnhCdfF.jpg",
         "lSrc": "#0/map/trackmap.2.160403.en.jpg",
         "alt": "Trails Frontier Trackmap New World",
         "dim": "1525x2500"
@@ -223,13 +223,13 @@
       "sprite": true
     },
     "paintjobs": {
-      "src": "#1/WyQUKtU.png",
+      "src": "#1/4hyMTqg.png",
       "lSrc": "#0/icons/sprite-paintjobs.png",
       "selector": "i.paintjob",
       "sprite": true
     },
     "paintjob-icons": {
-      "src": "",
+      "src": "#1/UYCszL2.png",
       "lSrc": "#0/icons/sprite-paintjob-icons.png",
       "selector": "i.paintjob-icon",
       "sprite": true

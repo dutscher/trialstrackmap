@@ -19,7 +19,7 @@ module.exports = function (grunt) {
                     .replace(")", "");
         }
 
-        function calcPercantage(pixel, scalePercent){
+        function calcPercantage(pixel, scalePercent) {
             var faktor = scalePercent / 100;
             return pixel * faktor;
         }
@@ -55,7 +55,7 @@ module.exports = function (grunt) {
                 var left = (globalVars._paintJobWidth * bikeIndex),
                     top = (globalVars._paintJobHeight * paintJobIndex);
 
-                globalVars._paintJobPositions.push((left > 0 ? "-" : "") + left + "px " + (top > 0 ? "-" : "") + top + "px");
+                globalVars._paintJobPositions.push((left > 0 ? "-" : "") + left + (left !== 0 ? "px" : "") + " " + (top > 0 ? "-" : "") + top + (top !== 0 ? "px" : ""));
                 // icons
                 globalVars._paintJobIconNames.push("paintjob-icon-" + bikeName + "-" + paintJobName);
                 globalVars._paintJobIconSelectors.push("paintjob-icon-" + bikeID + "-" + (paintJobIndex + 1));
@@ -63,7 +63,7 @@ module.exports = function (grunt) {
                 var left = (globalVars._paintJobIconWidth * paintJobIndex),
                     top = (globalVars._paintJobIconHeight * bikeIndex);
 
-                globalVars._paintJobIconPositions.push((left > 0 ? "-" : "") + left + "px " + (top > 0 ? "-" : "") + top + "px");
+                globalVars._paintJobIconPositions.push((left > 0 ? "-" : "") + left + (left !== 0 ? "px" : "") + " " + (top > 0 ? "-" : "") + top + (top !== 0 ? "px" : ""));
             }
         }
 
@@ -71,6 +71,14 @@ module.exports = function (grunt) {
     }
 
     var globalVars = generateSprites();
+
+    grunt.registerTask("convertLess", function () {
+        globalVars = generateSprites();
+
+        console.log("convertLess", globalVars)
+
+        grunt.task.run("less:dist");
+    });
 
     return {
         dist: {
