@@ -1,6 +1,6 @@
 {
   "header": {
-    "src": "#1/",
+    "src": "#1/ub8AV1L.jpg",
     "lSrc": "#0/seasons/21.ultimate.jpg"
   },
   "title": "Ultimate Season",
@@ -15,7 +15,8 @@
       "extra_type": "paintjob",
       "extra": 18,
       "coins": 5000,
-      "gems": 10
+      "gems": 10,
+      "sprite_pointer": "11-4"
     },
     {
       "level": 2,

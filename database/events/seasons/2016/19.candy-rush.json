@@ -15,7 +15,8 @@
       "extra_type": "paintjob",
       "extra": 16,
       "coins": 9000,
-      "gems": 10
+      "gems": 10,
+      "sprite_pointer": "5-7"
     },
     {
       "level": 2,
@@ -65,7 +66,8 @@
       "extra_type": "paintjob",
       "extra": 15,
       "coins": 1000,
-      "gems": 5
+      "gems": 5,
+      "sprite_pointer": "3-11"
     },
     {
       "level": 11,

@@ -56,7 +56,8 @@
       "level": 10,
       "coins": 2000,
       "extra_type": "paintjob",
-      "extra": 8
+      "extra": 8,
+      "sprite_pointer": "1-3"
     },
     {
       "level": 11,

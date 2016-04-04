@@ -9,6 +9,7 @@
     {{#content "data-event"}}data:loaded{{/content}}
     {{#content "styles" mode="append"}}
         <link rel="stylesheet" type="text/css" href="../css/style-seasons.css{{cacheBuster}}"/>
+        <link rel="stylesheet" type="text/css" href="main.css{{cacheBuster}}"/>
     {{/content}}
 
     {{#content "body"}}
@@ -21,7 +22,7 @@
                     <div class="seasons-list">
                         {{#each-reverse _seasons}}
                             <div class="box season-container">
-                                <img class="season-banner" ng-src="{%'{{header.lSrc}}'|hoster:data.hoster%}"/>
+                                <img class="season-banner" ng-src="{%'{{header.src}}'|hoster:data.hoster%}"/>
 
                                 <div class="season-times">
                                     <strong>#{%'{{id}}'|leadingZero:2%}</strong>
@@ -47,7 +48,8 @@
                                                 </td>
                                                 <td title="{{title}}">
                                                 <span class="season-prize" data-extra="{{extra}}"
-                                                      data-extra-type="{{extra_type}}"></span>
+                                                      data-extra-type="{{extra_type}}"
+                                                      data-sprite-pointer="{{sprite_pointer}}"></span>
                                                 </td>
                                                 <td class="right">
                                                     + {{coins}} <i class="coins"></i><br/>

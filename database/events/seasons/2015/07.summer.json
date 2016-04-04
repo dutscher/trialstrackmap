@@ -53,7 +53,8 @@
       "gems": 5,
       "coins": 2000,
       "extra_type": "paintjob",
-      "extra": 7
+      "extra": 7,
+      "sprite_pointer": "6-3"
     },
     {
       "level": 11,
