@@ -15,15 +15,19 @@
             <div class="page-body is-loading" ng-class="{'is-ready':pageReady}">
 
             <textarea copy-text></textarea>
-            <canvas canvas-pointer="{world:1}"></canvas>
+            <canvas canvas-pointer world="{% selectedWorld %}"></canvas>
+            <canvas canvas-pointer only-labels="true" world="{% selectedWorld %}"></canvas>
+            <img canvas-pointer only-dimensions="true" world="{% selectedWorld %}" src="../blank.png" class="track-pointer" usemap="#trackmap" />
 
             {{#with gfx}}
-                <img class="trackmap" alt="{{images.trackmaps.1.alt}}"
-                     src="{{hoster images.trackmaps.1.src hoster}}"
+                <img class="trackmap" alt="{% worldAlt %}"
+                     ng-src="{% worldImage %}"
                      onload="this.isLoaded = true"
                      image-loaded="pageReady = true"
                      ng-class="{'loading':!trackmapReady && !dataLoaded,'all-loaded':trackmapReady && dataLoaded}" />
             {{/with}}
+
+            <map name="trackmap" track-pointer only-ferry="true"></map>
         </div>
     {{/content}}
 {{/extend}}

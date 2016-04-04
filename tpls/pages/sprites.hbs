@@ -1,0 +1,27 @@
+{{#extend "default"}}
+    {{#content "htmlCtrl"}}ng-controller="trackmap" data-without="worldrecords"{{/content}}
+
+    {{#content "styles" mode="append"}}
+        <link rel="stylesheet" type="text/css" href="main.css{{cacheBuster}}"/>
+    {{/content}}
+
+    {{#content "data-event"}}data:loaded{{/content}}
+
+    {{#content "body"}}
+        {{#with ../paintjobs}}
+            {{#each bikes}}
+                <div style="display:inline-block;border:1px solid #000;overflow:hidden;" title="{{bikename @key ../../map.database.bikes}}">
+                    <span style="display:block;white-space:nowrap;">
+                        {{bikename @key ../../map.database.bikes}} ({{this.length}})
+                    </span>
+                    {{#each this}}
+                        <i class="paintjob paintjob-{{@../key}}-{{add @key 1}}" title="{{name}}"></i>
+                        <i class="paintjob-icon paintjob-icon-{{@../key}}-{{add @key 1}}" title="{{name}}"></i>
+                        <br />
+                    {{/each}}
+                </div>
+            {{/each}}
+        {{/with}}
+    {{/content}}
+
+{{/extend}}

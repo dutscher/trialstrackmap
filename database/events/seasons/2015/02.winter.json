@@ -1,0 +1,141 @@
+{
+  "header": {
+    "src": "#1/6GM60c6.jpg",
+    "lSrc": "#0/seasons/02.winter.jpg"
+  },
+  "title": "Winter Season",
+  "days": 28,
+  "date": "09.02.2015",
+  "date_end": "09.03.2015",
+  "prizes": [
+    {
+      "level": 1,
+      "gems": 10,
+      "coins": 10000,
+      "extra_type": "donkey",
+      "extra": "#20"
+    },
+    {
+      "level": 2,
+      "coins": 3000,
+      "extra_type": "donkey",
+      "extra": "#19"
+    },
+    {
+      "level": 3,
+      "coins": 3000,
+      "extra_type": "donkey",
+      "extra": "#18"
+    },
+    {
+      "level": 4,
+      "coins": 3000,
+      "extra_type": "donkey",
+      "extra": "#17"
+    },
+    {
+      "level": 5,
+      "coins": 2000,
+      "extra_type": "paintjob",
+      "extra": 4
+    },
+    {
+      "level": 6,
+      "coins": 2000
+    },
+    {
+      "level": 7,
+      "coins": 2000,
+      "extra_type": "donkey",
+      "extra": "#16"
+    },
+    {
+      "level": 8,
+      "coins": 2000
+    },
+    {
+      "level": 9,
+      "coins": 2000
+    },
+    {
+      "level": 10,
+      "gems": 5,
+      "coins": 2000,
+      "extra_type": "donkey",
+      "extra": " #15"
+    },
+    {
+      "level": 11,
+      "coins": 2000
+    },
+    {
+      "level": 12,
+      "coins": 2000
+    },
+    {
+      "level": 13,
+      "coins": 2000,
+      "extra_type": "donkey",
+      "extra": "#14"
+    },
+    {
+      "level": 14,
+      "coins": 2000
+    },
+    {
+      "level": 15,
+      "gems": 5,
+      "coins": 2000,
+      "extra_type": "paintjob",
+      "extra": 3
+    },
+    {
+      "level": 16,
+      "coins": 1000
+    },
+    {
+      "level": 17,
+      "coins": 1000
+    },
+    {
+      "level": 18,
+      "coins": 1000,
+      "extra_type": "donkey",
+      "extra": "#13"
+    },
+    {
+      "level": 19,
+      "coins": 1000
+    },
+    {
+      "level": 20,
+      "gems": 5,
+      "coins": 1000
+    },
+    {
+      "level": 21,
+      "coins": 1000,
+      "extra_type": "donkey",
+      "extra": "#12"
+    },
+    {
+      "level": 22,
+      "coins": 1000
+    },
+    {
+      "level": 23,
+      "gems": 5,
+      "coins": 1000
+    },
+    {
+      "level": 24,
+      "coins": 1000,
+      "extra_type": "donkey",
+      "extra": "#11"
+    },
+    {
+      "level": 25,
+      "coins": 1000
+    }
+  ]
+}

@@ -30,6 +30,17 @@ module.exports = {
             livereload: true
         }
     },
+    less: {
+        files: [
+            "./css/**/*.less"
+        ],
+        tasks: [
+            "less:dist"
+        ],
+        options: {
+            livereload: true
+        }
+    },
     database: {
         files: [
             "database/**/*.{json,json5}"

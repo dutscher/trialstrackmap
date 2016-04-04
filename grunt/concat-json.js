@@ -15,24 +15,59 @@ module.exports = function (grunt) {
                         "database/media/gfx.json"
                     ],
                     dest: "dist/gfx.json"
-                },
-                {
-                    src: [
-                        "database/events/seasons.json"
-                    ],
-                    dest: "dist/season.json"
                 }
             ]
         }
     };
 
+    grunt.registerTask("concatDatabase", function () {
+        // all jsons to one
+        grunt.task.run("concat-json:database");
+        // seasons concat
+        grunt.task.run("concatSeasonsData");
+    });
+
+    grunt.registerTask("concatSeasonsData", function () {
+        var fs = require("fs"),
+            distFilePath = "dist/seasons.json",
+            prizesFile = "prizes.json",
+            seasonIndex = 1,
+            seasonsFile = {
+                "_prizes": {},
+                "_seasons": []
+            },
+            list = function (path) {
+                fs.readdirSync(path).forEach(function (file) {
+                    if (fs.lstatSync(path + "/" + file).isDirectory()) {
+                        // read dir and step into
+                        list(path + "/" + file);
+                    } else if (file === prizesFile) {
+                        // read prizes
+                        seasonsFile._prizes = require("../" + path + "/" + file);
+                    } else {
+                        // read season
+                        var seasonX = require("../" + path + "/" + file);
+                        seasonX.id = seasonIndex;
+                        seasonsFile._seasons.push(seasonX);
+                        seasonIndex++;
+                    }
+                });
+            };
+        // start read seasons
+        list("database/events/seasons");
+        // make last season active
+        seasonsFile._seasons[seasonIndex - 2].active = true;
+        // write file to dist
+        grunt.file.write(distFilePath, JSON.stringify(seasonsFile, null, 2));
+    });
+
     grunt.registerTask("convertInExtraFile", function () {
         var tracks = require("../database/tracks.json5"), // rename first
             data = {};
 
-        tracks.forEach(function(track){
+        tracks.forEach(function (track) {
             // startline  datacube  candies
-            if("coords" in track) {
+            if ("coords" in track) {
                 data[track.id] = track.coords;
             }
         });
@@ -48,34 +83,34 @@ module.exports = function (grunt) {
         /*
          {"s":{"f":2,"t":"0:35.000"},"g":{"f":1,"t":"0:26.100"},"p":{"f":0,"t":"0:20.400"}}
          {
-             "s": {
-                 "f": 3,
-                 "t": "0:46.000"
-             },
-             "g": {
-                 "f": 0,
-                 "t": "0:38.000"
-             },
-             "p": {
-                 "f": 0,
-                 "t": "0:30.000"
-             }
+         "s": {
+         "f": 3,
+         "t": "0:46.000"
+         },
+         "g": {
+         "f": 0,
+         "t": "0:38.000"
+         },
+         "p": {
+         "f": 0,
+         "t": "0:30.000"
+         }
          }
          ---------
          ["2|035.000","1|026.100","0|020.400"]
          */
 
-        tracks.forEach(function(track){
+        tracks.forEach(function (track) {
             var trackId = track.id;
             data[trackId] = [];
 
-            data[trackId].push(track.s.f + "|" + track.s.t.replace(/(\:)|(\.)/g,""))
-            data[trackId].push(track.g.f + "|" + track.g.t.replace(/(\:)|(\.)/g,""))
-            data[trackId].push(track.p.f + "|" + track.p.t.replace(/(\:)|(\.)/g,""))
+            data[trackId].push(track.s.f + "|" + track.s.t.replace(/(\:)|(\.)/g, ""))
+            data[trackId].push(track.g.f + "|" + track.g.t.replace(/(\:)|(\.)/g, ""))
+            data[trackId].push(track.p.f + "|" + track.p.t.replace(/(\:)|(\.)/g, ""))
         });
 
         var jsonForFile = JSON.stringify(data, null)
-            .replace(/],/g,"],\n\t");
+            .replace(/],/g, "],\n\t");
 
         console.log(jsonForFile)
         //grunt.file.write("database/timesNew.json", jsonForFile);

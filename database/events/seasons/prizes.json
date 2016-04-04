@@ -1,0 +1,29 @@
+{
+  "donkey": "The Donkey Blueprint",
+  "parts": "Part",
+  "unlimited_fuel": "Unlimited Fuel",
+  "doughnut": "Donkey Doughnut",
+  "paintjobs": {
+    "1": "Neon Paintjob for Tango",
+    "2": "Aloha Paintjob for Bronco",
+    "3": "Medic Paintjob for Bronco",
+    "4": "Kaleidoscope Paintjob for Bronco",
+    "5": "Soylent Paintjob for Tango",
+    "6": "Luchador Paintjob for Bronco",
+    "7": "Scales Paintjob for Marauder",
+    "8": "Lava Paintjob for Armadillo",
+    "9": "Spirits Paintjob for Berserker",
+    "10": "Footprint Paintjob for Marauder",
+    "11": "Molten Paintjob for Donkey",
+    "12": "Pumpkin King Paintjob for Mantis",
+    "13": "Sailor Paintjob for Bronco (Take on the seven seas with two wheels!)",
+    "14": "Fallout Paintjob for Donkey (Leave descruction and mayhem in your wake!)",
+    "15": "Raven Paintjob for Bronco (A bad omen? For your opponents maybe?)",
+    "16": "Mithril Paintjob for Mantis (Leave descruction and mayhem in your wake!)",
+    "17": "Hippie Paintjob for Riptide (Peace, love an speed!)",
+    "18": "Spec Ops Paintjob for Agent (No missions too dangerous when you're disguised in this paint job!)"
+  },
+  "tracks": {
+    "1": "KTM Course (Reveal the hidden location of KTM Course!)"
+  }
+}

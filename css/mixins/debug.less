@@ -1,0 +1,21 @@
+.debug(@var) {
+  &:after {
+    content: "@{var}";
+  }
+}
+
+.debug-after(@var) {
+  &:after {
+    content: "@{var}";
+    font-size: 20px;
+    background-color: #fff;
+    border: 1px solid red;
+    padding: 10px;
+    border-radius: 5px;
+    color: red;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+}

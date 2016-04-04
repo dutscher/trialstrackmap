@@ -6,8 +6,8 @@ module.exports = function (grunt) {
         backupPath = "database/backup/";
 
     grunt.registerTask("backupMyJson", [
-        "backupMyjsonIDs",
-        "backupMyJsonWRs"
+        //"backupMyjsonIDs",
+        //"backupMyJsonWRs"
     ]);
 
     grunt.registerTask("backupMyjsonIDs", function () {
