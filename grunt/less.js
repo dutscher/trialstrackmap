@@ -50,7 +50,7 @@ module.exports = function (grunt) {
                     paintJobIndex = Object.keys(paintJobsRAW[bikeID]).indexOf(paintJob);
                 // paintjobs
                 globalVars._paintJobNames.push("paintjob-" + bikeName + "-" + paintJobName);
-                globalVars._paintJobSelectors.push("paintjob-" + bikeID + "-" + (paintJobIndex + 1));
+                globalVars._paintJobSelectors.push("paintjob-" + bikeID + "-" + paintJobIndex);
 
                 var left = (globalVars._paintJobWidth * bikeIndex),
                     top = (globalVars._paintJobHeight * paintJobIndex);
@@ -58,7 +58,7 @@ module.exports = function (grunt) {
                 globalVars._paintJobPositions.push((left > 0 ? "-" : "") + left + (left !== 0 ? "px" : "") + " " + (top > 0 ? "-" : "") + top + (top !== 0 ? "px" : ""));
                 // icons
                 globalVars._paintJobIconNames.push("paintjob-icon-" + bikeName + "-" + paintJobName);
-                globalVars._paintJobIconSelectors.push("paintjob-icon-" + bikeID + "-" + (paintJobIndex + 1));
+                globalVars._paintJobIconSelectors.push("paintjob-icon-" + bikeID + "-" + paintJobIndex);
 
                 var left = (globalVars._paintJobIconWidth * paintJobIndex),
                     top = (globalVars._paintJobIconHeight * bikeIndex);
@@ -74,9 +74,6 @@ module.exports = function (grunt) {
 
     grunt.registerTask("convertLess", function () {
         globalVars = generateSprites();
-
-        console.log("convertLess", globalVars)
-
         grunt.task.run("less:dist");
     });
 
