@@ -2,6 +2,10 @@ module.exports = function(grunt){
 
     grunt.registerTask("server", [
         "doBackup",
+        "serverWithoutBackup"
+    ]);
+
+    grunt.registerTask("serverWithoutBackup", [
         "deploy",
         "connect:dist",
         "watch"

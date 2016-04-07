@@ -2,6 +2,9 @@
   "garage": {
     "src": "xlgQZPv.jpg"
   },
+  "bikeSorting": [
+    1, 2, 3, 13, 4, 5, 6, 7, 8, 9, 10, 11, 19
+  ],
   "bikes": {
     "1": [
        {"src":"mkynlYl.png","name":"Default"}
@@ -95,8 +98,8 @@
       ,{"src":"","name":"Spy Ops"}
     ]
     ,"13": [
-       {"src":"OgCNESy.png","name":"Default"}
-      ,{"src":"jGssWvy.png","name":"Ivory"}
+      {"src":"OgCNESy.png","name":"Default"}
+     ,{"src":"jGssWvy.png","name":"Ivory"}
     ]
     ,"19": [
        {"src":"j8MayTq.png","name":"Default"}

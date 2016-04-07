@@ -5,11 +5,12 @@ module.exports = function (grunt) {
         var globalVars = {},
             paintJobsJSON = require("../database/media/paintjobs.json"),
             bikeNamesJSON = require("../database/bikes.json"),
-            paintJobDimensons = "80x50".split("x"),
-            spritePaintJobDimensions = "1120x550".split("x"),
+            paintJobDimensions = "70x50".split("x"),
+            spritePaintJobDimensions = "910x550".split("x"),
+            spritePaintJobScalePercent = 100,
             paintJobIconDimensons = "100x100".split("x"),
             spritePaintJobIconDimensions = "1100x1300".split("x"),
-            spritePaintJobScalePercent = 50,
+            spritePaintJobIconScalePercent = 50,
             paintJobsRAW = paintJobsJSON.bikes;
 
         function trimName(name) {
@@ -25,24 +26,30 @@ module.exports = function (grunt) {
         }
 
         // paintjobs
-        globalVars._spritePaintJobsDimensionWidth = spritePaintJobDimensions[0];
-        globalVars._spritePaintJobsDimensionHeight = spritePaintJobDimensions[1];
-        globalVars._paintJobWidth = paintJobDimensons[0];
-        globalVars._paintJobHeight = paintJobDimensons[1];
+        globalVars._spritePaintJobsDimensionWidth = calcPercantage(spritePaintJobDimensions[0], spritePaintJobScalePercent);
+        globalVars._spritePaintJobsDimensionHeight = calcPercantage(spritePaintJobDimensions[1], spritePaintJobScalePercent);
+        globalVars._paintJobWidth = calcPercantage(paintJobDimensions[0], spritePaintJobScalePercent);
+        globalVars._paintJobHeight = calcPercantage(paintJobDimensions[1], spritePaintJobScalePercent);
         globalVars._paintJobSelectors = [];
         globalVars._paintJobNames = [];
         globalVars._paintJobPositions = [];
         // paintjob icons
-        globalVars._spritePaintJobsIconDimensionWidth = calcPercantage(spritePaintJobIconDimensions[0], spritePaintJobScalePercent);
-        globalVars._spritePaintJobsIconDimensionHeight = calcPercantage(spritePaintJobIconDimensions[1], spritePaintJobScalePercent);
-        globalVars._paintJobIconWidth = calcPercantage(paintJobIconDimensons[0], spritePaintJobScalePercent);
-        globalVars._paintJobIconHeight = calcPercantage(paintJobIconDimensons[1], spritePaintJobScalePercent);
+        globalVars._spritePaintJobsIconDimensionWidth = calcPercantage(spritePaintJobIconDimensions[0], spritePaintJobIconScalePercent);
+        globalVars._spritePaintJobsIconDimensionHeight = calcPercantage(spritePaintJobIconDimensions[1], spritePaintJobIconScalePercent);
+        globalVars._paintJobIconWidth = calcPercantage(paintJobIconDimensons[0], spritePaintJobIconScalePercent);
+        globalVars._paintJobIconHeight = calcPercantage(paintJobIconDimensons[1], spritePaintJobIconScalePercent);
         globalVars._paintJobIconNames = [];
         globalVars._paintJobIconSelectors = [];
         globalVars._paintJobIconPositions = [];
 
         for (var bikeID in paintJobsRAW) {
-            var bikeName = trimName(bikeNamesJSON[bikeID]),
+
+            if (!(bikeID in bikeNamesJSON)) {
+                console.error("The bikeID: " + bikeID + " isnt in bikeNamesJSON");
+                return;
+            }
+
+            var bikeName = trimName(bikeNamesJSON[bikeID].name),
                 bikeIndex = Object.keys(paintJobsRAW).indexOf(bikeID);
 
             for (var paintJob in paintJobsRAW[bikeID]) {

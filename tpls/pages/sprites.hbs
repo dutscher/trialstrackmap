@@ -8,25 +8,104 @@
     {{#content "data-event"}}data:loaded{{/content}}
 
     {{#content "body"}}
+        <style>
+            .sprite-overview {
+                white-space: nowrap;
+                padding: 0 5px;
+                color: #fff;
+                text-align: center;
+            }
+
+            .sprite-table {
+                margin: 0 auto;
+                empty-cells: hide;
+                table-layout: fixed;
+                color:#fff;
+                border-spacing: 0;
+                border:solid 1px #664635;
+                border-collapse: collapse;
+            }
+
+            .sprite-col-topheader,
+            .sprite-col-header,
+            .sprite-col-footer {
+                padding: 0 5px;
+                background: #664635;
+                border: solid 1px #664635;
+                text-align: center;
+                font-size: 12px;
+            }
+
+            .sprite-col-topheader {
+                background: #fff;
+                color: #664635;
+            }
+
+            .sprite-col-footer {
+                padding: 0;
+                border: 0;
+                background: transparent;
+                vertical-align: top;
+            }
+
+            .sprite-col-footer-label {
+                border: solid 1px #664635;
+                background: #664635;
+            }
+
+            .sprite-col-header {
+                border: solid 1px #876351;
+            }
+
+            .sprite-col-item:not(.is-empty) {
+                border:solid 1px #664635;
+                text-align: center;
+                white-space: nowrap;
+            }
+        </style>
+
         {{#with ../paintjobs}}
-            <div style="white-space:nowrap;padding:0 5px;color:#fff;">
-                {{bike-stats bikes}}
-            </div>
-            <div style="display:flex;">
-            {{#each bikes}}
-                <div style="display:inline-block;vertical-align:top;width:140px;" title="{{bikename @key ../../map.database.bikes}}">
-                    <div style="white-space:nowrap;padding:0 5px;color:#fff;text-align:center;overflow:hidden;">
-                        {{bikename @key ../../map.database.bikes}} ({{this.length}})
+            {{!--<div class="sprite-grid">
+                {{#each bikeSorting}}
+                    <div class="sprite-col{{#if @last}} last-one{{/if}}"
+                     title="{{bikeProperty ../../map.database.bikes this "name"}}">
+                    <div class="sprite-col-header">
+                        {{bikeProperty ../../map.database.bikes this "name"}}
                     </div>
-                    {{#each this}}
-                    <div style="white-space:nowrap;" title="{{name}}">
-                        <i class="paintjob paintjob-{{@../key}}-{{@key}}"></i>
-                        <i class="paintjob-icon paintjob-icon-{{@../key}}-{{@key}}"></i>
+                    <div>
+                        {{#each (lookup ../bikes this)}}
+                            <div title="{{@key}}: {{name}}" class="sprite-col-item{{#if @last}} last-one{{/if}}">
+                                <i class="paintjob-icon paintjob-icon-{{@../this}}-{{@key}}"></i>
+                                <i class="paintjob paintjob-{{@../this}}-{{@key}}"></i>
+                            </div>
+                        {{/each}}
                     </div>
-                    {{/each}}
+                    <div class="sprite-col-footer">
+                        {{paintjob-length ../bikes this}}
+                    </div>
                 </div>
-            {{/each}}
-            </div>
+                {{/each}}
+
+            </div>--}}
+
+            <table class="sprite-table">
+                <tr>
+                    <td colspan="13">
+                        <div class="sprite-overview">
+                            {{bike-stats bikes}}
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    {{{td-bike-tiers ../map.database.bikes}}}
+                </tr>
+                <tr>
+                {{#each bikeSorting}}
+                    <td class="sprite-col-header">{{bikeProperty ../../map.database.bikes this "name"}}</td>
+                {{/each}}
+                </tr>
+                {{{each-all-paintjobs ../../map.database.bikes this}}}
+            </table>
         {{/with}}
     {{/content}}
 {{/extend}}

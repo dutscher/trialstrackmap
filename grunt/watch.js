@@ -1,55 +1,48 @@
-module.exports = {
-    lib: {
-        files: [
-            "lib/**/*.js"
-        ],
-        tasks: [
-            "concat:dist"
-        ],
+module.exports = function (grunt) {
+
+    var config = require("./connect-config.json5");
+
+    return {
         options: {
-            livereload: true
-        }
-    },
-    html: {
-        files: [
-            "./*.html",
-            "./css/*.css"
-        ],
-        options: {
-            livereload: true
-        }
-    },
-    assemble: {
-        files: [
-            "./tpls/**/*.hbs"
-        ],
-        tasks: [
-            "deployHtml"
-        ],
-        options: {
-            livereload: true
-        }
-    },
-    less: {
-        files: [
-            "./css/**/*.less"
-        ],
-        tasks: [
-            "less:dist"
-        ],
-        options: {
-            livereload: true
-        }
-    },
-    database: {
-        files: [
-            "database/**/*.{json,json5}"
-        ],
-        tasks: [
-            "deploy"
-        ],
-        options: {
-            livereload: true
+            livereload: config.livereload
+        },
+        lib: {
+            files: [
+                "lib/**/*.js"
+            ],
+            tasks: [
+                "concat:dist"
+            ]
+        },
+        html: {
+            files: [
+                "./*.html",
+                "./css/*.css"
+            ]
+        },
+        assemble: {
+            files: [
+                "./tpls/**/*.hbs"
+            ],
+            tasks: [
+                "deployHtml"
+            ]
+        },
+        less: {
+            files: [
+                "./css/**/*.less"
+            ],
+            tasks: [
+                "less:dist"
+            ]
+        },
+        database: {
+            files: [
+                "database/**/*.{json,json5}"
+            ],
+            tasks: [
+                "deploy"
+            ]
         }
     }
 };
