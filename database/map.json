@@ -39,6 +39,14 @@
   ],
   "usefull_links": [
     {
+      "href": "http://tf.lforo.com",
+      "title": "Actual Leaderboards with first 10.000 ranks"
+    },
+    {
+      "href": "http://trials.bonxy.net",
+      "title": "Leaderboards, Seasons and Tracklist. Based on tf.lforo."
+    },
+    {
       "href": "https://github.com/dutscher/trialstrackmap",
       "title": "Trackmap @ Github"
     },
