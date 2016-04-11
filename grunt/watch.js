@@ -12,13 +12,19 @@ module.exports = function (grunt) {
             ],
             tasks: [
                 "concat:dist"
-            ]
+            ],
+            options: {
+                livereload: config.livereload
+            }
         },
         html: {
             files: [
                 "./*.html",
                 "./css/*.css"
-            ]
+            ],
+            options: {
+                livereload: config.livereload
+            }
         },
         assemble: {
             files: [
@@ -26,7 +32,10 @@ module.exports = function (grunt) {
             ],
             tasks: [
                 "deployHtml"
-            ]
+            ],
+            options: {
+                livereload: config.livereload
+            }
         },
         less: {
             files: [
@@ -35,7 +44,10 @@ module.exports = function (grunt) {
             ],
             tasks: [
                 "less:dist"
-            ]
+            ],
+            options: {
+                livereload: config.livereload
+            }
         },
         database: {
             files: [
@@ -43,7 +55,10 @@ module.exports = function (grunt) {
             ],
             tasks: [
                 "deploy"
-            ]
+            ],
+            options: {
+                livereload: config.livereload
+            }
         }
     }
 };
