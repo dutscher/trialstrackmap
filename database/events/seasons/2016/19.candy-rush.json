@@ -16,7 +16,7 @@
       "extra": 16,
       "coins": 9000,
       "gems": 10,
-      "sprite_pointer": "5-7"
+      "sprite_pointer": "mantis-mithril"
     },
     {
       "level": 2,
@@ -67,7 +67,7 @@
       "extra": 15,
       "coins": 1000,
       "gems": 5,
-      "sprite_pointer": "3-11"
+      "sprite_pointer": "bronco-sailor"
     },
     {
       "level": 11,

@@ -1,9 +1,9 @@
 .paintjob {
     display: inline-block;
     background-repeat: no-repeat;
-    width: 52.5px;
-    height: 37.5px;
-    background-size: 682.5px 412.5px;
+    width: 63px;
+    height: 45px;
+    background-size: 819px 495px;
     background-position: 0 0;
     vertical-align: middle;
     background-image: url("//i.imgur.com/0PCNmXO.png");
@@ -11,9 +11,9 @@
 .paintjob-icon {
     display: inline-block;
     background-repeat: no-repeat;
-    width: 25px;
-    height: 25px;
-    background-size: 275px 325px;
+    width: 50px;
+    height: 50px;
+    background-size: 550px 650px;
     background-position: 0 0;
     vertical-align: middle;
     background-image: url("//i.imgur.com/vaU70MR.png");
@@ -28,601 +28,601 @@
 }
 .paintjob-1-1,
 .paintjob-armadillo-raising-star {
-    background-position: 0 -37.5px;
+    background-position: 0 -45px;
 }
 .paintjob-icon-1-1,
 .paintjob-icon-armadillo-raising-star {
-    background-position: -25px 0;
+    background-position: -50px 0;
 }
 .paintjob-1-2,
 .paintjob-armadillo-lava {
-    background-position: 0 -75px;
+    background-position: 0 -90px;
 }
 .paintjob-icon-1-2,
 .paintjob-icon-armadillo-lava {
-    background-position: -50px 0;
+    background-position: -100px 0;
 }
 .paintjob-1-3,
 .paintjob-armadillo-boogeyman {
-    background-position: 0 -112.5px;
+    background-position: 0 -135px;
 }
 .paintjob-icon-1-3,
 .paintjob-icon-armadillo-boogeyman {
-    background-position: -75px 0;
+    background-position: -150px 0;
 }
 .paintjob-1-4,
 .paintjob-armadillo-saddle-bags {
-    background-position: 0 -150px;
+    background-position: 0 -180px;
 }
 .paintjob-icon-1-4,
 .paintjob-icon-armadillo-saddle-bags {
-    background-position: -100px 0;
+    background-position: -200px 0;
 }
 .paintjob-1-5,
 .paintjob-armadillo-cowhide {
-    background-position: 0 -187.5px;
+    background-position: 0 -225px;
 }
 .paintjob-icon-1-5,
 .paintjob-icon-armadillo-cowhide {
-    background-position: -125px 0;
+    background-position: -250px 0;
 }
 .paintjob-1-6,
 .paintjob-armadillo-hungry-shark {
-    background-position: 0 -225px;
+    background-position: 0 -270px;
 }
 .paintjob-icon-1-6,
 .paintjob-icon-armadillo-hungry-shark {
-    background-position: -150px 0;
+    background-position: -300px 0;
 }
 .paintjob-2-0,
 .paintjob-tango-default {
-    background-position: -52.5px 0;
+    background-position: -63px 0;
 }
 .paintjob-icon-2-0,
 .paintjob-icon-tango-default {
-    background-position: 0 -25px;
+    background-position: 0 -50px;
 }
 .paintjob-2-1,
 .paintjob-tango-flaming {
-    background-position: -52.5px -37.5px;
+    background-position: -63px -45px;
 }
 .paintjob-icon-2-1,
 .paintjob-icon-tango-flaming {
-    background-position: -25px -25px;
+    background-position: -50px -50px;
 }
 .paintjob-2-2,
 .paintjob-tango-uk {
-    background-position: -52.5px -75px;
+    background-position: -63px -90px;
 }
 .paintjob-icon-2-2,
 .paintjob-icon-tango-uk {
-    background-position: -50px -25px;
+    background-position: -100px -50px;
 }
 .paintjob-2-3,
 .paintjob-tango-france {
-    background-position: -52.5px -112.5px;
+    background-position: -63px -135px;
 }
 .paintjob-icon-2-3,
 .paintjob-icon-tango-france {
-    background-position: -75px -25px;
+    background-position: -150px -50px;
 }
 .paintjob-2-4,
 .paintjob-tango-neon {
-    background-position: -52.5px -150px;
+    background-position: -63px -180px;
 }
 .paintjob-icon-2-4,
 .paintjob-icon-tango-neon {
-    background-position: -100px -25px;
+    background-position: -200px -50px;
 }
 .paintjob-2-5,
 .paintjob-tango-soylent {
-    background-position: -52.5px -187.5px;
+    background-position: -63px -225px;
 }
 .paintjob-icon-2-5,
 .paintjob-icon-tango-soylent {
-    background-position: -125px -25px;
+    background-position: -250px -50px;
 }
 .paintjob-2-6,
 .paintjob-tango-stiched {
-    background-position: -52.5px -225px;
+    background-position: -63px -270px;
 }
 .paintjob-icon-2-6,
 .paintjob-icon-tango-stiched {
-    background-position: -150px -25px;
+    background-position: -300px -50px;
 }
 .paintjob-2-7,
 .paintjob-tango-redlynx {
-    background-position: -52.5px -262.5px;
+    background-position: -63px -315px;
 }
 .paintjob-icon-2-7,
 .paintjob-icon-tango-redlynx {
-    background-position: -175px -25px;
+    background-position: -350px -50px;
 }
 .paintjob-3-0,
 .paintjob-bronco-default {
-    background-position: -105px 0;
+    background-position: -126px 0;
 }
 .paintjob-icon-3-0,
 .paintjob-icon-bronco-default {
-    background-position: 0 -50px;
+    background-position: 0 -100px;
 }
 .paintjob-3-1,
 .paintjob-bronco-wasp {
-    background-position: -105px -37.5px;
+    background-position: -126px -45px;
 }
 .paintjob-icon-3-1,
 .paintjob-icon-bronco-wasp {
-    background-position: -25px -50px;
+    background-position: -50px -100px;
 }
 .paintjob-3-2,
 .paintjob-bronco-number-8 {
-    background-position: -105px -75px;
+    background-position: -126px -90px;
 }
 .paintjob-icon-3-2,
 .paintjob-icon-bronco-number-8 {
-    background-position: -50px -50px;
+    background-position: -100px -100px;
 }
 .paintjob-3-3,
 .paintjob-bronco-sailor {
-    background-position: -105px -112.5px;
+    background-position: -126px -135px;
 }
 .paintjob-icon-3-3,
 .paintjob-icon-bronco-sailor {
-    background-position: -75px -50px;
+    background-position: -150px -100px;
 }
 .paintjob-3-4,
 .paintjob-bronco-medic {
-    background-position: -105px -150px;
+    background-position: -126px -180px;
 }
 .paintjob-icon-3-4,
 .paintjob-icon-bronco-medic {
-    background-position: -100px -50px;
+    background-position: -200px -100px;
 }
 .paintjob-3-5,
 .paintjob-bronco-aloha {
-    background-position: -105px -187.5px;
+    background-position: -126px -225px;
 }
 .paintjob-icon-3-5,
 .paintjob-icon-bronco-aloha {
-    background-position: -125px -50px;
+    background-position: -250px -100px;
 }
 .paintjob-3-6,
 .paintjob-bronco-luchador {
-    background-position: -105px -225px;
+    background-position: -126px -270px;
 }
 .paintjob-icon-3-6,
 .paintjob-icon-bronco-luchador {
-    background-position: -150px -50px;
+    background-position: -300px -100px;
 }
 .paintjob-3-7,
 .paintjob-bronco-kaleidoscope {
-    background-position: -105px -262.5px;
+    background-position: -126px -315px;
 }
 .paintjob-icon-3-7,
 .paintjob-icon-bronco-kaleidoscope {
-    background-position: -175px -50px;
+    background-position: -350px -100px;
 }
 .paintjob-3-8,
 .paintjob-bronco-raven {
-    background-position: -105px -300px;
+    background-position: -126px -360px;
 }
 .paintjob-icon-3-8,
 .paintjob-icon-bronco-raven {
-    background-position: -200px -50px;
+    background-position: -400px -100px;
 }
 .paintjob-3-9,
 .paintjob-bronco-independence {
-    background-position: -105px -337.5px;
+    background-position: -126px -405px;
 }
 .paintjob-icon-3-9,
 .paintjob-icon-bronco-independence {
-    background-position: -225px -50px;
+    background-position: -450px -100px;
 }
 .paintjob-3-10,
 .paintjob-bronco-valentine {
-    background-position: -105px -375px;
+    background-position: -126px -450px;
 }
 .paintjob-icon-3-10,
 .paintjob-icon-bronco-valentine {
-    background-position: -250px -50px;
+    background-position: -500px -100px;
 }
 .paintjob-4-0,
 .paintjob-jackal-default {
-    background-position: -157.5px 0;
+    background-position: -189px 0;
 }
 .paintjob-icon-4-0,
 .paintjob-icon-jackal-default {
-    background-position: 0 -75px;
+    background-position: 0 -150px;
 }
 .paintjob-4-1,
 .paintjob-jackal-camouflage {
-    background-position: -157.5px -37.5px;
+    background-position: -189px -45px;
 }
 .paintjob-icon-4-1,
 .paintjob-icon-jackal-camouflage {
-    background-position: -25px -75px;
+    background-position: -50px -150px;
 }
 .paintjob-4-2,
 .paintjob-jackal-samsarin {
-    background-position: -157.5px -75px;
+    background-position: -189px -90px;
 }
 .paintjob-icon-4-2,
 .paintjob-icon-jackal-samsarin {
-    background-position: -50px -75px;
+    background-position: -100px -150px;
 }
 .paintjob-4-3,
 .paintjob-jackal-skeleton {
-    background-position: -157.5px -112.5px;
+    background-position: -189px -135px;
 }
 .paintjob-icon-4-3,
 .paintjob-icon-jackal-skeleton {
-    background-position: -75px -75px;
+    background-position: -150px -150px;
 }
 .paintjob-4-4,
 .paintjob-jackal-ice-cube {
-    background-position: -157.5px -150px;
+    background-position: -189px -180px;
 }
 .paintjob-icon-4-4,
 .paintjob-icon-jackal-ice-cube {
-    background-position: -100px -75px;
+    background-position: -200px -150px;
 }
 .paintjob-4-5,
 .paintjob-jackal-edge {
-    background-position: -157.5px -187.5px;
+    background-position: -189px -225px;
 }
 .paintjob-icon-4-5,
 .paintjob-icon-jackal-edge {
-    background-position: -125px -75px;
+    background-position: -250px -150px;
 }
 .paintjob-5-0,
 .paintjob-mantis-default {
-    background-position: -210px 0;
+    background-position: -252px 0;
 }
 .paintjob-icon-5-0,
 .paintjob-icon-mantis-default {
-    background-position: 0 -100px;
+    background-position: 0 -200px;
 }
 .paintjob-5-1,
 .paintjob-mantis-gold {
-    background-position: -210px -37.5px;
+    background-position: -252px -45px;
 }
 .paintjob-icon-5-1,
 .paintjob-icon-mantis-gold {
-    background-position: -25px -100px;
+    background-position: -50px -200px;
 }
 .paintjob-5-2,
 .paintjob-mantis-marine {
-    background-position: -210px -75px;
+    background-position: -252px -90px;
 }
 .paintjob-icon-5-2,
 .paintjob-icon-mantis-marine {
-    background-position: -50px -100px;
+    background-position: -100px -200px;
 }
 .paintjob-5-3,
 .paintjob-mantis-mithril {
-    background-position: -210px -112.5px;
+    background-position: -252px -135px;
 }
 .paintjob-icon-5-3,
 .paintjob-icon-mantis-mithril {
-    background-position: -75px -100px;
+    background-position: -150px -200px;
 }
 .paintjob-5-4,
 .paintjob-mantis-pumpkin-king {
-    background-position: -210px -150px;
+    background-position: -252px -180px;
 }
 .paintjob-icon-5-4,
 .paintjob-icon-mantis-pumpkin-king {
-    background-position: -100px -100px;
+    background-position: -200px -200px;
 }
 .paintjob-5-5,
 .paintjob-mantis-sheriffs-star {
-    background-position: -210px -187.5px;
+    background-position: -252px -225px;
 }
 .paintjob-icon-5-5,
 .paintjob-icon-mantis-sheriffs-star {
-    background-position: -125px -100px;
+    background-position: -250px -200px;
 }
 .paintjob-5-6,
 .paintjob-mantis-fanny-pack {
-    background-position: -210px -225px;
+    background-position: -252px -270px;
 }
 .paintjob-icon-5-6,
 .paintjob-icon-mantis-fanny-pack {
-    background-position: -150px -100px;
+    background-position: -300px -200px;
 }
 .paintjob-6-0,
 .paintjob-marauder-default {
-    background-position: -262.5px 0;
+    background-position: -315px 0;
 }
 .paintjob-icon-6-0,
 .paintjob-icon-marauder-default {
-    background-position: 0 -125px;
+    background-position: 0 -250px;
 }
 .paintjob-6-1,
 .paintjob-marauder-swashbuckler {
-    background-position: -262.5px -37.5px;
+    background-position: -315px -45px;
 }
 .paintjob-icon-6-1,
 .paintjob-icon-marauder-swashbuckler {
-    background-position: -25px -125px;
+    background-position: -50px -250px;
 }
 .paintjob-6-2,
 .paintjob-marauder-scales {
-    background-position: -262.5px -75px;
+    background-position: -315px -90px;
 }
 .paintjob-icon-6-2,
 .paintjob-icon-marauder-scales {
-    background-position: -50px -125px;
+    background-position: -100px -250px;
 }
 .paintjob-6-3,
 .paintjob-marauder-bigfoot {
-    background-position: -262.5px -112.5px;
+    background-position: -315px -135px;
 }
 .paintjob-icon-6-3,
 .paintjob-icon-marauder-bigfoot {
-    background-position: -75px -125px;
+    background-position: -150px -250px;
 }
 .paintjob-6-4,
 .paintjob-marauder-wolf {
-    background-position: -262.5px -150px;
+    background-position: -315px -180px;
 }
 .paintjob-icon-6-4,
 .paintjob-icon-marauder-wolf {
-    background-position: -100px -125px;
+    background-position: -200px -250px;
 }
 .paintjob-7-0,
 .paintjob-riptide-gnasher-default {
-    background-position: -315px 0;
+    background-position: -378px 0;
 }
 .paintjob-icon-7-0,
 .paintjob-icon-riptide-gnasher-default {
-    background-position: 0 -150px;
+    background-position: 0 -300px;
 }
 .paintjob-7-1,
 .paintjob-riptide-snake {
-    background-position: -315px -37.5px;
+    background-position: -378px -45px;
 }
 .paintjob-icon-7-1,
 .paintjob-icon-riptide-snake {
-    background-position: -25px -150px;
+    background-position: -50px -300px;
 }
 .paintjob-7-2,
 .paintjob-riptide-parrot {
-    background-position: -315px -75px;
+    background-position: -378px -90px;
 }
 .paintjob-icon-7-2,
 .paintjob-icon-riptide-parrot {
-    background-position: -50px -150px;
+    background-position: -100px -300px;
 }
 .paintjob-7-3,
 .paintjob-riptide-squash {
-    background-position: -315px -112.5px;
+    background-position: -378px -135px;
 }
 .paintjob-icon-7-3,
 .paintjob-icon-riptide-squash {
-    background-position: -75px -150px;
+    background-position: -150px -300px;
 }
 .paintjob-7-4,
 .paintjob-riptide-hippie {
-    background-position: -315px -150px;
+    background-position: -378px -180px;
 }
 .paintjob-icon-7-4,
 .paintjob-icon-riptide-hippie {
-    background-position: -100px -150px;
+    background-position: -200px -300px;
 }
 .paintjob-7-5,
 .paintjob-riptide-cheetah {
-    background-position: -315px -187.5px;
+    background-position: -378px -225px;
 }
 .paintjob-icon-7-5,
 .paintjob-icon-riptide-cheetah {
-    background-position: -125px -150px;
+    background-position: -250px -300px;
 }
 .paintjob-8-0,
 .paintjob-berserker-zebra-default {
-    background-position: -367.5px 0;
+    background-position: -441px 0;
 }
 .paintjob-icon-8-0,
 .paintjob-icon-berserker-zebra-default {
-    background-position: 0 -175px;
+    background-position: 0 -350px;
 }
 .paintjob-8-1,
 .paintjob-berserker-pimpin {
-    background-position: -367.5px -37.5px;
+    background-position: -441px -45px;
 }
 .paintjob-icon-8-1,
 .paintjob-icon-berserker-pimpin {
-    background-position: -25px -175px;
+    background-position: -50px -350px;
 }
 .paintjob-8-2,
 .paintjob-berserker-venom-spider {
-    background-position: -367.5px -75px;
+    background-position: -441px -90px;
 }
 .paintjob-icon-8-2,
 .paintjob-icon-berserker-venom-spider {
-    background-position: -50px -175px;
+    background-position: -100px -350px;
 }
 .paintjob-8-3,
 .paintjob-berserker-spirits {
-    background-position: -367.5px -112.5px;
+    background-position: -441px -135px;
 }
 .paintjob-icon-8-3,
 .paintjob-icon-berserker-spirits {
-    background-position: -75px -175px;
+    background-position: -150px -350px;
 }
 .paintjob-8-4,
 .paintjob-berserker-batwing {
-    background-position: -367.5px -150px;
+    background-position: -441px -180px;
 }
 .paintjob-icon-8-4,
 .paintjob-icon-berserker-batwing {
-    background-position: -100px -175px;
+    background-position: -200px -350px;
 }
 .paintjob-9-0,
 .paintjob-phantom-default {
-    background-position: -420px 0;
+    background-position: -504px 0;
 }
 .paintjob-icon-9-0,
 .paintjob-icon-phantom-default {
-    background-position: 0 -200px;
+    background-position: 0 -400px;
 }
 .paintjob-9-1,
 .paintjob-phantom-woodadventure {
-    background-position: -420px -37.5px;
+    background-position: -504px -45px;
 }
 .paintjob-icon-9-1,
 .paintjob-icon-phantom-woodadventure {
-    background-position: -25px -200px;
+    background-position: -50px -400px;
 }
 .paintjob-9-2,
 .paintjob-phantom-apache {
-    background-position: -420px -75px;
+    background-position: -504px -90px;
 }
 .paintjob-icon-9-2,
 .paintjob-icon-phantom-apache {
-    background-position: -50px -200px;
+    background-position: -100px -400px;
 }
 .paintjob-9-3,
 .paintjob-phantom-noble {
-    background-position: -420px -112.5px;
+    background-position: -504px -135px;
 }
 .paintjob-icon-9-3,
 .paintjob-icon-phantom-noble {
-    background-position: -75px -200px;
+    background-position: -150px -400px;
 }
 .paintjob-9-4,
 .paintjob-phantom-saurus {
-    background-position: -420px -150px;
+    background-position: -504px -180px;
 }
 .paintjob-icon-9-4,
 .paintjob-icon-phantom-saurus {
-    background-position: -100px -200px;
+    background-position: -200px -400px;
 }
 .paintjob-10-0,
 .paintjob-stallion-default {
-    background-position: -472.5px 0;
+    background-position: -567px 0;
 }
 .paintjob-icon-10-0,
 .paintjob-icon-stallion-default {
-    background-position: 0 -225px;
+    background-position: 0 -450px;
 }
 .paintjob-10-1,
 .paintjob-stallion-palmino {
-    background-position: -472.5px -37.5px;
+    background-position: -567px -45px;
 }
 .paintjob-icon-10-1,
 .paintjob-icon-stallion-palmino {
-    background-position: -25px -225px;
+    background-position: -50px -450px;
 }
 .paintjob-10-2,
 .paintjob-stallion-snowy {
-    background-position: -472.5px -75px;
+    background-position: -567px -90px;
 }
 .paintjob-icon-10-2,
 .paintjob-icon-stallion-snowy {
-    background-position: -50px -225px;
+    background-position: -100px -450px;
 }
 .paintjob-10-3,
 .paintjob-stallion-blacky {
-    background-position: -472.5px -112.5px;
+    background-position: -567px -135px;
 }
 .paintjob-icon-10-3,
 .paintjob-icon-stallion-blacky {
-    background-position: -75px -225px;
+    background-position: -150px -450px;
 }
 .paintjob-10-4,
 .paintjob-stallion-skelly {
-    background-position: -472.5px -150px;
+    background-position: -567px -180px;
 }
 .paintjob-icon-10-4,
 .paintjob-icon-stallion-skelly {
-    background-position: -100px -225px;
+    background-position: -200px -450px;
 }
 .paintjob-11-0,
 .paintjob-agent-default {
-    background-position: -525px 0;
+    background-position: -630px 0;
 }
 .paintjob-icon-11-0,
 .paintjob-icon-agent-default {
-    background-position: 0 -250px;
+    background-position: 0 -500px;
 }
 .paintjob-11-1,
 .paintjob-agent-fire {
-    background-position: -525px -37.5px;
+    background-position: -630px -45px;
 }
 .paintjob-icon-11-1,
 .paintjob-icon-agent-fire {
-    background-position: -25px -250px;
+    background-position: -50px -500px;
 }
 .paintjob-11-2,
 .paintjob-agent-spy-ops {
-    background-position: -525px -75px;
+    background-position: -630px -90px;
 }
 .paintjob-icon-11-2,
 .paintjob-icon-agent-spy-ops {
-    background-position: -50px -250px;
+    background-position: -100px -500px;
 }
 .paintjob-11-3,
 .paintjob-agent-white {
-    background-position: -525px -112.5px;
+    background-position: -630px -135px;
 }
 .paintjob-icon-11-3,
 .paintjob-icon-agent-white {
-    background-position: -75px -250px;
+    background-position: -150px -500px;
 }
 .paintjob-13-0,
 .paintjob-ktm-500-exc-default {
-    background-position: -577.5px 0;
+    background-position: -693px 0;
 }
 .paintjob-icon-13-0,
 .paintjob-icon-ktm-500-exc-default {
-    background-position: 0 -275px;
+    background-position: 0 -550px;
 }
 .paintjob-13-1,
 .paintjob-ktm-500-exc-ivory {
-    background-position: -577.5px -37.5px;
+    background-position: -693px -45px;
 }
 .paintjob-icon-13-1,
 .paintjob-icon-ktm-500-exc-ivory {
-    background-position: -25px -275px;
+    background-position: -50px -550px;
 }
 .paintjob-19-0,
 .paintjob-donkey-default {
-    background-position: -630px 0;
+    background-position: -756px 0;
 }
 .paintjob-icon-19-0,
 .paintjob-icon-donkey-default {
-    background-position: 0 -300px;
+    background-position: 0 -600px;
 }
 .paintjob-19-1,
 .paintjob-donkey-molten {
-    background-position: -630px -37.5px;
+    background-position: -756px -45px;
 }
 .paintjob-icon-19-1,
 .paintjob-icon-donkey-molten {
-    background-position: -25px -300px;
+    background-position: -50px -600px;
 }
 .paintjob-19-2,
 .paintjob-donkey-fallout {
-    background-position: -630px -75px;
+    background-position: -756px -90px;
 }
 .paintjob-icon-19-2,
 .paintjob-icon-donkey-fallout {
-    background-position: -50px -300px;
+    background-position: -100px -600px;
 }
 .paintjob-19-3,
 .paintjob-donkey-blizzard {
-    background-position: -630px -112.5px;
+    background-position: -756px -135px;
 }
 .paintjob-icon-19-3,
 .paintjob-icon-donkey-blizzard {
-    background-position: -75px -300px;
+    background-position: -150px -600px;
 }
 .paintjob-19-4,
 .paintjob-donkey-candy-cane {
-    background-position: -630px -150px;
+    background-position: -756px -180px;
 }
 .paintjob-icon-19-4,
 .paintjob-icon-donkey-candy-cane {
-    background-position: -100px -300px;
+    background-position: -200px -600px;
 }

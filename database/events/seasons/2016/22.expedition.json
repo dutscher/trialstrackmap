@@ -1,78 +1,76 @@
 {
   "header": {
-    "src": "#1/ub8AV1L.jpg",
-    "lSrc": "#0/seasons/21.ultimate.jpg"
+    "src": "#1/iu37HL3.jpg",
+    "lSrc": "#0/seasons/22.expedition.jpg"
   },
-  "title": "Ultimate Season",
-  "date": "27.03.2016",
-  "date_end": "26.04.2016",
-  "duration": "3h",
-  "free_showdowns": "5",
-  "ticket_regain": "45m",
+  "title": "Expedition Season",
+  "date": "26.04.2016",
+  "date_end": "23.05.2016",
+  "duration": "5h",
+  "free_showdowns": "2",
+  "ticket_regain": "30m",
   "prizes": [
     {
       "level": 1,
-      "extra_type": "paintjob",
-      "extra": 18,
-      "coins": 5000,
-      "gems": 10,
-      "sprite_pointer": "agent-spy-ops"
+      "extra_type": "track",
+      "extra": 2,
+      "coins": 6000,
+      "gems": 0
     },
     {
       "level": 2,
       "extra_type": "part",
-      "extra": "chain-4",
-      "coins": 3000
+      "extra": "gear-4",
+      "coins": 3500,
+      "gems": 10
     },
     {
       "level": 3,
-      "extra_type": "part",
-      "extra": "gear-4",
-      "coins": 3000,
-      "gems": 7
+      "extra_type": "doughnut",
+      "coins": 3000
     },
     {
       "level": 4,
-      "extra_type": "doughnut",
-      "coins": 2000
+      "extra_type": "unlimited-fuel",
+      "coins": 2500
     },
     {
       "level": 5,
-      "extra_type": "coins-gems",
+      "extra_type": "doughnut",
       "coins": 2000,
       "gems": 5
     },
     {
       "level": 6,
-      "extra_type": "doughnut",
+      "extra_type": "part",
+      "extra": "pipe-4",
       "coins": 2000
     },
     {
       "level": 7,
-      "extra_type": "part",
-      "extra": "chain-4",
-      "coins": 1500
+      "extra_type": "doughnut",
+      "coins": 2000
     },
     {
       "level": 8,
-      "extra_type": "doughnut",
-      "coins": 1500
+      "extra_type": "coins-gems",
+      "coins": 1500,
+      "gems": 5
     },
     {
       "level": 9,
-      "extra_type": "unlimited-fuel",
+      "extra_type": "part",
+      "extra": "sheet-4",
       "coins": 1500
     },
     {
       "level": 10,
-      "extra_type": "doughnut",
-      "coins": 1500,
-      "gems": 3
+      "extra_type": "unlimited-fuel",
+      "coins": 1500
     },
     {
       "level": 11,
-      "extra_type": "part",
-      "extra": "spring-4",
+      "extra_type": "doughnut",
       "coins": 1500
     },
     {
@@ -82,7 +80,8 @@
     },
     {
       "level": 13,
-      "extra_type": "unlimited-fuel",
+      "extra_type": "part",
+      "extra": "spring-3",
       "coins": 1000
     },
     {
@@ -92,8 +91,7 @@
     },
     {
       "level": 15,
-      "extra_type": "part",
-      "extra": "spark-3",
+      "extra_type": "coins-gems",
       "coins": 1000,
       "gems": 3
     },
@@ -104,6 +102,8 @@
     },
     {
       "level": 17,
+      "extra_type": "part",
+      "extra": "chain-3",
       "coins": 1000
     },
     {
@@ -113,20 +113,20 @@
     },
     {
       "level": 19,
-      "extra_type": "part",
-      "extra": "sheet-2",
+      "extra_type": "doughnut",
       "coins": 1000
     },
     {
       "level": 20,
-      "extra_type": "doughnut",
-      "coins": 750,
-      "gems": 3
+      "extra_type": "part",
+      "extra": "nut-2",
+      "coins": 1000
     },
     {
       "level": 21,
-      "extra_type": "unlimited-fuel",
-      "coins": 750
+      "extra_type": "coins-gems",
+      "coins": 750,
+      "gems": 3
     },
     {
       "level": 22,
@@ -136,19 +136,20 @@
     {
       "level": 23,
       "extra_type": "part",
-      "extra": "chain-2",
+      "extra": "bolt-2",
       "coins": 750
     },
     {
       "level": 24,
-      "extra_type": "coins-gems",
-      "gems": 3,
-      "coins": 750
+      "extra_type": "unlimited-fuel",
+      "coins": 750,
+      "gems": 3
     },
     {
       "level": 25,
-      "extra_type": "coins",
-      "coins": 750
+      "extra_type": "part",
+      "extra": "spark-1",
+      "coins": 500
     }
   ]
 }

@@ -13,7 +13,7 @@
       "extra": 14,
       "coins": 9000,
       "gems": 10,
-      "sprite_pointer": "19-5"
+      "sprite_pointer": "donkey-fallout"
     },
     {
       "level": 2,
@@ -63,7 +63,7 @@
       "extra": 13,
       "coins": 1000,
       "gems": 5,
-      "sprite_pointer": "3-10"
+      "sprite_pointer": "bronco-sailor"
     },
     {
       "level": 11,

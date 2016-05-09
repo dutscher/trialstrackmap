@@ -13,7 +13,7 @@
       "coins": 10000,
       "extra_type": "paintjob",
       "extra": 11,
-      "sprite_pointer": "19-2"
+      "sprite_pointer": "donkey-molten"
     },
     {
       "level": 2,
@@ -48,7 +48,7 @@
       "coins": 2000,
       "extra_type": "paintjob",
       "extra": 10,
-      "sprite_pointer": "6-4"
+      "sprite_pointer": "marauder-bigfoot"
     },
     {
       "level": 9,
@@ -104,7 +104,7 @@
       "coins": 1000,
       "extra_type": "paintjob",
       "extra": 5,
-      "sprite_pointer": "2-5"
+      "sprite_pointer": "tango-soylent"
     },
     {
       "level": 21,

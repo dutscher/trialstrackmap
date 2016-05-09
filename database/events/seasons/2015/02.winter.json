@@ -38,7 +38,7 @@
       "coins": 2000,
       "extra_type": "paintjob",
       "extra": 4,
-      "sprite_pointer": "3-6"
+      "sprite_pointer": "bronco-kaleidoscope"
     },
     {
       "level": 6,
@@ -89,7 +89,7 @@
       "coins": 2000,
       "extra_type": "paintjob",
       "extra": 3,
-      "sprite_pointer": "3-4"
+      "sprite_pointer": "bronco-medic"
     },
     {
       "level": 16,

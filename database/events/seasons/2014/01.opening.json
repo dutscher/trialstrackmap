@@ -100,7 +100,7 @@
       "coins": 5000,
       "extra_type": "paintjob",
       "extra": 2,
-      "sprite_pointer": "3-5"
+      "sprite_pointer": "bronco-aloha"
     },
     {
       "level": 16,
@@ -126,7 +126,7 @@
       "coins": 3000,
       "extra_type": "paintjob",
       "extra": 1,
-      "sprite_pointer": "2-4"
+      "sprite_pointer": "tango-neon"
     },
     {
       "level": 21,
