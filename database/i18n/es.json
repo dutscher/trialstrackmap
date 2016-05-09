@@ -102,8 +102,8 @@
       "addRiderButton": "para nuevo récord"
     },
     "ferryTo": {
-      "1": "Main Trackmap",
-      "2": "New World"
+      "1": "Mapa principal",
+      "2": "Nuevo mundo"
     }
   },
   "dialogs": {
@@ -460,6 +460,6 @@
     "207": "Montículos embarrados",
     "208": "Pista de la carrera perdida",
     "209": "Carrera de resistencia",
-    "210": "KTM Course"
+    "210": "Circuito KTM"
   }
 }
