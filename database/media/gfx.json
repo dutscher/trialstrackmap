@@ -209,7 +209,6 @@
       "lSrc": "#0/icons/trackitem-youtube-plat.png",
       "selector": "i.youtube-platinum"
     },
-
     "part": {
       "src": "#1/rVMzYQM.png",
       "lSrc": "#0/icons/sprite-parts.png",
@@ -223,13 +222,13 @@
       "sprite": true
     },
     "paintjobs": {
-      "src": "#1/0PCNmXO.png",
+      "src": "#1/3IHuS7G.png",
       "lSrc": "#0/icons/sprite-paintjobs.png",
       "selector": "i.paintjob",
       "sprite": true
     },
     "paintjob-icons": {
-      "src": "#1/vaU70MR.png",
+      "src": "#1/71h3frc.png",
       "lSrc": "#0/icons/sprite-paintjob-icons.png",
       "selector": "i.paintjob-icon",
       "sprite": true
