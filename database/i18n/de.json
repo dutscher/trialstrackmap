@@ -1,10 +1,10 @@
 {
   "page": {
-    "title": "Trials Frontier Streckenkarte",
+    "title": "Streckenkarte",
     "onlyLandscape": "Dreh dein Gerät auf quer!",
     "leftSidebar": {
       "update": "Letzte Änderungen",
-      "goToSeasons": "Saison Übersicht",
+      "goToSeasons": "Saison ({%nums%}) Übersicht",
       "goToMedals": "Medaillen & Teile Tabelle",
       "goToImprove": "Verbessere deine Streckenzeiten",
       "goToWRRiderTemple": "WR-Rider-Tempel",
@@ -25,15 +25,16 @@
       "legend": "Legende",
       "tracks": "Strecken",
       "released": "Veröffentlicht",
-      "on_map": "auf der Karte",
-      "without_coords": "ohne Koordinaten",
-      "not_released": "noch nicht auf der Karte",
-      "only_event": "nur per Event spielbar",
-      "only_bunker": "nur im Bunker",
+      "onMap": "auf der Karte",
+      "withoutCoords": "ohne Koordinaten",
+      "notReleased": "noch nicht auf der Karte",
+      "onlyEvent": "nur per Event spielbar",
+      "onlyBunker": "nur im Bunker",
       "leaked": "Leaked",
-      "with_video": "mit Video",
+      "withVideo": "mit Video",
       "searchForTrack": "Suche nach einer Strecke",
-      "tier": "Stufe"
+      "tier": "Stufe",
+      "showTrackOnMap": "klick um die Strecke auf der Karte anzuzeigen"
     },
     "trackDetail": {
       "chipsAmount": "Chips menge",
@@ -72,7 +73,9 @@
       "filter": "Filter",
       "categories": "Kategorien",
       "device": "Gerätetyp",
-      "bikeType": "Motorad",
+      "bikeType": "Motorradtyp",
+      "bikeModel": "Motorrad",
+      "allBikeModels": "alle Motorräder",
       "tier": "Stufe",
       "allTiers": "alle Stufen",
       "improve": {
@@ -243,12 +246,10 @@
     "back": "zurück",
     "amount": "insgesamt",
     "date": "gestartet am",
-    "date_end": "beendet am",
-    "date_ends": "endet am",
-    "day_short": "t",
-    "prices": "Preise",
-    "donkey_state": "Donkey Status",
-    "top20_legends": "Legenden Top 20"
+    "dateEnd": "beendet am",
+    "dateEnds": "endet am",
+    "dayShort": "t",
+    "prices": "Preise"
   },
   "tracks": {
     "1": "Dürre Klippe",

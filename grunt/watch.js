@@ -51,10 +51,22 @@ module.exports = function (grunt) {
         },
         database: {
             files: [
-                "database/**/*.{json,json5}"
+                "database/**/*.{json,json5}",
+                "!database/i18n/*"
             ],
             tasks: [
                 "deploy"
+            ],
+            options: {
+                livereload: config.livereload
+            }
+        },
+        i18n: {
+            files: [
+                "database/i18n/*.{json,json5}"
+            ],
+            tasks: [
+                "copy:i18nToDist"
             ],
             options: {
                 livereload: config.livereload

@@ -1,101 +1,150 @@
 <div class="box make-sticky">
-    <a href="/index.html" class="classic-link">< {%'page.timesTable.back'|translate%}</a>
-    |
-    <a href="/dist/wr-rider-temple.html" class="classic-link" target="_blank">{%'page.leftSidebar.goToWRRiderTemple'|translate%}</a>
-    |
-    {{> language-select}}
-    |
-    {%'page.timesTable.tracksAmount'|translate%}: {%filteredArray.length%}
-    <br/>
-    {%'page.timesTable.filter'|translate%}:
-    <input type="text" placeholder="{%'page.rightSidebar.searchForTrack'|translate%}"
-           select-on-click
-           ng-model="search"
-           ng-model-options="{debounce:500}"
-           ng-change="saveSearch()" />
-    <i class="faults with-cursor" ng-if="search != ''" ng-click="clearSearch()"></i>
-    {{#xif "this.activateMode"}}
-    |
-    {%'page.timesTable.device'|translate%}:
-    <select ng-model="selectedMode" ng-change="setMode()">
-        <option value="android" selected>Android</option>
-        <option value="ios">iOS</option>
-    </select>
-    |
-    {%'page.timesTable.bikeType'|translate%}:
-    <select ng-model="selectedBike" ng-change="setBike()">
-        <option value="normal" selected>Normal</option>
-        <option value="donkey">Donkey</option>
-        <option value="crazy">Crazy</option>
-    </select>
-    {{/xif}}
-    |
-    {%'page.timesTable.categories'|translate%}:
-    <select ng-model="selectedCat" ng-change="setCat()">
-        <option value="" selected>{%'page.timesTable.parts.all'|translate%}</option>
-        <option ng-repeat="cat in data.map.cats" class="{%::cat.class%}-bg"
-                ng-selected="selectedCat == cat.index"
-                value="{%cat.index%}">
-            {%'cats.'+cat.index|translate%}
-            ({%trackSum = (data.tracks|catAndTierTracks:cat.index:selectedTier).length%})
-        </option>
-    </select>
-    <select ng-model="selectedTier" ng-change="setTier()">
-        <option value="" selected>{%'page.timesTable.allTiers'|translate%}</option>
-        <option value="1">{%'tiers.1'|translate%}</option>
-        <option value="2">{%'tiers.2'|translate%}</option>
-        <option value="3">{%'tiers.3'|translate%}</option>
-    </select>
-    {{#xif "!this.deactivateParts"}}
-    |
-    {%'page.timesTable.parts.head'|translate%}:
-    <select ng-model="selectedPart" ng-change="setParts()">
-        <option value="" selected>{%'page.timesTable.parts.all'|translate%}</option>
-        <option value="1">{%'parts.1'|translate%}</option>
-        <option value="2">{%'parts.2'|translate%}</option>
-        <option value="3">{%'parts.3'|translate%}</option>
-        <option value="4">{%'parts.4'|translate%}</option>
-        <option value="5">{%'parts.5'|translate%}</option>
-        <option value="6">{%'parts.6'|translate%}</option>
-        <option value="7">{%'parts.7'|translate%}</option>
-        <option value="8">{%'parts.8'|translate%}</option>
-        <option value="9">{%'parts.9'|translate%}</option>
-        <option value="10">{%'parts.10'|translate%}</option>
-    </select>
-    <select ng-model="selectedPartLevel" ng-change="setParts(true)">
-        <option value="" selected>{%'page.timesTable.parts.allLevels'|translate%}</option>
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-    </select>
-    {{/xif}}
-
-    {{#xif "this.withMinInputs"}}
+    <div>
+        <a href="/index.html" class="classic-link">< {%'page.timesTable.back'|translate%}</a>
         |
-        {%'page.timesTable.improve.minRank'|translate%}:
-        <input type="text" class="input-s" placeholder="{%'page.timesTable.improve.minRankPlaceholder'|translate%}"
+        <a href="/dist/wr-rider-temple.html" class="classic-link" target="_blank">{%'page.leftSidebar.goToWRRiderTemple'|translate%}</a>
+        |
+        {{> language-select}}
+        |
+        {%'page.timesTable.tracksAmount'|translate%}: {%filteredArray.length%}
+    </div>
+    <div>
+        {%'page.timesTable.filter'|translate%}:
+        <input type="text" placeholder="{%'page.rightSidebar.searchForTrack'|translate%}"
                select-on-click
-               ng-model="minRank"
+               ng-model="search"
                ng-model-options="{debounce:500}"
-               ng-change="clearMinRank()" />
+               ng-change="saveSearch()"/>
+        <i class="faults with-cursor" ng-if="search != ''" ng-click="clearSearch()"></i>
         |
-        {%'page.timesTable.improve.minDifference'|translate%}:
-        <input type="text" class="input-s" placeholder="{%'page.timesTable.improve.minDifferencePlaceholder'|translate%}"
-               select-on-click
-               ng-model="minDiff"
-               ng-model-options="{debounce:500}"
-               ng-change="clearMinDiff()" />
-        |
-        {%'page.timesTable.improve.myGoalCheckbox'|translate%}:
-        <input type="checkbox" ng-model="showMyGoal" ng-change="saveMyGoal()" />
-    {{/xif}}
+        <div class="flyout">
+            <div class="flyout__prompt"><i class="filter"></i></div>
+            <div class="flyout__wrap">
+                {{#xif "this.activateMode"}}
+                <div class="flyout__item">
+                    <span class="flyout__item__label">
+                        {%'page.timesTable.device'|translate%}:
+                    </span>
+                    <select ng-model="selectedMode" ng-change="setMode()">
+                        <option value="android" selected>Android</option>
+                        <option value="ios">iOS</option>
+                    </select>
+                </div>
+                <div class="flyout__item">
+                    <span class="flyout__item__label">
+                        {%'page.timesTable.bikeType'|translate%}:
+                    </span>
+                    <select ng-model="selectedBike" ng-change="setBike()">
+                        <option value="normal" selected>Normal</option>
+                        <option value="donkey">Donkey</option>
+                        <option value="crazy">Crazy</option>
+                    </select>
+                </div>
+                <div class="flyout__item">
+                    <span class="flyout__item__label">
+                        {%'page.timesTable.bikeModel'|translate%}:
+                    </span>
+                    <select ng-model="selectedBikeModel" ng-change="setBikeModel()">
+                        <option value="" selected>{%'page.timesTable.allBikeModels'|translate%}</option>
+                        <option ng-repeat="(bikeId, bike) in data.bikes"
+                                ng-selected="selectedBikeModel == bikeId"
+                                value="{%::bikeId%}">
+                            {%::bike.name%}
+                        </option>
+                    </select>
+                </div>
+                {{/xif}}
+                <div class="flyout__item">
+                    <span class="flyout__item__label">
+                        {%'page.timesTable.categories'|translate%}:
+                    </span>
+                    <select ng-model="selectedCat" ng-change="setCat()">
+                        <option value="" selected>{%'page.timesTable.parts.all'|translate%}</option>
+                        <option ng-repeat="cat in data.map.cats" class="{%::cat.class%}-bg"
+                                ng-selected="selectedCat == cat.index"
+                                value="{%::cat.index%}">
+                            {%'cats.'+cat.index|translate%}
+                            ({%trackSum = (data.tracks|catAndTierTracks:cat.index:selectedTier).length%})
+                        </option>
+                    </select>
+                </div>
+                <div class="flyout__item">
+                    <span class="flyout__item__label">
+                        {%'page.timesTable.tier'|translate%}:
+                    </span>
+                    <select ng-model="selectedTier" ng-change="setTier()">
+                        <option value="" selected>{%'page.timesTable.allTiers'|translate%}</option>
+                        <option value="1">{%'tiers.1'|translate%}</option>
+                        <option value="2">{%'tiers.2'|translate%}</option>
+                        <option value="3">{%'tiers.3'|translate%}</option>
+                    </select>
+                </div>
+                {{#xif "!this.deactivateParts"}}
+                    <div class="flyout__item">
+                    <span class="flyout__item__label">
+                        {%'page.timesTable.parts.head'|translate%}:
+                    </span>
+                        <select ng-model="selectedPart" ng-change="setParts()">
+                            <option value="" selected>{%'page.timesTable.parts.all'|translate%}</option>
+                            <option value="1">{%'parts.1'|translate%}</option>
+                            <option value="2">{%'parts.2'|translate%}</option>
+                            <option value="3">{%'parts.3'|translate%}</option>
+                            <option value="4">{%'parts.4'|translate%}</option>
+                            <option value="5">{%'parts.5'|translate%}</option>
+                            <option value="6">{%'parts.6'|translate%}</option>
+                            <option value="7">{%'parts.7'|translate%}</option>
+                            <option value="8">{%'parts.8'|translate%}</option>
+                            <option value="9">{%'parts.9'|translate%}</option>
+                            <option value="10">{%'parts.10'|translate%}</option>
+                        </select>
+                        <select ng-model="selectedPartLevel" ng-change="setParts(true)">
+                            <option value="" selected>{%'page.timesTable.parts.allLevels'|translate%}</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>
+                    </div>
+                {{/xif}}
+                {{#xif "this.withMinInputs"}}
+                    <div class="flyout__item">
+                    <span class="flyout__item__label">
+                        {%'page.timesTable.improve.minRank'|translate%}:
+                    </span>
+                        <input type="text" class="input-s"
+                               placeholder="{%'page.timesTable.improve.minRankPlaceholder'|translate%}"
+                               select-on-click
+                               ng-model="minRank"
+                               ng-model-options="{debounce:500}"
+                               ng-change="clearMinRank()"/>
+                    </div>
+                    <div class="flyout__item">
+                    <span class="flyout__item__label">
+                        {%'page.timesTable.improve.minDifference'|translate%}:
+                    </span>
+                        <input type="text" class="input-s"
+                               placeholder="{%'page.timesTable.improve.minDifferencePlaceholder'|translate%}"
+                               select-on-click
+                               ng-model="minDiff"
+                               ng-model-options="{debounce:500}"
+                               ng-change="clearMinDiff()"/>
+                    </div>
+                    <div class="flyout__item">
+                    <span class="flyout__item__label">
+                        {%'page.timesTable.improve.myGoalCheckbox'|translate%}:
+                    </span>
+                        <input type="checkbox" ng-model="showMyGoal" ng-change="saveMyGoal()"/>
+                    </div>
+                {{/xif}}
+            </div>
+        </div>
 
-    {{#xif "this.withImproveImportExport"}}
-        <br />
-        <span improve-import></span>
-        <span improve-export></span>
-        {%'page.timesTable.improve.print'|translate%}:
-        <a href="table-improve-print.html" target="blank" class="button">{%'page.timesTable.improve.printFilled'|translate%}</a>
-        <a href="table-improve-print.html#empty=true" target="blank" class="button">{%'page.timesTable.improve.printEmpty'|translate%}</a>
-    {{/xif}}
+        {{#xif "this.withImproveImportExport"}}
+            <br/>
+            <span improve-import></span>
+            <span improve-export></span>
+            {%'page.timesTable.improve.print'|translate%}:
+            <a href="table-improve-print.html" target="blank" class="button">{%'page.timesTable.improve.printFilled'|translate%}</a>
+            <a href="table-improve-print.html#empty=true" target="blank" class="button">{%'page.timesTable.improve.printEmpty'|translate%}</a>
+        {{/xif}}
+    </div>
 </div>

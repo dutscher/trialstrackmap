@@ -1,9 +1,11 @@
 {{#extend "default"}}
-    {{#content "htmlCtrl"}}ng-controller="trackmap" data-without="worldrecords"{{/content}}
+    {{#content "htmlCtrl"}}data-without="worldrecords"{{/content}}
 
     {{#content "styles" mode="append"}}
         <link rel="stylesheet" type="text/css" href="main.css{{cacheBuster}}"/>
     {{/content}}
+
+    {{#content "ctrl"}}ng-controller="trackData"{{/content}}
 
     {{#content "data-event"}}data:loaded{{/content}}
 

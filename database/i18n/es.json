@@ -1,10 +1,10 @@
 {
   "page": {
-    "title": "Mapa Trials Frontier",
+    "title": "Mapa",
     "onlyLandscape": "¡Cambie su dispositivo a horizontal!",
     "leftSidebar": {
       "update": "Actualización",
-      "goToSeasons": "Resumen Temporadas",
+      "goToSeasons": "Resumen ({%nums%}) Temporadas",
       "goToMedals": "Tabla de Medallas y Partes",
       "goToImprove": "Tabla para mejorar tiempos",
       "goToAnniversary": "Página Aniversario",
@@ -25,15 +25,16 @@
       "legend": "Leyenda",
       "tracks": "Pistas",
       "released": "publicadas",
-      "on_map": "en el mapa",
-      "without_coords": "sin coordenadas",
-      "not_released": "ni en el mapa ni publicadas",
-      "only_event": "solo jugables por evento",
-      "only_bunker": "solo en búnker",
+      "onMap": "en el mapa",
+      "withoutCoords": "sin coordenadas",
+      "notReleased": "ni en el mapa ni publicadas",
+      "onlyEvent": "solo jugables por evento",
+      "onlyBunker": "solo en búnker",
       "leaked": "filtradas",
-      "with_video": "con vídeo",
+      "withVideo": "con vídeo",
       "searchForTrack": "Buscar pista",
-      "tier": "Nivel"
+      "tier": "Nivel",
+      "showTrackOnMap": "click me to show track on map"
     },
     "trackDetail": {
       "chipsAmount": "Cantidad de fichas",
@@ -73,6 +74,8 @@
       "categories": "Categorías",
       "device": "Dispositivo",
       "bikeType": "Moto",
+      "bikeModel": "Bike",
+      "allBikeModels": "all bikes",
       "tier": "Nivel",
       "allTiers": "todos los niveles",
       "improve": {
@@ -243,12 +246,10 @@
     "back": "atrás",
     "amount": "total",
     "date": "empezó el",
-    "date_end": "terminó el",
-    "date_ends": "termina el",
-    "day_short": "d",
-    "prices": "Premios",
-    "donkey_state": "Estado Donkey",
-    "top20_legends": "Top 20 Leyendas"
+    "dateEnd": "terminó el",
+    "dateEnds": "termina el",
+    "dayShort": "d",
+    "prices": "Premios"
   },
   "tracks": {
     "1": "Risco reseco",

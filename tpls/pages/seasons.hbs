@@ -28,7 +28,7 @@
                                     <strong>#{%'{{id}}'|leadingZero:2%}</strong>
 
                                     <span>{%'seasons.date'|translate%}: {{date}}</span> <br/>
-                                    <span>{%'seasons.date_end{{#if active}}s{{/if}}'|translate%}: {{date_end}}</span>
+                                    <span>{%'seasons.dateEnd{{#if active}}s{{/if}}'|translate%}: {{date_end}}</span>
 
                                     {{#if active}}
                                         <span class="countdown" date-start="{{date}}" date-end="{{date_end}}"></span>

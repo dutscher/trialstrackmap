@@ -97,6 +97,31 @@
       "lSrc": "#0/icons/flag-us.png",
       "selector": "i.lang.lang_us"
     },
+    "country_eg": {
+      "src": "#1/kMvsnzg.png",
+      "lSrc": "#0/icons/flag-eg.png",
+      "selector": "i.lang.lang_eg"
+    },
+    "country_se": {
+      "src": "#1/pbe90JA.png",
+      "lSrc": "#0/icons/flag-co.png",
+      "selector": "i.lang.lang_co"
+    },
+    "country_co": {
+      "src": "#1/ijWXshk.png",
+      "lSrc": "#0/icons/flag-se.png",
+      "selector": "i.lang.lang_se"
+    },
+    "country_cz": {
+      "src": "#1/dofaAXL.png",
+      "lSrc": "#0/icons/flag-cz.png",
+      "selector": "i.lang.lang_cz"
+    },
+    "country_hr": {
+      "src": "#1/F3Tuk3t.png",
+      "lSrc": "#0/icons/flag-hr.png",
+      "selector": "i.lang.lang_hr"
+    },
 
     "timer": {
       "src": "#1/GLuwunX.png",
@@ -177,6 +202,11 @@
       "src": "#1/HhQmHhp.png",
       "lSrc": "#0/icons/picto-donkey.png",
       "selector": "i.donkey"
+    },
+    "filter": {
+      "src": "#1/NrxPczs.png",
+      "lSrc": "#0/icons/picto-filter.png",
+      "selector": "i.filter"
     },
 
     "candy": {

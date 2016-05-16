@@ -1,10 +1,10 @@
 {
   "page": {
-    "title": "Trials Frontier Trackmap",
+    "title": "Trackmap",
     "onlyLandscape": "Switch your device to landscape!",
     "leftSidebar": {
       "update": "Update",
-      "goToSeasons": "Season overview",
+      "goToSeasons": "Seasons ({%nums%}) overview",
       "goToMedals": "Medals & parts table",
       "goToImprove": "Improve your times table",
       "goToAnniversary": "Anniversary page",
@@ -25,15 +25,16 @@
       "legend": "Legend",
       "tracks": "Tracks",
       "released": "released",
-      "on_map": "on map",
-      "without_coords": "without coordinates",
-      "not_released": "not on map or released",
-      "only_event": "only playable by event",
-      "only_bunker": "only bunker",
+      "onMap": "on map",
+      "withoutCoords": "without coordinates",
+      "notReleased": "not on map or released",
+      "onlyEvent": "only playable by event",
+      "onlyBunker": "only bunker",
       "leaked": "leaked",
-      "with_video": "with video",
+      "withVideo": "with video",
       "searchForTrack": "search for track",
-      "tier": "Tier"
+      "tier": "Tier",
+      "showTrackOnMap": "click to show track on map"
     },
     "trackDetail": {
       "chipsAmount": "Chips amount",
@@ -72,7 +73,9 @@
       "filter": "Filter",
       "categories": "Categories",
       "device": "Device",
-      "bikeType": "Bike",
+      "bikeType": "Biketype",
+      "bikeModel": "Bike",
+      "allBikeModels": "all bikes",
       "tier": "Tier",
       "allTiers": "all tiers",
       "improve": {
@@ -243,12 +246,10 @@
     "back": "back",
     "amount": "total",
     "date": "started at",
-    "date_end": "finished at",
-    "date_ends": "ends at",
-    "day_short": "d",
-    "prices": "Prizes",
-    "donkey_state": "Donkey state",
-    "top20_legends": "Legends top 20"
+    "dateEnd": "finished at",
+    "dateEnds": "ends at",
+    "dayShort": "d",
+    "prices": "Prizes"
   },
   "tracks": {
     "1": "Parched Cliff",

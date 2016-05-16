@@ -1,10 +1,10 @@
 {
   "page": {
-    "title": "Карта Trials Frontier",
+    "title": "Карта",
     "onlyLandscape": "Switch your device to landscape!",
     "leftSidebar": {
       "update": "Обновлено",
-      "goToSeasons": "Обзор Сезонов",
+      "goToSeasons": "Обзор ({%nums%}) Сезонов",
       "goToMedals": "Таблица Медалей и Запчастей",
       "goToImprove": "Improve your times table",
       "goToAnniversary": "Годовщина страницы",
@@ -25,15 +25,16 @@
       "legend": "Легенда",
       "tracks": "Трассы",
       "released": "released",
-      "on_map": "на карте",
-      "without_coords": "без координат",
-      "not_released": "not on map or released",
-      "only_event": "только во время ивента",
-      "only_bunker": "только в Бункере",
+      "onMap": "на карте",
+      "withoutCoords": "без координат",
+      "notReleased": "not on map or released",
+      "onlyEvent": "только во время ивента",
+      "onlyBunker": "только в Бункере",
       "leaked": "leaked",
-      "with_video": "с видеообзором",
+      "withVideo": "с видеообзором",
       "searchForTrack": "поиск трассы",
-      "tier": "Уровень"
+      "tier": "Уровень",
+      "showTrackOnMap": "click me to show track on map"
     },
     "trackDetail": {
       "chipsAmount": "Кол-во фишек",
@@ -72,7 +73,9 @@
       "filter": "Filter",
       "categories": "Categories",
       "device": "Устройство",
-      "bikeType": "Bike",
+      "bikeType": "Biketype",
+      "bikeModel": "Bike",
+      "allBikeModels": "all bikes",
       "tier": "Уровень",
       "allTiers": "Все трассы",
       "improve": {
@@ -243,12 +246,10 @@
     "back": "назад",
     "amount": "всего",
     "date": "начался",
-    "date_end": "закончился",
-    "date_ends": "закончится",
-    "day_short": "д",
-    "prices": "Награды",
-    "donkey_state": "Чертежи Donkey",
-    "top20_legends": "Топ 20 легенд"
+    "dateEnd": "закончился",
+    "dateEnds": "закончится",
+    "dayShort": "д",
+    "prices": "Награды"
   },
   "tracks": {
     "1": "Выжженый утёс",

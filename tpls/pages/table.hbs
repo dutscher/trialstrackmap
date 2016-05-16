@@ -4,11 +4,11 @@
     {{/content}}
 
     {{#content "styles" mode="prepend"}}
-        <link rel="stylesheet" type="text/css" href="../css/style-table.css{{cacheBuster}}" />
+        <link rel="stylesheet" type="text/css" href="../css/style-table.css{{cacheBuster}}"/>
         <style map-colors></style>
     {{/content}}
 
-    {{#content "ctrl"}}ng-controller="trackmap"{{/content}}
+    {{#content "ctrl"}}ng-controller="trackData"{{/content}}
 
     {{#content "body"}}
         {{#with map}}
@@ -27,22 +27,22 @@
                                 <th rowspan="2" width="35" table-sorter="tier">{%'page.timesTable.tier'|translate%}</th>
                                 <th rowspan="2" width="200">{%'page.timesTable.trackName'|translate%}</th>
                                 <th colspan="2" title="{%'page.timesTable.silver'|translate%}"><i
-                                        class="medal-silver"></i>
+                                    class="medal-silver"></i>
                                 </th>
                                 <th colspan="2" title="{%'page.timesTable.gold'|translate%}"><i class="medal-gold"></i>
                                 </th>
                                 <th colspan="2" title="{%'page.timesTable.platinum'|translate%}"><i
-                                        class="medal-platinum"></i></th>
+                                    class="medal-platinum"></i></th>
                                 <th rowspan="2" width="25" title="{%'page.timesTable.fuel'|translate%}"><i
-                                        class="fuel"></i>
+                                    class="fuel"></i>
                                 </th>
                                 <th rowspan="2" width="25" title="{%'page.timesTable.gems'|translate%}"><i
-                                        class="gems"></i>
+                                    class="gems"></i>
                                 </th>
                                 <th rowspan="2" width="50" title="{%'page.timesTable.chips'|translate%}"><i
-                                        class="chips"></i></th>
+                                    class="chips"></i></th>
                                 <th rowspan="2" width="135" title="{%'page.timesTable.parts.head'|translate%}"><i
-                                        class="parts"></i>
+                                    class="parts"></i>
                                 </th>
                             </tr>
                             <tr>
@@ -67,11 +67,14 @@
                                 <td ng-class="{'public-change':track.timesDB.public}">
                                     {%track.i18n%}
                                 </td>
-                                <td class="center" xedit-time="silver" ng-bind-html="track.times.silver.time|convertTime"></td>
+                                <td class="center" xedit-time="silver"
+                                    ng-bind-html="track.times.silver.time|convertTime"></td>
                                 <td class="center" xedit-faults="silver">{%track.times.silver.faults%}</td>
-                                <td class="center" xedit-time="gold" ng-bind-html="track.times.gold.time|convertTime"></td>
+                                <td class="center" xedit-time="gold"
+                                    ng-bind-html="track.times.gold.time|convertTime"></td>
                                 <td class="center" xedit-faults="gold">{%track.times.gold.faults%}</td>
-                                <td class="center" xedit-time="platinum" ng-bind-html="track.times.platinum.time|convertTime"></td>
+                                <td class="center" xedit-time="platinum"
+                                    ng-bind-html="track.times.platinum.time|convertTime"></td>
                                 <td class="center" xedit-faults="platinum">{%track.times.platinum.faults%}</td>
                                 <td class="center">{%track.fuel%}</td>
                                 <td class="center">{%track.gems%}</td>

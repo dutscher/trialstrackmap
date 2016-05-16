@@ -1,10 +1,10 @@
 {
   "page": {
-    "title": "Trials Frontier Carte Track",
+    "title": "Carte Track",
     "onlyLandscape": "Switch your device to landscape!",
     "leftSidebar": {
       "update": "Mise à jour",
-      "goToSeasons": "Saison Présentation",
+      "goToSeasons": "Saison ({%nums%}) Présentation",
       "goToMedals": "Médailles & Pièces Table",
       "goToImprove": "Improve your times table",
       "goToAnniversary": "Page anniversaire",
@@ -25,15 +25,16 @@
       "legend": "Légende",
       "tracks": "Courses",
       "released": "released",
-      "on_map": "on map",
-      "without_coords": "without coordinates",
-      "not_released": "not on map or released",
-      "only_event": "only playable by event",
-      "only_bunker": "only bunker",
+      "onMap": "on map",
+      "withoutCoords": "without coordinates",
+      "notReleased": "not on map or released",
+      "onlyEvent": "only playable by event",
+      "onlyBunker": "only bunker",
       "leaked": "leaked",
-      "with_video": "with video",
+      "withVideo": "with video",
       "searchForTrack": "recherche de piste",
-      "tier": "Étage"
+      "tier": "Étage",
+      "showTrackOnMap": "click me to show track on map"
     },
     "trackDetail": {
       "chipsAmount": "Quantité de jetons",
@@ -72,7 +73,9 @@
       "filter": "Filter",
       "categories": "Categories",
       "device": "Device",
-      "bikeType": "Bike",
+      "bikeType": "Biketype",
+      "bikeModel": "Bike",
+      "allBikeModels": "all bikes",
       "tier": "Tier",
       "allTiers": "all tiers",
       "improve": {
@@ -243,12 +246,10 @@
     "back": "retour",
     "amount": "total",
     "date": "commencé au",
-    "date_end": "terminé à",
-    "date_ends": "se termine à",
-    "day_short": "j",
-    "prices": "Prix",
-    "donkey_state": "Donkey état",
-    "top20_legends": "Legends Top 20"
+    "dateEnd": "terminé à",
+    "dateEnds": "se termine à",
+    "dayShort": "j",
+    "prices": "Prix"
   },
   "tracks": {
     "1": "Falaise desséchée",

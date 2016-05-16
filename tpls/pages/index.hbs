@@ -1,5 +1,5 @@
 {{#extend "default"}}
-    {{#content "htmlCtrl"}}ng-controller="trackmap" data-without="worldrecords"{{/content}}
+    {{#content "htmlCtrl"}}ng-controller="trackData" data-without="worldrecords"{{/content}}
 
     {{assign "withRootPathes"}}
 
@@ -11,6 +11,8 @@
     {{#content "head" mode="append"}}
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
     {{/content}}
+
+    {{#content "ctrl"}}ng-controller="trackMap"{{/content}}
 
     {{#content "body"}}
         <div class="only-landscape">
@@ -32,11 +34,10 @@
 
                             <hr>
 
-                            {%'page.leftSidebar.update'|translate%}: {%'{{lastUpdateTime}}'|humanReadableDate%}<br/>
-
-                            <hr>
-
-                            <a href="/dist/seasons.html">{%'page.leftSidebar.goToSeasons'|translate%} &raquo;</a>
+                            {{#with seasons}}
+                                <a href="/dist/seasons.html">{%'page.leftSidebar.goToSeasons'|translate:{
+                                    nums:{{_seasons.length}} }%} &raquo;</a>
+                            {{/with}}
                             <a href="/dist/table.html">{%'page.leftSidebar.goToMedals'|translate%} &raquo;</a>
                             <a href="/dist/table-improve.html">{%'page.leftSidebar.goToImprove'|translate%} &raquo;</a>
                             <a href="/dist/wr-rider-temple.html">{%'page.leftSidebar.goToWRRiderTemple'|translate%} &raquo;</a>
@@ -46,15 +47,29 @@
                     <li>
                         <div class="wrap">
                             <h2>{%'page.leftSidebar.stats'|translate%}</h2>
-                            {%'page.leftSidebar.uplayID'|translate%}: {%::data.map.stats.uplay%}<br/>
-                            {%'page.leftSidebar.appVersion'|translate%}: {%::data.map.stats.app_version%}<br/>
+                            {{#with map}}
+                                {%'page.leftSidebar.uplayID'|translate%}: {{database.map.stats.uplay}}<br/>
+                                {%'page.leftSidebar.appVersion'|translate%}: {{database.map.stats.app_version}}<br/>
+                                <hr>
+                            {{/with}}
+
+                            {%'page.leftSidebar.update'|translate%}: {%'{{lastUpdateTime}}'|humanReadableDate%}<br/>
                         </div>
                     </li>
                     <li>
                         <div class="wrap tierlegend">
-                            <h2 class="with-cursor">{%'page.leftSidebar.usefullLinks'|translate%}</h2>
-                            <a ng-repeat="link in data.map.usefull_links" href="{%::link.href%}" target="_blank"
-                               ng-bind-html="link.title"></a>
+                            <h2 class="with-cursor" ng-click="visibility('linksVisible')">
+                                {%'page.leftSidebar.usefullLinks'|translate%}</h2>
+
+                            <div ng-show="linksVisible">
+                                {{#with map}}
+                                    {{#each database.map.usefull_links}}
+                                        <a href="{{href}}" target="_blank">{{title}}</a>
+                                    {{/each}}
+                                {{/with}}
+                            </div>
+                            <span class="with-cursor" ng-click="visibility('linksVisible')"
+                                  ng-hide="linksVisible">{%'page.leftSidebar.toggleMe'|translate%}</span>
                         </div>
                     </li>
                     <li>
@@ -63,12 +78,18 @@
                                 {%'page.leftSidebar.credits'|translate%} ({%::data.map.credits.length%})</h2>
 
                             <div ng-show="creditsVisible">
-                                <a ng-repeat="credit in data.map.credits" ng-if="credit.href" href="{%::credit.href%}"
-                                   target="_blank" ng-bind-html="credit.text"></a>
-                                    <span class="like-a" ng-repeat="credit in data.map.credits" ng-if="!credit.href"
-                                          ng-bind-html="credit.text"></span>
+                                {{#with map}}
+                                    {{#each database.map.credits}}
+                                        {{#if href}}
+                                            <a href="{{href}}" target="_blank">{{text}}</a>
+                                        {{else}}
+                                            <span class="like-a">{{text}}</span>
+                                        {{/if}}
+                                    {{/each}}
+                                {{/with}}
                             </div>
-                            <span class="with-cursor" ng-click="visibility('creditsVisible')" ng-hide="creditsVisible">{%'page.leftSidebar.toggleMe'|translate%}</span>
+                            <span class="with-cursor" ng-click="visibility('creditsVisible')"
+                                  ng-hide="creditsVisible">{%'page.leftSidebar.toggleMe'|translate%}</span>
                         </div>
                     </li>
                     <li>

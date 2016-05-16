@@ -1,10 +1,10 @@
 {
   "page": {
-    "title": "Trials Frontier Mapa do Mundo",
+    "title": "Mapa do Mundo",
     "onlyLandscape": "Coloque seu dispositivo em modo paisagem!",
     "leftSidebar": {
       "update": "Atualizado",
-      "goToSeasons": "Resumo da Temporada",
+      "goToSeasons": "Resumo ({%nums%}) da Temporada",
       "goToMedals": "Medalhas e Peças",
       "goToImprove": "Tabela melhore seus tempos",
       "goToAnniversary": "Página de Aniversário",
@@ -25,15 +25,16 @@
       "legend": "Legenda",
       "tracks": "Pistas",
       "released": "lançado",
-      "on_map": "No mapa",
-      "without_coords": "Sem coordenadas",
-      "not_released": "Fora do mapa ou não lançado",
-      "only_event": "Jogável somente em evento",
-      "only_bunker": "Somente no bunker",
+      "onMap": "No mapa",
+      "withoutCoords": "Sem coordenadas",
+      "notTeleased": "Fora do mapa ou não lançado",
+      "onlyEvent": "Jogável somente em evento",
+      "onlyBunker": "Somente no bunker",
       "leaked": "Vazado",
-      "with_video": "Com vídeo",
+      "withVideo": "Com vídeo",
       "searchForTrack": "Procurar Pista",
-      "tier": "Nível"
+      "tier": "Nível",
+      "showTrackOnMap": "click show track on map"
     },
     "trackDetail": {
       "chipsAmount": "Quantidade de Fichas",
@@ -72,7 +73,9 @@
       "filter": "Filtrar",
       "categories": "Categorias",
       "device": "Dispositivo",
-      "bikeType": "Moto",
+      "bikeType": "Mototipo",
+      "bikeModel": "Moto",
+      "allBikeModels": "Todos as motos",
       "tier": "Nível",
       "allTiers": "Todos",
       "improve": {
@@ -243,12 +246,10 @@
     "back": "Voltar",
     "amount": "Total",
     "date": "Iniciou em",
-    "date_end": "Terminou em",
-    "date_ends": "Termina em",
-    "day_short": "d",
-    "prices": "Prêmios",
-    "donkey_state": "Estado Donkey",
-    "top20_legends": "Lendas Top 20"
+    "dateEnd": "Terminou em",
+    "dateEnds": "Termina em",
+    "dayShort": "d",
+    "prices": "Prêmios"
   },
   "tracks": {
     "1": "Penhasco Árido",

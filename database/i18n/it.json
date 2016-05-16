@@ -1,10 +1,10 @@
 {
   "page": {
-    "title": "Mappa Trials Frontier",
+    "title": "Mappa",
     "onlyLandscape": "Switch your device to landscape!",
     "leftSidebar": {
       "update": "Aggiornamento",
-      "goToSeasons": "Panoramica Stagione",
+      "goToSeasons": "Panoramica Stagione ({%nums%})",
       "goToMedals": "Medaglie & Oggetti da Costruzione",
       "goToImprove": "Improve your times table",
       "goToAnniversary": "Pagina dell'Anniversario",
@@ -25,15 +25,16 @@
       "legend": "Legenda",
       "tracks": "Tracce",
       "released": "released",
-      "on_map": "on map",
-      "without_coords": "without coordinates",
-      "not_released": "not on map or released",
-      "only_event": "only playable by event",
-      "only_bunker": "only bunker",
+      "onMap": "on map",
+      "withoutCoords": "without coordinates",
+      "notReleased": "not on map or released",
+      "onlyEvent": "only playable by event",
+      "onlyBunker": "only bunker",
       "leaked": "leaked",
-      "with_video": "with video",
+      "withVideo": "with video",
       "searchForTrack": "cerca per traccia",
-      "tier": "Livello"
+      "tier": "Livello",
+      "showTrackOnMap": "click me to show track on map"
     },
     "trackDetail": {
       "chipsAmount": "Gettoni",
@@ -72,7 +73,9 @@
       "filter": "Filter",
       "categories": "Categories",
       "device": "Device",
-      "bikeType": "Bike",
+      "bikeType": "Biketype",
+      "bikeModel": "Bike",
+      "allBikeModels": "all bikes",
       "tier": "Tier",
       "allTiers": "all tiers",
       "improve": {
@@ -243,12 +246,10 @@
     "back": "indietro",
     "amount": "totale",
     "date": "iniziata il",
-    "date_end": "finita il",
-    "date_ends": "finisce il",
-    "day_short": "g",
-    "prices": "Premi",
-    "donkey_state": "stato della Donkey",
-    "top20_legends": "top 20 Leggende"
+    "dateEnd": "finita il",
+    "dateEnds": "finisce il",
+    "dayShort": "g",
+    "prices": "Premi"
   },
   "tracks": {
     "1": "Scogliera desolata",

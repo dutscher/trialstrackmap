@@ -43,7 +43,8 @@ i.gems,
 i.global,
 i.rank,
 i.arrow,
-i.coins
+i.coins,
+i.filter
 {
     display: inline-block;
     background-size: cover !important;

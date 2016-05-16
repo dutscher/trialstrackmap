@@ -11,7 +11,7 @@
         <style map-colors></style>
     {{/content}}
 
-    {{#content "ctrl"}}ng-controller="trackmap"{{/content}}
+    {{#content "ctrl"}}ng-controller="trackData"{{/content}}
 
     {{#content "body"}}
         {{#with map}}
@@ -55,12 +55,6 @@
                                     <td class="center" show-amount="{%::rider.ios.WRAmount.ios.normal%}"></td>
                                     <td class="center" show-amount="{%::rider.ios.WRAmount.ios.donkey%}"></td>
                                     <td class="center" show-amount="{%::rider.ios.WRAmount.ios.crazy%}"></td>
-                                </tr>
-                                <tr>
-                                    <td class="center" colspan="10" ng-bind-html="tailRider.length"></td>
-                                </tr>
-                                <tr ng-repeat="rider in tailRider">
-                                    <td class="center rider-name" colspan="10" ng-bind-html="::rider.riderName|nameWithFlag"></td>
                                 </tr>
                             </tbody>
                         </table>

@@ -108,8 +108,25 @@ a strong {
     cursor: pointer;
 }
 
+.track-available {
+    white-space: nowrap;
+}
 .track-available span {
     display: inline-block !important;
+}
+
+.track-available .map-pointer {
+    opacity: 0;
+    width: 0;
+    -webkit-transition: opacity 250ms, width 250ms;
+    transition: opacity 250ms, width 250ms;
+}
+.track-available:hover .map-pointer {
+    opacity: 1;
+    width: 10px;
+    border-width: 7px 10px 7px 0;
+    border-style: solid;
+    border-color: transparent #adffff transparent transparent;
 }
 
 .with-badge {

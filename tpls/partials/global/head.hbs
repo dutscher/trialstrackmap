@@ -1,4 +1,6 @@
-<title page-title="{{#block "title-override"}}{{/block}}">{{#block "title"}}Trials Frontier Trackmap{{/block}}</title>
+<title page-title="{{#block "title-override"}}{{/block}}" data-update="{{#with map}}{{database.map.stats.app_version}}{{/with}}">
+    {{#block "title"}}Trials Frontier Trackmap{{/block}}
+</title>
 
 <meta http-equiv="Access-Control-Allow-Origin" content="*">
 
