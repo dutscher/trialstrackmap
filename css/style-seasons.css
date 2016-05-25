@@ -228,92 +228,36 @@ i.season-extra-donkey {
     background-position: -200px 0
 }
 
-i.season-extra-paintjob-1 {
-    background-position: -200px -40px
-}
-
-i.season-extra-paintjob-2 {
-    background-position: -200px -80px
-}
-
-i.season-extra-paintjob-3 {
-    background-position: -200px -120px
-}
-
-i.season-extra-paintjob-4 {
-    background-position: -200px -160px
-}
-
-i.season-extra-paintjob-5 {
-    background-position: -240px 0
-}
-
-i.season-extra-paintjob-6 {
-    background-position: -240px -40px
-}
-
-i.season-extra-paintjob-7 {
-    background-position: -240px -80px
-}
-
-i.season-extra-paintjob-8 {
-    background-position: -240px -120px
-}
-
-i.season-extra-paintjob-9 {
-    background-position: -240px -160px
-}
-
-i.season-extra-paintjob-10 {
-    background-position: -280px 0
-}
-
 i.season-extra-donkey-new {
     background-position: -280px -40px
 }
 
-i.season-extra-paintjob-11 {
-    background-position: -280px -80px
-}
-
 i.season-extra-doughnut {
-    background-position: -280px -120px
+    background-position: -200px -120px
 }
 
 i.season-extra-unlimited-fuel {
-    background-position: -280px -160px
+    background-position: -200px -80px
 }
 
 i.season-extra-track {
-    background-position: -360px -40px
+    background-position: -200px -160px
 }
 
 i.season-extra-coins-gems {
-    background-position: -360px -80px
+    background-position: -240px 0
 }
 
-i.season-extra-paintjob-12 {
-    background-position: -320px 0
+i.season-extra-custom-1 {
+    background-position: -240px -40px
 }
 
-i.season-extra-paintjob-14 {
-    background-position: -320px -40px
+i.season-extra-custom-2 {
+    background-position: -240px -80px
 }
 
-i.season-extra-paintjob-13 {
-    background-position: -320px -80px
-}
-
-i.season-extra-paintjob-15 {
-    background-position: -320px -120px
-}
-
-i.season-extra-paintjob-16 {
-    background-position: -320px -160px
-}
-
-i.season-extra-paintjob-17 {
-    background-position: -360px 0
+i.season-extra-custom-3 {
+    background-position: -240px -120px
 }
 
 i[class^="season-extra-part-"] {

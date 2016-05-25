@@ -1,4 +1,5 @@
 {{#extend "default"}}
+    {{#content "htmlCtrl"}}ng-controller="trackData" data-without="worldrecords"{{/content}}
     {{#content "title-override"}}true{{/content}}
     {{#content "title" mode="prepend"}}
         Track locations -
@@ -8,7 +9,7 @@
         <link rel="stylesheet" type="text/css" href="../css/style-locations.css{{cacheBuster}}" />
     {{/content}}
 
-    {{#content "ctrl"}}ng-controller="trackData"{{/content}}
+    {{#content "ctrl"}}ng-controller="trackMap"{{/content}}
 
     {{#content "body"}}
         <div ng-init="pageReady = false" ng-hide="pageReady" class="loader spin"></div>

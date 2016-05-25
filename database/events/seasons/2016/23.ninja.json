@@ -1,0 +1,154 @@
+{
+  "header": {
+    "src": "#1/f89gpMD.jpg",
+    "lSrc": "#0/seasons/23.ninja.jpg"
+  },
+  "title": "Ninja Season",
+  "date": "23.05.2016",
+  "date_end": "04.07.2016",
+  "duration": "3h",
+  "free_showdowns": "4",
+  "ticket_regain": "45m",
+  "prizes": [
+    {
+      "level": 1,
+      "extra_type": "custom",
+      "extra": 1,
+      "coins": 10000,
+      "gems": 10
+    },
+    {
+      "level": 2,
+      "extra_type": "doughnut",
+      "coins": 5000
+    },
+    {
+      "level": 3,
+      "extra_type": "part",
+      "extra": "bearing-5",
+      "coins": 2500,
+      "gems": 10
+    },
+    {
+      "level": 4,
+      "extra_type": "doughnut",
+      "coins": 2500
+    },
+    {
+      "level": 5,
+      "extra_type": "coins-gems",
+      "coins": 2000,
+      "gems": 7
+    },
+    {
+      "level": 6,
+      "extra_type": "custom",
+      "extra": 2,
+      "coins": 2000
+    },
+    {
+      "level": 7,
+      "extra_type": "part",
+      "extra": "pipe-4",
+      "coins": 2000
+    },
+    {
+      "level": 8,
+      "extra_type": "doughnut",
+      "coins": 1500
+    },
+    {
+      "level": 9,
+      "extra_type": "unlimited-fuel",
+      "coins": 1500
+    },
+    {
+      "level": 10,
+      "extra_type": "doughnut",
+      "coins": 1500,
+      "gems": 5
+    },
+    {
+      "level": 11,
+      "extra_type": "part",
+      "extra": "gear-3",
+      "coins": 1500
+    },
+    {
+      "level": 12,
+      "extra_type": "doughnut",
+      "coins": 1500,
+      "gems": 5
+    },
+    {
+      "level": 13,
+      "extra_type": "unlimited-fuel",
+      "coins": 1000
+    },
+    {
+      "level": 14,
+      "extra_type": "doughnut",
+      "coins": 1000
+    },
+    {
+      "level": 15,
+      "extra_type": "part",
+      "extra": "chain-3",
+      "coins": 1000,
+      "gems": 3
+    },
+    {
+      "level": 16,
+      "extra_type": "custom",
+      "extra": 3,
+      "coins": 1000
+    },
+    {
+      "level": 17,
+      "extra_type": "unlimited-fuel",
+      "coins": 1000
+    },
+    {
+      "level": 18,
+      "extra_type": "doughnut",
+      "coins": 1000
+    },
+    {
+      "level": 19,
+      "extra_type": "part",
+      "extra": "bolt-2",
+      "coins": 1000
+    },
+    {
+      "level": 20,
+      "extra_type": "doughnut",
+      "coins": 1000,
+      "gems": 3
+    },
+    {
+      "level": 21,
+      "extra_type": "unlimited-fuel",
+      "coins": 1000
+    },
+    {
+      "level": 22,
+      "extra_type": "doughnut",
+      "coins": 1000
+    },
+    {
+      "level": 23,
+      "extra_type": "coins-gems",
+      "coins": 1000,
+      "gems": 3
+    },
+    {
+      "level": 24,
+      "extra_type": "doughnut",
+      "coins": 750
+    },
+    {
+      "level": 25,
+      "coins": 750
+    }
+  ]
+}

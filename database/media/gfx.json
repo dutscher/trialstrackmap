@@ -4,13 +4,13 @@
       "1": {
         "src": "#1/ys97yr1.jpg",
         "lSrc": "#0/map/trackmap.1.160403.en.jpg",
-        "alt": "Trails Frontier Trackmap",
+        "alt": "Trails Frontier Trackmap Seymore and Lotz",
         "dim": "3614x2495"
       },
       "2": {
-        "src": "#1/xnhCdfF.jpg",
-        "lSrc": "#0/map/trackmap.2.160403.en.jpg",
-        "alt": "Trails Frontier Trackmap New World",
+        "src": "#1/Darti5G.jpg",
+        "lSrc": "#0/map/trackmap.2.160525.en.jpg",
+        "alt": "Trails Frontier Trackmap Petrol Falls",
         "dim": "1525x2500"
       }
     },
@@ -251,7 +251,7 @@
       "sprite": true
     },
     "seasons": {
-      "src": "#1/ZwMwOgF.jpg",
+      "src": "#1/86HgtgQ.jpg",
       "lSrc": "#0/icons/sprite-seasons.jpg",
       "selector": "i.seasons",
       "sprite": true

@@ -9,9 +9,9 @@
     "3": "Medic Paintjob for Bronco",
     "4": "Kaleidoscope Paintjob for Bronco",
     "5": "Soylent Paintjob for Tango",
-    "6": "Luchador Paintjob for Bronco",
-    "7": "Scales Paintjob for Marauder",
-    "8": "Lava Paintjob for Armadillo",
+    "6": "Luchador Paintjob for Bronco (Fly high with the Luchado Paintjob!)",
+    "7": "Scales Paintjob for Marauder (Scale up your Marauder!)",
+    "8": "Lava Paintjob for Armadillo (Heat up your Armadillo!)",
     "9": "Spirits Paintjob for Berserker",
     "10": "Footprint Paintjob for Marauder",
     "11": "Molten Paintjob for Donkey",
@@ -26,5 +26,10 @@
   "tracks": {
     "1": "KTM Course (Reveal the hidden location of KTM Course!)",
     "2": "Metal Mayhem (Reveal the hidden location of Metal Mayhem!)"
+  },
+  "customs": {
+    "1": "Ninja Head",
+    "2": "Ninja Body",
+    "3": "Ninja Pants"
   }
 }
