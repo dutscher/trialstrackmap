@@ -58,6 +58,8 @@
       "gold": "oro",
       "platinum": "platino",
       "tracksAmount": "Pistas visibles",
+      "profileName": "UPLAY Name",
+      "profileRank": "Rank",
       "id": "ID",
       "trackName": "Nombre pista",
       "time": "Tiempo",
@@ -71,6 +73,7 @@
         "allLevels": "mostrar todos los niveles"
       },
       "filter": "Filtro",
+      "importExport": "Import/Export",
       "categories": "Categorías",
       "device": "Dispositivo",
       "bikeType": "Moto",
@@ -83,6 +86,8 @@
         "myTime": "Mi tiempo",
         "myGoal": "Mi objetivo",
         "myGoalCheckbox": "Mostrar celdas Mi objetivo",
+        "ultimate": "ultimate",
+        "ultimateCheckbox": "Show ultimate cell",
         "worldRecord": "Récord Mundial",
         "print": "Imprimir",
         "printFilled": "Rellena",
@@ -91,7 +96,12 @@
         "minRankPlaceholder": "10000",
         "minDifference": "Dif. min.",
         "minDifferencePlaceholder": "0:10:000"
-      }
+      },
+      "settingsHeader": "Table settings",
+      "importExportHeader": "Im- & export your data",
+      "tflforoImport": "tf.lforo live leaderboard",
+      "myJsonImportExport": "myJson data storage",
+      "printExport": "Print Tracks"
     },
     "worldRecordsTable": {
       "ridersAmount": "Total corredores",
@@ -123,6 +133,8 @@
       "newTime": "Nuevo tiempo récord",
       "riderName": "Nombre de corredor",
       "userName": "Nombre de usuario",
+      "profileName": "UPLAY Name",
+      "profileRank": "UPLAY Rank",
       "myRank": "MiPosición",
       "myTime": "MiTiempo",
       "myGoal": "MiObjetivo",
@@ -177,7 +189,16 @@
       "retrieveYourId": "Recuperar tu ID",
       "restoreHeader": "Aquí puedes recuperar tu ID.",
       "enterYourUserName": "¡Por favor introduce tu nombre de usuario!",
-      "enterYourPassword": "Tu ID fue protegida con una contraseña."
+      "enterYourPassword": "Tu ID fue protegida con una contraseña.",
+      "tflforo": {
+        "header": "Import your times from http://tf.lforo.com live leaderboard",
+        "labelVia": "via profile ID",
+        "placeholder": "enter your tf.lforo profile ID",
+        "searchId": "search your ID",
+        "enterYourProfileName": "Please enter your UPLAY name!",
+        "searchHeader": "Search for your UPLAY name and get your ID",
+        "confirmNewData": "Do you want to import the times of '{%exportDate%}' for UPLAY name '{%profileName%}' and override local changes?"
+      }
     },
     "export": {
       "header": "Exportar tus tiempos",
@@ -203,7 +224,12 @@
       "userNameNotFound": "Nombre de usuario no encontrado.\nPor lo tanto no es posible recuperar tu ID.",
       "wrongPassword": "Contraseña incorrecta. No fue posible recuperar tu ID.",
       "emptyPassword": "Se necesita una contraseña.",
-      "cannotExport": "Tu navegador no puede guardar archivos."
+      "cannotExport": "Tu navegador no puede guardar archivos.",
+      "emptyTflforoId": "enter a tf.lforo ID.",
+      "noAccessTflforo": "tf.lforo is temporarily not available.",
+      "noTrackDataFound": "no trackdata for import found.",
+      "noMatches": "no matches found.",
+      "tooMuchMatches": "too much matches found, go clearer."
     }
   },
   "cats": {

@@ -48,13 +48,18 @@
                                     title="{%'page.timesTable.improve.worldRecord'|translate%}">
                                     <i class="global"></i>
                                 </th>
+                                <th rowspan="2" table-sorter="ultimate"
+                                    title="{%'page.timesTable.improve.ultimate'|translate%}" ng-show="showUltimate">
+                                    {%'page.timesTable.improve.ultimate'|translate%}
+                                </th>
                                 <th title="{%'page.timesTable.platinum'|translate%}">
                                     <i class="medal-platinum"></i>
                                 </th>
                             </tr>
                             <tr>
-                                <th title="{%'page.timesTable.time'|translate%}" ng-click="sort('platinum')"><i
-                                    class="timer"></i></th>
+                                <th title="{%'page.timesTable.time'|translate%}" ng-click="sort('platinum')">
+                                    <i class="timer"></i>
+                                </th>
                             </tr>
                             </thead>
                             <tbody>
@@ -93,6 +98,12 @@
                                             difference-time="track.improve[selectedMode][selectedBike].differenceTimeWR"></span>
                                     </span>
                                     <span bike-driven="track.times.worldRecord[selectedMode][selectedBike]"></span>
+                                </td>
+                                <td class="center no-pad with-cursor" ng-show="showUltimate">
+                                    <span ng-if="track.improve[selectedMode][selectedBike].ultimate.score">
+                                        <i class="rank"></i> {%track.improve[selectedMode][selectedBike].ultimate.score%}<br />
+                                        <i class="timer"></i> {%track.improve[selectedMode][selectedBike].ultimate.time|convertTime%}
+                                    </span>
                                 </td>
                                 <td class="center" ng-bind-html="track.times.platinum.time|convertTime"></td>
                             </tr>

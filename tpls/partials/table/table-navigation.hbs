@@ -91,9 +91,9 @@
                 </div>
                 {{#xif "!this.deactivateParts"}}
                     <div class="flyout__item">
-                    <span class="flyout__item__label">
-                        {%'page.timesTable.parts.head'|translate%}:
-                    </span>
+                        <span class="flyout__item__label">
+                            {%'page.timesTable.parts.head'|translate%}:
+                        </span>
                         <select ng-model="selectedPart" ng-change="setParts()">
                             <option value="" selected>{%'page.timesTable.parts.all'|translate%}</option>
                             <option value="1">{%'parts.1'|translate%}</option>
@@ -117,9 +117,9 @@
                 {{/xif}}
                 {{#xif "this.withMinInputs"}}
                     <div class="flyout__item">
-                    <span class="flyout__item__label">
-                        {%'page.timesTable.improve.minRank'|translate%}:
-                    </span>
+                        <span class="flyout__item__label">
+                            {%'page.timesTable.improve.minRank'|translate%}:
+                        </span>
                         <input type="text" class="input-s"
                                placeholder="{%'page.timesTable.improve.minRankPlaceholder'|translate%}"
                                select-on-click
@@ -128,9 +128,9 @@
                                ng-change="clearMinRank()"/>
                     </div>
                     <div class="flyout__item">
-                    <span class="flyout__item__label">
-                        {%'page.timesTable.improve.minDifference'|translate%}:
-                    </span>
+                        <span class="flyout__item__label">
+                            {%'page.timesTable.improve.minDifference'|translate%}:
+                        </span>
                         <input type="text" class="input-s"
                                placeholder="{%'page.timesTable.improve.minDifferencePlaceholder'|translate%}"
                                select-on-click
@@ -139,10 +139,16 @@
                                ng-change="clearMinDiff()"/>
                     </div>
                     <div class="flyout__item">
-                    <span class="flyout__item__label">
-                        {%'page.timesTable.improve.myGoalCheckbox'|translate%}:
-                    </span>
+                        <span class="flyout__item__label">
+                            {%'page.timesTable.improve.myGoalCheckbox'|translate%}:
+                        </span>
                         <input type="checkbox" ng-model="showMyGoal" ng-change="saveMyGoal()"/>
+                    </div>
+                    <div class="flyout__item">
+                        <span class="flyout__item__label">
+                            {%'page.timesTable.improve.ultimateCheckbox'|translate%}:
+                        </span>
+                        <input type="checkbox" ng-model="showUltimate" ng-change="saveUltimateCheckbox()"/>
                     </div>
                 {{/xif}}
             </div>

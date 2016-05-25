@@ -58,6 +58,8 @@
       "gold": "Gold",
       "platinum": "Platin",
       "tracksAmount": "Strecken verfügbar",
+      "profileName": "UPLAY Name",
+      "profileRank": "Rank",
       "id": "ID",
       "trackName": "Strecken Name",
       "time": "Zeit",
@@ -71,6 +73,7 @@
         "allLevels": "zeige alle Stufen"
       },
       "filter": "Filter",
+      "importExport": "Import/Export",
       "categories": "Kategorien",
       "device": "Gerätetyp",
       "bikeType": "Motorradtyp",
@@ -83,6 +86,8 @@
         "myTime": "Meine Zeit",
         "myGoal": "Mein Ziel",
         "myGoalCheckbox": "zeige die 'Mein Ziel' Spalte",
+        "ultimate": "ultimate",
+        "ultimateCheckbox": "zeige die 'Ultimate' Spalte",
         "worldRecord": "Weltrekord",
         "print": "Drucken",
         "printFilled": "Mit Daten befüllt",
@@ -91,7 +96,12 @@
         "minRankPlaceholder": "10000",
         "minDifference": "Min. Diff.",
         "minDifferencePlaceholder": "0:10:000"
-      }
+      },
+      "settingsHeader": "Tabellen einstellungen",
+      "importExportHeader": "Im- & exportiere deine Daten",
+      "tflforoImport": "tf.lforo live leaderboard",
+      "myJsonImportExport": "myJson data storage",
+      "printExport": "Drucke Strecken"
     },
     "worldRecordsTable": {
       "ridersAmount": "Riders Anzahl",
@@ -203,7 +213,12 @@
       "userNameNotFound": "Der Username wurde nicht gefunden.\nSomit ist kein wiederherstellen der Speicher ID möglich.",
       "wrongPassword": "Falsches Password. Keine Chance die ID wiederherszustellen.",
       "emptyPassword": "Ein Passwort wird benötigt.",
-      "cannotExport": "Dein Browser unterstütz kein speichern von Dateien"
+      "cannotExport": "Dein Browser unterstütz kein speichern von Dateien",
+      "emptyTflforoId": "Gebe eine tf.lforo ID ein.",
+      "noAccessTflforo": "tf.lforo ist zurzeit nicht erreichbar.",
+      "noTrackDataFound": "Keine Strecken Informationen gefunden.",
+      "noMatches": "Keine Ergebnisse .",
+      "tooMuchMatches": "too much matches found, go clearer."
     }
   },
   "cats": {

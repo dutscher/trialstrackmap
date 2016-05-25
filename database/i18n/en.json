@@ -86,6 +86,8 @@
         "myTime": "My time",
         "myGoal": "My goal",
         "myGoalCheckbox": "Show myGoal cell",
+        "ultimate": "ultimate",
+        "ultimateCheckbox": "Show ultimate cell",
         "worldRecord": "Worldrecord",
         "print": "Print",
         "printFilled": "Filled",
