@@ -2,7 +2,7 @@
     <div>
         <a href="/index.html" class="classic-link">< {%'page.timesTable.back'|translate%}</a>
         |
-        <a href="/dist/wr-rider-temple.html" class="classic-link" target="_blank">{%'page.leftSidebar.goToWRRiderTemple'|translate%}</a>
+        <a href="/wr-rider-temple.html" class="classic-link" target="_blank">{%'page.leftSidebar.goToWRRiderTemple'|translate%}</a>
         |
         {{> language-select}}
     </div>
@@ -107,6 +107,10 @@
                             <option value="9">{%'parts.9'|translate%}</option>
                             <option value="10">{%'parts.10'|translate%}</option>
                         </select>
+                    </div>
+                    <div class="flyout__item">
+                        <span class="flyout__item__label">
+                        </span>
                         <select ng-model="selectedPartLevel" ng-change="setParts(true)">
                             <option value="" selected>{%'page.timesTable.parts.allLevels'|translate%}</option>
                             <option>1</option>

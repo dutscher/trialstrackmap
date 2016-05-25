@@ -8,6 +8,7 @@
       "goToMedals": "Medalhas e Peças",
       "goToImprove": "Tabela melhore seus tempos",
       "goToAnniversary": "Página de Aniversário",
+      "goToGarage": "Garage",
       "goToWRRiderTemple": "Templo dos recordistas",
       "goToThread": "Ir para o fórum",
       "stats": "Estatísticas",
@@ -189,7 +190,7 @@
       "retrieveYourId": "Recuperar seu ID",
       "restoreHeader": "Aqui você pode recuperar seu ID.",
       "enterYourUserName": "Por favor, insira seu nome de usuário!",
-      "enterYourPassword": "Seu ID foi protegido com senha."",
+      "enterYourPassword": "Seu ID foi protegido com senha.",
       "tflforo": {
         "header": "Import your times from http://tf.lforo.com live leaderboard",
         "labelVia": "via profile ID",

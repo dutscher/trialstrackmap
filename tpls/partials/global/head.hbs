@@ -15,13 +15,13 @@
     <meta property="og:image" content="{{hoster images.trackmap.1.src hoster}}"/>
 {{/with}}
 
-<link rel="icon" href="{{#helperNotExist "withRootPathes"}}../{{/helperNotExist}}favicon.ico" type="image/x-icon"/>
+<link rel="icon" href="favicon.ico" type="image/x-icon"/>
 
 {{#block "styles"}}
-    <link rel="stylesheet" type="text/css" href="{{#helperNotExist "withRootPathes"}}../{{/helperNotExist}}css/style-icons.css{{cacheBuster}}"/>
-    <link rel="stylesheet" type="text/css" href="{{#helperNotExist "withRootPathes"}}../{{/helperNotExist}}css/style-common.css{{cacheBuster}}"/>
+    <link rel="stylesheet" type="text/css" href="/css/style-icons.css{{cacheBuster}}"/>
+    <link rel="stylesheet" type="text/css" href="/css/style-common.css{{cacheBuster}}"/>
     <style preload-images data-event="{{#block "data-event"}}{{/block}}"></style>
 {{/block}}
 
-<script type="text/javascript" src="{{#helperExist "withRootPathes"}}dist/{{/helperExist}}vendor.min.js{{cacheBuster}}"></script>
-<script type="text/javascript" src="{{#helperExist "withRootPathes"}}dist/{{/helperExist}}map.min.js{{cacheBuster}}"></script>
+<script type="text/javascript" src="/dist/vendor.min.js{{cacheBuster}}"></script>
+<script type="text/javascript" src="/dist/map.min.js{{cacheBuster}}"></script>

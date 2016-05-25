@@ -1,10 +1,8 @@
 {{#extend "default"}}
     {{#content "htmlCtrl"}}ng-controller="trackData" data-without="worldrecords"{{/content}}
 
-    {{assign "withRootPathes"}}
-
     {{#content "styles" mode="append"}}
-        <link rel="stylesheet" type="text/css" href="css/style-map.css{{cacheBuster}}"/>
+        <link rel="stylesheet" type="text/css" href="/css/style-map.css{{cacheBuster}}"/>
         <style map-colors></style>
     {{/content}}
 
@@ -34,14 +32,15 @@
 
                             <hr>
 
+                            <a href="/table-improve.html">{%'page.leftSidebar.goToImprove'|translate%} &raquo;</a>
+                            <a href="/wr-rider-temple.html">{%'page.leftSidebar.goToWRRiderTemple'|translate%} &raquo;</a>
+                            <a href="/garage.html">{%'page.leftSidebar.goToGarage'|translate%} &raquo;</a>
+                            <a href="/table-medals.html">{%'page.leftSidebar.goToMedals'|translate%} &raquo;</a>
                             {{#with seasons}}
-                                <a href="/dist/seasons.html">{%'page.leftSidebar.goToSeasons'|translate:{
+                                <a href="/seasons.html">{%'page.leftSidebar.goToSeasons'|translate:{
                                     nums:{{_seasons.length}} }%} &raquo;</a>
                             {{/with}}
-                            <a href="/dist/table.html">{%'page.leftSidebar.goToMedals'|translate%} &raquo;</a>
-                            <a href="/dist/table-improve.html">{%'page.leftSidebar.goToImprove'|translate%} &raquo;</a>
-                            <a href="/dist/wr-rider-temple.html">{%'page.leftSidebar.goToWRRiderTemple'|translate%} &raquo;</a>
-                            <a href="/dist/anniversary.html">{%'page.leftSidebar.goToAnniversary'|translate%} &raquo;</a>
+                            <a href="/anniversary.html">{%'page.leftSidebar.goToAnniversary'|translate%} &raquo;</a>
                         </div>
                     </li>
                     <li>
@@ -191,4 +190,3 @@
         </div>
     {{/content}}
 {{/extend}}
-{{unassign "withRootPathes"}}
