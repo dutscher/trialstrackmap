@@ -5,7 +5,16 @@
         <a href="/dist/wr-rider-temple.html" class="classic-link" target="_blank">{%'page.leftSidebar.goToWRRiderTemple'|translate%}</a>
         |
         {{> language-select}}
-        |
+    </div>
+    <div>
+        <span ng-if="profileName">
+            {%profileName%}
+            |
+        </span>
+        <span ng-if="profileRank">
+            {%'page.timesTable.profileRank'|translate%}: {%profileRank%}
+            |
+        </span>
         {%'page.timesTable.tracksAmount'|translate%}: {%filteredArray.length%}
     </div>
     <div>
@@ -16,43 +25,44 @@
                ng-model-options="{debounce:500}"
                ng-change="saveSearch()"/>
         <i class="faults with-cursor" ng-if="search != ''" ng-click="clearSearch()"></i>
-        |
+
         <div class="flyout">
             <div class="flyout__prompt"><i class="filter"></i></div>
             <div class="flyout__wrap">
+                <div class="flyout__header">{%'page.timesTable.settingsHeader'|translate%}</div>
                 {{#xif "this.activateMode"}}
-                <div class="flyout__item">
+                    <div class="flyout__item">
                     <span class="flyout__item__label">
                         {%'page.timesTable.device'|translate%}:
                     </span>
-                    <select ng-model="selectedMode" ng-change="setMode()">
-                        <option value="android" selected>Android</option>
-                        <option value="ios">iOS</option>
-                    </select>
-                </div>
-                <div class="flyout__item">
+                        <select ng-model="selectedMode" ng-change="setMode()">
+                            <option value="android" selected>Android</option>
+                            <option value="ios">iOS</option>
+                        </select>
+                    </div>
+                    <div class="flyout__item">
                     <span class="flyout__item__label">
                         {%'page.timesTable.bikeType'|translate%}:
                     </span>
-                    <select ng-model="selectedBike" ng-change="setBike()">
-                        <option value="normal" selected>Normal</option>
-                        <option value="donkey">Donkey</option>
-                        <option value="crazy">Crazy</option>
-                    </select>
-                </div>
-                <div class="flyout__item">
+                        <select ng-model="selectedBike" ng-change="setBike()">
+                            <option value="normal" selected>Normal</option>
+                            <option value="donkey">Donkey</option>
+                            <option value="crazy">Crazy</option>
+                        </select>
+                    </div>
+                    <div class="flyout__item">
                     <span class="flyout__item__label">
                         {%'page.timesTable.bikeModel'|translate%}:
                     </span>
-                    <select ng-model="selectedBikeModel" ng-change="setBikeModel()">
-                        <option value="" selected>{%'page.timesTable.allBikeModels'|translate%}</option>
-                        <option ng-repeat="(bikeId, bike) in data.bikes"
-                                ng-selected="selectedBikeModel == bikeId"
-                                value="{%::bikeId%}">
-                            {%::bike.name%}
-                        </option>
-                    </select>
-                </div>
+                        <select ng-model="selectedBikeModel" ng-change="setBikeModel()">
+                            <option value="" selected>{%'page.timesTable.allBikeModels'|translate%}</option>
+                            <option ng-repeat="(bikeId, bike) in data.bikes"
+                                    ng-selected="selectedBikeModel == bikeId"
+                                    value="{%::bikeId%}">
+                                {%::bike.name%}
+                            </option>
+                        </select>
+                    </div>
                 {{/xif}}
                 <div class="flyout__item">
                     <span class="flyout__item__label">
@@ -137,14 +147,35 @@
                 {{/xif}}
             </div>
         </div>
-
         {{#xif "this.withImproveImportExport"}}
-            <br/>
-            <span improve-import></span>
-            <span improve-export></span>
-            {%'page.timesTable.improve.print'|translate%}:
-            <a href="table-improve-print.html" target="blank" class="button">{%'page.timesTable.improve.printFilled'|translate%}</a>
-            <a href="table-improve-print.html#empty=true" target="blank" class="button">{%'page.timesTable.improve.printEmpty'|translate%}</a>
+            |
+            {%'page.timesTable.importExport'|translate%}:
+            <div class="flyout">
+                <div class="flyout__prompt"><i class="import-export"></i></div>
+                <div class="flyout__wrap">
+                    <div class="flyout__header">{%'page.timesTable.importExportHeader'|translate%}</div>
+                    <div class="flyout__item">
+                    <span class="flyout__item__label">
+                        {%'page.timesTable.tflforoImport'|translate%}:
+                    </span>
+                        <span tflforo-import></span>
+                    </div>
+                    <div class="flyout__item">
+                    <span class="flyout__item__label">
+                        {%'page.timesTable.myJsonImportExport'|translate%}:
+                    </span>
+                        <span improve-import></span>
+                        <span improve-export></span>
+                    </div>
+                    <div class="flyout__item">
+                    <span class="flyout__item__label">
+                        {%'page.timesTable.improve.print'|translate%}:
+                    </span>
+                        <a href="table-improve-print.html" target="blank" class="button">{%'page.timesTable.improve.printFilled'|translate%}</a>
+                        <a href="table-improve-print.html#empty=true" target="blank" class="button">{%'page.timesTable.improve.printEmpty'|translate%}</a>
+                    </div>
+                </div>
+            </div>
         {{/xif}}
     </div>
 </div>

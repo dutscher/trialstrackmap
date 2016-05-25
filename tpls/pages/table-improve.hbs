@@ -72,9 +72,12 @@
                                 </td>
                                 <td class="center no-pad with-cursor" edit-improve="myTime"
                                     check-min="{typeValue:minDiff,value:track.improve[selectedMode][selectedBike].differenceTime.time}">
-                                    {%track.improve[selectedMode][selectedBike].myTime|convertTime%}
-                                    <span
-                                        difference-time="track.improve[selectedMode][selectedBike].differenceTime"></span>
+                                    <span class="time-display">
+                                        {%track.improve[selectedMode][selectedBike].myTime|convertTime%}
+                                        <span
+                                            difference-time="track.improve[selectedMode][selectedBike].differenceTime"></span>
+                                    </span>
+                                    <span bike-driven="track.improve[selectedMode][selectedBike].myBike"></span>
                                 </td>
                                 <td class="center no-pad with-cursor" edit-improve="myGoal" ng-show="showMyGoal">
                                     {%track.improve[selectedMode][selectedBike].myGoal|convertTime%}

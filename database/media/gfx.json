@@ -208,6 +208,11 @@
       "lSrc": "#0/icons/picto-filter.png",
       "selector": "i.filter"
     },
+    "import-export": {
+      "src": "#1/KaaNHrb.png",
+      "lSrc": "#0/icons/picto-import-export.png",
+      "selector": "i.import-export"
+    },
 
     "candy": {
       "src": "#1/HuTSmQ0.png",

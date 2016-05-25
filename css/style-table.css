@@ -177,17 +177,27 @@ th, td {
 }
 .flyout:hover .flyout__prompt {
     background: #775746;
+    -webkit-box-shadow: 0 15px 25px 0 rgba(0,0,0,0.5);
+    -moz-box-shadow: 0 15px 25px 0 rgba(0,0,0,0.5);
+    box-shadow: 0 15px 25px 0 rgba(0,0,0,0.5);
 }
 .flyout__wrap {
     display: none;
     position: absolute;
-    left: 0;
-    top: 30px;
-    background: #775746;
+    right: 0;
+    top: 34px;
+    background: #3f2a1f;
     white-space: nowrap;
 }
 .flyout:hover .flyout__wrap {
     display: block;
+    -webkit-box-shadow: 0 15px 25px 0 rgba(0,0,0,0.5);
+    -moz-box-shadow: 0 15px 25px 0 rgba(0,0,0,0.5);
+    box-shadow: 0 15px 25px 0 rgba(0,0,0,0.5);
+}
+.flyout__header {
+    padding: 5px;
+    background: #775746;
 }
 .flyout__item {
     padding: 5px;
@@ -196,7 +206,6 @@ th, td {
 .flyout__item:last-child {
     border-bottom: 0;
 }
-
 .flyout__item__label {
     display: inline-block;
     min-width: 120px;

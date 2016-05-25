@@ -44,7 +44,8 @@ i.global,
 i.rank,
 i.arrow,
 i.coins,
-i.filter
+i.filter,
+i.import-export
 {
     display: inline-block;
     background-size: cover !important;
