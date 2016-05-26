@@ -71,38 +71,38 @@
     {
       "index": 1,
       "class": "hardcore",
-      "color": "ff00f0"
+      "color": "FF00F0"
     },
     {
       "index": 2,
       "class": "swamp",
-      "color": "54b131"
+      "color": "54B131"
     },
     {
       "index": 3,
       "class": "slot-machine",
-      "color": "ca4340"
+      "color": "CA4340"
     },
     {
       "index": 4,
       "class": "loot-wheel",
-      "color": "b06410"
+      "color": "B06410"
     },
     {
       "index": 5,
       "class": "time-machine",
-      "color": "ede010"
+      "color": "EDE010"
     },
     {
       "index": 6,
       "class": "data-cube",
-      "color": "74c8ec",
+      "color": "74C8EC",
       "notInTimes": true
     },
     {
       "index": 7,
       "class": "story",
-      "color": "1891c4"
+      "color": "1891C4"
     },
     {
       "index": 8,
@@ -147,12 +147,17 @@
     {
       "index": 16,
       "class": "christmas",
-      "color": "ff0000"
+      "color": "FF0000"
     },
     {
       "index": 17,
-      "class": "new-world",
-      "color": "0040ff"
+      "class": "ktm-tracks",
+      "color": "FF6600"
+    },
+    {
+      "index": 18,
+      "class": "petrol-falls",
+      "color": "3556B2"
     }
   ],
   "tiers": [

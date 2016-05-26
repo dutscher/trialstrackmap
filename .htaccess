@@ -1,12 +1,11 @@
 RewriteEngine On
 
-RewriteRule ^table-improve.html$				/dist/table-improve.html [L]
-RewriteRule ^wr-rider-temple.html$				/dist/wr-rider-temple.html [L]
-RewriteRule ^table-medals.html$				    /dist/table-medals.html [L]
-RewriteRule ^seasons.html$				        /dist/seasons.html [L]
-RewriteRule ^anniversary.html$				    /dist/anniversary.html [L]
-RewriteRule ^garage.html$				        /dist/garage.html [L]
+# [R] redirect
+# [L] last condition
+RewriteCond %{DOCUMENT_ROOT}dist%{REQUEST_URI}			    -f
+RewriteRule (.*)\.html				                        /dist/$1.html [L]
 
-#RewriteCond %{REQUEST_FILENAME}			    !-d
-#RewriteCond %{REQUEST_FILENAME}			    !-f
-#RewriteRule ^(.*)$						        index.html [L]
+# 404
+#RewriteCond %{REQUEST_FILENAME}			        !-d
+#RewriteCond %{REQUEST_FILENAME}			        !-f
+#RewriteRule ^(.*)$						        /index.html [L]

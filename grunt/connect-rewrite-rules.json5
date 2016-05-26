@@ -1,10 +1,11 @@
 [
-  "^/table-improve.html$ /dist/table-improve.html",
-  "^/wr-rider-temple.html$ /dist/wr-rider-temple.html",
-  "^/garage.html$ /dist/garage.html",
-  "^/dist/sprites.html$ /garage.html",
-  "^/table-medals.html$ /dist/table-medals.html",
-  "^/seasons.html$ /dist/seasons.html",
-  "^/anniversary.html$ /dist/anniversary.html",
-  "^/locations.html$ /dist/locations.html"
+   "^/table-improve.html$ /dist/table-improve.html"
+  ,"^/wr-rider-temple.html$ /dist/wr-rider-temple.html"
+  ,"^/garage.html$ /dist/garage.html"
+  ,"^/dist/sprites.html$ /garage.html"
+  ,"^/table-medals.html$ /dist/table-medals.html"
+  ,"^/seasons.html$ /dist/seasons.html"
+  ,"^/anniversary.html$ /dist/anniversary.html"
+  ,"^/locations.html$ /dist/locations.html"
+  ,"^/categories.html$ /dist/categories.html"
 ]

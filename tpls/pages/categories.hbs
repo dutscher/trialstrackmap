@@ -1,0 +1,29 @@
+{{#extend "default"}}
+    {{#content "styles" mode="append"}}
+        <link rel="stylesheet" type="text/css" href="/dist/main.css{{cacheBuster}}"/>
+    {{/content}}
+
+    {{#content "body"}}
+        <style>
+            h2 {color:#fff}
+            .spectrum__wrap {font-size:0;border:5px #fff solid;display:inline-block;width:180px;}
+            .spectrum__item {display:inline-block;width:20px;height:20px;}
+            .color__hexcode {color:#fff;font-size:10px;}
+        </style>
+        <div class="page-body">
+            <h2>color spectrum:</h2>
+            <div class="spectrum__wrap">
+                {{#each map.database.map.cats}}
+                    <div class="spectrum__item" style="background-color:#{{color}};" title="{{class}} - #{{color}}"></div>
+                {{/each}}
+            </div>
+
+            <h2>all categories:</h2>
+            {{#each map.database.map.cats}}
+                <div style="color:#{{color}};">
+                    {{class}} <span class="color__hexcode">#{{color}}</span>
+                </div>
+            {{/each}}
+        </div>
+    {{/content}}
+{{/extend}}
