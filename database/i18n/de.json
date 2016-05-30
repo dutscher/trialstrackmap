@@ -146,7 +146,8 @@
       "password": "Passwort",
       "dontAskAgain": "Dieses Fenster nicht mehr anzeigen!",
       "openMyTime": "Öffne Meine Zeite nach dem speichern",
-      "autoExport": "Aktiviere Autoexport"
+      "autoExport": "Aktiviere Autoexport",
+      "os": "OS"
     },
     "placeholder": {
       "newTime": "Deine Zeit 0:15.000 -> dann füge 15000 ein",

@@ -148,7 +148,8 @@
       "password": "Contraseña",
       "dontAskAgain": "¡No preguntar de nuevo!",
       "openMyTime": "Abrir menú MiTiempo tras guardar",
-      "autoExport": "Activar autoexportar"
+      "autoExport": "Activar autoexportar",
+      "os": "OS"
     },
     "placeholder": {
       "newTime": "Tu tiempo 0:15.000 -> insertar 15000",

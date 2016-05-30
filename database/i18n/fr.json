@@ -148,7 +148,8 @@
       "password": "Password",
       "dontAskAgain": "Don't ask again!",
       "openMyTime": "Open MyTime dialog after saving",
-      "autoExport": "Activate autoexporting"
+      "autoExport": "Activate autoexporting",
+      "os": "OS"
     },
     "placeholder": {
       "newTime": "Your time 0:15.000 -> insert 15000",
