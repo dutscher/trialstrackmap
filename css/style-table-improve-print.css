@@ -12,7 +12,6 @@ html, body {
 
 .block {
     font-size: 10px;
-    margin-right: 10px;
     display: inline-block;
     vertical-align: top;
 }
@@ -25,6 +24,11 @@ table {
     border-spacing: 0;
     border-collapse: collapse;
     empty-cells: show;
+    border: 1px solid #000;
+}
+
+th {
+    opacity: 0;
 }
 
 td {
@@ -47,12 +51,17 @@ tr.headline td:last-child {
 
 tr.spacer td {
     border: 0;
-    height: 10px;
+    height: 0;
+    background: #000;
+}
+tr.spacer.with-text td {
+    background: #fff;
+    color: #000;
+    font-size: 8px;
 }
 
 tr.spacer td:last-child {
     font-family: 'Arial Black', Gadget, sans-serif;
-    font-size: 10px;
 }
 
 .over-min {

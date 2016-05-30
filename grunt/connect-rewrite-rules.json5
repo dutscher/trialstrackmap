@@ -1,5 +1,6 @@
 [
    "^/table-improve.html$ /dist/table-improve.html"
+  ,"^/table-improve-print.html$ /dist/table-improve-print.html"
   ,"^/wr-rider-temple.html$ /dist/wr-rider-temple.html"
   ,"^/garage.html$ /dist/garage.html"
   ,"^/dist/sprites.html$ /garage.html"

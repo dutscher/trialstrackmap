@@ -24,7 +24,6 @@
                     <table>
                         <tr print-cell-sizes></tr>
                         <tr print-head="Tier 1 ({% (data.tracks|printTracks:1:'story,slot-machine,loot-wheel,swamp,time-machine').length %})"></tr>
-                        <tr print-spacer></tr>
                         <tr print-tracks="{tier:1,cat:'story'}"></tr>
                         <tr print-spacer></tr>
                         <tr print-tracks="{tier:1,cat:'slot-machine'}"></tr>
@@ -43,7 +42,6 @@
                     <table>
                         <tr print-cell-sizes></tr>
                         <tr print-head="Tier 2 ({% (data.tracks|printTracks:2:'story,slot-machine,loot-wheel,swamp,china').length %})"></tr>
-                        <tr print-spacer></tr>
                         <tr print-tracks="{tier:2,cat:'story'}"></tr>
                         <tr print-spacer></tr>
                         <tr print-tracks="{tier:2,cat:'slot-machine'}"></tr>
@@ -60,7 +58,6 @@
                     <table>
                         <tr print-cell-sizes></tr>
                         <tr print-head="Tier 3 ({% (data.tracks|printTracks:3:'story,slot-machine,loot-wheel,swamp').length %})"></tr>
-                        <tr print-spacer></tr>
                         <tr print-tracks="{tier:3,cat:'story'}"></tr>
                         <tr print-spacer></tr>
                         <tr print-tracks="{tier:3,cat:'slot-machine'}"></tr>
@@ -155,6 +152,10 @@
                         <tr print-tracks="{tier:2,cat:'christmas'}"></tr>
                         <tr print-spacer="Tier 3"></tr>
                         <tr print-tracks="{tier:3,cat:'christmas'}"></tr>
+                        <tr print-spacer></tr>
+                        <tr print-head="KTM ({% (data.tracks|printTracks:'all':'ktm-tracks').length %})"></tr>
+                        <tr print-spacer="Tier 1"></tr>
+                        <tr print-tracks="{tier:1,cat:'ktm-tracks'}"></tr>
                     </table>
                 </div>
             </div>
