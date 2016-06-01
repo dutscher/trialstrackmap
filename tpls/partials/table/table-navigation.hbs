@@ -32,18 +32,30 @@
                 <div class="flyout__header">{%'page.timesTable.settingsHeader'|translate%}</div>
                 {{#xif "this.activateMode"}}
                     <div class="flyout__item">
-                    <span class="flyout__item__label">
-                        {%'page.timesTable.device'|translate%}:
-                    </span>
+                        <span class="flyout__item__label">
+                            {%'page.timesTable.improve.myGoalCheckbox'|translate%}:
+                        </span>
+                        <input type="checkbox" ng-model="showMyGoal" ng-change="saveMyGoal()"/>
+                    </div>
+                    <div class="flyout__item">
+                        <span class="flyout__item__label">
+                            {%'page.timesTable.improve.ultimateCheckbox'|translate%}:
+                        </span>
+                        <input type="checkbox" ng-model="showUltimate" ng-change="saveUltimateCheckbox()"/>
+                    </div>
+                    <div class="flyout__item">
+                        <span class="flyout__item__label">
+                            {%'page.timesTable.device'|translate%}:
+                        </span>
                         <select ng-model="selectedMode" ng-change="setMode()">
                             <option value="android" selected>Android</option>
                             <option value="ios">iOS</option>
                         </select>
                     </div>
                     <div class="flyout__item">
-                    <span class="flyout__item__label">
-                        {%'page.timesTable.bikeType'|translate%}:
-                    </span>
+                        <span class="flyout__item__label">
+                            {%'page.timesTable.bikeType'|translate%}:
+                        </span>
                         <select ng-model="selectedBike" ng-change="setBike()">
                             <option value="normal" selected>Normal</option>
                             <option value="donkey">Donkey</option>
@@ -51,9 +63,9 @@
                         </select>
                     </div>
                     <div class="flyout__item">
-                    <span class="flyout__item__label">
-                        {%'page.timesTable.bikeModel'|translate%}:
-                    </span>
+                        <span class="flyout__item__label">
+                            {%'page.timesTable.bikeModel'|translate%}:
+                        </span>
                         <select ng-model="selectedBikeModel" ng-change="setBikeModel()">
                             <option value="" selected>{%'page.timesTable.allBikeModels'|translate%}</option>
                             <option ng-repeat="(bikeId, bike) in data.bikes"
@@ -142,50 +154,37 @@
                                ng-model-options="{debounce:500}"
                                ng-change="clearMinDiff()"/>
                     </div>
-                    <div class="flyout__item">
-                        <span class="flyout__item__label">
-                            {%'page.timesTable.improve.myGoalCheckbox'|translate%}:
-                        </span>
-                        <input type="checkbox" ng-model="showMyGoal" ng-change="saveMyGoal()"/>
-                    </div>
-                    <div class="flyout__item">
-                        <span class="flyout__item__label">
-                            {%'page.timesTable.improve.ultimateCheckbox'|translate%}:
-                        </span>
-                        <input type="checkbox" ng-model="showUltimate" ng-change="saveUltimateCheckbox()"/>
-                    </div>
                 {{/xif}}
             </div>
         </div>
         {{#xif "this.withImproveImportExport"}}
-            |
-            {%'page.timesTable.importExport'|translate%}:
-            <div class="flyout">
-                <div class="flyout__prompt"><i class="import-export"></i></div>
-                <div class="flyout__wrap">
-                    <div class="flyout__header">{%'page.timesTable.importExportHeader'|translate%}</div>
-                    <div class="flyout__item">
+        {%'page.timesTable.importExport'|translate%}:
+        <div class="flyout">
+            <div class="flyout__prompt"><i class="import-export"></i></div>
+            <div class="flyout__wrap">
+                <div class="flyout__header">{%'page.timesTable.importExportHeader'|translate%}</div>
+                <div class="flyout__item">
                     <span class="flyout__item__label">
                         {%'page.timesTable.tflforoImport'|translate%}:
                     </span>
-                        <span tflforo-import></span>
-                    </div>
-                    <div class="flyout__item">
+                    <span tflforo-import></span>
+                </div>
+                <div class="flyout__item">
                     <span class="flyout__item__label">
                         {%'page.timesTable.myJsonImportExport'|translate%}:
                     </span>
-                        <span improve-import></span>
-                        <span improve-export></span>
-                    </div>
-                    <div class="flyout__item">
+                    <span improve-import></span>
+                    <span improve-export></span>
+                </div>
+                <div class="flyout__item">
                     <span class="flyout__item__label">
                         {%'page.timesTable.improve.print'|translate%}:
                     </span>
-                        <a href="table-improve-print.html" target="blank" class="button">{%'page.timesTable.improve.printFilled'|translate%}</a>
-                        <a href="table-improve-print.html#empty=true" target="blank" class="button">{%'page.timesTable.improve.printEmpty'|translate%}</a>
-                    </div>
+                    <a href="table-improve-print.html" target="blank" class="button">{%'page.timesTable.improve.printFilled'|translate%}</a>
+                    <a href="table-improve-print.html#empty=true" target="blank" class="button">{%'page.timesTable.improve.printEmpty'|translate%}</a>
                 </div>
             </div>
+        </div>
         {{/xif}}
     </div>
 </div>

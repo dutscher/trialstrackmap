@@ -63,7 +63,8 @@
                             </tr>
                             </thead>
                             <tbody>
-                            <tr ng-repeat="track in filteredArray = (data.tracks|showBikeModel:selectedBikeModel|showCatAndTier:selectedCat:selectedTier|showParts:selectedPart:selectedPartLevel|improveSorter:selectedSort:selectedSortType|searchTrack:search)">
+                            <tr ng-repeat="track in filteredArray = (data.tracks|showBikeModel:selectedBikeModel|showCatAndTier:selectedCat:selectedTier|showParts:selectedPart:selectedPartLevel|improveSorter:selectedSort:selectedSortType|searchTrack:search)"
+                                data-track-id="{%::track.id%}">
                                 <td cats-as-class="{track:track}" class="not-hover"></td>
                                 <td class="center">
                                     {%::track.tier%}
