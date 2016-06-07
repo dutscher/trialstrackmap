@@ -134,7 +134,8 @@
                                 <span class="{%::cat.class%} with-cursor"
                                       ng-repeat="cat in data.map.cats"
                                       show-cat-on-map="{cat:cat,catIndex:$index+1,tracks:data.tracks}">
-                                    {%'cats.'+cat.index|translate%} ({%::(data.tracks|catAndTierTracks:$index+1).length%})
+                                    <span class="number-badge">{%::(data.tracks|catAndTierTracks:$index+1).length%}</span>
+                                    {%'cats.'+cat.index|translate%}
                                 </span>
                             </div>
                                 <span class="with-cursor"

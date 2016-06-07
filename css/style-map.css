@@ -121,12 +121,15 @@ a strong {
     -webkit-transition: opacity 250ms, width 250ms;
     transition: opacity 250ms, width 250ms;
 }
-.track-available:hover .map-pointer {
+.track-available:hover .map-pointer:not(.inactive) {
     opacity: 1;
     width: 10px;
     border-width: 7px 10px 7px 0;
     border-style: solid;
     border-color: transparent #adffff transparent transparent;
+}
+.track-available:hover .map-pointer.other-world {
+    border-color: transparent #F4D992 transparent transparent;
 }
 
 .with-badge {
@@ -173,6 +176,20 @@ a strong {
 .with-badge:hover.youtube-badge .badge {
     color: #C30000;
     background: #fff;
+}
+
+.number-badge {
+    height: 16px;
+    width: 16px;
+    text-align: center;
+    line-height: 16px;
+    border-radius: 50%;
+    color: #6a4229;
+    background: #fff;
+    font-size: .7em;
+    display: inline-block !important;
+    position: relative;
+    top: -2px;
 }
 
 .tierlegend span.part-level {
