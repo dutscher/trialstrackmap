@@ -26,23 +26,26 @@
                                 <th rowspan="2" width="5"></th>
                                 <th rowspan="2" width="35" table-sorter="tier">{%'page.timesTable.tier'|translate%}</th>
                                 <th rowspan="2" width="200">{%'page.timesTable.trackName'|translate%}</th>
-                                <th colspan="2" title="{%'page.timesTable.silver'|translate%}"><i
-                                    class="medal-silver"></i>
+                                <th colspan="2" title="{%'page.timesTable.silver'|translate%}">
+                                    <i class="medal-silver"></i>
                                 </th>
-                                <th colspan="2" title="{%'page.timesTable.gold'|translate%}"><i class="medal-gold"></i>
+                                <th colspan="2" title="{%'page.timesTable.gold'|translate%}">
+                                    <i class="medal-gold"></i>
                                 </th>
-                                <th colspan="2" title="{%'page.timesTable.platinum'|translate%}"><i
-                                    class="medal-platinum"></i></th>
-                                <th rowspan="2" width="25" title="{%'page.timesTable.fuel'|translate%}"><i
-                                    class="fuel"></i>
+                                <th title="{%'page.timesTable.platinum'|translate%}">
+                                    <i class="medal-platinum"></i>
                                 </th>
-                                <th rowspan="2" width="25" title="{%'page.timesTable.gems'|translate%}"><i
-                                    class="gems"></i>
+                                <th rowspan="2" width="25" title="{%'page.timesTable.fuel'|translate%}">
+                                    <i class="fuel"></i>
                                 </th>
-                                <th rowspan="2" width="50" title="{%'page.timesTable.chips'|translate%}"><i
-                                    class="chips"></i></th>
-                                <th rowspan="2" width="135" title="{%'page.timesTable.parts.head'|translate%}"><i
-                                    class="parts"></i>
+                                <th rowspan="2" width="25" title="{%'page.timesTable.gems'|translate%}">
+                                    <i class="gems"></i>
+                                </th>
+                                <th rowspan="2" width="50" title="{%'page.timesTable.chips'|translate%}">
+                                    <i class="chips"></i>
+                                </th>
+                                <th rowspan="2" width="135" title="{%'page.timesTable.parts.head'|translate%}">
+                                    <i class="parts"></i>
                                 </th>
                             </tr>
                             <tr>
@@ -51,7 +54,6 @@
                                 <th title="{%'page.timesTable.time'|translate%}"><i class="timer"></i></th>
                                 <th title="{%'page.timesTable.faults'|translate%}"><i class="faults"></i></th>
                                 <th title="{%'page.timesTable.time'|translate%}"><i class="timer"></i></th>
-                                <th title="{%'page.timesTable.faults'|translate%}"><i class="faults"></i></th>
                             </tr>
                             </thead>
                             <tbody>
@@ -67,15 +69,14 @@
                                 <td ng-class="{'public-change':track.timesDB.public}">
                                     {%track.i18n%}
                                 </td>
-                                <td class="center" xedit-time="silver"
-                                    ng-bind-html="track.times.silver.time|convertTime"></td>
+                                <td class="center ellipsis" xedit-time="silver"
+                                    ng-bind-html="track.times.silver.time|convertTime" title="{%track.times.silver.time|convertTime%}"></td>
                                 <td class="center" xedit-faults="silver">{%track.times.silver.faults%}</td>
-                                <td class="center" xedit-time="gold"
-                                    ng-bind-html="track.times.gold.time|convertTime"></td>
+                                <td class="center ellipsis" xedit-time="gold"
+                                    ng-bind-html="track.times.gold.time|convertTime" title="{%track.times.gold.time|convertTime%}"></td>
                                 <td class="center" xedit-faults="gold">{%track.times.gold.faults%}</td>
-                                <td class="center" xedit-time="platinum"
-                                    ng-bind-html="track.times.platinum.time|convertTime"></td>
-                                <td class="center" xedit-faults="platinum">{%track.times.platinum.faults%}</td>
+                                <td class="center ellipsis" xedit-time="platinum"
+                                    ng-bind-html="track.times.platinum.time|convertTime" title="{%track.times.platinum.time|convertTime%}"></td>
                                 <td class="center">{%track.fuel%}</td>
                                 <td class="center">{%track.gems%}</td>
                                 <td class="center">{%track.chips%}</td>

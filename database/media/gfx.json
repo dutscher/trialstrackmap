@@ -37,6 +37,11 @@
       "lSrc": "#0/icons/sidebar-bg.png",
       "selector": ".new-sidebar"
     },
+    "medal-bronze": {
+      "src": "#1/9N83Lbk.png",
+      "lSrc": "#0/icons/medal-bronze.png",
+      "selector": "i.medal-bronze"
+    },
     "medal-silver": {
       "src": "#1/OJmAWbw.png",
       "lSrc": "#0/icons/medal-silver.png",

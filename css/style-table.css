@@ -25,6 +25,16 @@ td.center {
     text-align: center;
 }
 
+td.ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+td .faults {
+    position: relative;
+    top: -2px;
+}
+
 .rider-name {
     background: #3f2a1f;
 }

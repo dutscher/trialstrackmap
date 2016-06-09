@@ -137,6 +137,7 @@
       "profileName": "UPLAY Name",
       "profileRank": "UPLAY Rank",
       "myRank": "MyRank",
+      "myFaults": "MyFaults",
       "myTime": "MyTime",
       "myGoal": "MyGoalTime",
       "oldTime": "Current time",
@@ -154,7 +155,8 @@
     "placeholder": {
       "newTime": "Your time 0:15.000 -> insert 15000",
       "riderName": "Enter name of the WR-Rider",
-      "myRank": "Enter your newest rank"
+      "myRank": "Enter your newest rank",
+      "myFaults": "Enter your faults"
     },
     "editWR": {
       "header": "Edit World-Record (WR) for {%trackName%}",

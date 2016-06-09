@@ -78,15 +78,27 @@
                                 </td>
                                 <td class="center no-pad with-cursor" edit-improve="myTime"
                                     check-min="{typeValue:minDiff,value:track.improve[selectedMode][selectedBike].differenceTime.time}">
+                                    <span my-medal="myTime"
+                                          my-time="track.improve[selectedMode][selectedBike].myTime"
+                                          my-faults="track.improve[selectedMode][selectedBike].myFaults"></span>
                                     <span class="time-display">
                                         {%track.improve[selectedMode][selectedBike].myTime|convertTime%}
+                                        <span ng-if="track.improve[selectedMode][selectedBike].myFaults > 0">
+                                            <i class="faults"></i> {%track.improve[selectedMode][selectedBike].myFaults%}
+                                        </span>
                                         <span
                                             difference-time="track.improve[selectedMode][selectedBike].differenceTime"></span>
                                     </span>
                                     <span bike-driven="track.improve[selectedMode][selectedBike].myBike"></span>
                                 </td>
                                 <td class="center no-pad with-cursor" edit-improve="myGoal" ng-show="showMyGoal">
+                                    <span xmy-medal="myGoal"
+                                          my-time="track.improve[selectedMode][selectedBike].myGoal"
+                                          my-faults="track.improve[selectedMode][selectedBike].myGoalFaults"></span>
                                     {%track.improve[selectedMode][selectedBike].myGoal|convertTime%}
+                                    <span ng-if="track.improve[selectedMode][selectedBike].myGoalFaults > 0">
+                                        <i class="faults"></i> {%track.improve[selectedMode][selectedBike].myGoalFaults%}
+                                    </span>
                                     <span
                                         difference-time="track.improve[selectedMode][selectedBike].differenceTimeMyGoal"></span>
                                 </td>
