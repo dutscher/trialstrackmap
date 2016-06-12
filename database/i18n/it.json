@@ -155,7 +155,8 @@
     "placeholder": {
       "newTime": "Your time 0:15.000 -> insert 15000",
       "riderName": "Enter name of the WR-Rider",
-      "myRank": "Enter your newest rank"
+      "myRank": "Enter your newest rank",
+      "myFaults": "Enter your faults"
     },
     "editWR": {
       "header": "Edit World-Record (WR) for {%trackName%}",
@@ -200,7 +201,7 @@
         "searchId": "search your ID",
         "enterYourProfileName": "Please enter your UPLAY name!",
         "searchHeader": "Search for your UPLAY name and get your ID",
-        "confirmNewData": "Do you want to import the times of '{%exportDate%}' for UPLAY name '{%profileName%}' and override local changes?"
+        "confirmNewData": "Do you want to import the times of '{%exportDate%}' for '{%profileName%}' new rank '{%profileRank%}' and override local changes?"
       }
     },
     "export": {

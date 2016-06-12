@@ -7,9 +7,9 @@
       "goToSeasons": "Saison ({%nums%}) Übersicht",
       "goToMedals": "Medaillen & Teile Tabelle",
       "goToImprove": "Verbessere deine Streckenzeiten",
-      "goToWRRiderTemple": "WR-Rider-Tempel",
 	  "goToAnniversary": "Jubiläums Seite",
       "goToGarage": "Garage",
+      "goToWRRiderTemple": "WR-Rider-Tempel",
       "goToThread": "gehe dazu ins Forum",
       "stats": "Stats",
       "uplayID": "Uplay",
@@ -134,6 +134,8 @@
       "newTime": "Neue WR-Zeit",
       "riderName": "Ridername",
       "userName": "Username",
+      "profileName": "UPLAY Name",
+      "profileRank": "UPLAY Rank",
       "myRank": "Mein Rank",
       "myTime": "Meine Zeit",
       "myFaults": "Meine Fehler",
@@ -153,7 +155,8 @@
     "placeholder": {
       "newTime": "Deine Zeit 0:15.000 -> dann füge 15000 ein",
       "riderName": "Füge den Namen des WR-Rider ein",
-      "myRank": "Füge deinen neuen Rank ein"
+      "myRank": "Füge deinen neuen Rank ein",
+      "myFaults": "Füge deine Fehler ein"
     },
     "editWR": {
       "header": "Bearbeite Welt-Rekord (WR) auf {%trackName%}",
@@ -190,7 +193,16 @@
       "retrieveYourId": "Wiederherstellen deiner ID",
       "restoreHeader": "Wiederherstellen deiner Speicher ID",
       "enterYourUserName": "Füge deinen Username ein!",
-      "enterYourPassword": "Deine ID ist mit einerm Passwort geschützt."
+      "enterYourPassword": "Deine ID ist mit einerm Passwort geschützt.",
+      "tflforo": {
+        "header": "Import your times from http://tf.lforo.com live leaderboard",
+        "labelVia": "via profile ID",
+        "placeholder": "enter your tf.lforo profile ID",
+        "searchId": "search your ID",
+        "enterYourProfileName": "Please enter your UPLAY name!",
+        "searchHeader": "Search for your UPLAY name and get your ID",
+        "confirmNewData": "Do you want to import the times of '{%exportDate%}' for '{%profileName%}' new rank '{%profileRank%}' and override local changes?"
+      }
     },
     "export": {
       "header": "Export deiner Zeiten",

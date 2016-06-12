@@ -201,7 +201,7 @@
         "searchId": "search your ID",
         "enterYourProfileName": "Please enter your UPLAY name!",
         "searchHeader": "Search for your UPLAY name and get your ID",
-        "confirmNewData": "Do you want to import the times of '{%exportDate%}' for UPLAY name '{%profileName%}' and override local changes?"
+        "confirmNewData": "Do you want to import the times of '{%exportDate%}' for '{%profileName%}' new rank '{%profileRank%}' and override local changes?"
       }
     },
     "export": {
