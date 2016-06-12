@@ -1,5 +1,4 @@
 module.exports = function(grunt){
-
     grunt.registerTask("server", [
         "doBackup",
         "serverWithoutBackup"
@@ -12,8 +11,8 @@ module.exports = function(grunt){
     ]);
 
     var rewrite = require("connect-modrewrite"),
-        config = require("./connect-config.json5"),
-        rules = require("./connect-rewrite-rules.json5"),
+        config = require("./config/connect.json5"),
+        rules = require("./config/connect-rewrite-rules.json5"),
         serveStatic = require('serve-static');
 
     return {

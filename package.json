@@ -4,7 +4,7 @@
   "version": "3.9.0",
   "description": "track locations and informations of the mobile game trials frontier",
   "author": "willy woitas <dutscher_sbf@hotmail.com>",
-  "dependencies": {
+  "devDependencies": {
     "grunt": "latest",
     "grunt-cli": "latest",
     "request": "latest",
@@ -26,7 +26,13 @@
     "json5": "latest",
     "grunt-assemble": "latest",
     "grunt-contrib-less": "latest",
-    "less-plugin-glob": "latest"
+    "less-plugin-glob": "latest",
+    "karma": "latest",
+    "karma-coverage": "latest",
+    "karma-jasmine": "latest",
+    "jasmine-core": "latest",
+    "karma-phantomjs-launcher": "latest",
+    "phantomjs-prebuilt": "latest"
   },
   "engine": "node 5.6.0, npm 3.6.0"
 }

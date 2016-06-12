@@ -1,6 +1,6 @@
 module.exports = function (grunt) {
 
-    var config = require("./connect-config.json5");
+    var config = require("./config/connect.json5");
 
     return {
         options: {
@@ -11,7 +11,8 @@ module.exports = function (grunt) {
                 "lib/**/*.js"
             ],
             tasks: [
-                "concat:dist"
+                "concat:dist",
+                "testUnit"
             ],
             options: {
                 livereload: config.livereload

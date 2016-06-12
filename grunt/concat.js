@@ -37,7 +37,7 @@ module.exports = {
         },
         src: [
             "lib/map-module.js",
-            "lib/**/!(map-module|.min)*.js"
+            "lib/**/!(map-module|.min|*.spec)*.js"
         ],
         dest: "dist/map.min.js"
     },

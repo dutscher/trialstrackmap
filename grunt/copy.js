@@ -43,12 +43,6 @@ module.exports = function (grunt) {
                     expand: true,
                     src: "database/events/seasons.json",
                     dest: "dist/"
-                },
-                {
-                    flatten: true,
-                    expand: true,
-                    src: "database/raw/tf.lforo.com-leaders.json",
-                    dest: "dist/"
                 }
             ]
         },
