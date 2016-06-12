@@ -5,7 +5,7 @@
                 htmlReturn = "";
 
             if (season.active) {
-                htmlReturn = season.title + ' <span class="countdown" date-start="' + season.date + '" date-end="' + season.date_end + '"></span>';
+                htmlReturn = season.title + ' <span class="countdown" count="false" date-start="' + season.date + '" date-end="' + season.date_end + '"></span>';
             }
             return htmlReturn;
 
