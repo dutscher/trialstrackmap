@@ -127,6 +127,11 @@
       "lSrc": "#0/icons/flag-hr.png",
       "selector": "i.lang.lang_hr"
     },
+    "country_no": {
+      "src": "#1/DVZba3L.png",
+      "lSrc": "#0/icons/flag-no.png",
+      "selector": "i.lang.lang_no"
+    },
 
     "timer": {
       "src": "#1/GLuwunX.png",

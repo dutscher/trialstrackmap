@@ -39,6 +39,7 @@
                             {{#with seasons}}
                                 <a href="/seasons.html">{%'page.leftSidebar.goToSeasons'|translate:{
                                     nums:{{_seasons.length}} }%} &raquo;</a>
+                                {{{season-countdown _seasons _active_season}}}
                             {{/with}}
                             <a href="/anniversary.html">{%'page.leftSidebar.goToAnniversary'|translate%} &raquo;</a>
                         </div>

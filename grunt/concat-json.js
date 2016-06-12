@@ -57,6 +57,7 @@ module.exports = function (grunt) {
         list("database/events/seasons");
         // make last season active
         seasonsFile._seasons[seasonIndex - 2].active = true;
+        seasonsFile._active_season = seasonIndex - 2;
         // write file to dist
         grunt.file.write(distFilePath, JSON.stringify(seasonsFile, null, 2));
     });

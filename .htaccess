@@ -2,10 +2,10 @@ RewriteEngine On
 
 # [R] redirect
 # [L] last condition
-RewriteCond %{DOCUMENT_ROOT}dist%{REQUEST_URI}			    -f
-RewriteRule (.*)\.html				                        /dist/$1.html [L]
+RewriteCond %{DOCUMENT_ROOT}dist%{REQUEST_URI}  -f
+RewriteRule (.*)\.html				            /dist/$1.html [L]
 
 # 404
-#RewriteCond %{REQUEST_FILENAME}			        !-d
-#RewriteCond %{REQUEST_FILENAME}			        !-f
-#RewriteRule ^(.*)$						        /index.html [L]
+#RewriteCond %{REQUEST_FILENAME}			    !-d
+#RewriteCond %{REQUEST_FILENAME}			    !-f
+#RewriteRule ^(.*)$						        /dist/index.html [L]
