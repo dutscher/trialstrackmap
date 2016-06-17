@@ -36,6 +36,9 @@
                                     title="{%'page.timesTable.improve.myRank'|translate%}">
                                     <i class="rank"></i>
                                 </th>
+                                <th rowspan="2" width="50" table-sorter="myRankPercent">
+                                    %
+                                </th>
                                 <th rowspan="2" table-sorter="differenceTime"
                                     title="{%'page.timesTable.improve.myTime'|translate%}">
                                     <i class="timer"></i>
@@ -75,6 +78,9 @@
                                 <td class="center no-pad with-cursor" edit-improve="myRank"
                                     check-min="{typeValue:minRank,value:track.improve[selectedMode][selectedBike].myRank}">
                                     {%track.improve[selectedMode][selectedBike].myRank%}
+                                </td>
+                                <td class="center no-pad with-cursor">
+                                    {%track.improve[selectedMode][selectedBike].myRankPercent%}
                                 </td>
                                 <td class="center no-pad with-cursor" edit-improve="myTime"
                                     check-min="{typeValue:minDiff,value:track.improve[selectedMode][selectedBike].differenceTime.time}">
