@@ -34,5 +34,5 @@
     "karma-phantomjs-launcher": "latest",
     "phantomjs-prebuilt": "latest"
   },
-  "engine": "node 5.6.0, npm 3.6.0"
+  "engine": "node 5.1.0, npm 3.3.12"
 }
