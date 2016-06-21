@@ -6,7 +6,7 @@ module.exports = function (config) {
     config.set({
         basePath: "./../../",
         frameworks: ["jasmine"],
-        singleRun: true,
+        singleRun: false,
         background: true,
         browsers: ["PhantomJS"],
         port: _config_.karma,

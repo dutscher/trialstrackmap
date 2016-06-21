@@ -3,6 +3,7 @@ module.exports = function (grunt) {
     var _ = require("lodash"),
         arrFiles = [
             "./dist/vendor.min.js",
+            "./dist/map.min.js",
             "./vendor/angular-mocks/angular-mocks.js"
         ];
 

@@ -11,8 +11,7 @@ module.exports = function (grunt) {
                 "lib/**/*.js"
             ],
             tasks: [
-                "concat:dist",
-                "testUnit"
+                "concat:dist"
             ],
             options: {
                 livereload: config.livereload

@@ -45,7 +45,8 @@ module.exports = {
         src: [
             "vendor/angular/angular-base.js",
             "vendor/angular/!(angular-base)*.js",
-            "vendor/*.js"
+            "vendor/angular-third-party/*.js",
+            "vendor/*.js" // first level files
         ],
         dest: "dist/vendor.min.js"
     }
