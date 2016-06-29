@@ -80,12 +80,15 @@ a strong {
 }
 
 .search {
-    display: block;
+    display: inline-block;
     border: none;
     padding: 5px 2px;
     width: 100%;
     background: rgba(255, 255, 255, 0.5);
     color: #fff
+}
+.search.with-icon {
+    width: 90%;
 }
 
 .search::-webkit-input-placeholder {

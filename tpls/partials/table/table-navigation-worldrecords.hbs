@@ -12,7 +12,7 @@
     <input type="text" placeholder="{%'page.worldRecordsTable.searchForRider'|translate%}"
            select-on-click
            ng-model="search"
-           ng-model-options="{debounce:500}"
+           ng-model-options="{debounce:100}"
            ng-change="saveSearch()" />
     <i class="faults with-cursor" ng-if="search != ''" ng-click="clearSearch()"></i>
     |

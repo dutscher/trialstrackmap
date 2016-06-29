@@ -96,6 +96,10 @@ body {
     font-weight: bold;
     text-decoration: none
 }
+.link-info {
+    font-size: 14px;
+    display: block;
+}
 .box, .classic-link {
     color: #ffee99
 }

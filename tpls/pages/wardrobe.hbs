@@ -1,0 +1,17 @@
+{{#extend "default"}}
+    {{#content "styles" mode="append"}}
+        <link rel="stylesheet" type="text/css" href="/dist/main.css{{cacheBuster}}"/>
+    {{/content}}
+
+    {{#content "body"}}
+        <style>
+
+        </style>
+
+        <div class="page-body">
+            {{> navigation}}
+
+            <img src="http://i.imgur.com/lkJLKaD.jpg" />
+        </div>
+    {{/content}}
+{{/extend}}

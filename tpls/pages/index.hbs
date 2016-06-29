@@ -26,50 +26,45 @@
                 <ul>
                     <li>
                         <div class="wrap">
-                            <h2>{%'page.title'|translate%}</h2>
+                            <h2>{%'page.leftSidebar.stats'|translate%}</h2>
+                            {{#with map}}
+                                {%'page.leftSidebar.appVersion'|translate%}: {{database.map.stats.app_version}}<br/>
+                            {{/with}}
 
-                            <div language-select></div>
+                            {%'page.leftSidebar.update'|translate%}: {%'{{lastUpdateTime}}'|humanReadableDate%}
 
                             <hr>
+
+                            <div language-select></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="wrap">
+                            <h2>{%'page.title'|translate%}</h2>
 
                             <a href="/table-improve.html">{%'page.leftSidebar.goToImprove'|translate%} &raquo;</a>
                             <a href="/wr-rider-temple.html">{%'page.leftSidebar.goToWRRiderTemple'|translate%} &raquo;</a>
                             <a href="/garage.html">{%'page.leftSidebar.goToGarage'|translate%} &raquo;</a>
+                            <a href="/wardrobe.html">{%'page.leftSidebar.goToWardrobe'|translate%} &raquo;</a>
                             <a href="/table-medals.html">{%'page.leftSidebar.goToMedals'|translate%} &raquo;</a>
                             {{#with seasons}}
                                 <a href="/seasons.html">{%'page.leftSidebar.goToSeasons'|translate:{
-                                    nums:{{_seasons.length}} }%} &raquo;</a>
-                                {{{season-countdown _seasons _active_season}}}
+                                    nums:{{_seasons.length}} }%} &raquo;
+                                    <span class="link-info">{{{season-countdown _seasons _active_season}}}</span>
+                                </a>
+
                             {{/with}}
                             <a href="/anniversary.html">{%'page.leftSidebar.goToAnniversary'|translate%} &raquo;</a>
                         </div>
                     </li>
                     <li>
                         <div class="wrap">
-                            <h2>{%'page.leftSidebar.stats'|translate%}</h2>
+                            <h2>{%'page.leftSidebar.usefullLinks'|translate%}</h2>
                             {{#with map}}
-                                {%'page.leftSidebar.uplayID'|translate%}: {{database.map.stats.uplay}}<br/>
-                                {%'page.leftSidebar.appVersion'|translate%}: {{database.map.stats.app_version}}<br/>
-                                <hr>
+                                {{#each database.map.usefull_links}}
+                                    <a href="{{href}}" target="_blank">{{title}} &raquo;</a>
+                                {{/each}}
                             {{/with}}
-
-                            {%'page.leftSidebar.update'|translate%}: {%'{{lastUpdateTime}}'|humanReadableDate%}<br/>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="wrap tierlegend">
-                            <h2 class="with-cursor" ng-click="visibility('linksVisible')">
-                                {%'page.leftSidebar.usefullLinks'|translate%}</h2>
-
-                            <div ng-show="linksVisible">
-                                {{#with map}}
-                                    {{#each database.map.usefull_links}}
-                                        <a href="{{href}}" target="_blank">{{title}}</a>
-                                    {{/each}}
-                                {{/with}}
-                            </div>
-                            <span class="with-cursor" ng-click="visibility('linksVisible')"
-                                  ng-hide="linksVisible">{%'page.leftSidebar.toggleMe'|translate%}</span>
                         </div>
                     </li>
                     <li>
@@ -117,45 +112,19 @@
                 <ul>
                     <li>
                         <div class="wrap tierlegend">
-                            <h2 class="with-cursor" ng-click="visibility('statsVisible')">
-                                {%'page.rightSidebar.tracks'|translate%} ({%::data.tracks.length%} total)</h2>
-
-                            <div ng-show="statsVisible">
-                                <span track-stats></span>
-                            </div>
-                            <span class="with-cursor" ng-click="visibility('statsVisible')" ng-hide="statsVisible">{%'page.leftSidebar.toggleMe'|translate%}</span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="wrap tierlegend">
-                            <h2 class="with-cursor" ng-click="visibility('legendVisible')">
-                                {%'page.rightSidebar.legend'|translate%}</h2>
-
-                            <div ng-show="legendVisible">
-                                <span class="{%::cat.class%} with-cursor"
-                                      ng-repeat="cat in data.map.cats"
-                                      show-cat-on-map="{cat:cat,catIndex:$index+1,tracks:data.tracks}">
-                                    <span class="number-badge">{%::(data.tracks|catAndTierTracks:$index+1).length%}</span>
-                                    {%'cats.'+cat.index|translate%}
-                                </span>
-                            </div>
-                                <span class="with-cursor"
-                                      ng-click="visibility('legendVisible')"
-                                      ng-hide="legendVisible">{%'page.leftSidebar.toggleMe'|translate%}</span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="wrap tierlegend">
-                            <h2>{%'page.rightSidebar.tracks'|translate%}</h2>
+                            <h2>{%'page.rightSidebar.tracks'|translate%} ({%tracksInTiersNum%})</h2>
 
                             <div class="mb10">
                                 <input type="text"
                                        class="search"
+                                       ng-class="{'with-icon':searchTrack != ''}"
                                        placeholder="{%'page.rightSidebar.searchForTrack'|translate%}"
+                                       select-on-click
                                        ng-model="searchTrack"
-                                       ng-model-options="{debounce:250}"/>
+                                       ng-model-options="{debounce:150}" />
+                                <i class="faults with-cursor" ng-if="searchTrack != ''" ng-click="clearSearch()"></i>
                             </div>
-                            <div ng-repeat="tier in tierlegend" class="tierwrap">
+                            <div ng-repeat="tier in tracksInTiers" class="tierwrap">
                                 <hr>
                                 <h3>{%'page.rightSidebar.tier'|translate%} {%::tier.number%}</h3>
                                     <span ng-repeat="catClass in repeatObject(tier.cats)"
@@ -164,6 +133,27 @@
                                                track-in-sidebar="{track:track,catClass:catClass}"></span>
                                     </span>
                             </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="wrap tierlegend">
+                            <h2 class="with-cursor">
+                                {%'page.rightSidebar.legend'|translate%}</h2>
+
+                            <span class="{%::cat.class%} with-cursor"
+                                  ng-repeat="cat in data.map.cats"
+                                  show-cat-on-map="cat"></span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="wrap tierlegend">
+                            <h2 class="with-cursor" ng-click="visibility('statsVisible')">
+                                {%'page.rightSidebar.tracks'|translate%} ({%::data.tracks.length%} total)</h2>
+
+                            <div ng-show="statsVisible">
+                                <span track-stats></span>
+                            </div>
+                            <span class="with-cursor" ng-click="visibility('statsVisible')" ng-hide="statsVisible">{%'page.leftSidebar.toggleMe'|translate%}</span>
                         </div>
                     </li>
                 </ul>

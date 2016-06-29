@@ -22,7 +22,7 @@
         <input type="text" placeholder="{%'page.rightSidebar.searchForTrack'|translate%}"
                select-on-click
                ng-model="search"
-               ng-model-options="{debounce:500}"
+               ng-model-options="{debounce:100}"
                ng-change="saveSearch()"/>
         <i class="faults with-cursor" ng-if="search != ''" ng-click="clearSearch()"></i>
 
@@ -140,7 +140,7 @@
                                placeholder="{%'page.timesTable.improve.minRankPlaceholder'|translate%}"
                                select-on-click
                                ng-model="minRank"
-                               ng-model-options="{debounce:500}"
+                               ng-model-options="{debounce:100}"
                                ng-change="clearMinRank()"/>
                     </div>
                     <div class="flyout__item">
@@ -151,7 +151,7 @@
                                placeholder="{%'page.timesTable.improve.minDifferencePlaceholder'|translate%}"
                                select-on-click
                                ng-model="minDiff"
-                               ng-model-options="{debounce:500}"
+                               ng-model-options="{debounce:100}"
                                ng-change="clearMinDiff()"/>
                     </div>
                 {{/xif}}
