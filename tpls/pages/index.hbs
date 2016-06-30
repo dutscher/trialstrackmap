@@ -44,17 +44,22 @@
 
                             <a href="/table-improve.html">{%'page.leftSidebar.goToImprove'|translate%} &raquo;</a>
                             <a href="/wr-rider-temple.html">{%'page.leftSidebar.goToWRRiderTemple'|translate%} &raquo;</a>
-                            <a href="/garage.html">{%'page.leftSidebar.goToGarage'|translate%} &raquo;</a>
-                            <a href="/wardrobe.html">{%'page.leftSidebar.goToWardrobe'|translate%} &raquo;</a>
+                            {{#with map.database.bikes}}
+                                <a href="/garage.html">
+                                    {%'page.leftSidebar.goToGarage'|translate%} ({{objectLen this}}) &raquo;
+                                </a>
+                            {{/with}}
+                            {{#with wardrobe}}
+                                <a href="/wardrobe.html">{%'page.leftSidebar.goToWardrobe'|translate%}
+                                    ({{objectLen all}}) &raquo;</a>
+                            {{/with}}
                             <a href="/table-medals.html">{%'page.leftSidebar.goToMedals'|translate%} &raquo;</a>
                             {{#with seasons}}
                                 <a href="/seasons.html">{%'page.leftSidebar.goToSeasons'|translate:{
                                     nums:{{_seasons.length}} }%} &raquo;
                                     <span class="link-info">{{{season-countdown _seasons _active_season}}}</span>
                                 </a>
-
                             {{/with}}
-                            <a href="/anniversary.html">{%'page.leftSidebar.goToAnniversary'|translate%} &raquo;</a>
                         </div>
                     </li>
                     <li>
@@ -65,6 +70,7 @@
                                     <a href="{{href}}" target="_blank">{{title}} &raquo;</a>
                                 {{/each}}
                             {{/with}}
+                            <a href="/anniversary.html">{%'page.leftSidebar.goToAnniversary'|translate%} &raquo;</a>
                         </div>
                     </li>
                     <li>
@@ -121,7 +127,7 @@
                                        placeholder="{%'page.rightSidebar.searchForTrack'|translate%}"
                                        select-on-click
                                        ng-model="searchTrack"
-                                       ng-model-options="{debounce:150}" />
+                                       ng-model-options="{debounce:150}"/>
                                 <i class="faults with-cursor" ng-if="searchTrack != ''" ng-click="clearSearch()"></i>
                             </div>
                             <div ng-repeat="tier in tracksInTiers" class="tierwrap">
@@ -167,7 +173,7 @@
             <div zoom-here>
                 <canvas canvas-track-pointer></canvas>
 
-                <img hide-me-on-pan src="blank.png" class="track-pointer" usemap="#trackmap" />
+                <img hide-me-on-pan src="blank.png" class="track-pointer" usemap="#trackmap"/>
 
                 {{#with gfx}}
                     <img class="trackmap" world="{% selectedWorld %}" alt="{% worldAlt %}"
