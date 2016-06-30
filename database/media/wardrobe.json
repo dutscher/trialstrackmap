@@ -1,0 +1,331 @@
+{
+  "order": [
+    6,35,46,8,20,15,10,11,14,12,13,16,
+    1,3,21,39,19,43,22,7,5,9,18,4,
+    28,44,34,2,23,38,29,17,45,33,32,41
+  ],
+  "all": {
+    "1": {
+      "name": "The Survivor",
+      "info": "(Basic)",
+      "img": "http://www.mediafire.com/convkey/5bbf/mfj6b6f2n1b492izg.jpg?size_id=a"
+    },
+    "2": {
+      "name": "The Scarf",
+      "img": "http://i.imgur.com/cp8WIwz.jpg",
+      "head": "Lootwheel or 15 Gems",
+      "top": "Lootwheel or 15 Gems",
+      "pants": "Lootwheel or 15 Gems"
+    },
+    "3": {
+      "name": "The Hipster",
+      "img": "http://i.imgur.com/lhYuJu5.jpg",
+      "head": "Lootwheel or 20 Gems",
+      "top": "Lootwheel or 15 Gems",
+      "pants": "Lootwheel or 15 Gems"
+    },
+    "4": {
+      "name": "The Cooler",
+      "img": "http://i.imgur.com/0XOOUgq.jpg",
+      "head": "25 Gems",
+      "top": "25 Gems",
+      "pants": "25 Gems"
+    },
+    "5": {
+      "name": "The Stuntman",
+      "img": "http://i.imgur.com/ZH8Ak96.jpg",
+      "offer_name": "'May Day Offer', may 2015",
+      "offer": "https://www.facebook.com/trialsfrontier.game/photos/pb.241184409381271.-2207520000.1439474188./471281216371588/?type=3&theater",
+      "head": "Earn in Time Capsule",
+      "top": "Earn in Time Capsule",
+      "pants": "Earn in Time Capsule"
+    },
+    "6": {
+      "name": "The Gladiator",
+      "img": "http://i.imgur.com/OYOXOSJ.jpg",
+      "head": "100 Gems",
+      "top": "25 Gems",
+      "pants": "Slot Machine"
+    },
+    "7": {
+      "name": "The Butcher",
+      "img": "http://i.imgur.com/AAzmfF4.jpg",
+      "head": "",
+      "top": "",
+      "pants": ""
+    },
+    "8": {
+      "name": "The Dogfighter",
+      "img": "http://i.imgur.com/j1pFbE5.jpg",
+      "head": "",
+      "top": "",
+      "pants": ""
+    },
+    "9": {
+      "name": "The Diver",
+      "img": "http://i.imgur.com/6uaW6l5.jpg",
+      "head": "",
+      "top": "",
+      "pants": ""
+    },
+    "10": {
+      "name": "The Enforcer",
+      "img": "http://i.imgur.com/ufHyLyQ.jpg",
+      "head": "",
+      "top": "",
+      "pants": ""
+    },
+    "11": {
+      "name": "The Rebel",
+      "img": "http://i.imgur.com/SE8VmnC.jpg",
+      "head": "",
+      "top": "",
+      "pants": ""
+    },
+    "12": {
+      "name": "The Priest",
+      "img": "http://i.imgur.com/1DGQcPq.jpg",
+      "head": "",
+      "top": "",
+      "pants": ""
+    },
+    "13": {
+      "name": "The Cyberpunk",
+      "img": "http://i.imgur.com/YhUD9UE.jpg",
+      "head": "",
+      "top": "",
+      "pants": ""
+    },
+    "14": {
+      "name": "The Goon",
+      "img": "http://i.imgur.com/tLmSdkG.jpg",
+      "head": "",
+      "top": "",
+      "pants": ""
+    },
+    "15": {
+      "name": "The Cyborg",
+      "img": "http://i.imgur.com/9j9g4fn.jpg",
+      "head": "",
+      "top": "",
+      "pants": ""
+    },
+    "16": {
+      "name": "The Platinum Knight",
+      "img": "http://i.imgur.com/lDLIGIt.jpg",
+      "head": "",
+      "top": "",
+      "pants": ""
+    },
+    "17": {
+      "name": "Eggman",
+      "img": "http://i.imgur.com/vpzEbPF.png",
+      "head": "",
+      "top": "",
+      "pants": ""
+    },
+    "18": {
+      "name": "The Soldier",
+      "img": "http://www.mediafire.com/convkey/2be4/h69f7z1x2vfb913zg.jpg?size_id=a",
+      "head": "",
+      "top": "",
+      "pants": ""
+    },
+    "19": {
+      "name": "The Pumpkin King",
+      "img": "http://www.mediafire.com/convkey/d8d4/5pipm2sj6eohnj8zg.jpg?size_id=a",
+      "head": "",
+      "top": "",
+      "pants": ""
+    },
+    "20": {
+      "name": "Ancient Guardian",
+      "img": "http://www.mediafire.com/convkey/08fa/45i5j0c6x4ei1yozg.jpg?size_id=a",
+      "head": "",
+      "top": "",
+      "pants": ""
+    },
+    "21": {
+      "name": "Samsarian",
+      "img": "http://i.imgur.com/Cumumrk.jpg",
+      "head": "",
+      "top": "",
+      "pants": ""
+    },
+    "22": {
+      "name": "Manbird",
+      "img": "http://i.imgur.com/ZMCdAN5.jpg",
+      "head": "",
+      "top": "",
+      "pants": ""
+    },
+    "23": {
+      "name": "Cornelius Costume",
+      "img": "http://i.imgur.com/55fZlbV.jpg",
+      "head": "",
+      "top": "",
+      "pants": ""
+    },
+    "24": {
+      "name": "The Death Knight",
+      "img": "http://www.mediafire.com/convkey/5e03/g8nfgymbfk1228vzg.jpg?size_id=a",
+      "head": "",
+      "top": "",
+      "pants": ""
+    },
+    "25": {
+      "name": "The Mountaineer",
+      "img": "http://i.imgur.com/mtSTloH.jpg",
+      "head": "",
+      "top": "",
+      "pants": ""
+    },
+    "26": {
+      "name": "Snowfox",
+      "img": "http://i.imgur.com/PjGIZEY.jpg",
+      "head": "",
+      "top": "",
+      "pants": ""
+    },
+    "27": {
+      "name": "Polar Vortex",
+      "img": "http://i.imgur.com/etVZDfr.jpg",
+      "head": "",
+      "top": "",
+      "pants": ""
+    },
+    "28": {
+      "name": "The Yeti",
+      "img": "http://www.mediafire.com/convkey/2bbd/9d74n2c16qfj344zg.jpg?size_id=a",
+      "head": "",
+      "top": "",
+      "pants": ""
+    },
+    "29": {
+      "name": "Arctic Explorer",
+      "img": "http://i.imgur.com/cZk7Pfs.jpg",
+      "head": "",
+      "top": "",
+      "pants": ""
+    },
+    "30": {
+      "name": "Indie Rider",
+      "img": "http://www.mediafire.com/convkey/0e4b/9fscztllfawyrfkzg.jpg?size_id=a",
+      "head": "",
+      "top": "",
+      "pants": ""
+    },
+    "31": {
+      "name": "Henchmen Uniform",
+      "img": "http://i.imgur.com/luySeAd.jpg",
+      "head": "",
+      "top": "",
+      "pants": ""
+    },
+    "32": {
+      "name": "Super Spy",
+      "img": "http://www.mediafire.com/convkey/31b2/3i4sbkml4lb95n1zg.jpg?size_id=a",
+      "head": "",
+      "top": "",
+      "pants": ""
+    },
+    "33": {
+      "name": "High Roller",
+      "img": "http://i.imgur.com/9YyHFeU.png",
+      "head": "",
+      "top": "",
+      "pants": ""
+    },
+    "34": {
+      "name": "Cow-Girl",
+      "img": "http://i.imgur.com/Rpopm2U.png",
+      "head": "",
+      "top": "",
+      "pants": ""
+    },
+    "35": {
+      "name": "The Native Warrior",
+      "img": "http://i.imgur.com/FGGVbWd.jpg",
+      "head": "",
+      "top": "",
+      "pants": ""
+    },
+    "36": {
+      "name": "The Convict",
+      "img": "http://i.imgur.com/FgKjC4M.jpg",
+      "head": "",
+      "top": "",
+      "pants": ""
+    },
+    "37": {
+      "name": "The Sheriff",
+      "img": "http://i.imgur.com/k7jtARB.jpg",
+      "head": "",
+      "top": "",
+      "pants": ""
+    },
+    "38": {
+      "name": "The Gunslinger",
+      "img": "http://i.imgur.com/52z6VOD.jpg",
+      "head": "",
+      "top": "",
+      "pants": ""
+    },
+    "39": {
+      "name": "The Undead Rider",
+      "img": "http://i.imgur.com/BhwlNYJ.jpg",
+      "head": "",
+      "top": "",
+      "pants": ""
+    },
+    "40": {
+      "name": "The Hillbilly Killer",
+      "img": "http://i.imgur.com/yutTYm8.jpg",
+      "head": "",
+      "top": "",
+      "pants": ""
+    },
+    "41": {
+      "name": "Christmas Gal",
+      "img": "http://s8.postimg.org/h9t4xckp1/Christmas_Gal.jpg",
+      "head": "",
+      "top": "",
+      "pants": ""
+    },
+    "42": {
+      "name": "The Holiday Scarf",
+      "img": "http://s11.postimg.org/k79vy7s0j/Holiday_Scarf.jpg",
+      "head": "",
+      "top": "",
+      "pants": ""
+    },
+    "43": {
+      "name": "The Sugar Daddy",
+      "img": "http://s30.postimg.org/i2lwa21ch/image.jpg",
+      "head": "",
+      "top": "",
+      "pants": ""
+    },
+    "44": {
+      "name": "KTM outfit",
+      "img": "http://i.imgur.com/ggnl0oh.jpg",
+      "head": "",
+      "top": "",
+      "pants": ""
+    },
+    "45": {
+      "name": "The Hungry Shark",
+      "img": "http://i.imgur.com/dHZa0h2.png",
+      "head": "",
+      "top": "",
+      "pants": ""
+    },
+    "46": {
+      "name": "The Ninja",
+      "img": "",
+      "head": "",
+      "top": "",
+      "pants": ""
+    }
+  }
+}

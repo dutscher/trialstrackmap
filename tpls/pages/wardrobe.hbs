@@ -11,7 +11,20 @@
         <div class="page-body">
             {{> navigation}}
 
-            <img src="http://i.imgur.com/lkJLKaD.jpg" />
+            {{#with ../wardrobe}}
+                <img src="http://i.imgur.com/lkJLKaD.jpg" usemap="#costumes"/>
+                <map name="costumes">
+                    {{#each order}}
+                        <area shape="rect"
+                              alt="{{costume ../all this "name"}}"
+                              title="{{costume ../all this "name"}}"
+                              coords="{{costumePosition @key @index 12}},50"
+                              href="{{costume ../all this "img"}}"
+                              target="_blank"
+                            />
+                    {{/each}}
+                </map>
+            {{/with}}
         </div>
     {{/content}}
 {{/extend}}

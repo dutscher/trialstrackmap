@@ -28,7 +28,8 @@ module.exports = function (grunt) {
         },
         assemble: {
             files: [
-                "./tpls/**/*.hbs"
+                "./tpls/**/*.hbs",
+                "./tpls/**/*.js"
             ],
             tasks: [
                 "deployHtml"
