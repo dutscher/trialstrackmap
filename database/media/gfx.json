@@ -239,6 +239,11 @@
       "lSrc": "#0/icons/trackitem-data-cube.png",
       "selector": "i.data-cube"
     },
+    "treasure": {
+      "src": "#1/3OZqNA7.png",
+      "lSrc": "#0/icons/trackitem-treasure.png",
+      "selector": "i.treasure"
+    },
     "youtube": {
       "src": "#1/xj2UqWG.png",
       "lSrc": "#0/icons/trackitem-youtube.png",
