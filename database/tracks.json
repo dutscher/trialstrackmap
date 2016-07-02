@@ -1494,4 +1494,32 @@
     "world": 2,
     "season-reward": true
   }
+  ,{
+    "id": 212,
+    "tier": 2,
+    "cats": "19",
+    "prio": 1,
+    "world": 2
+  }
+  ,{
+    "id": 213,
+    "tier": 1,
+    "cats": "19",
+    "prio": 2,
+    "world": 2
+  }
+  ,{
+    "id": 214,
+    "tier": 3,
+    "cats": "19",
+    "prio": 3,
+    "world": 2
+  }
+  ,{
+    "id": 215,
+    "tier": 1,
+    "cats": "19",
+    "prio": 4,
+    "world": 2
+  }
 ]
