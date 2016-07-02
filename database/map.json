@@ -162,6 +162,12 @@
     },
     {
       "index": 19,
+      "class": "treasure-pieces",
+      "color": "98A449",
+      "notInTimes": true
+    },
+    {
+      "index": 20,
       "class": "treasure-hunt",
       "color": "935A05"
     }

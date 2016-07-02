@@ -118,6 +118,19 @@
                 <ul>
                     <li>
                         <div class="wrap tierlegend">
+                            <h2 class="with-cursor">
+                                {%'page.rightSidebar.legend'|translate%}</h2>
+
+                            <div class="spectrum__wrap">
+                                <div ng-repeat="cat in data.map.cats"
+                                     show-cat-on-map="cat"
+                                     class="spectrum__item {%::cat.class%}-bg"
+                                     title="{%'cats.' + cat.index|translate%}"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="wrap tierlegend">
                             <h2>{%'page.rightSidebar.tracks'|translate%} ({%tracksInTiersNum%})</h2>
 
                             <div class="mb10">
@@ -139,16 +152,6 @@
                                                track-in-sidebar="{track:track,catClass:catClass}"></span>
                                     </span>
                             </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="wrap tierlegend">
-                            <h2 class="with-cursor">
-                                {%'page.rightSidebar.legend'|translate%}</h2>
-
-                            <span class="{%::cat.class%} with-cursor"
-                                  ng-repeat="cat in data.map.cats"
-                                  show-cat-on-map="cat"></span>
                         </div>
                     </li>
                     <li>

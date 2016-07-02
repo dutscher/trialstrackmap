@@ -87,6 +87,7 @@ a strong {
     background: rgba(255, 255, 255, 0.5);
     color: #fff
 }
+
 .search.with-icon {
     width: 90%;
 }
@@ -114,6 +115,7 @@ a strong {
 .track-available {
     white-space: nowrap;
 }
+
 .track-available span {
     display: inline-block !important;
 }
@@ -124,6 +126,7 @@ a strong {
     -webkit-transition: opacity 250ms, width 250ms;
     transition: opacity 250ms, width 250ms;
 }
+
 .track-available:hover .map-pointer:not(.inactive) {
     opacity: 1;
     width: 10px;
@@ -131,6 +134,7 @@ a strong {
     border-style: solid;
     border-color: transparent #adffff transparent transparent;
 }
+
 .track-available:hover .map-pointer.other-world {
     border-color: transparent #F4D992 transparent transparent;
 }
@@ -172,10 +176,11 @@ a strong {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7f0000+28,c30000+100 */
     background: #7f0000; /* Old browsers */
     background: -moz-linear-gradient(left, #7f0000 28%, #c30000 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, #7f0000 28%,#c30000 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, #7f0000 28%,#c30000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7f0000', endColorstr='#c30000',GradientType=1 ); /* IE6-9 */
+    background: -webkit-linear-gradient(left, #7f0000 28%, #c30000 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #7f0000 28%, #c30000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7f0000', endColorstr='#c30000', GradientType=1); /* IE6-9 */
 }
+
 .with-badge:hover.youtube-badge .badge {
     color: #C30000;
     background: #fff;
@@ -603,6 +608,7 @@ img.trackmap.all-loaded {
 span[track-in-sidebar] {
     display: block;
 }
+
 span[track-in-sidebar] span {
     display: inline-block;
 }
@@ -634,3 +640,24 @@ span[track-in-sidebar] span {
     }
 }
 */
+
+.spectrum__wrap {
+    font-size: 0;
+    display: inline-block;
+}
+
+.spectrum__item {
+    cursor: pointer;
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    margin: 2px!important;
+    line-height: 19px;
+    text-align: center;
+    font-size: 10px;
+    text-shadow:  1px  1px 1px black,
+    1px -1px 1px black,
+    -1px  1px 1px black,
+    -1px -1px 1px black;
+    font-family: Arial, Helvetica, sans-serif;
+}
