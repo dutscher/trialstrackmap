@@ -248,14 +248,15 @@
     "8": "Halloween 2014",
     "9": "O Bunker",
     "10": "China",
-    "11": "Inverno",
+    "11": "Inverno 2015",
     "12": "Vazado",
-    "13": "Agentes",
-    "14": "Rodeio",
+    "13": "Agentes 2015",
+    "14": "Rodeio 2015",
     "15": "Halloween 2015",
     "16": "Natal 2015",
-    "17": "KTM",
-    "18": "Petrol Falls"
+    "17": "KTM 2016",
+    "18": "Petrol Falls",
+    "19": "Treasure Hunt 2016"
   },
   "tiers": {
     "1": "Nível 1",
@@ -494,6 +495,10 @@
     "208": "Pista de Corrida Perdida",
     "209": "Corrida de Resistência",
     "210": "KTM Course",
-    "211": "Metal Mayhem"
+    "211": "Metal Mayhem",
+    "212": "Razor Dunes",
+    "213": "High Tide Heights",
+    "214": "Choking Hazared",
+    "215": "Faceplant Precinct"
   }
 }

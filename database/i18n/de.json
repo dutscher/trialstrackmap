@@ -250,12 +250,13 @@
     "10": "China",
     "11": "Winter",
     "12": "Leaked",
-    "13": "Agenten",
-    "14": "Rodeo",
+    "13": "Agenten 2015",
+    "14": "Rodeo 2015",
     "15": "Halloween 2015",
     "16": "Weihnachten 2015",
-    "17": "KTM",
-    "18": "Petrol Falls"
+    "17": "KTM 2016",
+    "18": "Petrol Falls",
+    "19": "Schatzsuche 2015"
   },
   "tiers": {
     "1": "Stufe 1",
@@ -494,6 +495,10 @@
     "208": "Vergessene Rennstrecke",
     "209": "Ausdauer-Rennen",
     "210": "KTM-Strecke",
-    "211": "Überall Sägeblätter"
+    "211": "Überall Sägeblätter",
+    "212": "Razor Dunes",
+    "213": "High Tide Heights",
+    "214": "Choking Hazared",
+    "215": "Faceplant Precinct"
   }
 }
