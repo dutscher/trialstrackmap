@@ -117,8 +117,8 @@
       "addRiderButton": "para nuevo récord"
     },
     "ferryTo": {
-      "1": "Mapa principal",
-      "2": "Nuevo mundo"
+      "1": "Seymore and Lotz",
+      "2": "Petrol Falls"
     }
   },
   "dialogs": {
@@ -256,7 +256,7 @@
     "16": "Navidad 2015",
     "17": "KTM 2016",
     "18": "Petrol Falls",
-    "19": "Treasure Hunt Pieces",
+    "19": "Treasure Hunt places",
     "20": "Treasure Hunt 2016"
   },
   "tiers": {

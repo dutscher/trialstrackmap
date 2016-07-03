@@ -89,7 +89,7 @@ a strong {
 }
 
 .search.with-icon {
-    width: 90%;
+    width: 89%;
 }
 
 .search::-webkit-input-placeholder {
@@ -202,6 +202,16 @@ a strong {
 
 .tierlegend span.part-level {
     display: inline-block;
+}
+
+.tierlegend span {
+    display: block;
+}
+
+.tierlegend__headline {
+    margin: 0;
+    line-height: 20px;
+    padding-left: 20px;
 }
 
 span.de, span.en {
@@ -352,7 +362,8 @@ li div.wrap,
 
 li div.wrap h2 {
     position: absolute;
-    top: -50px;
+    top: -31px;
+    margin: 0;
     white-space: nowrap;
 }
 
@@ -375,10 +386,6 @@ li div.wrap .like-a {
 
 li div.wrap :last-child {
     margin-bottom: 0;
-}
-
-.tierlegend span {
-    display: block
 }
 
 .tierwrap, .trackwrap {

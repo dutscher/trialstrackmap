@@ -61,7 +61,7 @@
   },
   "7": {
     "title": "After the big jump in the fire.",
-    "src": "#1/Zg1Qfte.png"
+    "src": "#1/http://i.imgur.com/NamE1eY.jpg"
   },
   "20": {
     "title": "Drive with fast speed into the loop and gettin over the catch.",
@@ -95,6 +95,10 @@
     "title": "After the fifth checkpoint between the ramps.",
     "src": "#1/UgHO4Jg.png"
   },
+  "66_1": {
+    "title": "After the fifth checkpoint between the ramps.",
+    "src": "#1/http://i.imgur.com/QzxjxVN.jpg"
+  },
   "100": {
     "title": "After the big climbup in the second cliff.",
     "src": "#1/g7oSsVB.png"
@@ -105,11 +109,55 @@
   },
   "52": {
     "title": "Jump with the flying barrels.",
-    "src": "#1/LaoToAP.png"
+    "src": "#1/http://i.imgur.com/19r0sMj.jpg"
   },
   "98": {
     "title": "After the big climb up, jump over the shortcut and fall down.",
     "src": "#1/54584mr.png"
+  },
+  "91": {
+    "title": "After the lift jump.",
+    "src": "#1/http://i.imgur.com/C5PgbNk.jpg"
+  },
+  "93": {
+    "title": "Under the gondola.",
+    "src": "#1/http://i.imgur.com/LOIQuhC.jpg"
+  },
+  "39": {
+    "title": "Flower Hills",
+    "src": "#1/http://i.imgur.com/UR3Y3aV.jpg"
+  },
+  "21": {
+    "title": "At the start jump.",
+    "src": "#1/http://i.imgur.com/Te3vQhz.jpg"
+  },
+  "10": {
+    "title": "Under the Barrel jump.",
+    "src": "#1/http://i.imgur.com/gs8UkkG.jpg"
+  },
+  "6": {
+    "title": "Inside the swing box.",
+    "src": "#1/http://i.imgur.com/iFNnwNr.jpg"
+  },
+  "13": {
+    "title": "Before the first checkpoint inside the cliff.",
+    "src": "#1/http://i.imgur.com/c1qHHvz.jpg"
+  },
+  "11": {
+    "title": "Before the finish line.",
+    "src": "#1/http://i.imgur.com/LbsinkA.jpg"
+  },
+  "8": {
+    "title": "",
+    "src": "#1/http://i.imgur.com/bZbxUor.jpg"
+  },
+  "8_1": {
+    "title": "",
+    "src": "#1/http://i.imgur.com/eC4b4rT.jpg"
+  },
+  "17": {
+    "title": "After the big jump",
+    "src": "#1/http://i.imgur.com/4RezGE5.jpg"
   },
   "00": {
     "title": "",
