@@ -132,12 +132,7 @@
                             <h2 class="with-cursor">
                                 {%'page.rightSidebar.legend'|translate%}</h2>
 
-                            <div class="spectrum__wrap">
-                                <div ng-repeat="cat in data.map.cats"
-                                     show-cat-on-map="cat"
-                                     class="spectrum__item {%::cat.class%}-bg"
-                                     title="{%'cats.' + cat.index|translate%}"></div>
-                            </div>
+                            <div class="legend-spectrum" data-cats="data.map.cats"></div>
                         </div>
                     </li>
                     <li>

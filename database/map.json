@@ -70,6 +70,18 @@
   ],
   "cats": [
     {
+      "index": 19,
+      "class": "treasure-pieces",
+      "color": "AFDD23",
+      "notInTimes": true
+    },
+    {
+      "index": 6,
+      "class": "data-cube",
+      "color": "74C8EC",
+      "notInTimes": true
+    },
+    {
       "index": 1,
       "class": "hardcore",
       "color": "FF00F0"
@@ -93,12 +105,6 @@
       "index": 5,
       "class": "time-machine",
       "color": "EDE010"
-    },
-    {
-      "index": 6,
-      "class": "data-cube",
-      "color": "74C8EC",
-      "notInTimes": true
     },
     {
       "index": 7,
@@ -159,12 +165,6 @@
       "index": 18,
       "class": "petrol-falls",
       "color": "3556B2"
-    },
-    {
-      "index": 19,
-      "class": "treasure-pieces",
-      "color": "AFDD23",
-      "notInTimes": true
     },
     {
       "index": 20,

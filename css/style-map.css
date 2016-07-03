@@ -127,7 +127,7 @@ a strong {
     transition: opacity 250ms, width 250ms;
 }
 
-.track-available:hover .map-pointer:not(.inactive) {
+.track-available .map-pointer:not(.inactive) {
     opacity: 1;
     width: 10px;
     border-width: 7px 10px 7px 0;
@@ -135,7 +135,7 @@ a strong {
     border-color: transparent #adffff transparent transparent;
 }
 
-.track-available:hover .map-pointer.other-world {
+.track-available .map-pointer.other-world {
     border-color: transparent #F4D992 transparent transparent;
 }
 
@@ -649,6 +649,7 @@ span[track-in-sidebar] span {
 */
 
 .spectrum__wrap {
+    width: 250px;
     font-size: 0;
     display: inline-block;
 }
