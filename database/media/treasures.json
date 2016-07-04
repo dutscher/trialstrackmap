@@ -17,7 +17,7 @@
   },
   "86": {
     "title": "Drive into the plant, first with your backwheel.",
-    "src": "#1/vpIzOXr.png"
+    "src": "#1/1JaKjrX.png"
   },
   "64": {
     "title": "Directly over the finish line",
@@ -71,10 +71,16 @@
     "title": "Before finish line jump high.",
     "src": "#1/ftSwRUQ.png"
   },
-  "28": {
-    "title": "Before finish line, break before and fall backwards into the piece.",
-    "src": "#1/uX2O8EH.png"
-  },
+  "28": [
+    {
+      "title": "Before finish line, break before and fall backwards into the piece.",
+      "src": "#1/uX2O8EH.png"
+    },
+    {
+      "title": "Go up with the lift and fly backwards.",
+      "src": "#1/sdFiizY"
+    }
+  ],
   "4": {
     "title": "Jump high over the jump in the cave.",
     "src": "#1/Si4uDZN.png"
@@ -111,7 +117,7 @@
   },
   "52": {
     "title": "Jump with the flying barrels.",
-    "src": "#1/19r0sMj.jpg"
+    "src": "#1/rkCWE4q.jpg"
   },
   "98": {
     "title": "After the big climb up, jump over the shortcut and fall down.",
@@ -123,7 +129,7 @@
   },
   "93": {
     "title": "Under the gondola.",
-    "src": "#1/LOIQuhC.jpg"
+    "src": "#1/3JIFmko.jpg"
   },
   "39": {
     "title": "Flower Hills",
@@ -145,10 +151,16 @@
     "title": "Before the first checkpoint inside the cliff.",
     "src": "#1/c1qHHvz.jpg"
   },
-  "11": {
-    "title": "Before the finish line.",
-    "src": "#1/LbsinkA.jpg"
-  },
+  "11": [
+    {
+      "title": "Before the finish line.",
+      "src": "#1/LbsinkA.jpg"
+    },
+    {
+      "title": "Between the first jump.",
+      "src": "#1/zYgjDgh.png"
+    }
+  ],
   "8": [
     {
       "title": "Drive backwards after the hingebridge.",
@@ -162,6 +174,40 @@
   "17": {
     "title": "After the big jump",
     "src": "#1/4RezGE5.jpg"
+  },
+  "54": {
+    "title": "Right after startline.",
+    "src": "#1/DCwmRRu.png"
+  },
+  "53": {
+    "title": "Gettin on the lift.",
+    "src": "#1/VAymMPR.png"
+  },
+  "19": {
+    "title": "Under the swing.",
+    "src": "#1/ylXhPGQ.png"
+  },
+  "15": {
+    "title": "Under the last jumps platform.",
+    "src": "#1/RbcfCfT.png"
+  },
+  "69": [
+    {
+      "title": "At the middle wheel inside the fire.",
+      "src": "#1/fpmBOyD.png"
+    },
+    {
+      "title": "UNder the middle platform before the first big wheel.",
+      "src": "#1/kMrRuvz"
+    }
+  ],
+  "65": {
+    "title": "Under the first falling rock.",
+    "src": "#1/QdMxktV"
+  },
+  "3": {
+    "title": "Under the first big platform.",
+    "src": "#1/Odc2Wl0.png"
   },
   "00": {
     "title": "",
