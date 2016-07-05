@@ -1,22 +1,28 @@
 {
   "16": {
-    "title": "Before first checkpoint, drive backwards.",
+    "title": "Before first checkpoint, drive backwards",
     "src": "#1/fkHSctI.png"
   },
   "40": {
-    "title": "Crash into the start of the falling tree.",
+    "title": "Crash into the start of the falling tree",
     "src": "#1/hpumMHl.png"
   },
   "12": {
-    "title": "Fly over the hill.",
+    "title": "Fly over the hill",
     "src": "#1/K4FHNWk.png"
   },
-  "96": {
-    "title": "After the climb up and plate slide, fall down into the piece.",
-    "src": "#1/N1qJP4N.png"
-  },
+  "96": [
+    {
+      "title": "After the climb up and plate slide, fall down into the piece",
+      "src": "#1/N1qJP4N.png"
+    },
+    {
+      "title": "Under the bumbing elevator",
+      "src": "https://lh3.googleusercontent.com/-H3K_lNfOLh0/V3tL_R3BiCI/AAAAAAAACHc/Vws6C9C6rTYd46RJfRdRCspgxgPM7mCYgCCo/s800/upload_-1"
+    }
+  ],
   "86": {
-    "title": "Drive into the plant, first with your backwheel.",
+    "title": "Drive into the plant, first with your backwheel",
     "src": "#1/1JaKjrX.png"
   },
   "64": {
@@ -24,15 +30,15 @@
     "src": "#1/671vJxK.png"
   },
   "67": {
-    "title": "Climb up to the top and drive backwards before the next checkpoint, fall down and get the piece.",
+    "title": "Climb up to the top and drive backwards before the next checkpoint, fall down and get the piece",
     "src": "#1/q4mJOAF.png"
   },
   "60": {
-    "title": "Over the finish line, at first explode the barrels and then climb up to the piece.",
+    "title": "Over the finish line, at first explode the barrels and then climb up to the piece",
     "src": "#1/BriFCWH.png"
   },
   "85": {
-    "title": "Jump with the tree and get the piece.",
+    "title": "Jump with the tree and get the piece",
     "src": "#1/xYAyWeD.png"
   },
   "14": {
@@ -40,95 +46,95 @@
     "src": "#1/ZnziBXf.png"
   },
   "62": {
-    "title": "Jump not with the wing drive over the wheel.",
+    "title": "Jump not with the wing drive over the wheel",
     "src": "#1/ZL64mw6.png"
   },
   "9": {
-    "title": "Drive as fast as you can into the loop.",
+    "title": "Drive as fast as you can into the loop",
     "src": "#1/T4KFqil.png"
   },
   "99": {
-    "title": "Drive into the loop one and on the top drive backwards.",
+    "title": "Drive into the loop one and on the top drive backwards",
     "src": "#1/hhO5PJn.png"
   },
   "1": {
-    "title": "After the lookout point and before the last big jump.",
+    "title": "After the lookout point and before the last big jump",
     "src": "#1/jfPxMDl.png"
   },
   "58": {
-    "title": "After the second jump gettin under the steal.",
+    "title": "After the second jump gettin under the steal",
     "src": "#1/h8pIGih.png"
   },
   "7": {
-    "title": "After the big jump in the fire.",
+    "title": "After the big jump in the fire",
     "src": "#1/NamE1eY.jpg"
   },
   "20": {
-    "title": "Drive with fast speed into the loop and gettin over the catch.",
+    "title": "Drive with fast speed into the loop and gettin over the catch",
     "src": "#1/xDlzj0u.png"
   },
   "68": {
-    "title": "Before finish line jump high.",
+    "title": "Before finish line jump high",
     "src": "#1/ftSwRUQ.png"
   },
   "28": [
     {
-      "title": "Before finish line, break before and fall backwards into the piece.",
+      "title": "Before finish line, break before and fall backwards into the piece",
       "src": "#1/uX2O8EH.png"
     },
     {
-      "title": "Go up with the lift and fly backwards.",
+      "title": "Go up with the lift and fly backwards",
       "src": "#1/sdFiizY"
     }
   ],
   "4": {
-    "title": "Jump high over the jump in the cave.",
+    "title": "Jump high over the jump in the cave",
     "src": "#1/Si4uDZN.png"
   },
   "102": {
-    "title": "That's really tricky. Crash with your rider into the wood and fall over the big rock.",
+    "title": "That's really tricky. Crash with your rider into the wood and fall over the big rock",
     "src": "#1/tVxWTsQ.png"
   },
   "55": {
-    "title": "Jump slow onto first barrel and fall inot the piece.",
+    "title": "Jump slow onto first barrel and fall inot the piece",
     "src": "#1/6sWZg63.png"
   },
   "61": {
-    "title": "After the first big jump.",
+    "title": "After the first big jump",
     "src": "#1/SrToirs.png"
   },
   "66": [
     {
-      "title": "After the fifth checkpoint between the ramps.",
+      "title": "After the fifth checkpoint between the ramps",
       "src": "#1/UgHO4Jg.png"
     },
     {
-      "title": "After the fifth checkpoint between the ramps.",
+      "title": "After the fifth checkpoint between the ramps",
       "src": "#1/QzxjxVN.jpg"
     }
   ],
   "100": {
-    "title": "After the big climbup in the second cliff.",
+    "title": "After the big climbup in the second cliff",
     "src": "#1/g7oSsVB.png"
   },
   "24": {
-    "title": "You can't see it, only hear. After the jump over the barrel.",
+    "title": "You can't see it, only hear. After the jump over the barrel",
     "src": "#1/TWvBBrn.png"
   },
   "52": {
-    "title": "Jump with the flying barrels.",
+    "title": "Jump with the flying barrels",
     "src": "#1/rkCWE4q.jpg"
   },
   "98": {
-    "title": "After the big climb up, jump over the shortcut and fall down.",
+    "title": "After the big climb up, jump over the shortcut and fall down",
     "src": "#1/54584mr.png"
   },
   "91": {
-    "title": "After the lift jump.",
+    "title": "After the lift jump",
     "src": "#1/C5PgbNk.jpg"
   },
   "93": {
-    "title": "Under the gondola.",
+    "title": "Under the gondola",
     "src": "#1/3JIFmko.jpg"
   },
   "39": {
@@ -136,34 +142,34 @@
     "src": "#1/UR3Y3aV.jpg"
   },
   "21": {
-    "title": "At the start jump.",
+    "title": "At the start jump",
     "src": "#1/Te3vQhz.jpg"
   },
   "10": {
-    "title": "Under the Barrel jump.",
+    "title": "Under the Barrel jump",
     "src": "#1/gs8UkkG.jpg"
   },
   "6": {
-    "title": "Inside the swing box.",
+    "title": "Inside the swing box",
     "src": "#1/iFNnwNr.jpg"
   },
   "13": {
-    "title": "Before the first checkpoint inside the cliff.",
+    "title": "Before the first checkpoint inside the cliff",
     "src": "#1/c1qHHvz.jpg"
   },
   "11": [
     {
-      "title": "Before the finish line.",
+      "title": "Before the finish line",
       "src": "#1/LbsinkA.jpg"
     },
     {
-      "title": "Between the first jump.",
+      "title": "Between the first jump",
       "src": "#1/zYgjDgh.png"
     }
   ],
   "8": [
     {
-      "title": "Drive backwards after the hingebridge.",
+      "title": "Drive backwards after the hingebridge",
       "src": "#1/bZbxUor.jpg"
     },
     {
@@ -176,38 +182,42 @@
     "src": "#1/4RezGE5.jpg"
   },
   "54": {
-    "title": "Right after startline.",
+    "title": "Right after startline",
     "src": "#1/DCwmRRu.png"
   },
   "53": {
-    "title": "Gettin on the lift.",
+    "title": "Gettin on the lift",
     "src": "#1/VAymMPR.png"
   },
   "19": {
-    "title": "Under the swing.",
+    "title": "Under the swing",
     "src": "#1/ylXhPGQ.png"
   },
   "15": {
-    "title": "Under the last jumps platform.",
+    "title": "Under the last jumps platform",
     "src": "#1/RbcfCfT.png"
   },
   "69": [
     {
-      "title": "At the middle wheel inside the fire.",
+      "title": "At the middle wheel inside the fire",
       "src": "#1/fpmBOyD.png"
     },
     {
-      "title": "UNder the middle platform before the first big wheel.",
+      "title": "UNder the middle platform before the first big wheel",
       "src": "#1/kMrRuvz"
     }
   ],
   "65": {
-    "title": "Under the first falling rock.",
+    "title": "Under the first falling rock",
     "src": "#1/QdMxktV"
   },
   "3": {
-    "title": "Under the first big platform.",
+    "title": "Under the first big platform",
     "src": "#1/Odc2Wl0.png"
+  },
+  "41": {
+    "title": "Under the wooden",
+    "src": "https://lh3.googleusercontent.com/BkgZKOmzxCjgHlex6LgTFVKLpqAQYdQvefbnqkwKn2GAh9go-0ScdmIBOSxsA25XXaWmxBDLO5TasCZriO0WmCFRpztvflDqxLQvZrehZDo8Vf-D_8sc6vAgnnsi_ouSc_quCT9bweqVXkZUiMrT6Eokim8nfBpPPUnW5-466Ovf-YXhvleYF30KALsX5xKiOMVrJ_HLfPgm79u_1llTEgaMRFi0N_aPQn8jDw1cLluCry8M2i2HKrsbLEvJlyb-IfbhZgpgGA3HVeR6B5W0j0AgfgW6AXrlGnSoA8vzHnifw8iVuY9_gy4lJlNgQB_oAnh-nzvOZu1kyNqpwe5YXethfu42S_Fow3VH5RvEhyVJH8iupCz6-S0vPbDYjOcFqByoP26rKJI8pFMan0MFkVUhlZhpR8OXls5tX-2SKnzyyaZjz8OJv3NFjcd2vBuieXbea3-JhWMfEfHxvcd6V-YxY08i8UmRiBNMzqtMGn2MpEB64Ft9Qe8C-Ak9BsasiZzYUKh3aTLsaF_AzvuPt8HI190aafdk_GABqnhWcLDHH2pfhyMwMHIo0IXSvqcK7PcP7oPkj7W3Nkds_m_Oej6T8lutIJc=w1280-h800-no"
   },
   "00": {
     "title": "",
