@@ -322,7 +322,21 @@
     },
     "46": {
       "name": "The Ninja",
-      "img": "",
+      "img": "http://i.imgur.com/0dUhzvj.png",
+      "head": "",
+      "top": "",
+      "pants": ""
+    },
+    "47": {
+      "name": "King of the Wastes",
+      "img": "http://i.imgur.com/luS9eMV.png",
+      "head": "",
+      "top": "",
+      "pants": ""
+    },
+    "48": {
+      "name": "The Temple Rider",
+      "img": "http://i.imgur.com/nVTVayq.png",
       "head": "",
       "top": "",
       "pants": ""
