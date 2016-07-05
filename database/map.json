@@ -68,6 +68,9 @@
       "title": "Trials Frontier @ Facebook"
     }
   ],
+  "catsAlias": {
+    "treasure-pieces": "treasure"
+  },
   "cats": [
     {
       "index": 19,
