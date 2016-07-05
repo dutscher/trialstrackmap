@@ -71,7 +71,7 @@
   "cats": [
     {
       "index": 19,
-      "class": "treasure-pieces",
+      "class": "treasure",
       "color": "AFDD23",
       "notInTimes": true
     },

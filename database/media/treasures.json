@@ -53,10 +53,16 @@
     "title": "Drive as fast as you can into the loop",
     "src": "#1/T4KFqil.png"
   },
-  "99": {
-    "title": "Drive into the loop one and on the top drive backwards",
-    "src": "#1/hhO5PJn.png"
-  },
+  "99": [
+    {
+      "title": "Drive into the loop one and on the top drive backwards",
+      "src": "#1/hhO5PJn.png"
+    },
+    {
+      "title": "Drive backwards over the barrels and fly behind them",
+      "src": "https://pbs.twimg.com/media/CmmDPk6XYAApimM.jpg"
+    }
+  ],
   "1": {
     "title": "After the lookout point and before the last big jump",
     "src": "#1/jfPxMDl.png"
