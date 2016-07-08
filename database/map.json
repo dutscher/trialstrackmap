@@ -173,6 +173,11 @@
       "index": 20,
       "class": "treasure-hunt",
       "color": "935A05"
+    },
+    {
+      "index": 21,
+      "class": "youtube",
+      "color": "C30000"
     }
   ],
   "tiers": [
