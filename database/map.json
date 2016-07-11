@@ -76,13 +76,13 @@
       "index": 19,
       "class": "treasure",
       "color": "AFDD23",
-      "notInTimes": true
+      "noneGameCategory": true
     },
     {
       "index": 6,
       "class": "data-cube",
       "color": "74C8EC",
-      "notInTimes": true
+      "noneGameCategory": true
     },
     {
       "index": 1,
@@ -177,7 +177,8 @@
     {
       "index": 21,
       "class": "youtube",
-      "color": "C30000"
+      "color": "C30000",
+      "noneGameCategory": true
     }
   ],
   "tiers": [

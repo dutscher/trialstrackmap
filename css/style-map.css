@@ -657,9 +657,9 @@ span[track-in-sidebar] span {
 .spectrum__item {
     cursor: pointer;
     display: inline-block;
-    width: 19px;
-    height: 19px;
-    margin: 2px!important;
+    width: 20px;
+    height: 20px;
+    margin: 1px!important;
     line-height: 19px;
     text-align: center;
     font-size: 10px;
@@ -668,4 +668,11 @@ span[track-in-sidebar] span {
     -1px  1px 1px black,
     -1px -1px 1px black;
     font-family: Arial, Helvetica, sans-serif;
+}
+.spectrum__item i {
+    width: 16px;
+    height: 16px;
+}
+.spectrum__item.is-active {
+    outline: 2px solid #fff;
 }
