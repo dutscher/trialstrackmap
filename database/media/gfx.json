@@ -272,13 +272,13 @@
       "sprite": true
     },
     "paintjobs": {
-      "src": "#1/u2UmOXH.png",
+      "src": "#1/nWhqyhp.png",
       "lSrc": "#0/icons/sprite-paintjobs.png",
       "selector": "i.paintjob",
       "sprite": true
     },
     "paintjob-icons": {
-      "src": "#1/71h3frc.png",
+      "src": "#1/QpO4l7W.png",
       "lSrc": "#0/icons/sprite-paintjob-icons.png",
       "selector": "i.paintjob-icon",
       "sprite": true
