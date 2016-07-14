@@ -5,10 +5,7 @@
     "avatar": "https://uplay-avatars.s3.amazonaws.com/c58587cb-75c5-4a13-a359-1a6b01a116d0/default_146_146.png"
   },
   "credits": [
-    {
-      "href": "http://forums.ubi.com/member.php/1647317-jyjeyzx",
-      "text": "Some Bunker Tracklocations by jyjeyzx"
-    },
+    {"text": "Some Bunker Tracklocations by jyjeyzx"},
     {
       "href": "http://forums.ubi.com/showthread.php/924263-Complete-list-of-tacks-with-startingline-picture",
       "text": "Startline Pictures by flooodi"
@@ -36,7 +33,8 @@
     {"text":"hector_evil & Vassagopk for spanish translation"},
     {"text":"stampede-8 for youtube videos"},
     {"text":"AlvaroGC for youtube videos"},
-    {"text":"mpksoul for fetching trails data"}
+    {"text":"mpksoul for fetching trails data"},
+    {"text":"Rezzoxe for raw images, wardrobe and garage"}
   ],
   "usefull_links": [
     {
