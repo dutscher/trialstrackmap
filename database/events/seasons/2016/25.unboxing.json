@@ -1,37 +1,37 @@
 {
   "header": {
-    "src": "#1/cowswRZ.png",
-    "lSrc": "#0/seasons/24.lost-treasure.jpg"
+    "src": "#1/QKQeQJo.jpg",
+    "lSrc": "#0/seasons/25.unboxing.jpg"
   },
-  "title": "Lost Treasure Season",
-  "date": "05.07.2016",
-  "date_end": "01.08.2016",
-  "duration": "4h",
-  "free_showdowns": "3",
-  "ticket_regain": "1h",
+  "title": "Unboxing Season",
+  "date": "01.08.2016",
+  "date_end": "30.08.2016",
+  "duration": "",
+  "free_showdowns": "",
+  "ticket_regain": "",
   "prizes": [
     {
       "level": 1,
-      "extra_type": "paintjob",
-      "extra": 14,
-      "sprite_pointer": "donkey-fallout",
-      "coins": 5000,
-      "gems": 5
+      "extra_type": "part",
+      "extra": "sheet-5",
+      "coins": 10000,
+      "gems": 10
     },
     {
       "level": 2,
       "extra_type": "doughnut",
-      "coins": 2500
+      "coins": 5000
     },
     {
       "level": 3,
-      "extra_type": "doughnut",
+      "extra_type": "part",
+      "extra": "nut-5",
       "coins": 2000,
       "gems": 5
     },
     {
       "level": 4,
-      "extra_type": "doughnut",
+      "extra_type": "unlimited-fuel",
       "coins": 2000
     },
     {
@@ -41,85 +41,89 @@
     },
     {
       "level": 6,
-      "extra_type": "unlimited-fuel",
-      "coins": 2000
+      "extra_type": "part",
+      "extra": "spring-4",
+      "coins": 2000,
+      "gems": 4
     },
     {
       "level": 7,
       "extra_type": "part",
-      "extra": "piston-5",
+      "extra": "chain-4",
       "coins": 2000,
       "gems": 4
     },
     {
       "level": 8,
       "extra_type": "doughnut",
-      "coins": 1500
+      "coins": 1500,
+      "gems": 4
     },
     {
       "level": 9,
-      "extra_type": "doughnut",
+      "extra_type": "unlimited-fuel",
       "coins": 1500
     },
     {
       "level": 10,
       "extra_type": "part",
-      "extra": "bearing-4",
+      "extra": "piston-4",
       "coins": 1500
     },
     {
       "level": 11,
-      "extra_type": "paintjob",
-      "extra": 12,
-      "sprite_pointer": "mantis-pumpkin-king",
+      "extra_type": "doughnut",
       "coins": 1500,
-      "gems": 4
+      "gems": 3
     },
     {
       "level": 12,
-      "extra_type": "doughnut",
-      "coins": 1500
+      "extra_type": "part",
+      "extra": "bearing-4",
+      "coins": 1500,
+      "gems": 3
     },
     {
       "level": 13,
       "extra_type": "part",
-      "extra": "spark-3",
+      "extra": "pipe-3",
       "coins": 1500,
-      "gems": 4
+      "gems": 3
     },
     {
       "level": 14,
-      "extra_type": "part",
-      "extra": "sheet-3",
+      "extra_type": "doughnut",
       "coins": 1500
     },
     {
       "level": 15,
       "extra_type": "unlimited-fuel",
-      "coins": 1500,
-      "gems": 4
+      "coins": 1000
     },
     {
       "level": 16,
       "extra_type": "doughnut",
-      "coins": 1000
+      "coins": 1000,
+      "gems": 2
     },
     {
       "level": 17,
       "extra_type": "part",
-      "extra": "gear-3",
-      "coins": 1000
+      "extra": "sheet-2",
+      "coins": 1000,
+      "gems": 2
     },
     {
       "level": 18,
       "extra_type": "doughnut",
-      "coins": 1000
+      "coins": 1000,
+      "gems": 2
     },
     {
       "level": 19,
-      "extra_type": "unlimited-fuel",
-      "coins": 1000,
-      "gems": 2
+      "extra_type": "part",
+      "extra": "nut-2",
+      "coins": 1000
     },
     {
       "level": 20,
@@ -128,31 +132,34 @@
     },
     {
       "level": 21,
-      "extra_type": "part",
-      "extra": "spring-2",
+      "extra_type": "unlimited-fuel",
       "coins": 1000,
       "gems": 2
     },
     {
       "level": 22,
       "extra_type": "doughnut",
-      "coins": 750
+      "coins": 1000,
+      "gems": 2
     },
     {
       "level": 23,
-      "extra_type": "coins-gems",
-      "coins": 750,
+      "extra_type": "part",
+      "extra": "spring-1",
+      "coins": 1000,
       "gems": 2
     },
     {
       "level": 24,
-      "extra_type": "unlimited-fuel",
-      "coins": 750
+      "extra_type": "doughnut",
+      "coins": 1000,
+      "gems": 2
     },
     {
       "level": 25,
-      "extra_type": "doughnut",
-      "coins": 750
+      "extra_type": "part",
+      "extra": "chain-1",
+      "coins": 1000
     }
   ]
 }
