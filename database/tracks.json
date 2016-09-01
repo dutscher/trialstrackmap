@@ -1522,4 +1522,26 @@
     "prio": 4,
     "world": 2
   }
+  ,{
+    "id": 216,
+    "tier": 1,
+    "cats": "18",
+    "prio": 1,
+    "world": 2
+  }
+  ,{
+    "id": 217,
+    "tier": 3,
+    "cats": "18",
+    "prio": 2,
+    "world": 2
+  }
+  ,{
+    "id": 218,
+    "tier": 0,
+    "cats": "18",
+    "prio": 3,
+    "world": 2,
+    "season-reward": true
+  }
 ]

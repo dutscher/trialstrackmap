@@ -21,11 +21,14 @@
     "15": "Raven Paintjob for Bronco (A bad omen? For your opponents maybe?)",
     "16": "Mithril Paintjob for Mantis (Leave descruction and mayhem in your wake!)",
     "17": "Hippie Paintjob for Riptide (Peace, love an speed!)",
-    "18": "Spec Ops Paintjob for Agent (No missions too dangerous when you're disguised in this paint job!)"
+    "18": "Spec Ops Paintjob for Agent (No missions too dangerous when you're disguised in this paint job!)",
+    "19": "Revenant paint job for Riptide (Not even the apocalypse can stop Heavy Metal!)",
+    "20": "Hard Rocker paintjob for Berserker (Flip out like a real Rock Star, without the midlife crisis!)"
   },
   "tracks": {
     "1": "KTM Course (Reveal the hidden location of KTM Course!)",
-    "2": "Metal Mayhem (Reveal the hidden location of Metal Mayhem!)"
+    "2": "Metal Mayhem (Reveal the hidden location of Metal Mayhem!)",
+    "3": "Safe Escape (Reveal the hidden location of Safe Escape!)"
   },
   "customs": {
     "1": "Ninja Head",
