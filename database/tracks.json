@@ -1544,4 +1544,20 @@
     "world": 2,
     "season-reward": true
   }
+  ,{
+    "id": 219,
+    "tier": 2,
+    "cats": "18",
+    "prio": 4,
+    "world": 2,
+    "chips": 40500
+  }
+  ,{
+    "id": 220,
+    "tier": 2,
+    "cats": "18",
+    "prio": 5,
+    "world": 2,
+    "chips": 45000
+  }
 ]

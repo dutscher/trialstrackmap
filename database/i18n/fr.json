@@ -52,7 +52,7 @@
         "platinum": "Platine"
       }
     },
-    "timesTable":{
+    "timesTable": {
       "back": "retour",
       "at": "à",
       "allTracks": "toutes les pistes",
@@ -266,16 +266,16 @@
     "3": "Étage 3"
   },
   "parts": {
-    "1":"Chaine",
-    "2":"Printemps",
-    "3":"Boulon",
-    "4":"Écrou",
-    "5":"Feuille",
-    "6":"Étincelle",
-    "7":"Tuyau",
-    "8":"Palier",
-    "9":"Piston",
-    "10":"Équipement"
+    "1": "Chaine",
+    "2": "Printemps",
+    "3": "Boulon",
+    "4": "Écrou",
+    "5": "Feuille",
+    "6": "Étincelle",
+    "7": "Tuyau",
+    "8": "Palier",
+    "9": "Piston",
+    "10": "Équipement"
   },
   "seasons": {
     "back": "retour",
@@ -504,6 +504,8 @@
     "215": "Faceplant Precinct",
     "216": "Open Jaw Bog",
     "217": "Endless Wealth",
-    "218": "Safe Escape"
+    "218": "Safe Escape",
+    "219": "Longshot Lake",
+    "220": "Overdose"
   }
 }
