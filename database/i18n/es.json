@@ -9,7 +9,7 @@
       "goToImprove": "Tabla para mejorar tiempos",
       "goToAnniversary": "Página Aniversario",
       "goToGarage": "Garage",
-      "goToWardrobe": "Wardrobe",
+      "goToWardrobe": "Ropero",
       "goToWRRiderTemple": "Templo de Récords Mundiales",
       "goToThread": "ir al hilo del foro",
       "stats": "Estadísticas",
@@ -36,7 +36,7 @@
       "withVideo": "con vídeo",
       "searchForTrack": "Buscar pista",
       "tier": "Nivel",
-      "showTrackOnMap": "click me to show track on map"
+      "showTrackOnMap": "click para mostrar en mapa"
     },
     "trackDetail": {
       "chipsAmount": "Cantidad de fichas",
@@ -60,8 +60,8 @@
       "gold": "oro",
       "platinum": "platino",
       "tracksAmount": "Pistas visibles",
-      "profileName": "UPLAY Name",
-      "profileRank": "Rank",
+      "profileName": "Nombre UPLAY",
+      "profileRank": "Rango",
       "id": "ID",
       "trackName": "Nombre pista",
       "time": "Tiempo",
@@ -75,12 +75,12 @@
         "allLevels": "mostrar todos los niveles"
       },
       "filter": "Filtro",
-      "importExport": "Import/Export",
+      "importExport": "Importar/Exportar",
       "categories": "Categorías",
       "device": "Dispositivo",
       "bikeType": "Moto",
-      "bikeModel": "Bike",
-      "allBikeModels": "all bikes",
+      "bikeModel": "Modelo",
+      "allBikeModels": "todas las motos",
       "tier": "Nivel",
       "allTiers": "todos los niveles",
       "improve": {
@@ -88,8 +88,8 @@
         "myTime": "Mi tiempo",
         "myGoal": "Mi objetivo",
         "myGoalCheckbox": "Mostrar celdas Mi objetivo",
-        "ultimate": "ultimate",
-        "ultimateCheckbox": "Show ultimate cell",
+        "ultimate": "última",
+        "ultimateCheckbox": "Mostrar última celda",
         "worldRecord": "Récord Mundial",
         "print": "Imprimir",
         "printFilled": "Rellena",
@@ -99,11 +99,11 @@
         "minDifference": "Dif. min.",
         "minDifferencePlaceholder": "0:10:000"
       },
-      "settingsHeader": "Table settings",
-      "importExportHeader": "Im- & export your data",
-      "tflforoImport": "tf.lforo live leaderboard",
-      "myJsonImportExport": "myJson data storage",
-      "printExport": "Print Tracks"
+      "settingsHeader": "Ajustes de tabla",
+      "importExportHeader": "Im- y exportar tus datos",
+      "tflforoImport": "tf.lforo clasificación en vivo",
+      "myJsonImportExport": "myJson almacenamiento datos",
+      "printExport": "Imprimir pistas"
     },
     "worldRecordsTable": {
       "ridersAmount": "Total corredores",
@@ -117,8 +117,8 @@
       "addRiderButton": "para nuevo récord"
     },
     "ferryTo": {
-      "1": "Seymore and Lotz",
-      "2": "Petrol Falls"
+      "1": "Seymore y Lotz",
+      "2": "Cascadas petrolíferas"
     }
   },
   "dialogs": {
@@ -135,11 +135,11 @@
       "newTime": "Nuevo tiempo récord",
       "riderName": "Nombre de corredor",
       "userName": "Nombre de usuario",
-      "profileName": "UPLAY Name",
-      "profileRank": "UPLAY Rank",
+      "profileName": "Nombre UPLAY",
+      "profileRank": "Rango UPLAY",
       "myRank": "MiPosición",
       "myTime": "MiTiempo",
-      "myFaults": "MyFaults",
+      "myFaults": "MisFaltas",
       "myGoal": "MiObjetivo",
       "oldTime": "Tiempo actual",
       "oldRank": "Posición actual",
@@ -151,13 +151,13 @@
       "dontAskAgain": "¡No preguntar de nuevo!",
       "openMyTime": "Abrir menú MiTiempo tras guardar",
       "autoExport": "Activar autoexportar",
-      "os": "OS"
+      "os": "SO"
     },
     "placeholder": {
       "newTime": "Tu tiempo 0:15.000 -> insertar 15000",
       "riderName": "Introduce el nombre del corredor récord",
       "myRank": "Introduce tu nueva posición",
-      "myFaults": "Enter your faults"
+      "myFaults": "Introduce tus faltas"
     },
     "editWR": {
       "header": "Editar Récord Mundial (RM) para {%trackName%}",
@@ -196,13 +196,13 @@
       "enterYourUserName": "¡Por favor introduce tu nombre de usuario!",
       "enterYourPassword": "Tu ID fue protegida con una contraseña.",
       "tflforo": {
-        "header": "Import your times from http://tf.lforo.com live leaderboard",
-        "labelVia": "via profile ID",
-        "placeholder": "enter your tf.lforo profile ID",
-        "searchId": "search your ID",
-        "enterYourProfileName": "Please enter your UPLAY name!",
-        "searchHeader": "Search for your UPLAY name and get your ID",
-        "confirmNewData": "Do you want to import the times of '{%exportDate%}' for '{%profileName%}' new rank '{%profileRank%}' and override local changes?"
+        "header": "Imprtar tus tiempos desde http://tf.lforo.com clasificación en vivo",
+        "labelVia": "via ID perfil",
+        "placeholder": "introduce tu tf.lforo ID perfil",
+        "searchId": "buscar por tu ID",
+        "enterYourProfileName": "¡Por favor introduce tu nombre UPLAY!",
+        "searchHeader": "Buscar por tu nombre UPLAY y obtener tu ID",
+        "confirmNewData": "¿Quieres importar los tiempos de '{%exportDate%}' para '{%profileName%}' nuevo rango '{%profileRank%}' y sobrescribir los cambios locales?"
       }
     },
     "export": {
@@ -230,11 +230,11 @@
       "wrongPassword": "Contraseña incorrecta. No fue posible recuperar tu ID.",
       "emptyPassword": "Se necesita una contraseña.",
       "cannotExport": "Tu navegador no puede guardar archivos.",
-      "emptyTflforoId": "enter a tf.lforo ID.",
-      "noAccessTflforo": "tf.lforo is temporarily not available.",
-      "noTrackDataFound": "no trackdata for import found.",
-      "noMatches": "no matches found.",
-      "tooMuchMatches": "too much matches found, go clearer."
+      "emptyTflforoId": "introducir un ID tf.lforo.",
+      "noAccessTflforo": "tf.lforo no está disponible temporalmente.",
+      "noTrackDataFound": "no se encontraron datos de pistas para importar.",
+      "noMatches": "no se encontraron coincidencias.",
+      "tooMuchMatches": "demasiadas coincidencias, especifique más."
     }
   },
   "cats": {
@@ -255,10 +255,10 @@
     "15": "Halloween 2015",
     "16": "Navidad 2015",
     "17": "KTM 2016",
-    "18": "Petrol Falls",
-    "19": "Treasure Hunt places",
-    "20": "Treasure Hunt 2016",
-    "21": "Youtube Videos"
+    "18": "Cascadas Petrolíferas",
+    "19": "Lugares Búsqueda de Tesoros",
+    "20": "Búsqueda de Tesoros 2016",
+    "21": "Vídeos de Youtube"
   },
   "tiers": {
     "1": "Nivel 1",
@@ -497,15 +497,15 @@
     "208": "Pista de la carrera perdida",
     "209": "Carrera de resistencia",
     "210": "Circuito KTM",
-    "211": "Metal Mayhem",
-    "212": "Razor Dunes",
-    "213": "High Tide Heights",
-    "214": "Choking Hazard",
-    "215": "Faceplant Precinct"
-    ,"216": "Open Jaw Bog"
-    ,"217": "Endless Wealth"
-    ,"218": "Safe Escape"
-    ,"219": "Longshot Lake"
-    ,"220": "Overdose"
+    "211": "Caos de metal",
+    "212": "Dunas afiladas",
+    "213": "Altos de gran marea",
+    "214": "Riesgo de asfixia",
+    "215": "Distrito castañazo"
+    ,"216": "Ciénaga de mandíbula abierta"
+    ,"217": "Riqueza infinita"
+    ,"218": "Escapada segura"
+    ,"219": "Lago del disparo lejano"
+    ,"220": "Sobredosis"
   }
 }
