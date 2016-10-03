@@ -1,0 +1,58 @@
+.link {
+  text-decoration: none;
+
+  number {
+    float:left;
+    height: 30px;
+    margin-right: 5px;
+    line-height: 30px;
+  }
+
+  number,
+  small {
+    font-size: 10px;
+
+    &.other {
+      color: #91794d;
+      text-decoration: none;
+
+      &--left-space {
+        padding-left: 5px;
+      }
+    }
+  }
+
+  strong {
+    font-size: 20px;
+  }
+
+  span {
+    font-size: 12px;
+    color: #91794d;
+  }
+
+  span,
+  strong {
+    text-decoration: underline;
+  }
+
+  &:hover,
+  &:not([href]) {
+    text-decoration: none;
+
+    span,
+    strong {
+      text-decoration: none;
+    }
+  }
+}
+
+.link--bob {
+  color: #fce195;
+  display: block;
+}
+
+.link--list-item {
+  margin-bottom: 12px;
+  line-height: 12px;
+}

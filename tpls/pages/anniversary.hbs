@@ -11,7 +11,7 @@
     {{#content "body"}}
         <div ng-init="pageReady = false" ng-hide="pageReady" class="loader spin"></div>
         <div class="page-body is-loading" data-event="data:loaded" ng-class="{'is-ready':pageReady}">
-            {{> navigation}}
+            {{> navigation title="Anniversary Page 2015"}}
             <img ng-src="//i.imgur.com/bLqIuu9.jpg" ng-load="pageReady = true" alt="one year trials frontier" />
         </div>
     {{/content}}
