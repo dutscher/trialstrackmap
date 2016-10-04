@@ -19,19 +19,25 @@
                     {{> navigation title="Wishlist overview" badge=wishes.length}}
 
                     <div class="wish-list">
+                        <ul>
                         {{#each wishes}}
-                            <a class="link link--bob link--list-item"
-                               {{#if thread}}
-                               target="_blank"
-                               href="{{#xif "typeof this.thread ==='string'"}}{{thread}}{{else}}{{thread.[0]}}{{/xif}}"
-                               {{/if}}>
-                                <number class="other">{{mathWithPad @index "+" 1}}.</number>
-                                <strong>{{name}}</strong>
-                                <small class="other other--left-space">{{date}}</small>
-                                <br />
-                                <span>{{description}}</span>
-                            </a>
+                            <li class="wishlist-item">
+                                <a class="link link--bob link--list-item"
+                                   {{#if thread}}
+                                   target="_blank"
+                                   href="{{#xif "typeof this.thread === 'string'"}}{{thread}}{{else}}{{thread.[0]}}{{/xif}}"
+                                   {{/if}}>
+                                    <strong>{{name}}</strong>
+                                    <small class="other other--left-space">{{date}}</small>
+                                    <br />
+                                    <span>{{#if description}}{{description}}{{else}}Click link for more informations{{/if}}</span>
+                                </a>
+                                {{#xif "typeof this.thread !== 'string'"}}
+                                    <a class="link link--bob" href="{{thread.[1]}}" target="_blank"><span>Alternative link</span></a>
+                                {{/xif}}
+                            </li>
                         {{/each}}
+                        </ul>
                     </div>
                 </div>
             </div>

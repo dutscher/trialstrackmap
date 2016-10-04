@@ -2,7 +2,7 @@
   text-decoration: none;
 
   number {
-    float:left;
+    float: left;
     height: 30px;
     margin-right: 5px;
     line-height: 30px;
@@ -45,14 +45,18 @@
       text-decoration: none;
     }
   }
-}
 
-.link--bob {
-  color: #fce195;
-  display: block;
-}
+  &--bob {
+    color: #fce195;
+    display: block;
+  }
 
-.link--list-item {
-  margin-bottom: 12px;
-  line-height: 12px;
+  &--list-item {
+    line-height: 12px;
+
+    &:after {
+      content: "";
+      clear: both;
+    }
+  }
 }
