@@ -1,8 +1,8 @@
 (function () {
-    module.exports.register = function (Handlebars, options) {
+    module.exports.register = function (Handlebars) {
         var perRow = 14,
-            offsetX = 55,
-            offsetY = 0,
+            offsetX = 25,
+            offsetY = 20,
             itemWidth = 133,
             itemHeight = 260;
 
@@ -28,7 +28,7 @@
                 itemRow = (itemCol == 0 ? whichRow + 1 : whichRow) - 1,
                 x = itemCol * itemWidth + offsetX,
                 y = itemRow * itemHeight + offsetY,
-                // x1,y1
+            // x1,y1
                 returnStr = "left: " + x + "px; top: " + (y + itemHeight) + "px;";
 
             return returnStr;

@@ -1570,14 +1570,14 @@
   },
   {
     "id": 222,
-    "tier": 0,
+    "tier": 2,
     "cats": "18",
     "prio": 7,
     "world": 2
   },
   {
     "id": 223,
-    "tier": 0,
+    "tier": 1,
     "cats": "18",
     "prio": 8,
     "world": 2

@@ -32,11 +32,11 @@
         </style>
 
         <div class="page-body">
-            {{> navigation}}
+            {{> navigation title="Wardrobe" badge=../wardrobe.order.length}}
 
             {{#with ../wardrobe}}
                 <div class="costume-wrap">
-                    <img src="http://i.imgur.com/CumcaZ0.png" usemap="#costumes"/>
+                    <img src="http://i.imgur.com/tmbyGWY.png" usemap="#costumes"/>
                     <map name="costumes">
                         {{#each order}}
                             <area shape="rect"
