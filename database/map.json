@@ -177,6 +177,11 @@
       "class": "youtube",
       "color": "C30000",
       "noneGameCategory": true
+    },
+    {
+      "index": 22,
+      "class": "midnight-circuit",
+      "color": "93194c"
     }
   ],
   "tiers": [

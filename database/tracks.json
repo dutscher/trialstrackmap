@@ -1571,56 +1571,56 @@
   {
     "id": 222,
     "tier": 2,
-    "cats": "18",
+    "cats": "22",
     "prio": 7,
     "world": 2
   },
   {
     "id": 223,
     "tier": 1,
-    "cats": "18",
+    "cats": "22",
     "prio": 8,
     "world": 2
   },
   {
     "id": 224,
-    "tier": 0,
-    "cats": "18",
+    "tier": 2,
+    "cats": "22",
     "prio": 9,
     "world": 2
   },
   {
     "id": 225,
-    "tier": 0,
-    "cats": "18",
+    "tier": 1,
+    "cats": "22",
     "prio": 10,
     "world": 2
   },
   {
     "id": 226,
     "tier": 0,
-    "cats": "18",
+    "cats": "22",
     "prio": 11,
     "world": 2
   },
   {
     "id": 227,
     "tier": 0,
-    "cats": "18",
+    "cats": "22",
     "prio": 12,
     "world": 2
   },
   {
     "id": 228,
     "tier": 0,
-    "cats": "18",
+    "cats": "22",
     "prio": 13,
     "world": 2
   },
   {
     "id": 229,
     "tier": 0,
-    "cats": "18",
+    "cats": "22",
     "prio": 14,
     "world": 2
   },
