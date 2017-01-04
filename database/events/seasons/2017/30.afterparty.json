@@ -1,0 +1,159 @@
+{
+  "header": {
+    "src": "#1/ttTbzU1.jpg",
+    "lSrc": "#0/seasons/30.afterparty.jpg"
+  },
+  "title": "Snowman",
+  "date": "01.01.2017",
+  "date_end": "31.01.2017",
+  "duration": "3h",
+  "free_showdowns": "4",
+  "ticket_regain": "50m",
+  "prizes": [
+    {
+      "level": 1,
+      "extra_type": "track",
+      "extra": 8,
+      "coins": 5000,
+      "gems": 5
+    },
+    {
+      "level": 2,
+      "extra_type": "doughnut",
+      "coins": 3500,
+      "gems": 5
+    },
+    {
+      "level": 3,
+      "extra_type": "part",
+      "extra": "bearing-5",
+      "coins": 3500
+    },
+    {
+      "level": 4,
+      "extra_type": "doughnut",
+      "coins": 2000
+    },
+    {
+      "level": 5,
+      "extra_type": "part",
+      "extra": "bearing-5",
+      "coins": 2000,
+      "gems": 4
+    },
+    {
+      "level": 6,
+      "extra_type": "doughnut",
+      "coins": 2000
+    },
+    {
+      "level": 7,
+      "coins": 2000,
+      "gems": 4
+    },
+    {
+      "level": 8,
+      "extra_type": "part",
+      "extra": "gear-4",
+      "coins": 2000,
+      "gems": 4
+    },
+    {
+      "level": 9,
+      "extra_type": "doughnut",
+      "coins": 2000
+    },
+    {
+      "level": 10,
+      "extra_type": "doughnut",
+      "coins": 2000
+    },
+    {
+      "level": 11,
+      "extra_type": "part",
+      "extra": "spring-3",
+      "coins": 2000
+    },
+    {
+      "level": 12,
+      "extra_type": "doughnut",
+      "coins": 1500,
+      "gems": 4
+    },
+    {
+      "level": 13,
+      "extra_type": "doughnut",
+      "coins": 1500
+    },
+    {
+      "level": 14,
+      "extra_type": "part",
+      "extra": "sheet-3",
+      "coins": 1500
+    },
+    {
+      "level": 15,
+      "extra_type": "track",
+      "extra": 7,
+      "coins": 1000
+    },
+    {
+      "level": 16,
+      "extra_type": "part",
+      "extra": "bolt-2",
+      "coins": 1000,
+      "gems": 3
+    },
+    {
+      "level": 17,
+      "extra_type": "doughnut",
+      "coins": 1000
+    },
+    {
+      "level": 18,
+      "extra_type": "doughnut",
+      "coins": 1000
+    },
+    {
+      "level": 19,
+      "extra_type": "part",
+      "extra": "pipe-2",
+      "coins": 750
+    },
+    {
+      "level": 20,
+      "extra_type": "doughnut",
+      "coins": 750,
+      "gems": 3
+    },
+    {
+      "level": 21,
+      "extra_type": "doughnut",
+      "coins": 750
+    },
+    {
+      "level": 22,
+      "extra_type": "part",
+      "extra": "bearing-2",
+      "coins": 750
+    },
+    {
+      "level": 23,
+      "extra_type": "doughnut",
+      "coins": 750,
+      "gems": 1
+    },
+    {
+      "level": 24,
+      "extra_type": "part",
+      "extra": "spring-2",
+      "coins": 750,
+      "gems": 3
+    },
+    {
+      "level": 25,
+      "extra_type": "doughnut",
+      "coins": 750
+    }
+  ]
+}

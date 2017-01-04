@@ -1626,9 +1626,33 @@
   },
   {
     "id": 230,
-    "tier": 0,
+    "tier": 3,
     "cats": "18",
     "prio": 15,
+    "world": 2,
+    "season-reward": true
+  },
+  {
+    "id": 231,
+    "tier": 1,
+    "cats": "18",
+    "prio": 16,
+    "world": 2,
+    "season-reward": true
+  },
+  {
+    "id": 232,
+    "tier": 0,
+    "cats": "18",
+    "prio": 17,
+    "world": 2,
+    "season-reward": true
+  },
+  {
+    "id": 233,
+    "tier": 0,
+    "cats": "18",
+    "prio": 18,
     "world": 2,
     "season-reward": true
   }
