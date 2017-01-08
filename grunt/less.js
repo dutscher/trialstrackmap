@@ -4,6 +4,7 @@ module.exports = function (grunt) {
 
         var globalVars = {},
             paintJobsJSON = require("../database/media/paintjobs.json"),
+            gfxJSON = require("../database/media/gfx.json"),
             bikeNamesJSON = require("../database/bikes.json"),
             paintJobDimensions = "70x50".split("x"),
             spritePaintJobDimensions = "910x550".split("x"),
@@ -41,6 +42,9 @@ module.exports = function (grunt) {
         globalVars._paintJobIconNames = [];
         globalVars._paintJobIconSelectors = [];
         globalVars._paintJobIconPositions = [];
+        // gfx
+        globalVars._gfxPaintjobs = gfxJSON.images.paintjobs.src.replace("#1/", "");
+        globalVars._gfxPaintjobIcons = gfxJSON.images["paintjob-icons"].src.replace("#1/", "");
 
         for (var bikeID in paintJobsRAW) {
 
@@ -81,18 +85,24 @@ module.exports = function (grunt) {
 
     grunt.registerTask("convertLess", function () {
         globalVars = generateSprites();
-        grunt.task.run("less:dist");
+        grunt.task.run("less");
     });
 
     return {
+        options: {
+            paths: ["css/mixins"],
+            plugins: [require("less-plugin-glob")],
+            globalVars: globalVars,
+            compress: true
+        },
         dist: {
-            options: {
-                paths: ["css/mixins"],
-                plugins: [require("less-plugin-glob")],
-                globalVars: globalVars
-            },
             files: {
                 "dist/main.css": "css/main.less"
+            }
+        },
+        share: {
+            files: {
+                "dist/share.css": "css/share/share.less"
             }
         }
     }
