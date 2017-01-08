@@ -37,11 +37,11 @@
   },
   "10": {
     "name": "Stallion",
-    "tier": "uni"
+    "tier": "Crazy"
   },
   "11": {
     "name": "Agent",
-    "tier": "uni"
+    "tier": "Crazy"
   },
   "13": {
     "name": "KTM 500-EXC",
@@ -49,6 +49,10 @@
   },
   "19": {
     "name": "Donkey",
-    "tier": "uni"
+    "tier": "Crazy"
+  },
+  "14": {
+    "name": "KTM 450 Rally",
+    "tier": 2
   }
 }

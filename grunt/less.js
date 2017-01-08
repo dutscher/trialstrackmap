@@ -6,24 +6,28 @@ module.exports = function (grunt) {
             paintJobsJSON = require("../database/media/paintjobs.json"),
             gfxJSON = require("../database/media/gfx.json"),
             bikeNamesJSON = require("../database/bikes.json"),
+            paintJobsRAW = paintJobsJSON.bikes,
+            //gfx dimensions
+            spritePaintJobIconDimensions = "1100x1400".split("x"),
+            spritePaintJobDimensions = "980x550".split("x"),
+            //sprite dimensions
             paintJobDimensions = "70x50".split("x"),
-            spritePaintJobDimensions = "910x550".split("x"),
-            spritePaintJobScalePercent = 90,
             paintJobIconDimensons = "100x100".split("x"),
-            spritePaintJobIconDimensions = "1100x1300".split("x"),
-            spritePaintJobIconScalePercent = 50,
-            paintJobsRAW = paintJobsJSON.bikes;
+            //scale dimensions
+            spritePaintJobScalePercent = 90,
+            spritePaintJobIconScalePercent = 50;
 
         function trimName(name) {
-            return "" + name.toLowerCase()
-                    .replace(" ", "-")
-                    .replace("(", "")
-                    .replace(")", "");
+            var name = "" + name.toLowerCase()
+                    .replace(/ /g, "-")
+                    .replace(/\(/g, "")
+                    .replace(/\)/g, "");
+            return name;
         }
 
         function calcPercantage(pixel, scalePercent) {
-            var faktor = scalePercent / 100;
-            return pixel * faktor;
+            var factor = scalePercent / 100;
+            return pixel * factor;
         }
 
         // paintjobs
