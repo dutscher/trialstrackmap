@@ -254,12 +254,14 @@
     "14": "Rodeo 2015",
     "15": "Halloween 2015",
     "16": "Christmas 2015",
-    "17": "KTM 2016",
+    "17": "KTM 500-EXC 2016",
     "18": "Petrol Falls",
     "19": "Treasure Hunt places",
     "20": "Treasure Hunt 2016",
     "21": "Youtube Videos",
-    "22": "Midnight Circuit 2016"
+    "22": "Midnight Circuit 2016",
+    "23": "Special",
+    "24": "KTM 400-Rally 2016"
   },
   "tiers": {
     "1": "Tier 1",
@@ -520,6 +522,13 @@
     "230": "Torn Canyon",
     "231": "Cold Cut Corner",
     "232": "Root Canal",
-    "233": "Crystal Crossing"
+    "233": "Crystal Crossing",
+    "234": "Broken Skull",
+    "235": "The Assumption",
+    "236": "Lost Decent",
+    "237": "Peace Hammer",
+    "238": "Peaceful Pummel",
+    "239": "Dark Smoke",
+    "240": "Fair Winds"
   }
 }

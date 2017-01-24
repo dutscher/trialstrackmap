@@ -1,0 +1,88 @@
+{{#extend "default"}}
+    {{#content "styles" mode="append"}}
+        <link rel="stylesheet" type="text/css" href="/dist/main.css{{cacheBuster}}"/>
+    {{/content}}
+
+    {{#content "preload-images"}}data:loaded{{/content}}
+
+    {{#content "body"}}
+        <style>
+            h2 {
+                color: #fff
+            }
+
+            .outfit {
+                width: 256px;
+                height: 530px;
+                position: relative;
+                display: inline-block;
+            }
+            .outfit__part {
+                width: 256px;
+                height: 256px;
+                position: absolute;
+            }
+            .outfit--head {
+                z-index: 4;
+                left: 10px;
+            }
+            .outfit--body {
+                z-index: 3;
+                top: 95px;
+            }
+            .outfit--arm {
+                width: 64px;
+                z-index: 1;
+                left: 190px;
+                top: 100px;
+            }
+            .outfit--pant {
+                z-index: 2;
+                left: 20px;
+                top: 260px;
+            }
+            .android .outfit--head {
+                background-image: url(http://i.imgur.com/KQC4Bw8.png);
+            }
+            .android .outfit--body {
+                background-image: url(http://i.imgur.com/IauvxbF.png);
+            }
+            .android .outfit--arm {
+                background-image: url(http://i.imgur.com/lME2Dwv.png);
+            }
+            .android .outfit--pant {
+                background-image: url(http://i.imgur.com/INIDGVi.png);
+            }
+            .cornelius .outfit--head {
+                background-image: url(http://i.imgur.com/iXLK2PC.png);
+            }
+            .cornelius .outfit--body {
+                background-image: url(http://i.imgur.com/XEwJsv2.png);
+            }
+            .cornelius .outfit--arm {
+                background-image: url(http://i.imgur.com/dzuxpz4.png);
+                width: 128px;
+                left: 155px;
+            }
+            .cornelius .outfit--pant {
+                background-image: url(http://i.imgur.com/1DA3B7J.png);
+            }
+        </style>
+        <div class="page-body">
+            <h2>outfit:</h2>
+            <div class="outfit android">
+                <div class="outfit__part outfit--head"></div>
+                <div class="outfit__part outfit--body"></div>
+                <div class="outfit__part outfit--arm"></div>
+                <div class="outfit__part outfit--pant"></div>
+            </div>
+
+            <div class="outfit cornelius">
+                <div class="outfit__part outfit--head"></div>
+                <div class="outfit__part outfit--body"></div>
+                <div class="outfit__part outfit--arm"></div>
+                <div class="outfit__part outfit--pant"></div>
+            </div>
+        </div>
+    {{/content}}
+{{/extend}}

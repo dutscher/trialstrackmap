@@ -6,7 +6,8 @@
         {{/with}}
     {{/content}}
 
-    {{#content "data-event"}}data:loaded{{/content}}
+    {{#content "preload-images"}}data:loaded{{/content}}
+
     {{#content "styles" mode="append"}}
         <link rel="stylesheet" type="text/css" href="/dist/main.css{{cacheBuster}}"/>
     {{/content}}

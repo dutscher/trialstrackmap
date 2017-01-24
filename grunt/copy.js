@@ -11,7 +11,7 @@ module.exports = function (grunt) {
 
     return {
         timesBackup: {
-            src: "database/times.json",
+            src: "database/tracks/times.json",
             dest: "backup/times.bak." + backupDate + ".json"
         },
         timesToDatabase: {

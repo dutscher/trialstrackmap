@@ -4,6 +4,7 @@ module.exports = function (grunt) {
         database: {
             src: [
                 "database/*.{json,json5}",
+                "database/trackdata/*.json",
                 "database/media/*!(gfx).json"
             ],
             dest: "build/map.json"

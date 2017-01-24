@@ -657,7 +657,8 @@
     "id": 131,
     "tier": 2,
     "cats": "10",
-    "oid": 1226
+    "oid": 1226,
+    "case": "China 2015"
   },
   // tier 3 / story,
   {
@@ -1106,13 +1107,14 @@
     "forum_links": "http://forums.ubi.com/showthread.php/1104009-!!!-Prod22-Maria-2-map",
     "leaked": true
   },
-  {
-    "id": 154,
-    "tier": 0,
-    "cats": "12",
-    "prio": 4,
-    "leaked": true
-  },
+//  {
+//    "id": 154,
+//    "tier": 0,
+//    "cats": "12",
+//    "prio": 4,
+//    "leaked": true,
+//    "released-as": "Torn Canyon"
+//  },
   // agent tracks,
   {
     "id": 157,
@@ -1655,5 +1657,55 @@
     "prio": 18,
     "world": 2,
     "season-reward": true
+  },
+  {
+    "id": 234,
+    "tier": 1,
+    "cats": "10",
+    "prio": 1,
+    "world": 2,
+    "case": "50.Mio Downloads 2017"
+  },
+  {
+    "id": 235,
+    "tier": 3,
+    "cats": "23",
+    "prio": 1,
+    "world": 2
+  },
+  {
+    "id": 236,
+    "tier": 3,
+    "cats": "23",
+    "prio": 2,
+    "world": 2
+  },
+  {
+    "id": 237,
+    "tier": 3,
+    "cats": "23",
+    "prio": 3,
+    "world": 2
+  },
+  {
+    "id": 238,
+    "tier": 3,
+    "cats": "23",
+    "prio": 4,
+    "world": 2
+  },
+  {
+    "id": 239,
+    "tier": 3,
+    "cats": "23",
+    "prio": 5,
+    "world": 2
+  },
+  {
+    "id": 240,
+    "tier": 3,
+    "cats": "23",
+    "prio": 6,
+    "world": 2
   }
 ]

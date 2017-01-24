@@ -1,0 +1,27 @@
+{{#extend "default"}}
+    {{#content "styles" mode="append"}}
+        <link rel="stylesheet" type="text/css" href="/dist/main.css{{cacheBuster}}"/>
+    {{/content}}
+
+    {{#content "preload-images"}}data:loaded{{/content}}
+
+    {{#content "body"}}
+        <style>
+            h2 {
+                color: #fff
+            }
+            .spectrum__wrap {
+                color: #ffffff;
+                display: inline-block;
+            }
+        </style>
+        <div class="page-body" ng-controller="gfx">
+            <h2>parts:</h2>
+
+            <div class="spectrum__wrap">
+                <div part-list="" part-scale="1" index="0"></div>
+                <div part-list="{parts:{'1':[1,2,3,4,5,6,7,8,9,10]}}" part-scale="1" index="1" print-name="true"></div>
+            </div>
+        </div>
+    {{/content}}
+{{/extend}}
