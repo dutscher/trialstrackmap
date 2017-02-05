@@ -285,7 +285,10 @@
     "dateEnd": "Terminou em",
     "dateEnds": "Termina em",
     "dayShort": "d",
-    "prices": "Prêmios"
+    "prices": "Prêmios",
+    "stats": "Statistics",
+    "total_legends": "Total Legends",
+    "more_stats": "More infos click here"
   },
   "tracks": {
     "1": "Penhasco Árido",
@@ -527,6 +530,8 @@
     "237": "Peace Hammer",
     "238": "Peaceful Pummel",
     "239": "Dark Smoke",
-    "240": "Fair Winds"
+    "240": "Fair Winds",
+    "241": "Plant Food",
+    "242": "Bayou Boatride"
   }
 }

@@ -8,8 +8,8 @@
         "dim": "3614x2495"
       },
       "2": {
-        "src": "#1/vj2hPKi.jpg",
-        "lSrc": "#0/map/trackmap.2.170124.en.jpg",
+        "src": "#1/K9ipDeG.jpg",
+        "lSrc": "#0/map/trackmap.2.170205.en.jpg",
         "alt": "Trails Frontier Trackmap Petrol Falls",
         "dim": "1525x2500"
       }
@@ -266,7 +266,7 @@
       "sprite": true
     },
     "seasons": {
-      "src": "#1/86HgtgQ.jpg",
+      "src": "#1/J9d1WgB.jpg",
       "lSrc": "#0/icons/sprite-seasons.jpg",
       "selector": "i.seasons",
       "sprite": true

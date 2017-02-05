@@ -3,12 +3,14 @@
     "src": "#1/ttTbzU1.jpg",
     "lSrc": "#0/seasons/30.afterparty.jpg"
   },
-  "title": "Snowman",
+  "title": "Afterparty",
   "date": "01.01.2017",
   "date_end": "31.01.2017",
   "duration": "3h",
   "free_showdowns": "4",
   "ticket_regain": "50m",
+  "total_legends": 1692,
+  "stats": "http://forums.ubi.com/showthread.php/1564440-After-Party-Season-Statistics",
   "prizes": [
     {
       "level": 1,

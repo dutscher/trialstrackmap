@@ -11,10 +11,8 @@
     "name": "gtdave",
     "date": "17.12.2014"
   },
-  "total_legends": {
-    "ios": "1279",
-    "android": "721"
-  },
+  "total_legends": 2121,
+  "stats": "http://forums.ubi.com/showthread.php/1008693-Season-Statistics",
   "prizes": [
     {
       "level": 1,

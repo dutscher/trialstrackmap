@@ -138,7 +138,8 @@
                             <div class="legend-spectrum" data-cats="data.map.cats"></div>
                         </div>
                     </li>
-                    <li>
+                    <li class="tierlegend__wrap">
+                        <h2 class="tierlegend__headline tierlegend__headline--other-world" ng-click="changeWorld(otherWorld);">< {%'page.ferryTo.' + otherWorld|translate%}  ({%tracksInOtherWorld%})</h2>
                         <h2 class="tierlegend__headline">{%'page.ferryTo.' + selectedWorld|translate%} ({%tracksInTiersNum%})</h2>
                         <div class="wrap tierlegend">
                             <div class="mb10">

@@ -208,10 +208,19 @@ a strong {
     display: block;
 }
 
+.tierlegend__wrap {
+    padding-top: 10px;
+}
+
 .tierlegend__headline {
     margin: 0;
     line-height: 20px;
     padding-left: 20px;
+}
+.tierlegend__headline--other-world {
+    font-size: 12px;
+    letter-spacing: 0;
+    cursor: pointer;
 }
 
 span.de, span.en {
@@ -675,4 +684,8 @@ span[track-in-sidebar] span {
 }
 .spectrum__item.is-active {
     outline: 2px solid #fff;
+}
+
+[track-stats] strong {
+    color: #61d4d7;
 }

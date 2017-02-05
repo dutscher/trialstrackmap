@@ -251,13 +251,20 @@ i.season-extra-coins-gems {
 i.season-extra-custom-1 {
     background-position: -240px -40px
 }
-
 i.season-extra-custom-2 {
     background-position: -240px -80px
 }
-
 i.season-extra-custom-3 {
     background-position: -240px -120px
+}
+i.season-extra-custom-4 {
+    background-position: -240px -160px
+}
+i.season-extra-custom-5 {
+    background-position: -280px 0
+}
+i.season-extra-custom-6 {
+    background-position: -280px -40px
 }
 
 i[class^="season-extra-part-"] {

@@ -22,7 +22,7 @@
                     <div class="seasons-list">
                         {{#each-reverse _seasons}}
                             <div class="box season-container">
-                                <img class="season-banner" ng-src="{%'{{header.src}}'|hoster:data.hoster%}"/>
+                                <img class="season-banner" ng-src="{%'{{header.src}}'|hoster:data.hoster%}" alt="{{title}}" title="{{title}}" />
 
                                 <div class="season-times">
                                     <strong>#{%'{{id}}'|leadingZero:2%}</strong>
@@ -36,6 +36,15 @@
                                 </div>
 
                                 <hr {{#if active}}class="protect-countdown"{{/if}}>
+
+                                {{#if total_legends}}
+                                <h2>{%'seasons.total_legends'|translate%}</h2>
+                                    {{total_legends}}
+                                    {{#if stats}}
+                                    | <a href="{{stats}}" target="_blank" class="classic-link">{%'seasons.more_stats'|translate%}</a>
+                                    {{/if}}
+                                    <hr />
+                                {{/if}}
 
                                 <h2>{%'seasons.prices'|translate%}</h2>
 
