@@ -46,6 +46,16 @@
       "walkthrough": "Passo a passo",
       "walkthrough-platinum": "Guia de Platina",
       "walkthrough-top10": "Top 10 Tutorial",
+      "media": "Media",
+      "candy": "Candy Mission",
+      "categories": "Categories",
+      "tier": "Tier",
+      "fuel": "Fuel",
+      "parts": "Parts",
+      "medalsLabel": "Medals",
+      "pack": "Trackpack",
+      "level": "Slotmachine Level",
+      "seasonReward": "Season",
       "medals": {
         "silver": "Prata",
         "gold": "Ouro",
@@ -259,7 +269,11 @@
     "19": "Treasure Hunt places",
     "20": "Treasure Hunt 2016",
     "21": "Youtube Videos",
-    "22": "Midnight Circuit 2016"
+    "22": "Midnight Circuit 2016",
+    "23": "Anniversary 2017",
+    "24": "KTM 400-Rally 2017",
+    "25": "Season Reward",
+    "26": "Daily Deals"
   },
   "tiers": {
     "1": "Nível 1",
