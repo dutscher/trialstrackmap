@@ -74,6 +74,7 @@ i[class^="medal-"] {
 }
 
 [part-list] i, [part-list] span {
+    display: inline-block;
     margin-right: 3px;
 }
 

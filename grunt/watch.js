@@ -44,7 +44,7 @@ module.exports = function (grunt) {
                 "./grunt/less.js"
             ],
             tasks: [
-                "less:dist"
+                "convertLess"
             ],
             options: {
                 livereload: config.livereload

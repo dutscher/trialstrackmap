@@ -1,0 +1,105 @@
+.transition(...) {
+  @query: ~`"@{arguments}".replace(/[\[\]]/g, '')`;
+  -webkit-transition: @query;
+  -moz-transition: @query;
+  transition: @query;
+}
+
+.opacity (@opacity: 0.5) {
+  -webkit-opacity: @opacity;
+  -moz-opacity: @opacity;
+  opacity: @opacity;
+}
+
+.border-radius-hack() {
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+
+.border-radius(@px) {
+  -webkit-border-radius: @px;
+  -moz-border-radius: @px;
+  border-radius: @px;
+  .border-radius-hack;
+}
+
+.border-radius-top(@px) {
+  .border-radius-top-left(@px);
+  .border-radius-top-right(@px);
+  .border-radius-hack;
+}
+
+.border-radius-bottom(@px) {
+  .border-radius-bottom-left(@px);
+  .border-radius-bottom-right(@px);
+  .border-radius-hack;
+}
+
+.border-radius-left(@px) {
+  .border-radius-top-left(@px);
+  .border-radius-bottom-left(@px);
+  .border-radius-hack;
+}
+
+.border-radius-right(@px) {
+  .border-radius-top-right(@px);
+  .border-radius-bottom-right(@px);
+  .border-radius-hack;
+}
+
+.border-radius-bottom-left(@px:0) {
+  -webkit-border-bottom-left-radius: @px;
+  -moz-border-radius-bottomleft: @px;
+  border-bottom-left-radius: @px;
+  .border-radius-hack;
+}
+
+.border-radius-top-left(@px:0) {
+  -webkit-border-top-left-radius: @px;
+  -moz-border-radius-topleft: @px;
+  border-top-left-radius: @px;
+  .border-radius-hack;
+}
+
+.border-radius-bottom-right(@px:0) {
+  -webkit-border-bottom-right-radius: @px;
+  -moz-border-radius-bottomright: @px;
+  border-bottom-right-radius: @px;
+  .border-radius-hack;
+}
+
+.border-radius-top-right(@px:0) {
+  -webkit-border-top-right-radius: @px;
+  -moz-border-radius-topright: @px;
+  border-top-right-radius: @px;
+  .border-radius-hack;
+}
+
+.box-shadow (@string) {
+  -webkit-box-shadow: @string;
+  -moz-box-shadow: @string;
+  box-shadow: @string;
+}
+
+.text-shadow (@size) {
+  @query:  @size    @size  @size black,
+           @size  -(@size) @size black,
+         -(@size)   @size  @size black,
+         -(@size) -(@size) @size black;
+  text-shadow: @query;
+}
+
+.box-sizing (@type: border-box) {
+  -webkit-box-sizing: @type;
+  -moz-box-sizing: @type;
+  box-sizing: @type;
+}
+
+.gradient (...) {
+  @query: ~`"@{arguments}".replace(/[\[\]]/g, '')`;
+  background-image: -webkit-linear-gradient(@query);
+  background-image: -moz-linear-gradient(@query);
+  background-image: -ms-linear-gradient(@query);
+  background-image: linear-gradient(@query);
+}

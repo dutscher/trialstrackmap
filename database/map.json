@@ -185,8 +185,26 @@
     },
     {
       "index": 23,
-      "class": "ktm-rally-2016",
+      "class": "anniversary",
+      "color": "FEAAFF"
+    },
+    {
+      "index": 24,
+      "class": "ktm-rally-2017",
       "color": "FF6600"
+    },
+    {
+      "index": 25,
+      "class": "season-reward",
+      "color": "026803",
+      "noneGameCategory": true
+    },
+    {
+      "index": 26,
+      "class": "daily-deals",
+      "color": "61d4d7",
+      "noneGameCategory": true
+
     }
   ],
   "tiers": [
