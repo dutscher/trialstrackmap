@@ -5,10 +5,11 @@
   },
   "title": "Tough Love",
   "date": "31.01.2017",
-  "date_end": "05.03.2017",
+  "date_end": "08.03.2017",
   "duration": "3h",
   "free_showdowns": "4",
   "ticket_regain": "50m",
+  "stats": "http://trials.bonxy.net/the-bunker/Tough+Love+Season",
   "prizes": [
     {
       "level": 1,
