@@ -1494,11 +1494,11 @@
   {
     "id": 210,
     "tier": 1,
-    "cats": "17,26",
+    "cats": "17,26,25",
     "prio": 8,
     "world": 2,
     "daily": 40,
-    "seasonReward": [29, 20]
+    "seasonReward": "20,29"
   },
   {
     "id": 211,
@@ -1681,42 +1681,42 @@
   },
   {
     "id": 235,
-    "tier": 3,
+    "tier": 1,
     "cats": "24",
     "prio": 1,
     "world": 2
   },
   {
     "id": 236,
-    "tier": 3,
+    "tier": 2,
     "cats": "24",
     "prio": 2,
     "world": 2
   },
   {
     "id": 237,
-    "tier": 3,
+    "tier": 2,
     "cats": "24",
     "prio": 3,
     "world": 2
   },
   {
     "id": 238,
-    "tier": 3,
+    "tier": 1,
     "cats": "24",
     "prio": 4,
     "world": 2
   },
   {
     "id": 239,
-    "tier": 3,
+    "tier": 1,
     "cats": "24",
     "prio": 5,
     "world": 2
   },
   {
     "id": 240,
-    "tier": 3,
+    "tier": 2,
     "cats": "24",
     "prio": 6,
     "world": 2
@@ -1730,7 +1730,7 @@
   },
   {
     "id": 242,
-    "tier": 0,
+    "tier": 1,
     "cats": "24",
     "prio": 8,
     "world": 2
