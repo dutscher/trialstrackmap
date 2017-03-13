@@ -4,6 +4,7 @@
   ,"^/wr-rider-temple.html$ /dist/wr-rider-temple.html"
   ,"^/garage.html$ /dist/garage.html"
   ,"^/wardrobe.html$ /dist/wardrobe.html"
+  ,"^/home-shack.html$ /dist/home-shack.html"
   ,"^/wishlist.html$ /dist/wishlist.html"
   ,"^/dist/sprites.html$ /garage.html"
   ,"^/table-medals.html$ /dist/table-medals.html"

@@ -1,0 +1,53 @@
+{{#extend "default"}}
+    {{#content "styles" mode="append"}}
+        <link rel="stylesheet" type="text/css" href="/dist/main.css{{cacheBuster}}"/>
+    {{/content}}
+
+    {{#content "preload-images"}}data:loaded{{/content}}
+
+    {{#content "body"}}
+        <style>
+            h2 {
+                color: #fff
+            }
+            .custom {
+                width: 256px;
+                height: 530px;
+                position: relative;
+                display: inline-block;
+            }
+            .custom__part {
+                width: 256px;
+                height: 256px;
+                position: absolute;
+                background-repeat: no-repeat;
+            }
+            .custom--head {
+                z-index: 4;
+                left: 10px;
+            }
+            .custom--body {
+                z-index: 3;
+                top: 95px;
+            }
+            .custom--arm {
+                width: 64px;
+                z-index: 1;
+                left: 190px;
+                top: 120px;
+            }
+            .custom--pant {
+                z-index: 2;
+                left: 20px;
+                top: 260px;
+            }
+        </style>
+        <div class="page-body">
+            {{> navigation title="Home Shack" badge=wardrobe.order.length}}
+
+            <div style="margin-top: 40px;">
+                {{{homeShack customs="54,53,1,2,3,4,5,6,7,8,9,10,11,21,23,50" data=wardrobe}}}
+            </div>
+        </div>
+    {{/content}}
+{{/extend}}
