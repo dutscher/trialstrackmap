@@ -1681,7 +1681,7 @@
   },
   {
     "id": 235,
-    "tier": 1,
+    "tier": 3,
     "cats": "24",
     "prio": 1,
     "world": 2
@@ -1702,14 +1702,14 @@
   },
   {
     "id": 238,
-    "tier": 1,
+    "tier": 3,
     "cats": "24",
     "prio": 4,
     "world": 2
   },
   {
     "id": 239,
-    "tier": 1,
+    "tier": 3,
     "cats": "24",
     "prio": 5,
     "world": 2
@@ -1730,7 +1730,7 @@
   },
   {
     "id": 242,
-    "tier": 1,
+    "tier": 3,
     "cats": "24",
     "prio": 8,
     "world": 2
