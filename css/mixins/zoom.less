@@ -1,0 +1,9 @@
+// .zoom(0.5)
+
+.zoom (@scale: 1) {
+  zoom: @scale;
+  -ms-zoom: @scale;
+  -webkit-zoom: @scale;
+  -moz-transform: scale(@scale, @scale);
+  -moz-transform-origin: left center;
+}

@@ -6,97 +6,22 @@
     {{#content "preload-images"}}data:loaded{{/content}}
 
     {{#content "body"}}
-        <style>
-            h2 {
-                color: #fff
-            }
-            .costum__area {
-                padding-right: 100px;
-                padding-bottom: 150px;
-            }
-            .costum {
-                position: relative;
-                display: inline-block;
-                transform: scale(0.5) translate(25%, 25%);
-                /*transition: transform 250ms ease;*/
-                width: 128px;
-
-                height: 265px;
-                z-index: 1;
-                /*
-                 transform: scale(1);
-                 width: 256px;
-                 height: 530px;
-                */
-            }
-            .costum:hover {
-                transform: scale(0.7);
-                z-index: 2;
-            }
-            .costum__part {
-                width: 256px;
-                height: 256px;
-                position: absolute;
-                background-repeat: no-repeat;
-            }
-            .costum--head {
-                z-index: 4;
-                left: 10px;
-            }
-            .costum--body {
-                z-index: 3;
-                top: 95px;
-            }
-            .costum--arm {
-                width: 64px;
-                z-index: 1;
-                left: 190px;
-                top: 120px;
-            }
-            .costum--pant {
-                z-index: 2;
-                left: 20px;
-                top: 260px;
-            }
-            .costum__name {
-                width: 170px;
-                color: #fff;
-                position: absolute;
-                z-index: 4;
-                text-align: center;
-                transform: scale(1.5);
-                left: 65px;
-                bottom: -230px;
-            }
-            .costum__name__inner {
-                display: block;
-                background: rgba(57, 28, 20, 0.75);
-                border: solid 2px #f4d992;
-                border-radius: 10px;
-                -webkit-box-shadow: 0 0 15px 0 rgba(0,0,0,0.75);
-                -moz-box-shadow: 0 0 15px 0 rgba(0,0,0,0.75);
-                box-shadow: 0 0 15px 0 rgba(0,0,0,0.75);
-                position: absolute;
-                bottom: 20px;
-                left: 5px;
-                right: 5px;
-                padding: 0 5px;
-            }
-        </style>
-        <div class="page-body">
+        <div class="page-body" ng-controller="home-shack">
             {{> navigation title="Home Shack" badge=wardrobe.homeshack.length}}
 
             <div class="costum__area">
-                {{{homeShack data=wardrobe}}}
+                {{homeShack data=wardrobe}}
 
-                <div class="costum">
-                    <div class="costum__part costum--head costum--14"></div>
-                    <div class="costum__part costum--body costum--16"></div>
-                    <div class="costum__part costum--arm costum--16"></div>
-                    <div class="costum__part costum--pant costum--11"></div>
-                    <div class="costum__name"><div class="costum__name__inner">dutscher-DE</div></div>
+                <hr />
+
+                {{> costum wardrobe.costums.dutscher home-shack-editor-preview=true}}
+
+                <div class="costum__editor" home-shack-editor>
+                    <h2>Costum Editor</h2>
+                    {{> editor-select type="head" title="Head" costums=wardrobe.all selected=wardrobe.costums.dutscher.head}}
+                    {{> editor-select type="body" title="Body" costums=wardrobe.all selected=wardrobe.costums.dutscher.body}}
+                    {{> editor-select type="pant" title="Pant" costums=wardrobe.all selected=wardrobe.costums.dutscher.pant}}
                 </div>
-
             </div>
         </div>
     {{/content}}

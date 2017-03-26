@@ -1,32 +1,40 @@
 (function () {
+    var fs = require("fs");
+    
     module.exports.register = function (Handlebars) {
         Handlebars.registerHelper("homeShack", function (params) {
-            var costums = params.hash.data.homeshack,
-                costumData = params.hash.data.all,
-                content = "",
-                style = "";
+            var costumOrder = params.hash.data.homeshack,
+                costumsData = params.hash.data.all,
+                costumHtml = "",
+                costumStyle = "",
+                file = "tpls/partials/homeshack/costum.hbs",
+                template = Handlebars.compile(fs.readFileSync(file, "utf8"));
             
-            for (var i = 0; i < costums.length; i++) {
-                var costumId = costums[i],
-                    costumName = costumData[costumId].name.toLowerCase().replace(/ /g, "-"),
-                    costumNameHR = costumData[costumId].name,
+            for (var i = 0; i < costumOrder.length; i++) {
+                var costumId = costumOrder[i],
+                    costumData = costumsData[costumId],
+                    costumName = costumData.name.toLowerCase().replace(/ /g, "-"),
+                    costumNameHR = costumData.name,
                     costumSelector = 'costum--' + costumId,
-                    costumParts = costumData[costumId].parts,
+                    costumParts = costumData.parts,
                     costumHead = costumParts[0].split("|"),
                     costumBody = costumParts[1].split("|"),
-                    costumArm = costumParts[2].split("|");
-    
-                content += '\n' +
-                    '<div class="costum ' + costumName + ' ' + costumSelector + '">\n' +
-                    '   <div class="costum__part costum--head"></div>\n' +
-                    '   <div class="costum__part costum--body"></div>\n' +
-                    '   <div class="costum__part costum--arm"></div>\n' +
-                    '   <div class="costum__part costum--pant"></div>\n' +
-                    '   <div class="costum__name"><div class="costum__name__inner">' + costumId + '. ' + costumNameHR + '</div></div>\n' +
-                    '</div>\n';
+                    costumArm = costumParts[2].split("|"),
+                    costumPant = costumParts[3].split("|");
+                
+                costumHtml += '\n' +
+                    template({
+                        selector: costumName + " " + costumSelector,
+                        id: costumName,
+                        name: costumId + ". " + costumNameHR,
+                        season: costumData.season,
+                        event: costumData.event,
+                        purchase: costumData.purchase,
+                        unreleased: costumData.unreleased
+                    });
                 
                 // src|left|top|width
-                style += (costumParts ? (
+                costumStyle += (costumParts ? (
                     '.' + costumName + ' .costum--head,\n' +
                     '.' + costumSelector + ' .costum--head,\n' +
                     '.' + costumSelector + '.costum--head {\n' +
@@ -71,9 +79,20 @@
                     '.' + costumSelector + ' .costum--pant,\n' +
                     '.' + costumSelector + '.costum--pant {\n' +
                     '   background-image: url("' + costumParts[3] + '");\n' +
+                    (
+                        costumPant.length > 1
+                            ? (
+                                (costumPant[1] ? '   left: ' + costumPant[1] + 'px;\n' : '')
+                            )
+                            : ''
+                    ) +
                     '}\n' ) : '' );
             }
-            return content + (style != "" ? '<style>' + style + '</style>\n' : '');
+            
+            return new Handlebars.SafeString(
+                costumHtml +
+                (costumStyle != "" ? '<style>' + costumStyle + '</style>\n' : '')
+            );
         });
     };
 }).call(this);

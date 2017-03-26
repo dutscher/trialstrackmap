@@ -1,0 +1,131 @@
+.costum {
+  &__area {
+    padding: 100px;
+  }
+
+  position: relative;
+  cursor: pointer;
+  z-index: 1;
+  width: 256px;
+  height: 530px;
+
+  // zoom magic
+  &--50percent {
+    .costum {
+      transform: scale(0.5);
+      transform-origin: left top;
+
+      &:hover {
+        transform: scale(0.75) translate(-25%, -25%);
+
+        .costum__name {
+          bottom: -80px;
+        }
+      }
+    }
+
+    &.costum__mask {
+      width: 128px;
+      height: 265px;
+    }
+  }
+
+  &__mask {
+    display: inline-block;
+  }
+
+  &:hover {
+    z-index: 2;
+  }
+
+  &__part {
+    width: 256px;
+    height: 256px;
+    position: absolute;
+    background-repeat: no-repeat;
+  }
+
+  &--head {
+    z-index: 4;
+    left: 10px;
+  }
+
+  &--body {
+    z-index: 3;
+    top: 95px;
+  }
+
+  &--arm {
+    width: 64px;
+    z-index: 1;
+    left: 190px;
+    top: 120px;
+  }
+
+  &--pant {
+    z-index: 2;
+    left: 20px;
+    top: 260px;
+  }
+
+  &__name {
+    width: 100%;
+    color: #fff;
+    font-size: 25px;
+    position: absolute;
+    z-index: 4;
+    text-align: center;
+    left: 10px;
+    bottom: 50px;
+    .transition(bottom);
+
+    &__inner {
+      display: block;
+      background: rgba(57, 28, 20, 0.75);
+      border: solid 2px #f4d992;
+      border-radius: 10px;
+      -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.75);
+      box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.75);
+      position: absolute;
+      bottom: 20px;
+      left: 5px;
+      right: 5px;
+      padding: 0 5px;
+    }
+  }
+
+  &__state {
+    display: inline-block;
+    background: #61d4d7;
+    color: #000;
+    padding: 4px 8px;
+    font-family: Arial;
+    font-size: 20px;
+    min-width: 15px;
+    line-height: 20px;
+    .border-radius(50%);
+  }
+
+  &__editor {
+    display: inline-block;
+    vertical-align: top;
+    color: #fff;
+
+    label {
+      width: 80px;
+      display: inline-block;
+    }
+  }
+  // to get the pieces in row
+  // <div class="costum__positioner"></div>
+  &__positioner {
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    left: 94px;
+    top: 262px;
+    z-index: 5;
+    background: #ff0000;
+  }
+}

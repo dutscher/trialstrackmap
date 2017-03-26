@@ -1,0 +1,19 @@
+<div class="costum__mask costum--50percent" {{#if home-shack-editor-preview}}home-shack-editor-preview{{/if}}>
+    <div class="costum {{selector}}" id="{{id}}">
+        <div class="costum__part costum--head {{#if head}}costum--{{head}}{{/if}}" type="head"></div>
+        <div class="costum__part costum--body {{#if body}}costum--{{body}}{{/if}}" type="body"></div>
+        <div class="costum__part costum--arm {{#if body}}costum--{{body}}{{/if}}" type="body"></div>
+        <div class="costum__part costum--pant {{#if pant}}costum--{{pant}}{{/if}}" type="pant"></div>
+        {{#if name}}
+        <div class="costum__name">
+            <div class="costum__name__inner">
+                {{name}}
+                {{#if purchase}}<span class="costum__state" title="Available only through Special Offer">$</span>{{/if}}
+                {{#if event}}<span class="costum__state" title="Available as an Event Reward">E</span>{{/if}}
+                {{#if season}}<span class="costum__state" title="Season Reward">S</span>{{/if}}
+                {{#if unreleased}}<span class="costum__state" title="Unreleased">R</span>{{/if}}
+            </div>
+        </div>
+        {{/if}}
+    </div>
+</div>

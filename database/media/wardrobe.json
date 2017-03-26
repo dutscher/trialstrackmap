@@ -19,10 +19,10 @@
       "info": "(Basic)",
       "img": "http://www.mediafire.com/convkey/5bbf/mfj6b6f2n1b492izg.jpg?size_id=a",
       "parts": [
-        "http://i.imgur.com/U8kY2jb.png|90",
-        "http://i.imgur.com/ENOKDW1.png|15",
-        "http://i.imgur.com/Uh2hyaK.png",
-        "http://i.imgur.com/1v2XQx8.png"
+        "http://i.imgur.com/U8kY2jb.png|75",
+        "http://i.imgur.com/ENOKDW1.png",
+        "http://i.imgur.com/Uh2hyaK.png|180",
+        "http://i.imgur.com/1v2XQx8.png|10"
       ]
     },
     "2": {
@@ -47,7 +47,7 @@
       "parts": [
         "http://i.imgur.com/9RurBPf.png|85",
         "http://i.imgur.com/6jq8zV9.png",
-        "http://i.imgur.com/1CfQkHQ.png",
+        "http://i.imgur.com/1CfQkHQ.png|186|105",
         "http://i.imgur.com/CSXhnok.png"
       ]
     },
@@ -60,7 +60,7 @@
       "parts": [
         "http://i.imgur.com/ZpVBudz.png|85",
         "http://i.imgur.com/CtHTMqN.png|-5",
-        "http://i.imgur.com/aFOjVH6.png|180",
+        "http://i.imgur.com/aFOjVH6.png|180|109",
         "http://i.imgur.com/BD6TdE2.png"
       ]
     },
@@ -73,9 +73,9 @@
       "top": "Earn in Time Capsule",
       "pants": "Earn in Time Capsule",
       "parts": [
-        "http://i.imgur.com/7ubVVwC.png|90",
-        "http://i.imgur.com/72W2KEw.png|5",
-        "http://i.imgur.com/KNKdcbw.png",
+        "http://i.imgur.com/7ubVVwC.png|90|-10",
+        "http://i.imgur.com/72W2KEw.png|2|82",
+        "http://i.imgur.com/KNKdcbw.png|180|97",
         "http://i.imgur.com/sY5XShv.png"
       ]
     },
@@ -86,10 +86,10 @@
       "top": "25 Gems",
       "pants": "Slot Machine",
       "parts": [
-        "http://i.imgur.com/qLwVwQG.png|95",
-        "http://i.imgur.com/tzqe0VA.png|10",
-        "http://i.imgur.com/Bsa6G46.png||100",
-        "http://i.imgur.com/hpLUfwi.png"
+        "http://i.imgur.com/qLwVwQG.png|85",
+        "http://i.imgur.com/tzqe0VA.png|-3|83",
+        "http://i.imgur.com/Bsa6G46.png|180|86",
+        "http://i.imgur.com/hpLUfwi.png|9"
       ]
     },
     "7": {
@@ -151,10 +151,10 @@
       "top": "",
       "pants": "",
       "parts": [
-        "http://i.imgur.com/yfT9S0p.png|75",
-        "http://i.imgur.com/SMsIdFY.png|-10",
-        "http://i.imgur.com/x35Q5Xh.png|160|100",
-        "http://i.imgur.com/H7kB9Hq.png"
+        "http://i.imgur.com/yfT9S0p.png|86",
+        "http://i.imgur.com/SMsIdFY.png|4",
+        "http://i.imgur.com/x35Q5Xh.png|177|100",
+        "http://i.imgur.com/H7kB9Hq.png|30"
       ]
     },
     "12": {
@@ -268,10 +268,10 @@
       "top": "",
       "pants": "",
       "parts": [
-        "http://i.imgur.com/ewAcimA.png",
-        "http://i.imgur.com/JSPr7Sb.png",
-        "http://i.imgur.com/emhp1bE.png|180|100",
-        "http://i.imgur.com/fMPQ7Zf.png"
+        "http://i.imgur.com/ewAcimA.png|21",
+        "http://i.imgur.com/JSPr7Sb.png|10",
+        "http://i.imgur.com/emhp1bE.png|190|100",
+        "http://i.imgur.com/fMPQ7Zf.png|30"
       ]
     },
     "21": {
@@ -345,6 +345,7 @@
       "head": "",
       "top": "",
       "pants": "",
+      "purchase": true,
       "parts": [
         "http://i.imgur.com/kr1G96Q.png|85|10",
         "http://i.imgur.com/4Qig4iL.png|-5",
@@ -358,6 +359,7 @@
       "head": "",
       "top": "",
       "pants": "",
+      "purchase": true,
       "parts": [
         "http://i.imgur.com/dRBlZy5.png|90",
         "http://i.imgur.com/O7jLHQc.png|4|73",
@@ -371,6 +373,7 @@
       "head": "",
       "top": "",
       "pants": "",
+      "purchase": true,
       "parts": [
         "http://i.imgur.com/yYG2pMh.png",
         "http://i.imgur.com/YWZWNvm.png||120",
@@ -384,6 +387,7 @@
       "head": "",
       "top": "",
       "pants": "",
+      "purchase": true,
       "parts": [
         "http://i.imgur.com/dMj444L.png|15|30",
         "http://i.imgur.com/GzXkZcB.png",
@@ -410,6 +414,7 @@
       "head": "",
       "top": "",
       "pants": "",
+      "purchase": true,
       "parts": [
         "http://i.imgur.com/moHYJZD.png|85",
         "http://i.imgur.com/Wg5dVJ9.png|-10",
@@ -455,6 +460,7 @@
       "head": "",
       "top": "",
       "pants": "",
+      "purchase": true,
       "parts": [
         "http://i.imgur.com/uWnOtNa.png||20",
         "http://i.imgur.com/8BSwDt5.png|8",
@@ -481,6 +487,7 @@
       "head": "",
       "top": "",
       "pants": "",
+      "purchase": true,
       "parts": [
         "http://i.imgur.com/nuLk5gT.png|80|12",
         "http://i.imgur.com/CKgfjqR.png|-3",
@@ -496,9 +503,9 @@
       "pants": "",
       "parts": [
         "http://i.imgur.com/gSJSTU5.png|22",
-        "http://i.imgur.com/aNZyWSC.png|-8",
+        "http://i.imgur.com/aNZyWSC.png|-5",
         "http://i.imgur.com/tZHxg1P.png|173|116",
-        "http://i.imgur.com/99TrSVe.png"
+        "http://i.imgur.com/99TrSVe.png|25"
       ]
     },
     "38": {
@@ -507,6 +514,7 @@
       "head": "",
       "top": "",
       "pants": "",
+      "purchase": true,
       "parts": [
         "http://i.imgur.com/mhkdwoI.png||10",
         "http://i.imgur.com/GkCBtyY.png",
@@ -569,9 +577,7 @@
     "43": {
       "name": "The Sugar Daddy",
       "img": "http://s30.postimg.org/i2lwa21ch/image.jpg",
-      "head": "",
-      "top": "",
-      "pants": "",
+      "purchase": true,
       "parts": [
         "http://i.imgur.com/GTpqRlg.png||-40",
         "http://i.imgur.com/qjZR4To.png",
@@ -580,11 +586,12 @@
       ]
     },
     "44": {
-      "name": "KTM outfit",
+      "name": "KTM Gear",
       "img": "http://i.imgur.com/ggnl0oh.png",
       "head": "",
       "top": "",
       "pants": "",
+      "purchase": true,
       "parts": [
         "http://i.imgur.com/6WAjJh0.png|88",
         "http://i.imgur.com/O485ppV.png",
@@ -611,6 +618,7 @@
       "head": "",
       "top": "",
       "pants": "",
+      "season": true,
       "parts": [
         "http://i.imgur.com/rs7sVhx.png|20|-35",
         "http://i.imgur.com/pUBjdBm.png|6",
@@ -624,6 +632,7 @@
       "head": "",
       "top": "",
       "pants": "",
+      "purchase": true,
       "parts": [
         "http://i.imgur.com/LUdVOFf.png|23|-50",
         "http://i.imgur.com/SZNU07C.png|6",
@@ -659,6 +668,7 @@
       "name": "Android Rider",
       "info": "",
       "img": "",
+      "unreleased": true,
       "parts": [
         "http://i.imgur.com/KQC4Bw8.png",
         "http://i.imgur.com/IauvxbF.png",
@@ -691,7 +701,7 @@
     "53": {
       "name": "KTM Rally Gear",
       "info": "",
-      "img": "",
+      "event": true,
       "parts": [
         "http://i.imgur.com/2ikV1j0.png|20|-60",
         "http://i.imgur.com/jtI3vfY.png|-3",
@@ -701,8 +711,7 @@
     },
     "54": {
       "name": "KTM Red Bull Gear",
-      "info": "",
-      "img": "",
+      "purchase": true,
       "parts": [
         "http://i.imgur.com/kkAslyL.png|20|-60",
         "http://i.imgur.com/5yVzACn.png|-3",
@@ -711,7 +720,8 @@
       ]
     },
     "55": {
-      "name": "Heartbraker",
+      "name": "The Heartbrake Kit",
+      "season": true,
       "parts": [
         "http://i.imgur.com/ebmvMUE.png||-60",
         "http://i.imgur.com/wTw1weu.png",
@@ -721,12 +731,22 @@
     },
     "56": {
       "name": "Vengeful Knight",
+      "purchase": true,
       "parts": [
         "http://i.imgur.com/UJHu7ag.png||-60",
         "http://i.imgur.com/foijWqg.png",
         "http://i.imgur.com/LavCxid.png",
         "http://i.imgur.com/YDzsmHL.png"
       ]
+    }
+  },
+  "costums": {
+    "dutscher": {
+      "head": 14,
+      "body": 16,
+      "pant": 11,
+      "name": "dutscher-DE",
+      "id": "dutscher-DE"
     }
   }
 }
