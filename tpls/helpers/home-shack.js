@@ -1,69 +1,77 @@
 (function () {
     module.exports.register = function (Handlebars) {
         Handlebars.registerHelper("homeShack", function (params) {
-            var customs = params.hash.customs.split(","),
-                customData = params.hash.data.all,
+            var costums = params.hash.data.homeshack,
+                costumData = params.hash.data.all,
                 content = "",
                 style = "";
-
-            for (var i = 0; i < customs.length; i++) {
-                var customId = customs[i],
-                    customName = customData[customId].name.toLowerCase().replace(/ /g, "-"),
-                    customSelector = 'custom--' + customId,
-                    customParts = customData[customId].parts,
-                    customHead = customParts[0].split("|"),
-                    customBody = customParts[1].split("|"),
-                    customArm = customParts[2].split("|");
-
+            
+            for (var i = 0; i < costums.length; i++) {
+                var costumId = costums[i],
+                    costumName = costumData[costumId].name.toLowerCase().replace(/ /g, "-"),
+                    costumNameHR = costumData[costumId].name,
+                    costumSelector = 'costum--' + costumId,
+                    costumParts = costumData[costumId].parts,
+                    costumHead = costumParts[0].split("|"),
+                    costumBody = costumParts[1].split("|"),
+                    costumArm = costumParts[2].split("|");
+    
                 content += '\n' +
-                    '<div class="custom ' + customName + ' ' + customSelector + '">\n' +
-                    '   <div class="custom__part custom--head"></div>\n' +
-                    '   <div class="custom__part custom--body"></div>\n' +
-                    '   <div class="custom__part custom--arm"></div>\n' +
-                    '   <div class="custom__part custom--pant"></div>\n' +
+                    '<div class="costum ' + costumName + ' ' + costumSelector + '">\n' +
+                    '   <div class="costum__part costum--head"></div>\n' +
+                    '   <div class="costum__part costum--body"></div>\n' +
+                    '   <div class="costum__part costum--arm"></div>\n' +
+                    '   <div class="costum__part costum--pant"></div>\n' +
+                    '   <div class="costum__name"><div class="costum__name__inner">' + costumId + '. ' + costumNameHR + '</div></div>\n' +
                     '</div>\n';
-
-                style += (customParts ? (
-                '.' + customName + ' .custom--head,\n' +
-                '.' + customSelector + ' .custom--head {\n' +
-                '   background-image: url("' + customHead[0] + '");\n' +
-                (
-                    customHead.length > 1
-                        ? (
-                        (customHead[1] ? '   top: ' + customHead[1] + 'px;\n' : '') +
-                        (customHead[2] ? '   left: ' + customHead[2] + 'px;\n' : '')
-                    )
-                        : ''
-                ) +
-                '}\n' +
-                '.' + customName + ' .custom--body,\n' +
-                '.' + customSelector + ' .custom--body {\n' +
-                '   background-image: url("' + customBody[0] + '");\n' +
-                (
-                    customBody.length > 1
-                        ? (
-                        (customBody[1] ? '   left: ' + customBody[1] + 'px;\n' : '')
-                    )
-                        : ''
-                ) +
-                '}\n' +
-                '.' + customName + ' .custom--arm,\n' +
-                '.' + customSelector + ' .custom--arm {\n' +
-                '   background-image: url("' + customArm[0] + '");\n' +
-                (
-                    customArm.length > 1
-                        ? (
-                        (customArm[1] ? '   width: ' + customArm[1] + 'px;\n' : '') +
-                        (customArm[2] ? '   left: ' + customArm[2] + 'px;\n' : '') +
-                        (customArm[3] ? '   top: ' + customArm[3] + 'px;\n' : '')
-                    )
-                        : ''
-                ) +
-                '}\n' +
-                '.' + customName + ' .custom--pant,\n' +
-                '.' + customSelector + ' .custom--pant {\n' +
-                '   background-image: url("' + customParts[3] + '");\n' +
-                '}\n' ) : '' );
+                
+                // src|left|top|width
+                style += (costumParts ? (
+                    '.' + costumName + ' .costum--head,\n' +
+                    '.' + costumSelector + ' .costum--head,\n' +
+                    '.' + costumSelector + '.costum--head {\n' +
+                    '   background-image: url("' + costumHead[0] + '");\n' +
+                    (
+                        costumHead.length > 1
+                            ? (
+                                (costumHead[1] ? '   left: ' + costumHead[1] + 'px;\n' : '') +
+                                (costumHead[2] ? '   top: ' + costumHead[2] + 'px;\n' : '')
+                            )
+                            : ''
+                    ) +
+                    '}\n' +
+                    '.' + costumName + ' .costum--body,\n' +
+                    '.' + costumSelector + ' .costum--body,\n' +
+                    '.' + costumSelector + '.costum--body {\n' +
+                    '   background-image: url("' + costumBody[0] + '");\n' +
+                    (
+                        costumBody.length > 1
+                            ? (
+                                (costumBody[1] ? '   left: ' + costumBody[1] + 'px;\n' : '') +
+                                (costumBody[2] ? '   top: ' + costumBody[2] + 'px;\n' : '')
+                            )
+                            : ''
+                    ) +
+                    '}\n' +
+                    '.' + costumName + ' .costum--arm,\n' +
+                    '.' + costumSelector + ' .costum--arm,\n' +
+                    '.' + costumSelector + '.costum--arm {\n' +
+                    '   background-image: url("' + costumArm[0] + '");\n' +
+                    (
+                        costumArm.length > 1
+                            ? (
+                                (costumArm[1] ? '   left: ' + costumArm[1] + 'px;\n' : '') +
+                                (costumArm[2] ? '   top: ' + costumArm[2] + 'px;\n' : '') +
+                                (costumArm[3] ? '   width: ' + costumArm[3] + 'px;\n' : '')
+                            )
+                            : ''
+                    ) +
+                    '}\n' +
+                    '.' + costumName + ' .costum--pant,\n' +
+                    '.' + costumSelector + ' .costum--pant,\n' +
+                    '.' + costumSelector + '.costum--pant {\n' +
+                    '   background-image: url("' + costumParts[3] + '");\n' +
+                    '}\n' ) : '' );
             }
             return content + (style != "" ? '<style>' + style + '</style>\n' : '');
         });

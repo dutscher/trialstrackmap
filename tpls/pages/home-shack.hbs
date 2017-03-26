@@ -10,43 +10,93 @@
             h2 {
                 color: #fff
             }
-            .custom {
-                width: 256px;
-                height: 530px;
+            .costum__area {
+                padding-right: 100px;
+                padding-bottom: 150px;
+            }
+            .costum {
                 position: relative;
                 display: inline-block;
+                transform: scale(0.5) translate(25%, 25%);
+                /*transition: transform 250ms ease;*/
+                width: 128px;
+
+                height: 265px;
+                z-index: 1;
+                /*
+                 transform: scale(1);
+                 width: 256px;
+                 height: 530px;
+                */
             }
-            .custom__part {
+            .costum:hover {
+                transform: scale(0.7);
+                z-index: 2;
+            }
+            .costum__part {
                 width: 256px;
                 height: 256px;
                 position: absolute;
                 background-repeat: no-repeat;
             }
-            .custom--head {
+            .costum--head {
                 z-index: 4;
                 left: 10px;
             }
-            .custom--body {
+            .costum--body {
                 z-index: 3;
                 top: 95px;
             }
-            .custom--arm {
+            .costum--arm {
                 width: 64px;
                 z-index: 1;
                 left: 190px;
                 top: 120px;
             }
-            .custom--pant {
+            .costum--pant {
                 z-index: 2;
                 left: 20px;
                 top: 260px;
             }
+            .costum__name {
+                width: 170px;
+                color: #fff;
+                position: absolute;
+                z-index: 4;
+                text-align: center;
+                transform: scale(1.5);
+                left: 65px;
+                bottom: -230px;
+            }
+            .costum__name__inner {
+                display: block;
+                background: rgba(57, 28, 20, 0.75);
+                border: solid 2px #f4d992;
+                border-radius: 10px;
+                -webkit-box-shadow: 0 0 15px 0 rgba(0,0,0,0.75);
+                -moz-box-shadow: 0 0 15px 0 rgba(0,0,0,0.75);
+                box-shadow: 0 0 15px 0 rgba(0,0,0,0.75);
+                position: absolute;
+                bottom: 20px;
+                left: 5px;
+                right: 5px;
+                padding: 0 5px;
+            }
         </style>
         <div class="page-body">
-            {{> navigation title="Home Shack" badge=wardrobe.order.length}}
+            {{> navigation title="Home Shack" badge=wardrobe.homeshack.length}}
 
-            <div style="margin-top: 40px;">
-                {{{homeShack customs="54,53,1,2,3,4,5,6,7,8,9,10,11,21,23,50" data=wardrobe}}}
+            <div class="costum__area">
+                {{{homeShack data=wardrobe}}}
+
+                <div class="costum">
+                    <div class="costum__part costum--head costum--14"></div>
+                    <div class="costum__part costum--body costum--16"></div>
+                    <div class="costum__part costum--arm costum--16"></div>
+                    <div class="costum__part costum--pant costum--11"></div>
+                    <div class="costum__name"><div class="costum__name__inner">dutscher-DE</div></div>
+                </div>
+
             </div>
         </div>
     {{/content}}

@@ -1,98 +1,17 @@
 {
-  "fb_order": [
-    6,
-    35,
-    46,
-    8,
-    20,
-    15,
-    10,
-    11,
-    14,
-    12,
-    13,
-    16,
-    1,
-    3,
-    21,
-    39,
-    19,
-    43,
-    22,
-    7,
-    5,
-    9,
-    18,
-    4,
-    28,
-    44,
-    34,
-    2,
-    23,
-    38,
-    29,
-    17,
-    45,
-    33,
-    32,
-    41
-  ],
   "order": [
-    1,
-    2,
-    3,
-    4,
-    5,
-    6,
-    7,
-    8,
-    21,
-    9,
-    10,
-    11,
-    12,
-    13,
-    14,
-    15,
-    18,
-    17,
-    16,
-    19,
-    20,
-    22,
-    23,
-    24,
-    25,
-    26,
-    27,
-    28,
-    29,
-    34,
-    35,
-    36,
-    37,
-    49,
-    32,
-    30,
-    31,
-    32,
-    38,
-    33,
-    45,
-    39,
-    40,
-    41,
-    43,
-    42,
-    50,
-    44,
-    47,
-    48,
-    46,
-    51,
-    52,
-    53,
-    54
+    1,2,3,4,5,6,7,8,21,9,10,11,12,13,
+    14,15,18,17,16,19,20,22,23,24,25,26,27,28,
+    29,34,35,36,37,49,32,30,31,32,38,33,45,39,
+    40,41,43,42,50,44,47,48,46,51,52,53,54
+  ],
+  "homeshack": [
+    56,55,54,53,52,51,
+    50,49,48,47,46,45,44,43,42,41,
+    40,39,38,37,36,35,34,33,32,31,
+    30,29,28,27,26,25,24,23,22,21,
+    20,19,18,17,16,15,14,13,12,11,
+    10,9,8,7,6,5,4,3,2,1
   ],
   "all": {
     "1": {
@@ -100,7 +19,7 @@
       "info": "(Basic)",
       "img": "http://www.mediafire.com/convkey/5bbf/mfj6b6f2n1b492izg.jpg?size_id=a",
       "parts": [
-        "http://i.imgur.com/U8kY2jb.png||90",
+        "http://i.imgur.com/U8kY2jb.png|90",
         "http://i.imgur.com/ENOKDW1.png|15",
         "http://i.imgur.com/Uh2hyaK.png",
         "http://i.imgur.com/1v2XQx8.png"
@@ -113,9 +32,9 @@
       "top": "Lootwheel or 15 Gems",
       "pants": "Lootwheel or 15 Gems",
       "parts": [
-        "http://i.imgur.com/lKNrluV.png||75",
+        "http://i.imgur.com/lKNrluV.png|75",
         "http://i.imgur.com/abMx2Bb.png",
-        "http://i.imgur.com/7C96NIT.png||175",
+        "http://i.imgur.com/7C96NIT.png|175",
         "http://i.imgur.com/2dHp19H.png"
       ]
     },
@@ -126,7 +45,7 @@
       "top": "Lootwheel or 15 Gems",
       "pants": "Lootwheel or 15 Gems",
       "parts": [
-        "http://i.imgur.com/9RurBPf.png||85",
+        "http://i.imgur.com/9RurBPf.png|85",
         "http://i.imgur.com/6jq8zV9.png",
         "http://i.imgur.com/1CfQkHQ.png",
         "http://i.imgur.com/CSXhnok.png"
@@ -139,9 +58,9 @@
       "top": "25 Gems",
       "pants": "25 Gems",
       "parts": [
-        "http://i.imgur.com/ZpVBudz.png||85",
+        "http://i.imgur.com/ZpVBudz.png|85",
         "http://i.imgur.com/CtHTMqN.png|-5",
-        "http://i.imgur.com/aFOjVH6.png||180",
+        "http://i.imgur.com/aFOjVH6.png|180",
         "http://i.imgur.com/BD6TdE2.png"
       ]
     },
@@ -154,7 +73,7 @@
       "top": "Earn in Time Capsule",
       "pants": "Earn in Time Capsule",
       "parts": [
-        "http://i.imgur.com/7ubVVwC.png||90",
+        "http://i.imgur.com/7ubVVwC.png|90",
         "http://i.imgur.com/72W2KEw.png|5",
         "http://i.imgur.com/KNKdcbw.png",
         "http://i.imgur.com/sY5XShv.png"
@@ -167,9 +86,9 @@
       "top": "25 Gems",
       "pants": "Slot Machine",
       "parts": [
-        "http://i.imgur.com/qLwVwQG.png||95",
+        "http://i.imgur.com/qLwVwQG.png|95",
         "http://i.imgur.com/tzqe0VA.png|10",
-        "http://i.imgur.com/Bsa6G46.png|||100",
+        "http://i.imgur.com/Bsa6G46.png||100",
         "http://i.imgur.com/hpLUfwi.png"
       ]
     },
@@ -180,9 +99,9 @@
       "top": "",
       "pants": "",
       "parts": [
-        "http://i.imgur.com/OD9CI7Q.png||85",
+        "http://i.imgur.com/OD9CI7Q.png|85",
         "http://i.imgur.com/F8q9hpg.png",
-        "http://i.imgur.com/A3uiTZN.png|||100",
+        "http://i.imgur.com/A3uiTZN.png||100",
         "http://i.imgur.com/aGdmRet.png"
       ]
     },
@@ -193,9 +112,9 @@
       "top": "",
       "pants": "",
       "parts": [
-        "http://i.imgur.com/zeXy5S2.png||85",
+        "http://i.imgur.com/zeXy5S2.png|85",
         "http://i.imgur.com/Wtlbm5R.png",
-        "http://i.imgur.com/ZiOJwyv.png||185",
+        "http://i.imgur.com/ZiOJwyv.png|185",
         "http://i.imgur.com/vla4YjR.png"
       ]
     },
@@ -206,9 +125,9 @@
       "top": "",
       "pants": "",
       "parts": [
-        "http://i.imgur.com/yGEpzBo.png||85",
+        "http://i.imgur.com/yGEpzBo.png|85",
         "http://i.imgur.com/tKrqssn.png",
-        "http://i.imgur.com/qFSv0eM.png||190|100",
+        "http://i.imgur.com/qFSv0eM.png|190|100",
         "http://i.imgur.com/9YIXYiW.png"
       ]
     },
@@ -219,9 +138,9 @@
       "top": "",
       "pants": "",
       "parts": [
-        "http://i.imgur.com/V42Jml2.png|20|85",
+        "http://i.imgur.com/V42Jml2.png|85|20",
         "http://i.imgur.com/pEatUbq.png",
-        "http://i.imgur.com/MvmvuEG.png||170|90",
+        "http://i.imgur.com/MvmvuEG.png|170|90",
         "http://i.imgur.com/8LXbiuO.png"
       ]
     },
@@ -232,9 +151,9 @@
       "top": "",
       "pants": "",
       "parts": [
-        "http://i.imgur.com/yfT9S0p.png||75",
+        "http://i.imgur.com/yfT9S0p.png|75",
         "http://i.imgur.com/SMsIdFY.png|-10",
-        "http://i.imgur.com/x35Q5Xh.png||160|100",
+        "http://i.imgur.com/x35Q5Xh.png|160|100",
         "http://i.imgur.com/H7kB9Hq.png"
       ]
     },
@@ -245,10 +164,10 @@
       "top": "",
       "pants": "",
       "parts": [
-        "",
-        "",
-        "",
-        ""
+        "http://i.imgur.com/cnvYWRA.png|88",
+        "http://i.imgur.com/scPZPfk.png",
+        "http://i.imgur.com/eLTxh5Y.png|178",
+        "http://i.imgur.com/rpEyjLF.png"
       ]
     },
     "13": {
@@ -258,10 +177,10 @@
       "top": "",
       "pants": "",
       "parts": [
-        "",
-        "",
-        "",
-        ""
+        "http://i.imgur.com/YV646Bb.png|90|10",
+        "http://i.imgur.com/ZTpUeMo.png|-6",
+        "http://i.imgur.com/hRg5UMJ.png|180|110",
+        "http://i.imgur.com/nak0OwU.png"
       ]
     },
     "14": {
@@ -271,10 +190,10 @@
       "top": "",
       "pants": "",
       "parts": [
-        "",
-        "",
-        "",
-        ""
+        "http://i.imgur.com/dUMj37F.png|83|8",
+        "http://i.imgur.com/kJGWXtL.png",
+        "http://i.imgur.com/uwRjufz.png|175|105",
+        "http://i.imgur.com/f8AbJAX.png"
       ]
     },
     "15": {
@@ -284,10 +203,10 @@
       "top": "",
       "pants": "",
       "parts": [
-        "",
-        "",
-        "",
-        ""
+        "http://i.imgur.com/FlF9teZ.png|80|10",
+        "http://i.imgur.com/HBhCCmO.png|-4|83",
+        "http://i.imgur.com/9XJobiO.png|175|100",
+        "http://i.imgur.com/2k5eVir.png"
       ]
     },
     "16": {
@@ -297,10 +216,10 @@
       "top": "",
       "pants": "",
       "parts": [
-        "",
-        "",
-        "",
-        ""
+        "http://i.imgur.com/UqDRHNW.png|75",
+        "http://i.imgur.com/2VWYZLF.png",
+        "http://i.imgur.com/W0dmmNL.png|175|100",
+        "http://i.imgur.com/4Owqmaj.png"
       ]
     },
     "17": {
@@ -310,10 +229,10 @@
       "top": "",
       "pants": "",
       "parts": [
-        "",
-        "",
-        "",
-        ""
+        "http://i.imgur.com/LKc3Lrj.png|88",
+        "http://i.imgur.com/U2cjluU.png|-7",
+        "http://i.imgur.com/Xdw688I.png|172|117",
+        "http://i.imgur.com/BaS1gz2.png"
       ]
     },
     "18": {
@@ -323,10 +242,10 @@
       "top": "",
       "pants": "",
       "parts": [
-        "",
-        "",
-        "",
-        ""
+        "http://i.imgur.com/DhbSBwV.png",
+        "http://i.imgur.com/u2bqHLq.png",
+        "http://i.imgur.com/UfINMcF.png|183|90",
+        "http://i.imgur.com/5JEGHAM.png"
       ]
     },
     "19": {
@@ -336,10 +255,10 @@
       "top": "",
       "pants": "",
       "parts": [
-        "",
-        "",
-        "",
-        ""
+        "http://i.imgur.com/Fpiv2UH.png|30",
+        "http://i.imgur.com/QUHBi1v.png|10|103",
+        "http://i.imgur.com/7fWkQRR.png",
+        "http://i.imgur.com/cp6vmll.png"
       ]
     },
     "20": {
@@ -349,10 +268,10 @@
       "top": "",
       "pants": "",
       "parts": [
-        "",
-        "",
-        "",
-        ""
+        "http://i.imgur.com/ewAcimA.png",
+        "http://i.imgur.com/JSPr7Sb.png",
+        "http://i.imgur.com/emhp1bE.png|180|100",
+        "http://i.imgur.com/fMPQ7Zf.png"
       ]
     },
     "21": {
@@ -362,9 +281,9 @@
       "top": "",
       "pants": "",
       "parts": [
-        "http://i.imgur.com/bpleS92.png||95",
+        "http://i.imgur.com/bpleS92.png|95",
         "http://i.imgur.com/oiNzBop.png|5",
-        "http://i.imgur.com/WEEjIAZ.png",
+        "http://i.imgur.com/WEEjIAZ.png||115",
         "http://i.imgur.com/jWLmijK.png"
       ]
     },
@@ -375,10 +294,10 @@
       "top": "",
       "pants": "",
       "parts": [
-        "",
-        "",
-        "",
-        ""
+        "http://i.imgur.com/E2G6709.png",
+        "http://i.imgur.com/eIljsJI.png|-9",
+        "http://i.imgur.com/Hj60g4B.png|135||102",
+        "http://i.imgur.com/9vh068h.png"
       ]
     },
     "23": {
@@ -390,7 +309,7 @@
       "parts": [
         "http://i.imgur.com/iXLK2PC.png",
         "http://i.imgur.com/XEwJsv2.png",
-        "http://i.imgur.com/dzuxpz4.png|128|155|100",
+        "http://i.imgur.com/dzuxpz4.png|155|100|128",
         "http://i.imgur.com/1DA3B7J.png"
       ]
     },
@@ -401,10 +320,10 @@
       "top": "",
       "pants": "",
       "parts": [
-        "",
-        "",
-        "",
-        ""
+        "http://i.imgur.com/Rm4mXic.png|75",
+        "http://i.imgur.com/eX4jTzv.png",
+        "http://i.imgur.com/MF21XgV.png|175|100",
+        "http://i.imgur.com/FMVWkmT.png"
       ]
     },
     "25": {
@@ -414,10 +333,10 @@
       "top": "",
       "pants": "",
       "parts": [
-        "",
-        "",
-        "",
-        ""
+        "http://i.imgur.com/vL6xUPS.png|82|-8",
+        "http://i.imgur.com/uuVBgXb.png|-5|100",
+        "http://i.imgur.com/dIvlsXY.png|180|110",
+        "http://i.imgur.com/nWR0Gy5.png"
       ]
     },
     "26": {
@@ -427,10 +346,10 @@
       "top": "",
       "pants": "",
       "parts": [
-        "",
-        "",
-        "",
-        ""
+        "http://i.imgur.com/kr1G96Q.png|85|10",
+        "http://i.imgur.com/4Qig4iL.png|-5",
+        "http://i.imgur.com/lWqVLIk.png|180|107",
+        "http://i.imgur.com/pOZ2I4r.png"
       ]
     },
     "27": {
@@ -440,10 +359,10 @@
       "top": "",
       "pants": "",
       "parts": [
-        "",
-        "",
-        "",
-        ""
+        "http://i.imgur.com/dRBlZy5.png|90",
+        "http://i.imgur.com/O7jLHQc.png|4|73",
+        "http://i.imgur.com/Ncytfyd.png|180|90",
+        "http://i.imgur.com/40iHTjK.png"
       ]
     },
     "28": {
@@ -453,10 +372,10 @@
       "top": "",
       "pants": "",
       "parts": [
-        "",
-        "",
-        "",
-        ""
+        "http://i.imgur.com/yYG2pMh.png",
+        "http://i.imgur.com/YWZWNvm.png||120",
+        "http://i.imgur.com/vwgRTiF.png|160||110",
+        "http://i.imgur.com/nBvEZ5Y.png"
       ]
     },
     "29": {
@@ -466,10 +385,10 @@
       "top": "",
       "pants": "",
       "parts": [
-        "",
-        "",
-        "",
-        ""
+        "http://i.imgur.com/dMj444L.png|15|30",
+        "http://i.imgur.com/GzXkZcB.png",
+        "http://i.imgur.com/PvVDI0Z.png|185|115",
+        "http://i.imgur.com/Zo0c7GB.png"
       ]
     },
     "30": {
@@ -479,10 +398,10 @@
       "top": "",
       "pants": "",
       "parts": [
-        "",
-        "",
-        "",
-        ""
+        "http://i.imgur.com/gBGpKPv.png|86|13",
+        "http://i.imgur.com/8ZPmqXy.png",
+        "http://i.imgur.com/BtX1YXn.png|175|110",
+        "http://i.imgur.com/DQD3tIb.png"
       ]
     },
     "31": {
@@ -492,23 +411,29 @@
       "top": "",
       "pants": "",
       "parts": [
-        "",
-        "",
-        "",
-        ""
+        "http://i.imgur.com/moHYJZD.png|85",
+        "http://i.imgur.com/Wg5dVJ9.png|-10",
+        "http://i.imgur.com/H5KSmTR.png|184|105",
+        "http://i.imgur.com/tvlaCP1.png"
       ]
     },
     "32": {
-      "name": "Super Spy",
+      "name": "Super Spy White",
       "img": "http://www.mediafire.com/convkey/31b2/3i4sbkml4lb95n1zg.jpg?size_id=a",
       "head": "",
       "top": "",
       "pants": "",
       "parts": [
-        "",
-        "",
-        "",
-        ""
+        "http://i.imgur.com/V0pKovr.png",
+        "http://i.imgur.com/SbTRDbP.png|-11",
+        "http://i.imgur.com/pyXJS8W.png|185|97",
+        "http://i.imgur.com/qQxujSQ.png"
+      ],
+      "black": [
+        "http://i.imgur.com/L5P6uUY.png",
+        "http://i.imgur.com/4arluFH.png",
+        "http://i.imgur.com/2laSyu4.png",
+        "http://i.imgur.com/CdF6gWU.png"
       ]
     },
     "33": {
@@ -518,10 +443,10 @@
       "top": "",
       "pants": "",
       "parts": [
-        "",
-        "",
-        "",
-        ""
+        "http://i.imgur.com/WQXIJ3z.png|30",
+        "http://i.imgur.com/tF3ZcMB.png|10",
+        "http://i.imgur.com/yiLlFBn.png|183|115",
+        "http://i.imgur.com/JBM5NFZ.png"
       ]
     },
     "34": {
@@ -531,10 +456,10 @@
       "top": "",
       "pants": "",
       "parts": [
-        "",
-        "",
-        "",
-        ""
+        "http://i.imgur.com/uWnOtNa.png||20",
+        "http://i.imgur.com/8BSwDt5.png|8",
+        "http://i.imgur.com/mioyJRS.png|160|140",
+        "http://i.imgur.com/tibqEfE.png"
       ]
     },
     "35": {
@@ -544,10 +469,10 @@
       "top": "",
       "pants": "",
       "parts": [
-        "",
-        "",
-        "",
-        ""
+        "http://i.imgur.com/NtLAYaG.png|0|-20",
+        "http://i.imgur.com/nqcPSLC.png|-7",
+        "http://i.imgur.com/yyAbD3o.png|188|100",
+        "http://i.imgur.com/IrtDMoC.png"
       ]
     },
     "36": {
@@ -557,10 +482,10 @@
       "top": "",
       "pants": "",
       "parts": [
-        "",
-        "",
-        "",
-        ""
+        "http://i.imgur.com/nuLk5gT.png|80|12",
+        "http://i.imgur.com/CKgfjqR.png|-3",
+        "http://i.imgur.com/yuqsVoX.png|172|104",
+        "http://i.imgur.com/N0iQUdt.png"
       ]
     },
     "37": {
@@ -570,10 +495,10 @@
       "top": "",
       "pants": "",
       "parts": [
-        "",
-        "",
-        "",
-        ""
+        "http://i.imgur.com/gSJSTU5.png|22",
+        "http://i.imgur.com/aNZyWSC.png|-8",
+        "http://i.imgur.com/tZHxg1P.png|173|116",
+        "http://i.imgur.com/99TrSVe.png"
       ]
     },
     "38": {
@@ -583,10 +508,10 @@
       "top": "",
       "pants": "",
       "parts": [
-        "",
-        "",
-        "",
-        ""
+        "http://i.imgur.com/mhkdwoI.png||10",
+        "http://i.imgur.com/GkCBtyY.png",
+        "http://i.imgur.com/tFYtghr.png|185|105",
+        "http://i.imgur.com/F1l2D7Q.png"
       ]
     },
     "39": {
@@ -596,10 +521,10 @@
       "top": "",
       "pants": "",
       "parts": [
-        "",
-        "",
-        "",
-        ""
+        "http://i.imgur.com/qHaqmqN.png|95",
+        "http://i.imgur.com/AoO1mDV.png",
+        "http://i.imgur.com/0Pz8h90.png|183|100",
+        "http://i.imgur.com/yBoqcYt.png"
       ]
     },
     "40": {
@@ -609,10 +534,10 @@
       "top": "",
       "pants": "",
       "parts": [
-        "",
-        "",
-        "",
-        ""
+        "http://i.imgur.com/mu8ILFL.png|87",
+        "http://i.imgur.com/JD1NXkn.png",
+        "http://i.imgur.com/3XhuoN1.png||95",
+        "http://i.imgur.com/u6bnKdc.png"
       ]
     },
     "41": {
@@ -622,10 +547,10 @@
       "top": "",
       "pants": "",
       "parts": [
-        "",
-        "",
-        "",
-        ""
+        "http://i.imgur.com/2FqG3LB.png||20",
+        "http://i.imgur.com/JtVf3RP.png|6|105",
+        "http://i.imgur.com/9ji4ZSE.png|168|150",
+        "http://i.imgur.com/bidrb0Q.png"
       ]
     },
     "42": {
@@ -635,10 +560,10 @@
       "top": "",
       "pants": "",
       "parts": [
-        "",
-        "",
-        "",
-        ""
+        "http://i.imgur.com/Hf53brJ.png|80",
+        "http://i.imgur.com/pWPDBHO.png",
+        "http://i.imgur.com/9peXan7.png|180|110",
+        "http://i.imgur.com/8zaSCe1.png"
       ]
     },
     "43": {
@@ -648,10 +573,10 @@
       "top": "",
       "pants": "",
       "parts": [
-        "",
-        "",
-        "",
-        ""
+        "http://i.imgur.com/GTpqRlg.png||-40",
+        "http://i.imgur.com/qjZR4To.png",
+        "http://i.imgur.com/1gcu13P.png|165",
+        "http://i.imgur.com/9On9H5r.png"
       ]
     },
     "44": {
@@ -661,10 +586,10 @@
       "top": "",
       "pants": "",
       "parts": [
-        "",
-        "",
-        "",
-        ""
+        "http://i.imgur.com/6WAjJh0.png|88",
+        "http://i.imgur.com/O485ppV.png",
+        "http://i.imgur.com/EYWs9xt.png|180|100",
+        "http://i.imgur.com/nTaRN6D.png"
       ]
     },
     "45": {
@@ -674,10 +599,10 @@
       "top": "",
       "pants": "",
       "parts": [
-        "",
-        "",
-        "",
-        ""
+        "http://i.imgur.com/2fF8IwW.png|50|-10",
+        "http://i.imgur.com/cROkl5u.png|6|90",
+        "http://i.imgur.com/Mg6lCGS.png|175",
+        "http://i.imgur.com/xZqORea.png"
       ]
     },
     "46": {
@@ -687,10 +612,10 @@
       "top": "",
       "pants": "",
       "parts": [
-        "",
-        "",
-        "",
-        ""
+        "http://i.imgur.com/rs7sVhx.png|20|-35",
+        "http://i.imgur.com/pUBjdBm.png|6",
+        "http://i.imgur.com/k8oZqIf.png||110",
+        "http://i.imgur.com/0JapP4L.png"
       ]
     },
     "47": {
@@ -700,10 +625,10 @@
       "top": "",
       "pants": "",
       "parts": [
-        "",
-        "",
-        "",
-        ""
+        "http://i.imgur.com/LUdVOFf.png|23|-50",
+        "http://i.imgur.com/SZNU07C.png|6",
+        "http://i.imgur.com/GG900G7.png|180|115",
+        "http://i.imgur.com/BLyCMZo.png"
       ]
     },
     "48": {
@@ -713,10 +638,10 @@
       "top": "",
       "pants": "",
       "parts": [
-        "",
-        "",
-        "",
-        ""
+        "http://i.imgur.com/Azj4uEP.png||-55",
+        "http://i.imgur.com/s72g0W9.png",
+        "http://i.imgur.com/GKRs1vw.png|180|100",
+        "http://i.imgur.com/GdmbjgQ.png"
       ]
     },
     "49": {
@@ -724,10 +649,10 @@
       "info": "",
       "img": "",
       "parts": [
-        "",
-        "",
-        "",
-        ""
+        "http://i.imgur.com/gfeuXuR.png|82",
+        "http://i.imgur.com/EqShHrm.png|-7",
+        "http://i.imgur.com/kAP5xuP.png|180|105",
+        "http://i.imgur.com/BjyuyVF.png"
       ]
     },
     "50": {
@@ -746,10 +671,10 @@
       "info": "Double retries at the Midnight Circuit",
       "img": "",
       "parts": [
-        "",
-        "",
-        "",
-        ""
+        "http://i.imgur.com/9Q8Qnye.png|18|-45",
+        "http://i.imgur.com/zgHWskI.png|5",
+        "http://i.imgur.com/ehSowXD.png|175|77",
+        "http://i.imgur.com/7yPefnS.png"
       ]
     },
     "52": {
@@ -757,25 +682,47 @@
       "info": "",
       "img": "",
       "parts": [
-        "",
-        "",
-        "",
-        ""
+        "http://i.imgur.com/DpjR6NP.png|15|-35",
+        "http://i.imgur.com/LlvHIyU.png|6",
+        "http://i.imgur.com/PM20hzM.png|170|100",
+        "http://i.imgur.com/XfrDBUT.png"
       ]
     },
     "53": {
+      "name": "KTM Rally Gear",
+      "info": "",
+      "img": "",
+      "parts": [
+        "http://i.imgur.com/2ikV1j0.png|20|-60",
+        "http://i.imgur.com/jtI3vfY.png|-3",
+        "http://i.imgur.com/xkAo3tC.png|185|100",
+        "http://i.imgur.com/YeLrMtu.png"
+      ]
+    },
+    "54": {
+      "name": "KTM Red Bull Gear",
+      "info": "",
+      "img": "",
+      "parts": [
+        "http://i.imgur.com/kkAslyL.png|20|-60",
+        "http://i.imgur.com/5yVzACn.png|-3",
+        "http://i.imgur.com/R3dvzjL.png|185|100",
+        "http://i.imgur.com/ue5g5NM.png"
+      ]
+    },
+    "55": {
       "name": "Heartbraker",
       "parts": [
-        "http://i.imgur.com/ebmvMUE.png|-60",
+        "http://i.imgur.com/ebmvMUE.png||-60",
         "http://i.imgur.com/wTw1weu.png",
         "http://i.imgur.com/3KV8zM8.png",
         "http://i.imgur.com/MabvjqT.png"
       ]
     },
-    "54": {
+    "56": {
       "name": "Vengeful Knight",
       "parts": [
-        "http://i.imgur.com/UJHu7ag.png|-60",
+        "http://i.imgur.com/UJHu7ag.png||-60",
         "http://i.imgur.com/foijWqg.png",
         "http://i.imgur.com/LavCxid.png",
         "http://i.imgur.com/YDzsmHL.png"
