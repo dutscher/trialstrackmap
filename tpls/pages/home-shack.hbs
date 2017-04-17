@@ -15,13 +15,7 @@
                 <hr />
 
                 {{> costum wardrobe.costums.dutscher home-shack-editor-preview=true}}
-
-                <div class="costum__editor" home-shack-editor>
-                    <h2>Costum Editor</h2>
-                    {{> editor-select type="head" title="Head" costums=wardrobe.all selected=wardrobe.costums.dutscher.head}}
-                    {{> editor-select type="body" title="Body" costums=wardrobe.all selected=wardrobe.costums.dutscher.body}}
-                    {{> editor-select type="pant" title="Pant" costums=wardrobe.all selected=wardrobe.costums.dutscher.pant}}
-                </div>
+                {{> costum-editor wardrobe}}
             </div>
         </div>
     {{/content}}

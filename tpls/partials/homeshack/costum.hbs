@@ -1,10 +1,10 @@
-<div class="costum__mask costum--50percent" {{#if home-shack-editor-preview}}home-shack-editor-preview{{/if}}>
+<div class="costum__mask costum--{{#if scale}}{{scale}}{{else}}50percent{{/if}}" {{#if home-shack-editor-preview}}home-shack-editor-preview{{/if}}>
     <div class="costum {{selector}}" id="{{id}}">
         <div class="costum__part costum--head {{#if head}}costum--{{head}}{{/if}}" type="head"></div>
         <div class="costum__part costum--body {{#if body}}costum--{{body}}{{/if}}" type="body"></div>
         <div class="costum__part costum--arm {{#if body}}costum--{{body}}{{/if}}" type="body"></div>
         <div class="costum__part costum--pant {{#if pant}}costum--{{pant}}{{/if}}" type="pant"></div>
-        {{#if name}}
+        {{#xif "this.name && !this.without_name"}}
         <div class="costum__name">
             <div class="costum__name__inner">
                 {{name}}
@@ -14,6 +14,6 @@
                 {{#if unreleased}}<span class="costum__state" title="Unreleased">!</span>{{/if}}
             </div>
         </div>
-        {{/if}}
+        {{/xif}}
     </div>
 </div>

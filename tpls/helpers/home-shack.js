@@ -90,7 +90,7 @@
             }
             
             return new Handlebars.SafeString(
-                costumHtml +
+                (!params.hash.only_css ? costumHtml : "") +
                 (costumStyle != "" ? '<style>' + costumStyle + '</style>\n' : '')
             );
         });

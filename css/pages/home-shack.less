@@ -135,3 +135,56 @@
     background: #ff0000;
   }
 }
+
+.bonxy {
+  color: #fff;
+
+  &--box {
+    background: #fff;
+    border: #949494;
+  }
+
+  &--150x150 {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+
+    .costum__mask {
+      width: 80px;
+      .costum {
+        transform: scale(0.29);
+        transform-origin: left top;
+
+        &:hover {
+          transform: scale(0.50) translate(-25%, -25%);
+
+          .costum__name {
+            bottom: -80px;
+          }
+        }
+      }
+    }
+  }
+  &--bike-cell {
+    width: 150px;
+    height: 18px;
+    font-family: "Arial", Gadget, sans-serif;
+    color: #000;
+
+    .paintjob {
+
+      &__mask {
+        vertical-align: middle;
+        height: 18px;
+        display: inline-block;
+
+        .paintjob {
+          transform: scale(0.29);
+          transform-origin: top;
+        }
+      }
+      background-image: url(//i.imgur.com/uxtCMBT.png);
+    }
+  }
+}

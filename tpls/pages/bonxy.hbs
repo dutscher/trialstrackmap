@@ -1,0 +1,26 @@
+{{#extend "default"}}
+    {{#content "styles" mode="append"}}
+        <link rel="stylesheet" type="text/css" href="/dist/main.css{{cacheBuster}}"/>
+    {{/content}}
+
+    {{#content "body"}}
+        <div class="page-body" ng-controller="home-shack">
+            {{> navigation title="Bonxy Integration"}}
+
+            {{homeShack data=wardrobe only_css=true}}
+
+            <div class="costum__area bonxy">
+                <h2>Profile Costum</h2>
+                <div class="bonxy--box bonxy--150x150">
+                    {{> costum wardrobe.costums.dutscher home-shack-editor-preview=true without_name=true}}
+                </div>
+                <h2>Track Table Cell</h2>
+                <div class="bonxy--box bonxy--bike-cell">
+                    Berserker <span class="paintjob__mask"><i class="paintjob paintjob-4-3"></i></span>
+                </div>
+
+                {{> costum-editor wardrobe}}
+            </div>
+        </div>
+    {{/content}}
+{{/extend}}

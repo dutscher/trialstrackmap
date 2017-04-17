@@ -1734,5 +1734,13 @@
     "cats": "24",
     "prio": 8,
     "world": 2
+  },
+  {
+    "id": 243,
+    "tier": 2,
+    "cats": "23",
+    "prio": 1,
+    "world": 2,
+    "case": "3rd Anniversary"
   }
 ]

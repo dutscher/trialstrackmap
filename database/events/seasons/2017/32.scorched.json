@@ -5,11 +5,12 @@
   },
   "title": "Scorched",
   "date": "08.03.2017",
-  "date_end": "03.04.2017",
+  "date_end": "09.04.2017",
   "duration": "4h",
   "free_showdowns": "6",
   "ticket_regain": "30m",
   "stats": "http://trials.bonxy.net/the-bunker/Scorched+Season",
+  "total_legends": 1834,
   "prizes": [
     {
       "level": 1,
