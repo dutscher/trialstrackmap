@@ -1,6 +1,10 @@
 {{#extend "default"}}
     {{#content "styles" mode="append"}}
         <link rel="stylesheet" type="text/css" href="/dist/main.css{{cacheBuster}}"/>
+        <link rel="stylesheet" type="text/css" href="/dist/bonxy.css{{cacheBuster}}"/>
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/default.min.css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
+        <script>hljs.configure({useBR: true});hljs.initHighlightingOnLoad();</script>
     {{/content}}
 
     {{#content "body"}}
@@ -10,16 +14,73 @@
             {{homeShack data=wardrobe only_css=true}}
 
             <div class="costum__area bonxy">
-                <h2>Profile Costum</h2>
-                <div class="bonxy--box bonxy--150x150">
-                    {{> costum wardrobe.costums.dutscher home-shack-editor-preview=true without_name=true}}
+                <div class="bonxy__row">
+                    <div class="bonxy__cell" style="width:200px">
+                        <h2>Profile Costum</h2>
+                        <div class="bonxy--box bonxy--profile">
+                            {{> costum wardrobe.costums.dutscher home-shack-editor-preview=true without_name=true}}
+                        </div>
+                    </div>
+                    <div class="bonxy__cell">
+                        <h2>HTML Markup</h2>
+                        <div>
+                            <pre>
+                                <code class="html markupPreview">
+&lt;div class=&quot;bonxy--profile&quot;&gt;<br />
+    &lt;div class=&quot;costum__mask costum--50percent&quot;&gt;<br />
+        &lt;div class=&quot;costum&quot;&gt;<br />
+            &lt;div class=&quot;costum__part costum--head costum--14&quot; type=&quot;head&quot;&gt;&lt;/div&gt;<br />
+            &lt;div class=&quot;costum__part costum--body costum--16&quot; type=&quot;body&quot;&gt;&lt;/div&gt;<br />
+            &lt;div class=&quot;costum__part costum--arm costum--16&quot; type=&quot;body&quot;&gt;&lt;/div&gt;<br />
+            &lt;div class=&quot;costum__part costum--pant costum--11&quot; type=&quot;pant&quot;&gt;&lt;/div&gt;<br />
+        &lt;/div&gt;<br />
+    &lt;/div&gt;<br />
+&lt;/div&gt;
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                    <div class="bonxy__cell">
+                        {{> costum-editor wardrobe}}
+                    </div>
                 </div>
-                <h2>Track Table Cell</h2>
-                <div class="bonxy--box bonxy--bike-cell">
-                    Berserker <span class="paintjob__mask"><i class="paintjob paintjob-4-3"></i></span>
+                <div class="bonxy__row">
+                    <div class="bonxy__cell" style="width:200px">
+                        <h2>Bike Cell</h2>
+                        <div class="bonxy--box bonxy--bike-cell">
+                            Berserker
+                            <span class="paintjob__mask">
+                                <i class="paintjob paintjob-4-3"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="bonxy__cell">
+                        <h2>HTML Markup</h2>
+                        <div>
+                            <pre>
+                                <code class="html">
+&lt;div class=&quot;bonxy--bike-cell&quot;&gt;<br />
+    Berserker<br />
+    &lt;span class=&quot;paintjob__mask&quot;&gt;<br />
+        &lt;i class=&quot;paintjob paintjob-4-3&quot;&gt;&lt;/i&gt;<br />
+    &lt;/span&gt;<br />
+&lt;/div&gt;
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
                 </div>
 
-                {{> costum-editor wardrobe}}
+                <div class="bonxy__row">
+                    <div class="bonxy__cell">
+                        <h2>External Scripts</h2>
+                        <pre>
+                            <code class="html">
+&lt;link rel=&quot;stylesheet&quot; href=&quot;//trialstrackmap.sb-f.de/dist/bonxy.css&quot;&gt;
+                            </code>
+                        </pre>
+                    </div>
+                </div>
             </div>
         </div>
     {{/content}}

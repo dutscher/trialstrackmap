@@ -13,8 +13,8 @@ module.exports = function (grunt) {
             plugins: [
                 require("less-plugin-glob")
             ],
-            globalVars: globalVars,
-            //compress: true
+            globalVars: globalVars
+            //,compress: true
         },
         dist: {
             files: {
@@ -26,9 +26,9 @@ module.exports = function (grunt) {
                 "dist/map.css": "css/map/main.less"
             }
         },
-        share: {
+        bonxy: {
             files: {
-                "dist/share.css": "css/share/share.less"
+                "dist/bonxy.css": "css/bonxy.less"
             }
         }
     }

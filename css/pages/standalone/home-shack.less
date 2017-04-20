@@ -139,29 +139,56 @@
 .bonxy {
   color: #fff;
 
+  pre {
+    margin: 0;
+  }
+
+  code {
+    margin-top: -15px;
+  }
+
+  &__row {
+    display: flex;
+    flex-direction: row;
+    margin: -16px;
+  }
+
+  &__cell {
+    padding: 16px;
+  }
+  
   &--box {
     background: #fff;
     border: #949494;
   }
 
-  &--150x150 {
+  &--profile {
     width: 150px;
     height: 150px;
     display: flex;
     justify-content: center;
+    cursor: default;
+
+    * {
+      cursor: default;
+    }
 
     .costum__mask {
       width: 80px;
+      height: 150px;
+
       .costum {
         transform: scale(0.29);
         transform-origin: left top;
+      }
+    }
 
-        &:hover {
-          transform: scale(0.50) translate(-25%, -25%);
+    &:hover {
+      .costum {
+        transform: scale(0.50) translate(-25%, -25%);
 
-          .costum__name {
-            bottom: -80px;
-          }
+        .costum__name {
+          bottom: -80px;
         }
       }
     }
@@ -173,18 +200,23 @@
     color: #000;
 
     .paintjob {
-
       &__mask {
         vertical-align: middle;
         height: 18px;
+        width: 18px;
         display: inline-block;
 
         .paintjob {
-          transform: scale(0.29);
-          transform-origin: top;
+          transform: scale(0.36);
+          transform-origin: top left;
         }
       }
-      background-image: url(//i.imgur.com/uxtCMBT.png);
+    }
+
+    &:hover {
+      .paintjob {
+        transform: scale(1) translateY(-35%);
+      }
     }
   }
 }
