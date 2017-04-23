@@ -1,6 +1,6 @@
 {{#extend "default"}}
-    {{#content "styles" mode="append"}}
-        <link rel="stylesheet" type="text/css" href="/dist/main.css{{cacheBuster}}"/>
+    {{#content "styles"}}
+        {{!--<link rel="stylesheet" type="text/css" href="/dist/main.css{{cacheBuster}}"/> --}}
         <link rel="stylesheet" type="text/css" href="/dist/bonxy.css{{cacheBuster}}"/>
         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/default.min.css">
         <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
@@ -13,7 +13,8 @@
 
             {{homeShack data=wardrobe only_css=true}}
 
-            <div class="costum__area bonxy">
+
+            <div class="costum__area bonxy" style="background: #6a4229;">
                 <div class="bonxy__row">
                     <div class="bonxy__cell" style="width:200px">
                         <h2>Profile Costum</h2>

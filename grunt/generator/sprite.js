@@ -1,6 +1,13 @@
 module.exports = function () {
+    var _ = require("lodash");
+    
     return {
         generateSprites: function () {
+            return _.extend({},
+                this.generatePaintjobs(),
+                this.generateCostums());
+        },
+        generatePaintjobs: function () {
             var globalVars = {},
                 paintJobsJSON = require("../../database/media/paintjobs.json"),
                 gfxJSON = require("../../database/media/gfx.json"),
@@ -80,6 +87,84 @@ module.exports = function () {
                     globalVars._paintJobIconPositions.push((left > 0 ? "-" : "") + left + (left !== 0 ? "px" : "") + " " + (top > 0 ? "-" : "") + top + (top !== 0 ? "px" : ""));
                 }
             }
+            
+            return globalVars;
+        },
+        generateCostums: function () {
+            var globalVars = {},
+                wardrobeJSON = require("../../database/media/wardrobe.json"),
+                costumOrder = wardrobeJSON.homeshack,
+                costumsData = wardrobeJSON.all,
+                costumStyle = ".custom-sprites{};\n";
+            
+            for (var i = 0; i < costumOrder.length; i++) {
+                var costumId = costumOrder[i],
+                    costumData = costumsData[costumId],
+                    costumName = costumData.name.toLowerCase().replace(/ /g, "-"),
+                    costumSelector = 'costum--' + costumId,
+                    costumParts = costumData.parts,
+                    costumHead = costumParts[0].split("|"),
+                    costumBody = costumParts[1].split("|"),
+                    costumArm = costumParts[2].split("|"),
+                    costumPant = costumParts[3].split("|");
+                
+                // src|left|top|width
+                costumStyle += (costumParts ? (
+                    '.' + costumName + ' .costum--head,\n' +
+                    '.' + costumSelector + ' .costum--head,\n' +
+                    '.' + costumSelector + '.costum--head {\n' +
+                    '   background-image: url("' + costumHead[0] + '");\n' +
+                    (
+                        costumHead.length > 1
+                            ? (
+                                (costumHead[1] ? '   left: ' + costumHead[1] + 'px;\n' : '') +
+                                (costumHead[2] ? '   top: ' + costumHead[2] + 'px;\n' : '')
+                            )
+                            : ''
+                    ) +
+                    '}\n' +
+                    '.' + costumName + ' .costum--body,\n' +
+                    '.' + costumSelector + ' .costum--body,\n' +
+                    '.' + costumSelector + '.costum--body {\n' +
+                    '   background-image: url("' + costumBody[0] + '");\n' +
+                    (
+                        costumBody.length > 1
+                            ? (
+                                (costumBody[1] ? '   left: ' + costumBody[1] + 'px;\n' : '') +
+                                (costumBody[2] ? '   top: ' + costumBody[2] + 'px;\n' : '')
+                            )
+                            : ''
+                    ) +
+                    '}\n' +
+                    '.' + costumName + ' .costum--arm,\n' +
+                    '.' + costumSelector + ' .costum--arm,\n' +
+                    '.' + costumSelector + '.costum--arm {\n' +
+                    '   background-image: url("' + costumArm[0] + '");\n' +
+                    (
+                        costumArm.length > 1
+                            ? (
+                                (costumArm[1] ? '   left: ' + costumArm[1] + 'px;\n' : '') +
+                                (costumArm[2] ? '   top: ' + costumArm[2] + 'px;\n' : '') +
+                                (costumArm[3] ? '   width: ' + costumArm[3] + 'px;\n' : '')
+                            )
+                            : ''
+                    ) +
+                    '}\n' +
+                    '.' + costumName + ' .costum--pant,\n' +
+                    '.' + costumSelector + ' .costum--pant,\n' +
+                    '.' + costumSelector + '.costum--pant {\n' +
+                    '   background-image: url("' + costumParts[3] + '");\n' +
+                    (
+                        costumPant.length > 1
+                            ? (
+                                (costumPant[1] ? '   left: ' + costumPant[1] + 'px;\n' : '')
+                            )
+                            : ''
+                    ) +
+                    '}\n' ) : '' );
+            }
+    
+            globalVars.costumsCSS = costumStyle;
             
             return globalVars;
         }

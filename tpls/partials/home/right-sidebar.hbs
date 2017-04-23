@@ -1,0 +1,50 @@
+<nav class="new-sidebar right">
+    <div class="handler" ng-click="handleSidebars($event,'right')"></div>
+    <div class="content">
+        <ul>
+            <li>
+                <div class="wrap tierlegend">
+                    <h2 class="with-cursor" ng-click="visibility('statsVisible')">
+                        {%'page.rightSidebar.tracks'|translate%} ({%::data.tracks.length%} total)</h2>
+
+                    <div ng-show="statsVisible">
+                        <span track-stats></span>
+                    </div>
+                    <span class="with-cursor" ng-click="visibility('statsVisible')" ng-hide="statsVisible">{%'page.leftSidebar.toggleMe'|translate%}</span>
+                </div>
+            </li>
+            <li>
+                <div class="wrap tierlegend">
+                    <h2 class="with-cursor">
+                        {%'page.rightSidebar.legend'|translate%}</h2>
+                    <div class="legend-spectrum" data-cats="data.map.cats"></div>
+                </div>
+            </li>
+            <li class="tierlegend__wrap">
+                <h2 class="tierlegend__headline tierlegend__headline--other-world" ng-click="changeWorld(otherWorld);">< {%'page.ferryTo.' + otherWorld|translate%}  ({%tracksInOtherWorld%})</h2>
+                <h2 class="tierlegend__headline">{%'page.ferryTo.' + selectedWorld|translate%} ({%tracksInTiersNum%})</h2>
+                <div class="wrap tierlegend">
+                    <div class="mb10">
+                        <input type="text"
+                               class="search"
+                               ng-class="{'with-icon':searchTrack != ''}"
+                               placeholder="{%'page.rightSidebar.searchForTrack'|translate%}"
+                               select-on-click
+                               ng-model="searchTrack"
+                               ng-model-options="{debounce:150}"/>
+                        <i class="faults with-cursor" ng-if="searchTrack != ''" ng-click="clearSearch()"></i>
+                    </div>
+                    <div ng-repeat="tier in tracksInTiers" class="tierwrap">
+                        <hr>
+                        <h3>{%'page.rightSidebar.tier'|translate%} {%::tier.number%}</h3>
+                        <span ng-repeat="catClass in repeatObject(tier.cats)"
+                              class="{%::catClass%} trackwrap">
+                                         <span ng-repeat="track in tier.cats[catClass]"
+                                               track-in-sidebar="{track:track,catClass:catClass}"></span>
+                                    </span>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
