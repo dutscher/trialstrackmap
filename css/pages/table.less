@@ -1,0 +1,259 @@
+table {
+  border-spacing: 0;
+  background: #6a4229;
+  table-layout: fixed
+}
+
+th {
+  padding: 2px 5px;
+  vertical-align: bottom
+}
+
+th small,
+td small {
+  display: block;
+  font-size: 10px;
+  color: #8C7D48;
+  margin-top: -5px;
+}
+
+td {
+  padding: 5px
+}
+
+td.center {
+  text-align: center;
+}
+
+td.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+td .faults {
+  position: relative;
+  top: -2px;
+}
+
+.rider-name {
+  background: #3f2a1f;
+}
+
+.bronze, [edit-time="bronze"], [edit-faults="bronze"] {
+  background: #965A38
+}
+
+.silver, [edit-time="silver"], [edit-faults="silver"] {
+  background: #CCC2C2
+}
+
+.gold, [edit-time="gold"], [edit-faults="gold"] {
+  background: #C98910
+}
+
+.platinum, [edit-time="platinum"], [edit-faults="platinum"] {
+  background: #A8A8A8
+}
+
+tr:hover td:not(.not-hover) {
+  background: #7f5033;
+}
+
+.highlightTime {
+  text-decoration: underline;
+  font-weight: bold;
+  color: #fff
+}
+
+.difference-time {
+  display: block;
+  font-size: 10px;
+  color: #ff0000;
+}
+
+.difference-time.better-time {
+  color: #1cff00;
+}
+
+label {
+  display: inline-block;
+  border: solid 1px #8B8B8B;
+  padding: 0 2px;
+  cursor: pointer
+}
+
+button, .button {
+  font-family: Arial;
+  background: #ffee99;
+  color: #3f2a1f;
+  border: 0;
+  cursor: pointer;
+  font-size: 12px;
+  text-decoration: none;
+  padding: 2px 5px;
+}
+
+button:hover, .button:hover {
+  color: #ffee99;
+  background: #3f2a1f;
+}
+
+.public-change {
+  text-decoration: underline;
+  font-weight: bold
+}
+
+.public-change:after {
+  content: ' *'
+}
+
+span.part-level {
+  display: inline-block
+}
+
+table {
+  color: #ffee99;
+  background: rgba(0, 0, 0, 0.55)
+}
+
+th, td {
+  border: 1px #6a4229 solid
+}
+
+.make-sticky.is-sticky {
+  position: fixed;
+  top: 0;
+  left: 12px;
+  right: 12px;
+  background: #000;
+  border: 0;
+  z-index: 1;
+}
+
+.flying-header {
+  position: fixed;
+  top: 30px;
+  left: 12px;
+  right: 12px;
+  background: #000;
+  -webkit-box-shadow: 0 15px 25px 0 rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 15px 25px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 15px 25px 0 rgba(0, 0, 0, 0.5);
+}
+
+[table-sorter] {
+  background: #3f2a1f;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+[table-sorter]:hover {
+  background: #775746;
+}
+
+[improve-import] [improve-export] {
+  position: relative;
+}
+
+.invisible-input {
+  display: none;
+}
+
+.over-min {
+  background: #841C0B;
+}
+
+.input-s {
+  width: 60px;
+}
+
+.hide-zero span {
+  color: #8C7D48;
+  opacity: .25;
+}
+
+.time-display {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.flyout {
+  display: inline-block;
+  position: relative;
+}
+
+.flyout__prompt {
+  padding: 5px 10px;
+  cursor: pointer;
+  background: #3f2a1f;
+}
+
+.flyout:hover .flyout__prompt {
+  background: #775746;
+  -webkit-box-shadow: 0 15px 25px 0 rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 15px 25px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 15px 25px 0 rgba(0, 0, 0, 0.5);
+}
+
+.flyout__wrap {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 34px;
+  background: #3f2a1f;
+  white-space: nowrap;
+}
+
+.flyout:hover .flyout__wrap {
+  display: block;
+  -webkit-box-shadow: 0 15px 25px 0 rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 15px 25px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 15px 25px 0 rgba(0, 0, 0, 0.5);
+}
+
+.flyout__header {
+  padding: 5px;
+  background: #775746;
+}
+
+.flyout__item {
+  padding: 5px;
+  border-bottom: solid 1px #ffee99;
+}
+
+.flyout__item:last-child {
+  border-bottom: 0;
+}
+
+.flyout__item__label {
+  display: inline-block;
+  min-width: 120px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  vertical-align: middle;
+  text-align: right;
+}
+
+.tag {
+  display: inline-block;
+  margin: 2px;
+  margin-left: 4px;
+  border: @color-brown;
+  padding: 0 5px;
+  background: @color-tan;
+  color: @color-brown;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: normal;
+
+  &__color {
+    display: inline-block;
+    background: @color-white;
+    width: 10px;
+    height: 10px;
+    vertical-align: baseline;
+  }
+}

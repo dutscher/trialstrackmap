@@ -1,0 +1,116 @@
+{
+  "alias": {
+    "treasure-pieces": "treasure"
+  },
+  "all": {
+    "19": {
+      "class": "treasure",
+      "color": "AFDD23",
+      "noneGameCategory": true
+    },
+    "6": {
+      "class": "data-cube",
+      "color": "74C8EC",
+      "noneGameCategory": true
+    },
+    "1": {
+      "class": "hardcore",
+      "color": "FF00F0"
+    },
+    "2": {
+      "class": "swamp",
+      "color": "54B131"
+    },
+    "3": {
+      "class": "slot-machine",
+      "color": "CA4340"
+    },
+    "4": {
+      "class": "loot-wheel",
+      "color": "B06410"
+    },
+    "5": {
+      "class": "time-machine",
+      "color": "EDE010"
+    },
+    "7": {
+      "class": "story",
+      "color": "1891C4"
+    },
+    "8": {
+      "class": "halloween-2014",
+      "color": "EC7000"
+    },
+    "9": {
+      "class": "bunker",
+      "color": "797478"
+    },
+    "10": {
+      "class": "special",
+      "color": "BE0041"
+    },
+    "11": {
+      "class": "winter",
+      "color": "FFFFFF"
+    },
+    "12": {
+      "class": "secret",
+      "color": "AB9A48"
+    },
+    "13": {
+      "class": "agent",
+      "color": "F5970F"
+    },
+    "14": {
+      "class": "rodeo",
+      "color": "00FF00"
+    },
+    "15": {
+      "class": "halloween-2015",
+      "color": "EC7000"
+    },
+    "16": {
+      "class": "christmas",
+      "color": "FF0000"
+    },
+    "17": {
+      "class": "ktm-start-2016",
+      "color": "FF6600"
+    },
+    "18": {
+      "class": "petrol-falls",
+      "color": "3556B2"
+    },
+    "20": {
+      "class": "treasure-hunt",
+      "color": "935A05"
+    },
+    "21": {
+      "class": "youtube",
+      "color": "C30000",
+      "noneGameCategory": true
+    },
+    "22": {
+      "class": "midnight-circuit",
+      "color": "93194c"
+    },
+    "23": {
+      "class": "anniversary",
+      "color": "FEAAFF"
+    },
+    "24": {
+      "class": "ktm-rally-2017",
+      "color": "FF6600"
+    },
+    "25": {
+      "class": "season-reward",
+      "color": "026803",
+      "noneGameCategory": true
+    },
+    "26": {
+      "class": "daily-deals",
+      "color": "61d4d7",
+      "noneGameCategory": true
+    }
+  }
+}

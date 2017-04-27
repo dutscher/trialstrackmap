@@ -7,12 +7,13 @@
 
     {{#content "body"}}
         <div class="page-body" ng-controller="home-shack">
-            {{> navigation title="Home Shack" badge=wardrobe.homeshack.length "Math.pow(56,3)"}}
+            {{setVariable "combinations" (mathPow wardrobe.homeshack.length 3)}}
+            {{> navigation title="Home Shack" badge=(combine wardrobe.homeshack.length " costums and " combinations " combinations")}}
 
             <div class="costum__area">
                 {{homeShack data=wardrobe}}
 
-                <hr />
+                <hr/>
 
                 {{> costum wardrobe.costums.dutscher home-shack-editor-preview=true}}
                 {{> costum-editor wardrobe}}

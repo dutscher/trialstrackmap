@@ -10,6 +10,7 @@
   ,"^/bonxy.html$ /dist/bonxy.html"
   ,"^/dist/sprites.html$ /garage.html"
   ,"^/table-medals.html$ /dist/table-medals.html"
+  ,"^/table-tags.html$ /dist/table-tags.html"
   ,"^/seasons.html$ /dist/seasons.html"
   ,"^/anniversary.html$ /dist/anniversary.html"
   ,"^/locations.html$ /dist/locations.html"

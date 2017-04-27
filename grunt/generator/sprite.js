@@ -15,7 +15,7 @@ module.exports = function () {
                 paintJobsRAW = paintJobsJSON.bikes,
                 //gfx dimensions
                 spritePaintJobIconDimensions = "1100x1400".split("x"),
-                spritePaintJobDimensions = "980x550".split("x"),
+                spritePaintJobDimensions = "1050x550".split("x"),
                 //sprite dimensions
                 paintJobDimensions = "70x50".split("x"),
                 paintJobIconDimensons = "100x100".split("x"),

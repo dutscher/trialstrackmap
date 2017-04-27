@@ -54,5 +54,9 @@
   "14": {
     "name": "KTM 450 Rally",
     "tier": 2
+  },
+  "20": {
+    "name": "Bandito",
+    "tier": 1
   }
 }
