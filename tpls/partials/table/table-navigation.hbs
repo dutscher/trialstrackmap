@@ -26,6 +26,19 @@
                ng-change="saveSearch()"/>
         <i class="faults with-cursor" ng-if="search != ''" ng-click="clearSearch()"></i>
 
+        <span class="flyout__item__label">
+            {%'page.timesTable.categories'|translate%}:
+        </span>
+        <select ng-model="selectedCat" ng-change="setCat()">
+            <option value="" selected>{%'page.timesTable.parts.all'|translate%}</option>
+            <option ng-repeat="cat in categories" class="{%::cat.class%}-bg"
+                    ng-selected="selectedCat == cat.index"
+                    value="{%::cat.index%}">
+                {%'cats.'+cat.index|translate%}
+                ({%trackSum = (data.tracks|catAndTierTracks:cat.index:selectedTier).length%})
+            </option>
+        </select>
+
         <div class="flyout">
             <div class="flyout__prompt"><i class="filter"></i></div>
             <div class="flyout__wrap">
@@ -76,20 +89,6 @@
                         </select>
                     </div>
                 {{/xif}}
-                <div class="flyout__item">
-                    <span class="flyout__item__label">
-                        {%'page.timesTable.categories'|translate%}:
-                    </span>
-                    <select ng-model="selectedCat" ng-change="setCat()">
-                        <option value="" selected>{%'page.timesTable.parts.all'|translate%}</option>
-                        <option ng-repeat="cat in data.map.cats" class="{%::cat.class%}-bg"
-                                ng-selected="selectedCat == cat.index"
-                                value="{%::cat.index%}">
-                            {%'cats.'+cat.index|translate%}
-                            ({%trackSum = (data.tracks|catAndTierTracks:cat.index:selectedTier).length%})
-                        </option>
-                    </select>
-                </div>
                 <div class="flyout__item">
                     <span class="flyout__item__label">
                         {%'page.timesTable.tier'|translate%}:
@@ -158,33 +157,33 @@
             </div>
         </div>
         {{#xif "this.withImproveImportExport"}}
-        {%'page.timesTable.importExport'|translate%}:
-        <div class="flyout">
-            <div class="flyout__prompt"><i class="import-export"></i></div>
-            <div class="flyout__wrap">
-                <div class="flyout__header">{%'page.timesTable.importExportHeader'|translate%}</div>
-                <div class="flyout__item">
+            {%'page.timesTable.importExport'|translate%}:
+            <div class="flyout">
+                <div class="flyout__prompt"><i class="import-export"></i></div>
+                <div class="flyout__wrap">
+                    <div class="flyout__header">{%'page.timesTable.importExportHeader'|translate%}</div>
+                    <div class="flyout__item">
                     <span class="flyout__item__label">
                         {%'page.timesTable.tflforoImport'|translate%}:
                     </span>
-                    <span tflforo-import></span>
-                </div>
-                <div class="flyout__item">
+                        <span tflforo-import></span>
+                    </div>
+                    <div class="flyout__item">
                     <span class="flyout__item__label">
                         {%'page.timesTable.myJsonImportExport'|translate%}:
                     </span>
-                    <span improve-import></span>
-                    <span improve-export></span>
-                </div>
-                <div class="flyout__item">
+                        <span improve-import></span>
+                        <span improve-export></span>
+                    </div>
+                    <div class="flyout__item">
                     <span class="flyout__item__label">
                         {%'page.timesTable.improve.print'|translate%}:
                     </span>
-                    <a href="table-improve-print.html" target="blank" class="button">{%'page.timesTable.improve.printFilled'|translate%}</a>
-                    <a href="table-improve-print.html#empty=true" target="blank" class="button">{%'page.timesTable.improve.printEmpty'|translate%}</a>
+                        <a href="table-improve-print.html" target="blank" class="button">{%'page.timesTable.improve.printFilled'|translate%}</a>
+                        <a href="table-improve-print.html#empty=true" target="blank" class="button">{%'page.timesTable.improve.printEmpty'|translate%}</a>
+                    </div>
                 </div>
             </div>
-        </div>
         {{/xif}}
     </div>
 </div>

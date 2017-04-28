@@ -17,12 +17,14 @@
                 <div class="wrap tierlegend">
                     <h2 class="with-cursor">
                         {%'page.rightSidebar.legend'|translate%}</h2>
-                    <div class="legend-spectrum" data-cats="data.map.cats"></div>
+                    <div class="legend-spectrum"></div>
                 </div>
             </li>
             <li class="tierlegend__wrap">
-                <h2 class="tierlegend__headline tierlegend__headline--other-world" ng-click="changeWorld(otherWorld);">< {%'page.ferryTo.' + otherWorld|translate%}  ({%tracksInOtherWorld%})</h2>
-                <h2 class="tierlegend__headline">{%'page.ferryTo.' + selectedWorld|translate%} ({%tracksInTiersNum%})</h2>
+                <h2 class="tierlegend__headline tierlegend__headline--other-world" ng-click="changeWorld(otherWorld);"><
+                    {%'page.ferryTo.' + otherWorld|translate%} ({%tracksInOtherWorld%})</h2>
+                <h2 class="tierlegend__headline">{%'page.ferryTo.' + selectedWorld|translate%}
+                    ({%tracksInTiersNum%})</h2>
                 <div class="wrap tierlegend">
                     <div class="mb10">
                         <input type="text"
@@ -39,9 +41,9 @@
                         <h3>{%'page.rightSidebar.tier'|translate%} {%::tier.number%}</h3>
                         <span ng-repeat="catClass in repeatObject(tier.cats)"
                               class="{%::catClass%} trackwrap">
-                                         <span ng-repeat="track in tier.cats[catClass]"
-                                               track-in-sidebar="{track:track,catClass:catClass}"></span>
-                                    </span>
+                             <span ng-repeat="track in tier.cats[catClass]"
+                                   track-in-sidebar="{track:track,catClass:catClass}"></span>
+                        </span>
                     </div>
                 </div>
             </li>

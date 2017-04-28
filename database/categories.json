@@ -101,16 +101,6 @@
     "24": {
       "class": "ktm-rally-2017",
       "color": "FF6600"
-    },
-    "25": {
-      "class": "season-reward",
-      "color": "026803",
-      "noneGameCategory": true
-    },
-    "26": {
-      "class": "daily-deals",
-      "color": "61d4d7",
-      "noneGameCategory": true
     }
   }
 }

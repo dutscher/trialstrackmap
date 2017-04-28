@@ -20,7 +20,7 @@ module.exports = function (grunt) {
 
     grunt.registerTask("deploy", [
         "clean:dist",
-        "concatDatabase",
+        "#concatDatabase",
         "copy:i18nToDist",
         "copy:rawToDist",
         "convertLess",
