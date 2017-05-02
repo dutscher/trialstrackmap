@@ -2,6 +2,7 @@
 /dist/
 /build/
 /.idea/
+**/secret/
 *.iml
 index.html
 npm-debug.log
