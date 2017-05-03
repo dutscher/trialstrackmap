@@ -212,7 +212,8 @@
     margin-left: 160px;
 }
 
-.ngdialog.ngdialog-theme-default .body small > small {
+.ngdialog.ngdialog-theme-default .body small > small,
+.ngdialog.ngdialog-theme-default .body small.full {
     margin-left: 0;
 }
 

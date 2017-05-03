@@ -2,6 +2,9 @@
 @import "../mixins/**/*";
 @import "../sprites/**/*";
 
+@import (less)"../ngDialog.css";
+@import (less) "../ngDialog-theme-default.css";
+
 table {
   border-spacing: 0;
   background: #6a4229;
@@ -252,6 +255,15 @@ th, td {
   border-radius: 10px;
   font-size: 12px;
   font-weight: normal;
+
+  &--add {
+    cursor: pointer;
+    &:hover {
+      border: @color-tan;
+      background: rgba(0, 0, 0, 0.55);
+      color: @color-tan;
+    }
+  }
 
   &__color {
     display: inline-block;

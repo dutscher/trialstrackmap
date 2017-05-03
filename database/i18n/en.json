@@ -192,6 +192,9 @@
     "editMyGoal": {
       "header": "Edit MyGoal on {%trackName%}"
     },
+    "editTags": {
+      "header": "Edit tags for {%trackName%}"
+    },
     "import": {
       "header": "Import your times",
       "viaJsonFile": "via .json file",

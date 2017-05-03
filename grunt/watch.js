@@ -19,8 +19,7 @@ module.exports = function (grunt) {
         },
         html: {
             files: [
-                "./*.html",
-                "./css/*.css"
+                "./*.html"
             ],
             options: {
                 livereload: config.livereload
@@ -41,6 +40,7 @@ module.exports = function (grunt) {
         less: {
             files: [
                 "./css/**/*.less",
+                "./css/**/*.css",
                 "./grunt/less.js"
             ],
             tasks: [
