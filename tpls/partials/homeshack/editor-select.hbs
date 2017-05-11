@@ -1,6 +1,6 @@
 <label>{{title}}:</label>
     <select selected-index="{{selected}}" type="{{type}}">
         {{#eachProperty costums}}
-            <option value="{{key}}" {{#compare key "==" ../selected}}selected="selected"{{/compare}}>{{key}}. {{value.name}}</option>
+            <option value="{{value.originID}}" {{#compare value.originID "==" ../selected}}selected="selected"{{/compare}}>{{key}}. {{value.name}}</option>
         {{/eachProperty}}
     </select><br />
