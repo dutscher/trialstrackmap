@@ -1,47 +1,43 @@
 {
   "header": {
-    "src": "#1/xQWj3cF.jpg",
-    "lSrc": "#0/seasons/33.rofl.jpg"
+    "src": "#1/2aEOfII.jpg",
+    "lSrc": "#0/seasons/34.inked.jpg"
   },
-  "title": "ROFL",
-  "date": "09.04.2017",
-  "date_end": "04.05.2017",
+  "title": "Inked",
+  "date": "04.05.2017",
+  "date_end": "05.06.2017",
   "duration": "5h",
-  "free_showdowns": "3",
+  "free_showdowns": "5",
   "ticket_regain": "45m",
-  "stats": "http://trials.bonxy.net/the-bunker/ROFL+Season",
-  "total_legends": 1017,
+  "stats": "http://trials.bonxy.net/the-bunker/Inked+Season",
+  "total_legends": 122,
   "prizes": [
     {
       "level": 1,
-      "extra_type": "track",
-      "extra": 5,
+      "extra_type": "coins-gems",
       "coins": 5000,
-      "gems": 5
+      "gems": 15
     },
     {
       "level": 2,
-      "extra_type": "part",
-      "extra": "chain-5",
+      "extra_type": "doughnut",
       "coins": 5000
     },
     {
       "level": 3,
-      "extra_type": "track",
-      "extra": 8,
+      "extra_type": "doughnut",
       "coins": 2000,
       "gems": 5
     },
     {
       "level": 4,
       "extra_type": "part",
-      "extra": "spring-4",
+      "extra": "bearing-4",
       "coins": 2000
     },
     {
       "level": 5,
-      "extra_type": "part",
-      "extra": "bolt-4",
+      "extra_type": "doughnut",
       "coins": 2000,
       "gems": 4
     },
@@ -53,31 +49,34 @@
     {
       "level": 7,
       "extra_type": "part",
-      "extra": "nut-4",
+      "extra": "pipe-4",
       "coins": 2000,
       "gems": 4
     },
     {
       "level": 8,
-      "extra_type": "doughnut",
-      "coins": 2000
+      "extra_type": "part",
+      "extra": "bolt-4",
+      "coins": 2000,
+      "gems": 3
     },
     {
       "level": 9,
-      "extra_type": "track",
-      "extra": 3,
+      "extra_type": "doughnut",
       "coins": 1500,
       "gems": 3
     },
     {
       "level": 10,
-      "extra_type": "doughnut",
+      "extra_type": "paintjob",
+      "sprite-pointer": "berserker-hard-rocker",
+      "extra": 20,
       "coins": 1500
     },
     {
       "level": 11,
       "extra_type": "part",
-      "extra": "chain-3",
+      "extra": "gear-3",
       "coins": 1500
     },
     {
@@ -89,18 +88,20 @@
     {
       "level": 13,
       "extra_type": "part",
-      "extra": "bearing-3",
+      "extra": "spring-3",
       "coins": 1000
     },
     {
       "level": 14,
-      "extra_type": "doughnut",
+      "extra_type": "paintjob",
+      "sprite-pointer": "riptide-revenant",
+      "extra": 19,
       "coins": 1000
     },
     {
       "level": 15,
-      "extra_type": "track",
-      "extra": 6,
+      "extra_type": "part",
+      "extra": "chain-3",
       "coins": 1000,
       "gems": 2
     },
@@ -111,8 +112,9 @@
     },
     {
       "level": 17,
-      "extra_type": "part",
-      "extra": "pipe-2",
+      "extra_type": "paintjob",
+      "extra": 15,
+      "sprite_pointer": "bronco-raven",
       "coins": 1000
     },
     {
@@ -123,7 +125,8 @@
     },
     {
       "level": 19,
-      "extra_type": "unlimited-fuel",
+      "extra_type": "part",
+      "extra": "bolt-2",
       "coins": 750
     },
     {
@@ -134,7 +137,7 @@
     {
       "level": 21,
       "extra_type": "part",
-      "extra": "gear-1",
+      "extra": "pipe-2",
       "coins": 750,
       "gems": 1
     },
@@ -146,7 +149,7 @@
     {
       "level": 23,
       "extra_type": "part",
-      "extra": "piston-1",
+      "extra": "bearing-2",
       "coins": 750
     },
     {
@@ -157,7 +160,8 @@
     },
     {
       "level": 25,
-      "extra_type": "unlimited-fuel",
+      "extra_type": "part",
+      "extra": "spring-2",
       "coins": 750
     }
   ]
