@@ -1250,5 +1250,40 @@
     "tier": 2,
     "world": 2,
     "case": "3rd Anniversary"
+  },
+  {
+    "id": 244,
+    "tier": 2,
+    "world": 2
+  },
+  {
+    "id": 245,
+    "tier": 2,
+    "world": 2
+  },
+  {
+    "id": 246,
+    "tier": 2,
+    "world": 2
+  },
+  {
+    "id": 247,
+    "tier": 2,
+    "world": 2
+  },
+  {
+    "id": 248,
+    "tier": 2,
+    "world": 2
+  },
+  {
+    "id": 249,
+    "tier": 2,
+    "world": 2
+  },
+  {
+    "id": 250,
+    "tier": 2,
+    "world": 2
   }
 ]

@@ -229,6 +229,11 @@
       "lSrc": "#0/icons/trackitem-candy.png",
       "selector": "i.candy"
     },
+    "eggs": {
+      "src": "#1/mkDhov8.png",
+      "lSrc": "#0/icons/trackitem-egg.png",
+      "selector": "i.eggs"
+    },
     "startline": {
       "src": "#1/DZvKLvp.png",
       "lSrc": "#0/icons/trackitem-startline.png",

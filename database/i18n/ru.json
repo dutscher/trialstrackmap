@@ -272,8 +272,7 @@
     "22": "Midnight Circuit 2016",
     "23": "Anniversary 2017",
     "24": "KTM 400-Rally 2017",
-    "25": "Season Reward",
-    "26": "Daily Items"
+    "25": "Eggs Hunt 2017"
   },
   "tiers": {
     "1": "Уровень 1",
@@ -547,6 +546,13 @@
     "240": "Добрый ветер",
     "241": "Торжество вегана",
     "242": "Болотка",
-    "243": "Headhurt Bluff"
+    "243": "Headhurt Bluff",
+    "244": "Kaiju Canyon",
+    "245": "Break and Enter",
+    "246": "Frozen Rapids",
+    "247": "Mile High",
+    "248": "Snowcap Smackdown",
+    "249": "Icy Altar",
+    "250": "Rabbit Hell"
   }
 }

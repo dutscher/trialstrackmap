@@ -19,8 +19,8 @@
             </div>
         </div>
 
-        {{> left-sidebar}}
-        {{> right-sidebar}}
+        {{> left-sidebar Xng-init="handleSidebars($event,'left','wait-for-i18n')" map=map seasons=seasons wardrobe=wardrobe}}
+        {{> right-sidebar ng-init="handleSidebars($event,'right','wait-for-i18n')"}}
 
         <div class="gallery-modal"></div>
         <div ng-init="trackmapReady = false" ng-hide="trackmapReady && dataLoaded" class="loader spin"></div>
