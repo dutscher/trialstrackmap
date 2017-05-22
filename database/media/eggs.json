@@ -1,12 +1,28 @@
 {
-  "1": {
-    "title": "At the finishline.",
-    "src": "#1/qkbvNl3.png"
-  },
+  "1": [
+    {
+      "title": "At the finishline.",
+      "src": "#1/qkbvNl3.png"
+    },
+    {
+      "title": "Under the platform.",
+      "src": "#1/9Giy5U4.png"
+    }
+  ],
   "7": {
     "title": "Use the level after startline, fall into datacube hole and jump over the fire.",
     "src": "#1/OuvJUod.png"
   },
+  "8": [
+    {
+      "title": "Tricky one: Under the finishline platform.",
+      "src": "#1/0z1RGWV.png"
+    },
+    {
+      "title": "In the middle of the track.",
+      "src": "#1/vs6JZwa.png"
+    }
+  ],
   "9": [
     {
       "title": "Before the catapult platform. Drive through the loop and jump over the catapult.",
@@ -17,14 +33,52 @@
       "src": "#1/ACYejhc.png"
     }
   ],
-  "18": {
-    "title": "Jump through and outof the loop. Drive again through the damaged loop and get the egg.",
-    "src": "#1/zXR6jOu.png"
+  "13": [
+    {
+      "title": "At the finishline. Use the ramp before finish and jump over it.",
+      "src": "#1/DUJQMk6.png"
+    },
+    {
+      "title": "Inside the first abyss.",
+      "src": "#1/ubpdKMS.png"
+    }
+  ],
+  "15": {
+    "title": "Nearly at the finishline.",
+    "src": "#1/JVyc3nd.png"
   },
+  "18": [
+    {
+      "title": "After the first small jump at the skelett cave.",
+      "src": "#1/80xd00P.png"
+    },
+    {
+      "title": "Jump through and outof the loop. Drive again through the damaged loop and get the egg.",
+      "src": "#1/zXR6jOu.png"
+    }
+  ],
   "19": {
     "title": "Above the jump ramp, drive slow on it and get the egg.",
     "src": "#1/Ejke2Ep.png"
   },
+  "20": {
+    "title": "At the end under the wooden track.",
+    "src": "#1/V0yR7eO.png"
+  },
+  "21": {
+    "title": "Behind the finishline. Jump over it and fall down the railing.",
+    "src": "#1/enlCWYS.png"
+  },
+  "22": [
+    {
+      "title": "Inside the falling rocks at the start.",
+      "src": "#1/moObiiy.png"
+    },
+    {
+      "title": "After the wheel. Drive to next checkpoint and drive backwards.",
+      "src": "#1/8Le705H.png"
+    }
+  ],
   "25": [
     {
       "title": "At and under the finish line.",
@@ -41,26 +95,110 @@
   },
   "29": [
     {
-      "title": "Above the last sawblade, go to the checkpoint after the blade, do a backflip backwards into the saw and let the body fly to the egg.",
-      "src": "#1/I7ZGKsW.png"
+      "title": "In the first abyss, in the blue barrel.",
+      "src": "#1/Mrbod2O.png"
+    },
+    {
+      "title": "Inside the burning barrel.",
+      "src": "#1/yZdKIFs.png"
     },
     {
       "title": "In the middle of the track. Fall into between ramp and barrel.",
       "src": "#1/ybpTY0B.png"
+    },
+    {
+      "title": "Above the last sawblade, go to the checkpoint after the blade, do a backflip backwards into the saw and let the body fly to the egg.",
+      "src": "#1/I7ZGKsW.png"
     }
   ],
-  "36": {
-    "title": "Inside the first waterfall.",
-    "src": "#1/l8r9ZkU.png"
+  "32": [
+    {
+      "title": "At the top of the stone loop.",
+      "src": "#1/G91FbX6.png"
+    },
+    {
+      "title": "Under the rock nearly at the finishline.",
+      "src": "#1/DfSaIEO.png"
+    }
+  ],
+  "35": {
+    "title": "Very high above the sawblade. Use the sawblad to get high.",
+    "src": "#1/zdbwhZM.png"
   },
+  "36": [
+    {
+      "title": "Inside the first waterfall.",
+      "src": "#1/l8r9ZkU.png"
+    },
+    {
+      "title": "Inside the water of the waterwheel.",
+      "src": "#1/XKdBhXX.png"
+    }
+  ],
+  "39": [
+    {
+      "title": "Tricky one: Use the horse, jump backwards and then forward into the egg.",
+      "src": "#1/NiobIbz.png"
+    },
+    {
+      "title": "Inside the abyss at the finishline mushroom.",
+      "src": "#1/vj1YGcO.png"
+    },
+    {
+      "title": "At the finishline, above the frog",
+      "src": "#1/vAIXlO6.png"
+    }
+  ],
+  "40": {
+    "title": "After the mushroom hill, in the abyss.",
+    "src": "#1/fyzGk0q.png"
+  },
+  "41": [
+    {
+      "title": "Fall into the 2nd abyss.",
+      "src": "#1/0d7LAb9.png"
+    },
+    {
+      "title": "Fall into the 1st abyss.",
+      "src": "#1/zta228Q.png"
+    }
+  ],
   "42": {
     "title": "Nearly at the finishline. Activate the wooden whip but dont drive forward. Get it from the position you see.",
     "src": "#1/Dd7oyCa.png"
   },
-  "51": {
-    "title": "In the abyss after the shortcut.",
-    "src": "#1/L85PZMW.png"
-  },
+  "51": [
+    {
+      "title": "In the abyss after the shortcut.",
+      "src": "#1/L85PZMW.png"
+    },
+    {
+      "title": "Use the horse bike. In the middle of the track inside the pipe.",
+      "src": "#1/qO7SrRV.png"
+    },
+    {
+      "title": "Inside the pipe, you see it glows.",
+      "src": "#1/lUC28ER.png"
+    },
+    {
+      "title": "Inside the last pipe, let your body fall into.",
+      "src": "#1/cRYHhPF.png"
+    }
+  ],
+  "53": [
+    {
+      "title": "After startline under the wood.",
+      "src": "#1/KSK28Qc.png"
+    },
+    {
+      "title": "Under the big swinging rail.",
+      "src": "#1/6re5Dlm.png"
+    },
+    {
+      "title": "Use the 2nd lift up and jump backwards.",
+      "src": "#1/XhR7vGf.png"
+    }
+  ],
   "55": {
     "title": "Between the burning and explosive barrels.",
     "src": "#1/dV88k06.png"
@@ -79,10 +217,24 @@
       "src": "#1/eYEKvmz.png"
     }
   ],
+  "60": {
+    "title": "At the first big jump.",
+    "src": "#1/JyPkpiL.png"
+  },
   "61": {
     "title": "Before the startline.",
     "src": "#1/KLELV5J.png"
   },
+  "62": [
+    {
+      "title": "After the trebuchet.",
+      "src": "#1/3ySTxxU.png"
+    },
+    {
+      "title": "At the finishline. Jump high.",
+      "src": "#1/ef4Sj2Z.png"
+    }
+  ],
   "65": {
     "title": "Before the startline.",
     "src": "#1/NhrnJG2.png"
@@ -103,14 +255,22 @@
   ],
   "71": [
     {
-      "title": "At the finishline, directly after the cannon.",
-      "src": "#1/slMGZtN.png"
-    },
-    {
       "title": "Under the startline swing.",
       "src": "#1/OdVH7ds.png"
+    },
+    {
+      "title": "Under the wooden jumps in the middle of the track.",
+      "src": "#1/QKE3O7s.png"
+    },
+    {
+      "title": "At the finishline, directly after the cannon.",
+      "src": "#1/slMGZtN.png"
     }
   ],
+  "74": {
+    "title": "Tricky one: jump with your head between barrel and box.",
+    "src": "#1/AcBJ2xr.png"
+  },
   "76": [
     {
       "title": "At the startline.",
@@ -125,10 +285,16 @@
     "title": "Under the first checkpoint, Drive the first wooden stick backwards under the first platform.",
     "src": "#1/kSU8Ic9.png"
   },
-  "78": {
-    "title": "Tricky one, in the middle of the track. Inside the three tall climbs. At the bottom of the middle one you have to fall with a tricky backflip into the edge where the egg is.",
-    "src": "#1/2bj3zg0.png"
-  },
+  "78": [
+    {
+      "title": "In the fire before the loop starts.",
+      "src": "#1/y1laCjj.png"
+    },
+    {
+      "title": "Tricky one: in the middle of the track. Inside the three tall climbs. At the bottom of the middle one you have to fall with a tricky backflip into the edge where the egg is.",
+      "src": "#1/2bj3zg0.png"
+    }
+  ],
   "79": [
     {
       "title": "At the finishline, jump on the last wodden platform and drive backwards. This will spin you to the egg.",
@@ -139,33 +305,131 @@
       "src": "#1/QR1T1OL.png"
     }
   ],
-  "92": {
-    "title": "After the big jump between pipe and ramp.",
-    "src": "#1/eVWj9Xf.png"
+  "86": {
+    "title": "At the finishline. Gettin into with the donkey.",
+    "src": "#1/ctYLhsD.png"
   },
-  "94": {
-    "title": "After 2nd checkpoint, Drive to checkpoint 3 and go backwards.",
-    "src": "#1/jVOEW4n.png"
+  "88": [
+    {
+      "title": "In the middle of the highest wodden jump.",
+      "src": "#1/Al8pU6T.png"
+    },
+    {
+      "title": "Under the barrel platform.",
+      "src": "#1/mTxGxTL.png"
+    },
+    {
+      "title": "At the finishline.",
+      "src": "#1/y4G80SB.png"
+    }
+  ],
+  "92": [
+    {
+      "title": "After the big jump between pipe and ramp.",
+      "src": "#1/eVWj9Xf.png"
+    },
+    {
+      "title": "Under the startline rocks. Fall down jump against the first platform.",
+      "src": "#1/ANa3sWf.png"
+    },
+    {
+      "title": "Before the wooden ramp before the pipe loop.",
+      "src": "#1/AkMmR2Q.png"
+    }
+  ],
+  "94": [
+    {
+      "title": "After 2nd checkpoint, Drive to checkpoint 3 and go backwards.",
+      "src": "#1/jVOEW4n.png"
+    },
+    {
+      "title": "Inside the last jump.",
+      "src": "#1/IAuuQpi.png"
+    }
+  ],
+  "97": {
+    "title": "Nearly after startline. Go to checkpoint and fall backwards.",
+    "src": "#1/utjoCvk.png"
   },
-  "104": {
-    "title": "Nearly at the finishline.",
-    "src": "#1/FIsVyPu.png"
+  "100": {
+    "title": "In the first abyss at the wooden stone jump.",
+    "src": "#1/kEZOpmq.png"
   },
+  "104": [
+    {
+      "title": "At the highest position with the sawblade.",
+      "src": "#1/u9oI5ra.png"
+    },
+    {
+      "title": "At the highest position in track, under the wood. Use the sawblade.",
+      "src": "#1/7B4i3rD.png"
+    },
+    {
+      "title": "Nearly at the finishline.",
+      "src": "#1/FIsVyPu.png"
+    }
+  ],
+  "108": [
+    {
+      "title": "In the middle of the track, inside the wodden plank.",
+      "src": "#1/CQTSOPn.png"
+    },
+    {
+      "title": "Above the lift at the end. Drive slowly on it and jump straight up.",
+      "src": "#1/YhydQJf.png"
+    }
+  ],
+  "113": [
+    {
+      "title": "Fall down to the house before finishline.",
+      "src": "#1/gs9xDpA.png"
+    },
+    {
+      "title": "Touch the frog at the finishline.",
+      "src": "#1/qzAuAjy.png"
+    }
+  ],
   "116": {
     "title": "After the second checkpoint, inside and before the burning boxes.",
     "src": "#1/dNVCBzS.png"
   },
-  "117": {
-    "title": "Inside the fire of the last abyss.",
-    "src": "#1/dNVCBzS.png"
-  },
-  "119": {
-    "title": "In the last burning abyss.",
-    "src": "#1/Yq7J1hr.png"
-  },
-  "120": {
-    "title": "Best location so far, the last small metal platform before finishline, drop from the metal platform to the right and get it.",
-    "src": "#1/0GDS5Si.png"
+  "117": [
+    {
+      "title": "Inside the fire of the last abyss.",
+      "src": "#1/dNVCBzS.png"
+    },
+    {
+      "title": "At the last jump, drive backwards and get the egg.",
+      "src": "#1/D5PQnjk.png"
+    }
+  ],
+  "119": [
+    {
+      "title": "In the last abyss.",
+      "src": "#1/Yq7J1hr.png"
+    },
+    {
+      "title": "In the last burning fire.",
+      "src": "#1/Yq7J1hr.png"
+    }
+  ],
+  "120": [
+    {
+      "title": "Tricky one: under the first steal platform, try to get between platform and barrel, without explosion.",
+      "src": "#1/jXlmb2J.png"
+    },
+    {
+      "title": "Best location so far, the last small metal platform before finishline, drop from the metal platform to the right and get it.",
+      "src": "#1/0GDS5Si.png"
+    },
+    {
+      "title": "At the finishline.",
+      "src": "#1/hOSSGUI.png"
+    }
+  ],
+  "122": {
+    "title": "Under the wooden platform.",
+    "src": "#1/Q4Xkvjl.png"
   },
   "126": {
     "title": "In the middle of the track, go upwards with the platform and backwards.",
@@ -179,19 +443,39 @@
     "title": "In the middle of the track. Jump on the stone platform under the track.",
     "src": "#1/yY1WQNu.png"
   },
-  "129": {
-    "title": "After the startline under the swing.",
-    "src": "#1/xvoLUUQ.png"
-  },
-  "171": {
-    "title": "At the 3rd checkpoint. Fall down to the egg.",
-    "src": "#1/XbP4DqH.png"
+  "129": [
+    {
+      "title": "After the startline under the swing.",
+      "src": "#1/xvoLUUQ.png"
+    },
+    {
+      "title": "Tricky one: In the middle of the track.",
+      "src": "#1/vJnhrB2.png"
+    },
+    {
+      "title": "At and over the finishline.",
+      "src": "#1/9Yuerm2.png"
+    }
+  ],
+  "171": [
+    {
+      "title": "At the 3rd checkpoint. Fall down to the egg.",
+      "src": "#1/XbP4DqH.png"
+    },
+    {
+      "title": "Tricky one: Try to get on the small wood and jump to the egg.",
+      "src": "#1/CINFrqn.png"
+    }
+  ],
+  "214": {
+    "title": "In the middle of the track, under the sawblade.",
+    "src": "#1/6eEB26R.png"
   },
   "216": {
     "title": "After the barrelride fall between the wodden platforms.",
     "src": "#1/JSaSQd6.png"
   },
-  "00": {
+  "000": {
     "title": "",
     "src": "#1/"
   }

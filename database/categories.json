@@ -88,7 +88,8 @@
     "21": {
       "class": "youtube",
       "color": "C30000",
-      "noneGameCategory": true
+      "noneGameCategory": true,
+      "dataKey": "youtube"
     },
     "22": {
       "class": "midnight-circuit",
@@ -104,7 +105,9 @@
     },
     "25": {
       "class": "easter-eggs-2017",
-      "color": "46FEFE"
+      "color": "46FEFE",
+      "countAll": true,
+      "dataKey": "eggs"
     }
   }
 }
