@@ -14,7 +14,7 @@
                     costumData = costumsData[costumId],
                     costumName = costumData.name.toLowerCase().replace(/ /g, "-"),
                     costumNameHR = costumData.name,
-                    costumSelector = 'costum--' + costumId;
+                    costumSelector = "costum--" + costumData.originID;
                 
                 costumHtml += '\n' +
                     template({

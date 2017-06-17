@@ -6,7 +6,7 @@
     40,41,43,42,50,44,47,48,46,51,52,53,54
   ],
   "homeshack": [
-    56,55,54,53,52,51,
+    57,56,55,54,53,52,51,
     50,49,48,47,46,45,44,43,42,41,
     40,39,38,37,36,35,34,33,32,31,
     30,29,28,27,26,25,24,23,22,21,
@@ -177,7 +177,7 @@
       "pants": "",
       "parts": [
         "http://i.imgur.com/cnvYWRA.png|88",
-        "http://i.imgur.com/scPZPfk.png",
+        "http://i.imgur.com/CNKO8kT.png",
         "http://i.imgur.com/eLTxh5Y.png|178",
         "http://i.imgur.com/rpEyjLF.png"
       ]
@@ -541,7 +541,7 @@
       "parts": [
         "http://i.imgur.com/gSJSTU5.png|22",
         "http://i.imgur.com/aNZyWSC.png|-5",
-        "http://i.imgur.com/tZHxg1P.png|173|116",
+        "http://i.imgur.com/56Y8CwB.png|173|116",
         "http://i.imgur.com/99TrSVe.png|25"
       ]
     },
@@ -654,7 +654,7 @@
         "http://i.imgur.com/2fF8IwW.png|50|-10",
         "http://i.imgur.com/cROkl5u.png|6|90",
         "http://i.imgur.com/Mg6lCGS.png|175",
-        "http://i.imgur.com/xZqORea.png"
+        "http://i.imgur.com/1W0Hyal.png"
       ]
     },
     "46": {
@@ -723,7 +723,7 @@
         "http://i.imgur.com/KQC4Bw8.png",
         "http://i.imgur.com/IauvxbF.png",
         "http://i.imgur.com/lME2Dwv.png",
-        "http://i.imgur.com/INIDGVi.png"
+        "http://i.imgur.com/hf8LFGX.png"
       ]
     },
     "51": {
@@ -793,6 +793,27 @@
         "http://i.imgur.com/foijWqg.png",
         "http://i.imgur.com/LavCxid.png",
         "http://i.imgur.com/YDzsmHL.png"
+      ]
+    },
+    "57": {
+      "originID": 57,
+      "name": "Feaster Bunny",
+      "purchase": true,
+      "parts": [
+        "http://i.imgur.com/t4BK6fw.png||-60",
+        "http://i.imgur.com/ylrqglA.png",
+        "http://i.imgur.com/Fh9kfod.png",
+        "http://i.imgur.com/3NffjRB.png"
+      ]
+    },
+    "58": {
+      "originID": 58,
+      "name": "Butch",
+      "parts": [
+        "http://i.imgur.com/EAgquPx.png||-60",
+        "http://i.imgur.com/4H2LGUc.png",
+        "http://i.imgur.com/4ph33I0.png",
+        "http://i.imgur.com/DVUxWLt.png"
       ]
     }
   },
