@@ -1,0 +1,166 @@
+{
+  "header": {
+    "src": "#1/uVxm40p.jpg",
+    "lSrc": "#0/seasons/35.rally.jpg"
+  },
+  "title": "Rally",
+  "date": "05.06.2017",
+  "date_end": "06.07.2017",
+  "duration": "4h",
+  "free_showdowns": "4",
+  "ticket_regain": "30m",
+  "stats": "http://trials.bonxy.net/the-bunker/Rally+Season",
+  "total_legends": 72,
+  "prizes": [
+    {
+      "level": 1,
+      "extra_type": "doughnut",
+      "coins": 5000,
+      "gems": 5
+    },
+    {
+      "level": 2,
+      "extra_type": "doughnut",
+      "coins": 5000
+    },
+    {
+      "level": 3,
+      "extra_type": "part",
+      "extra": "nut-5",
+      "coins": 5000,
+      "gems": 5
+    },
+    {
+      "level": 4,
+      "extra_type": "unlimited-fuel",
+      "coins": 2000
+    },
+    {
+      "level": 5,
+      "extra_type": "doughnut",
+      "coins": 2000
+    },
+    {
+      "level": 6,
+      "extra_type": "part",
+      "extra": "spring-4",
+      "coins": 2000,
+      "gems": 4
+    },
+    {
+      "level": 7,
+      "extra_type": "part",
+      "extra": "chain-4",
+      "coins": 2000,
+      "gems": 4
+    },
+    {
+      "level": 8,
+      "extra_type": "doughnut",
+      "coins": 2000,
+      "gems": 4
+    },
+    {
+      "level": 9,
+      "extra_type": "unlimited-fuel",
+      "coins": 1500
+    },
+    {
+      "level": 10,
+      "extra_type": "part",
+      "extra": "piston-4",
+      "coins": 1500
+    },
+    {
+      "level": 11,
+      "extra_type": "doughnut",
+      "coins": 1500,
+      "gems": 3
+    },
+    {
+      "level": 12,
+      "extra_type": "part",
+      "extra": "bearing-3",
+      "coins": 1500,
+      "gems": 3
+    },
+    {
+      "level": 13,
+      "extra_type": "part",
+      "extra": "pipe-3",
+      "coins": 1000,
+      "gems": 3
+    },
+    {
+      "level": 14,
+      "extra_type": "doughnut",
+      "coins": 1500
+    },
+    {
+      "level": 15,
+      "extra_type": "unlimited-fuel",
+      "coins": 1500
+    },
+    {
+      "level": 16,
+      "extra_type": "doughnut",
+      "coins": 1500,
+      "gems": 2
+    },
+    {
+      "level": 17,
+      "extra_type": "part",
+      "extra": "sheet-3",
+      "coins": 1500,
+      "gems": 2
+    },
+    {
+      "level": 18,
+      "extra_type": "doughnut",
+      "coins": 1000,
+      "gems": 2
+    },
+    {
+      "level": 19,
+      "extra_type": "part",
+      "extra": "bolt-2",
+      "coins": 1000
+    },
+    {
+      "level": 20,
+      "extra_type": "doughnut",
+      "coins": 1000
+    },
+    {
+      "level": 21,
+      "extra_type": "unlimited-fuel",
+      "coins": 1000,
+      "gems": 2
+    },
+    {
+      "level": 22,
+      "extra_type": "doughnut",
+      "coins": 1000,
+      "gems": 2
+    },
+    {
+      "level": 23,
+      "extra_type": "part",
+      "extra": "sprint-1",
+      "coins": 1000,
+      "gems": 2
+    },
+    {
+      "level": 24,
+      "extra_type": "doughnut",
+      "coins": 2000,
+      "gems": 2
+    },
+    {
+      "level": 25,
+      "extra_type": "part",
+      "extra": "chain-1",
+      "coins": 1000
+    }
+  ]
+}

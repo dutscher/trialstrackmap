@@ -8,7 +8,7 @@
     {{#content "body"}}
         <div class="page-body" ng-controller="home-shack">
             {{setVariable "combinations" (mathPow wardrobe.homeshack.length 3)}}
-            {{> navigation title="Home Shack" badge=(combine wardrobe.homeshack.length " costums and " combinations " combinations")}}
+            {{> navigation title="Home Shack" badge=(combine wardrobe.homeshack.length " costumes and " combinations " combinations")}}
 
             <div class="costum__area">
                 {{homeShack data=wardrobe}}
