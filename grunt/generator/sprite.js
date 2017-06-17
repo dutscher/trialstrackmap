@@ -15,7 +15,7 @@ module.exports = function () {
                 bikeNamesJSON = require("../../database/bikes.json"),
                 paintJobsRAW = paintJobsJSON.bikes,
                 //gfx dimensions
-                spritePaintJobIconDimensions = "1100x1400".split("x"),
+                spritePaintJobIconDimensions = "1100x1562".split("x"),
                 spritePaintJobDimensions = "1050x550".split("x"),
                 //sprite dimensions
                 paintJobDimensions = "70x50".split("x"),

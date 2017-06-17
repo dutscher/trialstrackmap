@@ -14,6 +14,18 @@
         "dim": "2549x2500"
       }
     },
+    "paintjobs": {
+      "src": "#1/jLKSBln.png",
+      "lSrc": "#0/icons/sprite-paintjobs.png",
+      "selector": "i.paintjob",
+      "sprite": true
+    },
+    "paintjob-icons": {
+      "src": "#1/NCUc7fO.png",
+      "lSrc": "#0/icons/sprite-paintjob-icons.png",
+      "selector": "i.paintjob-icon",
+      "sprite": true
+    },
     "sidebar-arrow-open": {
       "src": "#1/ePEMEW0.png",
       "lSrc": "#0/icons/sidebar-arrow-open.png",
@@ -274,18 +286,6 @@
       "src": "#1/J9d1WgB.jpg",
       "lSrc": "#0/icons/sprite-seasons.jpg",
       "selector": "i.seasons",
-      "sprite": true
-    },
-    "paintjobs": {
-      "src": "#1/5OrmfM1.png",
-      "lSrc": "#0/icons/sprite-paintjobs.png",
-      "selector": "i.paintjob",
-      "sprite": true
-    },
-    "paintjob-icons": {
-      "src": "#1/shSrUV6.png",
-      "lSrc": "#0/icons/sprite-paintjob-icons.png",
-      "selector": "i.paintjob-icon",
       "sprite": true
     }
   },

@@ -15,9 +15,9 @@
     7,
     8,
     9,
+    19,
     10,
-    11,
-    19
+    11
   ],
   "bikes": {
     "1": [
@@ -376,6 +376,10 @@
       {
         "src": "mP0LF74.png",
         "name": "Candy Cane"
+      },
+      {
+        "src": "",
+        "name": "Feaster"
       }
     ],
     "14": [
@@ -392,6 +396,10 @@
       {
         "src": "",
         "name": "Default"
+      },
+      {
+        "src": "",
+        "name": "Camouflage"
       }
     ]
   }
