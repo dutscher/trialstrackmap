@@ -272,7 +272,8 @@
     "22": "Midnight Circuit 2016",
     "23": "Jubiläum 2017",
     "24": "KTM 400-Rally 2017",
-    "25": "Eggs Hunt 2017"
+    "25": "Eggs Hunt 2017",
+    "26": "Bandito Rally 2017"
   },
   "tiers": {
     "1": "Stufe 1",
@@ -553,6 +554,8 @@
     "247": "Mile High",
     "248": "Snowcap Smackdown",
     "249": "Icy Altar",
-    "250": "Rabbit Hell"
+    "250": "Rabbit Hell",
+    "251": "Swamp Breath",
+    "252": "Ravenous Ram"
   }
 }

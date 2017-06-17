@@ -108,6 +108,10 @@
       "color": "46FEFE",
       "countAll": true,
       "dataKey": "eggs"
+    },
+    "26": {
+      "class": "bandito-rally-2017",
+      "color": "68A574"
     }
   }
 }
