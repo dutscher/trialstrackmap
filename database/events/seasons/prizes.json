@@ -27,14 +27,17 @@
     "21": "Vengeful Steed paintjob for Phantom (Run them over with your vengeance!)"
   },
   "tracks": {
-    "1": "KTM Course (Reveal the hidden location of KTM Course)",
-    "2": "Metal Mayhem (Reveal the hidden location of Metal Mayhem)",
-    "3": "Safe Escape (Reveal the hidden location of Safe Escape)",
-    "4": "Homegrown (Reveal the hidden location of Homegrown)",
-    "5": "Torn Canyon (Reveal the hidden location of Torn Canyon)",
-    "6": "Cold Cut Corner (Reveal the hidden location of Cold Cut Corner)",
-    "7": "Root Canal (Reveal the hidden location of Root Canal)",
-    "8": "Crystal Crossing (Reveal the hidden location of Crystal Crossing)"
+    "1": "KTM Course",
+    "2": "Metal Mayhem",
+    "3": "Safe Escape",
+    "4": "Homegrown",
+    "5": "Torn Canyon",
+    "6": "Cold Cut Corner",
+    "7": "Root Canal",
+    "8": "Crystal Crossing",
+    "9": "Dark Smoke",
+    "10": "Acrobat Quarter",
+    "11": "Fenland Flail"
   },
   "customs": {
     "1": "Ninja Head",

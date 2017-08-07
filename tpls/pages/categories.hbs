@@ -13,13 +13,13 @@
         <div class="page-body">
             <h2>color spectrum:</h2>
             <div class="spectrum__wrap">
-                {{#each map.database.map.cats}}
-                    <div class="spectrum__item" style="background-color:#{{color}};" title="{{class}} - #{{color}}"></div>
+                {{#each map.database.categories.all}}
+                    <div class="spectrum__item {{class}}-bg" title="{{class}} - #{{color}}"></div>
                 {{/each}}
             </div>
 
             <h2>all categories:</h2>
-            {{#each map.database.map.cats}}
+            {{#each map.database.categories.all}}
                 <div style="color:#{{color}};">
                     {{class}} <span class="color__hexcode">#{{color}}</span>
                 </div>

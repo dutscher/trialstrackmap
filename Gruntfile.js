@@ -32,13 +32,13 @@ module.exports = function (grunt) {
     ]);
 
     grunt.registerTask("finalDeploy", [
-        "doBackup",
-        "finalDeployWithoutBackup"
-    ]);
-
-    grunt.registerTask("finalDeployWithoutBackup", [
         "deploy",
         "uglify:dist"
+    ]);
+
+    grunt.registerTask("finalDeployWithBackup", [
+        "doBackup",
+        "finalDeploy"
     ]);
 
     grunt.registerTask("doBackup", [

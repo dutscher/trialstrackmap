@@ -642,6 +642,7 @@
     "chips": 1500,
     "oid": 1210
   },
+  // woodwork conlave
   {
     "id": 119,
     "tier": 1,
@@ -904,6 +905,7 @@
     "id": 174,
     "tier": 1
   },
+  // Spider Kingdom"
   {
     "id": 175,
     "tier": 1
@@ -972,6 +974,7 @@
     "tier": 3,
     "pack": 3
   },
+  // madhouse
   {
     "id": 155,
     "tier": 3,
@@ -1245,6 +1248,7 @@
     "tier": 1,
     "world": 2
   },
+  // Headhurt Bluff
   {
     "id": 243,
     "tier": 2,
@@ -1281,18 +1285,89 @@
     "tier": 2,
     "world": 2
   },
+  // Rabbit Hell
   {
     "id": 250,
     "tier": 3,
     "world": 2
   },
+  // bandito rally  2017
+  // Swamp Breath
   {
     "id": 251,
     "tier": 2,
     "world": 2
   },
+  // Ravenous Ram
   {
     "id": 252,
+    "tier": 2,
+    "world": 2
+  },
+  // Sundown Slam
+  {
+    "id": 253,
+    "tier": 2,
+    "world": 2
+  },
+  // Graviton Swamp
+  {
+    "id": 254,
+    "tier": 3,
+    "world": 2
+  },
+  // Rejection Blues
+  {
+    "id": 255,
+    "tier": 2,
+    "world": 2
+  },
+  // Fatal Fungus
+  {
+    "id": 256,
+    "tier": 2,
+    "world": 2
+  },
+  // Reputation juli/august 2017
+  // Aztec Trance
+  {
+    "id": 257,
+    "tier": 2,
+    "world": 2
+  },
+  // Rowdy Roofing
+  {
+    "id": 258,
+    "tier": 3,
+    "world": 2
+  },
+  // Pinball Pains
+  {
+    "id": 259,
+    "tier": 2,
+    "world": 2
+  },
+  // Suspended Getaway
+  {
+    "id": 260,
+    "tier": 2,
+    "world": 2
+  },
+  // Spelunker Graves
+  {
+    "id": 261,
+    "tier": 2,
+    "world": 2
+  },
+  // Acid Bath
+  {
+    "id": 262,
+    "tier": 3,
+    "world": 2
+  },
+  // Pain Marsh
+  {
+    "id": 263,
     "tier": 2,
     "world": 2
   }
