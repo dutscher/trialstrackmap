@@ -1,0 +1,61 @@
+{{#extend "default"}}
+    {{#content "title-override"}}true{{/content}}
+    {{#content "title" mode="prepend"}}
+        Midnight Champs 2017
+    {{/content}}
+
+    {{#content "styles" mode="append"}}
+        <link rel="stylesheet" type="text/css" href="/dist/main.css{{cacheBuster}}"/>
+        <link rel="stylesheet" type="text/css" href="/dist/table.css{{cacheBuster}}" />
+        <style>
+            .teams {
+                display: flex;
+                width: 100%;
+                flex-wrap: wrap;
+                margin-left: -4px;
+            }
+
+            .team {
+                border: solid 1px #935A05;
+                background: #935A05;
+                margin: 4px;
+                width: 150px;
+            }
+
+            .team__name {
+                background: #fff;
+                padding: 2px;
+                white-space: nowrap;
+                font-size: 14px;
+            }
+
+            .team__member {
+                color: #ffee99;
+                padding: 2px;
+                white-space: nowrap;
+                font-size: 12px;
+            }
+        </style>
+    {{/content}}
+
+    {{#content "ctrl"}}ng-controller="trackData"{{/content}}
+
+    {{#content "body"}}
+        <div class="page-body">
+            {{> navigation title="Midnight Champs 2017"}}
+            <div class="teams">
+                {{#each map.database.events.midnightchamps_2017.teams}}
+                    <div class="team">
+                        <div class="team__name">{{@key}}</div>
+                        {{#each this}}
+                            <div class="team__member">
+                                <i class="device-{{deviceName ../../map.database.events.midnightchamps_2017.devices dvce}}"></i>
+                                {{name}}
+                            </div>
+                        {{/each}}
+                    </div>
+                {{/each}}
+            </div>
+        </div>
+    {{/content}}
+{{/extend}}

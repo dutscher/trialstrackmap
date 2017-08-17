@@ -24,7 +24,7 @@
     "time-grunt": "latest",
     "jit-grunt": "latest",
     "json5": "latest",
-    "grunt-assemble": "latest",
+    "grunt-assemble": "0.3.0",
     "grunt-contrib-less": "latest",
     "less-plugin-glob": "latest",
     "lodash": "latest"

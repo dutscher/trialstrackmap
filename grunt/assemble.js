@@ -9,7 +9,7 @@ module.exports = function (grunt) {
     return {
         options: {
             flatten: true,
-            data: "dist/*.json",
+            data: ["dist/*.json"],
             layout: false,
             helpers: "tpls/helpers/*.js",
             partials: [
@@ -22,9 +22,8 @@ module.exports = function (grunt) {
             cacheBuster: "?v=" + (new Date()).getTime()
         },
         default: {
-            files: {
-                "dist": [ "tpls/pages/*.hbs" ]
-            }
+            src: ["tpls/pages/**/*.hbs"],
+            dest: "dist"
         }
     }
 };
