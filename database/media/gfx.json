@@ -15,13 +15,13 @@
       }
     },
     "paintjobs": {
-      "src": "#1/jLKSBln.png",
+      "src": "#1/714pXnh.png",
       "lSrc": "#0/icons/sprite-paintjobs.png",
       "selector": "i.paintjob",
       "sprite": true
     },
     "paintjob-icons": {
-      "src": "#1/NCUc7fO.png",
+      "src": "#1/NTk4ni6.png",
       "lSrc": "#0/icons/sprite-paintjob-icons.png",
       "selector": "i.paintjob-icon",
       "sprite": true

@@ -19,15 +19,18 @@
             <li>
                 <div class="wrap">
                     <h2>{%'page.title'|translate%}</h2>
+                    <a href="/2017-midnightchamps.html">Midnight Champs 2017 &raquo;</a>
                     {{#with seasons}}
-                        <a href="/seasons.html">{%'page.leftSidebar.goToSeasons'|translate:{
-                            nums:{{_seasons.length}} }%} &raquo;
+                        <a href="/seasons.html">
+                            {%'page.leftSidebar.goToSeasons'|translate:{ nums:{{_seasons.length}} }%} &raquo;
                             <span class="link-info">{{{season-countdown _seasons _active_season}}}</span>
                         </a>
                     {{/with}}
                     {{#with wardrobe}}
-                        <a href="/home-shack.html">{%'page.leftSidebar.goToWardrobe'|translate%}
-                            ({{homeshack.length}}) &raquo;</a>
+                        <a href="/home-shack.html">
+                            {%'page.leftSidebar.goToWardrobe'|translate%}
+                            ({{homeshack.length}}) &raquo;
+                        </a>
                     {{/with}}
                     {{#with map.database.bikes}}
                         <a href="/garage.html">
@@ -68,21 +71,6 @@
                     </div>
                     <span class="with-cursor" ng-click="visibility('creditsVisible')"
                           ng-hide="creditsVisible">{%'page.leftSidebar.toggleMe'|translate%}</span>
-                </div>
-            </li>
-            <li>
-                <div class="wrap tierlegend">
-                    <h2 class="with-cursor" ng-click="visibility('disqusVisible')">
-                        <a href="#disqus_thread" style="text-decoration:none;">
-                            {%'page.leftSidebar.comments'|translate%}</a>
-                    </h2>
-
-                    <div ng-show="disqusVisible">
-                        <a href="http://forums.ubi.com/showthread.php/939397-Trackmap" target="_blank">
-                            {%'page.leftSidebar.goToThread'|translate%}</a>
-                    </div>
-                    <span class="with-cursor" ng-click="visibility('disqusVisible')" ng-hide="disqusVisible">
-                                {%'page.leftSidebar.toggleMe'|translate%}</span>
                 </div>
             </li>
         </ul>

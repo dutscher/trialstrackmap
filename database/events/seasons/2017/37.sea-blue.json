@@ -1,46 +1,50 @@
 {
   "header": {
-    "src": "#1/urPToNL.jpg",
-    "lSrc": "#0/seasons/36.sun-tan.jpg"
+    "src": "#1/U7LGlqz.jpg",
+    "lSrc": "#0/seasons/37.sea-blue.jpg"
   },
-  "title": "Sun-Tan",
-  "date": "06.07.2017",
-  "date_end": "08.08.2017",
-  "duration": "3h30m",
-  "free_showdowns": "5",
+  "title": "Sea-Blue",
+  "date": "08.08.2017",
+  "date_end": "07.09.2017",
+  "duration": "3h",
+  "free_showdowns": "4",
   "ticket_regain": "30m",
-  "stats": "http://trials.bonxy.net/the-bunker/SUN-TAN+Season",
-  "total_legends": 1096,
+  "stats": "http://trials.bonxy.net/the-bunker/Sea-Blue+Season",
+  "total_legends": 61,
   "prizes": [
     {
       "level": 1,
-      "extra_type": "track",
-      "extra": 11,
+      "extra_type": "doughnut",
       "coins": 5000,
       "gems": 5
     },
     {
       "level": 2,
-      "extra_type": "doughnut",
-      "coins": 5000
+      "extra_type": "track",
+      "extra": 13,
+      "coins": 5000,
+      "gems": 5
     },
     {
       "level": 3,
-      "extra_type": "part",
-      "extra": "nut-5",
+      "extra_type": "doughnut",
       "coins": 5000,
       "gems": 5
     },
     {
       "level": 4,
-      "extra_type": "unlimited-fuel",
-      "coins": 2000
+      "extra_type": "paintjob",
+      "extra": 13,
+      "sprite_pointer": "bronco-sailor",
+      "coins": 2000,
+      "gems": 5
     },
     {
       "level": 5,
       "extra_type": "track",
-      "extra": 10,
-      "coins": 2000
+      "extra": 12,
+      "coins": 2000,
+      "gems": 5
     },
     {
       "level": 6,
@@ -52,7 +56,7 @@
     {
       "level": 7,
       "extra_type": "part",
-      "extra": "chain-4",
+      "extra": "pipe-4",
       "coins": 2000,
       "gems": 4
     },
@@ -64,21 +68,20 @@
     },
     {
       "level": 9,
-      "extra_type": "paintjob",
-      "extra": 17,
-      "sprite_pointer": "riptide-hippie",
-      "coins": 1500
+      "extra_type": "doughnut",
+      "coins": 1500,
+      "gems": 4
     },
     {
       "level": 10,
       "extra_type": "part",
       "extra": "piston-4",
-      "coins": 1500
+      "coins": 1500,
+      "gems": 3
     },
     {
       "level": 11,
-      "extra_type": "track",
-      "extra": 9,
+      "extra_type": "doughnut",
       "coins": 1500,
       "gems": 3
     },
@@ -93,20 +96,21 @@
       "level": 13,
       "extra_type": "part",
       "extra": "pipe-3",
-      "coins": 1000,
+      "coins": 1500,
       "gems": 3
     },
     {
       "level": 14,
       "extra_type": "doughnut",
-      "coins": 1500
+      "coins": 1500,
+      "gems": 3
     },
     {
       "level": 15,
-      "extra_type": "paintjob",
-      "extra": 2,
-      "sprite_pointer": "bronco-aloha",
-      "coins": 1500
+      "extra_type": "part",
+      "extra": "chain-3",
+      "coins": 1500,
+      "gems": 3
     },
     {
       "level": 16,
@@ -117,13 +121,13 @@
     {
       "level": 17,
       "extra_type": "part",
-      "extra": "sheet-3",
+      "extra": "sheet-2",
       "coins": 1500,
       "gems": 2
     },
     {
       "level": 18,
-      "extra_type": "doughnut",
+      "extra_type": "unlimited-fuel",
       "coins": 1000,
       "gems": 2
     },
@@ -131,12 +135,14 @@
       "level": 19,
       "extra_type": "part",
       "extra": "nut-2",
-      "coins": 1000
+      "coins": 1000,
+      "gems": 2
     },
     {
       "level": 20,
       "extra_type": "doughnut",
-      "coins": 1000
+      "coins": 1000,
+      "gems": 2
     },
     {
       "level": 21,
@@ -160,7 +166,7 @@
     {
       "level": 24,
       "extra_type": "doughnut",
-      "coins": 2000,
+      "coins": 1000,
       "gems": 2
     },
     {

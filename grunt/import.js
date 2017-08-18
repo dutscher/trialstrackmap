@@ -1,14 +1,32 @@
 module.exports = function (grunt) {
     var fs = require("fs"),
+        fsExt = require("fs-extra"),
+        http = require("http"),
         path = require("path"),
-        gameVersion = "530",
+        gameVersion = "540",
+        dataGet = "http://s3.amazonaws.com/dlcontent_frontier_android/" + gameVersion + "/info.json",
+        hddPath = "E:/#trails/#TFunpacker/", // neofonie pc / cameo hdd
+        versionPath = hddPath + gameVersion,
+        phonePath = "Dieser PC\\Moto G\\Internal shared storage\\Android\\data\\com.ubisoft.redlynx.trialsfrontier.ggp",
         defaultExt = "txt",
         toExt = "json5",
-        bikesFile = "database/secret/" + gameVersion + "/bikes.",
-        customsFile = "database/secret/" + gameVersion + "/customization.",
-        upgradesFile = "database/secret/" + gameVersion + "/upgrades.",
-        rewardsFile = "database/secret/" + gameVersion + "/level_rewards.",
-        levelsFile = "database/secret/" + gameVersion + "/levels.";
+        filesOfGame = ["bikes.", "customization.", "upgrades.", "level_rewards.", "levels."],
+        bikesFile = "database/secret/" + gameVersion + "/" + filesOfGame[0],
+        customsFile = "database/secret/" + gameVersion + "/" + filesOfGame[1],
+        upgradesFile = "database/secret/" + gameVersion + "/" + filesOfGame[2],
+        rewardsFile = "database/secret/" + gameVersion + "/" + filesOfGame[3],
+        levelsFile = "database/secret/" + gameVersion + "/" + filesOfGame[4],
+        dirsOfResource = [
+            "/MENUZ/HOMESHACK", // customization _ON small _BIG maximal
+            "/MENUZ/ITEM", // paintjob icons,
+            "/MENUZ/WIDGETS/BIKES.png", // 14 paintjobs
+            "/MENUZ/WIDGETS/BIKES2.png", // 31
+            "/MENUZ/WIDGETS/BIKES3.png", // 33
+            "/MENUZ/WIDGETS/BIKES4.png", // 14
+            "/MENUZ/MENUZ/MAP/LAYER_0", // world 1
+            "/MENUZ/MENUZ/MAP/LAYER_1", // world 2
+        ]
+    ;
 
     function values(obj, toLowerCase) {
         var vals = [];
@@ -28,6 +46,149 @@ module.exports = function (grunt) {
         ensureDirectoryExistence(dirname);
         fs.mkdirSync(dirname);
     }
+
+    function downloadFile(url, pathDest, cb) {
+        var http_or_https = http;
+        if (/^https:\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?$/.test(url)) {
+            http_or_https = https;
+        }
+        http_or_https.get(url, function (response) {
+            var headers = JSON.stringify(response.headers);
+            switch (response.statusCode) {
+                case 200:
+                    var file = fs.createWriteStream(pathDest);
+                    response.on("data", function (chunk) {
+                        file.write(chunk);
+                    }).on("end", function () {
+                        file.end();
+                        cb(null);
+                    });
+                    break;
+                case 301:
+                case 302:
+                case 303:
+                case 307:
+                    downloadFile(response.headers.location, pathDest, cb);
+                    break;
+                default:
+                    cb(new Error("Server responded with status code " + response.statusCode));
+            }
+
+        })
+            .on("error", function (err) {
+                cb(err);
+            });
+    }
+
+    grunt.registerTask("importGameDataS3", function () {
+        var done = this.async(),
+            filesToDownload = [];
+
+        function downloadS3Data() {
+            // get urls to files
+            http.get(dataGet, function (res) {
+                var body = "";
+                res.on("data", function (chunk) {
+                    body += chunk;
+                });
+                res.on("end", function () {
+                    var response = JSON.parse(body);
+                    console.log("downloading files from s3");
+                    for (var i in response.content) {
+                        var fileData = response.content[i],
+                            fileSrc = fileData.url.replace("https", "http"),
+                            fileDest = versionPath + "/" + fileData.name
+                        ;
+                        filesToDownload.push({
+                            src: fileSrc,
+                            dest: fileDest
+                        });
+                    }
+
+                    downloadFiles();
+                });
+            }).on("error", function (e) {
+                console.error("Got an error: ", e);
+                done();
+            });
+        }
+
+        function downloadFiles(index) {
+            var downloadIndex = index || 0,
+                downloadFileObj = filesToDownload[downloadIndex];
+
+            if (downloadIndex === 0) {
+                console.log("Download content files", filesToDownload.length);
+            }
+
+            if (!downloadFileObj) {
+                console.log("All files downloaded.");
+                done();
+                return;
+            }
+
+            // download file
+            console.log("Download", downloadIndex, downloadFileObj.src);
+            downloadFile(downloadFileObj.src, downloadFileObj.dest, function () {
+                downloadFiles(downloadIndex + 1);
+            });
+        }
+
+        // start download
+        downloadS3Data();
+    });
+
+    grunt.registerTask("importGameDataPhone", function () {
+        // copy game content.dat
+        if (fs.existsSync(phonePath)) {
+            console.log("phone data exists");
+        } else {
+            console.error("Phone path dont exists", "'" + phonePath + "'");
+            console.log("Copy 'content.dat' into", "'" + hddPath + "'");
+            return;
+        }
+    });
+
+    grunt.registerTask("importGameDataRaw", function () {
+        var newContentPath = versionPath + "/all-in-one",
+            confPath = versionPath + "/content/conf"
+        ;
+
+        function copyAllToOne(){
+            if (fs.existsSync(confPath)) {
+                // make one content repository
+                console.log("Copy all dirs into one");
+                ensureDirectoryExistence(newContentPath + "/import.json");
+                var dirData = fs.readdirSync(versionPath);
+                for (var i in dirData) {
+                    var dir = dirData[i];
+                    if (dir !== "all-in-one"
+                        && dir !== "content"
+                        && fs.lstatSync(versionPath + "/" + dir).isDirectory()) {
+                        console.log("Copy: " + dir + " ...");
+                        fsExt.copySync(versionPath + "/" + dir, newContentPath)
+                    }
+                }
+                console.log("Copied all dirs to one", "'" + newContentPath + "'");
+            }
+        }
+
+        function copyDbtoImport(){
+            if (fs.existsSync(confPath)) {
+                // copy gamedata import dir
+                for (var i in filesOfGame) {
+                    var fileSrc = confPath + "/" + filesOfGame[i] + defaultExt,
+                        fileDest = "database/secret/" + gameVersion + "/" + filesOfGame[i] + defaultExt;
+                    fsExt.copySync(fileSrc, fileDest);
+                    console.log(fileDest + " copied...");
+                }
+            }
+        }
+
+        copyAllToOne();
+
+        copyDbtoImport();
+    });
 
     // rename ori files to json to parse via js
     grunt.registerTask("importConvertOri2Json", function () {
@@ -134,7 +295,7 @@ module.exports = function (grunt) {
     });
 
     // convert game data to trackmap data
-    grunt.registerTask("importGameData", function () {
+    grunt.registerTask("importGameDataViaJson", function () {
         require("json5/lib/require");
 
         var bikesJSON = require("../" + bikesFile + toExt),
