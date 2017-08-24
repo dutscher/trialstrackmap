@@ -1,2654 +1,3034 @@
 {
-  "devices": [
-    "Android",
-    "iOS"
-  ],
-  "teams": {
-    "Madhouse": [
-      {
-        "name": "VaNa91",
-        "dvce": 1
-      },
-      {
-        "name": "Andershwander",
-        "dvce": 0
-      },
-      {
-        "name": "Yozaan",
-        "dvce": 1
-      },
-      {
-        "name": "ericounet13",
-        "dvce": 0
-      },
-      {
-        "name": "tima____",
-        "dvce": 0
-      },
-      {
-        "name": "sulo996",
-        "dvce": 0
-      },
-      {
-        "name": "klowdos",
-        "dvce": 0
-      },
-      {
-        "name": "ashe7177",
-        "dvce": 1
-      },
-      {
-        "name": "geaton2014",
-        "dvce": 0
-      },
-      {
-        "name": "Bogzeus77",
-        "dvce": 0
-      }
+    "devices": [
+        "Android",
+        "iOS"
     ],
-    "Chilled Cliffs": [
-      {
-        "name": "RU-DarkNex-TFG",
-        "dvce": 1
-      },
-      {
-        "name": "UKR-VovaFrank",
-        "dvce": 1
-      },
-      {
-        "name": "Sinnerca",
-        "dvce": 0
-      },
-      {
-        "name": "trials-BR",
-        "dvce": 0
-      },
-      {
-        "name": "aldesiu",
-        "dvce": 0
-      },
-      {
-        "name": "Alexxxxxx112",
-        "dvce": 1
-      },
-      {
-        "name": "slettenn",
-        "dvce": 0
-      },
-      {
-        "name": "narasimman1987",
-        "dvce": 0
-      },
-      {
-        "name": "Symeon96",
-        "dvce": 0
-      },
-      {
-        "name": "Smeagol",
-        "dvce": 0
-      }
+    "prio": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63
     ],
-    "The Watchers": [
-      {
-        "name": "FR-LocKDowN",
-        "dvce": 1
-      },
-      {
-        "name": "Luk_PL-TFG",
-        "dvce": 0
-      },
-      {
-        "name": "LucidAndy",
-        "dvce": 0
-      },
-      {
-        "name": "QuaKRage",
-        "dvce": 1
-      },
-      {
-        "name": "Eagle2017",
-        "dvce": 0
-      },
-      {
-        "name": "machine4578",
-        "dvce": 0
-      },
-      {
-        "name": "Drizzt__1981",
-        "dvce": 1
-      },
-      {
-        "name": "Adan212",
-        "dvce": 1
-      },
-      {
-        "name": "albinoork",
-        "dvce": 1
-      },
-      {
-        "name": "Estevan",
-        "dvce": 1
-      }
-    ],
-    "Bunnyhops": [
-      {
-        "name": "Sl1mboy84.T3F",
-        "dvce": 0
-      },
-      {
-        "name": "MOB_SmoothE",
-        "dvce": 1
-      },
-      {
-        "name": "RF_Monkey",
-        "dvce": 1
-      },
-      {
-        "name": "Grennar_",
-        "dvce": 0
-      },
-      {
-        "name": "Gyo1205",
-        "dvce": 1
-      },
-      {
-        "name": "M4XE84",
-        "dvce": 1
-      },
-      {
-        "name": "RATTLEH34D",
-        "dvce": 0
-      },
-      {
-        "name": "sup3rfm",
-        "dvce": 1
-      },
-      {
-        "name": "GREZUR",
-        "dvce": 1
-      },
-      {
-        "name": "Borti",
-        "dvce": 0
-      }
-    ],
-    "Dust Bowls": [
-      {
-        "name": "CN-_-RogerLee",
-        "dvce": 1
-      },
-      {
-        "name": "X-MiSiU-X",
-        "dvce": 0
-      },
-      {
-        "name": "irish-man8",
-        "dvce": 0
-      },
-      {
-        "name": "henrikluplau",
-        "dvce": 1
-      },
-      {
-        "name": "stormius77",
-        "dvce": 0
-      },
-      {
-        "name": "lavuz_",
-        "dvce": 0
-      },
-      {
-        "name": "ziya7",
-        "dvce": 0
-      },
-      {
-        "name": "KiltedGamer71",
-        "dvce": 0
-      },
-      {
-        "name": "Doctorzed2017",
-        "dvce": 1
-      },
-      {
-        "name": "Dvlover",
-        "dvce": 0
-      }
-    ],
-    "The Mills": [
-      {
-        "name": "ImNesox",
-        "dvce": 1
-      },
-      {
-        "name": "CaptainYolo-TFG",
-        "dvce": 1
-      },
-      {
-        "name": "lembwil",
-        "dvce": 0
-      },
-      {
-        "name": "olegmogilev",
-        "dvce": 0
-      },
-      {
-        "name": "Mohamed-Shawky",
-        "dvce": 0
-      },
-      {
-        "name": "Vans66Man",
-        "dvce": 0
-      },
-      {
-        "name": "gabo188",
-        "dvce": 0
-      },
-      {
-        "name": "SoonerP1",
-        "dvce": 0
-      },
-      {
-        "name": "AngiiePT",
-        "dvce": 1
-      },
-      {
-        "name": "Birdman",
-        "dvce": 1
-      }
-    ],
-    "The Quagmires": [
-      {
-        "name": "carterclem7",
-        "dvce": 1
-      },
-      {
-        "name": "AFCV10",
-        "dvce": 0
-      },
-      {
-        "name": "natas.james.666",
-        "dvce": 0
-      },
-      {
-        "name": "jorgiinhuh",
-        "dvce": 1
-      },
-      {
-        "name": "BicoSan",
-        "dvce": 0
-      },
-      {
-        "name": "Virusolog1990",
-        "dvce": 0
-      },
-      {
-        "name": "CitBolonUa",
-        "dvce": 0
-      },
-      {
-        "name": "Rasim175",
-        "dvce": 0
-      },
-      {
-        "name": "FireBolt72184",
-        "dvce": 1
-      },
-      {
-        "name": "Driller",
-        "dvce": 0
-      }
-    ],
-    "Pumpkin Deserts": [
-      {
-        "name": "TR1N1DAD.T3F",
-        "dvce": 0
-      },
-      {
-        "name": "T0ppil4-TFG",
-        "dvce": 0
-      },
-      {
-        "name": "vistik1983",
-        "dvce": 0
-      },
-      {
-        "name": "Eikandeerus",
-        "dvce": 0
-      },
-      {
-        "name": "Tombaiyuh",
-        "dvce": 0
-      },
-      {
-        "name": "roler123",
-        "dvce": 0
-      },
-      {
-        "name": "emilepah",
-        "dvce": 1
-      },
-      {
-        "name": "Wolverine_d17",
-        "dvce": 1
-      },
-      {
-        "name": "Sourabh920",
-        "dvce": 0
-      },
-      {
-        "name": "Juny",
-        "dvce": 0
-      }
-    ],
-    "Flower Hills": [
-      {
-        "name": "USA-Mike_G-TFG",
-        "dvce": 1
-      },
-      {
-        "name": "NeetjeNL",
-        "dvce": 1
-      },
-      {
-        "name": "HU_HeroZero",
-        "dvce": 1
-      },
-      {
-        "name": "Raztopher",
-        "dvce": 1
-      },
-      {
-        "name": "SP-TORRICHI-TFG",
-        "dvce": 0
-      },
-      {
-        "name": "drewnel22",
-        "dvce": 0
-      },
-      {
-        "name": "jakes2016",
-        "dvce": 1
-      },
-      {
-        "name": "antsgtr",
-        "dvce": 0
-      },
-      {
-        "name": "guest-cNRw7b01",
-        "dvce": 1
-      },
-      {
-        "name": "Dson",
-        "dvce": 0
-      }
-    ],
-    "Pain Marsh": [
-      {
-        "name": "UK-BuRNZeE",
-        "dvce": 1
-      },
-      {
-        "name": "j.bajer250",
-        "dvce": 0
-      },
-      {
-        "name": "alexwach77",
-        "dvce": 1
-      },
-      {
-        "name": "BlazedRaider84",
-        "dvce": 1
-      },
-      {
-        "name": "GLUK_63_RUS",
-        "dvce": 0
-      },
-      {
-        "name": "wfiroz",
-        "dvce": 0
-      },
-      {
-        "name": "TraberT-",
-        "dvce": 0
-      },
-      {
-        "name": "easylife200",
-        "dvce": 0
-      },
-      {
-        "name": "jabels44",
-        "dvce": 1
-      },
-      {
-        "name": "Kensman",
-        "dvce": 0
-      }
-    ],
-    "Doom Drops": [
-      {
-        "name": "Panic_Switch",
-        "dvce": 0
-      },
-      {
-        "name": "Noohbh",
-        "dvce": 1
-      },
-      {
-        "name": "Affliction666",
-        "dvce": 0
-      },
-      {
-        "name": "johnny_sublime",
-        "dvce": 0
-      },
-      {
-        "name": "Obey_and_True",
-        "dvce": 0
-      },
-      {
-        "name": "CountProximo",
-        "dvce": 1
-      },
-      {
-        "name": "BajeBongo",
-        "dvce": 0
-      },
-      {
-        "name": "nusa3004",
-        "dvce": 1
-      },
-      {
-        "name": "sketchytech",
-        "dvce": 1
-      },
-      {
-        "name": "Sh4dowPT",
-        "dvce": 0
-      }
-    ],
-    "Terror Towers": [
-      {
-        "name": "AurisLT-TFG",
-        "dvce": 0
-      },
-      {
-        "name": "the1topgun",
-        "dvce": 0
-      },
-      {
-        "name": "Antwon0900",
-        "dvce": 0
-      },
-      {
-        "name": "EG-MeMo4CrImS",
-        "dvce": 0
-      },
-      {
-        "name": "foregolf72",
-        "dvce": 1
-      },
-      {
-        "name": "trackerpro17",
-        "dvce": 1
-      },
-      {
-        "name": "romanpavlyuk",
-        "dvce": 1
-      },
-      {
-        "name": "Strongchico",
-        "dvce": 0
-      },
-      {
-        "name": "lieutenantDanJR",
-        "dvce": 1
-      },
-      {
-        "name": "RawAnger00",
-        "dvce": 1
-      }
-    ],
-    "The Purifiers": [
-      {
-        "name": "Ghisone_T3F",
-        "dvce": 0
-      },
-      {
-        "name": "RedDevil-TFG",
-        "dvce": 0
-      },
-      {
-        "name": "DevSin-TFG",
-        "dvce": 0
-      },
-      {
-        "name": "MarcosSLB",
-        "dvce": 0
-      },
-      {
-        "name": "chrisrickson",
-        "dvce": 1
-      },
-      {
-        "name": "arturkungurov",
-        "dvce": 1
-      },
-      {
-        "name": "ppalinkas",
-        "dvce": 0
-      },
-      {
-        "name": "KBMBikes",
-        "dvce": 1
-      },
-      {
-        "name": "guest-6gs2zcUg",
-        "dvce": 1
-      },
-      {
-        "name": "Resurxtion",
-        "dvce": 0
-      }
-    ],
-    "Tree Houses": [
-      {
-        "name": "RF_alex88",
-        "dvce": 1
-      },
-      {
-        "name": "IT-pga777",
-        "dvce": 0
-      },
-      {
-        "name": "Nikc0506",
-        "dvce": 0
-      },
-      {
-        "name": "hogarek",
-        "dvce": 0
-      },
-      {
-        "name": "SametEkinci",
-        "dvce": 1
-      },
-      {
-        "name": "AlbiNoche10",
-        "dvce": 0
-      },
-      {
-        "name": "MikeJonesz14",
-        "dvce": 0
-      },
-      {
-        "name": "v-12345",
-        "dvce": 0
-      },
-      {
-        "name": "Norbi0314",
-        "dvce": 0
-      },
-      {
-        "name": "dogtrail",
-        "dvce": 0
-      }
-    ],
-    "Troll Lairs": [
-      {
-        "name": "IT-polTFG",
-        "dvce": 1
-      },
-      {
-        "name": "olegbegamentov",
-        "dvce": 0
-      },
-      {
-        "name": "Prometheus_TFG",
-        "dvce": 1
-      },
-      {
-        "name": "h0kkis",
-        "dvce": 0
-      },
-      {
-        "name": "Ghozgul",
-        "dvce": 0
-      },
-      {
-        "name": "elygaz",
-        "dvce": 0
-      },
-      {
-        "name": "bearpower1990",
-        "dvce": 0
-      },
-      {
-        "name": "Hujkis",
-        "dvce": 0
-      },
-      {
-        "name": "ibzyhararwala",
-        "dvce": 0
-      },
-      {
-        "name": "Youu_Wrongun",
-        "dvce": 1
-      }
-    ],
-    "Widowmakers": [
-      {
-        "name": "mashpotato-TFG",
-        "dvce": 1
-      },
-      {
-        "name": "dozia72",
-        "dvce": 1
-      },
-      {
-        "name": "legolas.mcm",
-        "dvce": 0
-      },
-      {
-        "name": "nigh1mare",
-        "dvce": 1
-      },
-      {
-        "name": "simlive",
-        "dvce": 0
-      },
-      {
-        "name": "AnimalF123",
-        "dvce": 1
-      },
-      {
-        "name": "hodgelc",
-        "dvce": 1
-      },
-      {
-        "name": "angelo4ek89",
-        "dvce": 0
-      },
-      {
-        "name": "capobuster",
-        "dvce": 0
-      },
-      {
-        "name": "rolo15mc",
-        "dvce": 1
-      }
-    ],
-    "Burning Bushes": [
-      {
-        "name": "NL-CasperH",
-        "dvce": 1
-      },
-      {
-        "name": "Clapper316-TFG",
-        "dvce": 1
-      },
-      {
-        "name": "Akrasiia",
-        "dvce": 0
-      },
-      {
-        "name": "Jaybone2323",
-        "dvce": 1
-      },
-      {
-        "name": "EvanRay2",
-        "dvce": 1
-      },
-      {
-        "name": "Shaxio",
-        "dvce": 0
-      },
-      {
-        "name": "carstenhagedorn",
-        "dvce": 0
-      },
-      {
-        "name": "panahss",
-        "dvce": 0
-      },
-      {
-        "name": "RED-SUN41",
-        "dvce": 1
-      },
-      {
-        "name": "jimmybones420",
-        "dvce": 0
-      }
-    ],
-    "Razor Dunes": [
-      {
-        "name": "GTdave",
-        "dvce": 0
-      },
-      {
-        "name": "Vicenteag73-TFG",
-        "dvce": 0
-      },
-      {
-        "name": "uGotBrained",
-        "dvce": 0
-      },
-      {
-        "name": "SexyExi",
-        "dvce": 0
-      },
-      {
-        "name": "cernis79",
-        "dvce": 0
-      },
-      {
-        "name": "Mannbo22",
-        "dvce": 1
-      },
-      {
-        "name": "emeninomenina",
-        "dvce": 0
-      },
-      {
-        "name": "LoadexCA",
-        "dvce": 1
-      },
-      {
-        "name": "GoMSU420",
-        "dvce": 0
-      },
-      {
-        "name": "ale007592",
-        "dvce": 0
-      }
-    ],
-    "Mud Cakes": [
-      {
-        "name": "CZE-pekso-TFG",
-        "dvce": 1
-      },
-      {
-        "name": "frvhj",
-        "dvce": 0
-      },
-      {
-        "name": "scamp115",
-        "dvce": 0
-      },
-      {
-        "name": "Joe_Regular",
-        "dvce": 0
-      },
-      {
-        "name": "kiriak7",
-        "dvce": 0
-      },
-      {
-        "name": "doubleagentdogs",
-        "dvce": 0
-      },
-      {
-        "name": "Koukas85",
-        "dvce": 0
-      },
-      {
-        "name": "Egor12344321",
-        "dvce": 0
-      },
-      {
-        "name": "kow1984",
-        "dvce": 1
-      },
-      {
-        "name": "PaulBlackStar",
-        "dvce": 1
-      }
-    ],
-    "The Stacks": [
-      {
-        "name": "TM_zauralec_GT",
-        "dvce": 0
-      },
-      {
-        "name": "tealbutt",
-        "dvce": 1
-      },
-      {
-        "name": "JerichoHHR",
-        "dvce": 0
-      },
-      {
-        "name": "VK.DensiusIII",
-        "dvce": 1
-      },
-      {
-        "name": "koozzzz",
-        "dvce": 0
-      },
-      {
-        "name": "TwelvPAK",
-        "dvce": 1
-      },
-      {
-        "name": "shaynes28",
-        "dvce": 1
-      },
-      {
-        "name": "FastSirleon",
-        "dvce": 0
-      },
-      {
-        "name": "RyaRaj95",
-        "dvce": 1
-      },
-      {
-        "name": "Misael620",
-        "dvce": 0
-      }
-    ],
-    "Flooded Highways": [
-      {
-        "name": "roll_cyril",
-        "dvce": 0
-      },
-      {
-        "name": "adrienaz",
-        "dvce": 1
-      },
-      {
-        "name": "SweatyPalms-TFG",
-        "dvce": 0
-      },
-      {
-        "name": "VasAkos1",
-        "dvce": 0
-      },
-      {
-        "name": "OrdasOri",
-        "dvce": 0
-      },
-      {
-        "name": "Butterbreadjam",
-        "dvce": 0
-      },
-      {
-        "name": "elcrecido",
-        "dvce": 0
-      },
-      {
-        "name": "NorbertoRus",
-        "dvce": 0
-      },
-      {
-        "name": "denis333989",
-        "dvce": 0
-      },
-      {
-        "name": "tul33",
-        "dvce": 1
-      }
-    ],
-    "The Naughty Lists": [
-      {
-        "name": "bigB0NER",
-        "dvce": 1
-      },
-      {
-        "name": "xitooner",
-        "dvce": 1
-      },
-      {
-        "name": "kyleplaysguitar",
-        "dvce": 1
-      },
-      {
-        "name": "Salapoliisi",
-        "dvce": 1
-      },
-      {
-        "name": "Hcmmx",
-        "dvce": 0
-      },
-      {
-        "name": "erichryan",
-        "dvce": 0
-      },
-      {
-        "name": "mattwarnert",
-        "dvce": 1
-      },
-      {
-        "name": "Thanatan777",
-        "dvce": 0
-      },
-      {
-        "name": "dwightc8787",
-        "dvce": 0
-      },
-      {
-        "name": "Darkovia01",
-        "dvce": 0
-      }
-    ],
-    "Market Streets": [
-      {
-        "name": "RF_Mortiferus",
-        "dvce": 1
-      },
-      {
-        "name": "motoaxe1",
-        "dvce": 0
-      },
-      {
-        "name": "farns_needchips",
-        "dvce": 1
-      },
-      {
-        "name": "bmbigpapa",
-        "dvce": 1
-      },
-      {
-        "name": "Bert868",
-        "dvce": 0
-      },
-      {
-        "name": "dARoBRr2015",
-        "dvce": 1
-      },
-      {
-        "name": "torbenhansen520",
-        "dvce": 1
-      },
-      {
-        "name": "CLK",
-        "dvce": 1
-      },
-      {
-        "name": "torpeda900319",
-        "dvce": 0
-      },
-      {
-        "name": "DBKilla21",
-        "dvce": 1
-      }
-    ],
-    "Steeple Runs": [
-      {
-        "name": "Efikas.t3f",
-        "dvce": 0
-      },
-      {
-        "name": "vorchezz",
-        "dvce": 0
-      },
-      {
-        "name": "moofecker",
-        "dvce": 0
-      },
-      {
-        "name": "rizeavlad",
-        "dvce": 0
-      },
-      {
-        "name": "Dundee3OOO",
-        "dvce": 0
-      },
-      {
-        "name": "MongarEric",
-        "dvce": 0
-      },
-      {
-        "name": "Farmshow",
-        "dvce": 0
-      },
-      {
-        "name": "Velham",
-        "dvce": 1
-      },
-      {
-        "name": "shanemiller7923",
-        "dvce": 1
-      },
-      {
-        "name": "Jamskywalker",
-        "dvce": 1
-      }
-    ],
-    "Dark Sands": [
-      {
-        "name": "Martimen2-TFG",
-        "dvce": 1
-      },
-      {
-        "name": "TM_mr.termit_GT",
-        "dvce": 0
-      },
-      {
-        "name": "Vrost_",
-        "dvce": 0
-      },
-      {
-        "name": "JTANK0427",
-        "dvce": 1
-      },
-      {
-        "name": "Ale_616_TFG",
-        "dvce": 0
-      },
-      {
-        "name": "ernie_mcraken",
-        "dvce": 1
-      },
-      {
-        "name": "majak-02",
-        "dvce": 0
-      },
-      {
-        "name": "BLaZe3458",
-        "dvce": 0
-      },
-      {
-        "name": "Austinchappell",
-        "dvce": 1
-      },
-      {
-        "name": "S4n4th",
-        "dvce": 0
-      }
-    ],
-    "Fest Mines": [
-      {
-        "name": "suicyco-TFG",
-        "dvce": 0
-      },
-      {
-        "name": "Malr0g-TFG",
-        "dvce": 0
-      },
-      {
-        "name": "ninjacrog",
-        "dvce": 0
-      },
-      {
-        "name": "mikus.miesnieks",
-        "dvce": 0
-      },
-      {
-        "name": "Holodek",
-        "dvce": 1
-      },
-      {
-        "name": "akiranava",
-        "dvce": 1
-      },
-      {
-        "name": "jejekawa",
-        "dvce": 0
-      },
-      {
-        "name": "kristaps_r",
-        "dvce": 0
-      },
-      {
-        "name": "Samuel23341",
-        "dvce": 0
-      },
-      {
-        "name": "Seneca986",
-        "dvce": 1
-      }
-    ],
-    "Squall Slides": [
-      {
-        "name": "JamesBlackout",
-        "dvce": 0
-      },
-      {
-        "name": "fulvioramos",
-        "dvce": 1
-      },
-      {
-        "name": "calinbasturea22",
-        "dvce": 1
-      },
-      {
-        "name": "vlait15",
-        "dvce": 0
-      },
-      {
-        "name": "Tjerk.Drouen",
-        "dvce": 0
-      },
-      {
-        "name": "rafarosselfa",
-        "dvce": 0
-      },
-      {
-        "name": "markd2014",
-        "dvce": 1
-      },
-      {
-        "name": "Aapeli013",
-        "dvce": 0
-      },
-      {
-        "name": "basje113",
-        "dvce": 1
-      },
-      {
-        "name": "Hero1381",
-        "dvce": 1
-      }
-    ],
-    "Smelting Pots": [
-      {
-        "name": "LinkinJon-TFG",
-        "dvce": 1
-      },
-      {
-        "name": "justinman114",
-        "dvce": 0
-      },
-      {
-        "name": "Sleepy_Teepy",
-        "dvce": 0
-      },
-      {
-        "name": "BigRichReviews",
-        "dvce": 0
-      },
-      {
-        "name": "RusteeNutz",
-        "dvce": 1
-      },
-      {
-        "name": "majkl17111",
-        "dvce": 0
-      },
-      {
-        "name": "Viper5741_TFG",
-        "dvce": 0
-      },
-      {
-        "name": "Gexxaro",
-        "dvce": 0
-      },
-      {
-        "name": "OnkelVagn",
-        "dvce": 1
-      },
-      {
-        "name": "Whirlwind21",
-        "dvce": 0
-      }
-    ],
-    "The Pendulums": [
-      {
-        "name": "TrialsWave-TFG",
-        "dvce": 0
-      },
-      {
-        "name": "F0RTYxSEVEN",
-        "dvce": 0
-      },
-      {
-        "name": "djosiahr",
-        "dvce": 1
-      },
-      {
-        "name": "TheWurmyz",
-        "dvce": 1
-      },
-      {
-        "name": "SprinterTavares",
-        "dvce": 0
-      },
-      {
-        "name": "Milind1511",
-        "dvce": 1
-      },
-      {
-        "name": "tahahussain2016",
-        "dvce": 0
-      },
-      {
-        "name": "vctomazi",
-        "dvce": 1
-      },
-      {
-        "name": "KrisC1",
-        "dvce": 0
-      },
-      {
-        "name": "SillverDX",
-        "dvce": 0
-      }
-    ],
-    "The Arches": [
-      {
-        "name": "mccrackenryan",
-        "dvce": 1
-      },
-      {
-        "name": "IDN-Suryajaya",
-        "dvce": 1
-      },
-      {
-        "name": "Szary.86",
-        "dvce": 0
-      },
-      {
-        "name": "tombobone",
-        "dvce": 0
-      },
-      {
-        "name": "sklepretro",
-        "dvce": 0
-      },
-      {
-        "name": "Rubic9n",
-        "dvce": 1
-      },
-      {
-        "name": "kvartira0512",
-        "dvce": 1
-      },
-      {
-        "name": "agudo777",
-        "dvce": 1
-      },
-      {
-        "name": "marcel_nl34",
-        "dvce": 1
-      },
-      {
-        "name": "Speed69Freek69",
-        "dvce": 0
-      }
-    ],
-    "Trojan Giraffes": [
-      {
-        "name": "RUS-Bostan",
-        "dvce": 0
-      },
-      {
-        "name": "Surf-tiki_TFG",
-        "dvce": 0
-      },
-      {
-        "name": "andrewespinal7",
-        "dvce": 1
-      },
-      {
-        "name": "ehud1304",
-        "dvce": 0
-      },
-      {
-        "name": "goglo",
-        "dvce": 0
-      },
-      {
-        "name": "UKR-Vinchenco",
-        "dvce": 1
-      },
-      {
-        "name": "HmaduraD",
-        "dvce": 0
-      },
-      {
-        "name": "Fakerah",
-        "dvce": 1
-      },
-      {
-        "name": "Kc1266",
-        "dvce": 1
-      },
-      {
-        "name": "djfrog57",
-        "dvce": 1
-      }
-    ],
-    "The Shafts": [
-      {
-        "name": "The_Kings_Lair",
-        "dvce": 1
-      },
-      {
-        "name": "Noxamus",
-        "dvce": 0
-      },
-      {
-        "name": "idahoTF",
-        "dvce": 0
-      },
-      {
-        "name": "GER-Miller",
-        "dvce": 1
-      },
-      {
-        "name": "juliomguerreiro",
-        "dvce": 0
-      },
-      {
-        "name": "ctheunicorn",
-        "dvce": 0
-      },
-      {
-        "name": "Jewboy81",
-        "dvce": 1
-      },
-      {
-        "name": "dnz15",
-        "dvce": 0
-      },
-      {
-        "name": "Brycerboy12",
-        "dvce": 1
-      },
-      {
-        "name": "pandamanxv3",
-        "dvce": 0
-      }
-    ],
-    "Vagrant Camps": [
-      {
-        "name": "WastedZymbol",
-        "dvce": 0
-      },
-      {
-        "name": "Brinik80",
-        "dvce": 1
-      },
-      {
-        "name": "menso91",
-        "dvce": 0
-      },
-      {
-        "name": "Kneepsteegje",
-        "dvce": 1
-      },
-      {
-        "name": "bradlynch549",
-        "dvce": 1
-      },
-      {
-        "name": "Julian_Hermaaz",
-        "dvce": 0
-      },
-      {
-        "name": "TateWolfGang",
-        "dvce": 1
-      },
-      {
-        "name": "elinoxyl",
-        "dvce": 1
-      },
-      {
-        "name": "Bergelius",
-        "dvce": 0
-      },
-      {
-        "name": "SNoWNooBYT",
-        "dvce": 0
-      }
-    ],
-    "Lazy Catapults": [
-      {
-        "name": "Sandholm",
-        "dvce": 0
-      },
-      {
-        "name": "Dvori159",
-        "dvce": 0
-      },
-      {
-        "name": "tdm1018",
-        "dvce": 0
-      },
-      {
-        "name": "HeaverBeaver115",
-        "dvce": 0
-      },
-      {
-        "name": "kimtwo119",
-        "dvce": 1
-      },
-      {
-        "name": "TheTom14",
-        "dvce": 1
-      },
-      {
-        "name": "StaraSzatana",
-        "dvce": 0
-      },
-      {
-        "name": "rudeecho",
-        "dvce": 0
-      },
-      {
-        "name": "danitrapella",
-        "dvce": 1
-      },
-      {
-        "name": "Benji5114",
-        "dvce": 0
-      }
-    ],
-    "Frost Carnivals": [
-      {
-        "name": "FR-Dodo44",
-        "dvce": 1
-      },
-      {
-        "name": "fing451-_",
-        "dvce": 1
-      },
-      {
-        "name": "deloefke88",
-        "dvce": 1
-      },
-      {
-        "name": "Ulqiorra-Cifer",
-        "dvce": 0
-      },
-      {
-        "name": "Depo-dave",
-        "dvce": 1
-      },
-      {
-        "name": "konstantin4zi",
-        "dvce": 0
-      },
-      {
-        "name": "AlexYaremenko",
-        "dvce": 0
-      },
-      {
-        "name": "Bace250",
-        "dvce": 1
-      },
-      {
-        "name": "CrushGM",
-        "dvce": 0
-      },
-      {
-        "name": "Marth2241",
-        "dvce": 1
-      }
-    ],
-    "The Waterwheels": [
-      {
-        "name": "dutscher-DE",
-        "dvce": 0
-      },
-      {
-        "name": "Rosie2353",
-        "dvce": 1
-      },
-      {
-        "name": "ashbyboulware",
-        "dvce": 0
-      },
-      {
-        "name": "Bhgprox",
-        "dvce": 0
-      },
-      {
-        "name": "PowderJess",
-        "dvce": 1
-      },
-      {
-        "name": "U_BOHICA",
-        "dvce": 1
-      },
-      {
-        "name": "gregbalu",
-        "dvce": 0
-      },
-      {
-        "name": "nitin2705",
-        "dvce": 0
-      },
-      {
-        "name": "Adventer14",
-        "dvce": 1
-      },
-      {
-        "name": "TOMTOM91420",
-        "dvce": 0
-      }
-    ],
-    "Leaping Hollows": [
-      {
-        "name": "NSP_I_VeNoMz",
-        "dvce": 0
-      },
-      {
-        "name": "CHuRcH75",
-        "dvce": 1
-      },
-      {
-        "name": "prelude92",
-        "dvce": 1
-      },
-      {
-        "name": "Ind-Rellik",
-        "dvce": 1
-      },
-      {
-        "name": "WickedRichy",
-        "dvce": 0
-      },
-      {
-        "name": "andreasdnolsoe",
-        "dvce": 1
-      },
-      {
-        "name": "catalist2016",
-        "dvce": 1
-      },
-      {
-        "name": "xXpepeguichoXx",
-        "dvce": 1
-      },
-      {
-        "name": "Sir-uHkBu3uToP",
-        "dvce": 1
-      },
-      {
-        "name": "x1JORDAN8x",
-        "dvce": 0
-      }
-    ],
-    "Ice Blockades": [
-      {
-        "name": "DonaldM-TFG",
-        "dvce": 1
-      },
-      {
-        "name": "TreSover",
-        "dvce": 1
-      },
-      {
-        "name": "UA_FANAT_TM",
-        "dvce": 0
-      },
-      {
-        "name": "DylanDeMorte",
-        "dvce": 1
-      },
-      {
-        "name": "M0h4mmed-1",
-        "dvce": 0
-      },
-      {
-        "name": "dee666apex",
-        "dvce": 0
-      },
-      {
-        "name": "muuted",
-        "dvce": 1
-      },
-      {
-        "name": "Daaaaaante",
-        "dvce": 0
-      },
-      {
-        "name": "guest-rB52uoTO",
-        "dvce": 0
-      },
-      {
-        "name": "Antoine638",
-        "dvce": 0
-      }
-    ],
-    "Garbage Routes": [
-      {
-        "name": "Ritch_M",
-        "dvce": 1
-      },
-      {
-        "name": "DISTURB3D-TFG",
-        "dvce": 0
-      },
-      {
-        "name": "ziga.budja",
-        "dvce": 0
-      },
-      {
-        "name": "Harzer12",
-        "dvce": 0
-      },
-      {
-        "name": "johnthompson902",
-        "dvce": 1
-      },
-      {
-        "name": "FRA.B",
-        "dvce": 0
-      },
-      {
-        "name": "Cristian-924",
-        "dvce": 0
-      },
-      {
-        "name": "SVPDexplorer821",
-        "dvce": 0
-      },
-      {
-        "name": "Jabba2.0",
-        "dvce": 1
-      },
-      {
-        "name": "jorgi3s",
-        "dvce": 1
-      }
-    ],
-    "Risky Rooftops": [
-      {
-        "name": "d34dstr0k3",
-        "dvce": 1
-      },
-      {
-        "name": "MrCleanXXIV_TFG",
-        "dvce": 0
-      },
-      {
-        "name": "IT-L3L3B33R-TFG",
-        "dvce": 0
-      },
-      {
-        "name": "JackDan1975",
-        "dvce": 0
-      },
-      {
-        "name": "phillipwinne1",
-        "dvce": 1
-      },
-      {
-        "name": "yumkaimun",
-        "dvce": 0
-      },
-      {
-        "name": "Lindsay795",
-        "dvce": 1
-      },
-      {
-        "name": "tripdog1985",
-        "dvce": 0
-      },
-      {
-        "name": "renatospacheco_",
-        "dvce": 0
-      },
-      {
-        "name": "BabyGiirl_",
-        "dvce": 1
-      }
-    ],
-    "The Big Swings": [
-      {
-        "name": "NOBBYHOBSON",
-        "dvce": 0
-      },
-      {
-        "name": "Xero44",
-        "dvce": 1
-      },
-      {
-        "name": "JPN-Yoshiki-TGG",
-        "dvce": 1
-      },
-      {
-        "name": "Watchdogs2King",
-        "dvce": 1
-      },
-      {
-        "name": "makadalu",
-        "dvce": 1
-      },
-      {
-        "name": "sosna09876",
-        "dvce": 0
-      },
-      {
-        "name": "vballgod",
-        "dvce": 1
-      },
-      {
-        "name": "Loko994",
-        "dvce": 0
-      },
-      {
-        "name": "teleevrey96",
-        "dvce": 0
-      },
-      {
-        "name": "flambobanana",
-        "dvce": 0
-      }
-    ],
-    "Buzzsaw Paradise": [
-      {
-        "name": "slangen.nfs",
-        "dvce": 1
-      },
-      {
-        "name": "doinkmelon",
-        "dvce": 1
-      },
-      {
-        "name": "JMCinAZ1",
-        "dvce": 1
-      },
-      {
-        "name": "demoninthesac",
-        "dvce": 0
-      },
-      {
-        "name": "buffonada",
-        "dvce": 0
-      },
-      {
-        "name": "ntaylor1002",
-        "dvce": 1
-      },
-      {
-        "name": "nagymisike123",
-        "dvce": 0
-      },
-      {
-        "name": "Ammahoy",
-        "dvce": 1
-      },
-      {
-        "name": "makis1983",
-        "dvce": 1
-      },
-      {
-        "name": "k07091962",
-        "dvce": 1
-      }
-    ],
-    "Great Walls": [
-      {
-        "name": "Gustavo-AS",
-        "dvce": 0
-      },
-      {
-        "name": "ambsan47",
-        "dvce": 0
-      },
-      {
-        "name": "chrismitchebNhy",
-        "dvce": 0
-      },
-      {
-        "name": "alexmacdek",
-        "dvce": 1
-      },
-      {
-        "name": "gsc-peacemaker",
-        "dvce": 0
-      },
-      {
-        "name": "adduthie",
-        "dvce": 0
-      },
-      {
-        "name": "q234rrh6",
-        "dvce": 0
-      },
-      {
-        "name": "w00dyw",
-        "dvce": 1
-      },
-      {
-        "name": "Gigavolt_2015",
-        "dvce": 0
-      },
-      {
-        "name": "Phodeflexian",
-        "dvce": 1
-      }
-    ],
-    "Muddy Mounds": [
-      {
-        "name": "Clowninaround27",
-        "dvce": 1
-      },
-      {
-        "name": "hikasrams",
-        "dvce": 0
-      },
-      {
-        "name": "pimedusessah",
-        "dvce": 0
-      },
-      {
-        "name": "TURBOSLOAN",
-        "dvce": 1
-      },
-      {
-        "name": "abhazelton",
-        "dvce": 0
-      },
-      {
-        "name": "Nine1909",
-        "dvce": 0
-      },
-      {
-        "name": "poupakisd",
-        "dvce": 0
-      },
-      {
-        "name": "JohhnyAce",
-        "dvce": 0
-      },
-      {
-        "name": "ILm4s",
-        "dvce": 0
-      },
-      {
-        "name": "guest-faSXUQ1c",
-        "dvce": 0
-      }
-    ],
-    "The Tanktops": [
-      {
-        "name": "Spr1te_BY",
-        "dvce": 0
-      },
-      {
-        "name": "WonkyJon-TFG",
-        "dvce": 1
-      },
-      {
-        "name": "BigLiberty",
-        "dvce": 1
-      },
-      {
-        "name": "Bananix1975",
-        "dvce": 1
-      },
-      {
-        "name": "nebish007",
-        "dvce": 1
-      },
-      {
-        "name": "SaRCaZTiQ",
-        "dvce": 0
-      },
-      {
-        "name": "alinuyan",
-        "dvce": 0
-      },
-      {
-        "name": "PVTPOUNDER1",
-        "dvce": 1
-      },
-      {
-        "name": "pjwillard",
-        "dvce": 0
-      },
-      {
-        "name": "Mr_Ted12",
-        "dvce": 0
-      }
-    ],
-    "Spider Kingdoms": [
-      {
-        "name": "MY-AKU-CENDAWAN",
-        "dvce": 0
-      },
-      {
-        "name": "risolutore1981",
-        "dvce": 1
-      },
-      {
-        "name": "MorbidWolf666",
-        "dvce": 0
-      },
-      {
-        "name": "redcow2015",
-        "dvce": 0
-      },
-      {
-        "name": "Hanks420",
-        "dvce": 1
-      },
-      {
-        "name": "Flyin-Finn",
-        "dvce": 1
-      },
-      {
-        "name": "alponat",
-        "dvce": 1
-      },
-      {
-        "name": "mr.kotol",
-        "dvce": 1
-      },
-      {
-        "name": "alexathena",
-        "dvce": 1
-      },
-      {
-        "name": "cbies4",
-        "dvce": 0
-      }
-    ],
-    "Cracked Plateaus": [
-      {
-        "name": "AkEyE",
-        "dvce": 0
-      },
-      {
-        "name": "marcelloluce90",
-        "dvce": 1
-      },
-      {
-        "name": "Morillias",
-        "dvce": 1
-      },
-      {
-        "name": "MonsterScreamo",
-        "dvce": 0
-      },
-      {
-        "name": "PL-sh4gyy-TFG",
-        "dvce": 0
-      },
-      {
-        "name": "konopec",
-        "dvce": 0
-      },
-      {
-        "name": "Shevchukovich",
-        "dvce": 1
-      },
-      {
-        "name": "bjgord04",
-        "dvce": 0
-      },
-      {
-        "name": "guest-bRVt61Zb",
-        "dvce": 1
-      },
-      {
-        "name": "Ed854",
-        "dvce": 1
-      }
-    ],
-    "Villainous Hideouts": [
-      {
-        "name": "NOR-Nicolai-TFG",
-        "dvce": 1
-      },
-      {
-        "name": "FatalDragon69",
-        "dvce": 0
-      },
-      {
-        "name": "L2CL2C",
-        "dvce": 1
-      },
-      {
-        "name": "godlesplay",
-        "dvce": 0
-      },
-      {
-        "name": "Gonasvay",
-        "dvce": 1
-      },
-      {
-        "name": "xratedfraggle",
-        "dvce": 0
-      },
-      {
-        "name": "gtemi",
-        "dvce": 1
-      },
-      {
-        "name": "TheNforcer282",
-        "dvce": 1
-      },
-      {
-        "name": "mihsan_kama",
-        "dvce": 0
-      },
-      {
-        "name": "alshayea87kw",
-        "dvce": 0
-      }
-    ],
-    "Open Jaw Bogs": [
-      {
-        "name": "CostasV2",
-        "dvce": 1
-      },
-      {
-        "name": "billock11",
-        "dvce": 0
-      },
-      {
-        "name": "Royke1983",
-        "dvce": 0
-      },
-      {
-        "name": "Devon-UK",
-        "dvce": 0
-      },
-      {
-        "name": "stachemob-TFG",
-        "dvce": 1
-      },
-      {
-        "name": "kingsalmon67",
-        "dvce": 0
-      },
-      {
-        "name": "raul-herrera-87",
-        "dvce": 1
-      },
-      {
-        "name": "ConKeeper68",
-        "dvce": 0
-      },
-      {
-        "name": "Netoelo",
-        "dvce": 0
-      },
-      {
-        "name": "BaLaMuT-KRUA",
-        "dvce": 1
-      }
-    ],
-    "Desert Gondolas": [
-      {
-        "name": "Klawd_",
-        "dvce": 1
-      },
-      {
-        "name": "retrogamerjp",
-        "dvce": 1
-      },
-      {
-        "name": "asaichenko",
-        "dvce": 0
-      },
-      {
-        "name": "BazZz_hc",
-        "dvce": 0
-      },
-      {
-        "name": "Pini94",
-        "dvce": 0
-      },
-      {
-        "name": "NubNub1978",
-        "dvce": 0
-      },
-      {
-        "name": "ViceMassacre",
-        "dvce": 0
-      },
-      {
-        "name": "ElGringoMatteo",
-        "dvce": 0
-      },
-      {
-        "name": "Grayfox059",
-        "dvce": 0
-      },
-      {
-        "name": "Momoiro_Rei",
-        "dvce": 0
-      }
-    ],
-    "Lost Descents": [
-      {
-        "name": "XxvvJayvvxX",
-        "dvce": 1
-      },
-      {
-        "name": "kamilus26",
-        "dvce": 0
-      },
-      {
-        "name": "JEDLNC-TFG",
-        "dvce": 1
-      },
-      {
-        "name": "irenapappova",
-        "dvce": 0
-      },
-      {
-        "name": "baloo254",
-        "dvce": 0
-      },
-      {
-        "name": "ivan192014",
-        "dvce": 0
-      },
-      {
-        "name": "imaks3d2014",
-        "dvce": 1
-      },
-      {
-        "name": "josipbrozunama",
-        "dvce": 0
-      },
-      {
-        "name": "ReZerVaT",
-        "dvce": 0
-      },
-      {
-        "name": "WrightSupremacy",
-        "dvce": 0
-      }
-    ],
-    "Pipeline Camps": [
-      {
-        "name": "PL-k4kshi-TFG",
-        "dvce": 0
-      },
-      {
-        "name": "pbjunk",
-        "dvce": 1
-      },
-      {
-        "name": "tema_2700",
-        "dvce": 0
-      },
-      {
-        "name": "RoYaL-TFG",
-        "dvce": 1
-      },
-      {
-        "name": "guiprimus",
-        "dvce": 0
-      },
-      {
-        "name": "CaptTurgidII",
-        "dvce": 0
-      },
-      {
-        "name": "Pytzek",
-        "dvce": 0
-      },
-      {
-        "name": "Raph386",
-        "dvce": 0
-      },
-      {
-        "name": "Stacksen",
-        "dvce": 1
-      },
-      {
-        "name": "TheMastodon13",
-        "dvce": 1
-      }
-    ],
-    "Snowball Rides": [
-      {
-        "name": "tha_hoff",
-        "dvce": 1
-      },
-      {
-        "name": "flooodi-TFG",
-        "dvce": 0
-      },
-      {
-        "name": "ACE135-TFG",
-        "dvce": 1
-      },
-      {
-        "name": "Tom7036",
-        "dvce": 1
-      },
-      {
-        "name": "Shebis_ru_TF",
-        "dvce": 0
-      },
-      {
-        "name": "CipiO",
-        "dvce": 0
-      },
-      {
-        "name": "zero_o11ze",
-        "dvce": 1
-      },
-      {
-        "name": "brettfrank",
-        "dvce": 1
-      },
-      {
-        "name": "Bronc_Stomper",
-        "dvce": 1
-      },
-      {
-        "name": "emilianomateo35",
-        "dvce": 0
-      }
-    ],
-    "Barren Steps": [
-      {
-        "name": "AngeloKaulas21",
-        "dvce": 0
-      },
-      {
-        "name": "rmelliott81",
-        "dvce": 1
-      },
-      {
-        "name": "Sardius77-TFG",
-        "dvce": 1
-      },
-      {
-        "name": "GunnarKaiken",
-        "dvce": 1
-      },
-      {
-        "name": "CRU55E",
-        "dvce": 0
-      },
-      {
-        "name": "ackwell...",
-        "dvce": 0
-      },
-      {
-        "name": "ihalmaghi",
-        "dvce": 0
-      },
-      {
-        "name": "vyrgus",
-        "dvce": 0
-      },
-      {
-        "name": "guest-REAajMPH",
-        "dvce": 1
-      },
-      {
-        "name": "realmadrid.kaka",
-        "dvce": 0
-      }
-    ],
-    "Abandoned Mines": [
-      {
-        "name": "Dmac3221",
-        "dvce": 1
-      },
-      {
-        "name": "Vinny-Zl",
-        "dvce": 0
-      },
-      {
-        "name": "Xevila-TFG",
-        "dvce": 0
-      },
-      {
-        "name": "DjZepolim",
-        "dvce": 1
-      },
-      {
-        "name": "maxsw81",
-        "dvce": 0
-      },
-      {
-        "name": "russfromkrg",
-        "dvce": 0
-      },
-      {
-        "name": "Bobajzs.cz",
-        "dvce": 0
-      },
-      {
-        "name": "Asrailbr",
-        "dvce": 0
-      },
-      {
-        "name": "Mariano841",
-        "dvce": 0
-      },
-      {
-        "name": "bigGUNN1286",
-        "dvce": 0
-      }
-    ],
-    "Choking Hazards": [
-      {
-        "name": "YojimBob-TFG",
-        "dvce": 0
-      },
-      {
-        "name": "CraZywiZom",
-        "dvce": 1
-      },
-      {
-        "name": "MrVolt1",
-        "dvce": 1
-      },
-      {
-        "name": "donkey-TFG",
-        "dvce": 0
-      },
-      {
-        "name": "AllSider",
-        "dvce": 1
-      },
-      {
-        "name": "yobremmurd",
-        "dvce": 1
-      },
-      {
-        "name": "ZekesDad40",
-        "dvce": 1
-      },
-      {
-        "name": "knucklehead692",
-        "dvce": 0
-      },
-      {
-        "name": "lord6779",
-        "dvce": 0
-      },
-      {
-        "name": "David-Jezz",
-        "dvce": 0
-      }
-    ],
-    "Coaster Canyons": [
-      {
-        "name": "Cocheesee",
-        "dvce": 1
-      },
-      {
-        "name": "Blaz1ngFury-TFG",
-        "dvce": 1
-      },
-      {
-        "name": "TheNinja2016",
-        "dvce": 0
-      },
-      {
-        "name": "Yaum77",
-        "dvce": 0
-      },
-      {
-        "name": "svetik015",
-        "dvce": 0
-      },
-      {
-        "name": "Massimiliano660",
-        "dvce": 0
-      },
-      {
-        "name": "MightyTimeCop",
-        "dvce": 0
-      },
-      {
-        "name": "Quasar714",
-        "dvce": 0
-      },
-      {
-        "name": "gkthn06",
-        "dvce": 0
-      },
-      {
-        "name": "Bublex1",
-        "dvce": 0
-      }
-    ],
-    "Devil Hoppers": [
-      {
-        "name": "azerty34000",
-        "dvce": 1
-      },
-      {
-        "name": "IT-Karma",
-        "dvce": 0
-      },
-      {
-        "name": "PSYCHOBABA77",
-        "dvce": 1
-      },
-      {
-        "name": "theDubstepFilth",
-        "dvce": 1
-      },
-      {
-        "name": "ArrayG",
-        "dvce": 0
-      },
-      {
-        "name": "TomWheels",
-        "dvce": 1
-      },
-      {
-        "name": "Xtopher98",
-        "dvce": 1
-      },
-      {
-        "name": "pdjbell",
-        "dvce": 1
-      },
-      {
-        "name": "zen10328",
-        "dvce": 1
-      },
-      {
-        "name": "GKibuga",
-        "dvce": 0
-      }
-    ],
-    "Cave Dwellers": [
-      {
-        "name": "TM_FrostDM_GT",
-        "dvce": 0
-      },
-      {
-        "name": "Margonem10029",
-        "dvce": 0
-      },
-      {
-        "name": "mistme",
-        "dvce": 1
-      },
-      {
-        "name": "abhinav_22",
-        "dvce": 1
-      },
-      {
-        "name": "Cidraque",
-        "dvce": 0
-      },
-      {
-        "name": "PHzzzz",
-        "dvce": 0
-      },
-      {
-        "name": "Usman471",
-        "dvce": 1
-      },
-      {
-        "name": "mckissicks",
-        "dvce": 1
-      },
-      {
-        "name": "shortnfat",
-        "dvce": 1
-      },
-      {
-        "name": "Sqnkata92",
-        "dvce": 0
-      }
-    ],
-    "Dark Machines": [
-      {
-        "name": "Gavroche1983",
-        "dvce": 0
-      },
-      {
-        "name": "CagBall",
-        "dvce": 0
-      },
-      {
-        "name": "Flip13",
-        "dvce": 0
-      },
-      {
-        "name": "Rustyfication",
-        "dvce": 0
-      },
-      {
-        "name": "peppie18",
-        "dvce": 0
-      },
-      {
-        "name": "dukesith",
-        "dvce": 0
-      },
-      {
-        "name": "Razkar_",
-        "dvce": 1
-      },
-      {
-        "name": "Arkadi00sh",
-        "dvce": 1
-      },
-      {
-        "name": "guest-0L9JoCww",
-        "dvce": 1
-      },
-      {
-        "name": "Y0URDEM1ZE",
-        "dvce": 0
-      }
-    ],
-    "Wrecked Tracks": [
-      {
-        "name": "cresteri",
-        "dvce": 0
-      },
-      {
-        "name": "darkbator",
-        "dvce": 0
-      },
-      {
-        "name": "Ledmo74",
-        "dvce": 1
-      },
-      {
-        "name": "sjklei2",
-        "dvce": 1
-      },
-      {
-        "name": "MystereWarrior",
-        "dvce": 1
-      },
-      {
-        "name": "steve_fox932014",
-        "dvce": 1
-      },
-      {
-        "name": "espjosh1",
-        "dvce": 0
-      },
-      {
-        "name": "Holybrake-TFG",
-        "dvce": 0
-      },
-      {
-        "name": "Sweetteddy2008",
-        "dvce": 0
-      },
-      {
-        "name": "Stone_Fur5",
-        "dvce": 1
-      }
-    ],
-    "Rock Walls": [
-      {
-        "name": "donkeyfarm-TFG",
-        "dvce": 0
-      },
-      {
-        "name": "BaDBoY53-TFG",
-        "dvce": 1
-      },
-      {
-        "name": "luca90go",
-        "dvce": 0
-      },
-      {
-        "name": "bigOX1255",
-        "dvce": 1
-      },
-      {
-        "name": "Galagan",
-        "dvce": 1
-      },
-      {
-        "name": "npole67",
-        "dvce": 1
-      },
-      {
-        "name": "Open.beer.bb",
-        "dvce": 0
-      },
-      {
-        "name": "Gandohar1992",
-        "dvce": 1
-      },
-      {
-        "name": "yollothepiggy",
-        "dvce": 0
-      },
-      {
-        "name": "Samantha558",
-        "dvce": 1
-      }
-    ],
-    "The Aqueducts": [
-      {
-        "name": "Brynaldo",
-        "dvce": 1
-      },
-      {
-        "name": "SmileyJ-TFG",
-        "dvce": 1
-      },
-      {
-        "name": "j.pan",
-        "dvce": 0
-      },
-      {
-        "name": "Standard8916",
-        "dvce": 1
-      },
-      {
-        "name": "T1NMAN244",
-        "dvce": 1
-      },
-      {
-        "name": "Henrik4664",
-        "dvce": 0
-      },
-      {
-        "name": "Laukus.",
-        "dvce": 0
-      },
-      {
-        "name": "jeanska79",
-        "dvce": 1
-      },
-      {
-        "name": "Semenekimov",
-        "dvce": 0
-      },
-      {
-        "name": "Kabooomof",
-        "dvce": 1
-      }
-    ]
-  }
+    "teams": {
+        "1": {
+            "name": "Vagrant Camps",
+            "link": "http://trials.bonxy.net/teams/34/Vagrant+Camps",
+            "idOri": 32,
+            "members": [
+                {
+                    "name": "WastedZymbol",
+                    "dvce": 0
+                },
+                {
+                    "name": "Brinik80",
+                    "dvce": 1
+                },
+                {
+                    "name": "menso91",
+                    "dvce": 0
+                },
+                {
+                    "name": "Kneepsteegje",
+                    "dvce": 1
+                },
+                {
+                    "name": "bradlynch549",
+                    "dvce": 1
+                },
+                {
+                    "name": "Julian_Hermaaz",
+                    "dvce": 0
+                },
+                {
+                    "name": "TateWolfGang",
+                    "dvce": 1
+                },
+                {
+                    "name": "elinoxyl",
+                    "dvce": 1
+                },
+                {
+                    "name": "Bergelius",
+                    "dvce": 0
+                },
+                {
+                    "name": "SNoWNooBYT",
+                    "dvce": 0
+                }
+            ]
+        },
+        "2": {
+            "name": "Cracked Plateaus",
+            "link": "http://trials.bonxy.net/teams/34/Cracked+Plateaus",
+            "idOri": 46,
+            "members": [
+                {
+                    "name": "AkEyE",
+                    "dvce": 0
+                },
+                {
+                    "name": "marcelloluce90",
+                    "dvce": 1
+                },
+                {
+                    "name": "Morillias",
+                    "dvce": 1
+                },
+                {
+                    "name": "MonsterScreamo",
+                    "dvce": 0
+                },
+                {
+                    "name": "PL-sh4gyy-TFG",
+                    "dvce": 0
+                },
+                {
+                    "name": "konopec",
+                    "dvce": 0
+                },
+                {
+                    "name": "Shevchukovich",
+                    "dvce": 1
+                },
+                {
+                    "name": "bjgord04",
+                    "dvce": 0
+                },
+                {
+                    "name": "guest-bRVt61Zb",
+                    "dvce": 1
+                },
+                {
+                    "name": "Ed854",
+                    "dvce": 1
+                }
+            ]
+        },
+        "3": {
+            "name": "Lazy Catapults",
+            "link": "http://trials.bonxy.net/teams/34/Lazy+Catapults",
+            "idOri": 33,
+            "members": [
+                {
+                    "name": "Sandholm",
+                    "dvce": 0
+                },
+                {
+                    "name": "Dvori159",
+                    "dvce": 0
+                },
+                {
+                    "name": "tdm1018",
+                    "dvce": 0
+                },
+                {
+                    "name": "HeaverBeaver115",
+                    "dvce": 0
+                },
+                {
+                    "name": "kimtwo119",
+                    "dvce": 1
+                },
+                {
+                    "name": "TheTom14",
+                    "dvce": 1
+                },
+                {
+                    "name": "StaraSzatana",
+                    "dvce": 0
+                },
+                {
+                    "name": "rudeecho",
+                    "dvce": 0
+                },
+                {
+                    "name": "danitrapella",
+                    "dvce": 1
+                },
+                {
+                    "name": "Benji5114",
+                    "dvce": 0
+                }
+            ]
+        },
+        "4": {
+            "name": "Ice Blockades",
+            "link": "http://trials.bonxy.net/teams/34/Ice+Blockades",
+            "idOri": 37,
+            "members": [
+                {
+                    "name": "DonaldM-TFG",
+                    "dvce": 1
+                },
+                {
+                    "name": "TreSover",
+                    "dvce": 1
+                },
+                {
+                    "name": "UA_FANAT_TM",
+                    "dvce": 0
+                },
+                {
+                    "name": "DylanDeMorte",
+                    "dvce": 1
+                },
+                {
+                    "name": "M0h4mmed-1",
+                    "dvce": 0
+                },
+                {
+                    "name": "dee666apex",
+                    "dvce": 0
+                },
+                {
+                    "name": "muuted",
+                    "dvce": 1
+                },
+                {
+                    "name": "Daaaaaante",
+                    "dvce": 0
+                },
+                {
+                    "name": "guest-rB52uoTO",
+                    "dvce": 0
+                },
+                {
+                    "name": "Antoine638",
+                    "dvce": 0
+                }
+            ]
+        },
+        "5": {
+            "name": "Market Streets",
+            "link": "http://trials.bonxy.net/teams/34/Market+Streets",
+            "idOri": 22,
+            "members": [
+                {
+                    "name": "RF_Mortiferus",
+                    "dvce": 1
+                },
+                {
+                    "name": "motoaxe1",
+                    "dvce": 0
+                },
+                {
+                    "name": "farns_needchips",
+                    "dvce": 1
+                },
+                {
+                    "name": "bmbigpapa",
+                    "dvce": 1
+                },
+                {
+                    "name": "Bert868",
+                    "dvce": 0
+                },
+                {
+                    "name": "dARoBRr2015",
+                    "dvce": 1
+                },
+                {
+                    "name": "torbenhansen520",
+                    "dvce": 1
+                },
+                {
+                    "name": "CLK",
+                    "dvce": 1
+                },
+                {
+                    "name": "torpeda900319",
+                    "dvce": 0
+                },
+                {
+                    "name": "DBKilla21",
+                    "dvce": 1
+                }
+            ]
+        },
+        "6": {
+            "name": "Pipeline Camps",
+            "link": "http://trials.bonxy.net/teams/34/Pipeline+Camps",
+            "idOri": 51,
+            "members": [
+                {
+                    "name": "PL-k4kshi-TFG",
+                    "dvce": 0
+                },
+                {
+                    "name": "pbjunk",
+                    "dvce": 1
+                },
+                {
+                    "name": "tema_2700",
+                    "dvce": 0
+                },
+                {
+                    "name": "RoYaL-TFG",
+                    "dvce": 1
+                },
+                {
+                    "name": "guiprimus",
+                    "dvce": 0
+                },
+                {
+                    "name": "CaptTurgidII",
+                    "dvce": 0
+                },
+                {
+                    "name": "Pytzek",
+                    "dvce": 0
+                },
+                {
+                    "name": "Raph386",
+                    "dvce": 0
+                },
+                {
+                    "name": "Stacksen",
+                    "dvce": 1
+                },
+                {
+                    "name": "TheMastodon13",
+                    "dvce": 1
+                }
+            ]
+        },
+        "7": {
+            "name": "Snowball Rides",
+            "link": "http://trials.bonxy.net/teams/34/Snowball+Rides",
+            "idOri": 52,
+            "members": [
+                {
+                    "name": "tha_hoff",
+                    "dvce": 1
+                },
+                {
+                    "name": "flooodi-TFG",
+                    "dvce": 0
+                },
+                {
+                    "name": "ACE135-TFG",
+                    "dvce": 1
+                },
+                {
+                    "name": "Tom7036",
+                    "dvce": 1
+                },
+                {
+                    "name": "Shebis_ru_TF",
+                    "dvce": 0
+                },
+                {
+                    "name": "CipiO",
+                    "dvce": 0
+                },
+                {
+                    "name": "zero_o11ze",
+                    "dvce": 1
+                },
+                {
+                    "name": "brettfrank",
+                    "dvce": 1
+                },
+                {
+                    "name": "Bronc_Stomper",
+                    "dvce": 1
+                },
+                {
+                    "name": "emilianomateo35",
+                    "dvce": 0
+                }
+            ]
+        },
+        "8": {
+            "name": "Cave Dwellers",
+            "link": "http://trials.bonxy.net/teams/34/Cave+Dwellers",
+            "idOri": 58,
+            "members": [
+                {
+                    "name": "TM_FrostDM_GT",
+                    "dvce": 0
+                },
+                {
+                    "name": "Margonem10029",
+                    "dvce": 0
+                },
+                {
+                    "name": "mistme",
+                    "dvce": 1
+                },
+                {
+                    "name": "abhinav_22",
+                    "dvce": 1
+                },
+                {
+                    "name": "Cidraque",
+                    "dvce": 0
+                },
+                {
+                    "name": "PHzzzz",
+                    "dvce": 0
+                },
+                {
+                    "name": "Usman471",
+                    "dvce": 1
+                },
+                {
+                    "name": "mckissicks",
+                    "dvce": 1
+                },
+                {
+                    "name": "shortnfat",
+                    "dvce": 1
+                },
+                {
+                    "name": "Sqnkata92",
+                    "dvce": 0
+                }
+            ]
+        },
+        "9": {
+            "name": "Abandoned Mines",
+            "link": "http://trials.bonxy.net/teams/34/Abandoned+Mines",
+            "idOri": 54,
+            "members": [
+                {
+                    "name": "Dmac3221",
+                    "dvce": 1
+                },
+                {
+                    "name": "Vinny-Zl",
+                    "dvce": 0
+                },
+                {
+                    "name": "Xevila-TFG",
+                    "dvce": 0
+                },
+                {
+                    "name": "DjZepolim",
+                    "dvce": 1
+                },
+                {
+                    "name": "maxsw81",
+                    "dvce": 0
+                },
+                {
+                    "name": "russfromkrg",
+                    "dvce": 0
+                },
+                {
+                    "name": "Bobajzs.cz",
+                    "dvce": 0
+                },
+                {
+                    "name": "Asrailbr",
+                    "dvce": 0
+                },
+                {
+                    "name": "Mariano841",
+                    "dvce": 0
+                },
+                {
+                    "name": "bigGUNN1286",
+                    "dvce": 0
+                }
+            ]
+        },
+        "10": {
+            "name": "Muddy Mounds",
+            "link": "http://trials.bonxy.net/teams/34/Muddy+Mounds",
+            "idOri": 43,
+            "members": [
+                {
+                    "name": "Clowninaround27",
+                    "dvce": 1
+                },
+                {
+                    "name": "hikasrams",
+                    "dvce": 0
+                },
+                {
+                    "name": "pimedusessah",
+                    "dvce": 0
+                },
+                {
+                    "name": "TURBOSLOAN",
+                    "dvce": 1
+                },
+                {
+                    "name": "abhazelton",
+                    "dvce": 0
+                },
+                {
+                    "name": "Nine1909",
+                    "dvce": 0
+                },
+                {
+                    "name": "poupakisd",
+                    "dvce": 0
+                },
+                {
+                    "name": "JohhnyAce",
+                    "dvce": 0
+                },
+                {
+                    "name": "ILm4s",
+                    "dvce": 0
+                },
+                {
+                    "name": "guest-faSXUQ1c",
+                    "dvce": 0
+                }
+            ]
+        },
+        "11": {
+            "name": "The Tanktops",
+            "link": "http://trials.bonxy.net/teams/34/The+Tanktops",
+            "idOri": 44,
+            "members": [
+                {
+                    "name": "Spr1te_BY",
+                    "dvce": 0
+                },
+                {
+                    "name": "WonkyJon-TFG",
+                    "dvce": 1
+                },
+                {
+                    "name": "BigLiberty",
+                    "dvce": 1
+                },
+                {
+                    "name": "Bananix1975",
+                    "dvce": 1
+                },
+                {
+                    "name": "nebish007",
+                    "dvce": 1
+                },
+                {
+                    "name": "SaRCaZTiQ",
+                    "dvce": 0
+                },
+                {
+                    "name": "alinuyan",
+                    "dvce": 0
+                },
+                {
+                    "name": "PVTPOUNDER1",
+                    "dvce": 1
+                },
+                {
+                    "name": "pjwillard",
+                    "dvce": 0
+                },
+                {
+                    "name": "Mr_Ted12",
+                    "dvce": 0
+                }
+            ]
+        },
+        "12": {
+            "name": "The Aqueducts",
+            "link": "http://trials.bonxy.net/teams/34/The+Aqueducts",
+            "idOri": 62,
+            "members": [
+                {
+                    "name": "Brynaldo",
+                    "dvce": 1
+                },
+                {
+                    "name": "SmileyJ-TFG",
+                    "dvce": 1
+                },
+                {
+                    "name": "j.pan",
+                    "dvce": 0
+                },
+                {
+                    "name": "Standard8916",
+                    "dvce": 1
+                },
+                {
+                    "name": "T1NMAN244",
+                    "dvce": 1
+                },
+                {
+                    "name": "Henrik4664",
+                    "dvce": 0
+                },
+                {
+                    "name": "Laukus.",
+                    "dvce": 0
+                },
+                {
+                    "name": "jeanska79",
+                    "dvce": 1
+                },
+                {
+                    "name": "Semenekimov",
+                    "dvce": 0
+                },
+                {
+                    "name": "Kabooomof",
+                    "dvce": 1
+                }
+            ]
+        },
+        "13": {
+            "name": "Squall Slides",
+            "link": "http://trials.bonxy.net/teams/34/Squall+Slides",
+            "idOri": 26,
+            "members": [
+                {
+                    "name": "JamesBlackout",
+                    "dvce": 0
+                },
+                {
+                    "name": "fulvioramos",
+                    "dvce": 1
+                },
+                {
+                    "name": "calinbasturea22",
+                    "dvce": 1
+                },
+                {
+                    "name": "vlait15",
+                    "dvce": 0
+                },
+                {
+                    "name": "Tjerk.Drouen",
+                    "dvce": 0
+                },
+                {
+                    "name": "rafarosselfa",
+                    "dvce": 0
+                },
+                {
+                    "name": "markd2014",
+                    "dvce": 1
+                },
+                {
+                    "name": "Aapeli013",
+                    "dvce": 0
+                },
+                {
+                    "name": "basje113",
+                    "dvce": 1
+                },
+                {
+                    "name": "Hero1381",
+                    "dvce": 1
+                }
+            ]
+        },
+        "14": {
+            "name": "Dust Bowls",
+            "link": "http://trials.bonxy.net/teams/34/Dust+Bowls",
+            "idOri": 4,
+            "members": [
+                {
+                    "name": "CN-_-RogerLee",
+                    "dvce": 1
+                },
+                {
+                    "name": "X-MiSiU-X",
+                    "dvce": 0
+                },
+                {
+                    "name": "irish-man8",
+                    "dvce": 0
+                },
+                {
+                    "name": "henrikluplau",
+                    "dvce": 1
+                },
+                {
+                    "name": "stormius77",
+                    "dvce": 0
+                },
+                {
+                    "name": "lavuz_",
+                    "dvce": 0
+                },
+                {
+                    "name": "ziya7",
+                    "dvce": 0
+                },
+                {
+                    "name": "KiltedGamer71",
+                    "dvce": 0
+                },
+                {
+                    "name": "Doctorzed2017",
+                    "dvce": 1
+                },
+                {
+                    "name": "Dvlover",
+                    "dvce": 0
+                }
+            ]
+        },
+        "15": {
+            "name": "The Stacks",
+            "link": "http://trials.bonxy.net/teams/34/The+Stacks",
+            "idOri": 19,
+            "members": [
+                {
+                    "name": "TM_zauralec_GT",
+                    "dvce": 0
+                },
+                {
+                    "name": "tealbutt",
+                    "dvce": 1
+                },
+                {
+                    "name": "JerichoHHR",
+                    "dvce": 0
+                },
+                {
+                    "name": "VK.DensiusIII",
+                    "dvce": 1
+                },
+                {
+                    "name": "koozzzz",
+                    "dvce": 0
+                },
+                {
+                    "name": "TwelvPAK",
+                    "dvce": 1
+                },
+                {
+                    "name": "shaynes28",
+                    "dvce": 1
+                },
+                {
+                    "name": "FastSirleon",
+                    "dvce": 0
+                },
+                {
+                    "name": "RyaRaj95",
+                    "dvce": 1
+                },
+                {
+                    "name": "Misael620",
+                    "dvce": 0
+                }
+            ]
+        },
+        "16": {
+            "name": "The Watchers",
+            "link": "http://trials.bonxy.net/teams/34/The+Watchers",
+            "idOri": 2,
+            "members": [
+                {
+                    "name": "FR-LocKDowN",
+                    "dvce": 1
+                },
+                {
+                    "name": "Luk_PL-TFG",
+                    "dvce": 0
+                },
+                {
+                    "name": "LucidAndy",
+                    "dvce": 0
+                },
+                {
+                    "name": "QuaKRage",
+                    "dvce": 1
+                },
+                {
+                    "name": "Eagle2017",
+                    "dvce": 0
+                },
+                {
+                    "name": "machine4578",
+                    "dvce": 0
+                },
+                {
+                    "name": "Drizzt__1981",
+                    "dvce": 1
+                },
+                {
+                    "name": "Adan212",
+                    "dvce": 1
+                },
+                {
+                    "name": "albinoork",
+                    "dvce": 1
+                },
+                {
+                    "name": "Estevan",
+                    "dvce": 1
+                }
+            ]
+        },
+        "17": {
+            "name": "The Mills",
+            "link": "http://trials.bonxy.net/teams/34/The+Mills",
+            "idOri": 5,
+            "members": [
+                {
+                    "name": "ImNesox",
+                    "dvce": 1
+                },
+                {
+                    "name": "CaptainYolo-TFG",
+                    "dvce": 1
+                },
+                {
+                    "name": "lembwil",
+                    "dvce": 0
+                },
+                {
+                    "name": "olegmogilev",
+                    "dvce": 0
+                },
+                {
+                    "name": "Mohamed-Shawky",
+                    "dvce": 0
+                },
+                {
+                    "name": "Vans66Man",
+                    "dvce": 0
+                },
+                {
+                    "name": "gabo188",
+                    "dvce": 0
+                },
+                {
+                    "name": "SoonerP1",
+                    "dvce": 0
+                },
+                {
+                    "name": "AngiiePT",
+                    "dvce": 1
+                },
+                {
+                    "name": "Birdman",
+                    "dvce": 1
+                }
+            ]
+        },
+        "18": {
+            "name": "Pumpkin Deserts",
+            "link": "http://trials.bonxy.net/teams/34/Pumpkin+Deserts",
+            "idOri": 7,
+            "members": [
+                {
+                    "name": "TR1N1DAD.T3F",
+                    "dvce": 0
+                },
+                {
+                    "name": "T0ppil4-TFG",
+                    "dvce": 0
+                },
+                {
+                    "name": "vistik1983",
+                    "dvce": 0
+                },
+                {
+                    "name": "Eikandeerus",
+                    "dvce": 0
+                },
+                {
+                    "name": "Tombaiyuh",
+                    "dvce": 0
+                },
+                {
+                    "name": "roler123",
+                    "dvce": 0
+                },
+                {
+                    "name": "emilepah",
+                    "dvce": 1
+                },
+                {
+                    "name": "Wolverine_d17",
+                    "dvce": 1
+                },
+                {
+                    "name": "Sourabh920",
+                    "dvce": 0
+                },
+                {
+                    "name": "Juny",
+                    "dvce": 0
+                }
+            ]
+        },
+        "19": {
+            "name": "Choking Hazards",
+            "link": "http://trials.bonxy.net/teams/34/Choking+Hazards",
+            "idOri": 55,
+            "members": [
+                {
+                    "name": "YojimBob-TFG",
+                    "dvce": 0
+                },
+                {
+                    "name": "CraZywiZom",
+                    "dvce": 1
+                },
+                {
+                    "name": "MrVolt1",
+                    "dvce": 1
+                },
+                {
+                    "name": "donkey-TFG",
+                    "dvce": 0
+                },
+                {
+                    "name": "AllSider",
+                    "dvce": 1
+                },
+                {
+                    "name": "yobremmurd",
+                    "dvce": 1
+                },
+                {
+                    "name": "ZekesDad40",
+                    "dvce": 1
+                },
+                {
+                    "name": "knucklehead692",
+                    "dvce": 0
+                },
+                {
+                    "name": "lord6779",
+                    "dvce": 0
+                },
+                {
+                    "name": "David-Jezz",
+                    "dvce": 0
+                }
+            ]
+        },
+        "20": {
+            "name": "Bunnyhops",
+            "link": "http://trials.bonxy.net/teams/34/Bunnyhops",
+            "idOri": 3,
+            "members": [
+                {
+                    "name": "Sl1mboy84.T3F",
+                    "dvce": 0
+                },
+                {
+                    "name": "MOB_SmoothE",
+                    "dvce": 1
+                },
+                {
+                    "name": "RF_Monkey",
+                    "dvce": 1
+                },
+                {
+                    "name": "Grennar_",
+                    "dvce": 0
+                },
+                {
+                    "name": "Gyo1205",
+                    "dvce": 1
+                },
+                {
+                    "name": "M4XE84",
+                    "dvce": 1
+                },
+                {
+                    "name": "RATTLEH34D",
+                    "dvce": 0
+                },
+                {
+                    "name": "sup3rfm",
+                    "dvce": 1
+                },
+                {
+                    "name": "GREZUR",
+                    "dvce": 1
+                },
+                {
+                    "name": "Borti",
+                    "dvce": 0
+                }
+            ]
+        },
+        "21": {
+            "name": "Wrecked Tracks",
+            "link": "http://trials.bonxy.net/teams/34/Wrecked+Tracks",
+            "idOri": 60,
+            "members": [
+                {
+                    "name": "cresteri",
+                    "dvce": 0
+                },
+                {
+                    "name": "darkbator",
+                    "dvce": 0
+                },
+                {
+                    "name": "Ledmo74",
+                    "dvce": 1
+                },
+                {
+                    "name": "sjklei2",
+                    "dvce": 1
+                },
+                {
+                    "name": "MystereWarrior",
+                    "dvce": 1
+                },
+                {
+                    "name": "steve_fox932014",
+                    "dvce": 1
+                },
+                {
+                    "name": "espjosh1",
+                    "dvce": 0
+                },
+                {
+                    "name": "Holybrake-TFG",
+                    "dvce": 0
+                },
+                {
+                    "name": "Sweetteddy2008",
+                    "dvce": 0
+                },
+                {
+                    "name": "Stone_Fur5",
+                    "dvce": 1
+                }
+            ]
+        },
+        "22": {
+            "name": "The Quagmires",
+            "link": "http://trials.bonxy.net/teams/34/The+Quagmires",
+            "idOri": 6,
+            "members": [
+                {
+                    "name": "carterclem7",
+                    "dvce": 1
+                },
+                {
+                    "name": "AFCV10",
+                    "dvce": 0
+                },
+                {
+                    "name": "natas.james.666",
+                    "dvce": 0
+                },
+                {
+                    "name": "jorgiinhuh",
+                    "dvce": 1
+                },
+                {
+                    "name": "BicoSan",
+                    "dvce": 0
+                },
+                {
+                    "name": "Virusolog1990",
+                    "dvce": 0
+                },
+                {
+                    "name": "CitBolonUa",
+                    "dvce": 0
+                },
+                {
+                    "name": "Rasim175",
+                    "dvce": 0
+                },
+                {
+                    "name": "FireBolt72184",
+                    "dvce": 1
+                },
+                {
+                    "name": "Driller",
+                    "dvce": 0
+                }
+            ]
+        },
+        "23": {
+            "name": "Trojan Giraffes",
+            "link": "http://trials.bonxy.net/teams/34/Trojan+Giraffes",
+            "idOri": 30,
+            "members": [
+                {
+                    "name": "RUS-Bostan",
+                    "dvce": 0
+                },
+                {
+                    "name": "Surf-tiki_TFG",
+                    "dvce": 0
+                },
+                {
+                    "name": "andrewespinal7",
+                    "dvce": 1
+                },
+                {
+                    "name": "ehud1304",
+                    "dvce": 0
+                },
+                {
+                    "name": "goglo",
+                    "dvce": 0
+                },
+                {
+                    "name": "UKR-Vinchenco",
+                    "dvce": 1
+                },
+                {
+                    "name": "HmaduraD",
+                    "dvce": 0
+                },
+                {
+                    "name": "Fakerah",
+                    "dvce": 1
+                },
+                {
+                    "name": "Kc1266",
+                    "dvce": 1
+                },
+                {
+                    "name": "djfrog57",
+                    "dvce": 1
+                }
+            ]
+        },
+        "24": {
+            "name": "Burning Bushes",
+            "link": "http://trials.bonxy.net/teams/34/Burning+Bushes",
+            "idOri": 16,
+            "members": [
+                {
+                    "name": "NL-CasperH",
+                    "dvce": 1
+                },
+                {
+                    "name": "Clapper316-TFG",
+                    "dvce": 1
+                },
+                {
+                    "name": "Akrasiia",
+                    "dvce": 0
+                },
+                {
+                    "name": "Jaybone2323",
+                    "dvce": 1
+                },
+                {
+                    "name": "EvanRay2",
+                    "dvce": 1
+                },
+                {
+                    "name": "Shaxio",
+                    "dvce": 0
+                },
+                {
+                    "name": "carstenhagedorn",
+                    "dvce": 0
+                },
+                {
+                    "name": "panahss",
+                    "dvce": 0
+                },
+                {
+                    "name": "RED-SUN41",
+                    "dvce": 1
+                },
+                {
+                    "name": "jimmybones420",
+                    "dvce": 0
+                }
+            ]
+        },
+        "25": {
+            "name": "Mud Cakes",
+            "link": "http://trials.bonxy.net/teams/34/Mud+Cakes",
+            "idOri": 18,
+            "members": [
+                {
+                    "name": "CZE-pekso-TFG",
+                    "dvce": 1
+                },
+                {
+                    "name": "frvhj",
+                    "dvce": 0
+                },
+                {
+                    "name": "scamp115",
+                    "dvce": 0
+                },
+                {
+                    "name": "Joe_Regular",
+                    "dvce": 0
+                },
+                {
+                    "name": "kiriak7",
+                    "dvce": 0
+                },
+                {
+                    "name": "doubleagentdogs",
+                    "dvce": 0
+                },
+                {
+                    "name": "Koukas85",
+                    "dvce": 0
+                },
+                {
+                    "name": "Egor12344321",
+                    "dvce": 0
+                },
+                {
+                    "name": "kow1984",
+                    "dvce": 1
+                },
+                {
+                    "name": "PaulBlackStar",
+                    "dvce": 1
+                }
+            ]
+        },
+        "26": {
+            "name": "Widowmakers",
+            "link": "http://trials.bonxy.net/teams/34/Widowmakers",
+            "idOri": 15,
+            "members": [
+                {
+                    "name": "mashpotato-TFG",
+                    "dvce": 1
+                },
+                {
+                    "name": "dozia72",
+                    "dvce": 1
+                },
+                {
+                    "name": "legolas.mcm",
+                    "dvce": 0
+                },
+                {
+                    "name": "nigh1mare",
+                    "dvce": 1
+                },
+                {
+                    "name": "simlive",
+                    "dvce": 0
+                },
+                {
+                    "name": "AnimalF123",
+                    "dvce": 1
+                },
+                {
+                    "name": "hodgelc",
+                    "dvce": 1
+                },
+                {
+                    "name": "angelo4ek89",
+                    "dvce": 0
+                },
+                {
+                    "name": "capobuster",
+                    "dvce": 0
+                },
+                {
+                    "name": "rolo15mc",
+                    "dvce": 1
+                }
+            ]
+        },
+        "27": {
+            "name": "Fest Mines",
+            "link": "http://trials.bonxy.net/teams/34/Fest+Mines",
+            "idOri": 25,
+            "members": [
+                {
+                    "name": "suicyco-TFG",
+                    "dvce": 0
+                },
+                {
+                    "name": "Malr0g-TFG",
+                    "dvce": 0
+                },
+                {
+                    "name": "ninjacrog",
+                    "dvce": 0
+                },
+                {
+                    "name": "mikus.miesnieks",
+                    "dvce": 0
+                },
+                {
+                    "name": "Holodek",
+                    "dvce": 1
+                },
+                {
+                    "name": "akiranava",
+                    "dvce": 1
+                },
+                {
+                    "name": "jejekawa",
+                    "dvce": 0
+                },
+                {
+                    "name": "kristaps_r",
+                    "dvce": 0
+                },
+                {
+                    "name": "Samuel23341",
+                    "dvce": 0
+                },
+                {
+                    "name": "Seneca986",
+                    "dvce": 1
+                }
+            ]
+        },
+        "28": {
+            "name": "The Arches",
+            "link": "http://trials.bonxy.net/teams/34/The+Arches",
+            "idOri": 29,
+            "members": [
+                {
+                    "name": "mccrackenryan",
+                    "dvce": 1
+                },
+                {
+                    "name": "IDN-Suryajaya",
+                    "dvce": 1
+                },
+                {
+                    "name": "Szary.86",
+                    "dvce": 0
+                },
+                {
+                    "name": "tombobone",
+                    "dvce": 0
+                },
+                {
+                    "name": "sklepretro",
+                    "dvce": 0
+                },
+                {
+                    "name": "Rubic9n",
+                    "dvce": 1
+                },
+                {
+                    "name": "kvartira0512",
+                    "dvce": 1
+                },
+                {
+                    "name": "agudo777",
+                    "dvce": 1
+                },
+                {
+                    "name": "marcel_nl34",
+                    "dvce": 1
+                },
+                {
+                    "name": "Speed69Freek69",
+                    "dvce": 0
+                }
+            ]
+        },
+        "29": {
+            "name": "Great Walls",
+            "link": "http://trials.bonxy.net/teams/34/Great+Walls",
+            "idOri": 42,
+            "members": [
+                {
+                    "name": "Gustavo-AS",
+                    "dvce": 0
+                },
+                {
+                    "name": "ambsan47",
+                    "dvce": 0
+                },
+                {
+                    "name": "chrismitchebNhy",
+                    "dvce": 0
+                },
+                {
+                    "name": "alexmacdek",
+                    "dvce": 1
+                },
+                {
+                    "name": "gsc-peacemaker",
+                    "dvce": 0
+                },
+                {
+                    "name": "adduthie",
+                    "dvce": 0
+                },
+                {
+                    "name": "q234rrh6",
+                    "dvce": 0
+                },
+                {
+                    "name": "w00dyw",
+                    "dvce": 1
+                },
+                {
+                    "name": "Gigavolt_2015",
+                    "dvce": 0
+                },
+                {
+                    "name": "Phodeflexian",
+                    "dvce": 1
+                }
+            ]
+        },
+        "30": {
+            "name": "Pain Marsh",
+            "link": "http://trials.bonxy.net/teams/34/Pain+Marsh",
+            "idOri": 9,
+            "members": [
+                {
+                    "name": "UK-BuRNZeE",
+                    "dvce": 1
+                },
+                {
+                    "name": "j.bajer250",
+                    "dvce": 0
+                },
+                {
+                    "name": "alexwach77",
+                    "dvce": 1
+                },
+                {
+                    "name": "BlazedRaider84",
+                    "dvce": 1
+                },
+                {
+                    "name": "GLUK_63_RUS",
+                    "dvce": 0
+                },
+                {
+                    "name": "wfiroz",
+                    "dvce": 0
+                },
+                {
+                    "name": "TraberT-",
+                    "dvce": 0
+                },
+                {
+                    "name": "easylife200",
+                    "dvce": 0
+                },
+                {
+                    "name": "jabels44",
+                    "dvce": 1
+                },
+                {
+                    "name": "Kensman",
+                    "dvce": 0
+                }
+            ]
+        },
+        "31": {
+            "name": "Barren Steps",
+            "link": "http://trials.bonxy.net/teams/34/Barren+Steps",
+            "idOri": 53,
+            "members": [
+                {
+                    "name": "AngeloKaulas21",
+                    "dvce": 0
+                },
+                {
+                    "name": "rmelliott81",
+                    "dvce": 1
+                },
+                {
+                    "name": "Sardius77-TFG",
+                    "dvce": 1
+                },
+                {
+                    "name": "GunnarKaiken",
+                    "dvce": 1
+                },
+                {
+                    "name": "CRU55E",
+                    "dvce": 0
+                },
+                {
+                    "name": "ackwell...",
+                    "dvce": 0
+                },
+                {
+                    "name": "ihalmaghi",
+                    "dvce": 0
+                },
+                {
+                    "name": "vyrgus",
+                    "dvce": 0
+                },
+                {
+                    "name": "guest-REAajMPH",
+                    "dvce": 1
+                },
+                {
+                    "name": "realmadrid.kaka",
+                    "dvce": 0
+                }
+            ]
+        },
+        "32": {
+            "name": "Dark Machines",
+            "link": "http://trials.bonxy.net/teams/34/Dark+Machines",
+            "idOri": 59,
+            "members": [
+                {
+                    "name": "Gavroche1983",
+                    "dvce": 0
+                },
+                {
+                    "name": "CagBall",
+                    "dvce": 0
+                },
+                {
+                    "name": "Flip13",
+                    "dvce": 0
+                },
+                {
+                    "name": "Rustyfication",
+                    "dvce": 0
+                },
+                {
+                    "name": "peppie18",
+                    "dvce": 0
+                },
+                {
+                    "name": "dukesith",
+                    "dvce": 0
+                },
+                {
+                    "name": "Razkar_",
+                    "dvce": 1
+                },
+                {
+                    "name": "Arkadi00sh",
+                    "dvce": 1
+                },
+                {
+                    "name": "guest-0L9JoCww",
+                    "dvce": 1
+                },
+                {
+                    "name": "Y0URDEM1ZE",
+                    "dvce": 0
+                }
+            ]
+        },
+        "33": {
+            "name": "Tree Houses",
+            "link": "http://trials.bonxy.net/teams/34/Treehouses",
+            "idOri": 13,
+            "members": [
+                {
+                    "name": "RF_alex88",
+                    "dvce": 1
+                },
+                {
+                    "name": "IT-pga777",
+                    "dvce": 0
+                },
+                {
+                    "name": "Nikc0506",
+                    "dvce": 0
+                },
+                {
+                    "name": "hogarek",
+                    "dvce": 0
+                },
+                {
+                    "name": "SametEkinci",
+                    "dvce": 1
+                },
+                {
+                    "name": "AlbiNoche10",
+                    "dvce": 0
+                },
+                {
+                    "name": "MikeJonesz14",
+                    "dvce": 0
+                },
+                {
+                    "name": "v-12345",
+                    "dvce": 0
+                },
+                {
+                    "name": "Norbi0314",
+                    "dvce": 0
+                },
+                {
+                    "name": "dogtrail",
+                    "dvce": 0
+                }
+            ]
+        },
+        "34": {
+            "name": "Villainous Hideouts",
+            "link": "http://trials.bonxy.net/teams/34/Villianous+Hideouts",
+            "idOri": 47,
+            "members": [
+                {
+                    "name": "NOR-Nicolai-TFG",
+                    "dvce": 1
+                },
+                {
+                    "name": "FatalDragon69",
+                    "dvce": 0
+                },
+                {
+                    "name": "L2CL2C",
+                    "dvce": 1
+                },
+                {
+                    "name": "godlesplay",
+                    "dvce": 0
+                },
+                {
+                    "name": "Gonasvay",
+                    "dvce": 1
+                },
+                {
+                    "name": "xratedfraggle",
+                    "dvce": 0
+                },
+                {
+                    "name": "gtemi",
+                    "dvce": 1
+                },
+                {
+                    "name": "TheNforcer282",
+                    "dvce": 1
+                },
+                {
+                    "name": "mihsan_kama",
+                    "dvce": 0
+                },
+                {
+                    "name": "alshayea87kw",
+                    "dvce": 0
+                }
+            ]
+        },
+        "35": {
+            "name": "Troll Lairs",
+            "link": "http://trials.bonxy.net/teams/34/Troll+Lairs",
+            "idOri": 14,
+            "members": [
+                {
+                    "name": "IT-polTFG",
+                    "dvce": 1
+                },
+                {
+                    "name": "olegbegamentov",
+                    "dvce": 0
+                },
+                {
+                    "name": "Prometheus_TFG",
+                    "dvce": 1
+                },
+                {
+                    "name": "h0kkis",
+                    "dvce": 0
+                },
+                {
+                    "name": "Ghozgul",
+                    "dvce": 0
+                },
+                {
+                    "name": "elygaz",
+                    "dvce": 0
+                },
+                {
+                    "name": "bearpower1990",
+                    "dvce": 0
+                },
+                {
+                    "name": "Hujkis",
+                    "dvce": 0
+                },
+                {
+                    "name": "ibzyhararwala",
+                    "dvce": 0
+                },
+                {
+                    "name": "Youu_Wrongun",
+                    "dvce": 1
+                }
+            ]
+        },
+        "36": {
+            "name": "Frost Carnivals",
+            "link": "http://trials.bonxy.net/teams/34/Frost+Carnivals",
+            "idOri": 34,
+            "members": [
+                {
+                    "name": "FR-Dodo44",
+                    "dvce": 1
+                },
+                {
+                    "name": "fing451-_",
+                    "dvce": 1
+                },
+                {
+                    "name": "deloefke88",
+                    "dvce": 1
+                },
+                {
+                    "name": "Ulqiorra-Cifer",
+                    "dvce": 0
+                },
+                {
+                    "name": "Depo-dave",
+                    "dvce": 1
+                },
+                {
+                    "name": "konstantin4zi",
+                    "dvce": 0
+                },
+                {
+                    "name": "AlexYaremenko",
+                    "dvce": 0
+                },
+                {
+                    "name": "Bace250",
+                    "dvce": 1
+                },
+                {
+                    "name": "CrushGM",
+                    "dvce": 0
+                },
+                {
+                    "name": "Marth2241",
+                    "dvce": 1
+                }
+            ]
+        },
+        "37": {
+            "name": "Smelting Pots",
+            "link": "http://trials.bonxy.net/teams/34/Smelting+Pots",
+            "idOri": 27,
+            "members": [
+                {
+                    "name": "LinkinJon-TFG",
+                    "dvce": 1
+                },
+                {
+                    "name": "justinman114",
+                    "dvce": 0
+                },
+                {
+                    "name": "Sleepy_Teepy",
+                    "dvce": 0
+                },
+                {
+                    "name": "BigRichReviews",
+                    "dvce": 0
+                },
+                {
+                    "name": "RusteeNutz",
+                    "dvce": 1
+                },
+                {
+                    "name": "majkl17111",
+                    "dvce": 0
+                },
+                {
+                    "name": "Viper5741_TFG",
+                    "dvce": 0
+                },
+                {
+                    "name": "Gexxaro",
+                    "dvce": 0
+                },
+                {
+                    "name": "OnkelVagn",
+                    "dvce": 1
+                },
+                {
+                    "name": "Whirlwind21",
+                    "dvce": 0
+                }
+            ]
+        },
+        "38": {
+            "name": "Madhouse",
+            "link": "http://trials.bonxy.net/teams/34/Madhouse",
+            "idOri": 0,
+            "members": [
+                {
+                    "name": "VaNa91",
+                    "dvce": 1
+                },
+                {
+                    "name": "Andershwander",
+                    "dvce": 0
+                },
+                {
+                    "name": "Yozaan",
+                    "dvce": 1
+                },
+                {
+                    "name": "ericounet13",
+                    "dvce": 0
+                },
+                {
+                    "name": "tima____",
+                    "dvce": 0
+                },
+                {
+                    "name": "sulo996",
+                    "dvce": 0
+                },
+                {
+                    "name": "klowdos",
+                    "dvce": 0
+                },
+                {
+                    "name": "ashe7177",
+                    "dvce": 1
+                },
+                {
+                    "name": "geaton2014",
+                    "dvce": 0
+                },
+                {
+                    "name": "Bogzeus77",
+                    "dvce": 0
+                }
+            ]
+        },
+        "39": {
+            "name": "Steeple Runs",
+            "link": "http://trials.bonxy.net/teams/34/Steeple+Runs",
+            "idOri": 23,
+            "members": [
+                {
+                    "name": "Efikas.t3f",
+                    "dvce": 0
+                },
+                {
+                    "name": "vorchezz",
+                    "dvce": 0
+                },
+                {
+                    "name": "moofecker",
+                    "dvce": 0
+                },
+                {
+                    "name": "rizeavlad",
+                    "dvce": 0
+                },
+                {
+                    "name": "Dundee3OOO",
+                    "dvce": 0
+                },
+                {
+                    "name": "MongarEric",
+                    "dvce": 0
+                },
+                {
+                    "name": "Farmshow",
+                    "dvce": 0
+                },
+                {
+                    "name": "Velham",
+                    "dvce": 1
+                },
+                {
+                    "name": "shanemiller7923",
+                    "dvce": 1
+                },
+                {
+                    "name": "Jamskywalker",
+                    "dvce": 1
+                }
+            ]
+        },
+        "40": {
+            "name": "Open Jaw Bogs",
+            "link": "http://trials.bonxy.net/teams/34/Open+Jaw+Bogs",
+            "idOri": 48,
+            "members": [
+                {
+                    "name": "CostasV2",
+                    "dvce": 1
+                },
+                {
+                    "name": "billock11",
+                    "dvce": 0
+                },
+                {
+                    "name": "Royke1983",
+                    "dvce": 0
+                },
+                {
+                    "name": "Devon-UK",
+                    "dvce": 0
+                },
+                {
+                    "name": "stachemob-TFG",
+                    "dvce": 1
+                },
+                {
+                    "name": "kingsalmon67",
+                    "dvce": 0
+                },
+                {
+                    "name": "raul-herrera-87",
+                    "dvce": 1
+                },
+                {
+                    "name": "ConKeeper68",
+                    "dvce": 0
+                },
+                {
+                    "name": "Netoelo",
+                    "dvce": 0
+                },
+                {
+                    "name": "BaLaMuT-KRUA",
+                    "dvce": 1
+                }
+            ]
+        },
+        "41": {
+            "name": "Buzzsaw Paradise",
+            "link": "http://trials.bonxy.net/teams/34/Buzzsaw+Paradise",
+            "idOri": 41,
+            "members": [
+                {
+                    "name": "slangen.nfs",
+                    "dvce": 1
+                },
+                {
+                    "name": "doinkmelon",
+                    "dvce": 1
+                },
+                {
+                    "name": "JMCinAZ1",
+                    "dvce": 1
+                },
+                {
+                    "name": "demoninthesac",
+                    "dvce": 0
+                },
+                {
+                    "name": "buffonada",
+                    "dvce": 0
+                },
+                {
+                    "name": "ntaylor1002",
+                    "dvce": 1
+                },
+                {
+                    "name": "nagymisike123",
+                    "dvce": 0
+                },
+                {
+                    "name": "Ammahoy",
+                    "dvce": 1
+                },
+                {
+                    "name": "makis1983",
+                    "dvce": 1
+                },
+                {
+                    "name": "k07091962",
+                    "dvce": 1
+                }
+            ]
+        },
+        "42": {
+            "name": "Lost Descents",
+            "link": "http://trials.bonxy.net/teams/34/Lost+Descents",
+            "idOri": 50,
+            "members": [
+                {
+                    "name": "XxvvJayvvxX",
+                    "dvce": 1
+                },
+                {
+                    "name": "kamilus26",
+                    "dvce": 0
+                },
+                {
+                    "name": "JEDLNC-TFG",
+                    "dvce": 1
+                },
+                {
+                    "name": "irenapappova",
+                    "dvce": 0
+                },
+                {
+                    "name": "baloo254",
+                    "dvce": 0
+                },
+                {
+                    "name": "ivan192014",
+                    "dvce": 0
+                },
+                {
+                    "name": "imaks3d2014",
+                    "dvce": 1
+                },
+                {
+                    "name": "josipbrozunama",
+                    "dvce": 0
+                },
+                {
+                    "name": "ReZerVaT",
+                    "dvce": 0
+                },
+                {
+                    "name": "WrightSupremacy",
+                    "dvce": 0
+                }
+            ]
+        },
+        "43": {
+            "name": "Flower Hills",
+            "link": "http://trials.bonxy.net/teams/34/Flower+Hills",
+            "idOri": 8,
+            "members": [
+                {
+                    "name": "USA-Mike_G-TFG",
+                    "dvce": 1
+                },
+                {
+                    "name": "NeetjeNL",
+                    "dvce": 1
+                },
+                {
+                    "name": "HU_HeroZero",
+                    "dvce": 1
+                },
+                {
+                    "name": "Raztopher",
+                    "dvce": 1
+                },
+                {
+                    "name": "SP-TORRICHI-TFG",
+                    "dvce": 0
+                },
+                {
+                    "name": "drewnel22",
+                    "dvce": 0
+                },
+                {
+                    "name": "jakes2016",
+                    "dvce": 1
+                },
+                {
+                    "name": "antsgtr",
+                    "dvce": 0
+                },
+                {
+                    "name": "guest-cNRw7b01",
+                    "dvce": 1
+                },
+                {
+                    "name": "Dson",
+                    "dvce": 0
+                }
+            ]
+        },
+        "44": {
+            "name": "Rock Walls",
+            "link": "http://trials.bonxy.net/teams/34/Rock+Walls",
+            "idOri": 61,
+            "members": [
+                {
+                    "name": "donkeyfarm-TFG",
+                    "dvce": 0
+                },
+                {
+                    "name": "BaDBoY53-TFG",
+                    "dvce": 1
+                },
+                {
+                    "name": "luca90go",
+                    "dvce": 0
+                },
+                {
+                    "name": "bigOX1255",
+                    "dvce": 1
+                },
+                {
+                    "name": "Galagan",
+                    "dvce": 1
+                },
+                {
+                    "name": "npole67",
+                    "dvce": 1
+                },
+                {
+                    "name": "Open.beer.bb",
+                    "dvce": 0
+                },
+                {
+                    "name": "Gandohar1992",
+                    "dvce": 1
+                },
+                {
+                    "name": "yollothepiggy",
+                    "dvce": 0
+                },
+                {
+                    "name": "Samantha558",
+                    "dvce": 1
+                }
+            ]
+        },
+        "45": {
+            "name": "The Waterwheels",
+            "link": "http://trials.bonxy.net/teams/34/The+Waterwheels",
+            "idOri": 35,
+            "members": [
+                {
+                    "name": "dutscher-DE",
+                    "dvce": 0
+                },
+                {
+                    "name": "Rosie2353",
+                    "dvce": 1
+                },
+                {
+                    "name": "ashbyboulware",
+                    "dvce": 0
+                },
+                {
+                    "name": "Bhgprox",
+                    "dvce": 0
+                },
+                {
+                    "name": "PowderJess",
+                    "dvce": 1
+                },
+                {
+                    "name": "U_BOHICA",
+                    "dvce": 1
+                },
+                {
+                    "name": "gregbalu",
+                    "dvce": 0
+                },
+                {
+                    "name": "nitin2705",
+                    "dvce": 0
+                },
+                {
+                    "name": "Adventer14",
+                    "dvce": 1
+                },
+                {
+                    "name": "TOMTOM91420",
+                    "dvce": 0
+                }
+            ]
+        },
+        "46": {
+            "name": "Spider Kingdoms",
+            "link": "http://trials.bonxy.net/teams/34/Spider+Kingdoms",
+            "idOri": 45,
+            "members": [
+                {
+                    "name": "MY-AKU-CENDAWAN",
+                    "dvce": 0
+                },
+                {
+                    "name": "risolutore1981",
+                    "dvce": 1
+                },
+                {
+                    "name": "MorbidWolf666",
+                    "dvce": 0
+                },
+                {
+                    "name": "redcow2015",
+                    "dvce": 0
+                },
+                {
+                    "name": "Hanks420",
+                    "dvce": 1
+                },
+                {
+                    "name": "Flyin-Finn",
+                    "dvce": 1
+                },
+                {
+                    "name": "alponat",
+                    "dvce": 1
+                },
+                {
+                    "name": "mr.kotol",
+                    "dvce": 1
+                },
+                {
+                    "name": "alexathena",
+                    "dvce": 1
+                },
+                {
+                    "name": "cbies4",
+                    "dvce": 0
+                }
+            ]
+        },
+        "47": {
+            "name": "The Purifiers",
+            "link": "http://trials.bonxy.net/teams/34/The+Purifiers",
+            "idOri": 12,
+            "members": [
+                {
+                    "name": "Ghisone_T3F",
+                    "dvce": 0
+                },
+                {
+                    "name": "RedDevil-TFG",
+                    "dvce": 0
+                },
+                {
+                    "name": "DevSin-TFG",
+                    "dvce": 0
+                },
+                {
+                    "name": "MarcosSLB",
+                    "dvce": 0
+                },
+                {
+                    "name": "chrisrickson",
+                    "dvce": 1
+                },
+                {
+                    "name": "arturkungurov",
+                    "dvce": 1
+                },
+                {
+                    "name": "ppalinkas",
+                    "dvce": 0
+                },
+                {
+                    "name": "KBMBikes",
+                    "dvce": 1
+                },
+                {
+                    "name": "guest-6gs2zcUg",
+                    "dvce": 1
+                },
+                {
+                    "name": "Resurxtion",
+                    "dvce": 0
+                }
+            ]
+        },
+        "48": {
+            "name": "Garbage Routes",
+            "link": "http://trials.bonxy.net/teams/34/Garbage+Routes",
+            "idOri": 38,
+            "members": [
+                {
+                    "name": "Ritch_M",
+                    "dvce": 1
+                },
+                {
+                    "name": "DISTURB3D-TFG",
+                    "dvce": 0
+                },
+                {
+                    "name": "ziga.budja",
+                    "dvce": 0
+                },
+                {
+                    "name": "Harzer12",
+                    "dvce": 0
+                },
+                {
+                    "name": "johnthompson902",
+                    "dvce": 1
+                },
+                {
+                    "name": "FRA.B",
+                    "dvce": 0
+                },
+                {
+                    "name": "Cristian-924",
+                    "dvce": 0
+                },
+                {
+                    "name": "SVPDexplorer821",
+                    "dvce": 0
+                },
+                {
+                    "name": "Jabba2.0",
+                    "dvce": 1
+                },
+                {
+                    "name": "jorgi3s",
+                    "dvce": 1
+                }
+            ]
+        },
+        "49": {
+            "name": "Coaster Canyons",
+            "link": "http://trials.bonxy.net/teams/34/Coaster+Canyon",
+            "idOri": 56,
+            "members": [
+                {
+                    "name": "Cocheesee",
+                    "dvce": 1
+                },
+                {
+                    "name": "Blaz1ngFury-TFG",
+                    "dvce": 1
+                },
+                {
+                    "name": "TheNinja2016",
+                    "dvce": 0
+                },
+                {
+                    "name": "Yaum77",
+                    "dvce": 0
+                },
+                {
+                    "name": "svetik015",
+                    "dvce": 0
+                },
+                {
+                    "name": "Massimiliano660",
+                    "dvce": 0
+                },
+                {
+                    "name": "MightyTimeCop",
+                    "dvce": 0
+                },
+                {
+                    "name": "Quasar714",
+                    "dvce": 0
+                },
+                {
+                    "name": "gkthn06",
+                    "dvce": 0
+                },
+                {
+                    "name": "Bublex1",
+                    "dvce": 0
+                }
+            ]
+        },
+        "50": {
+            "name": "Desert Gondolas",
+            "link": "http://trials.bonxy.net/teams/34/Desert+Gondolas",
+            "idOri": 49,
+            "members": [
+                {
+                    "name": "Klawd_",
+                    "dvce": 1
+                },
+                {
+                    "name": "retrogamerjp",
+                    "dvce": 1
+                },
+                {
+                    "name": "asaichenko",
+                    "dvce": 0
+                },
+                {
+                    "name": "BazZz_hc",
+                    "dvce": 0
+                },
+                {
+                    "name": "Pini94",
+                    "dvce": 0
+                },
+                {
+                    "name": "NubNub1978",
+                    "dvce": 0
+                },
+                {
+                    "name": "ViceMassacre",
+                    "dvce": 0
+                },
+                {
+                    "name": "ElGringoMatteo",
+                    "dvce": 0
+                },
+                {
+                    "name": "Grayfox059",
+                    "dvce": 0
+                },
+                {
+                    "name": "Momoiro_Rei",
+                    "dvce": 0
+                }
+            ]
+        },
+        "51": {
+            "name": "The Naughty Lists",
+            "link": "http://trials.bonxy.net/teams/34/The+Naughty+Lists",
+            "idOri": 21,
+            "members": [
+                {
+                    "name": "bigB0NER",
+                    "dvce": 1
+                },
+                {
+                    "name": "xitooner",
+                    "dvce": 1
+                },
+                {
+                    "name": "kyleplaysguitar",
+                    "dvce": 1
+                },
+                {
+                    "name": "Salapoliisi",
+                    "dvce": 1
+                },
+                {
+                    "name": "Hcmmx",
+                    "dvce": 0
+                },
+                {
+                    "name": "erichryan",
+                    "dvce": 0
+                },
+                {
+                    "name": "mattwarnert",
+                    "dvce": 1
+                },
+                {
+                    "name": "Thanatan777",
+                    "dvce": 0
+                },
+                {
+                    "name": "dwightc8787",
+                    "dvce": 0
+                },
+                {
+                    "name": "Darkovia01",
+                    "dvce": 0
+                }
+            ]
+        },
+        "52": {
+            "name": "The Pendulums",
+            "link": "http://trials.bonxy.net/teams/34/The+Pendulums",
+            "idOri": 28,
+            "members": [
+                {
+                    "name": "TrialsWave-TFG",
+                    "dvce": 0
+                },
+                {
+                    "name": "F0RTYxSEVEN",
+                    "dvce": 0
+                },
+                {
+                    "name": "djosiahr",
+                    "dvce": 1
+                },
+                {
+                    "name": "TheWurmyz",
+                    "dvce": 1
+                },
+                {
+                    "name": "SprinterTavares",
+                    "dvce": 0
+                },
+                {
+                    "name": "Milind1511",
+                    "dvce": 1
+                },
+                {
+                    "name": "tahahussain2016",
+                    "dvce": 0
+                },
+                {
+                    "name": "vctomazi",
+                    "dvce": 1
+                },
+                {
+                    "name": "KrisC1",
+                    "dvce": 0
+                },
+                {
+                    "name": "SillverDX",
+                    "dvce": 0
+                }
+            ]
+        },
+        "53": {
+            "name": "Razor Dunes",
+            "link": "http://trials.bonxy.net/teams/34/Razor+Dunes",
+            "idOri": 17,
+            "members": [
+                {
+                    "name": "GTdave",
+                    "dvce": 0
+                },
+                {
+                    "name": "Vicenteag73-TFG",
+                    "dvce": 0
+                },
+                {
+                    "name": "uGotBrained",
+                    "dvce": 0
+                },
+                {
+                    "name": "SexyExi",
+                    "dvce": 0
+                },
+                {
+                    "name": "cernis79",
+                    "dvce": 0
+                },
+                {
+                    "name": "Mannbo22",
+                    "dvce": 1
+                },
+                {
+                    "name": "emeninomenina",
+                    "dvce": 0
+                },
+                {
+                    "name": "LoadexCA",
+                    "dvce": 1
+                },
+                {
+                    "name": "GoMSU420",
+                    "dvce": 0
+                },
+                {
+                    "name": "ale007592",
+                    "dvce": 0
+                }
+            ]
+        },
+        "54": {
+            "name": "Devil Hoppers",
+            "link": "http://trials.bonxy.net/teams/34/Devil+Hoppers",
+            "idOri": 57,
+            "members": [
+                {
+                    "name": "azerty34000",
+                    "dvce": 1
+                },
+                {
+                    "name": "IT-Karma",
+                    "dvce": 0
+                },
+                {
+                    "name": "PSYCHOBABA77",
+                    "dvce": 1
+                },
+                {
+                    "name": "theDubstepFilth",
+                    "dvce": 1
+                },
+                {
+                    "name": "ArrayG",
+                    "dvce": 0
+                },
+                {
+                    "name": "TomWheels",
+                    "dvce": 1
+                },
+                {
+                    "name": "Xtopher98",
+                    "dvce": 1
+                },
+                {
+                    "name": "pdjbell",
+                    "dvce": 1
+                },
+                {
+                    "name": "zen10328",
+                    "dvce": 1
+                },
+                {
+                    "name": "GKibuga",
+                    "dvce": 0
+                }
+            ]
+        },
+        "55": {
+            "name": "Flooded Highways",
+            "link": "http://trials.bonxy.net/teams/34/Flooded+Highways",
+            "idOri": 20,
+            "members": [
+                {
+                    "name": "roll_cyril",
+                    "dvce": 0
+                },
+                {
+                    "name": "adrienaz",
+                    "dvce": 1
+                },
+                {
+                    "name": "SweatyPalms-TFG",
+                    "dvce": 0
+                },
+                {
+                    "name": "VasAkos1",
+                    "dvce": 0
+                },
+                {
+                    "name": "OrdasOri",
+                    "dvce": 0
+                },
+                {
+                    "name": "Butterbreadjam",
+                    "dvce": 0
+                },
+                {
+                    "name": "elcrecido",
+                    "dvce": 0
+                },
+                {
+                    "name": "NorbertoRus",
+                    "dvce": 0
+                },
+                {
+                    "name": "denis333989",
+                    "dvce": 0
+                },
+                {
+                    "name": "tul33",
+                    "dvce": 1
+                }
+            ]
+        },
+        "56": {
+            "name": "Risky Rooftops",
+            "link": "http://trials.bonxy.net/teams/34/Risky+Rooftops",
+            "idOri": 39,
+            "members": [
+                {
+                    "name": "d34dstr0k3",
+                    "dvce": 1
+                },
+                {
+                    "name": "MrCleanXXIV_TFG",
+                    "dvce": 0
+                },
+                {
+                    "name": "IT-L3L3B33R-TFG",
+                    "dvce": 0
+                },
+                {
+                    "name": "JackDan1975",
+                    "dvce": 0
+                },
+                {
+                    "name": "phillipwinne1",
+                    "dvce": 1
+                },
+                {
+                    "name": "yumkaimun",
+                    "dvce": 0
+                },
+                {
+                    "name": "Lindsay795",
+                    "dvce": 1
+                },
+                {
+                    "name": "tripdog1985",
+                    "dvce": 0
+                },
+                {
+                    "name": "renatospacheco_",
+                    "dvce": 0
+                },
+                {
+                    "name": "BabyGiirl_",
+                    "dvce": 1
+                }
+            ]
+        },
+        "57": {
+            "name": "Chilled Cliffs",
+            "link": "http://trials.bonxy.net/teams/34/Chilled+Cliffs",
+            "idOri": 1,
+            "members": [
+                {
+                    "name": "RU-DarkNex-TFG",
+                    "dvce": 1
+                },
+                {
+                    "name": "UKR-VovaFrank",
+                    "dvce": 1
+                },
+                {
+                    "name": "Sinnerca",
+                    "dvce": 0
+                },
+                {
+                    "name": "trials-BR",
+                    "dvce": 0
+                },
+                {
+                    "name": "aldesiu",
+                    "dvce": 0
+                },
+                {
+                    "name": "Alexxxxxx112",
+                    "dvce": 1
+                },
+                {
+                    "name": "slettenn",
+                    "dvce": 0
+                },
+                {
+                    "name": "narasimman1987",
+                    "dvce": 0
+                },
+                {
+                    "name": "Symeon96",
+                    "dvce": 0
+                },
+                {
+                    "name": "Smeagol",
+                    "dvce": 0
+                }
+            ]
+        },
+        "58": {
+            "name": "Dark Sands",
+            "link": "http://trials.bonxy.net/teams/34/Dark+Sands",
+            "idOri": 24,
+            "members": [
+                {
+                    "name": "Martimen2-TFG",
+                    "dvce": 1
+                },
+                {
+                    "name": "TM_mr.termit_GT",
+                    "dvce": 0
+                },
+                {
+                    "name": "Vrost_",
+                    "dvce": 0
+                },
+                {
+                    "name": "JTANK0427",
+                    "dvce": 1
+                },
+                {
+                    "name": "Ale_616_TFG",
+                    "dvce": 0
+                },
+                {
+                    "name": "ernie_mcraken",
+                    "dvce": 1
+                },
+                {
+                    "name": "majak-02",
+                    "dvce": 0
+                },
+                {
+                    "name": "BLaZe3458",
+                    "dvce": 0
+                },
+                {
+                    "name": "Austinchappell",
+                    "dvce": 1
+                },
+                {
+                    "name": "S4n4th",
+                    "dvce": 0
+                }
+            ]
+        },
+        "59": {
+            "name": "The Big Swings",
+            "link": "http://trials.bonxy.net/teams/34/The+Big+Swings",
+            "idOri": 40,
+            "members": [
+                {
+                    "name": "NOBBYHOBSON",
+                    "dvce": 0
+                },
+                {
+                    "name": "Xero44",
+                    "dvce": 1
+                },
+                {
+                    "name": "JPN-Yoshiki-TGG",
+                    "dvce": 1
+                },
+                {
+                    "name": "Watchdogs2King",
+                    "dvce": 1
+                },
+                {
+                    "name": "makadalu",
+                    "dvce": 1
+                },
+                {
+                    "name": "sosna09876",
+                    "dvce": 0
+                },
+                {
+                    "name": "vballgod",
+                    "dvce": 1
+                },
+                {
+                    "name": "Loko994",
+                    "dvce": 0
+                },
+                {
+                    "name": "teleevrey96",
+                    "dvce": 0
+                },
+                {
+                    "name": "flambobanana",
+                    "dvce": 0
+                }
+            ]
+        },
+        "60": {
+            "name": "Doom Drops",
+            "link": "http://trials.bonxy.net/teams/34/Doom+Drops",
+            "idOri": 10,
+            "members": [
+                {
+                    "name": "Panic_Switch",
+                    "dvce": 0
+                },
+                {
+                    "name": "Noohbh",
+                    "dvce": 1
+                },
+                {
+                    "name": "Affliction666",
+                    "dvce": 0
+                },
+                {
+                    "name": "johnny_sublime",
+                    "dvce": 0
+                },
+                {
+                    "name": "Obey_and_True",
+                    "dvce": 0
+                },
+                {
+                    "name": "CountProximo",
+                    "dvce": 1
+                },
+                {
+                    "name": "BajeBongo",
+                    "dvce": 0
+                },
+                {
+                    "name": "nusa3004",
+                    "dvce": 1
+                },
+                {
+                    "name": "sketchytech",
+                    "dvce": 1
+                },
+                {
+                    "name": "Sh4dowPT",
+                    "dvce": 0
+                }
+            ]
+        },
+        "61": {
+            "name": "Leaping Hollows",
+            "link": "http://trials.bonxy.net/teams/34/Leaping+Hollows",
+            "idOri": 36,
+            "members": [
+                {
+                    "name": "NSP_I_VeNoMz",
+                    "dvce": 0
+                },
+                {
+                    "name": "CHuRcH75",
+                    "dvce": 1
+                },
+                {
+                    "name": "prelude92",
+                    "dvce": 1
+                },
+                {
+                    "name": "Ind-Rellik",
+                    "dvce": 1
+                },
+                {
+                    "name": "WickedRichy",
+                    "dvce": 0
+                },
+                {
+                    "name": "andreasdnolsoe",
+                    "dvce": 1
+                },
+                {
+                    "name": "catalist2016",
+                    "dvce": 1
+                },
+                {
+                    "name": "xXpepeguichoXx",
+                    "dvce": 1
+                },
+                {
+                    "name": "Sir-uHkBu3uToP",
+                    "dvce": 1
+                },
+                {
+                    "name": "x1JORDAN8x",
+                    "dvce": 0
+                }
+            ]
+        },
+        "62": {
+            "name": "The Shafts",
+            "link": "http://trials.bonxy.net/teams/34/The+Shafts",
+            "idOri": 31,
+            "members": [
+                {
+                    "name": "The_Kings_Lair",
+                    "dvce": 1
+                },
+                {
+                    "name": "Noxamus",
+                    "dvce": 0
+                },
+                {
+                    "name": "idahoTF",
+                    "dvce": 0
+                },
+                {
+                    "name": "GER-Miller",
+                    "dvce": 1
+                },
+                {
+                    "name": "juliomguerreiro",
+                    "dvce": 0
+                },
+                {
+                    "name": "ctheunicorn",
+                    "dvce": 0
+                },
+                {
+                    "name": "Jewboy81",
+                    "dvce": 1
+                },
+                {
+                    "name": "dnz15",
+                    "dvce": 0
+                },
+                {
+                    "name": "Brycerboy12",
+                    "dvce": 1
+                },
+                {
+                    "name": "pandamanxv3",
+                    "dvce": 0
+                }
+            ]
+        },
+        "63": {
+            "name": "Terror Towers",
+            "link": "http://trials.bonxy.net/teams/34/Terror+Towers",
+            "idOri": 11,
+            "members": [
+                {
+                    "name": "AurisLT-TFG",
+                    "dvce": 0
+                },
+                {
+                    "name": "the1topgun",
+                    "dvce": 0
+                },
+                {
+                    "name": "Antwon0900",
+                    "dvce": 0
+                },
+                {
+                    "name": "EG-MeMo4CrImS",
+                    "dvce": 0
+                },
+                {
+                    "name": "foregolf72",
+                    "dvce": 1
+                },
+                {
+                    "name": "trackerpro17",
+                    "dvce": 1
+                },
+                {
+                    "name": "romanpavlyuk",
+                    "dvce": 1
+                },
+                {
+                    "name": "Strongchico",
+                    "dvce": 0
+                },
+                {
+                    "name": "lieutenantDanJR",
+                    "dvce": 1
+                },
+                {
+                    "name": "RawAnger00",
+                    "dvce": 1
+                }
+            ]
+        }
+    }
 }

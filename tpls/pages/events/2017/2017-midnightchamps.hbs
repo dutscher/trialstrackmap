@@ -19,7 +19,7 @@
                 border: solid 1px #935A05;
                 background: #935A05;
                 margin: 4px;
-                width: 150px;
+                min-width: 170px;
             }
 
             .team__name {
@@ -42,19 +42,9 @@
 
     {{#content "body"}}
         <div class="page-body">
-            {{> navigation title="Midnight Champs 2017"}}
+            {{> navigation title='Midnight Champs 2017 | <a href="http://trials.bonxy.net/teams" target="_blank" class="classic-link">http://trials.bonxy.net/teams</a> | <a href="http://www.bit.ly/midnightchampteams" target="_blank" class="classic-link">http://www.bit.ly/midnightchampteams</a>'}}
             <div class="teams">
-                {{#each map.database.events.midnightchamps_2017.teams}}
-                    <div class="team">
-                        <div class="team__name">{{@key}}</div>
-                        {{#each this}}
-                            <div class="team__member">
-                                <i class="device-{{deviceName ../../map.database.events.midnightchamps_2017.devices dvce}}"></i>
-                                {{name}}
-                            </div>
-                        {{/each}}
-                    </div>
-                {{/each}}
+                {{MCTeams2017 data=map.database.events.midnightchamps_2017}}
             </div>
         </div>
     {{/content}}
