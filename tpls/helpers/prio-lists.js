@@ -2,11 +2,11 @@
     var fs = require("fs");
     
     module.exports.register = function (Handlebars) {
-        Handlebars.registerHelper("homeShack", function (params) {
+        Handlebars.registerHelper("prio-listHhomeShack", function (params) {
             var prio = params.hash.data.homeshack,
                 data = params.hash.data.all,
                 html = "",
-                file = "tpls/partials/homeshack/costum.hbs",
+                file = params.hash.tpl,
                 template = Handlebars.compile(fs.readFileSync(file, "utf8"));
             
             for (var i = 0; i < prio.length; i++) {
@@ -33,21 +33,30 @@
             );
         });
 
-        Handlebars.registerHelper("MCTeams2017", function (params) {
-            var prio = params.hash.data.prio,
+        Handlebars.registerHelper("prio-listMcTeams2017", function (params) {
+            var prio = params.hash.data.prio[0],
+                prioBefore = params.hash.data.prio[1],
                 data = params.hash.data.teams,
                 devices = params.hash.data.devices,
                 html = "",
-                file = "tpls/partials/events/team.hbs",
+                file = params.hash.tpl,
                 template = Handlebars.compile(fs.readFileSync(file, "utf8"));
 
             for (var i = 0; i < prio.length; i++) {
                 var teamId = prio[i],
-                    teamData = data[teamId];
+                    teamData = data[teamId],
+                    rankNow = i + 1,
+                    stats = {};
+
+                stats.previousRank = prioBefore.indexOf(teamId) + 1;
+                stats.diffRank = stats.previousRank - rankNow;
+                stats.diffSign = stats.diffRank > 0 ? "+" : "";
+                stats.diffColor = stats.diffRank > 0 ? "green" : stats.diffRank === 0 ? "" : "red";
 
                 html += '\n' +
                     template({
-                        rank: i + 1,
+                        rank: rankNow,
+                        stats: stats,
                         deviceData: devices,
                         data: teamData
                     });

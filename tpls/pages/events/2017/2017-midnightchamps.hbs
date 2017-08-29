@@ -22,11 +22,22 @@
                 min-width: 170px;
             }
 
+            .team__header {
+                background: #fff;
+            }
+
             .team__name {
                 background: #fff;
                 padding: 2px;
                 white-space: nowrap;
                 font-size: 14px;
+            }
+
+            .team__stats {
+                background: #dadada;
+                font-size: 12px;
+                padding: 2px;
+                text-align: center;
             }
 
             .team__member {
@@ -44,7 +55,7 @@
         <div class="page-body">
             {{> navigation title='Midnight Champs 2017 | <a href="http://trials.bonxy.net/teams" target="_blank" class="classic-link">http://trials.bonxy.net/teams</a> | <a href="http://www.bit.ly/midnightchampteams" target="_blank" class="classic-link">http://www.bit.ly/midnightchampteams</a>'}}
             <div class="teams">
-                {{MCTeams2017 data=map.database.events.midnightchamps_2017}}
+                {{prio-listMcTeams2017 data=map.database.events.midnightchamps_2017 tpl="tpls/partials/events/team.hbs"}}
             </div>
         </div>
     {{/content}}

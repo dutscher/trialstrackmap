@@ -1,5 +1,12 @@
 <div class="team">
-    <div class="team__name">{{rank}}. <a href="{{data.link}}" target="_blank">{{data.name}}</a></div>
+    <div class="team__header">
+        <div class="team__name">
+        {{rank}}. <a href="{{data.link}}" target="_blank">{{data.name}}</a>
+        </div>
+        <div class="team__stats" style="color: {{stats.diffColor}}">
+            {{stats.diffSign}}{{stats.diffRank}}
+        </div>
+    </div>
     {{#each data.members}}
         <div class="team__member">
             <i class="device-{{deviceName ../deviceData dvce}}"></i>

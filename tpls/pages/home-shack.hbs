@@ -11,7 +11,7 @@
             {{> navigation title="Home Shack" badge=(combine wardrobe.homeshack.length " costumes and " combinations " combinations")}}
 
             <div class="costum__area">
-                {{homeShack data=wardrobe}}
+                {{prio-listHhomeShack data=wardrobe tpl="tpls/partials/homeshack/costum.hbs"}}
 
                 <hr/>
 
