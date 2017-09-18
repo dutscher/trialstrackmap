@@ -1370,5 +1370,23 @@
     "id": 263,
     "tier": 2,
     "world": 2
+  },
+  // Distilled Hops
+  {
+    "id": 264,
+    "tier": 2,
+    "world": 2
+  },
+  // Midnight Brewery
+  {
+    "id": 265,
+    "tier": 2,
+    "world": 2
+  },
+  // Fermented Caves
+  {
+    "id": 266,
+    "tier": 3,
+    "world": 2
   }
 ]

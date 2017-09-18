@@ -303,7 +303,8 @@
     "24": "KTM 400-Rally 2017",
     "25": "Eggs Hunt 2017",
     "26": "Bandito Rally 2017",
-    "27": "Reputation 2017"
+    "27": "Reputation 2017",
+    "28": "Oktoberfest MC 2017"
   },
   "tracks": {
     "1": "Dürre Klippe",
@@ -568,6 +569,9 @@
     "260": "Höhlengräber",
     "261": "Verzögerte Flucht",
     "262": "Säurebad",
-    "263": "Sumpf der Schmerzen"
+    "263": "Sumpf der Schmerzen",
+    "264": "Distilled Hops",
+    "265": "Midnight Brewery",
+    "266": "Fermented Caves"
   }
 }
