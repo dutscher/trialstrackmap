@@ -2,6 +2,14 @@
   "url": "https://trials-frontier.de.aptoide.com/versions",
   "releases": [
     {
+      "version": "5.5.0",
+      "date": "05.10.2017"
+    },
+    {
+      "version": "5.4.1",
+      "date": "18.08.2017"
+    },
+    {
       "version": "5.4.0",
       "date": "16.08.2017"
     },
