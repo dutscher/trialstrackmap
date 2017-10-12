@@ -297,7 +297,7 @@
     "15": "Halloween 2015",
     "16": "Christmas 2015",
     "17": "KTM 500-EXC 2016",
-    "18": "Petrol Falls",
+    "18": "Bunker Reward",
     "19": "Treasure Hunt places",
     "20": "Treasure Hunt 2016",
     "21": "Youtube",
@@ -307,7 +307,8 @@
     "25": "Eggs Hunt 2017",
     "26": "Bandito Rally 2017",
     "27": "Reputation 2017",
-    "28": "Oktoberfest MC 2017"
+    "28": "Oktoberfest MC 2017",
+    "29": "BMX Rally 2017"
   },
   "tracks": {
     "1": "Parched Cliff",
@@ -575,6 +576,10 @@
     "263": "Pain Marsh",
     "264": "Distilled Hops",
     "265": "Midnight Brewery",
-    "266": "Fermented Caves"
+    "266": "Fermented Caves",
+    "267": "Rampant Ramps",
+    "268": "Skyline Fling",
+    "269": "Dual Hops",
+    "270": "Rest in Pieces"
   }
 }

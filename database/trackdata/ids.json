@@ -1079,11 +1079,13 @@
     "world": 2,
     "week": 4
   },
+  // KTM Course
   {
     "id": 210,
     "tier": 1,
     "world": 2
   },
+  // Metal Meyham
   {
     "id": 211,
     "tier": 2,
@@ -1119,6 +1121,7 @@
     "tier": 3,
     "world": 2
   },
+  // Safe Escape
   {
     "id": 218,
     "tier": 2,
@@ -1136,6 +1139,7 @@
     "world": 2,
     "chips": 45000
   },
+  // Homegrown
   {
     "id": 221,
     "tier": 3,
@@ -1166,36 +1170,43 @@
     "tier": 1,
     "world": 2
   },
+  // Lollygagging
   {
     "id": 227,
     "tier": 2,
     "world": 2
   },
+  // Acrobat Quarter
   {
     "id": 228,
     "tier": 2,
     "world": 2
   },
+  // Fenland Flail
   {
     "id": 229,
     "tier": 3,
     "world": 2
   },
+  // Torn Canyon
   {
     "id": 230,
     "tier": 3,
     "world": 2
   },
+  // Cold Cut Corner
   {
     "id": 231,
     "tier": 1,
     "world": 2
   },
+  // Root Canal
   {
     "id": 232,
     "tier": 1,
     "world": 2
   },
+  // Crystal Crossing
   {
     "id": 233,
     "tier": 3,
@@ -1223,11 +1234,13 @@
     "tier": 2,
     "world": 2
   },
+  // Peaceful Pummel
   {
     "id": 238,
     "tier": 1,
     "world": 2
   },
+  // Dark Smoke
   {
     "id": 239,
     "tier": 3,
@@ -1386,6 +1399,30 @@
   // Fermented Caves
   {
     "id": 266,
+    "tier": 3,
+    "world": 2
+  },
+  // Rampant Ramps
+  {
+    "id": 267,
+    "tier": 2,
+    "world": 2
+  },
+  // Skyline Fling
+  {
+    "id": 268,
+    "tier": 3,
+    "world": 2
+  },
+  // Dual Hops
+  {
+    "id": 269,
+    "tier": 3,
+    "world": 2
+  },
+  // Rest in Peaces
+  {
+    "id": 270,
     "tier": 3,
     "world": 2
   }

@@ -304,7 +304,8 @@
     "25": "Eggs Hunt 2017",
     "26": "Bandito Rally 2017",
     "27": "Reputation 2017",
-    "28": "Oktoberfest MC 2017"
+    "28": "Oktoberfest MC 2017",
+    "29": "BMX Rally 2017"
   },
   "tracks": {
     "1": "Penhasco Árido",
@@ -572,6 +573,10 @@
     "263": "Pain Marsh",
     "264": "Distilled Hops",
     "265": "Midnight Brewery",
-    "266": "Fermented Caves"
+    "266": "Fermented Caves",
+    "267": "Rampant Ramps",
+    "268": "Skyline Fling",
+    "269": "Dual Hops",
+    "270": "Rest in Pieces"
   }
 }
