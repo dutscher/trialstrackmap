@@ -1,13 +1,30 @@
 module.exports = function (grunt) {
+    /*
+        /MENUZ/HOMESHACK // customization _ON small _BIG maximal
+        /MENUZ/ITEM // paintjob icons,
+        /MENUZ/WIDGETS/BIKES.png // 14 paintjobs
+        /MENUZ/WIDGETS/BIKES2.png // 31
+        /MENUZ/WIDGETS/BIKES3.png // 33
+        /MENUZ/WIDGETS/BIKES4.png // 14
+        /MENUZ/MENUZ/MAP/LAYER_0 // world 1
+        /MENUZ/MENUZ/MAP/LAYER_1 // world 2
+    */
     var fs = require("fs"),
         fsExt = require("fs-extra"),
         http = require("http"),
         path = require("path"),
-        gameVersion = "540",
+        gameVersion = "550",
         dataGet = "http://s3.amazonaws.com/dlcontent_frontier_android/" + gameVersion + "/info.json",
         hddPath = "E:/#trails/#TFunpacker/", // neofonie pc / cameo hdd
         versionPath = hddPath + gameVersion,
         phonePath = "Dieser PC\\Moto G\\Internal shared storage\\Android\\data\\com.ubisoft.redlynx.trialsfrontier.ggp",
+        i18nPath = versionPath + "/content/gen/lang",
+        toolPath = {
+            hashes: hddPath + "#hashes",
+            bin2Txt: hddPath + "#bin2txt",
+            unpacker: hddPath + "#unpacker"
+        },
+        confPath = versionPath + "/content/conf",
         defaultExt = "txt",
         toExt = "json5",
         filesOfGame = ["bikes.", "customization.", "upgrades.", "level_rewards.", "levels."],
@@ -15,20 +32,9 @@ module.exports = function (grunt) {
         customsFile = "database/secret/" + gameVersion + "/" + filesOfGame[1],
         upgradesFile = "database/secret/" + gameVersion + "/" + filesOfGame[2],
         rewardsFile = "database/secret/" + gameVersion + "/" + filesOfGame[3],
-        levelsFile = "database/secret/" + gameVersion + "/" + filesOfGame[4],
-        dirsOfResource = [
-            "/MENUZ/HOMESHACK", // customization _ON small _BIG maximal
-            "/MENUZ/ITEM", // paintjob icons,
-            "/MENUZ/WIDGETS/BIKES.png", // 14 paintjobs
-            "/MENUZ/WIDGETS/BIKES2.png", // 31
-            "/MENUZ/WIDGETS/BIKES3.png", // 33
-            "/MENUZ/WIDGETS/BIKES4.png", // 14
-            "/MENUZ/MENUZ/MAP/LAYER_0", // world 1
-            "/MENUZ/MENUZ/MAP/LAYER_1", // world 2
-        ]
-    ;
+        levelsFile = "database/secret/" + gameVersion + "/" + filesOfGame[4];
 
-    function values(obj, toLowerCase) {
+    function values (obj, toLowerCase) {
         var vals = [];
         for (var key in obj) {
             if (obj.hasOwnProperty(key)) {
@@ -38,7 +44,7 @@ module.exports = function (grunt) {
         return vals;
     }
 
-    function ensureDirectoryExistence(filePath) {
+    function ensureDirectoryExistence (filePath) {
         var dirname = path.dirname(filePath);
         if (fs.existsSync(dirname)) {
             return true;
@@ -47,7 +53,7 @@ module.exports = function (grunt) {
         fs.mkdirSync(dirname);
     }
 
-    function downloadFile(url, pathDest, cb) {
+    function downloadFile (url, pathDest, cb) {
         var http_or_https = http;
         if (/^https:\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?$/.test(url)) {
             http_or_https = https;
@@ -55,23 +61,23 @@ module.exports = function (grunt) {
         http_or_https.get(url, function (response) {
             var headers = JSON.stringify(response.headers);
             switch (response.statusCode) {
-                case 200:
-                    var file = fs.createWriteStream(pathDest);
-                    response.on("data", function (chunk) {
-                        file.write(chunk);
-                    }).on("end", function () {
-                        file.end();
-                        cb(null);
-                    });
-                    break;
-                case 301:
-                case 302:
-                case 303:
-                case 307:
-                    downloadFile(response.headers.location, pathDest, cb);
-                    break;
-                default:
-                    cb(new Error("Server responded with status code " + response.statusCode));
+            case 200:
+                var file = fs.createWriteStream(pathDest);
+                response.on("data", function (chunk) {
+                    file.write(chunk);
+                }).on("end", function () {
+                    file.end();
+                    cb(null);
+                });
+                break;
+            case 301:
+            case 302:
+            case 303:
+            case 307:
+                downloadFile(response.headers.location, pathDest, cb);
+                break;
+            default:
+                cb(new Error("Server responded with status code " + response.statusCode));
             }
 
         })
@@ -80,11 +86,46 @@ module.exports = function (grunt) {
             });
     }
 
-    grunt.registerTask("importGameDataS3", function () {
+    function copyToolTo (from, to) {
+        console.log("copyToolTo", from, to);
+        if (fs.existsSync(from)) {
+            var dirData = fs.readdirSync(from);
+            for (var i in dirData) {
+                var dir = dirData[i];
+                if (!fs.existsSync(to + "/" + dir) || dir === "main.cpp") {
+                    console.log("Copy: " + dir + " to " + to);
+                    fsExt.copySync(from + "/" + dir, to + "/" + dir);
+                } else {
+                    console.info("Exists already: " + dir + " to " + to);
+                }
+            }
+        }
+    }
+
+    function makeWinPath (path) {
+        return path.replace(/\//g, "\\");
+    }
+
+    grunt.registerTask("import1GameDataPhone", function () {
+        // TODO: adb content.dat, contentSFX.dat, textures_android.dat
+        // copy game content.dat
+        if (fs.existsSync(versionPath + "/content.dat")) {
+            console.log("content.dat exists");
+            grunt.task.run("import2GameDataS3");
+        } else if (fs.existsSync(phonePath)) {
+            console.log("phone path exists");
+        } else {
+            console.error("Phone path dont exists", "'" + phonePath + "'");
+            console.log("Copy 'content.dat' into", "'" + hddPath + "'");
+            return;
+        }
+    });
+
+    grunt.registerTask("import2GameDataS3", function () {
         var done = this.async(),
             filesToDownload = [];
 
-        function downloadS3Data() {
+        function downloadS3Data () {
             // get urls to files
             http.get(dataGet, function (res) {
                 var body = "";
@@ -113,7 +154,7 @@ module.exports = function (grunt) {
             });
         }
 
-        function downloadFiles(index) {
+        function downloadFiles (index) {
             var downloadIndex = index || 0,
                 downloadFileObj = filesToDownload[downloadIndex];
 
@@ -123,6 +164,7 @@ module.exports = function (grunt) {
 
             if (!downloadFileObj) {
                 console.log("All files downloaded.");
+                console.info("Now run unpacker-scripts!");
                 done();
                 return;
             }
@@ -138,23 +180,24 @@ module.exports = function (grunt) {
         downloadS3Data();
     });
 
-    grunt.registerTask("importGameDataPhone", function () {
-        // copy game content.dat
-        if (fs.existsSync(phonePath)) {
-            console.log("phone data exists");
-        } else {
-            console.error("Phone path dont exists", "'" + phonePath + "'");
-            console.log("Copy 'content.dat' into", "'" + hddPath + "'");
-            return;
-        }
+    grunt.registerTask("import3DoUnpacking", function () {
+        copyToolTo(toolPath.unpacker, versionPath);
+
+        var scriptAll = "unpacker-mod-all.cmd",
+            scriptPng = "unpacker-mod-to-png.cmd",
+            cmds = ["pushd " + makeWinPath(versionPath)];
+
+        grunt.config("exec.unpackerAll.cmd", cmds.concat(["echo 'run dat to dir'", scriptAll]).join(" & "));
+        grunt.config("exec.unpackerPng.cmd", cmds.concat(["echo 'run pvr to png'", scriptPng]).join(" & "));
+
+        grunt.task.run(["exec:unpackerAll", "exec:unpackerPng", "import4DoPackagesToOneDir"]);
     });
 
-    grunt.registerTask("importGameDataRaw", function () {
-        var newContentPath = versionPath + "/all-in-one",
-            confPath = versionPath + "/content/conf"
-        ;
+    grunt.registerTask("import4DoPackagesToOneDir", function () {
+        var allInOneDir = "#all-in-one",
+            newContentPath = versionPath + "/" + allInOneDir;
 
-        function copyAllToOne(){
+        function copyAllToOne () {
             if (fs.existsSync(confPath)) {
                 // make one content repository
                 console.log("Copy all dirs into one");
@@ -162,18 +205,18 @@ module.exports = function (grunt) {
                 var dirData = fs.readdirSync(versionPath);
                 for (var i in dirData) {
                     var dir = dirData[i];
-                    if (dir !== "all-in-one"
+                    if (dir !== allInOneDir
                         && dir !== "content"
                         && fs.lstatSync(versionPath + "/" + dir).isDirectory()) {
                         console.log("Copy: " + dir + " ...");
-                        fsExt.copySync(versionPath + "/" + dir, newContentPath)
+                        fsExt.copySync(versionPath + "/" + dir, newContentPath);
                     }
                 }
                 console.log("Copied all dirs to one", "'" + newContentPath + "'");
             }
         }
 
-        function copyDbtoImport(){
+        function copyDbtoImport () {
             if (fs.existsSync(confPath)) {
                 // copy gamedata import dir
                 for (var i in filesOfGame) {
@@ -188,16 +231,22 @@ module.exports = function (grunt) {
         copyAllToOne();
 
         copyDbtoImport();
+
+        grunt.task.run("import5ConvertOri2Json");
     });
 
     // rename ori files to json to parse via js
-    grunt.registerTask("importConvertOri2Json", function () {
+    grunt.registerTask("import5ConvertOri2Json", function () {
         var detectRepairs = [
                 "    \}\r\n    \{",
+                "   \}\r\n   \{",
+                "\}\r\n\t\{",
                 "\t}\r\n\t{\r\n",
                 " \]\r\n \""
             ],
             repairWith = [
+                "},\n{\n", // bikes.txt
+                "},\n{\n", // bikes.txt
                 "},\n{\n", // bikes.txt
                 "},\n{\n", // bikes.txt
                 "],\n\"" // levels.txt
@@ -286,16 +335,18 @@ module.exports = function (grunt) {
                         rewardStr: JSON.stringify(tmpData.rewardData),
                         xp: rewardData[6].replace("x,", ""),
                         diamonds: rewardData[7].replace("d,", "")
-                    }
+                    };
                 }
             }
             //fs.renameSync(fileNameOld, fileNameNew);
             fs.writeFileSync(fileNameNew, JSON.stringify(newData, null, 2));
         }
+
+        grunt.task.run("import6GameDataViaJson");
     });
 
     // convert game data to trackmap data
-    grunt.registerTask("importGameDataViaJson", function () {
+    grunt.registerTask("import6GameDataViaJson", function () {
         require("json5/lib/require");
 
         var bikesJSON = require("../" + bikesFile + toExt),
@@ -310,6 +361,7 @@ module.exports = function (grunt) {
             // Villages
             // Levels
             levelsJSON = require("../" + levelsFile + toExt),
+            levelNames = [],
             newLevels = [],
             unreleasedLevels = [],
             tmpData = {};
@@ -322,6 +374,10 @@ module.exports = function (grunt) {
                 trackIDQuotes = "  ,\"" + trackID + "\":",
                 rewardData = rewardsJSON[level.I],
                 trackData;
+            // add name to levelNames
+            if (_.startsWith(level.N, "LVL_")) {
+                levelNames.push(level.N);
+            }
 
             trackData = {
                 name: name,
@@ -367,8 +423,8 @@ module.exports = function (grunt) {
             }
         }
 
-        console.log("levels: ", newLevels.length)
-        console.log("unreleased: ", unreleasedLevels.length)
+        console.log("levels: ", newLevels.length);
+        console.log("unreleased: ", unreleasedLevels.length);
 
         newLevels.sort(function (a, b) {
             return a.trackID - b.trackID;
@@ -388,6 +444,30 @@ module.exports = function (grunt) {
         ensureDirectoryExistence("build/import/parts.json");
         fs.writeFileSync("build/import/parts.json", tmpData.partsData);
         fs.writeFileSync("build/import/times.json", tmpData.timesData);
+        fs.writeFileSync("build/import/names.txt", levelNames.join("\n"));
+    });
+
+    grunt.registerTask("import7ConvertLanguages", function () {
+        copyToolTo(toolPath.bin2Txt, i18nPath);
+
+        var scriptAll = "bin2txt.cmd",
+            cmds = ["pushd " + makeWinPath(i18nPath)];
+
+        grunt.config("exec.i18nBin2Txt.cmd", cmds.concat(["echo 'convert bin to txt'", scriptAll]).join(" & "));
+
+        grunt.task.run(["exec:i18nBin2Txt", "import8GetLanguages"]);
+    });
+
+    grunt.registerTask("import8GetLanguageHashes", function () {
+        copyToolTo(toolPath.hashes, i18nPath);
+        fsExt.copySync("build/import/names.txt", i18nPath + "/names.txt");
+
+        var scriptAll = "hashtest.cmd",
+            cmds = ["pushd " + makeWinPath(i18nPath)];
+
+        grunt.config("exec.i18nHashes.cmd", cmds.concat(["echo 'get hashes'", scriptAll]).join(" & "));
+
+        grunt.task.run(["exec:i18nHashes"]);// , "import4DoPackagesToOneDir"
     });
 
     // import data from
@@ -439,4 +519,4 @@ module.exports = function (grunt) {
         ensureDirectoryExistence("database/events/midnightchamps_2017.json");
         fs.writeFileSync("database/events/midnightchamps_2017.json", JSON.stringify(finalData));
     });
-}
+};

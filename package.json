@@ -28,7 +28,8 @@
     "grunt-contrib-less": "latest",
     "less-plugin-glob": "latest",
     "lodash": "latest",
-    "fs-extra": "latest"
+    "fs-extra": "latest",
+    "grunt-exec": "latest"
   },
   "engine": "node 5.6.0, npm 3.6.0"
 }
