@@ -10,6 +10,7 @@ module.exports = function (grunt) {
         /MENUZ/MENUZ/MAP/LAYER_1 // world 2
     */
     var fs = require("fs"),
+        _ = require("lodash"),
         fsExt = require("fs-extra"),
         http = require("http"),
         path = require("path"),
@@ -28,11 +29,12 @@ module.exports = function (grunt) {
         defaultExt = "txt",
         toExt = "json5",
         filesOfGame = ["bikes.", "customization.", "upgrades.", "level_rewards.", "levels."],
-        bikesFile = "database/secret/" + gameVersion + "/" + filesOfGame[0],
-        customsFile = "database/secret/" + gameVersion + "/" + filesOfGame[1],
-        upgradesFile = "database/secret/" + gameVersion + "/" + filesOfGame[2],
-        rewardsFile = "database/secret/" + gameVersion + "/" + filesOfGame[3],
-        levelsFile = "database/secret/" + gameVersion + "/" + filesOfGame[4];
+        secretPath = "database/secret/" + gameVersion + "/",
+        bikesFile = secretPath + filesOfGame[0],
+        customsFile = secretPath + filesOfGame[1],
+        upgradesFile = secretPath + filesOfGame[2],
+        rewardsFile = secretPath + filesOfGame[3],
+        levelsFile = secretPath + filesOfGame[4];
 
     function values (obj, toLowerCase) {
         var vals = [];
@@ -362,21 +364,32 @@ module.exports = function (grunt) {
             // Levels
             levelsJSON = require("../" + levelsFile + toExt),
             levelNames = [],
+            levelNamesWithId = {},
             newLevels = [],
             unreleasedLevels = [],
-            tmpData = {};
+            tmpData = {},
+            renameTrack = {
+                "LVL_SPINNERS_ALLEY": "Spinner's Alley",
+                "LVL_HILLTOP_CHETTO": "Hilltop Ghetto",
+                "LVL_STILTED_PATHWAY": "Stilted Path",
+                "LVL_CRANE_PEEK": "Crane Peak"
+            };
+
         // make data readable
         for (var i in levelsJSON.Levels) {
+
             var level = levelsJSON.Levels[i],
-                name = level.N.toLowerCase().replace("lvl_", "").replace(/_/g, " "),
+                name = (renameTrack.hasOwnProperty(level.N) ? renameTrack[level.N] : level.N).toLowerCase().replace("lvl_", "").replace(/_/g, " "),
                 trackIndex = trackValues.indexOf(name),
                 trackID = parseInt(trackKeys[trackIndex]),
                 trackIDQuotes = "  ,\"" + trackID + "\":",
                 rewardData = rewardsJSON[level.I],
                 trackData;
+
             // add name to levelNames
             if (_.startsWith(level.N, "LVL_")) {
                 levelNames.push(level.N);
+                levelNamesWithId[level.N] = trackID;
             }
 
             trackData = {
@@ -444,7 +457,10 @@ module.exports = function (grunt) {
         ensureDirectoryExistence("build/import/parts.json");
         fs.writeFileSync("build/import/parts.json", tmpData.partsData);
         fs.writeFileSync("build/import/times.json", tmpData.timesData);
-        fs.writeFileSync("build/import/names.txt", levelNames.join("\n"));
+        fs.writeFileSync(i18nPath + "/names.txt", levelNames.join("\r\n"));
+        fs.writeFileSync("build/import/names-with-ids.json", JSON.stringify(levelNamesWithId));
+
+        grunt.task.run(["import7ConvertLanguages"]);
     });
 
     grunt.registerTask("import7ConvertLanguages", function () {
@@ -455,19 +471,121 @@ module.exports = function (grunt) {
 
         grunt.config("exec.i18nBin2Txt.cmd", cmds.concat(["echo 'convert bin to txt'", scriptAll]).join(" & "));
 
-        grunt.task.run(["exec:i18nBin2Txt", "import8GetLanguages"]);
+        grunt.task.run(["exec:i18nBin2Txt", "import8GetLanguageHashes"]);
     });
 
     grunt.registerTask("import8GetLanguageHashes", function () {
         copyToolTo(toolPath.hashes, i18nPath);
-        fsExt.copySync("build/import/names.txt", i18nPath + "/names.txt");
 
         var scriptAll = "hashtest.cmd",
             cmds = ["pushd " + makeWinPath(i18nPath)];
 
         grunt.config("exec.i18nHashes.cmd", cmds.concat(["echo 'get hashes'", scriptAll]).join(" & "));
 
-        grunt.task.run(["exec:i18nHashes"]);// , "import4DoPackagesToOneDir"
+        grunt.task.run(["exec:i18nHashes", "import9GetTrackNamesViaHashes"]);
+    });
+
+    grunt.registerTask("import9GetTrackNamesViaHashes", function () {
+        var fileData = fs.readFileSync(i18nPath + "/hashes.txt", "utf8"),
+            rowsFileData = fileData.split("\r\n"),
+            fileDataWithIds = require("../build/import/names-with-ids.json"),
+            hashes = {},
+            levels = {};
+        // jsonfy hashes
+        for (var i in rowsFileData) {
+            var rowData = rowsFileData[i].split("\t");
+            if (rowData[0]) {
+                levels[rowData[0]] = {hash: rowData[1].toUpperCase(), id: fileDataWithIds[rowData[0]], i18n: {}};
+                hashes[rowData[1].toUpperCase()] = rowData[0];
+            }
+        }
+
+        // read strings from all *_strings.txt files
+        var dirData = fs.readdirSync(i18nPath),
+            i18nMap = {
+                braz_portuguese: "br",
+                english: "en",
+                spanish: "es",
+                french: "fr",
+                german: "de",
+                italian: "it",
+                russian: "ru",
+                korean: "kp",
+                japanese: "jp",
+                trad_chinese: "tcn",
+                simp_chinese: "cn"
+            };
+
+        for (var j in dirData) {
+            var file = dirData[j].toLowerCase();
+            if (_.endsWith(file, "_strings.txt")) {
+                // iterate strings
+                var fileDataJo = fs.readFileSync(i18nPath + "/" + file, "utf8"),
+                    fileLang = file.replace("_strings.txt", ""),
+                    rowsJo = fileDataJo.split("\r\n");
+                // convert them to lvl objects
+                for (var k in rowsJo) {
+                    var rowDataJO = rowsJo[k].split("\t"),
+                        hash = rowDataJO[0], trackName = rowDataJO[1];
+                    if (hashes.hasOwnProperty(hash)) {
+                        var trackLVLtag = hashes[hash];
+                        levels[trackLVLtag].i18n[i18nMap[fileLang]] = trackName;
+                    }
+                }
+            }
+        }
+        // now we have
+        /*
+        levels = LVL_WRECKED_TRACKS:
+           { hash: '957C09D8',
+             id: 128,
+             i18n:
+              { br: 'Pistas Arruinadas',
+                en: 'Wrecked Tracks',
+                fr: 'Rails brisés',
+                de: 'Zertrümmerte Strecken',
+                it: 'Tracciati distrutti',
+                jp: 'レックトラック',
+                kp: '파손 트랙',
+                ru: 'Разрушенные пути',
+                cn: '失事赛道',
+                es: 'Pistas destruidas',
+                tcn: '迷幻賽道' } } }
+
+        */
+
+        //console.log(levels);
+
+        // compare levels and languages
+        var i18nFiles = {};
+        for (var track in levels) {
+            var trackData = levels[track];
+            for (var i18nLang in trackData.i18n) {
+                var i18nName = trackData.i18n[i18nLang],
+                    trackId = trackData.id;
+                if (!i18nFiles.hasOwnProperty(i18nLang)) {
+                    i18nFiles[i18nLang] = {tracks: {}, unreleased: []};
+                }
+                if (trackId === null) {
+                    i18nFiles[i18nLang].unreleased.push(i18nName);
+                } else {
+                    i18nFiles[i18nLang].tracks[trackId] = i18nName;
+                }
+            }
+        }
+
+        //console.log(i18nFiles);
+        // write i18n files
+        ensureDirectoryExistence("build/import/i18n/de.json");
+        for (var file in i18nFiles) {
+            var fileData = i18nFiles[file];
+
+            fileData.unreleased.sort();
+
+            fs.writeFileSync("build/import/i18n/" + file + ".json", JSON.stringify(fileData, null, 2));
+        }
+
+        console.log("all files are written");
     });
 
     // import data from
