@@ -31,8 +31,8 @@ module.exports = {
             ].join("\n"),
             process: function (src, filepath) {
                 if (filepath.indexOf("map-module") >= 0)
-                    return src;
-                return src.replace(/(^|\n)[ \t]*angular.module(.*)?\s*/g, "$1");
+                    return src.replace(/;$/,"");
+                return src.replace(/(^|\n)[ \t]*angular.module(.*)?\s*/g, "$1").replace(/;$/,"");
             }
         },
         src: [

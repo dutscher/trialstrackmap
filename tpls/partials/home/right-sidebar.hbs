@@ -6,7 +6,6 @@
                 <div class="wrap tierlegend">
                     <h2 class="with-cursor" ng-click="visibility('statsVisible')">
                         {%'page.rightSidebar.tracks'|translate%} ({%::data.tracks.length%} total)</h2>
-
                     <div ng-show="statsVisible">
                         <span track-stats></span>
                     </div>
@@ -24,7 +23,7 @@
                 <h2 class="tierlegend__headline tierlegend__headline--other-world" ng-click="changeWorld(otherWorld);"><
                     {%'page.ferryTo.' + otherWorld|translate%} ({%tracksInOtherWorld%})</h2>
                 <h2 class="tierlegend__headline">{%'page.ferryTo.' + selectedWorld|translate%}
-                    ({%tracksInTiersNum%})</h2>
+                    ({%tracksInActiveWorld%})</h2>
                 <div class="wrap tierlegend">
                     <div class="mb10">
                         <input type="text"
