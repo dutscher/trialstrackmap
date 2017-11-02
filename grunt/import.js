@@ -11,9 +11,9 @@ module.exports = function (grunt) {
      */
     // VARS
     var gameVersion = "550",
-        drive = "E:/#trails/", // neofonie pc / cameo hdd / WIN10
         drive = "C:/www/", // hp lappy / WIN7
-        drive = "C:/www/softwar", // thinlpad neo / WIN10
+        drive = "E:/#trails/", // neofonie pc / cameo hdd / WIN10
+        drive = "C:/www/software/", // thinkpad neo / WIN10
         // CONST
         dataGet = "http://s3.amazonaws.com/dlcontent_frontier_android/" + gameVersion + "/info.json",
         hddPath = drive + "#TFunpacker/",
