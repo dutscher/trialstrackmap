@@ -6,43 +6,42 @@
   "title": "Oktoberfest",
   "date": "07.09.2017",
   "date_end": "11.10.2017",
-  "duration": "3h",
-  "free_showdowns": "4",
+  "duration": "5h",
+  "free_showdowns": "3",
   "ticket_regain": "30m",
-  "stats": "http://trials.bonxy.net/the-bunker/Sea-Blue+Season",
-  "total_legends": 61,
+  "stats": "http://trials.bonxy.net/the-bunker/Oktoberfest+Season",
+  "total_legends": 531,
   "prizes": [
     {
       "level": 1,
-      "extra_type": "doughnut",
+      "extra_type": "track",
+      "extra": 14,
       "coins": 5000,
       "gems": 5
     },
     {
       "level": 2,
-      "extra_type": "track",
-      "extra": 13,
-      "coins": 5000,
-      "gems": 5
-    },
-    {
-      "level": 3,
       "extra_type": "doughnut",
       "coins": 5000,
       "gems": 5
     },
     {
+      "level": 3,
+      "extra_type": "costum",
+      "extra": 7,
+      "coins": 5000,
+      "gems": 5
+    },
+    {
       "level": 4,
-      "extra_type": "paintjob",
-      "extra": 13,
-      "sprite_pointer": "bronco-sailor",
+      "extra_type": "doughnut",
       "coins": 2000,
       "gems": 5
     },
     {
       "level": 5,
       "extra_type": "track",
-      "extra": 12,
+      "extra": 8,
       "coins": 2000,
       "gems": 5
     },
@@ -55,8 +54,8 @@
     },
     {
       "level": 7,
-      "extra_type": "part",
-      "extra": "pipe-4",
+      "extra_type": "costum",
+      "extra": 8,
       "coins": 2000,
       "gems": 4
     },
@@ -107,8 +106,8 @@
     },
     {
       "level": 15,
-      "extra_type": "part",
-      "extra": "chain-3",
+      "extra_type": "costum",
+      "extra": 9,
       "coins": 1500,
       "gems": 3
     },
@@ -165,7 +164,7 @@
     },
     {
       "level": 24,
-      "extra_type": "doughnut",
+      "extra_type": "unlimited-fuel",
       "coins": 1000,
       "gems": 2
     },

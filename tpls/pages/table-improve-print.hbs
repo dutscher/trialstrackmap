@@ -11,13 +11,15 @@
 
     {{#content "body"}}
         {{#with map}}
-            <div ng-controller="trackTimes" ng-if="tracksReady" print-that="tracksReady">
+            <div ng-controller="trackTimes" ng-if="tracksReady" Xprint-that="tracksReady">
 
                 <div style="float:left;display: none;font-size:10px">
                     <div ng-repeat="cat in data.map.cats" class="{%::cat.class%}-bg">
                         {%cat.class%}
                     </div>
                 </div>
+
+                <h2>Seymore & Lotz</h2>
 
                 <div class="block">
                     <table>
@@ -32,15 +34,13 @@
                         <tr print-tracks="{tier:1,cat:'swamp'}"></tr>
                         <tr print-spacer></tr>
                         <tr print-tracks="{tier:1,cat:'time-machine'}"></tr>
-                        <tr print-spacer></tr>
-                        <tr print-tracks="{tier:1,cat:'new-world'}"></tr>
                     </table>
                 </div>
 
                 <div class="block">
                     <table>
                         <tr print-cell-sizes></tr>
-                        <tr print-head="Tier 2 ({% (data.tracks|printTracks:2:'story,slot-machine,loot-wheel,swamp,china').length %})"></tr>
+                        <tr print-head="Tier 2 ({% (data.tracks|printTracks:2:'story,slot-machine,loot-wheel,swamp,special').length %})"></tr>
                         <tr print-tracks="{tier:2,cat:'story'}"></tr>
                         <tr print-spacer></tr>
                         <tr print-tracks="{tier:2,cat:'slot-machine'}"></tr>
@@ -49,7 +49,7 @@
                         <tr print-spacer></tr>
                         <tr print-tracks="{tier:2,cat:'swamp'}"></tr>
                         <tr print-spacer></tr>
-                        <tr print-tracks="{tier:2,cat:'china'}"></tr>
+                        <tr print-tracks="{tier:2,cat:'special'}"></tr>
                     </table>
                 </div>
 
@@ -141,20 +141,98 @@
                     </table>
                 </div>
 
-                <div class="block">
+                <div class="block next-page-after-me">
                     <table>
                         <tr print-cell-sizes></tr>
-                        <tr print-head="Christmas ({% (data.tracks|printTracks:'all':'christmas').length %})"></tr>
+                        <tr print-head="Christmas 2016 ({% (data.tracks|printTracks:'all':'christmas').length %})"></tr>
                         <tr print-spacer="Tier 1"></tr>
                         <tr print-tracks="{tier:1,cat:'christmas'}"></tr>
                         <tr print-spacer="Tier 2"></tr>
                         <tr print-tracks="{tier:2,cat:'christmas'}"></tr>
                         <tr print-spacer="Tier 3"></tr>
                         <tr print-tracks="{tier:3,cat:'christmas'}"></tr>
-                        <tr print-spacer></tr>
-                        <tr print-head="KTM ({% (data.tracks|printTracks:'all':'ktm-tracks').length %})"></tr>
+                    </table>
+                </div>
+
+                <div class="block-spacer"></div>
+
+                <h2>Petrol Falls</h2>
+
+                <div class="block">
+                    <table>
+                        <tr print-cell-sizes></tr>
+                        <tr print-head="KTM 2016 ({% (data.tracks|printTracks:'all':'ktm-start-2016').length %})"></tr>
                         <tr print-spacer="Tier 1"></tr>
-                        <tr print-tracks="{tier:1,cat:'ktm-tracks'}"></tr>
+                        <tr print-tracks="{tier:1,cat:'ktm-start-2016'}"></tr>
+                        <tr print-head="Tresure Hunt ({% (data.tracks|printTracks:'all':'treasure-hunt').length %})"></tr>
+                        <tr print-spacer="Tier 1"></tr>
+                        <tr print-tracks="{tier:1,cat:'treasure-hunt'}"></tr>
+                        <tr print-spacer="Tier 2"></tr>
+                        <tr print-tracks="{tier:2,cat:'treasure-hunt'}"></tr>
+                        <tr print-spacer="Tier 3"></tr>
+                        <tr print-tracks="{tier:3,cat:'treasure-hunt'}"></tr>
+                        <tr print-head="Midnight Circuit ({% (data.tracks|printTracks:'all':'midnight-circuit').length %})"></tr>
+                        <tr print-spacer="Tier 1"></tr>
+                        <tr print-tracks="{tier:1,cat:'midnight-circuit'}"></tr>
+                        <tr print-spacer="Tier 2"></tr>
+                        <tr print-tracks="{tier:2,cat:'midnight-circuit'}"></tr>
+                        <tr print-spacer="Tier 3"></tr>
+                        <tr print-tracks="{tier:3,cat:'midnight-circuit'}"></tr>
+                        <tr print-head="Anniversary ({% (data.tracks|printTracks:'all':'anniversary').length %})"></tr>
+                        <tr print-spacer="Tier 1"></tr>
+                        <tr print-tracks="{tier:1,cat:'anniversary'}"></tr>
+                        <tr print-spacer="Tier 2"></tr>
+                        <tr print-tracks="{tier:2,cat:'anniversary'}"></tr>
+                    </table>
+                </div>
+
+                <div class="block">
+                    <table>
+                        <tr print-cell-sizes></tr>
+                        <tr print-head="KTM Rally 2017 ({% (data.tracks|printTracks:'all':'ktm-rally-2017').length %})"></tr>
+                        <tr print-spacer="Tier 1"></tr>
+                        <tr print-tracks="{tier:1,cat:'ktm-rally-2017'}"></tr>
+                        <tr print-spacer="Tier 2"></tr>
+                        <tr print-tracks="{tier:2,cat:'ktm-rally-2017'}"></tr>
+                        <tr print-spacer="Tier 3"></tr>
+                        <tr print-tracks="{tier:3,cat:'ktm-rally-2017'}"></tr>
+                        <tr print-head="Easter Eggs 2017 ({% (data.tracks|printTracks:'all':'easter-eggs-2017').length %})"></tr>
+                        <tr print-spacer="Tier 3"></tr>
+                        <tr print-tracks="{tier:3,cat:'easter-eggs-2017'}"></tr>
+                        <tr print-head="Bandito Rally 2017 ({% (data.tracks|printTracks:'all':'bandito-rally-2017').length %})"></tr>
+                        <tr print-spacer="Tier 2"></tr>
+                        <tr print-tracks="{tier:2,cat:'bandito-rally-2017'}"></tr>
+                        <tr print-spacer="Tier 3"></tr>
+                        <tr print-tracks="{tier:3,cat:'bandito-rally-2017'}"></tr>
+                        <tr print-head="Reputation 2017 ({% (data.tracks|printTracks:'all':'reputation-2017').length %})"></tr>
+                        <tr print-spacer="Tier 2"></tr>
+                        <tr print-tracks="{tier:2,cat:'reputation-2017'}"></tr>
+                        <tr print-spacer="Tier 3"></tr>
+                        <tr print-tracks="{tier:3,cat:'reputation-2017'}"></tr>
+                    </table>
+                </div>
+
+                <div class="block">
+                    <table>
+                        <tr print-cell-sizes></tr>
+                        <tr print-head="Okotberfest 2017 ({% (data.tracks|printTracks:'all':'oktoberfest-2017').length %})"></tr>
+                        <tr print-spacer="Tier 2"></tr>
+                        <tr print-tracks="{tier:2,cat:'oktoberfest-2017'}"></tr>
+                        <tr print-spacer="Tier 3"></tr>
+                        <tr print-tracks="{tier:3,cat:'oktoberfest-2017'}"></tr>
+                        <tr print-head="BMW Rally 2017 ({% (data.tracks|printTracks:'all':'bmw-rally-2017').length %})"></tr>
+                        <tr print-spacer="Tier 2"></tr>
+                        <tr print-tracks="{tier:2,cat:'bmw-rally-2017'}"></tr>
+                        <tr print-spacer="Tier 3"></tr>
+                        <tr print-tracks="{tier:3,cat:'bmw-rally-2017'}"></tr>
+                        <tr print-head="Bunker Rewards ({% (data.tracks|printTracks:'all':'petrol-falls').length %})"></tr>
+                        <tr print-spacer="Tier 1"></tr>
+                        <tr print-tracks="{tier:1,cat:'petrol-falls'}"></tr>
+                        <tr print-spacer="Tier 2"></tr>
+                        <tr print-tracks="{tier:2,cat:'petrol-falls'}"></tr>
+                        <tr print-spacer="Tier 3"></tr>
+                        <tr print-tracks="{tier:3,cat:'petrol-falls'}"></tr>
+
                     </table>
                 </div>
             </div>

@@ -14,7 +14,7 @@
   "prizes": [
     {
       "level": 1,
-      "extra_type": "custom",
+      "extra_type": "costum",
       "extra": 1,
       "coins": 10000,
       "gems": 10
@@ -44,7 +44,7 @@
     },
     {
       "level": 6,
-      "extra_type": "custom",
+      "extra_type": "costum",
       "extra": 2,
       "coins": 2000
     },
@@ -101,7 +101,7 @@
     },
     {
       "level": 16,
-      "extra_type": "custom",
+      "extra_type": "costum",
       "extra": 3,
       "coins": 1000
     },

@@ -39,14 +39,22 @@
     "10": "Acrobat Quarter",
     "11": "Fenland Flail",
     "12": "Peaceful Pummel",
-    "13": "Lollygagging"
+    "13": "Lollygagging",
+    "14": "Rest in Pieces",
+    "15": "Treachery"
   },
-  "customs": {
-    "1": "Ninja Head",
-    "2": "Ninja Body",
-    "3": "Ninja Pants",
-    "4": "Heartbreaker Head",
-    "5": "Heartbreaker Body",
-    "6": "Heartbreaker Pants"
+  "costums": {
+    "1": {"title": "Ninja Head", "selector": "the-ninja", "part": "head"},
+    "2": {"title": "Ninja Body", "selector": "the-ninja", "part": "body"},
+    "3": {"title": "Ninja Pants", "selector": "the-ninja", "part": "pant"},
+    "4": {"title": "Heartbreaker Head", "selector": "the-heartbrake-kit", "part": "head"},
+    "5": {"title": "Heartbreaker Body", "selector": "the-heartbrake-kit", "part": "body"},
+    "6": {"title": "Heartbreaker Pants", "selector": "the-heartbrake-kit", "part": "pant"},
+    "7": {"title": "The Gunslinger Head", "selector": "the-gunslinger", "part": "head"},
+    "8": {"title": "The Gunslinger Body", "selector": "the-gunslinger", "part": "body"},
+    "9": {"title": "The Gunslinger Pants", "selector": "the-gunslinger", "part": "pant"},
+    "10": {"title": "The Undead Rider Head", "selector": "the-undead-rider", "part": "head"},
+    "11": {"title": "The Undead Rider Body", "selector": "the-undead-rider", "part": "body"},
+    "12": {"title": "The Undead Rider Pants", "selector": "the-undead-rider", "part": "pant"}
   }
 }

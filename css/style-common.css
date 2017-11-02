@@ -81,7 +81,7 @@ body {
 }
 
 .no-pad {
-    padding: 0!important;
+    padding: 0 !important;
 }
 
 .w100 {
@@ -96,13 +96,16 @@ body {
     font-weight: bold;
     text-decoration: none
 }
+
 .link-info {
     font-size: 14px;
     display: block;
 }
+
 .box, .classic-link {
     color: #ffee99
 }
+
 .classic-link:hover {
     color: #775746;
 }
@@ -124,6 +127,11 @@ body {
     -webkit-box-shadow: inset -0px 0 10px 10px rgba(0, 0, 0, 0.25); /* WebKit */
     -moz-box-shadow: inset -0px 0 10px 10px rgba(0, 0, 0, 0.25); /* Firefox */
     box-shadow: inset -0px 0 10px 10px rgba(0, 0, 0, 0.25); /* Standard */
+}
+
+.box.sticky {
+    position: sticky;
+    top: 10px;
 }
 
 .with-cursor {

@@ -47,16 +47,20 @@
     "name": "KTM 500-EXC",
     "tier": 1
   },
-  "19": {
-    "name": "Donkey",
-    "tier": "Crazy"
-  },
   "14": {
     "name": "KTM 450 Rally",
     "tier": 2
   },
+  "19": {
+    "name": "Donkey",
+    "tier": "Crazy"
+  },
   "20": {
     "name": "Bandito",
     "tier": 1
+  },
+  "16": {
+    "name": "BMW F 800 GS",
+    "tier": 3
   }
 }

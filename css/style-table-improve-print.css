@@ -5,19 +5,34 @@
 
 html, body {
     height: 100%;
-    overflow: hidden;
     font-size: 0;
     white-space: nowrap;
+}
+
+h2 {
+    font-size: 15px;
+    font-weight: bold;
 }
 
 .block {
     font-size: 10px;
     display: inline-block;
     vertical-align: top;
+    margin-right: 10px;
 }
 
 .block:last-child {
     margin-right: 0;
+}
+
+.block-spacer {
+    display: block;
+    width: 100px;
+    height: 100px;
+}
+
+.next-page-after-me {
+    page-break-after: right;
 }
 
 table {
@@ -51,8 +66,9 @@ tr.headline td:last-child {
 
 tr.spacer td {
     border: 0;
-    height: 0;
-    background: #000;
+    height: 10px;
+    background: #fff;
+    border: none;
 }
 tr.spacer.with-text td {
     background: #fff;

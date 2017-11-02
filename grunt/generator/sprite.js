@@ -15,8 +15,8 @@ module.exports = function () {
                 bikeNamesJSON = require("../../database/bikes.json"),
                 paintJobsRAW = paintJobsJSON.bikes,
                 //gfx dimensions
-                spritePaintJobIconDimensions = "1100x1562".split("x"),
-                spritePaintJobDimensions = "1050x550".split("x"),
+                spritePaintJobIconDimensions = "1100x1710".split("x"),
+                spritePaintJobDimensions = "1120x550".split("x"),
                 //sprite dimensions
                 paintJobDimensions = "70x50".split("x"),
                 paintJobIconDimensons = "100x100".split("x"),
@@ -65,7 +65,7 @@ module.exports = function () {
                 }
 
                 var bikeName = trimName(bikeNamesJSON[bikeID].name),
-                    bikeIndex = Object.keys(paintJobsRAW).indexOf(bikeID);
+                    bikeIndex = paintJobsJSON.spriteSorting.indexOf(parseInt(bikeID));
 
                 for (var paintJob in paintJobsRAW[bikeID]) {
                     var paintJobName = trimName(paintJobsRAW[bikeID][paintJob].name),

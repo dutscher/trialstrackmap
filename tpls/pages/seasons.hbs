@@ -14,7 +14,7 @@
 
     {{#content "body"}}
         {{#with seasons}}
-            <div class="season-page" ng-controller="seasons">
+            <div class="season-page" ng-controller="seasons" scroll-vertical>
                 <div ng-init="pageReady = false" ng-hide="pageReady" class="loader spin"></div>
                 <div class="page-body is-loading" data-event="data:loaded" data-finished="pageReady">
                     {{> season-navigation}}
@@ -22,7 +22,7 @@
                     <div class="seasons-list">
                         {{#each-reverse _seasons}}
                             <div class="box season-container">
-                                <img class="season-banner" ng-src="{%'{{header.src}}'|hoster:data.hoster%}" alt="{{title}}" title="{{title}}" />
+                                <img class="season-banner" load-image-viewport="{{replaceHoster header.src ../../map.database.media.gfx.hoster}}" alt="{{title}}" title="{{title}}" />
 
                                 <div class="season-times">
                                     <strong>#{%'{{id}}'|leadingZero:2%}</strong>
@@ -56,10 +56,10 @@
                                                     <i class="season-level-{{level}} seasons"></i>
                                                 </td>
                                                 <td title="{{title}}">
-                                                <span class="season-prize" data-extra="{{extra}}"
-                                                      data-extra-type="{{extra_type}}"
-                                                      data-sprite-pointer="{{sprite_pointer}}"
-                                                      data-index="{{add @index 1}}"></span>
+                                                    <span class="season-prize" data-extra="{{extra}}"
+                                                          data-extra-type="{{extra_type}}"
+                                                          data-sprite-pointer="{{sprite_pointer}}"
+                                                          data-index="{{add @index 1}}"></span>
                                                 </td>
                                                 <td class="right">
                                                     + {{coins}} <i class="coins"></i><br/>
