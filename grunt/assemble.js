@@ -1,10 +1,12 @@
 module.exports = function (grunt) {
 
-    grunt.registerTask("deployHtml", [
-        "clean:assemble",
-        "assemble",
-        "copy:indexToRoot"
-    ]);
+    grunt.registerTask("deployHtml",  function() {
+        grunt.task.run([
+            "clean:assemble",
+            "assemble",
+            "copy:indexToRoot"
+        ]);
+    });
 
     return {
         options: {

@@ -1,15 +1,19 @@
 module.exports = function(grunt){
 
-    grunt.registerTask("server", [
-        "deploy",
-        "connect:dist",
-        "watch"
-    ]);
+    grunt.registerTask("server", function(){
+        grunt.task.run([
+            "deploy",
+            "connect:dist",
+            "watch"
+        ]);
+    });
 
-    grunt.registerTask("serverWithBackup", [
-        "doBackup",
-        "server"
-    ]);
+    grunt.registerTask("serverWithBackup",  function() {
+        grunt.task.run([
+            "doBackup",
+            "server"
+        ]);
+    });
 
     var rewrite = require("connect-modrewrite"),
         config = require("./connect-config.json5"),

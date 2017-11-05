@@ -5,10 +5,12 @@ module.exports = function (grunt) {
         worldRecordsID = "3s1ot",
         backupPath = "database/backup/";
 
-    grunt.registerTask("backupMyJson", [
-        "backupMyjsonIDs",
-        "backupMyJsonWRs"
-    ]);
+    grunt.registerTask("backupMyJson",  function() {
+        grunt.task.run([
+            "backupMyjsonIDs",
+            "backupMyJsonWRs"
+        ]);
+    });
 
     grunt.registerTask("backupMyjsonIDs", function () {
         var done = this.async();

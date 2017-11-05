@@ -10,10 +10,10 @@ module.exports = function (grunt) {
      /MENUZ/MENUZ/MAP/LAYER_1 // world 2
      */
     // VARS
-    var gameVersion = "550",
+    var gameVersion = "560",
         drive = "C:/www/", // hp lappy / WIN7
-        drive = "E:/#trails/", // neofonie pc / cameo hdd / WIN10
-        drive = "C:/www/software/", // thinkpad neo / WIN10
+        //drive = "E:/#trails/", // neofonie pc / cameo hdd / WIN10
+        //drive = "C:/www/software/", // thinkpad neo / WIN10
         // CONST
         dataGet = "http://s3.amazonaws.com/dlcontent_frontier_android/" + gameVersion + "/info.json",
         hddPath = drive + "#TFunpacker/",
@@ -140,6 +140,7 @@ module.exports = function (grunt) {
             "adb pull /sdcard/Android/data/com.ubisoft.redlynx.trialsfrontier.ggp " + makeWinPath(versionPath) // pull files
         ];
         grunt.config("exec.copyContentViaAdb.cmd", cmds.concat(["echo 'run adb pull'"]).join(" & "));
+        ensureDirectoryExistence(versionPath + "/adb.jo");
         grunt.task.run(["exec:copyContentViaAdb", "import2GameDataS3"]);
     });
 
@@ -204,6 +205,7 @@ module.exports = function (grunt) {
         }
 
         // start download
+        ensureDirectoryExistence(versionPath + "/amazon.jo");
         downloadS3Data();
     });
 
@@ -218,7 +220,7 @@ module.exports = function (grunt) {
         grunt.config("exec.unpackerAll.cmd", cmds.concat(["echo 'run dat to dir'", scriptAll]).join(" & "));
         grunt.config("exec.unpackerPng.cmd", cmds.concat(["echo 'run pvr to png'", scriptPng]).join(" & "));
 
-        grunt.task.run(["exec:unpackerAll", "exec:unpackerPng", "importX4DoPackagesToOneDir"]);
+        grunt.task.run(["exec:unpackerAll", "exec:unpackerPng", "import4DoPackagesToOneDir"]);
     });
 
     grunt.registerTask("import4DoPackagesToOneDir", function () {
@@ -237,7 +239,7 @@ module.exports = function (grunt) {
                 var dir = dirData[i];
                 if (dir !== allInOneDir
                     && fs.lstatSync(versionPath + "/" + dir).isDirectory()) {
-                    console.log("Copy: " + dir + " ...", newContentPath);
+                    console.log("Copy: " + dir + " to ", newContentPath, "and remove src");
                     fsExt.copySync(versionPath + "/" + dir, newContentPath);
                     // after extract remove or move
                     deleteFolderRecursive(versionPath + "/" + dir); // remove dir
@@ -262,7 +264,7 @@ module.exports = function (grunt) {
 
         copyDbtoImport();
 
-        //grunt.task.run("Ximport5ConvertOri2Json");
+        grunt.task.run("import5ConvertOri2Json");
     });
 
     // rename ori files to json to parse via js
