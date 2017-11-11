@@ -1415,5 +1415,41 @@
     "id": 270,
     "tier": 3,
     "world": 2
+  },
+  // Hanging Gardens
+  {
+    "id": 271,
+    "tier": 0,
+    "world": 2
+  },
+  // Mushroom Boom
+  {
+    "id": 272,
+    "tier": 0,
+    "world": 2
+  },
+  // Treachery
+  {
+    "id": 273,
+    "tier": 3,
+    "world": 2
+  },
+  // X-Factor
+  {
+    "id": 274,
+    "tier": 0,
+    "world": 2
+  },
+  // X-Terminate
+  {
+    "id": 275,
+    "tier": 0,
+    "world": 2
+  },
+  // Indigenous Village
+  {
+    "id": 276,
+    "tier": 0,
+    "world": 2
   }
 ]

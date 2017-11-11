@@ -22,14 +22,14 @@ module.exports = function (grunt) {
         }
     };
 
-    grunt.registerTask("#concatDatabase", function () {
+    grunt.registerTask("concatDatabase", function () {
         // all jsons to one
         grunt.task.run("concat-json:database");
         // seasons concat
-        grunt.task.run("#concatSeasonsData");
+        grunt.task.run("concatSeasonsData");
     });
 
-    grunt.registerTask("#concatSeasonsData", function () {
+    grunt.registerTask("concatSeasonsData", function () {
         var fs = require("fs"),
             distFilePath = "dist/seasons.json",
             prizesFile = "prizes.json",
@@ -165,7 +165,7 @@ module.exports = function (grunt) {
          });
          */
 
-        grunt.registerTask("#extractIDSintoJSON", function () {
+        grunt.registerTask("extractIDSintoJSON", function () {
             require("json5/lib/require");
             var trackData = require("../database/trackdata/ids.json5"),
                 categorieIDs = {};
