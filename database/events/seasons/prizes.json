@@ -24,7 +24,8 @@
     "18": "Spec Ops Paintjob for Agent (No missions too dangerous when you're disguised in this paint job!)",
     "19": "Revenant paint job for Riptide (Not even the apocalypse can stop Heavy Metal!)",
     "20": "Hard Rocker paintjob for Berserker (Flip out like a real Rock Star, without the midlife crisis!)",
-    "21": "Vengeful Steed paintjob for Phantom (Run them over with your vengeance!)"
+    "21": "Vengeful Steed paintjob for Phantom (Run them over with your vengeance!)",
+    "22": "Camo Bandito paint job for Bandito (A good bandit can hide in plain sight.)"
   },
   "tracks": {
     "1": "KTM Course",
@@ -41,7 +42,8 @@
     "12": "Peaceful Pummel",
     "13": "Lollygagging",
     "14": "Rest in Pieces",
-    "15": "Treachery"
+    "15": "Treachery",
+    "16": "Indigenous Village"
   },
   "costums": {
     "1": {"title": "Ninja Head", "selector": "the-ninja", "part": "head"},

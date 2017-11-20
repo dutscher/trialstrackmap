@@ -305,7 +305,8 @@
     "26": "Bandito Rally 2017",
     "27": "Reputation 2017",
     "28": "Oktoberfest MC 2017",
-    "29": "BMX Rally 2017"
+    "29": "BMX Rally 2017",
+    "30": "AUS-X Open"
   },
   "tracks": {
     "1": "Risco reseco",
@@ -574,18 +575,20 @@
     "267": "Rampas rampantes",
     "268": "Lanzamiento del horizonte",
     "269": "Botes dobles",
-    "270": "Descansa en pedazos"
+    "270": "Descansa en pedazos",
+    "271": "Jardines colgantes",
+    "272": "Explosión de setas",
+    "273": "Traición",
+    "274": "X-Factor",
+    "275": "X-Terminate",
+    "276": "Aldea indígena"
   },
   "unreleased": [
-    "Aldea indígena",
     "Calzada",
     "Colinas Redrum",
     "Esperanza rendida",
-    "Explosión de setas",
-    "Jardines colgantes",
     "Picos del peligro",
     "Reguero de avalancha",
-    "Santuario hundido",
-    "Traición"
+    "Santuario hundido"
   ]
 }

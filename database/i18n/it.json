@@ -305,7 +305,8 @@
     "26": "Bandito Rally 2017",
     "27": "Reputation 2017",
     "28": "Oktoberfest MC 2017",
-    "29": "BMX Rally 2017"
+    "29": "BMX Rally 2017",
+    "30": "AUS-X Open"
   },
   "tracks": {
     "1": "Scogliera desolata",
@@ -574,18 +575,20 @@
     "267": "Rampe Scatenate",
     "268": "Lancio sulla Skyline",
     "269": "Salti Doppi",
-    "270": "Riposa In Pezzi"
+    "270": "Riposa In Pezzi",
+    "271": "Giardini Pensili",
+    "272": "Esplosione Fungosa",
+    "273": "Tradimento",
+    "274": "X-Factor",
+    "275": "X-Terminate",
+    "276": "Villaggio indigeno"
   },
   "unreleased": [
     "Carreggiata",
     "Colline Redrum",
-    "Esplosione Fungosa",
-    "Giardini Pensili",
     "Onda di Neve",
     "Picchi pericolosi",
     "Santuario sommerso",
-    "Sentiero dei disperati",
-    "Tradimento",
-    "Villaggio indigeno"
+    "Sentiero dei disperati"
   ]
 }

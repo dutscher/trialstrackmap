@@ -69,6 +69,10 @@
       {
         "src": "",
         "name": "Birdy"
+      },
+      {
+        "src": "",
+        "name": "AUS-X-OPEN"
       }
     ],
     "3": [
@@ -175,6 +179,10 @@
       {
         "src": "",
         "name": "Dealbreaker"
+      },
+      {
+        "src": "",
+        "name": "AUS-X-OPEN"
       }
     ],
     "6": [
@@ -392,11 +400,11 @@
     "16": [
       {
         "src": "",
-        "name": "Default"
+        "name": "Default (Black White)"
       },
       {
         "src": "",
-        "name": "Camouflage"
+        "name": "Black Red"
       }
     ]
   },

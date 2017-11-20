@@ -305,7 +305,8 @@
     "26": "Bandito Rally 2017",
     "27": "Reputation 2017",
     "28": "Oktoberfest MC 2017",
-    "29": "BMX Rally 2017"
+    "29": "BMX Rally 2017",
+    "30": "AUS-X Open"
   },
   "tracks": {
     "1": "Falaise desséchée",
@@ -574,18 +575,20 @@
     "267": "Rampes rampantes",
     "268": "Passade de l'horizon",
     "269": "Deux sauts",
-    "270": "Repose en pièces"
+    "270": "Repose en pièces",
+    "271": "Jardins suspendus",
+    "272": "Pignons et champignons",
+    "273": "Traîtrise",
+    "274": "X-Factor",
+    "275": "X-Terminate",
+    "276": "Village autochtone"
   },
   "unreleased": [
     "Collines Tromal",
     "Espoir abandonné",
-    "Jardins suspendus",
     "Pics du péril",
-    "Pignons et champignons",
     "Route",
     "Sanctuaire englouti",
-    "Sillage de l'avalanche",
-    "Traîtrise",
-    "Village autochtone"
+    "Sillage de l'avalanche"
   ]
 }

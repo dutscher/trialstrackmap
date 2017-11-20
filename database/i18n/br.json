@@ -305,7 +305,8 @@
     "26": "Bandito Rally 2017",
     "27": "Reputation 2017",
     "28": "Oktoberfest MC 2017",
-    "29": "BMX Rally 2017"
+    "29": "BMX Rally 2017",
+    "30": "AUS-X Open"
   },
   "tracks": {
     "1": "Penhasco Árido",
@@ -574,18 +575,20 @@
     "267": "Rompante das Rampas",
     "268": "Voo pelo Horizonte",
     "269": "Saltos Duplos",
-    "270": "Descanse em Pedaços"
+    "270": "Descanse em Pedaços",
+    "271": "Jardins Suspensos",
+    "272": "Explosão Fungada",
+    "273": "Traição",
+    "274": "X-Factor",
+    "275": "X-Terminate",
+    "276": "Vila Indígena"
   },
   "unreleased": [
     "Colinas Meirc",
     "Estrada",
-    "Explosão Fungada",
-    "Jardins Suspensos",
     "Pico do Perigo",
     "Rendições da Esperança",
     "Restos da Avalanche",
-    "Santuário Profundo",
-    "Traição",
-    "Vila Indígena"
+    "Santuário Profundo"
   ]
 }

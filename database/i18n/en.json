@@ -308,7 +308,8 @@
     "26": "Bandito Rally 2017",
     "27": "Reputation 2017",
     "28": "Oktoberfest MC 2017",
-    "29": "BMX Rally 2017"
+    "29": "BMX Rally 2017",
+    "30": "AUS-X Open"
   },
   "tracks": {
     "1": "Parched Cliff",
@@ -587,14 +588,10 @@
   },
   "unreleased": [
     "Avalanche Strew",
-    "Hanging Gardens",
     "Hope Surrenders",
-    "Indigenous Village",
-    "Mushroom Boom",
     "Peaks of Peril",
     "Redrum Hills",
     "Roadway",
-    "Sunken Sanctuary",
-    "Treachery"
+    "Sunken Sanctuary"
   ]
 }

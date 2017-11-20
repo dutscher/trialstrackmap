@@ -133,23 +133,35 @@ module.exports = function (grunt) {
                 if (fs.statSync(curPath).isDirectory()) { // recurse
                     deleteFolderRecursive(curPath);
                 } else { // delete file
+                    //console.log("deleteFolderRecursive", curPath)
                     fs.unlinkSync(curPath);
                 }
             });
+            //console.log("rmdirSync", path)
             fs.rmdirSync(path);
         }
     }
 
     grunt.registerTask("import1GameDataPhone", function () {
         dates.push(new Date());
-        var cmds = [
-            "echo move to " + makeWinPath(toolPath.adb),
+        var toDir = makeWinPath(versionPath),
+            gameDir = "com.ubisoft.redlynx.trialsfrontier.ggp",
+            cmds = [
+            "echo \"run adb pull\"",
+            "echo move to \"" + makeWinPath(toolPath.adb) + "\"",
             "pushd " + makeWinPath(toolPath.adb), // navigate to adb tool
             "adb devices", // test if device is ready
-            "adb pull /sdcard/Android/data/com.ubisoft.redlynx.trialsfrontier.ggp " + makeWinPath(versionPath) // pull files
+            "adb pull /sdcard/Android/data/" + gameDir + " " + toDir, // pull files
+            "echo \"copy dir content to root\"",
+            "rmdir /S /Q \"" + toDir + "\\" + gameDir + "\\files\"",  // remove pulled  dir
+            "rmdir /S /Q \"" + toDir + "\\" + gameDir + "\\cache\"",  // remove pulled  dir
+            "xcopy \"" + toDir + "\\" + gameDir + "\" \"" + toDir + "\" /s /e /y /i", // copy content to root
+            "echo \"remove dir\"",
+            "rmdir /S /Q \"" + toDir + "\\" + gameDir + "\"" // remove pulled  dir
         ];
-        grunt.config("exec.copyContentViaAdb.cmd", cmds.concat(["echo 'run adb pull'"]).join(" & "));
+        grunt.config("exec.copyContentViaAdb.cmd", cmds.join(" & "));
         ensureDirectoryExistence(versionPath + "/adb.jo");
+        //console.log(cmds)
         grunt.task.run(["exec:copyContentViaAdb"]);
     });
 
@@ -252,9 +264,9 @@ module.exports = function (grunt) {
                     // after extract remove or move
                     deleteFolderRecursive(versionPath + "/" + dir); // remove dir
                     // remove also .dat file
-                    if (fs.existsSync(versionPath + "/" + dir + ".dat")) {
-                        fs.unlinkSync(versionPath + "/" + dir + ".dat");
-                    }
+                    var datFile = versionPath + "/" + dir + ".dat";
+                        fs.unlink(datFile);
+                    // TODO: unlink .dat files
                 }
             }
             console.log("Copied all dirs to one", "'" + newContentPath + "'");
@@ -650,5 +662,4 @@ module.exports = function (grunt) {
     grunt.registerTask("importPrintDates", function () {
         console.log(dates);
     })
-}
-;
+};
