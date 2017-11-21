@@ -15,13 +15,13 @@
       }
     },
     "paintjobs": {
-      "src": "#1/tzu9wnE.png",
+      "src": "#1/ripdiGt.png",
       "lSrc": "#0/icons/sprite-paintjobs.png",
       "selector": "i.paintjob",
       "sprite": true
     },
     "paintjob-icons": {
-      "src": "#1/CcApbsm.png",
+      "src": "#1/aqULlx3.png",
       "lSrc": "#0/icons/sprite-paintjob-icons.png",
       "selector": "i.paintjob-icon",
       "sprite": true
@@ -144,7 +144,6 @@
       "lSrc": "#0/icons/flag-no.png",
       "selector": "i.lang.lang_no"
     },
-
     "timer": {
       "src": "#1/GLuwunX.png",
       "lSrc": "#0/icons/picto-timer.png",
@@ -235,7 +234,6 @@
       "lSrc": "#0/icons/picto-import-export.png",
       "selector": "i.import-export"
     },
-
     "candy": {
       "src": "#1/HuTSmQ0.png",
       "lSrc": "#0/icons/trackitem-candy.png",
