@@ -4,18 +4,10 @@
         <ul>
             <li>
                 <div class="wrap tierlegend">
-                    <h2 class="with-cursor" ng-click="visibility('statsVisible')">
-                        {%'page.rightSidebar.tracks'|translate%} ({%::data.tracks.length%} total)</h2>
-                    <div ng-show="statsVisible">
-                        <span track-stats></span>
-                    </div>
-                    <span class="with-cursor" ng-click="visibility('statsVisible')" ng-hide="statsVisible">{%'page.leftSidebar.toggleMe'|translate%}</span>
-                </div>
-            </li>
-            <li>
-                <div class="wrap tierlegend">
-                    <h2 class="with-cursor">
-                        {%'page.rightSidebar.legend'|translate%}</h2>
+                    <h2 class="with-cursor">{%'page.rightSidebar.tracks'|translate%} ({%::data.tracks.length%})</h2>
+                    <span track-stats></span>
+
+                    <h2 class="with-cursor inline">{%'page.rightSidebar.legend'|translate%}</h2>
                     <div class="legend-spectrum"></div>
                 </div>
             </li>

@@ -26,13 +26,12 @@
     "rightSidebar": {
       "legend": "Tags",
       "tracks": "Трассы",
-      "released": "released",
+      "commingSoon": "comming soon",
       "onMap": "на карте",
       "withoutCoords": "без координат",
       "notReleased": "not on map or released",
-      "onlyEvent": "только во время ивента",
-      "onlyBunker": "только в Бункере",
-      "leaked": "leaked",
+      "onlyEvent": "not playable, event tracks",
+      "onlyBunker": "bunker",
       "withVideo": "с видеообзором",
       "searchForTrack": "поиск трассы",
       "tier": "Уровень",
@@ -305,7 +304,7 @@
     "26": "Bandito Rally 2017",
     "27": "Reputation 2017",
     "28": "Oktoberfest MC 2017",
-    "29": "BMX Rally 2017",
+    "29": "BMW Rally 2017",
     "30": "AUS-X Open"
   },
   "tracks": {

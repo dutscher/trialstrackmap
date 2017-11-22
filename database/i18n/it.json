@@ -26,13 +26,11 @@
     "rightSidebar": {
       "legend": "Tags",
       "tracks": "Tracce",
-      "released": "released",
+      "commingSoon": "comming soon",
       "onMap": "on map",
       "withoutCoords": "without coordinates",
-      "notReleased": "not on map or released",
-      "onlyEvent": "only playable by event",
-      "onlyBunker": "only bunker",
-      "leaked": "leaked",
+      "onlyEvent": "not playable, event tracks",
+      "onlyBunker": "bunker",
       "withVideo": "with video",
       "searchForTrack": "cerca per traccia",
       "tier": "Livello",
@@ -305,7 +303,7 @@
     "26": "Bandito Rally 2017",
     "27": "Reputation 2017",
     "28": "Oktoberfest MC 2017",
-    "29": "BMX Rally 2017",
+    "29": "BMW Rally 2017",
     "30": "AUS-X Open"
   },
   "tracks": {

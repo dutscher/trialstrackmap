@@ -1437,13 +1437,13 @@
   // X-Factor
   {
     "id": 274,
-    "tier": 0,
+    "tier": 1,
     "world": 2
   },
   // X-Terminate
   {
     "id": 275,
-    "tier": 0,
+    "tier": 2,
     "world": 2
   },
   // Indigenous Village

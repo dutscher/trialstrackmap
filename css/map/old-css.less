@@ -376,6 +376,11 @@ li div.wrap h2 {
   white-space: nowrap;
 }
 
+li div.wrap h2.inline {
+  position: relative;
+  top: auto;
+}
+
 li div.wrap h3 {
   margin: 0;
 }
@@ -448,15 +453,23 @@ img.trackmap.all-loaded {
   left: -10000px;
   top: -10000px;
 }
+.stats-headline {
+  font-weight: bold;
 
-.without-coords {
+}
+.stats-mini-text {
+  font-size: 12px;
+}
+.stats-extra-tracks {
   font-size: 14px;
   margin-left: 14px;
 }
-
 .stats-track-names {
   margin-left: 19px;
   padding-bottom: 5px;
+}
+.stats-track-names--warning {
+  color: #ff0000;
 }
 
 [pinch-map] {
