@@ -1449,6 +1449,12 @@
   // Indigenous Village
   {
     "id": 276,
+    "tier": 3,
+    "world": 2
+  },
+  // Avalanche Strew
+  {
+    "id": 277,
     "tier": 0,
     "world": 2
   }
