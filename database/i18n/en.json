@@ -583,13 +583,24 @@
     "274": "X-Factor",
     "275": "X-Terminate",
     "276": "Indigenous Village",
-    "277": "Avalanche Strew"
+    "277": "Avalanche Strew",
+    "278": "Redrum Hills",
+    "279": "Lotus Swamp",
+    "280": "Air Assault",
+    "281": "Double Barrel",
+    "282": "Reverse Engineering"
   },
   "unreleased": [
+    "Cliff-Hanger",
     "Hope Surrenders",
+    "Lopsided",
+    "Nuclear Cave",
     "Peaks of Peril",
-    "Redrum Hills",
+    "Radical Roadworks",
     "Roadway",
-    "Sunken Sanctuary"
+    "Sloppy Slopes",
+    "Spare Ribs",
+    "Sunken Sanctuary",
+    "Terrace Farming"
   ]
 }

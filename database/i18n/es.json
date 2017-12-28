@@ -577,16 +577,27 @@
     "271": "Jardines colgantes",
     "272": "Explosión de setas",
     "273": "Traición",
-    "274": "X-Factor",
-    "275": "X-Terminate",
+    "274": "X-factor",
+    "275": "X-terminar",
     "276": "Aldea indígena",
-    "277": "Reguero de avalancha"
+    "277": "Reguero de avalancha",
+    "278": "Colinas Redrum",
+    "279": "Pantano del loto",
+    "280": "Asalto aéreo",
+    "281": "Barril doble",
+    "282": "Ingeniería inversa"
   },
   "unreleased": [
+    "Bancales",
     "Calzada",
-    "Colinas Redrum",
+    "Costillas sobrantes",
+    "Cuestas costosas",
+    "Cueva nuclear",
     "Esperanza rendida",
+    "Máximo riesgo",
+    "Obras radicales",
     "Picos del peligro",
-    "Santuario hundido"
+    "Santuario hundido",
+    "Torcido"
   ]
 }

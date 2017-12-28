@@ -577,16 +577,27 @@
     "271": "Jardins suspendus",
     "272": "Pignons et champignons",
     "273": "Traîtrise",
-    "274": "X-Factor",
-    "275": "X-Terminate",
+    "274": "Facteur-X",
+    "275": "X-terminer",
     "276": "Village autochtone",
-    "277": "Sillage de l'avalanche"
+    "277": "Sillage de l'avalanche",
+    "278": "Collines Tromal",
+    "279": "Marais du lotus",
+    "280": "Assaut aérien",
+    "281": "Double canon",
+    "282": "ingénierie inverse"
   },
   "unreleased": [
-    "Collines Tromal",
+    "Abri antiatomique",
+    "Bord de falaise",
+    "Chantier infernal",
+    "De guingois",
+    "Descente en folie",
     "Espoir abandonné",
+    "Fermes en terrasse",
     "Pics du péril",
     "Route",
-    "Sanctuaire englouti"
+    "Sanctuaire englouti",
+    "Travers de porc"
   ]
 }

@@ -578,15 +578,26 @@
     "272": "Esplosione Fungosa",
     "273": "Tradimento",
     "274": "X-Factor",
-    "275": "X-Terminate",
+    "275": "X-Terminio",
     "276": "Villaggio indigeno",
-    "277": "Onda di Neve"
+    "277": "Onda di Neve",
+    "278": "Colline Redrum",
+    "279": "Palude di Loto",
+    "280": "Attacco Aereo",
+    "281": "Barili Esplosivi",
+    "282": "Reverse Engineering"
   },
   "unreleased": [
+    "Cantieri Radicali",
     "Carreggiata",
-    "Colline Redrum",
+    "Deserto di Ossa",
+    "Discese Scivolose",
+    "Grotta Nucleare",
     "Picchi pericolosi",
+    "Salti Innevati",
     "Santuario sommerso",
-    "Sentiero dei disperati"
+    "Sentiero Curvoso",
+    "Sentiero dei disperati",
+    "Terrazze Coltivate"
   ]
 }

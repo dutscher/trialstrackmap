@@ -577,16 +577,27 @@
     "271": "Hängende Gärten",
     "272": "Pilzexplosion",
     "273": "Betrug",
-    "274": "X-Factor",
-    "275": "X-Terminate",
+    "274": "X-Faktor",
+    "275": "X-Terminieren",
     "276": "Eingeborenendorf",
-    "277": "Lavinenchaos"
+    "277": "Lavinenchaos",
+    "278": "Drom-Hügel",
+    "279": "Lotus-Sumpf",
+    "280": "Luftige Sprünge",
+    "281": "Explosive Tour",
+    "282": "Reverse Engineering"
   },
   "unreleased": [
+    "Atomhöhle",
+    "Cliff-Hanger",
     "Die Hoffnung gibt auf",
-    "Drom-Hügel",
     "Fahrbahn",
     "Gipfel der Gefahr",
+    "Gärtnerterasse",
+    "Radikale Straßenarbeiten",
+    "Schief gewickelt",
+    "Schmutzige Pisten",
+    "Spare Ribs",
     "Versunkenes Heiligtum"
   ]
 }

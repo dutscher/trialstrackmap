@@ -577,16 +577,27 @@
     "271": "Jardins Suspensos",
     "272": "Explosão Fungada",
     "273": "Traição",
-    "274": "X-Factor",
-    "275": "X-Terminate",
+    "274": "Fator X",
+    "275": "X-Terminador",
     "276": "Vila Indígena",
-    "277": "Restos da Avalanche"
+    "277": "Restos da Avalanche",
+    "278": "Colinas Meirc",
+    "279": "Pântano da Lótus",
+    "280": "Assalto Aéreo",
+    "281": "Barril Duplo",
+    "282": "Engenharia reversa"
   },
   "unreleased": [
-    "Colinas Meirc",
+    "Barrancatoco",
+    "Caverna Nuclear",
+    "Costelas à Parte",
     "Estrada",
+    "Fazenda de Terraço",
+    "Fora de Eixo",
+    "Gancho do Penhasco",
     "Pico do Perigo",
     "Rendições da Esperança",
+    "Rodovia Radical",
     "Santuário Profundo"
   ]
 }

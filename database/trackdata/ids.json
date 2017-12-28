@@ -802,10 +802,11 @@
     "tier": 3
   },
   // agent tracks,
+  // Rigged Roadway
   {
     "id": 157,
-    "only_event": true,
-    "tier": 1
+    "tier": 1,
+    "only_bunker": true
   },
   {
     "id": 156,
@@ -1455,6 +1456,37 @@
   // Avalanche Strew
   {
     "id": 277,
+    "tier": 0,
+    "world": 2
+  },
+  // Redrum Hills
+  {
+    "id": 278,
+    "christmas_gift": true,
+    "tier": 3,
+    "world": 2
+  },
+  // Lotus Swamp
+  {
+    "id": 279,
+    "tier": 0,
+    "world": 2
+  },
+  // Air Assault
+  {
+    "id": 280,
+    "tier": 0,
+    "world": 2
+  },
+  // Double Barrel
+  {
+    "id": 281,
+    "tier": 0,
+    "world": 2
+  },
+  // Reverse Engineering
+  {
+    "id": 282,
     "tier": 0,
     "world": 2
   }
