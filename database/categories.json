@@ -47,6 +47,7 @@
     },
     "10": {
       "class": "special",
+      "china": "true",
       "color": "BE0041"
     },
     "11": {

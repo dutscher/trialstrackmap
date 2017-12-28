@@ -1,21 +1,21 @@
 {
   "header": {
-    "src": "#1/n4qRVew.jpg",
-    "lSrc": "#0/seasons/40.november-pain.jpg"
+    "src": "#1/129fazp.jpg",
+    "lSrc": "#0/seasons/41.hot-chocolate.jpg"
   },
-  "title": "November Pain",
-  "date": "09.11.2017",
-  "date_end": "07.12.2017",
-  "duration": "4h",
-  "free_showdowns": "3",
+  "title": "Hot Chocolate",
+  "date": "07.12.2017",
+  "date_end": "08.01.2018",
+  "duration": "3h",
+  "free_showdowns": "4",
   "ticket_regain": "30m",
-  "stats": "http://trials.bonxy.net/the-bunker/November+Pain+Season",
-  "total_legends": 525,
+  "stats": "http://trials.bonxy.net/the-bunker/Hot+Chocolate+Season",
+  "total_legends": 527,
   "prizes": [
     {
       "level": 1,
       "extra_type": "track",
-      "extra": 16,
+      "extra": 17,
       "coins": 5000,
       "gems": 5
     },
@@ -27,9 +27,8 @@
     },
     {
       "level": 3,
-      "extra_type": "paintjob",
-      "sprite_pointer": "bandito-camouflage",
-      "extra": 22,
+      "extra_type": "costum",
+      "extra": 13,
       "coins": 5000,
       "gems": 5
     },
@@ -47,14 +46,14 @@
     },
     {
       "level": 6,
-      "extra": "sheet-4",
+      "extra_type": "doughnut",
       "coins": 2000,
       "gems": 4
     },
     {
       "level": 7,
-      "extra_type": "part",
-      "extra": "spring-5",
+      "extra_type": "paintjob",
+      "sprite_pointer": "marauda-wolf",
       "coins": 2000,
       "gems": 4
     },
@@ -72,8 +71,8 @@
     },
     {
       "level": 10,
-      "extra_type": "part",
-      "extra": "spring-4",
+      "extra_type": "costum",
+      "extra": 14,
       "coins": 1500,
       "gems": 3
     },
@@ -85,8 +84,7 @@
     },
     {
       "level": 12,
-      "extra_type": "part",
-      "extra": "sheet-3",
+      "extra_type": "doughnut",
       "coins": 1500,
       "gems": 3
     },
@@ -105,7 +103,8 @@
     },
     {
       "level": 15,
-      "extra_type": "doughnut",
+      "extra_type": "part",
+      "extra": "sheet-3",
       "coins": 1500,
       "gems": 3
     },
@@ -123,14 +122,14 @@
     },
     {
       "level": 18,
-      "extra_type": "part",
-      "extra": "bolt-1",
+      "extra_type": "doughnut",
       "coins": 1000,
       "gems": 2
     },
     {
       "level": 19,
-      "extra_type": "unlimited-fuel",
+      "extra_type": "costum",
+      "extra": 15,
       "coins": 1000,
       "gems": 2
     },
@@ -155,7 +154,7 @@
     {
       "level": 23,
       "extra_type": "part",
-      "extra": "pipe-1",
+      "extra": "nut-1",
       "coins": 800,
       "gems": 1
     },

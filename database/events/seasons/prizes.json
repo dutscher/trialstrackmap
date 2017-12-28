@@ -25,7 +25,8 @@
     "19": "Revenant paint job for Riptide (Not even the apocalypse can stop Heavy Metal!)",
     "20": "Hard Rocker paintjob for Berserker (Flip out like a real Rock Star, without the midlife crisis!)",
     "21": "Vengeful Steed paintjob for Phantom (Run them over with your vengeance!)",
-    "22": "Camo Bandito paint job for Bandito (A good bandit can hide in plain sight.)"
+    "22": "Camo Bandito paint job for Bandito (A good bandit can hide in plain sight.)",
+    "23": "Winter Wolf paint job for Marauder (Howl at the moon!)"
   },
   "tracks": {
     "1": "KTM Course",
@@ -43,7 +44,8 @@
     "13": "Lollygagging",
     "14": "Rest in Pieces",
     "15": "Treachery",
-    "16": "Indigenous Village"
+    "16": "Indigenous Village",
+    "17": "Avalanche Strew"
   },
   "costums": {
     "1": {"title": "Ninja Head", "selector": "the-ninja", "part": "head"},
@@ -57,6 +59,9 @@
     "9": {"title": "The Gunslinger Pants", "selector": "the-gunslinger", "part": "pant"},
     "10": {"title": "The Undead Rider Head", "selector": "the-undead-rider", "part": "head"},
     "11": {"title": "The Undead Rider Body", "selector": "the-undead-rider", "part": "body"},
-    "12": {"title": "The Undead Rider Pants", "selector": "the-undead-rider", "part": "pant"}
+    "12": {"title": "The Undead Rider Pants", "selector": "the-undead-rider", "part": "pant"},
+    "13": {"title": "The Death Knight Head", "selector": "death-knight", "part": "head"},
+    "14": {"title": "The Death Knight Body", "selector": "death-knight", "part": "body"},
+    "15": {"title": "The Death Knight Pants", "selector": "death-knight", "part": "pant"}
   }
 }
