@@ -1,0 +1,25 @@
+{{#extend "default"}}
+    {{#content "title-override"}}true{{/content}}
+    {{#content "title" mode="prepend"}}Trackfinder - {{/content}}
+    {{#content "styles"}}
+        <link rel="stylesheet" type="text/css" href="/dist/trackfinder.css{{cacheBuster}}"/>
+    {{/content}}
+    {{#content "htmlCtrl"}}ng-controller="trackData" data-without="myjson"{{/content}}
+    {{#content "ctrl"}}ng-controller="trackFinder"{{/content}}
+    {{#content "body"}}
+        <div class="trackfinder">
+            <div class="trackpainter"
+                data-world="1"
+                data-src="{{replaceHoster ../map.database.media.gfx.images.trackmaps.1.srcPath ../map.database.media.gfx.hoster}}"
+                data-dim-map="{{../map.database.media.gfx.images.trackmaps.1.dim}}"
+                data-dim-path="{{../map.database.media.gfx.images.trackmaps.1.dimPath}}"
+                ></div>
+            <div class="trackpainter"
+                data-world="2"
+                data-src="{{replaceHoster ../map.database.media.gfx.images.trackmaps.2.srcPath ../map.database.media.gfx.hoster}}"
+                data-dim-map="{{../map.database.media.gfx.images.trackmaps.2.dim}}"
+                data-dim-path="{{../map.database.media.gfx.images.trackmaps.2.dimPath}}"
+                ></div>
+        </div>
+    {{/content}}
+{{/extend}}

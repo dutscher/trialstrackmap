@@ -22,6 +22,7 @@
     <link rel="stylesheet" type="text/css" href="/css/style-common.css{{cacheBuster}}"/>
     <style preload-images data-event="{{#block "preload-images"}}{{/block}}"></style>
 {{/block}}
-
-<script type="text/javascript" src="/dist/vendor.min.js{{cacheBuster}}"></script>
+{{#block "vendor-scripts"}}
+    <script type="text/javascript" src="/dist/vendor.min.js{{cacheBuster}}"></script>
+{{/block}}
 <script type="text/javascript" src="/dist/map.min.js{{cacheBuster}}"></script>
