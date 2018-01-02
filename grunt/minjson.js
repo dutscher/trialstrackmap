@@ -1,13 +1,13 @@
 module.exports = {
     dist: {
         files: {
-            "dist/seasons.json": [
-                "dist/seasons.json"
+            "dist/json/seasons.json": [
+                "dist/json/seasons.json"
             ],
-            "dist/gfx.json": [
-                "dist/gfx.json"
+            "dist/json/gfx.json": [
+                "dist/json/gfx.json"
             ],
-            "dist/map.json": [
+            "dist/json/map.json": [
                 "build/map.json"
             ]
         }

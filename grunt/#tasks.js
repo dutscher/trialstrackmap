@@ -6,8 +6,7 @@ module.exports = function (grunt) {
             "copy:i18nToDist",
             "copy:rawToDist",
             "convertLess",
-            "concat:dist",
-            "concat:vendor",
+            "concat",
             "minjson:dist",
             "minjson:distI18n",
             "deployHtml"

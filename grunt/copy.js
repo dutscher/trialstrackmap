@@ -30,25 +30,25 @@ module.exports = function (grunt) {
                     flatten: true,
                     expand: true,
                     src: "database/media/gfx.json",
-                    dest: "dist/"
+                    dest: "dist/json/"
                 },
                 {
                     flatten: true,
                     expand: true,
                     src: "database/media/paintjobs.json",
-                    dest: "dist/"
+                    dest: "dist/json/"
                 },
                 {
                     flatten: true,
                     expand: true,
                     src: "database/events/seasons.json",
-                    dest: "dist/"
+                    dest: "dist/json/"
                 },
                 {
                     flatten: true,
                     expand: true,
                     src: "database/media/wardrobe.json",
-                    dest: "dist/"
+                    dest: "dist/json/"
                 }
             ]
         },

@@ -31,15 +31,15 @@ module.exports = {
             ].join("\n"),
             process: function (src, filepath) {
                 if (filepath.indexOf("map-module") >= 0)
-                    return src.replace(/;$/,"");
-                return src.replace(/(^|\n)[ \t]*angular.module(.*)?\s*/g, "$1").replace(/;$/,"");
+                    return src.replace(/;$/, "");
+                return src.replace(/(^|\n)[ \t]*angular.module(.*)?\s*/g, "$1").replace(/;$/, "");
             }
         },
         src: [
             "lib/map-module.js",
             "lib/**/!(map-module|.min)*.js"
         ],
-        dest: "dist/map.min.js"
+        dest: "dist/js/map.min.js"
     },
     vendor: {
         src: [
@@ -47,6 +47,12 @@ module.exports = {
             "vendor/angular/!(angular-base)*.js",
             "vendor/*.js"
         ],
-        dest: "dist/vendor.min.js"
+        dest: "dist/js/vendor.min.js"
+    },
+    bonxy: {
+        src: [
+            "vendor/bonxy/bonxy.js"
+        ],
+        dest: "dist/js/bonxy.min.js"
     }
 };

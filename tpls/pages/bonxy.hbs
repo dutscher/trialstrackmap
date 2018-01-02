@@ -1,10 +1,12 @@
 {{#extend "default"}}
     {{#content "styles"}}
-        {{!--<link rel="stylesheet" type="text/css" href="/dist/main.css{{cacheBuster}}"/> --}}
-        <link rel="stylesheet" type="text/css" href="/dist/bonxy.css{{cacheBuster}}"/>
+    {{!--<link rel="stylesheet" type="text/css" href="/dist/main.css{{cacheBuster}}"/> --}}
+        <link rel="stylesheet" type="text/css" href="/dist/css/bonxy.css{{cacheBuster}}"/>
         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/default.min.css">
         <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
-        <script>hljs.configure({useBR: true});hljs.initHighlightingOnLoad();</script>
+        <script src="/dist/js/bonxy.min.js"></script>
+        <script>hljs.configure({useBR: true});
+        hljs.initHighlightingOnLoad();</script>
     {{/content}}
 
     {{#content "body"}}
@@ -12,38 +14,151 @@
             {{> navigation title="Bonxy Integration"}}
 
             {{homeShack data=wardrobe only_css=true}}
+            <div class="costum__area bonxy bonxys-style" style="background: #6a4229;">
 
-            <div class="costum__area bonxy" style="background: #6a4229;">
+                <div class="bonxy__row">
+                    <div class="bonxy__cell">
+                        <h2>External Scripts</h2>
+                        <pre>
+                            <code class="html">
+&lt;link rel=&quot;stylesheet&quot; href=&quot;//trialstrackmap.sb-f.de/dist/css/bonxy.css{{cacheBuster}}&quot;/&gt;<br />
+&lt;script rel=&quot;stylesheet&quot; src=&quot;//trialstrackmap.sb-f.de/dist/js/bonxy.min.js{{cacheBuster}}&quot;/&gt;&lt;script&gt;
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+
+                <div class="bonxy__row">
+                    <div class="bonxy__cell">
+                        <h2>Leaderboard</h2>
+                        <div>
+                            <table width="100%" class="sortable">
+                                <thead>
+                                <tr>
+                                    <th>Track</th>
+                                    <th>Time</th>
+                                    <th>Faults</th>
+                                    <th>Percent</th>
+                                    <th>Rank</th>
+                                    <th>Riders</th>
+                                    <th>Score</th>
+                                    <th>Medal</th>
+                                    <th>Bike</th>
+                                    <th>Upgrades</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td><a href="http://trials.bonxy.net/tracks/Rigged+Roadway"
+                                           title="View Rigged Roadway  Leaderboard"
+                                           onmouseenter="showTrackFinder(event, this)">Rigged Roadway</a></td>
+                                    <td>16.580</td>
+                                    <td>0</td>
+                                    <td>0.24%</td>
+                                    <td>28</td>
+                                    <td>11,429</td>
+                                    <td>791,989</td>
+                                    <td sorttable_customkey="2">
+                                        <!--<img border="0" src="https://i.imgur.com/.png" title="Platinum" width="25">-->
+                                        Platinum
+                                    </td>
+                                    <td sorttable_customkey="9" class="bonxy--bike-cell">Phantom <span
+                                        class="paintjob__mask"><i
+                                        class="paintjob paintjob-9-3"></i></span></td>
+                                    <td>10/10/10/10</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="http://trials.bonxy.net/tracks/The+Bell+Pit"
+                                           title="View The Bell Pit  Leaderboard"
+                                           onmouseenter="showTrackFinder(event, this)">The Bell Pit </a></td>
+                                    <td>21.149</td>
+                                    <td>0</td>
+                                    <td>0.18%</td>
+                                    <td>70</td>
+                                    <td>38,532</td>
+                                    <td>818,388</td>
+                                    <td sorttable_customkey="2">
+                                        <!--<img border="0" src="https://i.imgur.com/.png" title="Platinum" width="25">-->
+                                        Platinum
+                                    </td>
+                                    <td sorttable_customkey="5" class="bonxy--bike-cell">Mantis <span
+                                        class="paintjob__mask"><i
+                                        class="paintjob paintjob-5-2"></i></span></td>
+                                    <td>10/10/10/10</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="http://trials.bonxy.net/tracks/Choking+Hazard"
+                                           title="View Choking Hazard  Leaderboard"
+                                           onmouseenter="showTrackFinder(event, this)">Choking Hazard </a></td>
+                                    <td>20.895</td>
+                                    <td>0</td>
+                                    <td>1.21%</td>
+                                    <td>74</td>
+                                    <td>6,102</td>
+                                    <td>790,769</td>
+                                    <td sorttable_customkey="2">
+                                        <!--<img border="0" src="https://i.imgur.com/.png" title="Platinum" width="25">-->
+                                        Platinum
+                                    </td>
+                                    <td sorttable_customkey="8" class="bonxy--bike-cell">Berserker <span
+                                        class="paintjob__mask"><i
+                                        class="paintjob paintjob-8-4"></i></span></td>
+                                    <td>10/10/10/10</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="http://trials.bonxy.net/tracks/Lotus+Swamp"
+                                           title="View Lotus Swamp  Leaderboard"
+                                           onmouseenter="showTrackFinder(event, this)">Lotus Swamp </a></td>
+                                    <td>18.925</td>
+                                    <td>0</td>
+                                    <td>11.99%</td>
+                                    <td>74</td>
+                                    <td>617</td>
+                                    <td>825,577</td>
+                                    <td sorttable_customkey="2">
+                                        <!--<img border="0" src="https://i.imgur.com/.png" title="Platinum" width="25">-->
+                                        Platinum
+                                    </td>
+                                    <td sorttable_customkey="15" class="bonxy--bike-cell">Bandito <span
+                                        class="paintjob__mask"><i
+                                        class="paintjob paintjob-15-1"></i></span></td>
+                                    <td>10/10/10/10</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="bonxy__row">
                     <div class="bonxy__cell" style="width:200px">
-                        <h2>Profile Costum</h2>
-                        <div class="bonxy--box bonxy--profile">
-                            {{> costum wardrobe.costums.dutscher home-shack-editor-preview=true without_name=true}}
+                        <h2>Trackfinder</h2>
+                        <div class="bonxy--box">
+                            <table width="100%" class="sortable">
+                                <td>
+                                    <a href="http://trials.bonxy.net/tracks/Rigged+Roadway"
+                                        title="View Rigged Roadway  Leaderboard"
+                                        onmouseenter="showTrackFinder(event, this)">Rigged Roadway</a>
+                                </td>
+                            </table>
                         </div>
                     </div>
                     <div class="bonxy__cell">
                         <h2>HTML Markup</h2>
                         <div>
                             <pre>
-                                <code class="html markupPreview">
-&lt;div class=&quot;bonxy--profile&quot;&gt;<br />
-    &lt;div class=&quot;costum__mask&quot;&gt;<br />
-        &lt;div class=&quot;costum&quot;&gt;<br />
-            &lt;div class=&quot;costum__part costum--head costum--13&quot; type=&quot;head&quot;&gt;&lt;/div&gt;<br />
-            &lt;div class=&quot;costum__part costum--body costum--15&quot; type=&quot;body&quot;&gt;&lt;/div&gt;<br />
-            &lt;div class=&quot;costum__part costum--arm costum--15&quot; type=&quot;body&quot;&gt;&lt;/div&gt;<br />
-            &lt;div class=&quot;costum__part costum--pant costum--10&quot; type=&quot;pant&quot;&gt;&lt;/div&gt;<br />
-        &lt;/div&gt;<br />
-    &lt;/div&gt;<br />
-&lt;/div&gt;
+                                <code class="html">
+&lt;td&gt;<br />
+    &lt;a href="http://trials.bonxy.net/tracks/Rigged+Roadway"<br />
+        title="View Rigged Roadway  Leaderboard"<br />
+        onmouseenter="showTrackFinder(event, this)"&gt;Rigged Roadway&lt;/a&gt;<br />
+&lt;/td&gt;
                                 </code>
                             </pre>
                         </div>
                     </div>
-                    <div class="bonxy__cell">
-                        {{> costum-editor wardrobe}}
-                    </div>
                 </div>
+
                 <div class="bonxy__row">
                     <div class="bonxy__cell" style="width:200px">
                         <h2>Bike Cell</h2>
@@ -59,12 +174,12 @@
                         <div>
                             <pre>
                                 <code class="html">
-&lt;div class=&quot;bonxy--bike-cell&quot;&gt;<br />
-    Berserker<br />
-    &lt;span class=&quot;paintjob__mask&quot;&gt;<br />
-        &lt;i class=&quot;paintjob paintjob-4-3&quot;&gt;&lt;/i&gt;<br />
-    &lt;/span&gt;<br />
-&lt;/div&gt;
+&lt;td sorttable_customkey=&quot;15&quot; class=&quot;bonxy--bike-cell&quot;&gt;<br/>
+    Berserker<br/>
+    &lt;span class=&quot;paintjob__mask&quot;&gt;<br/>
+        &lt;i class=&quot;paintjob paintjob-4-3&quot;&gt;&lt;/i&gt;<br/>
+    &lt;/span&gt;<br/>
+&lt;/td&gt;
                                 </code>
                             </pre>
                         </div>
@@ -72,13 +187,33 @@
                 </div>
 
                 <div class="bonxy__row">
+                    <div class="bonxy__cell" style="width:200px">
+                        <h2>Profile Costum</h2>
+                        <div class="bonxy--box bonxy--profile">
+                            {{> costum wardrobe.costums.dutscher home-shack-editor-preview=true without_name=true}}
+                        </div>
+                    </div>
                     <div class="bonxy__cell">
-                        <h2>External Scripts</h2>
-                        <pre>
-                            <code class="html">
-&lt;link rel=&quot;stylesheet&quot; href=&quot;//trialstrackmap.sb-f.de/dist/bonxy.css&quot;/&gt;
-                            </code>
-                        </pre>
+                        <h2>HTML Markup</h2>
+                        <div>
+                            <pre>
+                                <code class="html markupPreview">
+&lt;div class=&quot;bonxy--profile&quot;&gt;<br/>
+    &lt;div class=&quot;costum__mask&quot;&gt;<br/>
+        &lt;div class=&quot;costum&quot;&gt;<br/>
+            &lt;div class=&quot;costum__part costum--head costum--13&quot; type=&quot;head&quot;&gt;&lt;/div&gt;<br/>
+            &lt;div class=&quot;costum__part costum--body costum--15&quot; type=&quot;body&quot;&gt;&lt;/div&gt;<br/>
+            &lt;div class=&quot;costum__part costum--arm costum--15&quot; type=&quot;body&quot;&gt;&lt;/div&gt;<br/>
+            &lt;div class=&quot;costum__part costum--pant costum--10&quot; type=&quot;pant&quot;&gt;&lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+    &lt;/div&gt;<br/>
+&lt;/div&gt;
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                    <div class="bonxy__cell">
+                        {{> costum-editor wardrobe}}
                     </div>
                 </div>
             </div>

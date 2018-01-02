@@ -12,3 +12,122 @@
 
 @import "pages/home-shack";
 @import "sprites/costums";
+
+.bonxy {
+  color: #fff;
+
+  pre {
+    margin: 0;
+  }
+
+  code {
+    margin-top: -15px;
+  }
+
+  &__row {
+    display: flex;
+    flex-direction: row;
+    margin: -16px;
+  }
+
+  &__cell {
+    padding: 16px;
+    width: 100%;
+  }
+
+  &--box {
+    background: #fff;
+    border: #949494;
+  }
+
+  &--profile {
+    width: 150px;
+    height: 270px;
+    display: flex;
+    justify-content: center;
+    cursor: default;
+
+    * {
+      cursor: default;
+    }
+
+    .costum__mask {
+      width: 80px;
+      height: 150px;
+
+      .costum {
+        z-index: 0;
+        transform: scale(0.50) translate(-25%, 0%);
+        transform-origin: left top;
+      }
+    }
+  }
+
+  &--bike-cell {
+    width: 150px;
+    height: 18px;
+
+    .paintjob {
+      &__mask {
+        vertical-align: middle;
+        height: 18px;
+        width: 18px;
+        display: inline-block;
+
+        .paintjob {
+          transform: scale(0.36);
+          transform-origin: top left;
+        }
+      }
+    }
+
+    &:hover {
+      .paintjob {
+        transform: scale(1) translateY(-35%);
+      }
+    }
+  }
+}
+
+.trackfinder__iframe__wrap {
+  position: absolute;
+  @scale: 0.50;
+  .transition-multi(left 0.25s ease-in-out, top 0.25s ease-in-out);
+
+  iframe {
+    -ms-zoom: @scale;
+    -moz-transform: scale(@scale);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(@scale);
+    -o-transform-origin: 0 0;
+    -webkit-transform: scale(@scale);
+    -webkit-transform-origin: 0 0;
+    box-shadow: -0px 10px 10px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.bonxys-style {
+  font-family: "Arial", Gadget, sans-serif;
+  color: #000;
+}
+
+.sortable {
+  display: table;
+  border-collapse: separate;
+  border-spacing: 2px;
+  border-color: grey;
+  background: #fff;
+
+  th {
+    text-align: left;
+  }
+
+  tr:not(thead):hover {
+    background-color: #ffff99;
+  }
+
+  a {
+    color: #e68a00;
+    text-decoration: none;
+  }
+}

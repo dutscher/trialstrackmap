@@ -18,27 +18,27 @@ module.exports = function (grunt) {
         },
         dist: {
             files: {
-                "dist/main.css": "css/main.less"
+                "dist/css/main.css": "css/main.less"
             }
         },
         map: {
             files: {
-                "dist/map.css": "css/map/main.less"
+                "dist/css/map.css": "css/map/main.less"
             }
         },
         table: {
             files: {
-                "dist/table.css": "css/pages/table.less"
+                "dist/css/table.css": "css/pages/table.less"
             }
         },
         trackfinder: {
             files: {
-                "dist/trackfinder.css": "css/pages/trackfinder.less"
+                "dist/css/trackfinder.css": "css/pages/trackfinder.less"
             }
         },
         bonxy: {
             files: {
-                "dist/bonxy.css": "css/bonxy.less"
+                "dist/css/bonxy.css": "css/bonxy.less"
             }
         }
     };

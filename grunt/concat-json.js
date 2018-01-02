@@ -16,7 +16,7 @@ module.exports = function (grunt) {
                     src: [
                         'database/media/gfx.json'
                     ],
-                    dest: 'dist/gfx.json'
+                    dest: 'dist/json/gfx.json'
                 }
             ]
         }
@@ -31,7 +31,7 @@ module.exports = function (grunt) {
 
     grunt.registerTask("concatSeasonsData", function () {
         var fs = require("fs"),
-            distFilePath = "dist/seasons.json",
+            distFilePath = "dist/json/seasons.json",
             prizesFile = "prizes.json",
             seasonIndex = 1,
             seasonsFile = {

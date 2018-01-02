@@ -11,7 +11,7 @@ module.exports = function (grunt) {
     return {
         options: {
             flatten: true,
-            data: ["dist/*.json"],
+            data: ["dist/json/*.json"],
             layout: false,
             helpers: "tpls/helpers/*.js",
             partials: [

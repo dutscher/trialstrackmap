@@ -8,7 +8,8 @@ module.exports = function (grunt) {
         },
         lib: {
             files: [
-                "lib/**/*.js"
+                "lib/**/*.js",
+                "vendor/bonxy/*.js"
             ],
             tasks: [
                 "concat:dist"

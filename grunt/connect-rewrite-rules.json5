@@ -1,4 +1,4 @@
 [
    "^/dist/sprites.html$ /garage.html"
-  ,"^/([0-9a-z-].*).html$ /dist/$1.html"
+  ,"^/([0-9a-z-]*)[.html]*(\\?.*)*$ /dist/$1.html$2"
 ]
