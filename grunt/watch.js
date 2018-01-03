@@ -12,7 +12,8 @@ module.exports = function (grunt) {
                 "vendor/bonxy/*.js"
             ],
             tasks: [
-                "concat:dist"
+                "concat:dist",
+                "concat:bonxy"
             ],
             options: {
                 livereload: config.livereload

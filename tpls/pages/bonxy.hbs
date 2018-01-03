@@ -1,20 +1,25 @@
 {{#extend "default"}}
     {{#content "styles"}}
-    {{!--<link rel="stylesheet" type="text/css" href="/dist/main.css{{cacheBuster}}"/> --}}
+    {{!--
+    <link rel="stylesheet" type="text/css" href="/dist/main.css{{cacheBuster}}"/>
+    https://opinionatedgeek.com/Codecs/HtmlEncoder
+    --}}
         <link rel="stylesheet" type="text/css" href="/dist/css/bonxy.css{{cacheBuster}}"/>
         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/default.min.css">
         <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
         <script src="/dist/js/bonxy.min.js"></script>
         <script>hljs.configure({useBR: true});
         hljs.initHighlightingOnLoad();</script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     {{/content}}
-
+    {{#content "htmlCtrl"}}data-snowflakes="no"{{/content}}
+    {{#content "ctrl"}}class="bonxy-body"{{/content}}
     {{#content "body"}}
         <div class="page-body" ng-controller="home-shack">
             {{> navigation title="Bonxy Integration"}}
 
             {{homeShack data=wardrobe only_css=true}}
-            <div class="costum__area bonxy bonxys-style" style="background: #6a4229;">
+            <div class="costum__area bonxy bonxys-style">
 
                 <div class="bonxy__row">
                     <div class="bonxy__cell">
@@ -49,9 +54,11 @@
                                 </thead>
                                 <tbody>
                                 <tr>
-                                    <td><a href="http://trials.bonxy.net/tracks/Rigged+Roadway"
-                                           title="View Rigged Roadway  Leaderboard"
-                                           onmouseenter="showTrackFinder(event, this)">Rigged Roadway</a></td>
+                                    <td>
+                                        <a href="http://trials.bonxy.net/tracks/Rigged+Roadway"
+                                           title="View Rigged Roadway  Leaderboard">
+                                        Rigged Roadway</a>
+                                    </td>
                                     <td>16.580</td>
                                     <td>0</td>
                                     <td>0.24%</td>
@@ -59,8 +66,8 @@
                                     <td>11,429</td>
                                     <td>791,989</td>
                                     <td sorttable_customkey="2">
-                                        <!--<img border="0" src="https://i.imgur.com/.png" title="Platinum" width="25">-->
-                                        Platinum
+                                        <span class="medal__mask"><i class="medal medal--bronze" title="Bronze"></i></span>
+                                        Bronze
                                     </td>
                                     <td sorttable_customkey="9" class="bonxy--bike-cell">Phantom <span
                                         class="paintjob__mask"><i
@@ -68,9 +75,11 @@
                                     <td>10/10/10/10</td>
                                 </tr>
                                 <tr>
-                                    <td><a href="http://trials.bonxy.net/tracks/The+Bell+Pit"
-                                           title="View The Bell Pit  Leaderboard"
-                                           onmouseenter="showTrackFinder(event, this)">The Bell Pit </a></td>
+                                    <td>
+                                        <a href="http://trials.bonxy.net/tracks/The+Bell+Pit"
+                                           title="View The Bell Pit  Leaderboard">The Bell Pit </a>
+                                        <i class="trackfinder__icon" onclick="showTrackFinder(event, 'The+Bell+Pit')"></i>
+                                    </td>
                                     <td>21.149</td>
                                     <td>0</td>
                                     <td>0.18%</td>
@@ -78,8 +87,8 @@
                                     <td>38,532</td>
                                     <td>818,388</td>
                                     <td sorttable_customkey="2">
-                                        <!--<img border="0" src="https://i.imgur.com/.png" title="Platinum" width="25">-->
-                                        Platinum
+                                        <span class="medal__mask"><i class="medal medal--silver" title="Silver"></i></span>
+                                        Silver
                                     </td>
                                     <td sorttable_customkey="5" class="bonxy--bike-cell">Mantis <span
                                         class="paintjob__mask"><i
@@ -87,9 +96,11 @@
                                     <td>10/10/10/10</td>
                                 </tr>
                                 <tr>
-                                    <td><a href="http://trials.bonxy.net/tracks/Choking+Hazard"
-                                           title="View Choking Hazard  Leaderboard"
-                                           onmouseenter="showTrackFinder(event, this)">Choking Hazard </a></td>
+                                    <td>
+                                        <a href="http://trials.bonxy.net/tracks/Choking+Hazard"
+                                           title="View Choking Hazard  Leaderboard">Choking Hazard </a>
+                                        <i class="trackfinder__icon" onclick="showTrackFinder(event, 'Choking+Hazard')"></i>
+                                    </td>
                                     <td>20.895</td>
                                     <td>0</td>
                                     <td>1.21%</td>
@@ -97,8 +108,8 @@
                                     <td>6,102</td>
                                     <td>790,769</td>
                                     <td sorttable_customkey="2">
-                                        <!--<img border="0" src="https://i.imgur.com/.png" title="Platinum" width="25">-->
-                                        Platinum
+                                        <span class="medal__mask"><i class="medal medal--gold" title="Gold"></i></span>
+                                        Gold
                                     </td>
                                     <td sorttable_customkey="8" class="bonxy--bike-cell">Berserker <span
                                         class="paintjob__mask"><i
@@ -106,9 +117,11 @@
                                     <td>10/10/10/10</td>
                                 </tr>
                                 <tr>
-                                    <td><a href="http://trials.bonxy.net/tracks/Lotus+Swamp"
-                                           title="View Lotus Swamp  Leaderboard"
-                                           onmouseenter="showTrackFinder(event, this)">Lotus Swamp </a></td>
+                                    <td>
+                                        <a href="http://trials.bonxy.net/tracks/Lotus+Swamp"
+                                           title="View Lotus Swamp  Leaderboard">Lotus Swamp </a>
+                                        <i class="trackfinder__icon" onclick="showTrackFinder(event, 'Lotus+Swamp')"></i>
+                                    </td>
                                     <td>18.925</td>
                                     <td>0</td>
                                     <td>11.99%</td>
@@ -116,7 +129,7 @@
                                     <td>617</td>
                                     <td>825,577</td>
                                     <td sorttable_customkey="2">
-                                        <!--<img border="0" src="https://i.imgur.com/.png" title="Platinum" width="25">-->
+                                        <span class="medal__mask"><i class="medal medal--platinum" title="Platinum"></i></span>
                                         Platinum
                                     </td>
                                     <td sorttable_customkey="15" class="bonxy--bike-cell">Bandito <span
@@ -136,9 +149,13 @@
                         <div class="bonxy--box">
                             <table width="100%" class="sortable">
                                 <td>
-                                    <a href="http://trials.bonxy.net/tracks/Rigged+Roadway"
-                                        title="View Rigged Roadway  Leaderboard"
-                                        onmouseenter="showTrackFinder(event, this)">Rigged Roadway</a>
+                                    <a href="http://trials.bonxy.net/tracks/Lotus+Swamp"
+                                        title="View Lotus Swamp Leaderboard">决战之路</a>
+                                    <i class="trackfinder__icon" onclick="showTrackFinder(event, 'Lotus+Swamp')"></i>
+                                    <!--
+                                        for only bunker tracks or not released yet:
+                                        delete i-tag for trackfinder__icon
+                                    -->
                                 </td>
                             </table>
                         </div>
@@ -148,10 +165,38 @@
                         <div>
                             <pre>
                                 <code class="html">
-&lt;td&gt;<br />
-    &lt;a href="http://trials.bonxy.net/tracks/Rigged+Roadway"<br />
-        title="View Rigged Roadway  Leaderboard"<br />
-        onmouseenter="showTrackFinder(event, this)"&gt;Rigged Roadway&lt;/a&gt;<br />
+&lt;a href="http://trials.bonxy.net/tracks/Lotus+Swamp" title="View Lotus Swamp Leaderboard"&gt;决战之路&lt;/a&gt;<br/>
+&lt;i class="trackfinder__icon" onclick="showTrackFinder(event, this)"&gt;&lt;/i&gt;<br/>
+&lt;!--<br/>
+    for only bunker tracks or not released yet:<br/>
+    onclick="closeTrackFinder()"<br/>
+--&gt;
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bonxy__row">
+                    <div class="bonxy__cell" style="width:200px">
+                        <h2>Medal</h2>
+                        <div class="bonxy--box">
+                            <table width="100%" class="sortable">
+                                <td sorttable_customkey="2">
+                                    <span class="medal__mask"><i class="medal medal--silver" title="Silver"></i></span>
+                                    Silver
+                                </td>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="bonxy__cell">
+                        <h2>HTML Markup</h2>
+                        <div>
+                            <pre>
+                                <code class="html">
+&lt;td sorttable_customkey="2"&gt;<br />
+    &lt;span class="medal__mask"&gt;&lt;i class="medal medal--silver" title="Silver"&gt;&lt;/i&gt;&lt;/span&gt;<br />
+    Silver<br />
 &lt;/td&gt;
                                 </code>
                             </pre>

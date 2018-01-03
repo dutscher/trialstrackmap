@@ -590,19 +590,18 @@
     "280": "Air Assault",
     "281": "Double Barrel",
     "282": "Reverse Engineering",
-    "283": "Sloppy Slopes"
+    "283": "Sloppy Slopes",
+    "284": "Spare Ribs",
+    "285": "Terrace Farming",
+    "286": "Radical Roadworks",
+    "287": "Nuclear Cave",
+    "288": "Lopsided",
+    "289": "Cliff-Hanger"
   },
   "unreleased": [
-    "Cliff-Hanger",
     "Hope Surrenders",
-    "Lopsided",
-    "Nuclear Cave",
     "Peaks of Peril",
-    "Radical Roadworks",
     "Roadway",
-    "Sloppy Slopes",
-    "Spare Ribs",
-    "Sunken Sanctuary",
-    "Terrace Farming"
+    "Sunken Sanctuary"
   ]
 }

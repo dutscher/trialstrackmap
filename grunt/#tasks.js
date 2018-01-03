@@ -1,5 +1,5 @@
 module.exports = function (grunt) {
-    grunt.registerTask("deploy",  function() {
+    grunt.registerTask("deploy", function () {
         grunt.task.run([
             "clean:dist",
             "concatDatabase",
@@ -18,20 +18,21 @@ module.exports = function (grunt) {
         "uglify:dist"
     ]);
 
-    grunt.registerTask("finalDeployWithBackup",  function() {
+    grunt.registerTask("finalDeployWithBackup", function () {
         grunt.task.run([
             "doBackup",
             "finalDeploy"
         ]);
     });
 
-    grunt.registerTask("doBackup",  function() {
+    grunt.registerTask("doBackup", function () {
         grunt.task.run([
             "backupMyJson"
         ]);
     });
 
     grunt.registerTask("#testConfig", []);
+
     grunt.registerTask("#startImport", [
         "import1GameDataPhone",
         "import2GameDataS3",
@@ -41,6 +42,13 @@ module.exports = function (grunt) {
         "import6GameDataViaJson",
         "import7ConvertLanguages",
         "import8GetLanguageHashes",
-        "import9GetTrackNamesViaHashes",
+        "import9GetTrackNamesViaHashes"
+    ]);
+
+    grunt.registerTask("#startImportI18N", [
+        "import6GameDataViaJson",
+        "import7ConvertLanguages",
+        "import8GetLanguageHashes",
+        "import9GetTrackNamesViaHashes"
     ]);
 };

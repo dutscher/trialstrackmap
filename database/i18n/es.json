@@ -586,19 +586,19 @@
     "279": "Pantano del loto",
     "280": "Asalto aéreo",
     "281": "Barril doble",
-    "282": "Ingeniería inversa"
+    "282": "Ingeniería inversa",
+    "283": "Cuestas costosas",
+    "284": "Costillas sobrantes",
+    "285": "Bancales",
+    "286": "Obras radicales",
+    "287": "Cueva nuclear",
+    "288": "Torcido",
+    "289": "Máximo riesgo"
   },
   "unreleased": [
-    "Bancales",
     "Calzada",
-    "Costillas sobrantes",
-    "Cuestas costosas",
-    "Cueva nuclear",
     "Esperanza rendida",
-    "Máximo riesgo",
-    "Obras radicales",
     "Picos del peligro",
-    "Santuario hundido",
-    "Torcido"
+    "Santuario hundido"
   ]
 }

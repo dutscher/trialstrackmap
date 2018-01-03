@@ -586,19 +586,19 @@
     "279": "Marais du lotus",
     "280": "Assaut aérien",
     "281": "Double canon",
-    "282": "ingénierie inverse"
+    "282": "ingénierie inverse",
+    "283": "Descente en folie",
+    "284": "Travers de porc",
+    "285": "Fermes en terrasse",
+    "286": "Chantier infernal",
+    "287": "Abri antiatomique",
+    "288": "De guingois",
+    "289": "Bord de falaise"
   },
   "unreleased": [
-    "Abri antiatomique",
-    "Bord de falaise",
-    "Chantier infernal",
-    "De guingois",
-    "Descente en folie",
     "Espoir abandonné",
-    "Fermes en terrasse",
     "Pics du péril",
     "Route",
-    "Sanctuaire englouti",
-    "Travers de porc"
+    "Sanctuaire englouti"
   ]
 }

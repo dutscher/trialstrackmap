@@ -13,6 +13,14 @@
 @import "pages/home-shack";
 @import "sprites/costums";
 
+.bonxy-body {
+  padding: 8px;
+  margin: 0;
+  font-family: "Arial", Gadget, sans-serif;
+  color: #000;
+  background: #6a4229;
+}
+
 .bonxy {
   color: #fff;
 
@@ -89,25 +97,79 @@
   }
 }
 
-.trackfinder__iframe__wrap {
-  position: absolute;
-  @scale: 0.50;
-  .transition-multi(left 0.25s ease-in-out, top 0.25s ease-in-out);
+.trackfinder {
+  &__icon {
+    background-image: url("https://i.imgur.com/FkaaOWT.png");
+    background-size: cover;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    cursor: pointer;
+  }
 
-  iframe {
-    -ms-zoom: @scale;
-    -moz-transform: scale(@scale);
-    -moz-transform-origin: 0 0;
-    -o-transform: scale(@scale);
-    -o-transform-origin: 0 0;
-    -webkit-transform: scale(@scale);
-    -webkit-transform-origin: 0 0;
-    box-shadow: -0px 10px 10px rgba(0, 0, 0, 0.25);
+  &__iframe {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    &__close {
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-size: 12px;
+      z-index: 1;
+      padding: 3px 6px;
+      background: #e68a00;
+      cursor: pointer;
+      color: #fff;
+      border-radius: 6px;
+      box-shadow: -0px 10px 10px rgba(0, 0, 0, 0.25);
+    }
+
+    &__scaler {
+      position: relative;
+      iframe {
+        box-shadow: -0px 10px 10px rgba(0, 0, 0, 0.25);
+        background: #3a281d;
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) {
+  .medal {
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    background-size: cover;
+    position: absolute;
+    top: -3px;
+    left: 0;
+
+    &__mask {
+      position: relative;
+      width: 25px;
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    &--bronze {
+      background-image: url("https://i.imgur.com/9N83Lbk.png");
+    }
+    &--silver {
+      background-image: url("https://i.imgur.com/OJmAWbw.png");
+    }
+    &--gold {
+      background-image: url("https://i.imgur.com/E9nANVv.png");
+    }
+    &--platinum {
+      background-image: url("https://i.imgur.com/jAFrKkL.png");
+    }
   }
 }
 
 .bonxys-style {
-  font-family: "Arial", Gadget, sans-serif;
   color: #000;
 }
 

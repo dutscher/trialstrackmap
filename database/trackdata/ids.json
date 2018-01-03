@@ -1719,5 +1719,41 @@
     "id": 283,
     "tier": 0,
     "world": 2
+  },
+  // Spare Ribs
+  {
+    "id": 284,
+    "tier": 0,
+    "world": 2
+  },
+  // Terrace Farming
+  {
+    "id": 285,
+    "tier": 0,
+    "world": 2
+  },
+  // Radical Roadworks
+  {
+    "id": 286,
+    "tier": 0,
+    "world": 2
+  },
+  // Nuclear Cave
+  {
+    "id": 287,
+    "tier": 0,
+    "world": 2
+  },
+  // Lopsided
+  {
+    "id": 288,
+    "tier": 0,
+    "world": 2
+  },
+  // Cliff-Hanger
+  {
+    "id": 289,
+    "tier": 0,
+    "world": 2
   }
 ]

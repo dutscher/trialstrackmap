@@ -586,19 +586,19 @@
     "279": "Palude di Loto",
     "280": "Attacco Aereo",
     "281": "Barili Esplosivi",
-    "282": "Reverse Engineering"
+    "282": "Reverse Engineering",
+    "283": "Discese Scivolose",
+    "284": "Deserto di Ossa",
+    "285": "Terrazze Coltivate",
+    "286": "Cantieri Radicali",
+    "287": "Grotta Nucleare",
+    "288": "Sentiero Curvoso",
+    "289": "Salti Innevati"
   },
   "unreleased": [
-    "Cantieri Radicali",
     "Carreggiata",
-    "Deserto di Ossa",
-    "Discese Scivolose",
-    "Grotta Nucleare",
     "Picchi pericolosi",
-    "Salti Innevati",
     "Santuario sommerso",
-    "Sentiero Curvoso",
-    "Sentiero dei disperati",
-    "Terrazze Coltivate"
+    "Sentiero dei disperati"
   ]
 }

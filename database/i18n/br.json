@@ -586,19 +586,19 @@
     "279": "Pântano da Lótus",
     "280": "Assalto Aéreo",
     "281": "Barril Duplo",
-    "282": "Engenharia reversa"
+    "282": "Engenharia reversa",
+    "283": "Barrancatoco",
+    "284": "Costelas à Parte",
+    "285": "Fazenda de Terraço",
+    "286": "Rodovia Radical",
+    "287": "Caverna Nuclear",
+    "288": "Fora de Eixo",
+    "289": "Gancho do Penhasco"
   },
   "unreleased": [
-    "Barrancatoco",
-    "Caverna Nuclear",
-    "Costelas à Parte",
     "Estrada",
-    "Fazenda de Terraço",
-    "Fora de Eixo",
-    "Gancho do Penhasco",
     "Pico do Perigo",
     "Rendições da Esperança",
-    "Rodovia Radical",
     "Santuário Profundo"
   ]
 }

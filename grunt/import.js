@@ -26,7 +26,7 @@ module.exports = function (grunt) {
             ].find(function (pathToDir) {
                 return fs.existsSync(pathToDir + trialsUtilsDir);
             });
-            console.log("dirOnStation", dirOnStation)
+            console.log("dirOnStation", dirOnStation);
             return dirOnStation;
         }(),
         // CONST
@@ -52,9 +52,19 @@ module.exports = function (grunt) {
         upgradesFile = secretPath + filesOfGame[2],
         rewardsFile = secretPath + filesOfGame[3],
         levelsFile = secretPath + filesOfGame[4],
-        dates = [];
+        dates = [],
+        // use this map for matching/renaming it to match the i18n
+        renameTrack = {
+            "LVL_SPINNERS_ALLEY": "spinner's alley",
+            "LVL_HILLTOP_CHETTO": "hilltop ghetto",
+            "LVL_STILTED_PATHWAY": "stilted path",
+            "LVL_CRANE_PEEK": "crane peak",
+            "LVL_X_FACTOR": "x-factor",
+            "LVL_X_TERMINATE": "x-terminate",
+            "LVL_CLIFF_HANGER": "cliff-hanger",
+        };
 
-    function values(obj, toLowerCase) {
+    function values (obj, toLowerCase) {
         var vals = [];
         for (var key in obj) {
             if (obj.hasOwnProperty(key)) {
@@ -64,7 +74,7 @@ module.exports = function (grunt) {
         return vals;
     }
 
-    function ensureDirectoryExistence(filePath) {
+    function ensureDirectoryExistence (filePath) {
         var dirname = path.dirname(filePath);
         if (fs.existsSync(dirname)) {
             return true;
@@ -73,7 +83,7 @@ module.exports = function (grunt) {
         fs.mkdirSync(dirname);
     }
 
-    function downloadFile(url, pathDest, cb) {
+    function downloadFile (url, pathDest, cb) {
         var http_or_https = http;
         if (/^https:\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?$/.test(url)) {
             http_or_https = https;
@@ -106,7 +116,7 @@ module.exports = function (grunt) {
             });
     }
 
-    function copyToolTo(from, to) {
+    function copyToolTo (from, to) {
         console.log("copyToolTo", from, to);
         if (fs.existsSync(from)) {
             var dirData = fs.readdirSync(from);
@@ -122,11 +132,11 @@ module.exports = function (grunt) {
         }
     }
 
-    function makeWinPath(path) {
+    function makeWinPath (path) {
         return path.replace(/\//g, "\\");
     }
 
-    function deleteFolderRecursive(path) {
+    function deleteFolderRecursive (path) {
         if (fs.existsSync(path)) {
             fs.readdirSync(path).forEach(function (file) {
                 var curPath = path + "/" + file;
@@ -147,18 +157,18 @@ module.exports = function (grunt) {
         var toDir = makeWinPath(versionPath),
             gameDir = "com.ubisoft.redlynx.trialsfrontier.ggp",
             cmds = [
-            "echo \"run adb pull\"",
-            "echo move to \"" + makeWinPath(toolPath.adb) + "\"",
-            "pushd " + makeWinPath(toolPath.adb), // navigate to adb tool
-            "adb devices", // test if device is ready
-            "adb pull /sdcard/Android/data/" + gameDir + " " + toDir, // pull files
-            "echo \"copy dir content to root\"",
-            "rmdir /S /Q \"" + toDir + "\\" + gameDir + "\\files\"",  // remove pulled  dir
-            "rmdir /S /Q \"" + toDir + "\\" + gameDir + "\\cache\"",  // remove pulled  dir
-            "xcopy \"" + toDir + "\\" + gameDir + "\" \"" + toDir + "\" /s /e /y /i", // copy content to root
-            "echo \"remove dir\"",
-            "rmdir /S /Q \"" + toDir + "\\" + gameDir + "\"" // remove pulled  dir
-        ];
+                "echo \"run adb pull\"",
+                "echo move to \"" + makeWinPath(toolPath.adb) + "\"",
+                "pushd " + makeWinPath(toolPath.adb), // navigate to adb tool
+                "adb devices", // test if device is ready
+                "adb pull /sdcard/Android/data/" + gameDir + " " + toDir, // pull files
+                "echo \"copy dir content to root\"",
+                "rmdir /S /Q \"" + toDir + "\\" + gameDir + "\\files\"",  // remove pulled  dir
+                "rmdir /S /Q \"" + toDir + "\\" + gameDir + "\\cache\"",  // remove pulled  dir
+                "xcopy \"" + toDir + "\\" + gameDir + "\" \"" + toDir + "\" /s /e /y /i", // copy content to root
+                "echo \"remove dir\"",
+                "rmdir /S /Q \"" + toDir + "\\" + gameDir + "\"" // remove pulled  dir
+            ];
         grunt.config("exec.copyContentViaAdb.cmd", cmds.join(" & "));
         ensureDirectoryExistence(versionPath + "/adb.jo");
         //console.log(cmds)
@@ -170,7 +180,7 @@ module.exports = function (grunt) {
         var done = this.async(),
             filesToDownload = [];
 
-        function downloadS3Data() {
+        function downloadS3Data () {
             // get urls to files
             http.get(dataGet, function (res) {
                 var body = "";
@@ -184,7 +194,7 @@ module.exports = function (grunt) {
                         var fileData = response.content[i],
                             fileSrc = fileData.url.replace("https", "http"),
                             fileDest = versionPath + "/" + fileData.name
-                            ;
+                        ;
                         filesToDownload.push({
                             src: fileSrc,
                             dest: fileDest
@@ -199,7 +209,7 @@ module.exports = function (grunt) {
             });
         }
 
-        function downloadFiles(index) {
+        function downloadFiles (index) {
             var downloadIndex = index || 0,
                 downloadFileObj = filesToDownload[downloadIndex];
 
@@ -241,7 +251,8 @@ module.exports = function (grunt) {
 
     grunt.registerTask("import4DoPackagesToOneDir", function () {
         dates.push(new Date());
-        function copyAllToOne() {
+
+        function copyAllToOne () {
             // make one content repository
             console.log("Copy all dirs into one");
             ensureDirectoryExistence(newContentPath + "/import.json");
@@ -265,14 +276,14 @@ module.exports = function (grunt) {
                     deleteFolderRecursive(versionPath + "/" + dir); // remove dir
                     // remove also .dat file
                     var datFile = versionPath + "/" + dir + ".dat";
-                        fs.unlink(datFile);
+                    fs.unlink(datFile);
                     // TODO: unlink .dat files
                 }
             }
             console.log("Copied all dirs to one", "'" + newContentPath + "'");
         }
 
-        function copyDbToImport() {
+        function copyDbToImport () {
             if (fs.existsSync(confPath)) {
                 // copy gamedata import dir
                 for (var i in filesOfGame) {
@@ -283,7 +294,7 @@ module.exports = function (grunt) {
                         console.log(fileDest + " copied...");
                     }
                 }
-                console.log("Copied all into database import from", "'" + confPath + "'")
+                console.log("Copied all into database import from", "'" + confPath + "'");
             } else {
                 console.error("confPath not exists", confPath);
             }
@@ -427,17 +438,7 @@ module.exports = function (grunt) {
             levelNamesWithId = {},
             newLevels = [],
             unreleasedLevels = [],
-            tmpData = {},
-            // use this map for matching/renaming it to match the i18n
-            renameTrack = {
-                "LVL_SPINNERS_ALLEY": "spinner's alley",
-                "LVL_HILLTOP_CHETTO": "hilltop ghetto",
-                "LVL_STILTED_PATHWAY": "stilted path",
-                "LVL_CRANE_PEEK": "crane peak",
-                "LVL_X_FACTOR": "x-factor",
-                "LVL_X_TERMINATE": "x-terminate",
-            };
-
+            tmpData = {};
         // make data readable
         for (var i in levelsJSON.Levels) {
             var level = levelsJSON.Levels[i],
@@ -468,6 +469,7 @@ module.exports = function (grunt) {
                 coins: level.C,
                 fuel: level.FU,
                 trackID: trackID,
+                trackIDOrigin: level.N,
                 rewards: {
                     dbStr: rewardData ? trackIDQuotes + rewardData.rewardStr : {},
                     id: level.I
@@ -503,7 +505,7 @@ module.exports = function (grunt) {
         }
 
         console.log("levels: ", newLevels.length);
-        console.warn("unreleased: ", unreleasedLevels.map(function(track){return track.name}));
+        console.warn("unreleased: ", unreleasedLevels.map(function (track) {return track.name + " '" + track.trackIDOrigin + "'";}));
 
         newLevels.sort(function (a, b) {
             return a.trackID - b.trackID;
@@ -652,7 +654,7 @@ module.exports = function (grunt) {
 
             fs.writeFileSync("build/import/i18n/" + file + ".json", JSON.stringify(fileData, null, 2));
             if (file === "en" && fileData.unreleased.length > 1) {
-                console.warn("unreleased tracks or not matched in 'import6GameDataViaJson':renameTrack\n", fileData.unreleased.join(', '));
+                console.warn("unreleased tracks or not matched in 'import6GameDataViaJson':renameTrack\n", fileData.unreleased.join(", "));
             }
         }
 
@@ -661,5 +663,5 @@ module.exports = function (grunt) {
 
     grunt.registerTask("importPrintDates", function () {
         console.log(dates);
-    })
+    });
 };
