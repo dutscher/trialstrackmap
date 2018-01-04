@@ -613,37 +613,37 @@
     "tier": 3,
     "oid": 65010
   },
-  //
+  // The Tanktops
   {
     "id": 97,
     "tier": 3,
     "oid": 1089
   },
-  //
+  // Trojan Giraffe
   {
     "id": 98,
     "tier": 3,
     "oid": 1092
   },
-  //
+  // The Stacks
   {
     "id": 99,
     "tier": 3,
     "oid": 1093
   },
-  //
+  // Cracked Reservoir
   {
     "id": 100,
     "tier": 3,
     "oid": 1054
   },
-  //
+  // The Refinery
   {
     "id": 101,
     "tier": 3,
     "oid": 1084
   },
-  //
+  // The Grindhouse
   {
     "id": 102,
     "tier": 3,
@@ -679,7 +679,7 @@
     "tier": 3,
     "oid": 1132
   },
-  //
+  // Elephant Graveyard
   {
     "id": 107,
     "tier": 3,
@@ -1050,7 +1050,7 @@
     "id": 172,
     "tier": 2
   },
-  //
+  // The Big Swing
   {
     "id": 173,
     "tier": 3
@@ -1123,19 +1123,20 @@
     "tier": 3,
     "halloween2_trackpack": true
   },
-  // trackpack tier 3,
+  // trackpack tier 3
+  // Grand Moonshine
   {
     "id": 187,
     "tier": 3,
     "pack": 3
   },
-  //
+  // Vault Crawl
   {
     "id": 188,
     "tier": 3,
     "pack": 3
   },
-  //
+  // Scorched Battlement
   {
     "id": 189,
     "tier": 3,
