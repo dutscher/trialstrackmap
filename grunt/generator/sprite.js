@@ -9,8 +9,9 @@ module.exports = function () {
                 this.generateMapColors());
         },
         generatePaintjobs: function () {
+            require("json5/lib/require");
             var globalVars = {},
-                paintJobsJSON = require("../../database/media/paintjobs.json"),
+                paintJobsJSON = require("../../build/paintjobs.json").build.paintjobs,
                 gfxJSON = require("../../database/media/gfx.json"),
                 bikeNamesJSON = require("../../database/bikes.json"),
                 paintJobsRAW = paintJobsJSON.bikes,

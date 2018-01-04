@@ -3,6 +3,7 @@
     "src": "xlgQZPv.jpg"
   },
   "bikes": {
+    // Armadillo
     "1": [
       {
         "src": "mkynlYl.png",
@@ -33,6 +34,7 @@
         "name": "Hungry Shark"
       }
     ],
+    // Tango
     "2": [
       {
         "src": "ihgnolt.png",
@@ -75,6 +77,7 @@
         "name": "AUS-X-OPEN"
       }
     ],
+    // Bronco
     "3": [
       {
         "src": "pq55EzG.png",
@@ -121,6 +124,7 @@
         "name": "Valentine"
       }
     ],
+    // Jackal
     "4": [
       {
         "src": "b7uGUH3.png",
@@ -147,6 +151,7 @@
         "name": "Edge"
       }
     ],
+    // Mantis
     "5": [
       {
         "src": "SK6lY6p.png",
@@ -183,8 +188,13 @@
       {
         "src": "",
         "name": "AUS-X-OPEN"
+      },
+      {
+        "src": "",
+        "name": "Desert Storm"
       }
     ],
+    // Marauder
     "6": [
       {
         "src": "JK9weMb.png",
@@ -207,6 +217,7 @@
         "name": "Wolf"
       }
     ],
+    // Riptide
     "7": [
       {
         "src": "Yqu42NM.png",
@@ -237,6 +248,7 @@
         "name": "Revenant"
       }
     ],
+    // Berserker
     "8": [
       {
         "src": "N59Vb0H.png",
@@ -267,6 +279,7 @@
         "name": "The Reowned Berserkar"
       }
     ],
+    // Phantom
     "9": [
       {
         "src": "TXAK47S.png",
@@ -297,6 +310,7 @@
         "name": "Vengeful Steed"
       }
     ],
+    // Phantom
     "10": [
       {
         "src": "",
@@ -319,6 +333,7 @@
         "name": "Skelly"
       }
     ],
+    // Agent
     "11": [
       {
         "src": "TuVnIof.png",
@@ -337,6 +352,7 @@
         "name": "White"
       }
     ],
+    // KTM 500-EXC
     "13": [
       {
         "src": "OgCNESy.png",
@@ -351,6 +367,7 @@
         "name": "Neon"
       }
     ],
+    // KTM 450 Rally
     "14": [
       {
         "src": "",
@@ -361,6 +378,18 @@
         "name": "Redbull"
       }
     ],
+    // BMW F 800 GS
+    "16": [
+      {
+        "src": "",
+        "name": "Default (Black White)"
+      },
+      {
+        "src": "",
+        "name": "Black Red"
+      }
+    ],
+    // Donkey
     "19": [
       {
         "src": "j8MayTq.png",
@@ -387,6 +416,7 @@
         "name": "Feaster"
       }
     ],
+    // Bandito
     "20": [
       {
         "src": "",
@@ -395,16 +425,10 @@
       {
         "src": "",
         "name": "Camouflage"
-      }
-    ],
-    "16": [
-      {
-        "src": "",
-        "name": "Default (Black White)"
       },
       {
         "src": "",
-        "name": "Black Red"
+        "name": "Desert Storm"
       }
     ]
   },
