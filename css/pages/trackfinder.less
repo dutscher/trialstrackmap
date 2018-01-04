@@ -8,6 +8,10 @@ html, body {
   height: 100%;
 }
 
+.with-box-shadow {
+  box-shadow: -0px 10px 10px rgba(0, 0, 0, 0.25);
+}
+
 .gradient-border {
   position: relative;
   border-width: 2px;
@@ -15,7 +19,6 @@ html, body {
   border-top: 2px solid #d2c3ab;
   border-bottom: 2px solid #6a4229;
   border-image: linear-gradient(to top, #6a4229, #d2c3ab) 1 10%;
-  box-shadow: -0px 10px 10px rgba(0, 0, 0, 0.25);
 }
 
 .centerized {
@@ -50,8 +53,31 @@ html, body {
       height: 100%;
     }
 
-    &__world {
+    &__message {
+      font-size: 40px;
+      color: #fff;
+      text-shadow: 1px 1px #000;
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      z-index: 1;
+      background: radial-gradient(circle, transparent -70%, black 100%), transparent;
+    }
+  }
 
+  .trackfilter {
+    position: absolute;
+    bottom: -28px;
+    left: 0;
+    right: 0;
+    text-align: center;
+
+    &__search {
+      height: 20px;
+      border: #6B432A solid 2px;
+      padding: 2px 5px;
     }
   }
 }

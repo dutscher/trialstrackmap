@@ -8,7 +8,10 @@
     {{#content "ctrl"}}ng-controller="trackFinder"{{/content}}
     {{#content "body"}}
         <div class="centerized">
-            <div class="trackfinder gradient-border">
+            <div class="trackfinder gradient-border with-box-shadow">
+                <div class="trackpainter__message centerized" ng-if="showMessage">
+                    {%showMessage%}
+                </div>
                 <div class="trackpainter"
                     data-world="1"
                     data-src="{{replaceHoster ../map.database.media.gfx.images.trackmaps.1.srcPath ../map.database.media.gfx.hoster}}"
@@ -21,6 +24,15 @@
                     data-dim-map="{{../map.database.media.gfx.images.trackmaps.2.dim}}"
                     data-dim-path="{{../map.database.media.gfx.images.trackmaps.2.dimPath}}"
                     ></div>
+                <div class="trackfilter" ng-show="showFilter">
+                    <input type="text"
+                           class="trackfilter__search with-box-shadow"
+                           ng-class="{'with-icon':searchTrack !== ''}"
+                           placeholder="{%'page.rightSidebar.searchForTrack'|translate%}"
+                           ng-model="searchTrack"
+                           ng-model-options="{debounce:150}"/>
+                    <i class="faults with-cursor" ng-if="searchTrack !== ''" ng-click="clearSearch()"></i>
+                </div>
             </div>
         </div>
     {{/content}}

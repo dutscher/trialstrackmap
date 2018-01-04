@@ -57,7 +57,7 @@ function showTrackFinder (event, trackName) {
         iframeClose = document.createElement("div");
         iframeClose.setAttribute("class", "trackfinder__iframe__close");
         iframeClose.setAttribute("onclick", "closeTrackFinder()");
-        iframeClose.appendChild(document.createTextNode("x"));
+        iframeClose.appendChild(document.createTextNode("X"));
 
         iframe = document.createElement("iframe");
         iframe.setAttribute("frameborder", "0");

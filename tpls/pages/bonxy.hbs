@@ -27,7 +27,7 @@
                         <pre>
                             <code class="html">
 &lt;link rel=&quot;stylesheet&quot; href=&quot;//trialstrackmap.sb-f.de/dist/css/bonxy.css{{cacheBuster}}&quot;/&gt;<br />
-&lt;script rel=&quot;stylesheet&quot; src=&quot;//trialstrackmap.sb-f.de/dist/js/bonxy.min.js{{cacheBuster}}&quot;/&gt;&lt;script&gt;
+&lt;script src=&quot;//trialstrackmap.sb-f.de/dist/js/bonxy.min.js{{cacheBuster}}&quot;/&gt;&lt;script&gt;
                             </code>
                         </pre>
                     </div>
@@ -58,6 +58,7 @@
                                         <a href="http://trials.bonxy.net/tracks/Rigged+Roadway"
                                            title="View Rigged Roadway  Leaderboard">
                                         Rigged Roadway</a>
+                                        <i class="trackfinder__icon" onclick="showTrackFinder(event, 'Rigged+Roadway')"></i>
                                     </td>
                                     <td>16.580</td>
                                     <td>0</td>
@@ -149,13 +150,9 @@
                         <div class="bonxy--box">
                             <table width="100%" class="sortable">
                                 <td>
-                                    <a href="http://trials.bonxy.net/tracks/Lotus+Swamp"
-                                        title="View Lotus Swamp Leaderboard">决战之路</a>
-                                    <i class="trackfinder__icon" onclick="showTrackFinder(event, 'Lotus+Swamp')"></i>
-                                    <!--
-                                        for only bunker tracks or not released yet:
-                                        delete i-tag for trackfinder__icon
-                                    -->
+                                    <a href="http://trials.bonxy.net/tracks/Rigged+Roadway"
+                                        title="View Rigged+Roadway Leaderboard">决战之路</a>
+                                    <i class="trackfinder__icon" onclick="showTrackFinder(event, 'Rigged+Roadway')"></i>
                                 </td>
                             </table>
                         </div>
@@ -165,12 +162,8 @@
                         <div>
                             <pre>
                                 <code class="html">
-&lt;a href="http://trials.bonxy.net/tracks/Lotus+Swamp" title="View Lotus Swamp Leaderboard"&gt;决战之路&lt;/a&gt;<br/>
-&lt;i class="trackfinder__icon" onclick="showTrackFinder(event, this)"&gt;&lt;/i&gt;<br/>
-&lt;!--<br/>
-    for only bunker tracks or not released yet:<br/>
-    onclick="closeTrackFinder()"<br/>
---&gt;
+&lt;a href="http://trials.bonxy.net/tracks/Rigged+Roadway" title="View Rigged+Roadway Leaderboard"&gt;决战之路&lt;/a&gt;<br/>
+&lt;i class="trackfinder__icon" onclick="showTrackFinder(event, 'Rigged+Roadway')"&gt;&lt;/i&gt;<br/>
                                 </code>
                             </pre>
                         </div>
