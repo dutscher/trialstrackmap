@@ -1680,7 +1680,7 @@
   // Avalanche Strew
   {
     "id": 277,
-    "tier": 0,
+    "tier": 1,
     "world": 2
   },
   // Redrum Hills
@@ -1718,7 +1718,7 @@
   // Sloppy Slopes
   {
     "id": 283,
-    "tier": 0,
+    "tier": 3,
     "world": 2
   },
   // Spare Ribs
@@ -1730,13 +1730,13 @@
   // Terrace Farming
   {
     "id": 285,
-    "tier": 0,
+    "tier": 1,
     "world": 2
   },
   // Radical Roadworks
   {
     "id": 286,
-    "tier": 0,
+    "tier": 1,
     "world": 2
   },
   // Nuclear Cave
@@ -1754,6 +1754,12 @@
   // Cliff-Hanger
   {
     "id": 289,
+    "tier": 0,
+    "world": 2
+  },
+  // Sunken Sanctury
+  {
+    "id": 290,
     "tier": 0,
     "world": 2
   }

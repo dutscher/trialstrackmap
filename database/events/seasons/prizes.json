@@ -6,7 +6,7 @@
   "paintjobs": {
     "1": "Neon Paintjob for Tango",
     "2": "Aloha Paintjob for Bronco",
-    "3": "Medic Paintjob for Bronco",
+    "3": "Medic Paintjob for Bronco (Owning the Medic Paint Job does not make you a real doctor!)",
     "4": "Kaleidoscope Paintjob for Bronco",
     "5": "Soylent Paintjob for Tango",
     "6": "Luchador Paintjob for Bronco (Fly high with the Luchado Paintjob!)",
@@ -45,7 +45,8 @@
     "14": "Rest in Pieces",
     "15": "Treachery",
     "16": "Indigenous Village",
-    "17": "Avalanche Strew"
+    "17": "Avalanche Strew",
+    "18": "Sunken Sanctuary"
   },
   "costums": {
     "1": {"title": "Ninja Head", "selector": "the-ninja", "part": "head"},
@@ -62,6 +63,9 @@
     "12": {"title": "The Undead Rider Pants", "selector": "the-undead-rider", "part": "pant"},
     "13": {"title": "The Death Knight Head", "selector": "death-knight", "part": "head"},
     "14": {"title": "The Death Knight Body", "selector": "death-knight", "part": "body"},
-    "15": {"title": "The Death Knight Pants", "selector": "death-knight", "part": "pant"}
+    "15": {"title": "The Death Knight Pants", "selector": "death-knight", "part": "pant"},
+    "16": {"title": "The Holiday Scarf Head", "selector": "holiday-scarf", "part": "head"},
+    "17": {"title": "The Holiday Scarf Body", "selector": "holiday-scarf", "part": "body"},
+    "18": {"title": "The Holiday Scarf Pants", "selector": "holiday-scarf", "part": "pant"}
   }
 }
