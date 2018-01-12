@@ -1,39 +1,65 @@
 module.exports = function () {
     var _ = require("lodash");
 
+    function replaceHoster (hoster, path) {
+        if (!hoster || !path || path.indexOf("http") >= 0)
+            return path;
+
+        Object.keys(hoster).forEach(function (_index_) {
+            path = path.replace(_index_, hoster[_index_]);
+        });
+
+        return path;
+    }
+
+    function jsMixinPlainCSS_ (name, css_) {
+        var obj = {},
+            css = ".this-line-will-be-removed{};\n";
+        css += ".jsMixinPlainCSS_" + name + "(){\n";
+        css += css_;
+        css += " }\n";
+
+        obj[name] = css;
+
+        return obj;
+    }
+
     return {
         generateSprites: function () {
             return _.extend({},
                 this.generatePaintjobs(),
-                this.generateCostums(),
-                this.generateMapColors());
+                jsMixinPlainCSS_("costums", this.generateCostums()),
+                jsMixinPlainCSS_("mapColors", this.generateMapColors()),
+                jsMixinPlainCSS_("i18nIcons", this.generateI18NIcons())
+            );
         },
         generatePaintjobs: function () {
             require("json5/lib/require");
             var globalVars = {},
                 paintJobsJSON = require("../../build/paintjobs.json").build.paintjobs,
                 gfxJSON = require("../../database/media/gfx.json"),
+                imageJson = gfxJSON.images,
                 bikeNamesJSON = require("../../database/bikes.json"),
                 paintJobsRAW = paintJobsJSON.bikes,
                 //gfx dimensions
-                spritePaintJobIconDimensions = "1100x1710".split("x"),
-                spritePaintJobDimensions = "1120x550".split("x"),
+                spritePaintJobDimensions = imageJson.paintjobs.dim.split("x"),
+                spritePaintJobIconDimensions = imageJson["paintjob-icons"].dim.split("x"),
                 //sprite dimensions
-                paintJobDimensions = "70x50".split("x"),
-                paintJobIconDimensons = "100x100".split("x"),
+                paintJobDimensions = imageJson.paintjobs.dimIcon.split("x"),
+                paintJobIconDimensons = imageJson["paintjob-icons"].dimIcon.split("x"),
                 //scale dimensions
-                spritePaintJobScalePercent = 90,
-                spritePaintJobIconScalePercent = 50;
+                spritePaintJobScalePercent = imageJson.paintjobs.scale,
+                spritePaintJobIconScalePercent = imageJson["paintjob-icons"].scale;
 
-            function trimName(name) {
+            function trimName (name) {
                 var name = "" + name.toLowerCase()
-                        .replace(/ /g, "-")
-                        .replace(/\(/g, "")
-                        .replace(/\)/g, "");
+                    .replace(/ /g, "-")
+                    .replace(/\(/g, "")
+                    .replace(/\)/g, "");
                 return name;
             }
 
-            function calcPercantage(pixel, scalePercent) {
+            function calcPercantage (pixel, scalePercent) {
                 var factor = scalePercent / 100;
                 return pixel * factor;
             }
@@ -93,11 +119,11 @@ module.exports = function () {
             return globalVars;
         },
         generateCostums: function () {
-            var globalVars = {},
-                wardrobeJSON = require("../../database/media/wardrobe.json"),
+            var wardrobeJSON = require("../../database/media/wardrobe.json"),
+                gfxJSON = require("../../database/media/gfx.json"),
                 costumOrder = wardrobeJSON.homeshack,
                 costumsData = wardrobeJSON.all,
-                css = ".custom-sprites{};\n";
+                css = "";
 
             for (var i = 0; i < costumOrder.length; i++) {
                 var costumId = costumOrder[i],
@@ -112,84 +138,97 @@ module.exports = function () {
 
                 // src|left|top|width
                 css += (costumParts ? (
-                '.' + costumName + ' .costum--head,\n' +
-                '.' + costumSelector + ' .costum--head,\n' +
-                '.' + costumSelector + '.costum--head {\n' +
-                '   background-image: url("' + costumHead[0] + '");\n' +
-                (
-                    costumHead.length > 1
-                        ? (
-                        (costumHead[1] ? '   left: ' + costumHead[1] + 'px;\n' : '') +
-                        (costumHead[2] ? '   top: ' + costumHead[2] + 'px;\n' : '')
-                    )
-                        : ''
-                ) +
-                '}\n' +
-                '.' + costumName + ' .costum--body,\n' +
-                '.' + costumSelector + ' .costum--body,\n' +
-                '.' + costumSelector + '.costum--body {\n' +
-                '   background-image: url("' + costumBody[0] + '");\n' +
-                (
-                    costumBody.length > 1
-                        ? (
-                        (costumBody[1] ? '   left: ' + costumBody[1] + 'px;\n' : '') +
-                        (costumBody[2] ? '   top: ' + costumBody[2] + 'px;\n' : '')
-                    )
-                        : ''
-                ) +
-                '}\n' +
-                '.' + costumName + ' .costum--arm,\n' +
-                '.' + costumSelector + ' .costum--arm,\n' +
-                '.' + costumSelector + '.costum--arm {\n' +
-                '   background-image: url("' + costumArm[0] + '");\n' +
-                (
-                    costumArm.length > 1
-                        ? (
-                        (costumArm[1] ? '   left: ' + costumArm[1] + 'px;\n' : '') +
-                        (costumArm[2] ? '   top: ' + costumArm[2] + 'px;\n' : '') +
-                        (costumArm[3] ? '   width: ' + costumArm[3] + 'px;\n' : '')
-                    )
-                        : ''
-                ) +
-                '}\n' +
-                '.' + costumName + ' .costum--pant,\n' +
-                '.' + costumSelector + ' .costum--pant,\n' +
-                '.' + costumSelector + '.costum--pant {\n' +
-                '   background-image: url("' + costumParts[3] + '");\n' +
-                (
-                    costumPant.length > 1
-                        ? (
-                        (costumPant[1] ? '   left: ' + costumPant[1] + 'px;\n' : '')
-                    )
-                        : ''
-                ) +
-                '}\n' ) : '' );
+                        "." + costumName + " .costum--head,\n" +
+                        "." + costumSelector + " .costum--head,\n" +
+                        "." + costumSelector + ".costum--head {\n" +
+                        "   background-image: url('" + replaceHoster(gfxJSON.hoster, costumHead[0]) + "');\n" +
+                        (
+                            costumHead.length > 1
+                                ? (
+                                    (costumHead[1] ? "   left: " + costumHead[1] + "px;\n" : "") +
+                                    (costumHead[2] ? "   top: " + costumHead[2] + "px;\n" : "")
+                                )
+                                : ""
+                        ) +
+                        "}\n" +
+                        "." + costumName + " .costum--body,\n" +
+                        "." + costumSelector + " .costum--body,\n" +
+                        "." + costumSelector + ".costum--body {\n" +
+                        "   background-image: url('" + replaceHoster(gfxJSON.hoster, costumBody[0]) + "');\n" +
+                        (
+                            costumBody.length > 1
+                                ? (
+                                    (costumBody[1] ? "   left: " + costumBody[1] + "px;\n" : "") +
+                                    (costumBody[2] ? "   top: " + costumBody[2] + "px;\n" : "")
+                                )
+                                : ""
+                        ) +
+                        "}\n" +
+                        "." + costumName + " .costum--arm,\n" +
+                        "." + costumSelector + " .costum--arm,\n" +
+                        "." + costumSelector + ".costum--arm {\n" +
+                        "   background-image: url('" + replaceHoster(gfxJSON.hoster, costumArm[0]) + "');\n" +
+                        (
+                            costumArm.length > 1
+                                ? (
+                                    (costumArm[1] ? "   left: " + costumArm[1] + "px;\n" : "") +
+                                    (costumArm[2] ? "   top: " + costumArm[2] + "px;\n" : "") +
+                                    (costumArm[3] ? "   width: " + costumArm[3] + "px;\n" : "")
+                                )
+                                : ""
+                        ) +
+                        "}\n" +
+                        "." + costumName + " .costum--pant,\n" +
+                        "." + costumSelector + " .costum--pant,\n" +
+                        "." + costumSelector + ".costum--pant {\n" +
+                        "   background-image: url('" + replaceHoster(gfxJSON.hoster, costumParts[3]) + "');\n" +
+                        (
+                            costumPant.length > 1
+                                ? (
+                                    (costumPant[1] ? "   left: " + costumPant[1] + "px;\n" : "")
+                                )
+                                : ""
+                        ) +
+                        "}\n"
+                    ) : ""
+                )
+                ;
             }
 
-            globalVars.costumsCSS = css;
-
-            return globalVars;
+            return css;
         },
         generateMapColors: function () {
-            var globalVars = {},
-                catsJSON = require("../../database/categories.json"),
+            var catsJSON = require("../../database/categories.json"),
                 mapTierJSON = require("../../database/map.json"),
-                css = ".map-colors{};\n";
+                css = "";
 
-                Object.keys(catsJSON.all).forEach(function(catId) {
-                    var cat = catsJSON.all[catId];
-                    css += "." + cat.class + "{color:#" + cat.color + "}";
-                    css += "." + cat.class + "-bg{background-color:#" + cat.color + "}";
-                });
+            Object.keys(catsJSON.all).forEach(function (catId) {
+                var cat = catsJSON.all[catId];
+                css += "." + cat.class + "{color:#" + cat.color + "}";
+                css += "." + cat.class + "-bg{background-color:#" + cat.color + "}";
+            });
 
-                mapTierJSON.tiers.forEach(function (tier) {
-                    css += "." + tier.class + "{color:#" + tier.color + "}";
-                    css += "." + tier.class + "-bg{background-color:#" + tier.color + "}";
-                });
+            mapTierJSON.tiers.forEach(function (tier) {
+                css += "." + tier.class + "{color:#" + tier.color + "}";
+                css += "." + tier.class + "-bg{background-color:#" + tier.color + "}";
+            });
 
-            globalVars.mapColorsCSS = css;
+            return css;
+        },
+        generateI18NIcons: function () {
+            var gfxJSON = require("../../database/media/gfx.json"),
+                css = "";
 
-            return globalVars;
+            Object.keys(gfxJSON.images).forEach(function (iconKey) {
+                var icon = gfxJSON.images[iconKey];
+                if (iconKey.indexOf("i18n_") === 0) {
+                    css += icon.selector + " {\n";
+                    css += " background-image: url('" + replaceHoster(gfxJSON.hoster, icon.src) + "');\n";
+                    css += " }\n";
+                }
+            });
+
+            return css;
         }
-    }
+    };
 };

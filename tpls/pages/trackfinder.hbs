@@ -31,7 +31,7 @@
                            placeholder="{%'page.rightSidebar.searchForTrack'|translate%}"
                            ng-model="searchTrack"
                            ng-model-options="{debounce:150}"/>
-                    <i class="faults with-cursor" ng-if="searchTrack !== ''" ng-click="clearSearch()"></i>
+                    {{> language-select}}
                 </div>
             </div>
         </div>

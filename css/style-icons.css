@@ -11,12 +11,14 @@ i.lang {
 i.lang:last-child {
     margin-right: 0;
 }
+
 i.lang.beside-name {
     vertical-align: baseline;
     position: relative;
     bottom: -2px;
     cursor: default;
 }
+
 i.lang.no-margin {
     margin-right: 0;
 }
@@ -47,8 +49,7 @@ i.rank,
 i.arrow,
 i.coins,
 i.filter,
-i.import-export
-{
+i.import-export {
     display: inline-block;
     background-size: cover !important;
     width: 20px;

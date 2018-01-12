@@ -21,236 +21,236 @@
       "info": "(Basic)",
       "img": "http://www.mediafire.com/convkey/5bbf/mfj6b6f2n1b492izg.jpg?size_id=a",
       "parts": [
-        "http://i.imgur.com/U8kY2jb.png|75",
-        "http://i.imgur.com/ENOKDW1.png",
-        "http://i.imgur.com/Uh2hyaK.png|180",
-        "http://i.imgur.com/1v2XQx8.png|10"
+        "#1/U8kY2jb.png|75",
+        "#1/ENOKDW1.png",
+        "#1/Uh2hyaK.png|180",
+        "#1/1v2XQx8.png|10"
       ]
     },
     "2": {
       "originID": 8,
       "name": "The Scarf",
-      "img": "http://i.imgur.com/cp8WIwz.jpg",
+      "img": "#1/cp8WIwz.jpg",
       "head": "Lootwheel or 15 Gems",
       "top": "Lootwheel or 15 Gems",
       "pants": "Lootwheel or 15 Gems",
       "parts": [
-        "http://i.imgur.com/lKNrluV.png|75",
-        "http://i.imgur.com/abMx2Bb.png",
-        "http://i.imgur.com/7C96NIT.png|175",
-        "http://i.imgur.com/2dHp19H.png"
+        "#1/lKNrluV.png|75",
+        "#1/abMx2Bb.png",
+        "#1/7C96NIT.png|175",
+        "#1/2dHp19H.png"
       ]
     },
     "3": {
       "originID": 7,
       "name": "The Hipster",
-      "img": "http://i.imgur.com/lhYuJu5.jpg",
+      "img": "#1/lhYuJu5.jpg",
       "head": "Lootwheel or 20 Gems",
       "top": "Lootwheel or 15 Gems",
       "pants": "Lootwheel or 15 Gems",
       "parts": [
-        "http://i.imgur.com/9RurBPf.png|85",
-        "http://i.imgur.com/6jq8zV9.png",
-        "http://i.imgur.com/1CfQkHQ.png|186|105",
-        "http://i.imgur.com/CSXhnok.png"
+        "#1/9RurBPf.png|85",
+        "#1/6jq8zV9.png",
+        "#1/1CfQkHQ.png|186|105",
+        "#1/CSXhnok.png"
       ]
     },
     "4": {
       "originID": 5,
       "name": "The Cooler",
-      "img": "http://i.imgur.com/0XOOUgq.jpg",
+      "img": "#1/0XOOUgq.jpg",
       "head": "25 Gems",
       "top": "25 Gems",
       "pants": "25 Gems",
       "parts": [
-        "http://i.imgur.com/ZpVBudz.png|85",
-        "http://i.imgur.com/CtHTMqN.png|-5",
-        "http://i.imgur.com/aFOjVH6.png|180|109",
-        "http://i.imgur.com/BD6TdE2.png"
+        "#1/ZpVBudz.png|85",
+        "#1/CtHTMqN.png|-5",
+        "#1/aFOjVH6.png|180|109",
+        "#1/BD6TdE2.png"
       ]
     },
     "5": {
       "originID": 2,
       "name": "The Stuntman",
-      "img": "http://i.imgur.com/ZH8Ak96.jpg",
+      "img": "#1/ZH8Ak96.jpg",
       "offer_name": "'May Day Offer', may 2015",
       "offer": "https://www.facebook.com/trialsfrontier.game/photos/pb.241184409381271.-2207520000.1439474188./471281216371588/?type=3&theater",
       "head": "Earn in Time Capsule",
       "top": "Earn in Time Capsule",
       "pants": "Earn in Time Capsule",
       "parts": [
-        "http://i.imgur.com/7ubVVwC.png|90|-10",
-        "http://i.imgur.com/72W2KEw.png|2|82",
-        "http://i.imgur.com/KNKdcbw.png|180|97",
-        "http://i.imgur.com/sY5XShv.png"
+        "#1/7ubVVwC.png|90|-10",
+        "#1/72W2KEw.png|2|82",
+        "#1/KNKdcbw.png|180|97",
+        "#1/sY5XShv.png"
       ]
     },
     "6": {
       "originID": 3,
       "name": "The Gladiator",
-      "img": "http://i.imgur.com/OYOXOSJ.jpg",
+      "img": "#1/OYOXOSJ.jpg",
       "head": "100 Gems",
       "top": "25 Gems",
       "pants": "Slot Machine",
       "parts": [
-        "http://i.imgur.com/qLwVwQG.png|85",
-        "http://i.imgur.com/tzqe0VA.png|-3|83",
-        "http://i.imgur.com/Bsa6G46.png|180|86",
-        "http://i.imgur.com/hpLUfwi.png|9"
+        "#1/qLwVwQG.png|85",
+        "#1/tzqe0VA.png|-3|83",
+        "#1/Bsa6G46.png|180|86",
+        "#1/hpLUfwi.png|9"
       ]
     },
     "7": {
       "originID": 4,
       "name": "The Butcher",
-      "img": "http://i.imgur.com/AAzmfF4.jpg",
+      "img": "#1/AAzmfF4.jpg",
       "head": "",
       "top": "",
       "pants": "",
       "parts": [
-        "http://i.imgur.com/OD9CI7Q.png|85",
-        "http://i.imgur.com/F8q9hpg.png",
-        "http://i.imgur.com/A3uiTZN.png||100",
-        "http://i.imgur.com/aGdmRet.png"
+        "#1/OD9CI7Q.png|85",
+        "#1/F8q9hpg.png",
+        "#1/A3uiTZN.png||100",
+        "#1/aGdmRet.png"
       ]
     },
     "8": {
       "originID": 1,
       "name": "The Dogfighter",
-      "img": "http://i.imgur.com/j1pFbE5.jpg",
+      "img": "#1/j1pFbE5.jpg",
       "head": "",
       "top": "",
       "pants": "",
       "parts": [
-        "http://i.imgur.com/zeXy5S2.png|85",
-        "http://i.imgur.com/Wtlbm5R.png",
-        "http://i.imgur.com/ZiOJwyv.png|185",
-        "http://i.imgur.com/vla4YjR.png"
+        "#1/zeXy5S2.png|85",
+        "#1/Wtlbm5R.png",
+        "#1/ZiOJwyv.png|185",
+        "#1/vla4YjR.png"
       ]
     },
     "9": {
       "originID": 9,
       "name": "The Diver",
-      "img": "http://i.imgur.com/6uaW6l5.jpg",
+      "img": "#1/6uaW6l5.jpg",
       "head": "",
       "top": "",
       "pants": "",
       "parts": [
-        "http://i.imgur.com/yGEpzBo.png|85",
-        "http://i.imgur.com/tKrqssn.png",
-        "http://i.imgur.com/qFSv0eM.png|190|100",
-        "http://i.imgur.com/9YIXYiW.png"
+        "#1/yGEpzBo.png|85",
+        "#1/tKrqssn.png",
+        "#1/qFSv0eM.png|190|100",
+        "#1/9YIXYiW.png"
       ]
     },
     "10": {
       "originID": 12,
       "name": "The Enforcer",
-      "img": "http://i.imgur.com/ufHyLyQ.jpg",
+      "img": "#1/ufHyLyQ.jpg",
       "head": "",
       "top": "",
       "pants": "",
       "parts": [
-        "http://i.imgur.com/V42Jml2.png|85|20",
-        "http://i.imgur.com/pEatUbq.png",
-        "http://i.imgur.com/MvmvuEG.png|170|90",
-        "http://i.imgur.com/8LXbiuO.png"
+        "#1/V42Jml2.png|85|20",
+        "#1/pEatUbq.png",
+        "#1/MvmvuEG.png|170|90",
+        "#1/8LXbiuO.png"
       ]
     },
     "11": {
       "originID": 10,
       "name": "The Rebel",
-      "img": "http://i.imgur.com/SE8VmnC.jpg",
+      "img": "#1/SE8VmnC.jpg",
       "head": "",
       "top": "",
       "pants": "",
       "parts": [
-        "http://i.imgur.com/yfT9S0p.png|86",
-        "http://i.imgur.com/SMsIdFY.png|4",
-        "http://i.imgur.com/x35Q5Xh.png|177|100",
-        "http://i.imgur.com/H7kB9Hq.png|30"
+        "#1/yfT9S0p.png|86",
+        "#1/SMsIdFY.png|4",
+        "#1/x35Q5Xh.png|177|100",
+        "#1/H7kB9Hq.png|30"
       ]
     },
     "12": {
       "originID": 11,
       "name": "The Priest",
-      "img": "http://i.imgur.com/1DGQcPq.jpg",
+      "img": "#1/1DGQcPq.jpg",
       "head": "",
       "top": "",
       "pants": "",
       "parts": [
-        "http://i.imgur.com/cnvYWRA.png|88",
-        "http://i.imgur.com/CNKO8kT.png",
-        "http://i.imgur.com/eLTxh5Y.png|178",
-        "http://i.imgur.com/rpEyjLF.png"
+        "#1/cnvYWRA.png|88",
+        "#1/CNKO8kT.png",
+        "#1/eLTxh5Y.png|178",
+        "#1/rpEyjLF.png"
       ]
     },
     "13": {
       "originID": 14,
       "name": "The Cyberpunk",
-      "img": "http://i.imgur.com/YhUD9UE.jpg",
+      "img": "#1/YhUD9UE.jpg",
       "head": "",
       "top": "",
       "pants": "",
       "parts": [
-        "http://i.imgur.com/YV646Bb.png|90|10",
-        "http://i.imgur.com/ZTpUeMo.png|-6",
-        "http://i.imgur.com/hRg5UMJ.png|180|110",
-        "http://i.imgur.com/nak0OwU.png"
+        "#1/YV646Bb.png|90|10",
+        "#1/ZTpUeMo.png|-6",
+        "#1/hRg5UMJ.png|180|110",
+        "#1/nak0OwU.png"
       ]
     },
     "14": {
       "originID": 13,
       "name": "The Goon",
-      "img": "http://i.imgur.com/tLmSdkG.jpg",
+      "img": "#1/tLmSdkG.jpg",
       "head": "",
       "top": "",
       "pants": "",
       "parts": [
-        "http://i.imgur.com/dUMj37F.png|83|8",
-        "http://i.imgur.com/kJGWXtL.png",
-        "http://i.imgur.com/uwRjufz.png|175|105",
-        "http://i.imgur.com/f8AbJAX.png"
+        "#1/dUMj37F.png|83|8",
+        "#1/kJGWXtL.png",
+        "#1/uwRjufz.png|175|105",
+        "#1/f8AbJAX.png"
       ]
     },
     "15": {
       "originID": 16,
       "name": "The Cyborg",
-      "img": "http://i.imgur.com/9j9g4fn.jpg",
+      "img": "#1/9j9g4fn.jpg",
       "head": "",
       "top": "",
       "pants": "",
       "parts": [
-        "http://i.imgur.com/FlF9teZ.png|80|10",
-        "http://i.imgur.com/HBhCCmO.png|-4|83",
-        "http://i.imgur.com/9XJobiO.png|175|100",
-        "http://i.imgur.com/2k5eVir.png"
+        "#1/FlF9teZ.png|80|10",
+        "#1/HBhCCmO.png|-4|83",
+        "#1/9XJobiO.png|175|100",
+        "#1/2k5eVir.png"
       ]
     },
     "16": {
       "originID": 15,
       "name": "The Platinum Knight",
-      "img": "http://i.imgur.com/lDLIGIt.jpg",
+      "img": "#1/lDLIGIt.jpg",
       "head": "",
       "top": "",
       "pants": "",
       "parts": [
-        "http://i.imgur.com/UqDRHNW.png|75",
-        "http://i.imgur.com/2VWYZLF.png",
-        "http://i.imgur.com/W0dmmNL.png|175|100",
-        "http://i.imgur.com/4Owqmaj.png"
+        "#1/UqDRHNW.png|75",
+        "#1/2VWYZLF.png",
+        "#1/W0dmmNL.png|175|100",
+        "#1/4Owqmaj.png"
       ]
     },
     "17": {
       "originID": 17,
       "name": "The Eggman",
-      "img": "http://i.imgur.com/vpzEbPF.png",
+      "img": "#1/vpzEbPF.png",
       "head": "",
       "top": "",
       "pants": "",
       "parts": [
-        "http://i.imgur.com/LKc3Lrj.png|88",
-        "http://i.imgur.com/U2cjluU.png|-7",
-        "http://i.imgur.com/Xdw688I.png|172|117",
-        "http://i.imgur.com/BaS1gz2.png"
+        "#1/LKc3Lrj.png|88",
+        "#1/U2cjluU.png|-7",
+        "#1/Xdw688I.png|172|117",
+        "#1/BaS1gz2.png"
       ]
     },
     "18": {
@@ -261,10 +261,10 @@
       "top": "",
       "pants": "",
       "parts": [
-        "http://i.imgur.com/DhbSBwV.png",
-        "http://i.imgur.com/u2bqHLq.png",
-        "http://i.imgur.com/UfINMcF.png|183|90",
-        "http://i.imgur.com/5JEGHAM.png"
+        "#1/DhbSBwV.png",
+        "#1/u2bqHLq.png",
+        "#1/UfINMcF.png|183|90",
+        "#1/5JEGHAM.png"
       ]
     },
     "19": {
@@ -275,10 +275,10 @@
       "top": "",
       "pants": "",
       "parts": [
-        "http://i.imgur.com/Fpiv2UH.png|30",
-        "http://i.imgur.com/QUHBi1v.png|10|103",
-        "http://i.imgur.com/7fWkQRR.png",
-        "http://i.imgur.com/cp6vmll.png"
+        "#1/Fpiv2UH.png|30",
+        "#1/QUHBi1v.png|10|103",
+        "#1/7fWkQRR.png",
+        "#1/cp6vmll.png"
       ]
     },
     "20": {
@@ -289,52 +289,52 @@
       "top": "",
       "pants": "",
       "parts": [
-        "http://i.imgur.com/ewAcimA.png|21",
-        "http://i.imgur.com/JSPr7Sb.png|10",
-        "http://i.imgur.com/emhp1bE.png|190|100",
-        "http://i.imgur.com/fMPQ7Zf.png|30"
+        "#1/ewAcimA.png|21",
+        "#1/JSPr7Sb.png|10",
+        "#1/emhp1bE.png|190|100",
+        "#1/fMPQ7Zf.png|30"
       ]
     },
     "21": {
       "originID": 6,
       "name": "The Samsarian",
-      "img": "http://i.imgur.com/Cumumrk.jpg",
+      "img": "#1/Cumumrk.jpg",
       "head": "",
       "top": "",
       "pants": "",
       "parts": [
-        "http://i.imgur.com/bpleS92.png|95",
-        "http://i.imgur.com/oiNzBop.png|5",
-        "http://i.imgur.com/WEEjIAZ.png||115",
-        "http://i.imgur.com/jWLmijK.png"
+        "#1/bpleS92.png|95",
+        "#1/oiNzBop.png|5",
+        "#1/WEEjIAZ.png||115",
+        "#1/jWLmijK.png"
       ]
     },
     "22": {
       "originID": 21,
       "name": "Manbird",
-      "img": "http://i.imgur.com/ZMCdAN5.jpg",
+      "img": "#1/ZMCdAN5.jpg",
       "head": "",
       "top": "",
       "pants": "",
       "parts": [
-        "http://i.imgur.com/E2G6709.png",
-        "http://i.imgur.com/eIljsJI.png|-9",
-        "http://i.imgur.com/Hj60g4B.png|135||102",
-        "http://i.imgur.com/9vh068h.png"
+        "#1/E2G6709.png",
+        "#1/eIljsJI.png|-9",
+        "#1/Hj60g4B.png|135||102",
+        "#1/9vh068h.png"
       ]
     },
     "23": {
       "originID": 22,
       "name": "Cornelius Costume",
-      "img": "http://i.imgur.com/55fZlbV.jpg",
+      "img": "#1/55fZlbV.jpg",
       "head": "",
       "top": "",
       "pants": "",
       "parts": [
-        "http://i.imgur.com/iXLK2PC.png",
-        "http://i.imgur.com/XEwJsv2.png",
-        "http://i.imgur.com/dzuxpz4.png|155|100|128",
-        "http://i.imgur.com/1DA3B7J.png"
+        "#1/iXLK2PC.png",
+        "#1/XEwJsv2.png",
+        "#1/dzuxpz4.png|155|100|128",
+        "#1/1DA3B7J.png"
       ]
     },
     "24": {
@@ -345,54 +345,54 @@
       "top": "",
       "pants": "",
       "parts": [
-        "http://i.imgur.com/Rm4mXic.png|75",
-        "http://i.imgur.com/eX4jTzv.png",
-        "http://i.imgur.com/MF21XgV.png|175|100",
-        "http://i.imgur.com/FMVWkmT.png"
+        "#1/Rm4mXic.png|75",
+        "#1/eX4jTzv.png",
+        "#1/MF21XgV.png|175|100",
+        "#1/FMVWkmT.png"
       ]
     },
     "25": {
       "originID": 24,
       "name": "The Mountaineer",
-      "img": "http://i.imgur.com/mtSTloH.jpg",
+      "img": "#1/mtSTloH.jpg",
       "head": "",
       "top": "",
       "pants": "",
       "parts": [
-        "http://i.imgur.com/vL6xUPS.png|82|-8",
-        "http://i.imgur.com/uuVBgXb.png|-5|100",
-        "http://i.imgur.com/dIvlsXY.png|180|110",
-        "http://i.imgur.com/nWR0Gy5.png"
+        "#1/vL6xUPS.png|82|-8",
+        "#1/uuVBgXb.png|-5|100",
+        "#1/dIvlsXY.png|180|110",
+        "#1/nWR0Gy5.png"
       ]
     },
     "26": {
       "originID": 25,
       "name": "Snowfox",
-      "img": "http://i.imgur.com/PjGIZEY.jpg",
+      "img": "#1/PjGIZEY.jpg",
       "head": "",
       "top": "",
       "pants": "",
       "purchase": true,
       "parts": [
-        "http://i.imgur.com/kr1G96Q.png|85|10",
-        "http://i.imgur.com/4Qig4iL.png|-5",
-        "http://i.imgur.com/lWqVLIk.png|180|107",
-        "http://i.imgur.com/pOZ2I4r.png"
+        "#1/kr1G96Q.png|85|10",
+        "#1/4Qig4iL.png|-5",
+        "#1/lWqVLIk.png|180|107",
+        "#1/pOZ2I4r.png"
       ]
     },
     "27": {
       "originID": 26,
       "name": "Polar Vortex",
-      "img": "http://i.imgur.com/etVZDfr.jpg",
+      "img": "#1/etVZDfr.jpg",
       "head": "",
       "top": "",
       "pants": "",
       "purchase": true,
       "parts": [
-        "http://i.imgur.com/dRBlZy5.png|90",
-        "http://i.imgur.com/O7jLHQc.png|4|73",
-        "http://i.imgur.com/Ncytfyd.png|180|90",
-        "http://i.imgur.com/40iHTjK.png"
+        "#1/dRBlZy5.png|90",
+        "#1/O7jLHQc.png|4|73",
+        "#1/Ncytfyd.png|180|90",
+        "#1/40iHTjK.png"
       ]
     },
     "28": {
@@ -404,25 +404,25 @@
       "pants": "",
       "purchase": true,
       "parts": [
-        "http://i.imgur.com/yYG2pMh.png",
-        "http://i.imgur.com/YWZWNvm.png||120",
-        "http://i.imgur.com/vwgRTiF.png|160||110",
-        "http://i.imgur.com/nBvEZ5Y.png"
+        "#1/yYG2pMh.png",
+        "#1/YWZWNvm.png||120",
+        "#1/vwgRTiF.png|160||110",
+        "#1/nBvEZ5Y.png"
       ]
     },
     "29": {
       "originID": 28,
       "name": "Arctic Explorer",
-      "img": "http://i.imgur.com/cZk7Pfs.jpg",
+      "img": "#1/cZk7Pfs.jpg",
       "head": "",
       "top": "",
       "pants": "",
       "purchase": true,
       "parts": [
-        "http://i.imgur.com/dMj444L.png|15|30",
-        "http://i.imgur.com/GzXkZcB.png",
-        "http://i.imgur.com/PvVDI0Z.png|185|115",
-        "http://i.imgur.com/Zo0c7GB.png"
+        "#1/dMj444L.png|15|30",
+        "#1/GzXkZcB.png",
+        "#1/PvVDI0Z.png|185|115",
+        "#1/Zo0c7GB.png"
       ]
     },
     "30": {
@@ -433,25 +433,25 @@
       "top": "",
       "pants": "",
       "parts": [
-        "http://i.imgur.com/gBGpKPv.png|86|13",
-        "http://i.imgur.com/8ZPmqXy.png",
-        "http://i.imgur.com/BtX1YXn.png|175|110",
-        "http://i.imgur.com/DQD3tIb.png"
+        "#1/gBGpKPv.png|86|13",
+        "#1/8ZPmqXy.png",
+        "#1/BtX1YXn.png|175|110",
+        "#1/DQD3tIb.png"
       ]
     },
     "31": {
       "originID": 36,
       "name": "Henchmen Uniform Orange",
-      "img": "http://i.imgur.com/luySeAd.jpg",
+      "img": "#1/luySeAd.jpg",
       "head": "",
       "top": "",
       "pants": "",
       "purchase": true,
       "parts": [
-        "http://i.imgur.com/moHYJZD.png|85",
-        "http://i.imgur.com/Wg5dVJ9.png|-10",
-        "http://i.imgur.com/H5KSmTR.png|184|105",
-        "http://i.imgur.com/tvlaCP1.png"
+        "#1/moHYJZD.png|85",
+        "#1/Wg5dVJ9.png|-10",
+        "#1/H5KSmTR.png|184|105",
+        "#1/tvlaCP1.png"
       ]
     },
     "32": {
@@ -462,131 +462,131 @@
       "top": "",
       "pants": "",
       "parts": [
-        "http://i.imgur.com/V0pKovr.png",
-        "http://i.imgur.com/SbTRDbP.png|-11",
-        "http://i.imgur.com/pyXJS8W.png|185|97",
-        "http://i.imgur.com/qQxujSQ.png"
+        "#1/V0pKovr.png",
+        "#1/SbTRDbP.png|-11",
+        "#1/pyXJS8W.png|185|97",
+        "#1/qQxujSQ.png"
       ],
       "black": [
-        "http://i.imgur.com/L5P6uUY.png",
-        "http://i.imgur.com/4arluFH.png",
-        "http://i.imgur.com/2laSyu4.png",
-        "http://i.imgur.com/CdF6gWU.png"
+        "#1/L5P6uUY.png",
+        "#1/4arluFH.png",
+        "#1/2laSyu4.png",
+        "#1/CdF6gWU.png"
       ]
     },
     "33": {
       "originID": 39,
       "name": "The High Roller",
-      "img": "http://i.imgur.com/9YyHFeU.png",
+      "img": "#1/9YyHFeU.png",
       "head": "",
       "top": "",
       "pants": "",
       "parts": [
-        "http://i.imgur.com/WQXIJ3z.png|30",
-        "http://i.imgur.com/tF3ZcMB.png|10",
-        "http://i.imgur.com/yiLlFBn.png|183|115",
-        "http://i.imgur.com/JBM5NFZ.png"
+        "#1/WQXIJ3z.png|30",
+        "#1/tF3ZcMB.png|10",
+        "#1/yiLlFBn.png|183|115",
+        "#1/JBM5NFZ.png"
       ]
     },
     "34": {
       "originID": 29,
       "name": "The Cowgirl",
-      "img": "http://i.imgur.com/Rpopm2U.png",
+      "img": "#1/Rpopm2U.png",
       "head": "",
       "top": "",
       "pants": "",
       "purchase": true,
       "parts": [
-        "http://i.imgur.com/uWnOtNa.png||20",
-        "http://i.imgur.com/8BSwDt5.png|8",
-        "http://i.imgur.com/mioyJRS.png|160|140",
-        "http://i.imgur.com/tibqEfE.png"
+        "#1/uWnOtNa.png||20",
+        "#1/8BSwDt5.png|8",
+        "#1/mioyJRS.png|160|140",
+        "#1/tibqEfE.png"
       ]
     },
     "35": {
       "originID": 30,
       "name": "The Native Warrior",
-      "img": "http://i.imgur.com/FGGVbWd.png",
+      "img": "#1/FGGVbWd.png",
       "head": "",
       "top": "",
       "pants": "",
       "parts": [
-        "http://i.imgur.com/NtLAYaG.png|0|-20",
-        "http://i.imgur.com/nqcPSLC.png|-7",
-        "http://i.imgur.com/yyAbD3o.png|188|100",
-        "http://i.imgur.com/IrtDMoC.png"
+        "#1/NtLAYaG.png|0|-20",
+        "#1/nqcPSLC.png|-7",
+        "#1/yyAbD3o.png|188|100",
+        "#1/IrtDMoC.png"
       ]
     },
     "36": {
       "originID": 31,
       "name": "The Convict",
-      "img": "http://i.imgur.com/FgKjC4M.jpg",
+      "img": "#1/FgKjC4M.jpg",
       "head": "",
       "top": "",
       "pants": "",
       "purchase": true,
       "parts": [
-        "http://i.imgur.com/nuLk5gT.png|80|12",
-        "http://i.imgur.com/CKgfjqR.png|-3",
-        "http://i.imgur.com/yuqsVoX.png|172|104",
-        "http://i.imgur.com/N0iQUdt.png"
+        "#1/nuLk5gT.png|80|12",
+        "#1/CKgfjqR.png|-3",
+        "#1/yuqsVoX.png|172|104",
+        "#1/N0iQUdt.png"
       ]
     },
     "37": {
       "originID": 32,
       "name": "The Sheriff",
-      "img": "http://i.imgur.com/k7jtARB.jpg",
+      "img": "#1/k7jtARB.jpg",
       "head": "",
       "top": "",
       "pants": "",
       "parts": [
-        "http://i.imgur.com/gSJSTU5.png|22",
-        "http://i.imgur.com/aNZyWSC.png|-5",
-        "http://i.imgur.com/56Y8CwB.png|173|116",
-        "http://i.imgur.com/99TrSVe.png|25"
+        "#1/gSJSTU5.png|22",
+        "#1/aNZyWSC.png|-5",
+        "#1/56Y8CwB.png|173|116",
+        "#1/99TrSVe.png|25"
       ]
     },
     "38": {
       "originID": 38,
       "name": "The Gunslinger",
-      "img": "http://i.imgur.com/52z6VOD.jpg",
+      "img": "#1/52z6VOD.jpg",
       "head": "",
       "top": "",
       "pants": "",
       "purchase": true,
       "parts": [
-        "http://i.imgur.com/mhkdwoI.png||10",
-        "http://i.imgur.com/GkCBtyY.png",
-        "http://i.imgur.com/tFYtghr.png|185|105",
-        "http://i.imgur.com/F1l2D7Q.png"
+        "#1/mhkdwoI.png||10",
+        "#1/GkCBtyY.png",
+        "#1/tFYtghr.png|185|105",
+        "#1/F1l2D7Q.png"
       ]
     },
     "39": {
       "originID": 41,
       "name": "The Undead Rider",
-      "img": "http://i.imgur.com/BhwlNYJ.png",
+      "img": "#1/BhwlNYJ.png",
       "head": "",
       "top": "",
       "pants": "",
       "parts": [
-        "http://i.imgur.com/qHaqmqN.png|95",
-        "http://i.imgur.com/AoO1mDV.png",
-        "http://i.imgur.com/0Pz8h90.png|183|100",
-        "http://i.imgur.com/yBoqcYt.png"
+        "#1/qHaqmqN.png|95",
+        "#1/AoO1mDV.png",
+        "#1/0Pz8h90.png|183|100",
+        "#1/yBoqcYt.png"
       ]
     },
     "40": {
       "originID": 42,
       "name": "The Hillbilly Killer",
-      "img": "http://i.imgur.com/yutTYm8.jpg",
+      "img": "#1/yutTYm8.jpg",
       "head": "",
       "top": "",
       "pants": "",
       "parts": [
-        "http://i.imgur.com/mu8ILFL.png|87",
-        "http://i.imgur.com/JD1NXkn.png",
-        "http://i.imgur.com/3XhuoN1.png||95",
-        "http://i.imgur.com/u6bnKdc.png"
+        "#1/mu8ILFL.png|87",
+        "#1/JD1NXkn.png",
+        "#1/3XhuoN1.png||95",
+        "#1/u6bnKdc.png"
       ]
     },
     "41": {
@@ -597,10 +597,10 @@
       "top": "",
       "pants": "",
       "parts": [
-        "http://i.imgur.com/2FqG3LB.png||20",
-        "http://i.imgur.com/JtVf3RP.png|6|105",
-        "http://i.imgur.com/9ji4ZSE.png|168|150",
-        "http://i.imgur.com/bidrb0Q.png"
+        "#1/2FqG3LB.png||20",
+        "#1/JtVf3RP.png|6|105",
+        "#1/9ji4ZSE.png|168|150",
+        "#1/bidrb0Q.png"
       ]
     },
     "42": {
@@ -611,10 +611,10 @@
       "top": "",
       "pants": "",
       "parts": [
-        "http://i.imgur.com/Hf53brJ.png|80",
-        "http://i.imgur.com/pWPDBHO.png",
-        "http://i.imgur.com/9peXan7.png|180|110",
-        "http://i.imgur.com/8zaSCe1.png"
+        "#1/Hf53brJ.png|80",
+        "#1/pWPDBHO.png",
+        "#1/9peXan7.png|180|110",
+        "#1/8zaSCe1.png"
       ]
     },
     "43": {
@@ -623,83 +623,83 @@
       "img": "http://s30.postimg.org/i2lwa21ch/image.jpg",
       "purchase": true,
       "parts": [
-        "http://i.imgur.com/GTpqRlg.png||-40",
-        "http://i.imgur.com/qjZR4To.png",
-        "http://i.imgur.com/1gcu13P.png|165",
-        "http://i.imgur.com/9On9H5r.png"
+        "#1/GTpqRlg.png||-40",
+        "#1/qjZR4To.png",
+        "#1/1gcu13P.png|165",
+        "#1/9On9H5r.png"
       ]
     },
     "44": {
       "originID": 47,
       "name": "KTM Gear",
-      "img": "http://i.imgur.com/ggnl0oh.png",
+      "img": "#1/ggnl0oh.png",
       "head": "",
       "top": "",
       "pants": "",
       "purchase": true,
       "parts": [
-        "http://i.imgur.com/6WAjJh0.png|88",
-        "http://i.imgur.com/O485ppV.png",
-        "http://i.imgur.com/EYWs9xt.png|180|100",
-        "http://i.imgur.com/nTaRN6D.png"
+        "#1/6WAjJh0.png|88",
+        "#1/O485ppV.png",
+        "#1/EYWs9xt.png|180|100",
+        "#1/nTaRN6D.png"
       ]
     },
     "45": {
       "originID": 40,
       "name": "Hungry Shark",
-      "img": "http://i.imgur.com/dHZa0h2.png",
+      "img": "#1/dHZa0h2.png",
       "head": "",
       "top": "",
       "pants": "",
       "parts": [
-        "http://i.imgur.com/2fF8IwW.png|50|-10",
-        "http://i.imgur.com/cROkl5u.png|6|90",
-        "http://i.imgur.com/Mg6lCGS.png|175",
-        "http://i.imgur.com/1W0Hyal.png"
+        "#1/2fF8IwW.png|50|-10",
+        "#1/cROkl5u.png|6|90",
+        "#1/Mg6lCGS.png|175",
+        "#1/1W0Hyal.png"
       ]
     },
     "46": {
       "originID": 50,
       "name": "The Ninja",
-      "img": "http://i.imgur.com/0dUhzvj.png",
+      "img": "#1/0dUhzvj.png",
       "head": "",
       "top": "",
       "pants": "",
       "season": true,
       "parts": [
-        "http://i.imgur.com/rs7sVhx.png|20|-35",
-        "http://i.imgur.com/pUBjdBm.png|6",
-        "http://i.imgur.com/k8oZqIf.png||110",
-        "http://i.imgur.com/0JapP4L.png"
+        "#1/rs7sVhx.png|20|-35",
+        "#1/pUBjdBm.png|6",
+        "#1/k8oZqIf.png||110",
+        "#1/0JapP4L.png"
       ]
     },
     "47": {
       "originID": 48,
       "name": "King of the Wastes",
-      "img": "http://i.imgur.com/luS9eMV.png",
+      "img": "#1/luS9eMV.png",
       "head": "",
       "top": "",
       "pants": "",
       "purchase": true,
       "parts": [
-        "http://i.imgur.com/LUdVOFf.png|23|-50",
-        "http://i.imgur.com/SZNU07C.png|6",
-        "http://i.imgur.com/GG900G7.png|180|115",
-        "http://i.imgur.com/BLyCMZo.png"
+        "#1/LUdVOFf.png|23|-50",
+        "#1/SZNU07C.png|6",
+        "#1/GG900G7.png|180|115",
+        "#1/BLyCMZo.png"
       ]
     },
     "48": {
       "originID": 49,
       "name": "The Temple Rider",
-      "img": "http://i.imgur.com/nVTVayq.png",
+      "img": "#1/nVTVayq.png",
       "head": "",
       "top": "",
       "pants": "",
       "parts": [
-        "http://i.imgur.com/Azj4uEP.png||-55",
-        "http://i.imgur.com/s72g0W9.png",
-        "http://i.imgur.com/GKRs1vw.png|180|100",
-        "http://i.imgur.com/GdmbjgQ.png"
+        "#1/Azj4uEP.png||-55",
+        "#1/s72g0W9.png",
+        "#1/GKRs1vw.png|180|100",
+        "#1/GdmbjgQ.png"
       ]
     },
     "49": {
@@ -708,10 +708,10 @@
       "info": "",
       "img": "",
       "parts": [
-        "http://i.imgur.com/gfeuXuR.png|82",
-        "http://i.imgur.com/EqShHrm.png|-7",
-        "http://i.imgur.com/kAP5xuP.png|180|105",
-        "http://i.imgur.com/BjyuyVF.png"
+        "#1/gfeuXuR.png|82",
+        "#1/EqShHrm.png|-7",
+        "#1/kAP5xuP.png|180|105",
+        "#1/BjyuyVF.png"
       ]
     },
     "50": {
@@ -721,10 +721,10 @@
       "img": "",
       "unreleased": true,
       "parts": [
-        "http://i.imgur.com/KQC4Bw8.png",
-        "http://i.imgur.com/IauvxbF.png",
-        "http://i.imgur.com/lME2Dwv.png",
-        "http://i.imgur.com/hf8LFGX.png"
+        "#1/KQC4Bw8.png",
+        "#1/IauvxbF.png",
+        "#1/lME2Dwv.png",
+        "#1/hf8LFGX.png"
       ]
     },
     "51": {
@@ -733,10 +733,10 @@
       "info": "Double retries at the Midnight Circuit",
       "img": "",
       "parts": [
-        "http://i.imgur.com/9Q8Qnye.png|18|-45",
-        "http://i.imgur.com/zgHWskI.png|5",
-        "http://i.imgur.com/ehSowXD.png|175|77",
-        "http://i.imgur.com/7yPefnS.png"
+        "#1/9Q8Qnye.png|18|-45",
+        "#1/zgHWskI.png|5",
+        "#1/ehSowXD.png|175|77",
+        "#1/7yPefnS.png"
       ]
     },
     "52": {
@@ -745,10 +745,10 @@
       "info": "",
       "img": "",
       "parts": [
-        "http://i.imgur.com/DpjR6NP.png|15|-35",
-        "http://i.imgur.com/LlvHIyU.png|6",
-        "http://i.imgur.com/PM20hzM.png|170|100",
-        "http://i.imgur.com/XfrDBUT.png"
+        "#1/DpjR6NP.png|15|-35",
+        "#1/LlvHIyU.png|6",
+        "#1/PM20hzM.png|170|100",
+        "#1/XfrDBUT.png"
       ]
     },
     "53": {
@@ -757,10 +757,10 @@
       "info": "",
       "event": true,
       "parts": [
-        "http://i.imgur.com/2ikV1j0.png|20|-60",
-        "http://i.imgur.com/jtI3vfY.png|-3",
-        "http://i.imgur.com/xkAo3tC.png|185|100",
-        "http://i.imgur.com/YeLrMtu.png"
+        "#1/2ikV1j0.png|20|-60",
+        "#1/jtI3vfY.png|-3",
+        "#1/xkAo3tC.png|185|100",
+        "#1/YeLrMtu.png"
       ]
     },
     "54": {
@@ -768,10 +768,10 @@
       "name": "KTM Red Bull Gear",
       "purchase": true,
       "parts": [
-        "http://i.imgur.com/kkAslyL.png|20|-60",
-        "http://i.imgur.com/5yVzACn.png|-3",
-        "http://i.imgur.com/R3dvzjL.png|185|100",
-        "http://i.imgur.com/ue5g5NM.png"
+        "#1/kkAslyL.png|20|-60",
+        "#1/5yVzACn.png|-3",
+        "#1/R3dvzjL.png|185|100",
+        "#1/ue5g5NM.png"
       ]
     },
     "55": {
@@ -779,10 +779,10 @@
       "name": "The Heartbrake Kit",
       "season": true,
       "parts": [
-        "http://i.imgur.com/ebmvMUE.png||-60",
-        "http://i.imgur.com/wTw1weu.png",
-        "http://i.imgur.com/3KV8zM8.png",
-        "http://i.imgur.com/MabvjqT.png"
+        "#1/ebmvMUE.png||-60",
+        "#1/wTw1weu.png",
+        "#1/3KV8zM8.png",
+        "#1/MabvjqT.png"
       ]
     },
     "56": {
@@ -790,10 +790,10 @@
       "name": "Vengeful Knight",
       "purchase": true,
       "parts": [
-        "http://i.imgur.com/UJHu7ag.png||-60",
-        "http://i.imgur.com/foijWqg.png",
-        "http://i.imgur.com/LavCxid.png",
-        "http://i.imgur.com/YDzsmHL.png"
+        "#1/UJHu7ag.png||-60",
+        "#1/foijWqg.png",
+        "#1/LavCxid.png",
+        "#1/YDzsmHL.png"
       ]
     },
     "57": {
@@ -801,60 +801,60 @@
       "name": "Feaster Bunny",
       "purchase": true,
       "parts": [
-        "http://i.imgur.com/t4BK6fw.png||-60",
-        "http://i.imgur.com/ylrqglA.png",
-        "http://i.imgur.com/Fh9kfod.png",
-        "http://i.imgur.com/3NffjRB.png"
+        "#1/t4BK6fw.png||-60",
+        "#1/ylrqglA.png",
+        "#1/Fh9kfod.png",
+        "#1/3NffjRB.png"
       ]
     },
     "58": {
       "originID": 58,
       "name": "Butch Suite",
       "parts": [
-        "http://i.imgur.com/1qezvAD.png||-60",
-        "http://i.imgur.com/6re53jP.png",
-        "http://i.imgur.com/wExu8nn.png",
-        "http://i.imgur.com/SO1jSGa.png"
+        "#1/1qezvAD.png||-60",
+        "#1/6re53jP.png",
+        "#1/wExu8nn.png",
+        "#1/SO1jSGa.png"
       ]
     },
     "59": {
       "originID": 59,
       "name": "Reputed Hero",
       "parts": [
-        "http://i.imgur.com/AcnMLWe.png|20|-50",
-        "http://i.imgur.com/npWVGku.png",
-        "http://i.imgur.com/KFr2aJW.png",
-        "http://i.imgur.com/fyeL7CM.png"
+        "#1/AcnMLWe.png|20|-50",
+        "#1/npWVGku.png",
+        "#1/KFr2aJW.png",
+        "#1/fyeL7CM.png"
       ]
     },
     "60": {
       "originID": 60,
       "name": "Neon Freeze",
       "parts": [
-        "http://i.imgur.com/OJQw2qu.png||-60",
-        "http://i.imgur.com/HmgMfgy.png",
-        "http://i.imgur.com/r4a2MJp.png|183|110",
-        "http://i.imgur.com/suqFGSj.png"
+        "#1/OJQw2qu.png||-60",
+        "#1/HmgMfgy.png",
+        "#1/r4a2MJp.png|183|110",
+        "#1/suqFGSj.png"
       ]
     },
     "61": {
       "originID": 61,
       "name": "Neon Blaze",
       "parts": [
-        "http://i.imgur.com/JyeX29f.png||-60",
-        "http://i.imgur.com/my4cseO.png",
-        "http://i.imgur.com/fkG7yYN.png|183|110",
-        "http://i.imgur.com/FoVUV53.png"
+        "#1/JyeX29f.png||-60",
+        "#1/my4cseO.png",
+        "#1/fkG7yYN.png|183|110",
+        "#1/FoVUV53.png"
       ]
     },
     "62": {
       "originID": 62,
       "name": "Wurst Racer",
       "parts": [
-        "http://i.imgur.com/IaC5b9j.png||-60",
-        "http://i.imgur.com/xXHM3X9.png",
-        "http://i.imgur.com/6WUBd5x.png",
-        "http://i.imgur.com/HZtXT2b.png"
+        "#1/IaC5b9j.png||-60",
+        "#1/xXHM3X9.png",
+        "#1/6WUBd5x.png",
+        "#1/HZtXT2b.png"
       ]
     },
     "63": {

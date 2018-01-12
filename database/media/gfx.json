@@ -19,270 +19,225 @@
     "paintjobs": {
       "src": "#1/xUtvCUz.png",
       "selector": "i.paintjob",
+      "dim": "1120x550",
+      "dimIcon": "70x50",
+      "scale": 90,
       "sprite": true
     },
     "paintjob-icons": {
       "src": "#1/V8TaKvt.png",
       "selector": "i.paintjob-icon",
+      "dim": "1100x1710",
+      "dimIcon": "100x100",
+      "scale": 50,
       "sprite": true
     },
     "sidebar-arrow-open": {
       "src": "#1/ePEMEW0.png",
-      "lSrc": "#0/icons/sidebar-arrow-open.png",
       "selector": ".new-sidebar .handler",
       "bgPos": "right top no-repeat"
     },
     "sidebar-arrow-close": {
       "src": "#1/sKpsImO.png",
-      "lSrc": "#0/icons/sidebar-arrow-close.png",
       "selector": ".new-sidebar.open .handler",
       "bgPos": "right top no-repeat"
     },
     "sidebar-border": {
       "src": "#1/SIx9Ryw.png",
-      "lSrc": "#0/icons/sidebar-border.png",
       "selector": ".new-sidebar .handler:before, .new-sidebar .handler:after",
       "bgPos": "right repeat-y"
     },
     "sidebar-bg": {
       "src": "#1/N5a0T7b.png",
-      "lSrc": "#0/icons/sidebar-bg.png",
       "selector": ".new-sidebar"
     },
     "medal-bronze": {
       "src": "#1/9N83Lbk.png",
-      "lSrc": "#0/icons/medal-bronze.png",
       "selector": "i.medal-bronze"
     },
     "medal-silver": {
       "src": "#1/OJmAWbw.png",
-      "lSrc": "#0/icons/medal-silver.png",
       "selector": "i.medal-silver"
     },
     "medal-gold": {
       "src": "#1/E9nANVv.png",
-      "lSrc": "#0/icons/medal-gold.png",
       "selector": "i.medal-gold"
     },
     "medal-platinum": {
       "src": "#1/jAFrKkL.png",
-      "lSrc": "#0/icons/medal-platinum.png",
       "selector": "i.medal-platinum"
     },
     "i18n_de": {
       "src": "#1/f2m614V.png",
-      "lSrc": "#0/icons/flag-de.png",
       "selector": "i.lang.lang_de"
     },
     "i18n_en": {
       "src": "#1/F5nx4Ls.png",
-      "lSrc": "#0/icons/flag-en.png",
       "selector": "i.lang.lang_en"
     },
     "i18n_fr": {
       "src": "#1/E5jKMIo.png",
-      "lSrc": "#0/icons/flag-fr.png",
       "selector": "i.lang.lang_fr"
     },
     "i18n_ru": {
       "src": "#1/e8AOcGs.png",
-      "lSrc": "#0/icons/flag-ru.png",
       "selector": "i.lang.lang_ru"
     },
     "i18n_it": {
       "src": "#1/PpPOUEX.png",
-      "lSrc": "#0/icons/flag-it.png",
       "selector": "i.lang.lang_it"
     },
     "i18n_es": {
       "src": "#1/Wdl73R9.png",
-      "lSrc": "#0/icons/flag-es.png",
       "selector": "i.lang.lang_es"
     },
     "i18n_pt": {
       "src": "#1/V8Oz1hI.png",
-      "lSrc": "#0/icons/flag-pt.png",
       "selector": "i.lang.lang_pt"
     },
     "country_br": {
       "src": "#1/ZcXTA05.png",
-      "lSrc": "#0/icons/flag-br.png",
       "selector": "i.lang.lang_br"
     },
     "country_us": {
       "src": "#1/RT79ss2.png",
-      "lSrc": "#0/icons/flag-us.png",
       "selector": "i.lang.lang_us"
     },
     "country_eg": {
       "src": "#1/kMvsnzg.png",
-      "lSrc": "#0/icons/flag-eg.png",
       "selector": "i.lang.lang_eg"
     },
     "country_se": {
       "src": "#1/pbe90JA.png",
-      "lSrc": "#0/icons/flag-co.png",
       "selector": "i.lang.lang_co"
     },
     "country_co": {
       "src": "#1/ijWXshk.png",
-      "lSrc": "#0/icons/flag-se.png",
       "selector": "i.lang.lang_se"
     },
     "country_cz": {
       "src": "#1/dofaAXL.png",
-      "lSrc": "#0/icons/flag-cz.png",
       "selector": "i.lang.lang_cz"
     },
     "country_hr": {
       "src": "#1/F3Tuk3t.png",
-      "lSrc": "#0/icons/flag-hr.png",
       "selector": "i.lang.lang_hr"
     },
     "country_no": {
       "src": "#1/DVZba3L.png",
-      "lSrc": "#0/icons/flag-no.png",
       "selector": "i.lang.lang_no"
     },
     "timer": {
       "src": "#1/GLuwunX.png",
-      "lSrc": "#0/icons/picto-timer.png",
       "selector": "i.timer"
     },
     "mygoal": {
       "src": "#1/Fqg5qZv.png",
-      "lSrc": "#0/icons/picto-mygoal.png",
       "selector": "i.mygoal"
     },
     "faults": {
       "src": "#1/ZDhEx6w.png",
-      "lSrc": "#0/icons/picto-faults.png",
       "selector": "i.faults"
     },
     "chips": {
       "src": "#1/G2ltTBu.png",
-      "lSrc": "#0/icons/picto-chips.png",
       "selector": "i.chips"
     },
     "parts": {
       "src": "#1/uSLJtjP.png",
-      "lSrc": "#0/icons/picto-parts.png",
       "selector": "i.parts"
     },
     "fuel": {
       "src": "#1/GQOVBiF.png",
-      "lSrc": "#0/icons/picto-fuel.png",
       "selector": "i.fuel"
     },
     "gems": {
       "src": "#1/r2cpUF5.png",
-      "lSrc": "#0/icons/picto-gems.png",
       "selector": "i.gems"
     },
     "coins": {
       "src": "#1/Dfmbyzl.png",
-      "lSrc": "#0/icons/picto-coins.png",
       "selector": "i.coins"
     },
     "global": {
       "src": "#1/t5ppH83.png",
-      "lSrc": "#0/icons/picto-global.png",
       "selector": "i.global"
     },
     "rank": {
       "src": "#1/rNMKloQ.png",
-      "lSrc": "#0/icons/picto-rank.png",
       "selector": "i.rank"
     },
     "arrow": {
       "src": "#1/iDyNPow.png",
-      "lSrc": "#0/icons/picto-arrow.png",
       "selector": "i.arrow"
     },
     "orientation": {
       "src": "#1/AxTmdAj.png",
-      "lSrc": "#0/icons/picto-orientation.png",
       "selector": "i.orientation"
     },
     "device-android": {
       "src": "#1/GCH28wI.png",
-      "lSrc": "#0/icons/picto-android.png",
       "selector": "i.device-android"
     },
     "device-ios": {
       "src": "#1/fOtLeSq.png",
-      "lSrc": "#0/icons/picto-apple.png",
       "selector": "i.device-ios"
     },
     "crazy": {
       "src": "#1/sXbKmfe.png",
-      "lSrc": "#0/icons/picto-crazy.png",
       "selector": "i.crazy"
     },
     "donkey": {
       "src": "#1/HhQmHhp.png",
-      "lSrc": "#0/icons/picto-donkey.png",
       "selector": "i.donkey"
     },
     "filter": {
       "src": "#1/NrxPczs.png",
-      "lSrc": "#0/icons/picto-filter.png",
       "selector": "i.filter"
     },
     "import-export": {
       "src": "#1/KaaNHrb.png",
-      "lSrc": "#0/icons/picto-import-export.png",
       "selector": "i.import-export"
     },
     "candy": {
       "src": "#1/HuTSmQ0.png",
-      "lSrc": "#0/icons/trackitem-candy.png",
       "selector": "i.candy"
     },
     "eggs": {
       "src": "#1/mkDhov8.png",
-      "lSrc": "#0/icons/trackitem-egg.png",
       "selector": "i.eggs"
     },
     "startline": {
       "src": "#1/DZvKLvp.png",
-      "lSrc": "#0/icons/trackitem-startline.png",
       "selector": "i.startline"
     },
     "data-cube": {
       "src": "#1/zACVBYW.png",
-      "lSrc": "#0/icons/trackitem-data-cube.png",
       "selector": "i.data-cube"
     },
     "treasure": {
       "src": "#1/FkaaOWT.png",
-      "lSrc": "#0/icons/trackitem-treasure.png",
       "selector": "i.treasure"
     },
     "youtube": {
       "src": "#1/xj2UqWG.png",
-      "lSrc": "#0/icons/trackitem-youtube.png",
       "selector": "i.youtube"
     },
     "youtube-top10": {
       "src": "#1/FMCoIFS.png",
-      "lSrc": "#0/icons/trackitem-youtube-top10.png",
       "selector": "i.youtube-top10"
     },
     "youtube-platinum": {
       "src": "#1/oYBibpe.png",
-      "lSrc": "#0/icons/trackitem-youtube-plat.png",
       "selector": "i.youtube-platinum"
     },
     "part": {
       "src": "#1/rVMzYQM.png",
-      "lSrc": "#0/icons/sprite-parts.png",
       "selector": "i.part",
       "sprite": true
     },
     "seasons": {
       "src": "#1/J9d1WgB.jpg",
-      "lSrc": "#0/icons/sprite-seasons.jpg",
       "selector": "i.seasons",
       "sprite": true
     }

@@ -1,0 +1,38 @@
+[language-select] {
+  display: inline-block;
+  position: relative;
+  bottom: 4px;
+  left: 6px;
+  height: 10px;
+}
+
+i.lang {
+  width: 16px;
+  height: 12px;
+  cursor: pointer;
+  display: inline-block;
+  background-size: cover !important;
+  vertical-align: middle;
+  margin: 3px 6px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &.beside-name {
+    vertical-align: baseline;
+    position: relative;
+    bottom: -2px;
+    cursor: default;
+  }
+
+  &.no-margin {
+    margin-right: 0;
+  }
+
+  &.is-active {
+    border: 2px #d2c3ab solid;
+  }
+}
+
+.jsMixinPlainCSS_i18nIcons();
