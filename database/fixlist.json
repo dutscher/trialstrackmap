@@ -1,0 +1,87 @@
+{
+  "wishes": [
+    {
+      "id": 20,
+      "name": "Limit the max showdowns in bunker",
+      "description": "Just limit that number to 10-15. This parameter called 'ranked_match_limit' on pvp server",
+      "thread": [
+        "https://forums.ubi.com/showthread.php/1801748-HOT-CHOCOLATE-Season!?p=13208490#post13208490"
+      ],
+      "date": "16-01-2018 11:28 AM"
+    },
+    {
+      "id": 19,
+      "name": "Security issue - name changing",
+      "description": "Security issue - game allows to change names without limit even to existing ones",
+      "thread": [
+        "https://forums.ubi.com/showthread.php/1819425-Bike-looses-function-randomly"
+      ],
+      "date": "16-01-2018 11:28 AM"
+    },
+    {
+      "id": 18,
+      "name": "Lost Control about bike",
+      "description": "If youre in mobile internet and you're lost connection, the bike flips like a spinner.",
+      "thread": [
+        "https://forums.ubi.com/showthread.php/1819425-Bike-looses-function-randomly"
+      ],
+      "date": "16-01-2018 11:28 AM"
+    },
+    {
+      "id": 17,
+      "name": "Speedhack",
+      "description": "New version 5.7.1 is out, speedhack still working",
+      "thread": [
+        "https://forums.ubi.com/showthread.php/1825294-New-version-5-7-1-is-out-speedhack-still-working",
+        "https://forums.ubi.com/showthread.php/1814975-Vulnerability-that-allow-to-SPEED-HACK-is-FIXED-in-new-version!-Forums"
+      ],
+      "date": "16-01-2018 11:28 AM"
+    },
+    {
+      "id": 13,
+      "name": "Performance FX",
+      "description": "Add toggle buttons for effects in settings",
+      "thread": [
+        "http://forums.ubi.com/showthread.php/1460014-!!!stop-adjust-performance!!!?s=18b0e5716c6292942b758dfcacdc5157",
+        "http://forums.ubi.com/showthread.php/1431641-Game-Speed-Issues-(VIDEO)",
+        "http://forums.ubi.com/showthread.php/1528454-Lagggggggggg"
+      ],
+      "date": "06-10-2016 11:28 AM"
+    },
+    {
+      "id": 4,
+      "name": "Ninja tracks",
+      "description": "More Tracks with shortcuts and ninja technique",
+      "thread": "http://forums.ubi.com/showthread.php/1498956-Ninja-tracks-leaving-the-forums!",
+      "date": "01-01-2015, 01:00 AM"
+    },
+    {
+      "id": 5,
+      "name": "Bunker tracks on map",
+      "description": "Hill Climb, Sine City, Bunnyhop & Rigged Roadway reachable on map (or in bunker)",
+      "thread": "http://forums.ubi.com/showthread.php/1498956-Ninja-tracks-leaving-the-forums!",
+      "date": "01-01-2015, 01:00 AM"
+    },
+    {
+      "id": 10,
+      "name": "Stats",
+      "description": "Add stats how often i crashed, often i flipped etc",
+      "thread": "",
+      "date": "01-01-2015, 01:00 AM"
+    },
+    {
+      "id": 11,
+      "name": "Android Custome",
+      "description": "Make it available",
+      "thread": "",
+      "date": "01-10-2016, 01:00 AM"
+    },
+    {
+      "id": 16,
+      "name": "Achievements / badges",
+      "description": "Achievements / badges I would love to see",
+      "thread": "http://forums.ubi.com/showthread.php/1470379-Achievements-badges-I-would-love-to-see?s=18b0e5716c6292942b758dfcacdc5157",
+      "date": "07-11-2016 07:09 AM"
+    }
+  ]
+}

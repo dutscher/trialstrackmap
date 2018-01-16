@@ -2,7 +2,7 @@
     {{#content "title-override"}}true{{/content}}
     {{#content "title" mode="prepend"}}
         {{#with map.database.wishlist}}
-            Wishlist ({{wishes.length}}) overview  -
+            Fixlist ({{wishes.length}}) overview  -
         {{/with}}
     {{/content}}
 
@@ -13,11 +13,11 @@
     {{/content}}
 
     {{#content "body"}}
-        {{#with map.database.wishlist}}
+        {{#with map.database.fixlist}}
             <div class="season-page" ng-controller="seasons">
                 <div ng-init="pageReady = false" ng-hide="pageReady" class="loader spin"></div>
                 <div class="page-body is-loading" data-event="data:loaded" data-finished="pageReady">
-                    {{> navigation title="Wishlist overview" badge=wishes.length}}
+                    {{> navigation title="Fixlist overview" badge=wishes.length}}
 
                     <div class="wish-list">
                         <ul>

@@ -1,0 +1,16 @@
+{{#extend "default"}}
+    {{#content "title-override"}}true{{/content}}
+    {{#content "title" mode="prepend"}}
+        Youtube addition
+    {{/content}}
+
+    {{#content "preload-images"}}data:loaded{{/content}}
+
+    {{#content "styles" mode="append"}}
+        <link rel="stylesheet" type="text/css" href="/dist/css/main.css{{cacheBuster}}"/>
+    {{/content}}
+
+    {{#content "body"}}
+        {{list-tracks-with-no-youtube map.database.media.youtube map.database.trackdata.ids}}
+    {{/content}}
+{{/extend}}

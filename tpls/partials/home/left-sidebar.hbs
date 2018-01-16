@@ -19,11 +19,14 @@
             <li>
                 <div class="wrap">
                     <h2>{%'page.title'|translate%}</h2>
-                    <a href="/2017-midnightchamps.html">Midnight Champs 2017 &raquo;</a>
+                    {{#with map.database.fixlist}}
+                        <a href="/fixlist.html">
+                            Fixlist ({{wishes.length}})
+                        </a>
+                    {{/with}}
                     {{#with seasons}}
                         <a href="/seasons.html">
                             {%'page.leftSidebar.goToSeasons'|translate:{ nums:{{_seasons.length}} }%} &raquo;
-                            <span class="link-info">{{{season-countdown _seasons _active_season}}}</span>
                         </a>
                     {{/with}}
                     {{#with wardrobe}}
