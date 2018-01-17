@@ -1724,7 +1724,7 @@
   // Spare Ribs
   {
     "id": 284,
-    "tier": 0,
+    "tier": 1,
     "world": 2
   },
   // Terrace Farming
@@ -1742,19 +1742,19 @@
   // Nuclear Cave
   {
     "id": 287,
-    "tier": 0,
+    "tier": 3,
     "world": 2
   },
   // Lopsided
   {
     "id": 288,
-    "tier": 0,
+    "tier": 3,
     "world": 2
   },
   // Cliff-Hanger
   {
     "id": 289,
-    "tier": 0,
+    "tier": 1,
     "world": 2
   },
   // Sunken Sanctury

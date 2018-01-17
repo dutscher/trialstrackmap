@@ -26,7 +26,7 @@ module.exports = function (grunt) {
             ].find(function (pathToDir) {
                 return fs.existsSync(pathToDir + trialsUtilsDir);
             });
-            console.log("dirOnStation", dirOnStation);
+            //console.log("dirOnStation", dirOnStation);
             return dirOnStation;
         }(),
         // CONST

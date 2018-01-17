@@ -11,6 +11,13 @@
     {{/content}}
 
     {{#content "body"}}
-        {{list-tracks-with-no-youtube map.database.media.youtube map.database.trackdata.ids}}
+
+        <h1>Tracks without Video</h1>
+
+        {{list-tracks-with-no-youtube
+            trackIds=map.database.trackdata.ids
+            youtubeData=map.database.media.youtube
+            tpl="tpls/partials/media/youtube-add-item.hbs"
+            i18n="database/i18n/en.json"}}
     {{/content}}
 {{/extend}}
