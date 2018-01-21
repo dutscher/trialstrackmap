@@ -16,7 +16,7 @@ module.exports = function (grunt) {
         http = require("http"),
         path = require("path"),
         // VARS
-        gameVersion = "570",
+        gameVersion = "571",
         trialsUtilsDir = "#TFunpacker",
         drive = function () {
             var dirOnStation = [

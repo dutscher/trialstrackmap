@@ -1762,5 +1762,11 @@
     "id": 290,
     "tier": 0,
     "world": 2
+  },
+  // Peaks of Peril
+  {
+    "id": 291,
+    "tier": 0,
+    "world": 2
   }
 ]
