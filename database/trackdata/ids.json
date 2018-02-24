@@ -1760,12 +1760,54 @@
   // Sunken Sanctury
   {
     "id": 290,
-    "tier": 0,
+    "tier": 2,
     "world": 2
   },
   // Peaks of Peril
   {
     "id": 291,
+    "tier": 0,
+    "world": 2
+  },
+  // Ferocious Flips
+  {
+    "id": 292,
+    "tier": 3,
+    "world": 2
+  },
+  // Floor is Lava
+  {
+    "id": 293,
+    "tier": 1,
+    "world": 2
+  },
+  // Kick Back
+  {
+    "id": 294,
+    "tier": 2,
+    "world": 2
+  },
+  // Surprise Surprise
+  {
+    "id": 295,
+    "tier": 1,
+    "world": 2
+  },
+  // Twisted Curves
+  {
+    "id": 296,
+    "tier": 2,
+    "world": 2
+  },
+  // Downtown Love
+  {
+    "id": 297,
+    "tier": 3,
+    "world": 2
+  },
+  // Cold Shoulder
+  {
+    "id": 298,
     "tier": 0,
     "world": 2
   }

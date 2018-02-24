@@ -16,13 +16,14 @@ module.exports = function (grunt) {
         http = require("http"),
         path = require("path"),
         // VARS
-        gameVersion = "571",
+        gameVersion = "583",
         trialsUtilsDir = "#TFunpacker",
         drive = function () {
             var dirOnStation = [
+                "C:/", // global one
                 "C:/www/", // hp lappy / WIN7
                 "C:/www/software/", // thinkpad neo / WIN10
-                "E:/#trails/", // neofonie pc / cameo hdd / WIN10
+                "E:/#trails/" // neofonie pc / cameo hdd / WIN10
             ].find(function (pathToDir) {
                 return fs.existsSync(pathToDir + trialsUtilsDir);
             });
@@ -61,7 +62,7 @@ module.exports = function (grunt) {
             "LVL_CRANE_PEEK": "crane peak",
             "LVL_X_FACTOR": "x-factor",
             "LVL_X_TERMINATE": "x-terminate",
-            "LVL_CLIFF_HANGER": "cliff-hanger",
+            "LVL_CLIFF_HANGER": "cliff-hanger"
         };
 
     function values (obj, toLowerCase) {
@@ -163,8 +164,8 @@ module.exports = function (grunt) {
                 "adb devices", // test if device is ready
                 "adb pull /sdcard/Android/data/" + gameDir + " " + toDir, // pull files
                 "echo \"copy dir content to root\"",
-                "rmdir /S /Q \"" + toDir + "\\" + gameDir + "\\files\"",  // remove pulled  dir
-                "rmdir /S /Q \"" + toDir + "\\" + gameDir + "\\cache\"",  // remove pulled  dir
+                "rmdir /S /Q \"" + toDir + "\\" + gameDir + "\\files\"",  // remove pulled dir
+                "rmdir /S /Q \"" + toDir + "\\" + gameDir + "\\cache\"",  // remove pulled dir
                 "xcopy \"" + toDir + "\\" + gameDir + "\" \"" + toDir + "\" /s /e /y /i", // copy content to root
                 "echo \"remove dir\"",
                 "rmdir /S /Q \"" + toDir + "\\" + gameDir + "\"" // remove pulled  dir
@@ -188,6 +189,7 @@ module.exports = function (grunt) {
                     body += chunk;
                 });
                 res.on("end", function () {
+                    console.log("get json from amazon", dataGet);
                     var response = JSON.parse(body);
                     console.log("downloading files from s3");
                     for (var i in response.content) {

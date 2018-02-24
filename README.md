@@ -10,14 +10,13 @@
 * forum thread: http://forums.ubi.com/showthread.php/939397-Trackmap
 
 # requirements
-* nodeJS
-* npm install -g grunt
+* nodeJS 8.9.1
 
 # setup
 ```
 $ git clone https://github.com/dutscher/trialstrackmap.git
 $ npm install
-$ grunt server
+$ npm run serve
 ```
 
 # response of the community

@@ -1,7 +1,7 @@
 {
   "name": "trials-trackmap",
   "private": true,
-  "version": "3.9.0",
+  "version": "1.0.0",
   "description": "track locations and informations of the mobile game trials frontier",
   "author": "willy woitas <dutscher_sbf@hotmail.com>",
   "dependencies": {
@@ -35,5 +35,11 @@
     "grunt-exec": "latest",
     "magic-snowflakes": "latest"
   },
-  "engine": "node 5.6.0, npm 3.6.0"
+  "engine": "node 8.9.1",
+  "scripts": {
+    "grunt": "node ./node_modules/grunt/bin/grunt",
+    "serve": "node ./node_modules/grunt/bin/grunt #startServer",
+    "import": "node ./node_modules/grunt/bin/grunt #startImport",
+    "deploy": "node ./node_modules/grunt/bin/grunt #finalDeploy"
+  }
 }
