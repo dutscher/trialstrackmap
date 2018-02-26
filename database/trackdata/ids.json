@@ -1767,6 +1767,7 @@
   {
     "id": 291,
     "tier": 0,
+    "only_event": true,
     "world": 2
   },
   // Ferocious Flips

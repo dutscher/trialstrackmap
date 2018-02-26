@@ -106,5 +106,10 @@ Repo changes for tracks and deploy
 				* click on every new track on the star on the medal (the location is copied into the clipboard)
 					* insert the clipboard data into "./database/trackdata/coords.json"
 			* now we have to categorize the tracks
+				* create a new track category in "./database/categories.json"
+					* choose a color in hexcode
+				* add for every track in "./database/trackdata/categories.json" the categories
+* deploy job and upload on ftp
 				
-			* 
+* TODO
+	* season

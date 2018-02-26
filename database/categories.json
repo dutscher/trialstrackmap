@@ -133,6 +133,10 @@
     "31": {
       "class": "dakar-rally-2017",
       "color": "CD5D30"
+    },
+    "32": {
+      "class": "love-express",
+      "color": "FF0000"
     }
   }
 }
