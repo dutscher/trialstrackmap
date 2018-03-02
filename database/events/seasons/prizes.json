@@ -26,7 +26,8 @@
     "20": "Hard Rocker paintjob for Berserker (Flip out like a real Rock Star, without the midlife crisis!)",
     "21": "Vengeful Steed paintjob for Phantom (Run them over with your vengeance!)",
     "22": "Camo Bandito paint job for Bandito (A good bandit can hide in plain sight.)",
-    "23": "Winter Wolf paint job for Marauder (Howl at the moon!)"
+    "23": "Winter Wolf paint job for Marauder (Howl at the moon!)",
+    "24": "Fanny Pack paint job  for Mantis (Feel the motivation to move your body!)"
   },
   "tracks": {
     "1": "KTM Course",
@@ -46,7 +47,8 @@
     "15": "Treachery",
     "16": "Indigenous Village",
     "17": "Avalanche Strew",
-    "18": "Sunken Sanctuary"
+    "18": "Sunken Sanctuary",
+    "19": "Black Forest"
   },
   "costums": {
     "1": {"title": "Ninja Head", "selector": "the-ninja", "part": "head"},
@@ -66,6 +68,9 @@
     "15": {"title": "The Death Knight Pants", "selector": "death-knight", "part": "pant"},
     "16": {"title": "The Holiday Scarf Head", "selector": "holiday-scarf", "part": "head"},
     "17": {"title": "The Holiday Scarf Body", "selector": "holiday-scarf", "part": "body"},
-    "18": {"title": "The Holiday Scarf Pants", "selector": "holiday-scarf", "part": "pant"}
+    "18": {"title": "The Holiday Scarf Pants", "selector": "holiday-scarf", "part": "pant"},
+    "19": {"title": "The Convict Head", "selector": "the-convict", "part": "head"},
+    "20": {"title": "The Convict Body", "selector": "the-convict", "part": "body"},
+    "21": {"title": "The Convict Pants", "selector": "the-convict", "part": "pant"}
   }
 }

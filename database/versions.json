@@ -1,9 +1,26 @@
 {
   "url": "https://trials-frontier.de.aptoide.com/versions",
+  "url2": "https://www.apk4fun.com/history/9693/",
   "releases": [
     {
+      "version": "5.8.3",
+      "date": "14.02.2018"
+    },
+    {
+      "version": "5.7.1",
+      "date": "07.01.2018"
+    },
+    {
+      "version": "5.7.0",
+      "date": "21.12.2017"
+    },
+    {
+      "version": "5.6.0",
+      "date": "02.11.2017"
+    },
+    {
       "version": "5.5.0",
-      "date": "05.10.2017"
+      "date": "21.09.2017"
     },
     {
       "version": "5.4.1",

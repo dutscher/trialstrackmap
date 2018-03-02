@@ -1,13 +1,11 @@
 (function () {
     module.exports.register = function (Handlebars) {
-        var fs = require("fs")
-            // promisedHandlebars = require("promised-handlebars"),
-            // Handlebars = promisedHandlebars(
-            //     Handlebars,
-            //     {Promise: require("q").Promise}),
-            // httpGet = require("get-promise");
-
-        // https://github.com/nknapp/promised-handlebars
+        var fs = require("fs");
+        // promisedHandlebars = require("promised-handlebars")
+        // Handlebars = promisedHandlebars(
+        //     Handlebars,
+        //     {Promise: require("q").Promise}),
+        // httpGet = require("get-promise");
 
         /*
         { types: { '0': '', '1': 'platinum', '2': 'top10' },
@@ -20,6 +18,7 @@
         '2': '1|kxgYCx_8IBk',
         '3': '1|_sHrt7WMr5I',
         */
+
         Handlebars.registerHelper("list-tracks-with-no-youtube", function (params) {
             var trackIds = params.hash.trackIds,
                 youtubeData = params.hash.youtubeData,
@@ -29,24 +28,25 @@
                 i18nData = JSON.parse(fs.readFileSync(i18n, "utf8")),
                 html = "";
 
-            trackIds.forEach(function (track) {
-                if (!youtubeData.videos[track.id]) {
-                    //console.log(track);
-                    html += "\n" +
-                        template({
-                            trackName: i18nData.tracks[track.id],
-                            trackId: track.id
-                        });
-                }
-            });
-
-            return new Handlebars.SafeString(html);
+            return "";
 
             // return httpGet("http://myjson.com/mi2y5")
             //     .get("data")
             //     .then(JSON.parse)
             //     .then(function (data) {
             //         // `options.fn` returns a promise. Wrapping brackets must be added after resolving
+            //         trackIds.forEach(function (track) {
+            //             if (!youtubeData.videos[track.id]) {
+            //                 //console.log(track);
+            //                 html += "\n" +
+            //                     template({
+            //                         trackName: i18nData.tracks[track.id],
+            //                         trackId: track.id
+            //                     });
+            //             }
+            //         });
+            //
+            //         return new Handlebars.SafeString(html);
             //     });
         });
     };
