@@ -1,3 +1,5 @@
+{{! debug }}
+
 {{#extend "default"}}
     {{#content "htmlCtrl"}}ng-controller="trackData" data-without="worldrecords"{{/content}}
 
@@ -19,8 +21,15 @@
             </div>
         </div>
 
-        {{> left-sidebar Xng-init="handleSidebars($event,'left','wait-for-i18n')" lastUpdateTime=lastUpdateTime map=map seasons=seasons wardrobe=wardrobe}}
-        {{> right-sidebar ng-init="handleSidebars($event,'right','wait-for-i18n')"}}
+        {{> left-sidebar
+                ng-init="handleSidebars($event,'left','wait-for-i18n')"
+                lastUpdateTime=lastUpdateTime
+                map=map
+                seasons=seasons
+                wardrobe=wardrobe
+                bikes=bikes}}
+        {{> right-sidebar
+                ng-init="handleSidebars($event,'right','wait-for-i18n')"}}
 
         <div class="gallery-modal"></div>
         <div ng-init="trackmapReady = false" ng-hide="trackmapReady && dataLoaded" class="loader spin"></div>

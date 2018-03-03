@@ -1,6 +1,6 @@
 (function () {
-    module.exports.register = function (Handlebars, options) {
-        Handlebars.registerHelper("td-bike-tiers", function (allBikes) {
+    module.exports.register = function (Handlebars) {
+        Handlebars.registerHelper("bike-td-tiers", function (allBikes) {
             var tiers = {},
                 html = "";
             // parse all tier variations

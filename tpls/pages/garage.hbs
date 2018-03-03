@@ -74,7 +74,7 @@
         <div class="page-body">
             {{> navigation}}
 
-            {{#with ../paintjobs.build.paintjobs}}
+            {{#with ../bikes.build.bikes}}
                 <table class="sprite-table">
                     <tr>
                         <td colspan="{{bikes-num bikes}}">
@@ -84,14 +84,14 @@
                         </td>
                     </tr>
                     <tr>
-                        {{{td-bike-tiers ../map.database.bikes}}}
+                        {{{bike-td-tiers bikes}}}
                     </tr>
                     <tr>
                         {{#each bikeSorting}}
-                            <td class="sprite-col-header">{{bikeProperty ../../map.database.bikes this "name"}}</td>
+                            <td class="sprite-col-header">{{bikeProperty ../bikes this "name"}}</td>
                         {{/each}}
                     </tr>
-                    {{{each-all-paintjobs ../../map.database.bikes this}}}
+                    {{{bike-paintjobs this}}}
                 </table>
             {{/with}}
         </div>

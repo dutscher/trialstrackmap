@@ -11,13 +11,49 @@
     {{/content}}
 
     {{#content "body"}}
+        <div style="padding: 16px;">
+            <h1>Tracks without Video</h1>
 
-        <h1>Tracks without Video</h1>
+            <table>
+                <tr>
+                    <td>ID</td>
+                    <td>Name</td>
+                    <td>Insert Youtube URL</td>
+                </tr>
+                {{list-tracks-with-no-youtube
+                        trackIds=map.database.trackdata.ids
+                        youtubeData=map.database.media.youtube
+                        tpl="tpls/partials/media/youtube-add-item.hbs"
+                        i18n="database/i18n/en.json"}}
+            </table>
 
-        {{list-tracks-with-no-youtube
-            trackIds=map.database.trackdata.ids
-            youtubeData=map.database.media.youtube
-            tpl="tpls/partials/media/youtube-add-item.hbs"
-            i18n="database/i18n/en.json"}}
+            <h2>Result for dutscher-DE, save on <a href="http://myjson.com/">http://myjson.com/</a> and share the url!</h2>
+
+            <pre id="json" style="background:#fff;padding:16px;"></pre>
+
+            <script>
+                //  "289": "2|afjYerOdQD4",
+                var regexp = new RegExp(/(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/ ]{11})/, "g")
+                var inputs = document.querySelectorAll(".youtube-url");
+
+                function fillJson() {
+                    var json = {};
+
+                    inputs.forEach(function (input) {
+                        if (input.value !== "" && regexp.test(input.value)) {
+                            json[input.name] = "2|" + input.value.split("v=")[1];
+                        }
+                    });
+
+                    document.querySelector("#json").innerHTML = JSON.stringify(json, null, 2);
+                }
+
+                inputs.forEach(function (input) {
+                    input.addEventListener("change", function () {
+                        fillJson();
+                    });
+                });
+            </script>
+        </div>
     {{/content}}
 {{/extend}}

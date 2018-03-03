@@ -15,15 +15,17 @@ module.exports = function (grunt) {
         fsExt = require("fs-extra"),
         http = require("http"),
         path = require("path"),
+        map = require("../database/map.json"),
         // VARS
-        gameVersion = "583",
+        gameVersion = map.stats.app_version.replace(/\./g, ""),
         trialsUtilsDir = "#TFunpacker",
         drive = function () {
             var dirOnStation = [
                 "C:/", // global one
+                "F:/#trails/", // hp lappy / cameo hdd / WIN7
+                "E:/#trails/", // neofonie pc / cameo hdd / WIN10
                 "C:/www/", // hp lappy / WIN7
-                "C:/www/software/", // thinkpad neo / WIN10
-                "E:/#trails/" // neofonie pc / cameo hdd / WIN10
+                "C:/www/software/" // thinkpad neo / WIN10
             ].find(function (pathToDir) {
                 return fs.existsSync(pathToDir + trialsUtilsDir);
             });

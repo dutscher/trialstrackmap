@@ -36,11 +36,10 @@ module.exports = function () {
         generatePaintjobs: function () {
             require("json5/lib/require");
             var globalVars = {},
-                paintJobsJSON = require("../../build/paintjobs.json").build.paintjobs,
+                bikesJSON = require("../../build/bikes.json").build.bikes,
                 gfxJSON = require("../../database/media/gfx.json"),
                 imageJson = gfxJSON.images,
-                bikeNamesJSON = require("../../database/bikes.json"),
-                paintJobsRAW = paintJobsJSON.bikes,
+                bikes = bikesJSON.bikes,
                 //gfx dimensions
                 spritePaintJobDimensions = imageJson.paintjobs.dim.split("x"),
                 spritePaintJobIconDimensions = imageJson["paintjob-icons"].dim.split("x"),
@@ -84,19 +83,13 @@ module.exports = function () {
             globalVars._gfxPaintjobs = gfxJSON.images.paintjobs.src.replace("#1/", "");
             globalVars._gfxPaintjobIcons = gfxJSON.images["paintjob-icons"].src.replace("#1/", "");
 
-            for (var bikeID in paintJobsRAW) {
+            for (var bikeID in bikes) {
+                var bikeName = trimName(bikes[bikeID].name),
+                    bikeIndex = bikesJSON.spriteSorting.indexOf(parseInt(bikeID));
 
-                if (!(bikeID in bikeNamesJSON)) {
-                    console.error("The bikeID: " + bikeID + " isnt in bikeNamesJSON");
-                    return;
-                }
-
-                var bikeName = trimName(bikeNamesJSON[bikeID].name),
-                    bikeIndex = paintJobsJSON.spriteSorting.indexOf(parseInt(bikeID));
-
-                for (var paintJob in paintJobsRAW[bikeID]) {
-                    var paintJobName = trimName(paintJobsRAW[bikeID][paintJob].name),
-                        paintJobIndex = Object.keys(paintJobsRAW[bikeID]).indexOf(paintJob);
+                for (var paintJob in bikes[bikeID].paintjobs) {
+                    var paintJobName = trimName(paintJob),
+                        paintJobIndex = Object.keys(bikes[bikeID].paintjobs).indexOf(paintJob);
                     // paintjobs
                     globalVars._paintJobNames.push("paintjob-" + bikeName + "-" + paintJobName);
                     globalVars._paintJobSelectors.push("paintjob-" + bikeID + "-" + paintJobIndex);

@@ -1,0 +1,205 @@
+{
+  "bikeSorting": [
+    1, 2, 3, 15, 13,
+    4, 5, 6, 14,
+    7, 8, 9, 16,
+    19, 10, 11
+  ],
+  "spriteSorting": [
+    1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
+    11, 13, 14, 19, 15, 16
+  ],
+  "bikes": {
+    "1":  {
+      "name": "Armadillo",
+      "tier": 1,
+      "paintjobs": [
+        "Default",
+        "Raising Star",
+        "Lava",
+        "Boogeyman",
+        "Saddle Bags",
+        "Cowhide",
+        "Hungry Shark"
+      ]
+    },
+    "2": {
+      "name": "Tango",
+      "tier": 1,
+      "paintjobs": [
+        "Default",
+        "Flaming",
+        "UK",
+        "France",
+        "Neon",
+        "Soylent",
+        "Stiched",
+        "Redlynx",
+        "Birdy",
+        "AUS-X-OPEN"
+      ]
+    },
+    "3": {
+      "name": "Bronco",
+      "tier": 1,
+      "paintjobs": [
+        "Default",
+        "Wasp",
+        "Number 8",
+        "Sailor",
+        "Medic",
+        "Aloha",
+        "Luchador",
+        "Kaleidoscope",
+        "Raven",
+        "Independence",
+        "Valentine"
+      ]
+    },
+    "4": {
+      "name": "Jackal",
+      "tier": 2,
+      "paintjobs": [
+        "Default",
+        "Camouflage",
+        "Samsarin",
+        "Skeleton",
+        "Ice Cube",
+        "Edge"
+      ]
+    },
+    "5": {
+      "name": "Mantis",
+      "tier": 2,
+      "paintjobs": [
+        "Default",
+        "Gold",
+        "Marine",
+        "Mithril",
+        "Pumpkin King",
+        "Sheriffs Star",
+        "Fanny Pack",
+        "Dealbreaker",
+        "AUS-X-OPEN",
+        "Desert Storm"
+      ]
+    },
+    "6": {
+      "name": "Marauder",
+      "tier": 2,
+      "paintjobs": [
+        "Default",
+        "Swashbuckler",
+        "Scales",
+        "Bigfoot",
+        "Wolf"
+      ]
+    },
+    "7": {
+      "name": "Riptide",
+      "tier": 3,
+      "paintjobs": [
+        "Gnasher (Default)",
+        "Snake",
+        "Parrot",
+        "Squash",
+        "Hippie",
+        "Cheetah",
+        "Revenant"
+      ]
+    },
+    "8": {
+      "name": "Berserker",
+      "tier": 3,
+      "paintjobs": [
+        "Zebra (Default)",
+        "Pimpin",
+        "Venom Spider",
+        "Spirits",
+        "Batwing",
+        "Hard Rocker",
+        "The Reowned Berserkar"
+      ]
+    },
+    "9": {
+      "name": "Phantom",
+      "tier": 3,
+      "paintjobs": [
+        "Default",
+        "Noble",
+        "Apache",
+        "Woodadventure",
+        "Saurus",
+        "Cyclops",
+        "Vengeful Steed"
+      ]
+    },
+    "10": {
+      "name": "Stallion",
+      "tier": "Crazy",
+      "paintjobs": [
+        "Default",
+        "Palmino",
+        "Snowy",
+        "Blacky",
+        "Skelly"
+      ]
+    },
+    "11": {
+      "name": "Agent",
+      "tier": "Crazy",
+      "paintjobs": [
+        "Default",
+        "Fire",
+        "Spy Ops",
+        "White"
+      ]
+    },
+    "13": {
+      "name": "KTM 500-EXC",
+      "tier": 1,
+      "paintjobs": [
+        "Default",
+        "Ivory",
+        "Neon"
+      ]
+    },
+    "14": {
+      "name": "KTM 450 Rally",
+      "tier": 2,
+      "paintjobs": [
+        "Default",
+        "Redbull"
+      ]
+    },
+    "15": {
+      "name": "Bandito",
+      "tier": 1,
+      "paintjobs": [
+        "Default",
+        "Camouflage",
+        "Desert Storm"
+      ]
+    },
+    "16": {
+      "name": "BMW F 800 GS",
+      "tier": 3,
+      "paintjobs": [
+        "Default (Black White)",
+        "Black Red"
+      ]
+    },
+    "19": {
+      "name": "Donkey",
+      "tier": "Crazy",
+      "paintjobs": [
+        "Default",
+        "Molten",
+        "Fallout",
+        "Blizzard",
+        "Candy Cane",
+        "Feaster"
+      ]
+    }
+  }
+}

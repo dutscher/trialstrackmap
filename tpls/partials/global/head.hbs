@@ -1,13 +1,19 @@
-<title page-title="{{#block "title-override"}}{{/block}}" data-update="{{#with map}}{{database.map.stats.app_version}}{{/with}}">
+<title page-title="{{#block "title-override"}}{{/block}}"
+       data-update="{{#with map}}{{database.map.stats.app_version}}{{/with}}">
     {{#block "title"}}Trials Frontier Trackmap{{/block}}
 </title>
 
 <meta http-equiv="Access-Control-Allow-Origin" content="*">
 
-<meta name="copyright" content="© {{year}} dutscher-DE" />
-<meta http-equiv="last-modified" content="{{lastUpdateTimeISO}} TMZ" />
-<meta http-equiv="content-language" content="de,en,fr,es,ru,pt,it" />
-<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<meta name="copyright" content="© {{year}} dutscher-DE"/>
+<meta http-equiv="last-modified" content="{{lastUpdateTimeISO}} TMZ"/>
+<meta http-equiv="content-language" content="de,en,fr,es,ru,pt,it"/>
+<meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+<meta name="robots" content="index, follow"/>
+<meta name="google-site-verification" content="Hkk-F3cJa0eZ34g0qDeaBN6XfXBvhFPmOZd1w0C2MbE"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+<meta name="apple-mobile-web-app-title" content="Trackmap Trials Frontier"/>
 
 <meta property="og:title" content="Trials Frontier Trackmap | Guide for Data-Cubes, Candies & Youtube How-tos"/>
 <meta property="og:url" content="http://trialstrackmap.sb-f.de/"/>
@@ -16,6 +22,9 @@
 {{/with}}
 
 <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+<link rel="shortcut" href="app-icon.png" type="image/x-icon"/>
+<link rel="apple-touch-icon" href="app-icon.png"/>
+<meta name="theme-color" content="#61d4d7"/>
 
 {{#block "styles"}}
     <link rel="stylesheet" type="text/css" href="/css/style-icons.css{{cacheBuster}}"/>

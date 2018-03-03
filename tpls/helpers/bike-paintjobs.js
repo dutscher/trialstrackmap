@@ -1,12 +1,11 @@
 (function () {
-    module.exports.register = function (Handlebars, options) {
-        Handlebars.registerHelper("each-all-paintjobs", function (bikeData, bikesPaintjobs) {
-            var options = arguments[arguments.length - 1],
-                maxPaintjobs = 0,
+    module.exports.register = function (Handlebars) {
+        Handlebars.registerHelper("bike-paintjobs", function (bikeData) {
+            var maxPaintjobs = 0,
                 html = "";
 
-            for (var bikeId in bikesPaintjobs.bikes) {
-                var nums = bikesPaintjobs.bikes[bikeId].length;
+            for (var bikeId in bikeData.bikes) {
+                var nums = bikeData.bikes[bikeId].paintjobs.length;
                 if (nums > maxPaintjobs) {
                     maxPaintjobs = nums;
                 }
@@ -16,17 +15,19 @@
 
             for (var paintJobId = -1; paintJobId < maxPaintjobs; paintJobId++) {
                 html += "<tr>";
-                for (var i in bikesPaintjobs.bikeSorting) {
-                    var bikeId = bikesPaintjobs.bikeSorting[i],
-                        paintJobExist = paintJobId in bikesPaintjobs.bikes[bikeId],
-                        paintjobLength = bikesPaintjobs.bikes[bikeId].length;
+                for (var i in bikeData.bikeSorting) {
+                    var bikeId = bikeData.bikeSorting[i],
+                        paintjobs = bikeData.bikes[bikeId].paintjobs,
+                        paintjobName = paintjobs[paintJobId],
+                        paintJobExist = paintjobs.indexOf(paintjobName) !== -1,
+                        paintjobLength = paintjobs.length;
 
                     // header
                     if (paintJobId === -1) {
                         html += '<td class="sprite-col-subheader"><div class="sprite-col-subheader-label">' + paintjobLength + '</div></td>'
                     } else {
                         html += '<td class="sprite-col-item' + (!paintJobExist ? " is-empty" : "") + '" title="'
-                            + (paintJobExist ? bikesPaintjobs.bikes[bikeId][paintJobId].name : "") + '">';
+                            + (paintJobExist ? paintjobName : "") + '">';
                         if (paintJobExist) {
                             html += '<i class="paintjob-icon paintjob-icon-' + bikeId + '-' + paintJobId + '"></i>';
                             html += '<i class="paintjob paintjob-' + bikeId + '-' + paintJobId + '"></i>';

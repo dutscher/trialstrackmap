@@ -1,0 +1,13 @@
+User-agent: *
+
+Allow: /trackfinder.html
+Allow: /fixlist.html
+Allow: /seasons.html
+Allow: /home-shack.html
+Allow: /garage.html
+Allow: /wr-rider-temple.html
+Allow: /table-improve.html
+Allow: /table-medals.html
+Allow: /anniversary.html
+
+Sitemap: http://trialstrackmap.sb-f.de/sitemap.xml

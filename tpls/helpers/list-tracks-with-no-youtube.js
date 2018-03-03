@@ -28,23 +28,29 @@
                 i18nData = JSON.parse(fs.readFileSync(i18n, "utf8")),
                 html = "";
 
-            return "";
+            function genTracks() {
+                // `options.fn` returns a promise. Wrapping brackets must be added after resolving
+                trackIds.forEach(function (track) {
+                    if (!youtubeData.videos[track.id]) {
+                        //console.log(track);
+                        html += "\n" +
+                            template({
+                                trackName: i18nData.tracks[track.id],
+                                trackId: track.id
+                            });
+                    }
+                });
+
+                return new Handlebars.SafeString(html);
+            }
+
+            return genTracks();
 
             // return httpGet("http://myjson.com/mi2y5")
             //     .get("data")
             //     .then(JSON.parse)
             //     .then(function (data) {
-            //         // `options.fn` returns a promise. Wrapping brackets must be added after resolving
-            //         trackIds.forEach(function (track) {
-            //             if (!youtubeData.videos[track.id]) {
-            //                 //console.log(track);
-            //                 html += "\n" +
-            //                     template({
-            //                         trackName: i18nData.tracks[track.id],
-            //                         trackId: track.id
-            //                     });
-            //             }
-            //         });
+            //
             //
             //         return new Handlebars.SafeString(html);
             //     });

@@ -1,5 +1,5 @@
 <nav class="new-sidebar left" ng-show="trackmapReady" ng-init="{{ng-init}}">
-    <div class="handler" ng-click="handleSidebars($event,'left')"></div>
+    <div class="handler" ng-click="handleSidebars($event, 'left')"></div>
     <div class="content">
         <ul>
             <li>
@@ -24,6 +24,9 @@
                             Fixlist ({{wishes.length}})
                         </a>
                     {{/with}}
+                    <a href="/trackfinder.html">
+                        Trackfinder ({%::data.tracks.length%})
+                    </a>
                     {{#with seasons}}
                         <a href="/seasons.html">
                             {%'page.leftSidebar.goToSeasons'|translate:{ nums:{{_seasons.length}} }%} &raquo;
@@ -31,13 +34,12 @@
                     {{/with}}
                     {{#with wardrobe}}
                         <a href="/home-shack.html">
-                            {%'page.leftSidebar.goToWardrobe'|translate%}
-                            ({{homeshack.length}}) &raquo;
+                            {%'page.leftSidebar.goToWardrobe'|translate%} ({{homeshack.length}}) &raquo;
                         </a>
                     {{/with}}
-                    {{#with map.database.bikes}}
+                    {{#with bikes.build.bikes}}
                         <a href="/garage.html">
-                            {%'page.leftSidebar.goToGarage'|translate%} ({{objectLen this}}) &raquo;
+                            {%'page.leftSidebar.goToGarage'|translate%} ({{objectLen bikes}}) &raquo;
                         </a>
                     {{/with}}
                     <a href="/wr-rider-temple.html">{%'page.leftSidebar.goToWRRiderTemple'|translate%} &raquo;</a>

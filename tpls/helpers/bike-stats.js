@@ -1,14 +1,14 @@
 (function () {
-    module.exports.register = function (Handlebars, options) {
-        Handlebars.registerHelper("bike-stats", function (bikesArray, options) {
-            var bikeNums = 0,
+    module.exports.register = function (Handlebars) {
+        Handlebars.registerHelper("bike-stats", function (bikesArray) {
+            var bikeNums,
                 paintJobNums = 0,
                 bikesArrayKeys = Object.keys(bikesArray);
 
             bikeNums = bikesArrayKeys.length;
 
             bikesArrayKeys.forEach(function(index){
-                paintJobNums += bikesArray[index].length;
+                paintJobNums += bikesArray[index].paintjobs.length;
             });
 
             return "Bikes: " + bikeNums + " Paintjobs: " + paintJobNums;

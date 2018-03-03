@@ -51,7 +51,7 @@ module.exports = function (grunt) {
                 {
                     flatten: true,
                     expand: true,
-                    src: "build/paintjobs.json",
+                    src: "build/bikes.json",
                     dest: "dist/json/"
                 }
             ]
@@ -61,7 +61,7 @@ module.exports = function (grunt) {
                 {
                     flatten: true,
                     expand: true,
-                    src: "database/media/paintjobs.json",
+                    src: "database/media/bikes.json",
                     dest: "build"
                 }
             ]

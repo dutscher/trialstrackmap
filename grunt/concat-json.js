@@ -12,8 +12,8 @@ module.exports = function (grunt) {
         },
         jsonWithComments: {
             files: {
-                "build/paintjobs.json": [
-                    "build/paintjobs.json"
+                "build/bikes.json": [
+                    "build/bikes.json"
                 ]
             }
         },
