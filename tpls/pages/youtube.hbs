@@ -8,6 +8,21 @@
 
     {{#content "styles" mode="append"}}
         <link rel="stylesheet" type="text/css" href="/dist/css/main.css{{cacheBuster}}"/>
+
+        <style>
+            body {
+                background: #fff;
+            }
+            
+            input.youtube-url {
+                width: 300px;
+            }
+
+            #json {
+                background: #fff;
+                padding: 16px;
+            }
+        </style>
     {{/content}}
 
     {{#content "body"}}
@@ -27,20 +42,23 @@
                         i18n="database/i18n/en.json"}}
             </table>
 
-            <h2>Result for dutscher-DE, save on <a href="http://myjson.com/">http://myjson.com/</a> and share the url!</h2>
+            <h2>Result for dutscher-DE, save on <a href="http://myjson.com/">http://myjson.com/</a> and share the url!
+            </h2>
 
-            <pre id="json" style="background:#fff;padding:16px;"></pre>
+            <pre id="json"></pre>
 
             <script>
-                //  "289": "2|afjYerOdQD4",
-                var regexp = new RegExp(/(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/ ]{11})/, "g")
+                // https://www.youtube.com/watch?v=aAiAlNhn548
+                //  "289": "2|aAiAlNhn548",
                 var inputs = document.querySelectorAll(".youtube-url");
 
                 function fillJson() {
                     var json = {};
 
                     inputs.forEach(function (input) {
-                        if (input.value !== "" && regexp.test(input.value)) {
+                        var valueNotEmpty = input.value !== "",
+                            hasVideoID = input.value.split("v=").length >= 1;
+                        if (valueNotEmpty && hasVideoID) {
                             json[input.name] = "2|" + input.value.split("v=")[1];
                         }
                     });

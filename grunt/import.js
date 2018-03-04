@@ -22,10 +22,10 @@ module.exports = function (grunt) {
         drive = function () {
             var dirOnStation = [
                 "C:/", // global one
+                "C:/www/", // hp lappy / WIN7
                 "F:/#trails/", // hp lappy / cameo hdd / WIN7
                 "E:/#trails/", // neofonie pc / cameo hdd / WIN10
-                "C:/www/", // hp lappy / WIN7
-                "C:/www/software/" // thinkpad neo / WIN10
+                "C:/www/software/", // thinkpad neo / WIN10
             ].find(function (pathToDir) {
                 return fs.existsSync(pathToDir + trialsUtilsDir);
             });
@@ -468,7 +468,10 @@ module.exports = function (grunt) {
                 i18n: trackValuesRaw[trackIndex],
                 author: level.A,
                 oriID: level.ID,
-                tier: level.B + 1,
+                tier: {
+                    int: level.D,
+                    dbStr: trackIDQuotes + " " + (level.D)
+                },
                 world: level.L + 1,
                 coins: level.C,
                 fuel: level.FU,
@@ -518,17 +521,21 @@ module.exports = function (grunt) {
         // write new db files
         tmpData.partsData = "";
         tmpData.timesData = "";
+        tmpData.tierData = "";
         for (var i in newLevels) {
             var str = newLevels[i].rewards.dbStr;
             tmpData.partsData += str + "\n";
             tmpData.timesData += newLevels[i].time.dbStr + "\n";
+            tmpData.tierData += newLevels[i].tier.dbStr + "\n";
         }
         tmpData.partsData = tmpData.partsData.replace("  ,", "{\n   ") + "}";
         tmpData.timesData = tmpData.timesData.replace("  ,", "{\n   ") + "}";
+        tmpData.tierData = tmpData.tierData.replace("  ,", "{\n   ") + "}";
 
         ensureDirectoryExistence("build/import/parts.json");
         fs.writeFileSync("build/import/parts.json", tmpData.partsData);
         fs.writeFileSync("build/import/times.json", tmpData.timesData);
+        fs.writeFileSync("build/import/tiers.json", tmpData.tierData);
         fs.writeFileSync(i18nPath + "/names.txt", levelNames.join("\r\n"));
         fs.writeFileSync("build/import/names-with-ids.json", JSON.stringify(levelNamesWithId));
     });

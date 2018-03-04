@@ -3,238 +3,200 @@
   //
   {
     "id": 1,
-    "tier": 1,
     "oid": 1068
   },
   //
   {
     "id": 2,
-    "tier": 1,
     "oid": 100
   },
   //
   {
     "id": 3,
-    "tier": 1,
     "oid": 1097
   },
   //
   {
     "id": 4,
-    "tier": 1,
     "oid": 1033
   },
   //
   {
     "id": 5,
-    "tier": 1,
     "oid": 1
   },
   //
   {
     "id": 6,
-    "tier": 1,
     "oid": 2
   },
   //
   {
     "id": 7,
-    "tier": 1,
     "oid": 1036
   },
   //
   {
     "id": 8,
-    "tier": 1,
     "oid": 1106
   },
   //
   {
     "id": 9,
-    "tier": 1,
     "oid": 4
   },
   //
   {
     "id": 10,
-    "tier": 1,
     "oid": 1062
   },
   //
   {
     "id": 11,
-    "tier": 1,
     "oid": 1037
   },
   //
   {
     "id": 12,
-    "tier": 1,
     "oid": 1083
   },
   //
   {
     "id": 13,
-    "tier": 1,
     "oid": 1090
   },
   //
   {
     "id": 14,
-    "tier": 1,
     "oid": 1024
   },
   //
   {
     "id": 15,
-    "tier": 1,
     "oid": 1075
   },
   //
   {
     "id": 16,
-    "tier": 1,
     "oid": 1041
   },
   //
   {
     "id": 17,
-    "tier": 1,
     "oid": 1069
   },
   //
   {
     "id": 18,
-    "tier": 1,
     "oid": 1032
   },
   //
   {
     "id": 19,
-    "tier": 1,
     "oid": 1023
   },
   //
   {
     "id": 20,
-    "tier": 1,
     "oid": 1088
   },
   //
   {
     "id": 21,
-    "tier": 1,
     "oid": 1087
   },
   //
   {
     "id": 22,
-    "tier": 1,
     "oid": 1133
   },
   //
   {
     "id": 23,
-    "tier": 1,
     "oid": 1178
   },
   // tier 1 / timemachine
   //
   {
     "id": 24,
-    "tier": 1,
     "oid": 1126
   },
   //
   {
     "id": 25,
-    "tier": 1,
     "oid": 1131
   },
   //
   {
     "id": 26,
-    "tier": 1,
     "oid": 1134
   },
   // tier 1 / lootwheel
   //
   {
     "id": 27,
-    "tier": 1,
     "oid": 1167
   },
   //
   {
     "id": 28,
-    "tier": 1,
     "oid": 1123
   },
   //
   {
     "id": 29,
-    "tier": 1,
     "oid": 1135
   },
   //
   {
     "id": 30,
-    "tier": 1,
     "oid": 1156
   },
   //
   {
     "id": 31,
-    "tier": 1,
     "oid": 1181
   },
   // tier 1 / slotmachine
   //
   {
     "id": 32,
-    "tier": 1,
     "level": 1,
     "oid": 1113
   },
   //
   {
     "id": 33,
-    "tier": 1,
     "level": 2,
     "oid": 1116
   },
   //
   {
     "id": 34,
-    "tier": 1,
     "level": 5,
     "oid": 1048
   },
   //
   {
     "id": 35,
-    "tier": 1,
     "level": 7,
     "oid": 1120
   },
   //
   {
     "id": 36,
-    "tier": 1,
     "level": 4,
     "oid": 1115
   },
   //
   {
     "id": 37,
-    "tier": 1,
     "level": 8,
     "oid": 1122
   },
   //
   {
     "id": 38,
-    "tier": 1,
     "level": 6,
     "oid": 1141
   },
@@ -242,304 +204,256 @@
   //
   {
     "id": 39,
-    "tier": 1,
     "oid": 1152
   },
   //
   {
     "id": 40,
-    "tier": 1,
     "oid": 1148
   },
   //
   {
     "id": 41,
-    "tier": 1,
     "oid": 1149
   },
   //
   {
     "id": 42,
-    "tier": 1,
     "oid": 1153
   },
   // tier 1 / island
   //
   {
     "id": 43,
-    "tier": 1,
     "pack": 1,
     "oid": 1172
   },
   //
   {
     "id": 44,
-    "tier": 1,
     "pack": 1,
     "oid": 1180
   },
   //
   {
     "id": 45,
-    "tier": 1,
     "pack": 1,
     "oid": 1171
   },
   //
   {
     "id": 46,
-    "tier": 1,
     "pack": 1,
     "oid": 1170
   },
   //
   {
     "id": 47,
-    "tier": 1,
     "pack": 1,
     "oid": 1168
   },
   //
   {
     "id": 48,
-    "tier": 1,
     "pack": 1,
     "oid": 1179
   },
   // pumpkin
   //
   {
-    "id": 49,
-    "tier": 1
+    "id": 49
   },
   //
   {
     "id": 50,
-    "tier": 1,
     "oid": 1189
   },
   //
   {
     "id": 89,
-    "tier": 2,
     "oid": 1204
   },
   //
   {
     "id": 90,
-    "tier": 2,
     "oid": 1205
   },
   // tier 2 / story
   //
   {
     "id": 51,
-    "tier": 2,
     "oid": 1070
   },
   //
   {
     "id": 52,
-    "tier": 2,
     "oid": 1099
   },
   //
   {
     "id": 53,
-    "tier": 2,
     "oid": 1051
   },
   //
   {
     "id": 54,
-    "tier": 2,
     "oid": 1034
   },
   //
   {
     "id": 55,
-    "tier": 2,
     "oid": 1040
   },
   //
   {
     "id": 56,
-    "tier": 2,
     "oid": 1072
   },
   //
   {
     "id": 57,
-    "tier": 2,
     "oid": 1045
   },
   //
   {
     "id": 58,
-    "tier": 2,
     "oid": 1055
   },
   //
   {
     "id": 59,
-    "tier": 2,
     "oid": 1050
   },
   //
   {
     "id": 60,
-    "tier": 2,
     "oid": 1052
   },
   //
   {
     "id": 61,
-    "tier": 2,
     "oid": 1085
   },
   //
   {
     "id": 62,
-    "tier": 2,
     "oid": 1026
   },
   //
   {
     "id": 63,
-    "tier": 2,
     "oid": 1056
   },
   //
   {
     "id": 64,
-    "tier": 2,
     "oid": 1029
   },
   //
   {
     "id": 65,
-    "tier": 2,
     "oid": 1031
   },
   //
   {
     "id": 66,
-    "tier": 2,
     "oid": 1098
   },
   //
   {
     "id": 67,
-    "tier": 2,
     "oid": 1095
   },
   //
   {
     "id": 68,
-    "tier": 2,
     "oid": 1100
   },
   //
   {
     "id": 69,
-    "tier": 2,
     "oid": 1102
   },
   //
   {
     "id": 70,
-    "tier": 2,
     "oid": 1094
   },
   // tier 2 / lootwheel
   //
   {
     "id": 71,
-    "tier": 2,
     "oid": 1108
   },
   //
   {
     "id": 72,
-    "tier": 2,
     "oid": 1166
   },
   //
   {
     "id": 73,
-    "tier": 2,
     "oid": 1105
   },
   //
   {
     "id": 74,
-    "tier": 2,
     "oid": 1129
   },
   //
   {
     "id": 75,
-    "tier": 2,
     "oid": 1130
   },
   //
   {
     "id": 76,
-    "tier": 2,
     "oid": 1112
   },
   //
   {
     "id": 77,
-    "tier": 2,
     "oid": 1127
   },
   // tier 2 / slotmachine
   //
   {
     "id": 78,
-    "tier": 2,
     "level": 9
   },
   //
   {
     "id": 79,
-    "tier": 2,
     "level": 10,
     "oid": 1121
   },
   //
   {
     "id": 80,
-    "tier": 2,
     "level": 11,
     "oid": 1140
   },
   //
   {
     "id": 81,
-    "tier": 2,
     "level": 14,
     "oid": 1136
   },
   //
   {
     "id": 82,
-    "tier": 2,
     "level": 13,
     "oid": 1110
   },
   //
   {
     "id": 83,
-    "tier": 2,
     "level": 16,
     "oid": 1137
   },
   //
   {
     "id": 84,
-    "tier": 2,
     "level": 17,
     "oid": 1111
   },
@@ -547,32 +461,27 @@
   //
   {
     "id": 85,
-    "tier": 2,
     "oid": 1145
   },
   //
   {
     "id": 86,
-    "tier": 2,
     "oid": 1151
   },
   //
   {
     "id": 87,
-    "tier": 2,
     "oid": 1154
   },
   //
   {
     "id": 88,
-    "tier": 2,
     "oid": 1155
   },
   // tier 2 / china
   //
   {
     "id": 131,
-    "tier": 2,
     "oid": 1226,
     "case": "China 2015"
   },
@@ -580,79 +489,66 @@
   //
   {
     "id": 91,
-    "tier": 3,
     "oid": 1082
   },
   //
   {
     "id": 92,
-    "tier": 3,
     "oid": 1091
   },
   //
   {
     "id": 93,
-    "tier": 3,
     "oid": 1074
   },
   //
   {
     "id": 94,
-    "tier": 3,
     "oid": 1027
   },
   //
   {
     "id": 95,
-    "tier": 3,
     "oid": 8
   },
   //
   {
     "id": 96,
-    "tier": 3,
     "oid": 65010
   },
   // The Tanktops
   {
     "id": 97,
-    "tier": 3,
     "oid": 1089
   },
   // Trojan Giraffe
   {
     "id": 98,
-    "tier": 3,
     "oid": 1092
   },
   // The Stacks
   {
     "id": 99,
-    "tier": 3,
     "oid": 1093
   },
   // Cracked Reservoir
   {
     "id": 100,
-    "tier": 3,
     "oid": 1054
   },
   // The Refinery
   {
     "id": 101,
-    "tier": 3,
     "oid": 1084
   },
   // The Grindhouse
   {
     "id": 102,
-    "tier": 3,
     "oid": 1101
   },
   //
   {
     "id": 103,
-    "tier": 3,
     "helper": [
       {
         "The End": "#1/ukz6W5j.jpg"
@@ -664,184 +560,157 @@
   //
   {
     "id": 104,
-    "tier": 3,
     "oid": 1125
   },
   //
   {
     "id": 105,
-    "tier": 3,
     "oid": 1107
   },
   //
   {
     "id": 106,
-    "tier": 3,
     "oid": 1132
   },
   // Elephant Graveyard
   {
     "id": 107,
-    "tier": 3,
     "oid": 1146
   },
   //
   {
     "id": 108,
-    "tier": 3,
     "oid": 1124
   },
   // tier 3 / slotmachine
   //
   {
     "id": 109,
-    "tier": 3,
     "level": 12,
     "oid": 1144
   },
   //
   {
     "id": 110,
-    "tier": 3,
     "level": 16,
     "oid": 1119
   },
   //
   {
     "id": 111,
-    "tier": 3,
     "level": 17,
     "oid": 1147
   },
   //
   {
     "id": 112,
-    "tier": 3,
     "level": 18
   },
   // tier 3 / swamp
   //
   {
     "id": 113,
-    "tier": 3,
     "oid": 1150
   },
   //
   {
     "id": 114,
-    "tier": 3,
     "oid": 1157
   },
   // tier 1 / the bunker
   //
   {
     "id": 115,
-    "tier": 1,
     "chips": 200,
     "oid": 1209
   },
   //
   {
     "id": 116,
-    "tier": 1,
     "chips": 500,
     "oid": 1197
   },
   //
   {
     "id": 117,
-    "tier": 1,
     "chips": 1000,
     "oid": 1195
   },
   //
   {
     "id": 118,
-    "tier": 1,
     "chips": 1500,
     "oid": 1210
   },
   //
   {
     "id": 119,
-    "tier": 1,
     "chips": 2500,
     "oid": 1193
   },
   //
   {
     "id": 120,
-    "tier": 1,
     "chips": 5000,
     "oid": 1199
   },
   //
   {
     "id": 121,
-    "tier": 2,
     "chips": 7500,
     "oid": 1194
   },
   //
   {
     "id": 122,
-    "tier": 2,
     "chips": 10000,
     "oid": 1196
   },
   //
   {
     "id": 124,
-    "tier": 2,
     "chips": 12500,
     "oid": 1208
   },
   //
   {
     "id": 125,
-    "tier": 2,
     "chips": 15000,
     "oid": 1207
   },
   //
   {
     "id": 126,
-    "tier": 2,
     "chips": 17500,
     "oid": 1192
   },
   //
   {
     "id": 127,
-    "tier": 3,
     "chips": 20000,
     "oid": 1191
   },
   //
   {
     "id": 128,
-    "tier": 3,
     "chips": 25000,
     "oid": 1202
   },
   //
   {
     "id": 129,
-    "tier": 3,
     "chips": 30000,
     "oid": 1198
   },
   //
   {
     "id": 130,
-    "tier": 3,
     "chips": 35000,
     "oid": 1203
   },
   //
   {
     "id": 123,
-    "tier": 3,
     "chips": 40000,
     "oid": 1201
   },
@@ -849,59 +718,49 @@
   // Bunny Hop
   {
     "id": 132,
-    "tier": 1,
     "oid": 1233,
     "only_bunker": true
   },
   //
   {
     "id": 133,
-    "tier": 1,
     "oid": 1211,
     "only_bunker": true
   },
   //
   {
     "id": 134,
-    "tier": 1,
     "oid": 1212,
     "only_bunker": true
   },
   // winter tracks
   //
   {
-    "id": 135,
-    "tier": 1
+    "id": 135
   },
   //
   {
-    "id": 136,
-    "tier": 1
+    "id": 136
   },
   //
   {
-    "id": 137,
-    "tier": 1
+    "id": 137
   },
   //
   {
-    "id": 138,
-    "tier": 1
+    "id": 138
   },
   //
   {
-    "id": 139,
-    "tier": 1
+    "id": 139
   },
   //
   {
-    "id": 140,
-    "tier": 1
+    "id": 140
   },
   //
   {
-    "id": 141,
-    "tier": 1
+    "id": 141
   },
   //
   {
@@ -952,13 +811,11 @@
   // Rigged Roadway
   {
     "id": 157,
-    "tier": 1,
     "only_bunker": true
   },
   //
   {
-    "id": 156,
-    "tier": 1
+    "id": 156
   },
   //
   {
@@ -979,56 +836,47 @@
   //
   {
     "id": 160,
-    "tier": 2,
     "pack": 2
   },
   //
   {
     "id": 161,
-    "tier": 2,
     "pack": 2
   },
   //
   {
     "id": 162,
-    "tier": 2,
     "pack": 2
   },
   //
   {
     "id": 163,
-    "tier": 2,
     "pack": 2
   },
   //
   {
     "id": 164,
-    "tier": 2,
     "pack": 2
   },
   //
   {
     "id": 165,
-    "tier": 2,
     "pack": 2
   },
   // rodeo
   //
   {
     "id": 166,
-    "only_event": true,
-    "tier": 1
+    "only_event": true
   },
   // rodeo weekly tracks
   //
   {
-    "id": 167,
-    "tier": 1
+    "id": 167
   },
   //
   {
-    "id": 168,
-    "tier": 1
+    "id": 168
   },
   //
   {
@@ -1043,8 +891,7 @@
   // rodeo horseshoe tracks
   //
   {
-    "id": 171,
-    "tier": 1
+    "id": 171
   },
   {
     "id": 172,
@@ -1057,13 +904,11 @@
   },
   // Halloween #2
   {
-    "id": 174,
-    "tier": 1
+    "id": 174
   },
   // Spider Kingdom
   {
-    "id": 175,
-    "tier": 1
+    "id": 175
   },
   //
   {
@@ -1091,8 +936,7 @@
   },
   //
   {
-    "id": 181,
-    "tier": 1
+    "id": 181
   },
   //
   {
@@ -1102,74 +946,62 @@
   //
   {
     "id": 183,
-    "tier": 1,
     "halloween2_trackpack": true
   },
   //
   {
     "id": 184,
-    "tier": 1,
     "halloween2_trackpack": true
   },
   //
   {
     "id": 185,
-    "tier": 1,
     "halloween2_trackpack": true
   },
   //
   {
     "id": 186,
-    "tier": 3,
     "halloween2_trackpack": true
   },
   // trackpack tier 3
   // Grand Moonshine
   {
     "id": 187,
-    "tier": 3,
     "pack": 3
   },
   // Vault Crawl
   {
     "id": 188,
-    "tier": 3,
     "pack": 3
   },
   // Scorched Battlement
   {
     "id": 189,
-    "tier": 3,
     "pack": 3
   },
   // Madhouse
   {
     "id": 155,
-    "tier": 3,
     "pack": 3
   },
   // Woodwork Conclave
   {
     "id": 190,
-    "tier": 3,
     "pack": 3
   },
   // Widowmaker
   {
     "id": 191,
-    "tier": 3,
     "pack": 3
   },
   // christmas
   // Skater Paradise
   {
-    "id": 192,
-    "tier": 1
+    "id": 192
   },
   // Candyland
   {
-    "id": 193,
-    "tier": 1
+    "id": 193
   },
   // Bell Tower
   {
@@ -1199,617 +1031,517 @@
   // Slick Slalom
   {
     "id": 199,
-    "tier": 1,
     "week": 1
   },
   // Workshop Path
   {
     "id": 200,
-    "tier": 1,
     "week": 2
   },
   // Sled Loading Bay
   {
     "id": 201,
-    "tier": 2,
     "week": 3
   },
   // Present Village
   {
     "id": 202,
-    "tier": 3,
     "week": 4
   },
   // Petrol Falls
   // Concealed Entry
   {
     "id": 203,
-    "tier": 1,
     "world": 2
   },
   // Petrol Falls Path
   {
     "id": 204,
-    "tier": 1,
     "world": 2
   },
   // Trail of Courage
   {
     "id": 205,
-    "tier": 1,
     "world": 2
   },
   // Leaping Hollows
   {
     "id": 206,
-    "tier": 1,
     "world": 2,
     "week": 1
   },
   // Muddy Mounds
   {
     "id": 207,
-    "tier": 1,
     "world": 2,
     "week": 2
   },
   // Lost Race Track
   {
     "id": 208,
-    "tier": 1,
     "world": 2,
     "week": 3
   },
   // Endurance Run
   {
     "id": 209,
-    "tier": 1,
     "world": 2,
     "week": 4
   },
   // KTM Course
   {
     "id": 210,
-    "tier": 1,
     "world": 2
   },
   // Metal Meyham
   {
     "id": 211,
-    "tier": 2,
     "world": 2
   },
   // Razor Duns
   {
     "id": 212,
-    "tier": 2,
     "world": 2
   },
   // High Tide Heights
   {
     "id": 213,
-    "tier": 1,
     "world": 2
   },
   // Choking Hazards
   {
     "id": 214,
-    "tier": 3,
     "world": 2
   },
   // Faceplant Precinct
   {
     "id": 215,
-    "tier": 1,
     "world": 2
   },
   // Open Jaw Bog
   {
     "id": 216,
-    "tier": 1,
     "world": 2
   },
   // Endless Wealth
   {
     "id": 217,
-    "tier": 3,
     "world": 2
   },
   // Safe Escape
   {
     "id": 218,
-    "tier": 2,
     "world": 2
   },
   // Longshot Lake
   {
     "id": 219,
-    "tier": 2,
     "world": 2,
     "chips": 40500
   },
   // Overdose
   {
     "id": 220,
-    "tier": 2,
     "world": 2,
     "chips": 45000
   },
   // Homegrown
   {
     "id": 221,
-    "tier": 3,
     "world": 2
   },
   // Itchy Jaws
   {
     "id": 222,
-    "tier": 2,
     "world": 2
   },
   // Exile Pass
   {
     "id": 223,
-    "tier": 1,
     "world": 2
   },
   // Nausea Night
   {
     "id": 224,
-    "tier": 2,
     "world": 2
   },
   // Derailed
   {
     "id": 225,
-    "tier": 1,
     "world": 2
   },
   // Impact Attics
   {
     "id": 226,
-    "tier": 1,
     "world": 2
   },
   // Lollygagging
   {
     "id": 227,
-    "tier": 2,
     "world": 2
   },
   // Acrobat Quarter
   {
     "id": 228,
-    "tier": 2,
     "world": 2
   },
   // Fenland Flail
   {
     "id": 229,
-    "tier": 3,
     "world": 2
   },
   // Torn Canyon
   {
     "id": 230,
-    "tier": 3,
     "world": 2
   },
   // Cold Cut Corner
   {
     "id": 231,
-    "tier": 1,
     "world": 2
   },
   // Root Canal
   {
     "id": 232,
-    "tier": 1,
     "world": 2
   },
   // Crystal Crossing
   {
     "id": 233,
-    "tier": 3,
     "world": 2
   },
   // aniversary 2017
   // Broken Skull
   {
     "id": 234,
-    "tier": 1,
     "world": 2,
     "case": "50.Mio Downloads"
   },
   // The Assumption
   {
     "id": 235,
-    "tier": 1,
     "world": 2
   },
   // Lost Decent
   {
     "id": 236,
-    "tier": 2,
     "world": 2
   },
   // Peace Hammer
   {
     "id": 237,
-    "tier": 2,
     "world": 2
   },
   // Peaceful Pummel
   {
     "id": 238,
-    "tier": 1,
     "world": 2
   },
   // Dark Smoke
   {
     "id": 239,
-    "tier": 3,
     "world": 2
   },
   // Fair Winds
   {
     "id": 240,
-    "tier": 2,
     "world": 2
   },
   // Plant Food
   {
     "id": 241,
-    "tier": 3,
     "world": 2
   },
   // Bayou Boatride
   {
     "id": 242,
-    "tier": 1,
     "world": 2
   },
   // Headhurt Bluff
   {
     "id": 243,
-    "tier": 2,
     "world": 2,
     "case": "3rd Anniversary"
   },
   // Kaiju Canyon
   {
     "id": 244,
-    "tier": 2,
     "world": 2
   },
   // Break and Enter
   {
     "id": 245,
-    "tier": 2,
     "world": 2
   },
   // Frozen Rapids
   {
     "id": 246,
-    "tier": 2,
     "world": 2
   },
   // Mile High
   {
     "id": 247,
-    "tier": 2,
     "world": 2
   },
   // Snowcap Smackdown
   {
     "id": 248,
-    "tier": 2,
     "world": 2
   },
   // Icy Altar
   {
     "id": 249,
-    "tier": 2,
     "world": 2
   },
   // Rabbit Hell
   {
     "id": 250,
-    "tier": 3,
     "world": 2
   },
   // bandito rally  2017
   // Swamp Breath
   {
     "id": 251,
-    "tier": 2,
     "world": 2
   },
   // Ravenous Ram
   {
     "id": 252,
-    "tier": 2,
     "world": 2
   },
   // Sundown Slam
   {
     "id": 253,
-    "tier": 2,
     "world": 2
   },
   // Graviton Swamp
   {
     "id": 254,
-    "tier": 3,
     "world": 2
   },
   // Rejection Blues
   {
     "id": 255,
-    "tier": 2,
     "world": 2
   },
   // Fatal Fungus
   {
     "id": 256,
-    "tier": 2,
     "world": 2
   },
   // Reputation juli/august 2017
   // Aztec Trance
   {
     "id": 257,
-    "tier": 2,
     "world": 2
   },
   // Rowdy Roofing
   {
     "id": 258,
-    "tier": 3,
     "world": 2
   },
   // Pinball Pains
   {
     "id": 259,
-    "tier": 2,
     "world": 2
   },
   // Suspended Getaway
   {
     "id": 260,
-    "tier": 2,
     "world": 2
   },
   // Spelunker Graves
   {
     "id": 261,
-    "tier": 2,
     "world": 2
   },
   // Acid Bath
   {
     "id": 262,
-    "tier": 3,
     "world": 2
   },
   // Pain Marsh
   {
     "id": 263,
-    "tier": 2,
     "world": 2
   },
   // Distilled Hops
   {
     "id": 264,
-    "tier": 2,
     "world": 2
   },
   // Midnight Brewery
   {
     "id": 265,
-    "tier": 2,
     "world": 2
   },
   // Fermented Caves
   {
     "id": 266,
-    "tier": 3,
     "world": 2
   },
   // Rampant Ramps
   {
     "id": 267,
-    "tier": 2,
     "world": 2
   },
   // Skyline Fling
   {
     "id": 268,
-    "tier": 3,
     "world": 2
   },
   // Dual Hops
   {
     "id": 269,
-    "tier": 3,
     "world": 2
   },
   // Rest in Peaces
   {
     "id": 270,
-    "tier": 3,
     "world": 2
   },
   // Hanging Gardens
   {
     "id": 271,
-    "tier": 3,
     "world": 2
   },
   // Mushroom Boom
   {
     "id": 272,
-    "tier": 2,
     "world": 2
   },
   // Treachery
   {
     "id": 273,
-    "tier": 2,
     "world": 2
   },
   // Aus-X-Open
   // X-Factor
   {
     "id": 274,
-    "tier": 1,
     "world": 2
   },
   // X-Terminate
   {
     "id": 275,
-    "tier": 2,
     "world": 2
   },
   // Indigenous Village
   {
     "id": 276,
-    "tier": 3,
     "world": 2
   },
   // Avalanche Strew
   {
     "id": 277,
-    "tier": 1,
     "world": 2
   },
   // Redrum Hills
   {
     "id": 278,
     "christmas_gift": true,
-    "tier": 3,
     "world": 2
   },
   // Dakar Rally 2017-18
   // Lotus Swamp
   {
     "id": 279,
-    "tier": 1,
     "world": 2
   },
   // Air Assault
   {
     "id": 280,
-    "tier": 2,
     "world": 2
   },
   // Double Barrel
   {
     "id": 281,
-    "tier": 2,
     "world": 2
   },
   // Reverse Engineering
   {
     "id": 282,
-    "tier": 3,
     "world": 2
   },
   // Sloppy Slopes
   {
     "id": 283,
-    "tier": 3,
     "world": 2
   },
   // Spare Ribs
   {
     "id": 284,
-    "tier": 1,
     "world": 2
   },
   // Terrace Farming
   {
     "id": 285,
-    "tier": 1,
     "world": 2
   },
   // Radical Roadworks
   {
     "id": 286,
-    "tier": 1,
     "world": 2
   },
   // Nuclear Cave
   {
     "id": 287,
-    "tier": 3,
     "world": 2
   },
   // Lopsided
   {
     "id": 288,
-    "tier": 3,
     "world": 2
   },
   // Cliff-Hanger
   {
     "id": 289,
-    "tier": 1,
     "world": 2
   },
   // Sunken Sanctury
   {
     "id": 290,
-    "tier": 2,
     "world": 2
   },
   // Peaks of Peril
   {
     "id": 291,
-    "tier": 0,
     "only_event": true,
     "world": 2
   },
   // Ferocious Flips
   {
     "id": 292,
-    "tier": 3,
     "world": 2
   },
   // Floor is Lava
   {
     "id": 293,
-    "tier": 1,
     "world": 2
   },
   // Kick Back
   {
     "id": 294,
-    "tier": 2,
     "world": 2
   },
   // Surprise Surprise
   {
     "id": 295,
-    "tier": 1,
     "world": 2
   },
   // Twisted Curves
   {
     "id": 296,
-    "tier": 2,
     "world": 2
   },
   // Downtown Love
   {
     "id": 297,
-    "tier": 3,
     "world": 2
   },
   // Cold Shoulder
   {
     "id": 298,
-    "tier": 0,
     "world": 2
   }
 ]
