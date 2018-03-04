@@ -91,13 +91,14 @@ Repo changes for tracks and deploy
 			* $ npm run grunt import6GameDataViaJson
 			* add unreleased tracks to "./database/i18n/en.json"
 				* new track get a new id
-				* also add the new tracksk with their new id's to "./database/trackdata/ids.json"
-				* make sure world and tier is right
+				* also add the new tracks with their new id's to "./database/trackdata/ids.json"
+				* make sure the world id is right (1: seymore and lotz, 2: petrol falls)
 			* $ npm run grunt #startImportI18N
 				* now we have to add the changes from "./build/import/i18n/*.json" to "./database/i18n/*.json"
 				* use diff function for every language and add the new tracks (nothing more)
 			* now compare "./build/import/parts.json" with "./database/trackdata/parts.json"
-			* now compare "./build/import/teims.json" with "./database/trackdata/times.json"
+			* now compare "./build/import/times.json" with "./database/trackdata/times.json"
+			* now compare "./build/import/tiers.json" with "./database/trackdata/tiers.json"
 			* add the above uploaded startlines into "./database/trackdata/startlines.json"
 				>>,"291": "dasdasdd.jpg"<<, without "https://i.imgur.com/"
 			* start server
@@ -110,6 +111,3 @@ Repo changes for tracks and deploy
 					* choose a color in hexcode
 				* add for every track in "./database/trackdata/categories.json" the categories
 * deploy job and upload on ftp
-				
-* TODO
-	* season
