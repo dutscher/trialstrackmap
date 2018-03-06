@@ -5,6 +5,7 @@
 * Photoshop CC (necessary for new tracks on trackmap and new seasons)
 * Android device (necessary for import)
 * git https://git-scm.com/downloads (upload changes to github)
+* Github account (https://github.com/ for commits of your changes)
 * NodeJS https://nodejs.org/en/download/ (running trackmap server & import)
 * dutscher will brief you for:
   * TF.zip for import unpack this in "C:/" (import scripts)
