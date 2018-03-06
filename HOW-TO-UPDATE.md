@@ -7,33 +7,34 @@
 * git https://git-scm.com/downloads
 * NodeJS https://nodejs.org/en/download/
 * dutscher will brief you for:
- * TF.zip for import unpack this in "C:/"
- * www.imgur.com (image hoster)
- * ftp credentials
+  * TF.zip for import unpack this in "C:/"
+  * www.imgur.com (image hoster)
+  * ftp credentials
 
 ## Preparation
 * adb:
- * connect your phone with adb (go into "C:/#TF/#adb" dir and start cmd here)
-  * Hold Shift while Right-Clicking a blank space in the desired folder to bring up a more verbose context menu. One of the options is Open Command Window Here
+  * connect your phone with adb (go into "C:/#TF/#adb" dir and start cmd here)
+  * Hold Shift while Right-Clicking a blank space in the desired folder to bring up a more verbose context menu. 
+      One of the options is Open Command Window Here
   * in cmd:
-   * C:\www\#TF\#adb>adb devices
-     List of devices attached * daemon not running. starting it now on port 5037 *
-     * daemon started successfully *
-     NO DEVICE FOUND
+    * C:\www\#TF\#adb>adb devices
+      List of devices attached * daemon not running. starting it now on port 5037 *
+      * daemon started successfully *
+      NO DEVICE FOUND
   * unplug device:
-   * go into your Android settings:
-    * "System" / "Information" or "About" / click 10 times on "Build number"
-    * now go into "Developer options"
-     * enable Debugging "Android debugging"
-     * Allow USB debugging, click OK
+    * go into your Android settings:
+      * "System" / "Information" or "About" / click 10 times on "Build number"
+      * now go into "Developer options"
+        * enable Debugging "Android debugging"
+        * Allow USB debugging, click OK
   * plugin your device:
-   * RSA fingerprint of your device will shown up
+    * RSA fingerprint of your device will shown up
     * Always allow from this computer
   * back to cmd:
-   * again: C:\www\#TF\#adb>adb devices
-     List of devices attached
-     ZY3224JGK8    device
-     DEVICE CONNECTED via adb
+    * again: C:\www\#TF\#adb>adb devices
+      List of devices attached
+      ZY3224JGK8    device
+      DEVICE CONNECTED via adb
 
 ## 1.Trackmap-gfx repo	
 * $ git clone https://github.com/dutscher/trialstrackmap-gfx.git
