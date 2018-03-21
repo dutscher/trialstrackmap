@@ -34,7 +34,7 @@ module.exports = function () {
             );
         },
         generatePaintjobs: function () {
-            require("json5/lib/require");
+            require("json5/lib/register");
             var globalVars = {},
                 bikesJSON = require("../../build/bikes.json").build.bikes,
                 gfxJSON = require("../../database/media/gfx.json"),

@@ -424,7 +424,7 @@ module.exports = function (grunt) {
     // convert game data to trackmap data
     grunt.registerTask("import6GameDataViaJson", function () {
         dates.push(new Date());
-        require("json5/lib/require");
+        require("json5/lib/register");
 
         var bikesJSON = require("../" + bikesFile + toExt),
             customsJSON = require("../" + customsFile + toExt),

@@ -48,7 +48,8 @@
     "16": "Indigenous Village",
     "17": "Avalanche Strew",
     "18": "Sunken Sanctuary",
-    "19": "Black Forest"
+    "19": "Black Forest",
+    "20": "Devil Hopping"
   },
   "costums": {
     "1": {"title": "Ninja Head", "selector": "the-ninja", "part": "head"},
