@@ -87,9 +87,10 @@ module.exports = function () {
                 var bikeName = trimName(bikes[bikeID].name),
                     bikeIndex = bikesJSON.spriteSorting.indexOf(parseInt(bikeID));
 
-                for (var paintJob in bikes[bikeID].paintjobs) {
-                    var paintJobName = trimName(paintJob),
-                        paintJobIndex = Object.keys(bikes[bikeID].paintjobs).indexOf(paintJob);
+                for (var paintJobID in bikes[bikeID].paintjobs) {
+                    var paintJob = bikes[bikeID].paintjobs[paintJobID],
+                        paintJobName = trimName(paintJob),
+                        paintJobIndex = Object.keys(bikes[bikeID].paintjobs).indexOf(paintJobID);
                     // paintjobs
                     globalVars._paintJobNames.push("paintjob-" + bikeName + "-" + paintJobName);
                     globalVars._paintJobSelectors.push("paintjob-" + bikeID + "-" + paintJobIndex);

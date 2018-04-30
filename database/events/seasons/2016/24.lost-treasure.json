@@ -16,7 +16,6 @@
       "level": 1,
       "extra_type": "paintjob",
       "extra": 14,
-      "sprite_pointer": "donkey-fallout",
       "coins": 5000,
       "gems": 5
     },
@@ -73,7 +72,6 @@
       "level": 11,
       "extra_type": "paintjob",
       "extra": 12,
-      "sprite_pointer": "mantis-pumpkin-king",
       "coins": 1500,
       "gems": 4
     },

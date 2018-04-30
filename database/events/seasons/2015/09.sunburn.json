@@ -56,8 +56,7 @@
       "level": 10,
       "coins": 2000,
       "extra_type": "paintjob",
-      "extra": 9,
-      "sprite_pointer": "berserker-spirits"
+      "extra": 9
     },
     {
       "level": 11,

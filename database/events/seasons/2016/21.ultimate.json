@@ -17,8 +17,7 @@
       "extra_type": "paintjob",
       "extra": 18,
       "coins": 5000,
-      "gems": 10,
-      "sprite_pointer": "agent-spy-ops"
+      "gems": 10
     },
     {
       "level": 2,

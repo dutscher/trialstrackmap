@@ -52,7 +52,6 @@
     {
       "level": 7,
       "extra_type": "paintjob",
-      "sprite_pointer": "marauda-wolf",
       "extra": 23,
       "coins": 2000,
       "gems": 4

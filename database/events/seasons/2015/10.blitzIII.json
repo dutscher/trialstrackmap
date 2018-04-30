@@ -12,8 +12,7 @@
       "gems": 10,
       "coins": 10000,
       "extra_type": "paintjob",
-      "extra": 11,
-      "sprite_pointer": "donkey-molten"
+      "extra": 11
     },
     {
       "level": 2,
@@ -47,8 +46,7 @@
       "level": 8,
       "coins": 2000,
       "extra_type": "paintjob",
-      "extra": 10,
-      "sprite_pointer": "marauder-bigfoot"
+      "extra": 10
     },
     {
       "level": 9,
@@ -103,8 +101,7 @@
       "level": 20,
       "coins": 1000,
       "extra_type": "paintjob",
-      "extra": 5,
-      "sprite_pointer": "tango-soylent"
+      "extra": 5
     },
     {
       "level": 21,

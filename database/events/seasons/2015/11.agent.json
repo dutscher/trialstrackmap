@@ -69,8 +69,7 @@
       "level": 10,
       "extra_type": "paintjob",
       "extra": 1,
-      "coins": 1000,
-      "sprite_pointer": "tango-neon"
+      "coins": 1000
     },
     {
       "level": 11,

@@ -53,8 +53,7 @@
       "gems": 5,
       "coins": 2000,
       "extra_type": "paintjob",
-      "extra": 7,
-      "sprite_pointer": "marauder-scales"
+      "extra": 7
     },
     {
       "level": 11,

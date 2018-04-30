@@ -28,7 +28,6 @@
     {
       "level": 3,
       "extra_type": "paintjob",
-      "sprite_pointer": "bandito-camouflage",
       "extra": 22,
       "coins": 5000,
       "gems": 5

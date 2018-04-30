@@ -33,22 +33,26 @@ module.exports = function (grunt) {
 
     grunt.registerTask("#testConfig", []);
 
+    grunt.registerTask("#checkImport", [
+        "import-00-CheckImport"
+    ]);
+
     grunt.registerTask("#startImport", [
-        "import1GameDataPhone",
-        "import2GameDataS3",
-        "import3DoUnpacking",
-        "import4DoPackagesToOneDir",
-        "import5ConvertOri2Json",
-        "import6GameDataViaJson",
-        "import7ConvertLanguages",
-        "import8GetLanguageHashes",
-        "import9GetTrackNamesViaHashes"
+        "import-01-gameDataPhone",
+        "import-02-gameDataS3",
+        "import-03-doUnpacking",
+        "import-04-doPackagesToOneDir",
+        "import-05-convertOri2Json",
+        "import-06-gameDataViaJson",
+        "import-07-convertLanguages",
+        "import-08-getLanguageHashes",
+        "import-09-getTrackNamesViaHashes"
     ]);
 
     grunt.registerTask("#startImportI18N", [
-        "import6GameDataViaJson",
-        "import7ConvertLanguages",
-        "import8GetLanguageHashes",
-        "import9GetTrackNamesViaHashes"
+        "import-06-gameDataViaJson",
+        "import-07-convertLanguages",
+        "import-08-getLanguageHashes",
+        "import-09-getTrackNamesViaHashes"
     ]);
 };

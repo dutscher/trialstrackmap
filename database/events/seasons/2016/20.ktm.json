@@ -94,8 +94,7 @@
       "extra_type": "paintjob",
       "extra": 17,
       "coins": 1000,
-      "gems": 5,
-      "sprite_pointer": "riptide-hippie"
+      "gems": 5
     },
     {
       "level": 16,

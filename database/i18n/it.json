@@ -297,7 +297,7 @@
     "20": "Treasure Hunt 2016",
     "21": "Youtube",
     "22": "Midnight Circuit 2016",
-    "23": "Anniversary 2017",
+    "23": "Anniversary",
     "24": "KTM 400-Rally 2017",
     "25": "Eggs Hunt 2017",
     "26": "Bandito Rally 2017",
@@ -603,7 +603,12 @@
     "295": "Sorpresa Sorpresa",
     "296": "Curve Contorte",
     "297": "Amore in Centro",
-    "298": "Indifferenza"
+    "298": "Indifferenza",
+    "299": "Cascate Pericolose",
+    "300": "Giardini Tossici",
+    "301": "Tempio del Destino",
+    "302": "Notte Crescente",
+    "303": "Ghiaccio Scivoloso"
   },
   "unreleased": [
     "Carreggiata",

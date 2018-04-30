@@ -69,7 +69,6 @@
     {
       "level": 10,
       "extra_type": "paintjob",
-      "sprite_pointer": "berserker-hard-rocker",
       "extra": 20,
       "coins": 1500
     },
@@ -94,7 +93,6 @@
     {
       "level": 14,
       "extra_type": "paintjob",
-      "sprite_pointer": "riptide-revenant",
       "extra": 19,
       "coins": 1000
     },
@@ -113,7 +111,6 @@
     {
       "level": 17,
       "extra_type": "paintjob",
-      "sprite_pointer": "bronco-raven",
       "extra": 15,
       "coins": 1000
     },

@@ -66,7 +66,6 @@
       "level": 9,
       "extra_type": "paintjob",
       "extra": 17,
-      "sprite_pointer": "riptide-hippie",
       "coins": 1500
     },
     {
@@ -105,7 +104,6 @@
       "level": 15,
       "extra_type": "paintjob",
       "extra": 2,
-      "sprite_pointer": "bronco-aloha",
       "coins": 1500
     },
     {

@@ -97,8 +97,7 @@
       "gems": 10,
       "coins": 5000,
       "extra_type": "paintjob",
-      "extra": 2,
-      "sprite_pointer": "bronco-aloha"
+      "extra": 2
     },
     {
       "level": 16,
@@ -123,8 +122,7 @@
       "gems": 5,
       "coins": 3000,
       "extra_type": "paintjob",
-      "extra": 1,
-      "sprite_pointer": "tango-neon"
+      "extra": 1
     },
     {
       "level": 21,

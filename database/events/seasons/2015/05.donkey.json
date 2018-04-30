@@ -33,8 +33,7 @@
       "level": 5,
       "coins": 2000,
       "extra_type": "paintjob",
-      "extra": 5,
-      "sprite_pointer": "tango-soylent"
+      "extra": 5
     },
     {
       "level": 6,
@@ -82,8 +81,7 @@
       "gems": 5,
       "coins": 2000,
       "extra_type": "paintjob",
-      "extra": 1,
-      "sprite_pointer": "tango-neon"
+      "extra": 1
     },
     {
       "level": 16,

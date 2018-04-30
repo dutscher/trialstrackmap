@@ -1,7 +1,12 @@
 {
   "url": "https://trials-frontier.de.aptoide.com/versions",
   "url2": "https://www.apk4fun.com/history/9693/",
+  "url3": "https://play.google.com/store/apps/details?id=com.ubisoft.redlynx.trialsfrontier.ggp",
   "releases": [
+    {
+      "version": "5.9.0",
+      "date": "09.04.2018"
+    },
     {
       "version": "5.8.3",
       "date": "14.02.2018"

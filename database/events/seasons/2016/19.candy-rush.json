@@ -15,8 +15,7 @@
       "extra_type": "paintjob",
       "extra": 16,
       "coins": 9000,
-      "gems": 10,
-      "sprite_pointer": "mantis-mithril"
+      "gems": 10
     },
     {
       "level": 2,
@@ -66,8 +65,7 @@
       "extra_type": "paintjob",
       "extra": 15,
       "coins": 1000,
-      "gems": 5,
-      "sprite_pointer": "bronco-raven"
+      "gems": 5
     },
     {
       "level": 11,

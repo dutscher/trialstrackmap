@@ -6,7 +6,7 @@
     40,41,43,42,50,44,47,48,46,51,52,53,54
   ],
   "homeshack": [
-    65,64,63,62,61,
+    66,65,64,63,62,61,
     60,59,58,57,56,55,54,53,52,51,
     50,49,48,47,46,45,44,43,42,41,
     40,39,38,37,36,35,34,33,32,31,
@@ -24,6 +24,16 @@
     }
   },
   "all": {
+    "66": {
+      "originID": 66,
+      "name": "Clawgirl",
+      "parts": [
+        "https://i.imgur.com/aodDZZO.png|15|-35",
+        "https://i.imgur.com/KbSebqW.png|3|104",
+        "https://i.imgur.com/7OOSx5i.png|175|115",
+        "https://i.imgur.com/KUQdtjK.png"
+      ]
+    },
     "65": {
       "originID": 65,
       "name": "Ted the Hipster",

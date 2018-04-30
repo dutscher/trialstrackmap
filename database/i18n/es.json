@@ -297,7 +297,7 @@
     "20": "Búsqueda de Tesoros 2016",
     "21": "Vídeos de Youtube",
     "22": "Midnight Circuit 2016",
-    "23": "Anniversary 2017",
+    "23": "Anniversary",
     "24": "KTM 400-Rally 2017",
     "25": "Eggs Hunt 2017",
     "26": "Bandito Rally 2017",
@@ -603,7 +603,12 @@
     "295": "Sorpresa sorpresa",
     "296": "Curvas retorcidas",
     "297": "Amor urbano",
-    "298": "Carácter frío"
+    "298": "Carácter frío",
+    "299": "Pozos peligrosos",
+    "300": "Jardín tóxico",
+    "301": "Templo maldito",
+    "302": "Noche de media luna",
+    "303": "Hielo resbaladizo"
   },
   "unreleased": [
     "Calzada",

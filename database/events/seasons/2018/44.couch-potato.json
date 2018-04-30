@@ -4,12 +4,12 @@
     },
     "title": "Couch Potato",
     "date": "13.03.2018",
-    "date_end": "13.04.2018",
-    "duration": "3h",
+    "date_end": "16.04.2018",
+    "duration": "4h",
     "free_showdowns": "3",
     "ticket_regain": "30m",
-    "stats": "",
-    "total_legends": 0,
+    "stats": "http://trials.bonxy.net/the-bunker/Couch+Potato+Season",
+    "total_legends": 923,
     "prizes": [
         {
             "level": 1,
@@ -51,14 +51,13 @@
         {
             "level": 7,
             "extra_type": "part",
-            "extra": "sprint-5",
+            "extra": "spring-5",
             "coins": 2000,
             "gems": 4
         },
         {
             "level": 8,
             "extra_type": "paintjob",
-            "sprite_pointer": "riptide-hippie",
             "extra": 17,
             "coins": 2000,
             "gems": 4

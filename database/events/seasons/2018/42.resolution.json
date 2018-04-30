@@ -52,7 +52,7 @@
     {
       "level": 7,
       "extra_type": "paintjob",
-      "sprite_pointer": "bronco-medic",
+      "extra": 3,
       "coins": 2000,
       "gems": 4
     },

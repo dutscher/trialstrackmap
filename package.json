@@ -33,6 +33,7 @@
     "lodash": "latest",
     "fs-extra": "latest",
     "grunt-exec": "latest",
+    "colors": "latest",
     "magic-snowflakes": "latest"
   },
   "engine": "node 8.9.1",

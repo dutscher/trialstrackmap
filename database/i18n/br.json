@@ -297,7 +297,7 @@
     "20": "Treasure Hunt 2016",
     "21": "Youtube",
     "22": "Midnight Circuit 2016",
-    "23": "Anniversary 2017",
+    "23": "Anniversary",
     "24": "KTM 400-Rally 2017",
     "25": "Eggs Hunt 2017",
     "26": "Bandito Rally 2017",
@@ -603,7 +603,12 @@
     "295": "Grande Surpresa",
     "296": "Curvas Sinuosas",
     "297": "Paixão Central",
-    "298": "Olhar Gelado"
+    "298": "Olhar Gelado",
+    "299": "Armadilhas Perigosas",
+    "300": "Jardim Tóxico",
+    "301": "Templo da Perdição",
+    "302": "Noite Crescente",
+    "303": "Gelo Escorregadio"
   },
   "unreleased": [
     "Estrada",

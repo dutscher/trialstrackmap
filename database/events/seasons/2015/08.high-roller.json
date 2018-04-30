@@ -56,8 +56,7 @@
       "level": 10,
       "coins": 2000,
       "extra_type": "paintjob",
-      "extra": 8,
-      "sprite_pointer": "armadillo-lava"
+      "extra": 8
     },
     {
       "level": 11,

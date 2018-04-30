@@ -297,7 +297,7 @@
     "20": "Schatzsuche 2016",
     "21": "Youtube",
     "22": "Midnight Circuit 2016",
-    "23": "Jubiläum 2017",
+    "23": "Jubiläum",
     "24": "KTM 400-Rally 2017",
     "25": "Eggs Hunt 2017",
     "26": "Bandito Rally 2017",
@@ -603,7 +603,12 @@
     "295": "Überraschung, Überraschung",
     "296": "Verdrehte Kurven",
     "297": "Downtown-Liebe",
-    "298": "Kalte Schulter"
+    "298": "Kalte Schulter",
+    "299": "Gefährliche Fallgruben",
+    "300": "Giftiger Garten",
+    "301": "Tempel des Verhängnisses",
+    "302": "Halbmondnacht",
+    "303": "Rutschiges Eis"
   },
   "unreleased": [
     "Die Hoffnung gibt auf",

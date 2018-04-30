@@ -297,7 +297,7 @@
     "20": "Treasure Hunt 2016",
     "21": "Youtube",
     "22": "Midnight Circuit 2016",
-    "23": "Anniversary 2017",
+    "23": "Anniversary",
     "24": "KTM 400-Rally 2017",
     "25": "Eggs Hunt 2017",
     "26": "Bandito Rally 2017",
@@ -603,7 +603,12 @@
     "295": "Surprise surprise",
     "296": "Virages virulents",
     "297": "Amour en ville",
-    "298": "Arrêt d'urgence"
+    "298": "Arrêt d'urgence",
+    "299": "Gare aux embûches",
+    "300": "Jardin toxique",
+    "301": "Temple du Destin",
+    "302": "Nuit du croissant",
+    "303": "Verglas"
   },
   "unreleased": [
     "Espoir abandonné",

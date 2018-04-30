@@ -16,7 +16,6 @@
       "level": 1,
       "extra_type": "paintjob",
       "extra": 20,
-      "sprite_pointer": "berserker-hard-rocker",
       "coins": 5000,
       "gems": 5
     },
@@ -101,7 +100,6 @@
       "level": 15,
       "extra_type": "paintjob",
       "extra": 19,
-      "sprite_pointer": "riptide-revenant",
       "coins": 1000,
       "gems": 2
     },

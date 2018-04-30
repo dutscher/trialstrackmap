@@ -12,8 +12,7 @@
       "extra_type": "paintjob",
       "extra": 12,
       "coins": 8000,
-      "gems": 10,
-      "sprite_pointer": "mantis-pumpkin-king"
+      "gems": 10
     },
     {
       "level": 2,

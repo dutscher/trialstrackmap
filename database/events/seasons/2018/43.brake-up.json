@@ -122,7 +122,6 @@
         {
             "level": 18,
             "extra_type": "paintjob",
-            "sprite_pointer": "mantis-fanny-pack",
             "extra": 24,
             "coins": 1000,
             "gems": 2

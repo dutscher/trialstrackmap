@@ -1543,5 +1543,30 @@
   {
     "id": 298,
     "world": 2
+  },
+  // Perilous Pitfalls
+  {
+    "id": 299,
+    "world": 2
+  },
+  // Toxic Garden
+  {
+    "id": 300,
+    "world": 2
+  },
+  // Temple Of Doom
+  {
+    "id": 301,
+    "world": 2
+  },
+  // Crescent Night
+  {
+    "id": 302,
+    "world": 2
+  },
+  // Slippery Ice
+  {
+    "id": 303,
+    "world": 2
   }
 ]

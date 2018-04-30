@@ -12,8 +12,7 @@
       "extra_type": "paintjob",
       "extra": 14,
       "coins": 9000,
-      "gems": 10,
-      "sprite_pointer": "donkey-fallout"
+      "gems": 10
     },
     {
       "level": 2,
@@ -62,8 +61,7 @@
       "extra_type": "paintjob",
       "extra": 13,
       "coins": 1000,
-      "gems": 5,
-      "sprite_pointer": "bronco-sailor"
+      "gems": 5
     },
     {
       "level": 11,

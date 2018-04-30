@@ -3,11 +3,11 @@
     1, 2, 3, 15, 13,
     4, 5, 6, 14,
     7, 8, 9, 16,
-    19, 10, 11
+    19, 10, 11, 12
   ],
   "spriteSorting": [
     1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
-    11, 13, 14, 19, 15, 16
+    11, 13, 14, 19, 15, 16, 12
   ],
   "bikes": {
     "1":  {
@@ -91,8 +91,8 @@
         "Default",
         "Swashbuckler",
         "Scales",
-        "Bigfoot",
-        "Wolf"
+        "Footprint",
+        "Winter Wolf"
       ]
     },
     "7": {
@@ -105,7 +105,8 @@
         "Squash",
         "Hippie",
         "Cheetah",
-        "Revenant"
+        "Revenant",
+        "Clawride"
       ]
     },
     "8": {
@@ -151,7 +152,7 @@
       "paintjobs": [
         "Default",
         "Fire",
-        "Spy Ops",
+        "Spec Ops",
         "White"
       ]
     },
@@ -199,6 +200,13 @@
         "Blizzard",
         "Candy Cane",
         "Feaster"
+      ]
+    },
+    "12": {
+      "name": "Moonrover",
+      "tier": "Crazy",
+      "paintjobs": [
+        "Default"
       ]
     }
   }

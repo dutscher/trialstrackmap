@@ -2,6 +2,7 @@ module.exports = function (grunt) {
     var generator = require("./generator/sprite.js")();
     grunt.registerTask("convertLess", function () {
         var lessVars = generator.generateSprites();
+
         grunt.config("less.options.globalVars", lessVars);
         grunt.task.run("less");
     });

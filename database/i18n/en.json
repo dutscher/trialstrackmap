@@ -300,7 +300,7 @@
     "20": "Treasure Hunt 2016",
     "21": "Youtube",
     "22": "Midnight Circuit 2016",
-    "23": "Anniversary 2017",
+    "23": "Anniversary",
     "24": "KTM 400-Rally 2017",
     "25": "Eggs Hunt 2017",
     "26": "Bandito Rally 2017",
@@ -606,10 +606,17 @@
     "295": "Surprise Surprise",
     "296": "Twisted Curves",
     "297": "Downtown Love",
-    "298": "Cold Shoulder"
+    "298": "Cold Shoulder",
+    "299": "Perilous Pitfalls",
+    "300": "Toxic Garden",
+    "301": "Temple Of Doom",
+    "302": "Crescent Night",
+    "303": "Slippery Ice"
   },
   "unreleased": [
+    "Flat",
+    "Roadway",
     "Hope Surrenders",
-    "Roadway"
+    "Donkey lvl"
   ]
 }
