@@ -75,6 +75,16 @@ module.exports = function (grunt) {
                     dest: "./"
                 }
             ]
+        },
+        danTeam: {
+            files: [
+                {
+                    flatten: true,
+                    expand: true,
+                    src: "build/danteam/danteam.json",
+                    dest: "dist/json/"
+                }
+            ]
         }
     }
 };

@@ -1,10 +1,16 @@
 module.exports = function (grunt) {
 
-    grunt.registerTask("deployHtml",  function() {
+    grunt.registerTask("deployHtml", function() {
         grunt.task.run([
             "clean:assemble",
-            "assemble",
+            "assemble:default",
             "copy:indexToRoot"
+        ]);
+    });
+
+    grunt.registerTask("deployHtmlDanTeam", function() {
+        grunt.task.run([
+            "assemble:danTeam"
         ]);
     });
 
@@ -27,6 +33,10 @@ module.exports = function (grunt) {
         options: options,
         default: {
             src: ["tpls/pages/**/*.hbs"],
+            dest: "dist"
+        },
+        danTeam: {
+            src: ["tpls/pages/danteam.hbs"],
             dest: "dist"
         }
     }

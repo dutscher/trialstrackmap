@@ -23,12 +23,23 @@ module.exports = function (grunt) {
                     "database/media/gfx.json"
                 ]
             }
+        },
+        danTeam: {
+            files: {
+                "build/danteam/danteam.json": [
+                    "build/danteam/teamTimes.json",
+                    "build/danteam/teams.json"
+                ]
+            }
         }
     };
 
     grunt.registerTask("concatDatabase", function () {
         // all jsons to one
-        grunt.task.run("concat-json:database");
+        grunt.task.run([
+            "concat-json:database",
+            "concat-json:danTeam"
+        ]);
         // jsons with comments
         grunt.task.run([
             "copy:jsonWithCommentsToBuild",

@@ -23,6 +23,7 @@ module.exports = {
     trialsUtilsDir: "#TFunpacker",
     allInOneDir: "#content",
     appPath: "com.ubisoft.redlynx.trialsfrontier.ggp",
+    appId: "1c91448e-c62e-45ec-b97b-898dc967f2c1",
     androidPath: "sdcard/Android/data/",
     cloudPath: "http://s3.amazonaws.com/dlcontent_frontier_android/${gameVersion}/info.json",
     importPath: "build/import/raw/${gameVersion}",
@@ -38,7 +39,8 @@ module.exports = {
         "upgrades",
         "level_rewards",
         "levels",
-        "pvp_match_rewards"
+        "pvp_match_rewards",
+        "pvp_chip_store"
     ],
     renameTrack: {
         "LVL_SPINNERS_ALLEY": "spinner's alley",
@@ -60,6 +62,7 @@ module.exports = {
         {t: "import-07-convertLanguages", p: "./07.convertLanguages"},
         {t: "import-08-getLanguageHashes", p: "./08.getLanguageHashes"},
         {t: "import-09-getTrackNamesViaHashes", p: "./09.getTrackNamesViaHashes"},
-        {t: "import-10-seasons", p: "./10.seasons"},
+        {t: "import-10-seasons", p: "./10.seasons", a: true},
+        {t: "import-11-danteam", p: "./11.danTeam", a: true},
     ]
 };

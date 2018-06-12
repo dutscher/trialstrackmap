@@ -55,6 +55,7 @@ module.exports = function (grunt) {
         database: {
             files: [
                 "database/**/*.{json,json5}",
+                "build/danteam/teams.json",
                 "!database/i18n/*"
             ],
             tasks: [
@@ -70,6 +71,17 @@ module.exports = function (grunt) {
             ],
             tasks: [
                 "copy:i18nToDist"
+            ],
+            options: {
+                livereload: config.livereload
+            }
+        },
+        danTeam: {
+            files: [
+                "build/danteam/teams.json"
+            ],
+            tasks: [
+                "#deployDanTeam"
             ],
             options: {
                 livereload: config.livereload

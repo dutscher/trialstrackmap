@@ -1,4 +1,5 @@
-module.exports = function (grunt, http, path, fs, fsExt) {
+module.exports = function (grunt, http, https, path, fs, fsExt) {
+    var session = null;
     return {
         makeWinPath: function (path_) {
             return path_.replace(/\//g, "\\");
@@ -102,6 +103,57 @@ module.exports = function (grunt, http, path, fs, fsExt) {
             width = width || 2;
             z = z || "0";
             return n.length >= width ? n : new Array(width - n.length + 1).join(z) + n;
+        },
+        getUbisoftTicket: function (callback) {
+            var sessionFile = "build/upsession.json",
+                options = this.getRequestOpts("/v1/profiles/sessions", "POST");
+
+                session = fs.existsSync(sessionFile) ? require("../../" + sessionFile) : {expiration: null};
+
+            var expireTime = new Date(session.expiration),
+                now = new Date();
+
+            if (session.expiration === null || expireTime <= now) {
+                var req = https.request(options, function (res) {
+                    res.on("data", function (data) {
+                        var json = JSON.parse(data);
+                        session = {
+                            ticket: json.ticket,
+                            expiration: json.expiration,
+                            serverTime: json.serverTime
+                        };
+                        // write session file
+                        fs.writeFileSync(sessionFile, JSON.stringify(session));
+                        console.log("wrote session file");
+                        // go ahead
+                        callback();
+                    });
+                });
+
+                req.on("error", function (e) {
+                    console.error(e);
+                    done();
+                });
+
+                req.end();
+            } else {
+                console.log("session file is still valid");
+                callback();
+            }
+        },
+        getRequestOpts: function (path, method, appId) {
+            return {
+                host: session === null ? "public-ubiservices.ubi.com" : "lb-rdv-http.ubi.com",
+                port: 443,
+                path: path,
+                method: method ? method : "GET",
+                headers: {
+                    "Ubi-AppId": appId ? appId : this.appId,
+                    //"Authorization": "Basic " + Buffer.from("email:pass").toString("base64"),
+                    "Authorization": session === null ? "Basic ZHV0c2NoZXJfc2JmQGhvdG1haWwuY29tOm1vY2xvdjEzMzc=" : "Ubi_v1 t=" + session.ticket,
+                    "Content-Type": "application/json"
+                }
+            };
         }
-    }
+    };
 };

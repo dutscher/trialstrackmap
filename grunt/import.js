@@ -3,6 +3,7 @@ module.exports = function (grunt) {
         fs = require("fs"),
         fsExt = require("fs-extra"),
         http = require("http"),
+        https = require("https"),
         path = require("path"),
         consts = require("./import/00.const.js"),
         // VARS
@@ -33,13 +34,13 @@ module.exports = function (grunt) {
             }),
         dates = [];
     // put them together
-    var importShared = _.extend({}, require("./import/00.utils.js")(grunt, http, path, fs, fsExt), {
+    var importShared = _.extend({}, require("./import/00.utils.js")(grunt, http, https, path, fs, fsExt), {
         grunt: grunt,
         _: _,
         fs: fs,
         fsExt: fsExt,
         http: http,
-        hddPath: hddPath,
+        https: https,
         versionPath: importPath,
         secretPath: importedPath,
         dataGet: consts.cloudPath.replace("${gameVersion}", gameVersion),
@@ -49,6 +50,7 @@ module.exports = function (grunt) {
         i18nPath: newContentPath + "/gen/lang",
         confPath: newContentPath + "/conf",
         appPath: consts.appPath,
+        appId: consts.appId,
         androidPath: consts.androidPath,
         allInOneDir: consts.allInOneDir,
         filesOfGame: filesOfGame, // !!!
