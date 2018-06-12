@@ -237,7 +237,7 @@ module.exports = function (shared, done) {
             printResults();
             //
             shared.grunt.task.run([
-                "#deployDanTeam"
+                "deployDanTeam"
             ]);
             done();
         });
