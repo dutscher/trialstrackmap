@@ -1,0 +1,209 @@
+{{#extend "default"}}
+    {{#content "styles" mode="append"}}
+        <link rel="stylesheet" type="text/css" href="/dist/css/main.css{{cacheBuster}}"/>
+    {{/content}}
+    {{#content "ctrl"}}ng-controller="trackData"{{/content}}
+    {{#content "preload-images"}}data:loaded{{/content}}
+    {{#content "title-override"}}true{{/content}}
+    {{#content "title" mode="prepend"}}
+        Dan's Team Table
+    {{/content}}
+    {{#content "body"}}
+        <style>
+            .wrap {
+                display: flex;
+            }
+            .team-table td, .team-table--bottom {
+                color: #ffee99;
+            }
+            .team-table td {
+                vertical-align: top;
+                padding: 2px 5px;
+            }
+            .team-table .team-head--blue {
+                background: blue;
+            }
+            .team-table .team-head--red {
+                background: red;
+            }
+            .team-table .team-head td {
+                color: #fff;
+                font-size: 20px;
+            }
+            .team-table .member-cell td {
+                padding: 0 5px;
+                line-height: 13px;
+            }
+            .team-table--bottom {
+                padding: 2px;
+                font-size: 10px;
+            }
+
+            .icon-wrap {
+                display: inline-block;
+                position: relative;
+            }
+            .icon-wrap .paintjob {
+                position: absolute;
+                left: -51px;
+                top: -14px;
+                transform: scale(0.4);
+                transform-origin: top;
+                background-color: #fff;
+                z-index: 0;
+            }
+            .icon-wrap .paintjob:hover {
+                z-index: 1;
+                transform: scale(1);
+                left: -32px;
+                top: -42px;
+            }
+            .icon-wrap--placeholder {
+                width: 20px;
+                height: 20px;
+                display: inline-block;
+            }
+            .icon-wrap.icon-wrap--placeholder {
+                transform: scale(0.1);
+                transform-origin: top left;
+                height: 10px;
+                top: -5px;
+                left: -5px;
+            }
+            .icon-wrap.icon-wrap--placeholder:hover {
+                transform: scale(0.4);
+                left: -46px;
+                top: -37px;
+                z-index: 1;
+            }
+            .icon-wrap.icon-wrap--placeholder:hover .costum__part {
+                width: 225px;
+                height: 155px;
+            }
+
+            .results-images {
+                background: #ffee99;
+                margin-left: 8px;
+                padding: 2px 5px;
+            }
+            .results-images .images {
+                display: flex;
+                align-items: flex-start;
+            }
+            .results-images .images img {
+                height: 50px;
+                margin-right: 8px;
+            }
+            .diff-time {
+                padding: 2px 5px;
+            }
+            .improvement {
+                color: #1cff00;
+                font-size: 10px;
+            }
+            .rank, .diff-time {
+                font-size: 12px;
+            }
+        </style>
+        {{#with ../danteam.build.danteam}}
+        <div class="page-body">
+            <div class="wrap">
+                <div>
+                    <table class="team-table">
+                        <tr>
+                            <td>#</td>
+                            <td>Times</td>
+                            <td>Team</td>
+                            <td>Ratiotime</td>
+                        </tr>
+                        {{#each teamTimes}}
+                        <tr class="team-head team-head--{{#ifIn name ../teams.colors.red}}red{{else}}blue{{/ifIn}}">
+                            <td class="color">{{math @index "+" 1}}.</td>
+                            <td class="color">
+                                {%{{this.times}}|convertTime%}
+                                {{#if diffTime}}
+                                <span class="diff-time" title="Difference time to team above">(+{%{{diffTime}}|convertTime%})</span>
+                                {{/if}}
+                            </td>
+                            <td class="team-name">
+                                {{name}}
+                            </td>
+                            <td>
+                                {%{{round (math this.times "/" 6)}}|convertTime%}
+                            </td>
+                        </tr>
+                        {{#each (lookup ../teams.teams name)}}
+                        <tr class="member-cell">
+                            <td></td>
+                            <td>
+                                <span class="icon-wrap">
+                                    <i class="paintjob paintjob-{{data.bikeID}}-{{data.paintJobID}}"></i>
+                                </span>
+                                {{#if time}}
+                                    {%{{time}}|convertTime%}
+                                    {{#xif "this.data.faults > 0"}} / {{data.faults}}{{/xif}}
+                                {{else}}X{{/if}}
+                                <span class="rank" title="Rank in this week">({{math (findRank ../../teams.allPlayer up) "+" 1}}.)</span>
+                                {{#xif "this.improvement > 0"}}
+                                    <span class="improvement" title="Improved time since week start">(+{%{{improvement}}|convertTime%})</span>
+                                {{/xif}}
+                            </td>
+                            <td>
+                                <span class="icon-wrap icon-wrap--placeholder">
+                                    <i class="costum__part costum--head costum--{{data.costum.headID}}"></i>
+                                </span>
+                                {{up}}
+                                {{#if rank}}<span class="rank" title="Rank on {{#if isIos}}iOS{{else}}Android{{/if}} leaderboard">({{rank}}.)</span>{{/if}}
+                                {{#if l}}👑{{/if}}
+                                {{#if isIos}}🍎{{/if}}<br />
+                            </td>
+                        </tr>
+                        {{/each}}
+                        {{/each}}
+                    </table>
+                    <div class="team-table--bottom">X = not in top {{teams.maxLimit}} / 🍎 = iOS player / 👑 = teamleader</div>
+                </div>
+                <div class="results-images">
+                    <div>
+                        Week: #{{teams.week.[0].nr}}<br />
+                        Bike: {{teams.week.[0].bike}}<br />
+                        Track: {{teams.week.[0].trackName}}<br />
+                        Last update: {%'{{../lastUpdateTime}}'|humanReadableDate:true%}
+                    </div>
+                    <br />
+                    <div>
+                        Best 3 player:<br />
+                        {{#listItem 0 3 teams.allPlayer}}
+                            {{name}}
+                            {{#if isIos}}🍎{{/if}}
+                            <span>(+{%{{time}}|convertTime%})</span><br />
+                        {{/listItem}}
+                    </div>
+                    {{#each teams.week}}
+                        {{#if results}}
+                        <div>
+                            <br />
+                            Week: #{{nr}}
+                            <div class="images">
+                            {{#if results.overview}}
+                                <a href="{{results.overview}}" target="_blank">
+                                    <img src="{{imgurThumb results.overview}}"/></a>{{/if}}
+                            {{#if results.map}}
+                                <a href="{{results.map}}" target="_blank">
+                                    <img src="{{imgurThumb results.map}}"/></a>{{/if}}
+                            {{#if results.table}}
+                                <a href="{{results.table}}" target="_blank">
+                                    <img src="{{imgurThumb results.table}}"/></a>{{/if}}
+                            {{#if results.fastest}}
+                                <a href="{{results.fastest}}" target="_blank">
+                                    <img src="{{imgurThumb results.fastest}}"/></a>{{/if}}
+                            </div>
+                        </div>
+                        {{/if}}
+                    {{/each}}
+                </div>
+            </div>
+        {{/with}}
+        </div>
+    {{/content}}
+{{/extend}}
