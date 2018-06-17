@@ -24,7 +24,10 @@
     "18": "Sunken Sanctuary",
     "19": "Black Forest",
     "20": "Devil Hopping",
-    "21": "Toxic Garden"
+    "21": "Toxic Garden",
+    "22": "Dark Ice Valley",
+    "23": "Snowman Peaks",
+    "24": "Slippery Ice"
   },
   "paintjobs": {
     "1": {"title": "Neon Paintjob for Tango", "sprite": "tango-neon"},
@@ -73,6 +76,18 @@
     "18": {"title": "The Holiday Scarf Pant", "selector": "holiday-scarf", "part": "pant"},
     "19": {"title": "The Convict Head", "selector": "the-convict", "part": "head"},
     "20": {"title": "The Convict Torso", "selector": "the-convict", "part": "body"},
-    "21": {"title": "The Convict Pant", "selector": "the-convict", "part": "pant"}
+    "21": {"title": "The Convict Pant", "selector": "the-convict", "part": "pant"},
+    "22": {"title": "Redbull Head", "selector": "ktm-red-bull-gear", "part": "head"},
+    "23": {"title": "Redbull Torso", "selector": "ktm-red-bull-gear", "part": "body"},
+    "24": {"title": "Redbull Pant", "selector": "ktm-red-bull-gear", "part": "pant"},
+    "25": {"title": "Wurst Racer Head", "selector": "wurst-racer", "part": "head"},
+    "26": {"title": "Wurst Racer Torso", "selector": "wurst-racer", "part": "body"},
+    "27": {"title": "Wurst Racer Pant", "selector": "wurst-racer", "part": "pant"},
+    "28": {"title": "Neon Blaze Head", "selector": "neon-blaze", "part": "head"},
+    "29": {"title": "Neon Blaze Torso", "selector": "neon-blaze", "part": "body"},
+    "30": {"title": "Neon Blaze Pant", "selector": "neon-blaze", "part": "pant"},
+    "31": {"title": "Neon Freeze Head", "selector": "neon-freeze", "part": "head"},
+    "32": {"title": "Neon Freeze Torso", "selector": "neon-freeze", "part": "body"},
+    "33": {"title": "Neon Freeze Pant", "selector": "neon-freeze", "part": "pant"}
   }
 }

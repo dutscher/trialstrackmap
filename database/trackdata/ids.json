@@ -583,114 +583,115 @@
     "oid": 1124
   },
   // tier 3 / slotmachine
-  //
+  // The Pendulum
   {
     "id": 109,
     "level": 12,
     "oid": 1144
   },
-  //
+  // Troll Lair
   {
     "id": 110,
     "level": 16,
     "oid": 1119
   },
-  //
+  // The Quagmire
   {
     "id": 111,
     "level": 17,
     "oid": 1147
   },
-  //
+  // Trash Tops
   {
     "id": 112,
+    "oid": 1142,
     "level": 18
   },
   // tier 3 / swamp
-  //
+  // Monster Lake
   {
     "id": 113,
     "oid": 1150
   },
-  //
+  // Toad Hole
   {
     "id": 114,
     "oid": 1157
   },
   // tier 1 / the bunker
-  //
+  // Underground Slopes
   {
     "id": 115,
     "chips": 200,
     "oid": 1209
   },
-  //
+  // Abandoned Mine
   {
     "id": 116,
     "chips": 500,
     "oid": 1197
   },
-  //
+  // Unstable Tunnel
   {
     "id": 117,
     "chips": 1000,
     "oid": 1195
   },
-  //
+  // Processing Center
   {
     "id": 118,
     "chips": 1500,
     "oid": 1210
   },
-  //
+  // Cave Crossing
   {
     "id": 119,
     "chips": 2500,
     "oid": 1193
   },
-  //
+  // Forbidden Path
   {
     "id": 120,
     "chips": 5000,
     "oid": 1199
   },
-  //
+  // Delivery Line
   {
     "id": 121,
     "chips": 7500,
     "oid": 1194
   },
-  //
+  // Crystal Kingdom
   {
     "id": 122,
     "chips": 10000,
     "oid": 1196
   },
-  //
+  // Smelting Pots
   {
     "id": 124,
     "chips": 12500,
     "oid": 1208
   },
-  //
+  // Nightmare Grotto
   {
     "id": 125,
     "chips": 15000,
     "oid": 1207
   },
-  //
+  // Explosive Storage
   {
     "id": 126,
     "chips": 17500,
     "oid": 1192
   },
-  //
+  // Minecart Dump
   {
     "id": 127,
     "chips": 20000,
     "oid": 1191
   },
-  //
+  // Wrecked Tracks
   {
     "id": 128,
     "chips": 25000,
@@ -1564,9 +1565,26 @@
     "id": 302,
     "world": 2
   },
-  // Slippery Ice
+  // Wacky Rifts
   {
-    "id": 303,
+    "id": 304,
+    "chips": 56000,
+    "world": 2
+  },
+  // Adagio Flow
+  {
+    "id": 305,
+    "chips": 63000,
+    "world": 2
+  },
+  // Dark Ice Valley
+  {
+    "id": 306,
+    "world": 2
+  },
+  // Snowman Peaks
+  {
+    "id": 307,
     "world": 2
   }
 ]

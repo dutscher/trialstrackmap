@@ -137,6 +137,10 @@
     "32": {
       "class": "love-express",
       "color": "FF0000"
+    },
+    "33": {
+      "class": "midnight-circuit-reward",
+      "color": "93194c"
     }
   }
 }

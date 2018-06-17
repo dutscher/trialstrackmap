@@ -309,7 +309,8 @@
     "29": "BMW Rally 2017",
     "30": "AUS-X Open",
     "31": "Dakar Rally",
-    "32": "Love Express 2018"
+    "32": "Love Express 2018",
+    "33": "Midnight Circuit Reward"
   },
   "tracks": {
     "1": "Parched Cliff",
@@ -609,9 +610,13 @@
     "298": "Cold Shoulder",
     "299": "Perilous Pitfalls",
     "300": "Toxic Garden",
-    "301": "Temple Of Doom",
+    "301": "Temple of Doom",
     "302": "Crescent Night",
-    "303": "Slippery Ice"
+    "303": "Slippery Ice",
+    "304": "Wacky Rifts",
+    "305": "Adagio Flow",
+    "306": "Dark Ice Valley",
+    "307": "Snowman Peaks"
   },
   "unreleased": [
     "Flat",

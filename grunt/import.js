@@ -46,6 +46,7 @@ module.exports = function (grunt) {
         dataGet: consts.cloudPath.replace("${gameVersion}", gameVersion),
         hddPath: hddPath,
         toolPath: toolPath,
+        gameVersion: gameVersion,
         newContentPath: newContentPath,
         i18nPath: newContentPath + "/gen/lang",
         confPath: newContentPath + "/conf",

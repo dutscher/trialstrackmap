@@ -306,7 +306,8 @@
     "29": "BMW Rally 2017",
     "30": "AUS-X Open",
     "31": "Dakar Rally",
-    "32": "Love Express 2018"
+    "32": "Love Express 2018",
+    "33": "Midnight Circuit Reward"
   },
   "tracks": {
     "1": "Scogliera desolata",
@@ -608,7 +609,11 @@
     "300": "Giardini Tossici",
     "301": "Tempio del Destino",
     "302": "Notte Crescente",
-    "303": "Ghiaccio Scivoloso"
+    "303": "Ghiaccio Scivoloso",
+    "304": "Flusso Adagio",
+    "305": "Crepacci Bizzarri",
+    "306": "Valle del Ghiaccio Nero",
+    "307": "Picco dell'Uomo delle Nevi"
   },
   "unreleased": [
     "Carreggiata",

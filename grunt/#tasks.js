@@ -52,7 +52,7 @@ module.exports = (grunt) => {
 
     grunt.registerTask("#checkImport", () => {
         grunt.task.run([
-            "import-00-CheckImport"
+            "import-00-checkImport"
         ]);
     });
 

@@ -45,23 +45,28 @@
             }
             .icon-wrap .paintjob {
                 position: absolute;
-                left: -51px;
-                top: -14px;
                 transform: scale(0.4);
                 transform-origin: top;
-                background-color: #fff;
+                background-color: #ffee99;
                 z-index: 0;
+                left: -20px;
+                top: -15px;
+            }
+            .icon-wrap--paintjob {
+                width: 25px;
             }
             .icon-wrap .paintjob:hover {
                 z-index: 1;
                 transform: scale(1);
-                left: -32px;
-                top: -42px;
+                background-color: #fff;
             }
             .icon-wrap--placeholder {
                 width: 20px;
                 height: 20px;
                 display: inline-block;
+            }
+            .icon-wrap--wrong-bike .paintjob {
+                background-color: #ff0000!important;
             }
             .icon-wrap.icon-wrap--placeholder {
                 transform: scale(0.1);
@@ -80,7 +85,6 @@
                 width: 225px;
                 height: 155px;
             }
-
             .results-images {
                 background: #ffee99;
                 margin-left: 8px;
@@ -101,8 +105,15 @@
                 color: #1cff00;
                 font-size: 10px;
             }
-            .rank, .diff-time {
+            .rank, .diff-time, .unicode {
                 font-size: 12px;
+            }
+            .rank-cell {
+                text-align: right;
+            }
+            .time-week {
+                display: inline-block;
+                width: 75px;
             }
         </style>
         {{#with ../danteam.build.danteam}}
@@ -121,29 +132,33 @@
                             <td class="color">{{math @index "+" 1}}.</td>
                             <td class="color">
                                 {%{{this.times}}|convertTime%}
-                                {{#if diffTime}}
-                                <span class="diff-time" title="Difference time to team above">(+{%{{diffTime}}|convertTime%})</span>
-                                {{/if}}
                             </td>
                             <td class="team-name">
                                 {{name}}
                             </td>
                             <td>
-                                {%{{round (math this.times "/" 6)}}|convertTime%}
+                                {%{{round (math this.times "/" player)}}|convertTime%}
                             </td>
                         </tr>
                         {{#each (lookup ../teams.teams name)}}
                         <tr class="member-cell">
-                            <td></td>
-                            <td>
-                                <span class="icon-wrap">
-                                    <i class="paintjob paintjob-{{data.bikeID}}-{{data.paintJobID}}"></i>
+                            <td class="rank-cell">
+                                <span class="rank" title="Rank in this week">
+                                    {{math (findRank ../../teams.allPlayer up) "+" 1}}.
                                 </span>
+                            </td>
+                            <td>
+                                <span class="time-week">
                                 {{#if time}}
                                     {%{{time}}|convertTime%}
                                     {{#xif "this.data.faults > 0"}} / {{data.faults}}{{/xif}}
-                                {{else}}X{{/if}}
-                                <span class="rank" title="Rank in this week">({{math (findRank ../../teams.allPlayer up) "+" 1}}.)</span>
+                                {{else}}
+                                    0:00.000
+                                {{/if}}
+                                </span>
+                                <span class="icon-wrap icon-wrap--paintjob{{#xif "!this.drivenBike"}} icon-wrap--wrong-bike{{/xif}}">
+                                    <i class="paintjob paintjob-{{data.bikeID}}-{{data.paintJobID}}"></i>
+                                </span>
                                 {{#xif "this.improvement > 0"}}
                                     <span class="improvement" title="Improved time since week start">(+{%{{improvement}}|convertTime%})</span>
                                 {{/xif}}
@@ -154,14 +169,14 @@
                                 </span>
                                 {{up}}
                                 {{#if rank}}<span class="rank" title="Rank on {{#if isIos}}iOS{{else}}Android{{/if}} leaderboard">({{rank}}.)</span>{{/if}}
-                                {{#if l}}👑{{/if}}
-                                {{#if isIos}}🍎{{/if}}<br />
+                                {{#if l}}<span class="unicode">👑</span>{{/if}}
+                                {{#if isIos}}<span class="unicode">🍎</span>{{/if}}<br />
                             </td>
                         </tr>
                         {{/each}}
                         {{/each}}
                     </table>
-                    <div class="team-table--bottom">X = not in top {{teams.maxLimit}} / 🍎 = iOS player / 👑 = teamleader</div>
+                    <div class="team-table--bottom">0:00.000 = not in top {{teams.maxLimit}} / <span class="unicode">🍎</span> = iOS player / <span class="unicode">👑</span> = teamleader</div>
                 </div>
                 <div class="results-images">
                     <div>
@@ -175,7 +190,7 @@
                         Best 3 player:<br />
                         {{#listItem 0 3 teams.allPlayer}}
                             {{name}}
-                            {{#if isIos}}🍎{{/if}}
+                            {{#if isIos}}<span class="unicode">🍎</span>{{/if}}
                             <span>(+{%{{time}}|convertTime%})</span><br />
                         {{/listItem}}
                     </div>

@@ -306,7 +306,8 @@
     "29": "BMW Rally 2017",
     "30": "AUS-X Open",
     "31": "Dakar Rally",
-    "32": "Love Express 2018"
+    "32": "Love Express 2018",
+    "33": "Midnight Circuit Reward"
   },
   "tracks": {
     "1": "Falaise desséchée",
@@ -608,7 +609,11 @@
     "300": "Jardin toxique",
     "301": "Temple du Destin",
     "302": "Nuit du croissant",
-    "303": "Verglas"
+    "303": "Verglas",
+    "304": "Flot de l'adagio",
+    "305": "Rifts de la folie",
+    "306": "Vallée des sombres glaces",
+    "307": "Pics du bonhomme de neige"
   },
   "unreleased": [
     "Espoir abandonné",

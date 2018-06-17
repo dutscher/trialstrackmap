@@ -262,11 +262,24 @@ console.log(JSON.stringify(settings.teams, null, 2))
 module.exports = {
     "week": [
         {
+            "nr": 4,
+            "bike": "Marauder",
+            "bikeId": 6,
+            "trackName": "Crystal Kingdom",
+            "trackId": 1196
+        },
+        {
             "nr": 3,
             "bike": "Berserker",
             "bikeId": 8,
             "trackName": "Scorched Battlement",
-            "trackId": 1103
+            "trackId": 1103,
+            "results": {
+                "map": "https://i.imgur.com/h57wxjn.jpg",
+                "table": "https://i.imgur.com/5qmmIVQ.jpg",
+                "overview": "https://i.imgur.com/GVCwBC3.jpg",
+                "fastest": "https://i.imgur.com/o8C7lGF.png"
+            }
         },
         {
             "nr": 2,
@@ -308,6 +321,10 @@ module.exports = {
             "rage-against-the-dark-machine",
             "notorious-tfg"
         ]
+    },
+    "platform": {
+        "ios": 1,
+        "android": 2
     },
     "teams": {
         "vanilla-ice-blockade": [
@@ -503,6 +520,10 @@ module.exports = {
             {
                 "up": "US-Novastar-TTT",
                 "id": "1859a565-7052-4c6e-9286-277d149e9e67-1"
+            },
+            {
+                "up": "Akrasiia",
+                "id": "6f4f5170-8e20-4ef1-8a93-2c424619a1e6-2"
             }
         ],
         "notorious-tfg": [
@@ -526,7 +547,7 @@ module.exports = {
             {
                 "up": "PH-kiandavila",
                 "id": "adc2f82a-1977-453e-ac43-ad93e2d0ec57-2",
-                "Xid": "adc2f82a-1977-453e-ac43-ad93e2d0ec57-1"
+                "xid": "adc2f82a-1977-453e-ac43-ad93e2d0ec57-1"
             },
             {
                 "up": "DarthKavera-TBR",

@@ -306,7 +306,8 @@
     "29": "BMW Rally 2017",
     "30": "AUS-X Open",
     "31": "Dakar Rally",
-    "32": "Love Express 2018"
+    "32": "Love Express 2018",
+    "33": "Midnight Circuit Reward"
   },
   "tracks": {
     "1": "Risco reseco",
@@ -608,7 +609,11 @@
     "300": "Jardín tóxico",
     "301": "Templo maldito",
     "302": "Noche de media luna",
-    "303": "Hielo resbaladizo"
+    "303": "Hielo resbaladizo",
+    "304": "Corriente adagio",
+    "305": "Fisuras alocadas ",
+    "306": "Valle del hielo oscuro",
+    "307": "Picos del muñeco de nieve"
   },
   "unreleased": [
     "Calzada",

@@ -8,6 +8,7 @@ module.exports = function (shared, done) {
         settings = require("./11.danTeam.settings"),
         trackId = settings.week[0].trackId,
         bikeId = settings.week[0].bikeId;
+    console.log(`# trackId:${trackId} bikeId:${bikeId}`);
     // set best player
     settings.allPlayer = [];
     settings.maxLimit = maxLimit;
@@ -40,10 +41,20 @@ module.exports = function (shared, done) {
                     res.on("data", function (chunk) {
                         body += chunk;
                     }).on("end", function () {
-                        resolve({
-                            results: JSON.parse(body).results,
-                            device: device
-                        });
+                        try {
+                            resolve({
+                                results: JSON.parse(body).results,
+                                device: device
+                            });
+                        } catch (e) {
+                            console.error(e, options, body);
+                            readFromServer(offset, readiOS).then(function (data) {
+                                resolve({
+                                    results: data.results,
+                                    device: device
+                                });
+                            });
+                        }
                     });
                 });
 
@@ -92,6 +103,11 @@ module.exports = function (shared, done) {
                 // read previous data request
                 if (shared.fs.existsSync(pathArchive + startFile)) {
                     resultsStart = require("../../" + pathArchive + startFile);
+                // write first file
+                } else {
+                    shared.fs.writeFileSync(pathArchive + startFile,
+                        JSON.stringify(data.results, null, 2));
+                    resultsStart = data.results;
                 }
 
                 evaluateResults(data.results, resultsStart, isIos);
@@ -108,7 +124,11 @@ module.exports = function (shared, done) {
                 found = settings.teams[team].find(function (player) {
                     return ("player" in score)
                         && shared._.startsWith(player.id, score.player)
-                        && !("time" in player);
+                        && (
+                            (isIos && shared._.endsWith(player.id, "-1")) // ios
+                            ||
+                            (!isIos) // android
+                        );
                 });
                 return found;
             }) !== undefined;
@@ -164,7 +184,7 @@ module.exports = function (shared, done) {
             // submitTime1: (submittime >>> 12),
             // submitTime3: (submittime >>> 4),
             // upgrade5: (upgrades >>> 6)
-        }
+        };
     }
 
     function printResults() {
@@ -180,30 +200,24 @@ module.exports = function (shared, done) {
             settings.teams[team] = shared._.sortBy(settings.teams[team], ["time"]);
             // fill times in team
             settings.teams[team].map(function (p) {
-                var hasTime = ("time" in p);
-                var driveBike = ("bike" in p && p.bike);
+                var hasTime = ("time" in p),
+                    driveBike = ("bike" in p && p.bike);
                 if (hasTime) {
                     timesInt += p.time;
                     player++;
                 }
             });
 
-            teamTimes.push({name: team, times: timesInt, player: player});
+            teamTimes.push({name: team, times: timesInt, player: player, ratio: timesInt / player});
         });
         // sort all player
         settings.allPlayer = shared._.sortBy(allPlayer, ["time"]).map(function (player) {
             return {time: player.time, name: player.up, isIos: player.isIos};
         });
         // order teams
-        var timesWith6 = teamTimes.filter(function (team) {
-                return team.player === 6;
-            }),
-            timesWithout6 = teamTimes.filter(function (team) {
-                return team.player !== 6;
-            }),
-            prevTeam = null;
+        let prevTeam = null;
         // order teams and add difftime to prev
-        teamTimes = shared._.sortBy(timesWith6, ["times"])
+        teamTimes = shared._.sortBy(teamTimes, ["ratio"])
             .map(function (team) {
                 if (prevTeam !== null) {
                     team.diffTime = team.times - prevTeam.times;
@@ -212,11 +226,7 @@ module.exports = function (shared, done) {
                 }
                 prevTeam = team;
                 return team;
-            })
-            .concat(
-                shared._.sortBy(timesWithout6, ["player", "times"])
-                    .reverse()
-            );
+            });
         console.log("team times wrote to: " + pathRequest);
         //console.log(JSON.stringify(times, null, 2));
         shared.fs.writeFileSync(pathRequest + "teams.json", JSON.stringify(settings, null, 2));
@@ -225,6 +235,7 @@ module.exports = function (shared, done) {
     }
 
     shared.getUbisoftTicket(function () {
+        // TODO: check server with one request
         var promises = [];
         // start android
         promises.push(writeResultsDown());

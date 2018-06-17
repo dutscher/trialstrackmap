@@ -10,23 +10,18 @@ database/media/bikes.json
 build/import/game/590/pvp_match_rewards.json5
 
 right rewards file in:
-https://s3.amazonaws.com/dlcontent_frontier_android/590/TrialsContentDL.dat
+https://s3.amazonaws.com/dlcontent_frontier_android/!!!GAMEVERSION!!!/TrialsContentDL.dat
 
 https://lb-rdv-http.ubi.com/TRIAG_AN_LNCH_A/public/pvp_matches/v1/pvp_config
-https://lb-rdv-http.ubi.com/TRIAG_AN_LNCH_A/public/pvp_matches/v1/season/47?lang=%25s
+https://lb-rdv-http.ubi.com/TRIAG_AN_LNCH_A/public/pvp_matches/v1/season/47?lang=en
+https://lb-rdv-http.ubi.com/TRIAG_IP_BETA_B/public/pvp_matches/v1/season/%1
 https://lb-rdv-http.ubi.com/TRIAG_AN_LNCH_A/public/pvp_matches/v1/matches
 
-
-Authorization: Ubi_v1 t=%ticket%
-
-%ticket%=ew0KICAidmVyIjogIjEiLA0KICAiYWlkIjogIjZhZDE2YWJlLThmMzItNDA2Yi05OTFiLTQ1MGZlYmU5NTgyMyIsDQogICJlbnYiOiAiUHJvZCIsDQogICJzaWQiOiAiN2NkZDk5NjYtNGQ0MS00YTlhLWE4YTMtY2M1Y2E4MzU4ZjIwIiwNCiAgInR5cCI6ICJKV0UiLA0KICAiZW5jIjogIkExMjhDQkMiLA0KICAiaXYiOiAiMmpoX1FkRmxMQkdteVVIM0ZialVtdyIsDQogICJpbnQiOiAiSFMyNTYiDQp9.IGpM73WVCTMf3kTTEEgX8FYp6tEApwN5b-IYxOYA6RCPsF1MbGVPl3y-R4alLWwmUuoK0Usq4c8TqtR0wPMOUSiPP5scUUN7I4zVbu0khIgth-Ed-lmv22DaowYAWOTykxCrvMGe9-OzaQW4cgGc-lL5wcgdJydhpc0cAUk5FjhOB5o9dUdg1kZTRdCyJ5VclcGszRcFCjJECazg7jh3CXQqHCGmanatMd-_kuF7sD86OIqEAOhHnL8WLBjTc9NpX8MehHxE8zI-wzd8DWkfJNLTonRcqUthd0ZhhakXc2_23bBKfuoBirfYqRSrZOeguE69XqAzRmbv8S30Y04M4Q8F58rZKrbb8cwMx-qkEI-RAzjOUV7wjtjnegQ89usxYjhkj1ra1y0KaK82kuO7gX66nDEfwZpeFsPq5r_RRZGwDQryBjNZ9pzfZ1P0PK9PNv9VKDNRNmlYR1AYcq-X9-EZNKlq-7kIyINKwY1qHEEZ-YIK-lGBynzPFA6TAvN7cSer45NdfN9AZZi2kGiCfatMb-hu8IWjnS-d1QTz-Hc0isycPZ2cl4Gr2PFR4x1bflPhIIBB5jySbEUxd7VcH1ualhaa7N7clsrQfldyD0FYmwt2tX4subHRHazMPK5L5x0Yr2dJyPbvJGkRo6H2lq4JRwakdp_wjnQRhkSQlxolnOPv4RXXtxt6exArnINyeV9dfrzxTU40RTa32gbdPdEnWBTUut0PLPucRqsKAQaejREDkdpMY5hNUMYk24lMZQWed40BRLgmHWt_8DuZVxExiOQhgp_YG42NI9hhs3lBtBCbQUKmlE44Z7-zVIMUQGkboV1X-dGANoEbjgE8p4QW9zY0CK5RSQUiJGIjjtSkFE3FWKXCvNYo5PvoCw2sg0dCnuiUboZaQPgg2LIh3p3B3cqz9YWnSMcF6L69teyqHfnt_Y9Lpzyqf153TcELms8tPi7TPpxp22ZbClB1r7-gEGpaH7WfENxJQtKYzR3tR59nvRhnS5YtvQQPLFQSf5XbQE_SkuEHKji27EWmeL_x3Wi5CNfDiQcdz-hSmUmQ25xTpkliuVZsCDSpnOC3AaG6A65I8Hpn1B0dVRzGvfnKYIHtupcuzncPOWSizi3KabyNSbOKMkcCrg2fQ21JcUdqRuCc-q8juBnUAfLImPmrw5dZsbBHIZEAWdtk3XjeyacFcfIBgAK0BWK0Xz_S5IhIyNI2yXIq4Byh8XEnCG6-WUjKdzbPZiQZiaOhh4b6gT13qilc9yrOJCgKrufl7WQDBRgxo2jczOPJ6XEBOGbNbQOE467hUDYAy-MBHs647t3FhqTfhMxGNMyfc7qSaLgrXRxAqcp6z5-r2dwh3y3ns_zNg0b5do0JsBaOYZqeUmeqW4EKxupFuOOWRfYqNKWJAEPGtg_Ua2YJndt_lq-iI1qx75vWQbHU-43hryI.ffcPfembBCWdTXE2P3IvJy0FBvPz-k4RIPOV81oql_M
-
-Ubi-AppId: 1c91448e-c62e-45ec-b97b-898dc967f2c1
-
 */
-module.exports = function (shared) {
-    console.log("# START SEASON IMPORT");
-    var importDir = "build/import/seasons/",
+module.exports = function (shared, done) {
+    const importSeasonID = 49,
+        useBetaServer = false,
+        importDir = "build/import/seasons/",
         databaseDir = "database/events/seasons",
         year = new Date().getFullYear(),
         rewardsFile = shared.workingFilesOfGame.filter(function (file) {
@@ -34,10 +29,12 @@ module.exports = function (shared) {
         })[0],
         rewardsJSON = require("../../" + rewardsFile + shared.toExt),
         prizesJSON = require("../../database/events/seasons/prizes.json");
+    console.log("# START SEASON IMPORT gameVersion:", shared.gameVersion, "importSeasonID:", importSeasonID);
 
     function findPrize(type, value) {
         var returnData,
             foundPrize;
+        //console.log("findPrize", arguments)
         switch (type) {
             case "track":
                 foundPrize = Object.keys(prizesJSON.tracks).filter(function (id) {
@@ -91,7 +88,7 @@ module.exports = function (shared) {
             if (matches && matches.length > 1) {
                 returnData = {
                     extra_type: "track",
-                    extra: findPrize("track", matches[1])
+                    extra: findPrize("track", matches[1], foundReward[0].Comment)
                 };
             }
             // paintjob
@@ -99,14 +96,29 @@ module.exports = function (shared) {
             if (matches && matches.length > 2) {
                 returnData = {
                     extra_type: "paintjob",
-                    extra: findPrize("paintjob", matches[1])
+                    extra: findPrize("paintjob", matches[1], foundReward[0].Comment)
+                };
+            }
+            matches = /(.*) (.*) Paintjob$.*/g.exec(foundReward[0].Comment);
+            if (matches && matches.length > 2) {
+                returnData = {
+                    extra_type: "paintjob",
+                    extra: findPrize("paintjob", matches[2], foundReward[0].Comment)
                 };
             }
             // costum
             if (shared._.startsWith(foundReward[0].NameId, "OUTFIT")) {
                 returnData = {
                     extra_type: "costum",
-                    extra: findPrize("costum", foundReward[0].Comment)
+                    extra: findPrize("costum", foundReward[0].Comment
+                        .replace(/\./g, "")
+                        .replace("Leg", "Pant")
+                        .replace("Top", "Head")
+                        .replace("Middle", "Torso")
+                        .replace("middle", "Torso")
+                        .replace("Bottom", "Pant")
+                        .replace("bottom", "Pant")
+                        , foundReward[0].Comment)
                 };
             }
         }
@@ -121,6 +133,7 @@ module.exports = function (shared) {
                     222, // agent blueprint
                     260, // stallion
                     279, // ktm blueprint
+                    299, // ktm blueprint
                     285, // bandito blueprint
                 ];
             if (specialID >= 20000) {
@@ -141,71 +154,110 @@ module.exports = function (shared) {
         return data;
     }
 
-    var dirData = shared.fs.readdirSync(importDir);
-    // loop import files
-    for (var i in dirData) {
-        var file = dirData[i],
-            json = require("../../" + importDir + file),
-            settings = json.pvp_season_settings,
-            rewards = json.pvp_season_rewards,
-            match = json.pvp_match_settings,
-            id = settings.season_index,
-            title = shared._.capitalize(shared._.trim(settings.season_title
-                .toLowerCase().replace("season", ""))),
-            titleShort = shared._.trim(settings.season_title
-                .toLowerCase().replace("season", "")),
-            date = new Date(settings.season_start * 1000),
-            dateEnd = new Date(settings.season_end * 1000),
-            fileJson = id + "." + titleShort + ".json",
-            pathToFile = databaseDir + "/" + year + "/" + fileJson,
-            jsonData = {
-                header: {
-                    src: ""
-                },
-                title: title,
-                date: shared.pad(date.getDate()) + "." + shared.pad(date.getMonth() + 1) + "." + date.getFullYear(),
-                date_end: shared.pad(dateEnd.getDate()) + "." + shared.pad(dateEnd.getMonth() + 1) + "." + dateEnd.getFullYear(),
-                duration: match.ranked_match_duration_hours + "h",
-                free_showdowns: match.free_tickets_max,
-                ticket_regain: match.free_tickets_interval_minutes + "m",
-                stats: "http://trials.bonxy.net/the-bunker/",
-                total_legends: 0,
-                prizes: []
-            };
-        // going through rewards
-        rewards.forEach(function (rank) {
-            var coins = rank.rewards.filter(function (reward) {
-                    return reward.item_id === 1;
-                }),
-                gems = rank.rewards.filter(function (reward) {
-                    return reward.item_id === 2;
-                }),
-                special = rank.rewards.filter(function (reward) {
-                    return reward.item_id === 145;
-                }),
-                data = {
-                    level: rank.rank,
-                    coins: coins[0].amount,
-                    gems: gems[0] ? gems[0].amount : 0
+    function readSeasonFiles() {
+        var dirData = shared.fs.readdirSync(importDir);
+        // loop import files
+        for (var i in dirData) {
+            var file = dirData[i],
+                json = require("../../" + importDir + file),
+                settings = json.pvp_season_settings,
+                rewards = json.pvp_season_rewards,
+                match = json.pvp_match_settings,
+                id = settings.season_index,
+                title = shared._.capitalize(shared._.trim(settings.season_title
+                    .toLowerCase().replace("season", ""))),
+                titleShort = shared._.trim(settings.season_title
+                    .toLowerCase().replace("season", "")).replace(/ /g, "-"),
+                date = new Date(settings.season_start * 1000),
+                dateEnd = new Date(settings.season_end * 1000),
+                fileJson = id + "." + titleShort + ".json",
+                pathToFile = databaseDir + "/" + year + "/" + fileJson,
+                jsonData = {
+                    header: {
+                        src: ""
+                    },
+                    title: title,
+                    date: shared.pad(date.getDate()) + "." + shared.pad(date.getMonth() + 1) + "." + date.getFullYear(),
+                    date_end: shared.pad(dateEnd.getDate()) + "." + shared.pad(dateEnd.getMonth() + 1) + "." + dateEnd.getFullYear(),
+                    duration: match.ranked_match_duration_hours + "h",
+                    free_showdowns: match.free_tickets_max,
+                    ticket_regain: match.free_tickets_interval_minutes + "m",
+                    stats: "http://trials.bonxy.net/the-bunker/",
+                    total_legends: 0,
+                    prizes: []
                 };
-            // handle all the other prizes
-            data = handleSpecial(data, special[0]);
-            // remove gems if empty
-            if (data.gems === 0) {
-                delete data.gems;
+            // going through rewards
+            rewards.forEach(function (rank) {
+                var coins = rank.rewards.filter(function (reward) {
+                        return reward.item_id === 1;
+                    }),
+                    gems = rank.rewards.filter(function (reward) {
+                        return reward.item_id === 2;
+                    }),
+                    special = rank.rewards.filter(function (reward) {
+                        return reward.item_id === 145;
+                    }),
+                    data = {
+                        level: rank.rank,
+                        coins: coins[0].amount,
+                        gems: gems[0] ? gems[0].amount : 0
+                    };
+                // handle all the other prizes
+                data = handleSpecial(data, special[0]);
+                // remove gems if empty
+                if (data.gems === 0) {
+                    delete data.gems;
+                }
+                if (data.extra === "") {
+                    delete data.extra;
+                }
+                // push all
+                jsonData.prizes.push(data);
+            });
+
+            //console.log(fileJson);
+            //console.log(jsonData);
+            shared.ensureDirectoryExistence(pathToFile);
+            if (!shared.fs.existsSync(pathToFile)) {
+                shared.fs.writeFileSync(pathToFile, JSON.stringify(jsonData, null, 2));
+                console.log("* " + pathToFile + " created");
+            } else {
+                console.log("* " + pathToFile + " already exists");
+                shared.fs.writeFileSync(pathToFile + ".compare", JSON.stringify(jsonData, null, 2));
             }
-            if (data.extra === "") {
-                delete data.extra;
-            }
-            // push all
-            jsonData.prizes.push(data);
+        }
+        console.log("# FINISHED");
+    }
+
+    function readSeasonsFromServer(callback) {
+        var options = shared.getRequestOpts(
+            // "/TRIAG_AN_LNCH_A/public/pvp_matches/v1/pvp_config",
+            "/TRIAG_"
+            + (useBetaServer ? "AN_LNCH_A" : "IP_BETA_B")
+            + "/public/pvp_matches/v1/season/" + importSeasonID + "?lang=en"
+        );
+
+        var req = shared.https.request(options, function (res) {
+            res.on("data", function (json) {
+                var json = JSON.parse(json);
+                shared.ensureDirectoryExistence(importDir);
+                shared.fs.writeFileSync(importDir + importSeasonID + ".json", JSON.stringify(json, null, 2));
+                callback();
+            });
         });
 
-        //console.log(fileJson);
-        //console.log(jsonData);
-        shared.ensureDirectoryExistence(pathToFile);
-        shared.fs.writeFileSync(pathToFile, JSON.stringify(jsonData, null, 2));
-        console.log("* " + pathToFile + " created");
+        req.on("error", function (e) {
+            console.error(e);
+            done();
+        });
+
+        req.end();
     }
-    console.log("# FINISHED");
+
+    shared.getUbisoftTicket(function () {
+        readSeasonsFromServer(function () {
+            readSeasonFiles();
+            done();
+        });
+    });
 };

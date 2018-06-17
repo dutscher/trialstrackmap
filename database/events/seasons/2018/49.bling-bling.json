@@ -1,22 +1,22 @@
 {
   "header": {
-    "src": "#1/jMLUFRL.jpg"
+    "src": "#1/Xuc9Q5N.jpg"
   },
-  "title": "X Games Norway",
-  "date": "16.05.2018",
-  "date_end": "15.06.2018",
-  "duration": "5h",
+  "title": "Bling Bling",
+  "date": "16.06.2018",
+  "date_end": "17.07.2018",
+  "duration": "4h",
   "free_showdowns": 3,
   "ticket_regain": "45m",
-  "stats": "http://trials.bonxy.net/the-bunker/X+Games+Norway+Season",
-  "total_legends": 212,
+  "stats": "http://trials.bonxy.net/the-bunker/",
+  "total_legends": 0,
   "prizes": [
     {
       "level": 1,
-      "coins": 5000,
+      "coins": 6000,
       "gems": 5,
       "extra_type": "track",
-      "extra": 22
+      "extra": 24
     },
     {
       "level": 2,
@@ -27,19 +27,20 @@
       "level": 3,
       "coins": 5000,
       "gems": 5,
-      "extra_type": "doughnut"
+      "extra_type": "costum",
+      "extra": 10
     },
     {
       "level": 4,
-      "coins": 2000,
-      "gems": 5
+      "coins": 3000,
+      "gems": 5,
+      "extra_type": "doughnut"
     },
     {
       "level": 5,
       "coins": 2000,
       "gems": 5,
-      "extra_type": "track",
-      "extra": 23
+      "extra_type": "doughnut"
     },
     {
       "level": 6,
@@ -51,56 +52,60 @@
       "level": 7,
       "coins": 2000,
       "gems": 4,
-      "extra_type": "costum",
-      "extra": 24
+      "extra_type": "part",
+      "extra": "spring-5"
     },
     {
       "level": 8,
       "coins": 2000,
-      "gems": 4
-    },
-    {
-      "level": 9,
-      "coins": 1500,
       "gems": 4,
       "extra_type": "doughnut"
     },
     {
+      "level": 9,
+      "coins": 1800,
+      "gems": 4,
+      "extra_type": "costum",
+      "extra": 11
+    },
+    {
       "level": 10,
-      "coins": 1500,
-      "gems": 3
+      "coins": 1800,
+      "gems": 3,
+      "extra_type": "part",
+      "extra": "spring-4"
     },
     {
       "level": 11,
-      "coins": 1500,
-      "gems": 3,
-      "extra_type": "doughnut"
+      "coins": 1800,
+      "gems": 3
     },
     {
       "level": 12,
-      "coins": 1500,
+      "coins": 1800,
       "gems": 3,
-      "extra_type": "doughnut"
+      "extra_type": "part",
+      "extra": "sheet-3"
     },
     {
       "level": 13,
-      "coins": 1500,
+      "coins": 1800,
       "gems": 3,
-      "extra_type": "costum",
-      "extra": 26
+      "extra_type": "part",
+      "extra": "nut-3"
     },
     {
       "level": 14,
       "coins": 1500,
       "gems": 3,
-      "extra_type": "doughnut"
+      "extra_type": "costum",
+      "extra": 12
     },
     {
       "level": 15,
       "coins": 1500,
       "gems": 3,
-      "extra_type": "costum",
-      "extra": 28
+      "extra_type": "doughnut"
     },
     {
       "level": 16,
@@ -116,52 +121,52 @@
     },
     {
       "level": 18,
-      "coins": 1000,
+      "coins": 1200,
       "gems": 2,
-      "extra_type": "costum",
-      "extra": 29
+      "extra_type": "part",
+      "extra": "bolt-2"
     },
     {
       "level": 19,
-      "coins": 1000,
+      "coins": 1200,
       "gems": 2,
-      "extra_type": "doughnut"
+      "extra_type": "paintjob",
+      "extra": 17
     },
     {
       "level": 20,
       "coins": 1000,
       "gems": 2,
-      "extra_type": "costum",
-      "extra": 30
+      "extra_type": "doughnut"
     },
     {
       "level": 21,
-      "coins": 800,
-      "gems": 1
+      "coins": 1000,
+      "gems": 1,
+      "extra_type": "unlimited-fuel"
     },
     {
       "level": 22,
-      "coins": 800,
+      "coins": 1000,
       "gems": 1,
       "extra_type": "doughnut"
     },
     {
       "level": 23,
-      "coins": 800,
+      "coins": 900,
       "gems": 1,
-      "extra_type": "costum",
-      "extra": 32
+      "extra_type": "part",
+      "extra": "chain-1"
     },
     {
       "level": 24,
-      "coins": 800,
+      "coins": 900,
       "gems": 1,
-      "extra_type": "doughnut"
+      "extra_type": "unlimited-fuel"
     },
     {
       "level": 25,
-      "coins": 800,
-      "extra_type": "doughnut"
+      "coins": 800
     }
   ]
 }

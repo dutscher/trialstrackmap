@@ -306,7 +306,8 @@
     "29": "BMW Rally 2017",
     "30": "AUS-X Open",
     "31": "Dakar Rally",
-    "32": "Love Express 2018"
+    "32": "Love Express 2018",
+    "33": "Midnight Circuit Reward"
   },
   "tracks": {
     "1": "Dürre Klippe",
@@ -608,7 +609,11 @@
     "300": "Giftiger Garten",
     "301": "Tempel des Verhängnisses",
     "302": "Halbmondnacht",
-    "303": "Rutschiges Eis"
+    "303": "Rutschiges Eis",
+    "304": "Adagio-Fluss",
+    "305": "Verrückte Risse",
+    "306": "Tal des dunklen Eises",
+    "307": "Schneemanngipfel"
   },
   "unreleased": [
     "Die Hoffnung gibt auf",
