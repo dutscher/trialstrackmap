@@ -1586,5 +1586,10 @@
   {
     "id": 307,
     "world": 2
+  },
+  // Slippery Ice
+  {
+    "id": 308,
+    "world": 2
   }
 ]
