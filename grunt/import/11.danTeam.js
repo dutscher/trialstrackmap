@@ -16,6 +16,7 @@ module.exports = function (shared, done) {
     teams = Object.keys(settings.teams);
 
     shared.ensureDirectoryExistence(pathRequest + "json.json");
+    shared.ensureDirectoryExistence(pathArchive + "json.json");
 
     function handleDevice(isIos) {
         return isIos ? "IOS" : "ANDROID";

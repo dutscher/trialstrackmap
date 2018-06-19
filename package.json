@@ -38,7 +38,7 @@
   },
   "engine": "node 8.9.1",
   "scripts": {
-    "install": "npm install",
+    "npmInstall": "npm install",
     "grunt": "node ./node_modules/grunt/bin/grunt",
     "serve": "node ./node_modules/grunt/bin/grunt #startServer",
     "import": "node ./node_modules/grunt/bin/grunt #startImport",

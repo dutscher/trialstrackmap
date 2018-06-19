@@ -12,7 +12,8 @@ module.exports = function (grunt) {
             paths: ["css/mixins"],
             plugins: [
                 require("less-plugin-glob")
-            ]
+            ],
+            javascriptEnabled: true
         },
         dist: {
             files: {
