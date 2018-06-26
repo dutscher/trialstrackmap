@@ -131,13 +131,13 @@
                         <tr class="team-head team-head--{{#ifIn name ../teams.colors.red}}red{{else}}blue{{/ifIn}}">
                             <td class="color">{{math @index "+" 1}}.</td>
                             <td class="color">
-                                {%{{this.times}}|convertTime%}
+                                {%'{{this.times}}'|convertTime%}
                             </td>
                             <td class="team-name">
                                 {{name}}
                             </td>
                             <td>
-                                {%{{round (math this.times "/" player)}}|convertTime%}
+                                {%'{{round (math this.times "/" player)}}'|convertTime%}
                             </td>
                         </tr>
                         {{#each (lookup ../teams.teams name)}}
@@ -150,7 +150,7 @@
                             <td>
                                 <span class="time-week">
                                 {{#if time}}
-                                    {%{{time}}|convertTime%}
+                                    {%'{{time}}'|convertTime%}
                                     {{#xif "this.data.faults > 0"}} / {{data.faults}}{{/xif}}
                                 {{else}}
                                     0:00.000
@@ -160,7 +160,7 @@
                                     <i class="paintjob paintjob-{{data.bikeID}}-{{data.paintJobID}}"></i>
                                 </span>
                                 {{#xif "this.improvement > 0"}}
-                                    <span class="improvement" title="Improved time since week start">(+{%{{improvement}}|convertTime%})</span>
+                                    <span class="improvement" title="Improved time since week start">(+{%'{{improvement}}'|convertTime%})</span>
                                 {{/xif}}
                             </td>
                             <td>
@@ -180,7 +180,7 @@
                 </div>
                 <div class="results-images">
                     <div>
-                        Week: #{{teams.week.[0].nr}}<br />
+                        Week: #{{teams.week.[0].id}}<br />
                         Bike: {{teams.week.[0].bike}}<br />
                         Track: {{teams.week.[0].trackName}}<br />
                         Last update: {%'{{../lastUpdateTime}}'|humanReadableDate:true%}
@@ -191,14 +191,14 @@
                         {{#listItem 0 3 teams.allPlayer}}
                             {{name}}
                             {{#if isIos}}<span class="unicode">🍎</span>{{/if}}
-                            <span>(+{%{{time}}|convertTime%})</span><br />
+                            <span>(+{%'{{time}}'|convertTime%})</span><br />
                         {{/listItem}}
                     </div>
                     {{#each teams.week}}
                         {{#if results}}
                         <div>
                             <br />
-                            Week: #{{nr}}
+                            Week: #{{id}}
                             <div class="images">
                             {{#if results.overview}}
                                 <a href="{{results.overview}}" target="_blank">

@@ -3,273 +3,33 @@ https://lb-rdv-http.ubi.com/TRIAG_AN_LNCH_A/public/playerstats/v1/ranking/track1
 https://lb-rdv-http.ubi.com/TRIAG_IP_LNCH_A/public/playerstats/v1/ranking/track1155?range=1,100
 https://public-ubiservices.ubi.com/v1/profiles?profileId=%s
 
-http://trials.bonxy.net/tracks/Firefly+Landing&platform=android&show=500&cheater=
-http://trials.bonxy.net/tracks/Firefly+Landing&platform=ios&show=500&cheater=
-
-////////
-var trackId = 1155,
-        settings = {
-            "bike": "KTM 450 Rally",
-            teams: {
-  "vanilla-ice-blockade": [
-    {
-      "up": "Ghisone_T3F",
-      "rl": "Ghislain",
-      "id": "170af281-cf4e-426a-b16c-223a4757d326-2"
-    },
-    {
-      "up": "RedDevil-TFG",
-      "l": true,
-      "rl": "Gaurav",
-      "id": "1e360316-ccd0-4832-bb24-04a7f522b8a4-2"
-    },
-    {
-      "up": "dutscher-DE",
-      "rl": "Dutscher",
-      "id": "c58587cb-75c5-4a13-a359-1a6b01a116d0-2"
-    },
-    {
-      "up": "Davy-Jones-T3F",
-      "rl": "Nicolas",
-      "id": "c08e4e7f-25e5-42ef-8671-1b7859deca7b-2"
-    },
-    {
-      "up": "IND-HARMAN-TFG",
-      "rl": "Harman",
-      "id": "22b4274a-b04b-41e9-b80c-97d9a439938d-1"
-    },
-    {
-      "up": "Sl1mboy84_T3F",
-      "rl": "Guillaume",
-      "id": "ea50c2c5-bd3a-41e6-9d81-d7cd7572e29e-2"
-    }
-  ],
-  "cypress-hill-climb": [
-    {
-      "up": "BertnDanno-TFG",
-      "l": true,
-      "id": ""
-    },
-    {
-      "up": "Nesox_",
-      "id": "7fd96af2-ecff-4b4b-a359-9b0f24d93741-1"
-    },
-    {
-      "up": "Nasferatu-tfg",
-      "id": ""
-    },
-    {
-      "up": "Dozer84-TFG",
-      "id": "6a872f7d-df7e-4d7e-b01a-ab2d63eb0eb7-2"
-    },
-    {
-      "up": "NL-CasperH",
-      "id": "b0c79c69-c70d-49fe-87bf-48a6d60a2ac3-1"
-    },
-    {
-      "up": "AurisLT-TFG",
-      "id": "209c0644-a80a-41a9-aff9-748b7268d84d-2"
-    }
-  ],
-  "metallica-mayhem": [
-    {
-      "up": "WonkyCockell-TFG",
-      "id": ""
-    },
-    {
-      "up": "UK-BuRNZeE",
-      "id": "5ddd6efe-3ae5-4c9c-8d80-8370522c1a54-1"
-    },
-    {
-      "up": "Adri.Fryser-TFG",
-      "id": ""
-    },
-    {
-      "up": "Surf-tiki_TFG",
-      "id": "a50a0a1b-5bd1-43fa-b1df-a1347c4cd35e-2"
-    },
-    {
-      "up": "cze-barton-tfg",
-      "l": true,
-      "id": ""
-    },
-    {
-      "up": "CA-MtHfKaJoNeZ",
-      "id": ""
-    }
-  ],
-  "nuthin-but-a-tfg-thang": [
-    {
-      "up": "PapaFrey",
-      "l": true,
-      "id": "77371eae-1e0e-4f83-9cfd-9636379da4ef-1"
-    },
-    {
-      "up": "Abylons",
-      "id": "07a54fd0-7d1a-40f0-b819-288ebbd46ecd-1"
-    },
-    {
-      "up": "NL-WENER8-TFG",
-      "id": ""
-    },
-    {
-      "up": "calinbasturea22",
-      "id": ""
-    },
-    {
-      "up": "Tichoslapek-TFG",
-      "id": "0d88e374-1edb-4ffd-8955-85ff397fc3fb-2"
-    },
-    {
-      "up": "VaNa91",
-      "id": "af9b703c-148a-4467-8163-185df3cdc958-1"
-    }
-  ],
-  "rage-against-the-dark-machine": [
-    {
-      "up": "donkey-TFG",
-      "id": ""
-    },
-    {
-      "up": "Frgiftsender-BOB",
-      "id": ""
-    },
-    {
-      "up": "violntshags",
-      "id": ""
-    },
-    {
-      "up": "TFG_Cardinal",
-      "id": ""
-    },
-    {
-      "up": "Farnsi_TFG",
-      "id": ""
-    },
-    {
-      "up": "mashpotato-TFG",
-      "l": true,
-      "id": "fdeaa705-acf3-47ef-9e2d-a9bef229efc0-1"
-    }
-  ],
-  "welcome-to-the-urban-jungle": [
-    {
-      "up": "diogogabrielTBR",
-      "id": ""
-    },
-    {
-      "up": "USA-Mike_G-TFG",
-      "id": "40f2a691-9ff2-4193-b04a-8311b2013dab-1"
-    },
-    {
-      "up": "BaDBoY53-TFG",
-      "id": "5a84be2b-fb04-417b-a5bd-37418f4122e5-1"
-    },
-    {
-      "up": "hdkbubbelz-TFG",
-      "id": ""
-    },
-    {
-      "up": "Malr0g-TFG",
-      "l": true,
-      "id": ""
-    },
-    {
-      "up": "Chemical-TBR",
-      "id": "4c274e59-4159-4a19-96f5-1f81649fc28a-2"
-    }
-  ],
-  "wu-tango-clan": [
-    {
-      "up": "suicyco-TFG",
-      "l": true,
-      "id": "3d5d029a-9f4b-4d2f-aa45-ddf1752d4fff-2"
-    },
-    {
-      "up": "ACE135-TFG",
-      "id": "bab4bb96-891b-474b-af5c-728d575408db-1"
-    },
-    {
-      "up": "BellaRose-TFG",
-      "id": "6e559fcc-8f21-44ed-b301-be8e787c4774-2"
-    },
-    {
-      "up": "Saados777",
-      "id": ""
-    },
-    {
-      "up": "Spetsnaz-TFG",
-      "id": "089d693f-6e03-44cc-bc3c-e4fc67ca8626-1"
-    },
-    {
-      "up": "US-Novastar-TTT",
-      "id": "1859a565-7052-4c6e-9286-277d149e9e67-1"
-    }
-  ],
-  "notorious-tfg": [
-    {
-      "up": "SweatyPalms-TFG",
-      "id": "5f685e0b-8a2b-4912-82ab-53dabb17d60f-2"
-    },
-    {
-      "up": "MartinUchiha",
-      "l": true,
-      "id": "e5df1acb-b6cf-411a-9726-eb6209a12e21-1"
-    },
-    {
-      "up": "RF_WhiteShakers",
-      "id": "0c3f5dfc-910c-447d-a6ee-3553bf354a2a-1"
-    },
-    {
-      "up": "RU-DarkNex-TFG",
-      "id": "1280d0fd-22b6-4841-8574-fa5dba6d8488-1"
-    },
-    {
-      "up": "PH-kiandavila",
-      "id": "adc2f82a-1977-453e-ac43-ad93e2d0ec57-1"
-    },
-    {
-      "up": "Kaveration-TBR",
-      "id": ""
-    }
-  ]
-}
-        };
-var teams = Object.keys(settings.teams);
-$("div[style='overflow-x:auto;'] .sortable tbody tr").each((i,e)=>{
-    let rank = $($("td", e).get(0)).text();
-	let name = $($("a", e).get(0)).text();
-	let href = $($("a", e).get(0)).attr("href");
-	let time = $($("td", e).get(2)).text();
-	let bike = $($("td", e).get(4)).text();
-	let found = {};
-	let foundItem = teams.find((team) => {
-		found = settings.teams[team].find((member) => member.up === name);
-		return found;
-    }) !== undefined;
-	if(foundItem){
-		//found.ti = time;
-		//found.rk = rank;
-		//found.bk = bike;
-		found.id = /\.net\/(.*)$/g.exec(href)[1];
-    }
-})
-
-console.log(JSON.stringify(settings.teams, null, 2))
-////////
-
+%server%/public/pvp_matches/v1/player/%s
+%server%/public/playerprogress/v1/progress/status?profileid=%s
 */
 module.exports = {
     "week": [
         {
-            "nr": 4,
+            "id": 5,
+            "bike": "KTM Rally",
+            "bikeId": 14,
+            "trackName": "The Bell Pit",
+            "trackId": 1253
+        },
+        {
+            "id": 4,
             "bike": "Marauder",
             "bikeId": 6,
             "trackName": "Crystal Kingdom",
-            "trackId": 1196
+            "trackId": 1196,
+            "results": {
+                "map": "https://i.imgur.com/zdHv6vF.jpg",
+                "table": "https://i.imgur.com/k2u2FVl.png",
+                "overview": "https://i.imgur.com/bcxC58q.jpg",
+                "fastest": "https://i.imgur.com/DaEDOjt.png"
+            }
         },
         {
-            "nr": 3,
+            "id": 3,
             "bike": "Berserker",
             "bikeId": 8,
             "trackName": "Scorched Battlement",
@@ -282,7 +42,7 @@ module.exports = {
             }
         },
         {
-            "nr": 2,
+            "id": 2,
             "bike": "Berserker",
             "bikeId": 8,
             "trackName": "Canary Street",
@@ -295,7 +55,7 @@ module.exports = {
             }
         },
         {
-            "nr": 1,
+            "id": 1,
             "bike": "KTM 450 Rally",
             "bikeId": 14,
             "trackName": "Firefly Landing",
@@ -412,6 +172,10 @@ module.exports = {
             {
                 "up": "CA-MtHfKaJoNeZ",
                 "id": "18b2a6c5-4880-4324-ab9f-273baf92d9af-2"
+            },
+            {
+                "up": "TFG_Killermega",
+                "id": "c15cacb4-30fd-41bf-a6c1-23e540d51cbb-2"
             }
         ],
         "nuthin-but-a-tfg-thang": [
@@ -439,6 +203,10 @@ module.exports = {
             {
                 "up": "VaNa91",
                 "id": "af9b703c-148a-4467-8163-185df3cdc958-1"
+            },
+            {
+                "up": "calinbasturea22",
+                "id": "01a593c7-8b03-4afe-87b8-0ce9b1676c8b-1"
             }
         ],
         "rage-against-the-dark-machine": [
@@ -552,14 +320,6 @@ module.exports = {
             {
                 "up": "DarthKavera-TBR",
                 "id": "15fd1a53-94c2-4efa-a094-e3b2b1cc56b4-2"
-            }
-        ]
-    },
-    "outOfTeams": {
-        "nuthin-but-a-tfg-thang": [
-            {
-                "up": "calinbasturea22",
-                "id": "01a593c7-8b03-4afe-87b8-0ce9b1676c8b-1"
             }
         ]
     }

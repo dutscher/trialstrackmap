@@ -22,10 +22,13 @@ module.exports = (grunt) => {
     });
 
     grunt.registerTask("#danTeamImport", () => {
-        grunt.task.run(["import-11-danteam"]);
+        grunt.task.run([
+            "import-11-danteam",
+            "#danTeamYoDeploy"
+        ]);
     });
 
-    grunt.registerTask("#danTeamDeploy", () => {
+    grunt.registerTask("#danTeamYoDeploy", () => {
         grunt.task.run(["deployDanTeam"]);
     });
 
@@ -33,7 +36,7 @@ module.exports = (grunt) => {
         grunt.task.run([
             "concat-json:danTeam",
             "copy:danTeam",
-            "deployHtmlDanTeam"
+            "deployHtmlDanTeam",
         ]);
     });
 

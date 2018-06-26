@@ -1,7 +1,9 @@
 /node_modules/
 /dist/
 /build/
-/.idea/
+!.idea/
+.idea/*
+!.idea/runConfigurations
 **/secret/
 *.iml
 index.html

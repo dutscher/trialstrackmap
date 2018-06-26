@@ -154,6 +154,14 @@ module.exports = function (grunt, http, https, path, fs, fsExt) {
                     "Content-Type": "application/json"
                 }
             };
+        },
+        isJson: (str) => {
+            try {
+                JSON.parse(str);
+            } catch (e) {
+                return false;
+            }
+            return true;
         }
     };
 };
