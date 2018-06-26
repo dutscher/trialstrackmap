@@ -11,7 +11,11 @@ module.exports = function (grunt) {
 
     // Load grunt configurations automatically
     require("load-grunt-config")(grunt, {
-        jitGrunt: true,
+        jitGrunt: {
+            staticMappings: {
+                ftp_push: "grunt-ftp-push"
+            },
+        },
         init: true,
         // data passed into config.  Can use with <%= key %>
         data: {}

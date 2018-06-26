@@ -10,26 +10,29 @@ module.exports = (grunt) => {
             "minjson:dist",
             "minjson:distI18n",
             "deployHtml",
-            "deployDanTeam"
+            "deployDanTeam",
         ]);
     });
 
     grunt.registerTask("#finalDeploy", () => {
         grunt.task.run([
             "deploy",
-            "uglify:dist"
+            "uglify:dist",
         ]);
     });
 
     grunt.registerTask("#danTeamImport", () => {
         grunt.task.run([
             "import-11-danteam",
-            "#danTeamYoDeploy"
+            "#danTeamYoDeploy",
         ]);
     });
 
     grunt.registerTask("#danTeamYoDeploy", () => {
-        grunt.task.run(["deployDanTeam"]);
+        grunt.task.run([
+            "deployDanTeam",
+            "ftp_push:danTeam",
+        ]);
     });
 
     grunt.registerTask("deployDanTeam", () => {

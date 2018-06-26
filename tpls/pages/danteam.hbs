@@ -168,7 +168,8 @@
                                     <i class="costum__part costum--head costum--{{data.costum.headID}}"></i>
                                 </span>
                                 {{up}}
-                                {{#if rank}}<span class="rank" title="Rank on {{#if isIos}}iOS{{else}}Android{{/if}} leaderboard">({{rank}}.)</span>{{/if}}
+                                {{!--{{#if rank}}<span class="rank" title="Rank on {{#if isIos}}iOS{{else}}Android{{/if}} leaderboard">({{rank}}.)</span>{{/if}}--}}
+                                {{#if data.riderLevel}}<span class="rank" title="PB Rider level">{{data.riderLevel}}</span>{{/if}}
                                 {{#if l}}<span class="unicode">👑</span>{{/if}}
                                 {{#if isIos}}<span class="unicode">🍎</span>{{/if}}<br />
                             </td>
