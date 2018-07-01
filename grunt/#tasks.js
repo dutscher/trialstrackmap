@@ -24,13 +24,19 @@ module.exports = (grunt) => {
     grunt.registerTask("#danTeamImport", () => {
         grunt.task.run([
             "import-11-danteam",
-            "#danTeamYoDeploy",
+            "deployDanTeam",
         ]);
     });
 
-    grunt.registerTask("#danTeamYoDeploy", () => {
+    grunt.registerTask("#danTeamImportAndUpload", () => {
         grunt.task.run([
-            "deployDanTeam",
+            "#danTeamImport",
+            "danTeamUpload",
+        ]);
+    });
+
+    grunt.registerTask("danTeamUpload", () => {
+        grunt.task.run([
             "ftp_push:danTeam",
         ]);
     });

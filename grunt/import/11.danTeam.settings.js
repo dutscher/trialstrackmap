@@ -274,10 +274,6 @@ module.exports = {
                 "id": "bab4bb96-891b-474b-af5c-728d575408db-1"
             },
             {
-                "up": "BellaRose-TFG",
-                "id": "6e559fcc-8f21-44ed-b301-be8e787c4774-2"
-            },
-            {
                 "up": "saados777",
                 "id": "7ef0c491-b14f-419a-8d10-4ff63d85bcc6-1"
             },
@@ -321,6 +317,14 @@ module.exports = {
                 "up": "DarthKavera-TBR",
                 "id": "15fd1a53-94c2-4efa-a094-e3b2b1cc56b4-2"
             }
+        ]
+    },
+    "left": {
+        "wu-tango-clan": [
+            {
+                "up": "BellaRose-TFG",
+                "id": "6e559fcc-8f21-44ed-b301-be8e787c4774-2"
+            },
         ]
     }
 };

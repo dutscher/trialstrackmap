@@ -22,12 +22,18 @@ module.exports = function (shared, done) {
 
     // set best player
     settings.allPlayer = [];
+    settings.teamRatio = {
+        blue: {sum: 0, count: 0},
+        red: {sum: 0, count: 0}
+    };
     settings.maxLimit = maxLimit;
 
     teams = Object.keys(settings.teams);
 
     shared.ensureDirectoryExistence(`${pathRequest}json.json`);
     shared.ensureDirectoryExistence(`${pathArchive}json.json`);
+
+    // SERVER
 
     function handleDevice(isIos) {
         return isIos ? "IOS" : "ANDROID";
@@ -37,33 +43,92 @@ module.exports = function (shared, done) {
         return `TRIAG_${(isiOS ? "IP" : "AN")}_LNCH_A`;
     }
 
+    function writeResultsDown(isIos) {
+        // read all server requests parallel
+        return new Promise((resolve, reject) => {
+            readFromServer(1, isIos).then((data) => {
+                const fileName = `${weekId}.${trackId}.${data.device}`,
+                    itFile = `${pathArchive}${fileName}.json`,
+                    startFile = `${pathArchive}${fileName}.START.json`;
+
+                // save server request
+                shared.fs.writeFileSync(itFile, JSON.stringify(data.results, null, 2));
+                // read previous data request
+                if (!shared.fs.existsSync(startFile)) {
+                    shared.fs.writeFileSync(startFile, JSON.stringify(data.results, null, 2));
+                }
+                resolve();
+            }, (...error) => {
+                reject({
+                    msg: "writeResultsDown.error",
+                    error,
+                });
+            });
+        });
+    }
+
+    function readFromServer(offset, readiOS) {
+        return new Promise((resolve, reject) => {
+            console.log(`readFromServer.TEST 1 PULL OF ${offset} REQUESTS OF ${handleDevice(readiOS)}`);
+            doRequest(offset, readiOS).then(() => {
+                // on success do all requests
+                const promises = [];
+
+                for (offset; offset <= (maxLimit / rankLimit); offset++) {
+                    promises.push(doRequest(offset, readiOS));
+                }
+
+                console.log(`readFromServer.WAITING OF ${offset - 1} REQUESTS FOR ${handleDevice(readiOS)}`);
+                // merge all to one array
+                Promise.all(promises).then((...arguments) => {
+                    let results = [],
+                        device = "";
+
+                    [].forEach.call(arguments[0], (result) => {
+                        results = results.concat(result.results);
+                        device = result.device;
+                    });
+
+                    resolve({
+                        results,
+                        device
+                    });
+                });
+            }, (...error) => {
+                reject({
+                    msg: "readFromServer.error",
+                    error,
+                });
+            });
+        });
+    }
+
     function doRequest(offset, readiOS) {
         return new Promise((resolve, reject) => {
-            var limit = offset * rankLimit,
+            const limit = offset * rankLimit,
                 device = getDeviceName(readiOS),
                 range = (limit - 99) + "," + (rankLimit),
                 options = shared.getRequestOpts(
-                    "/" + device +
-                    "/public/playerstats/v1/ranking/track" + trackId +
-                    "?range=" + range
-                    //"?around=" + range
+                    `/${device}/public/` +
+                    `playerstats/v1/ranking/track${trackId}?range=${range}`,
                 );
 
             if (debug) {
                 console.log(options.path);
             }
 
+            let body = "";
+            const badGateway = false;
+
             // do request
-            var req = shared.https.request(options, (res) => {
-                var body = "",
-                    badGateway = false;
+            const req = shared.https.request(options, (res) => {
                 res.setEncoding("utf8");
                 res.on("data", function (chunk) {
                     body += chunk;
                 }).on("end", function () {
                     if (body.indexOf("Bad Gateway") !== -1) {
                         reject({
-                            msg: `Bad Gateway for ${(readiOS ? "IP" : "AN")}`,
+                            msg: `doRequest.Bad Gateway for ${(readiOS ? "IP" : "AN")}`,
                             body,
                             options,
                         });
@@ -75,7 +140,7 @@ module.exports = function (shared, done) {
                             });
                         } else {
                             reject({
-                                msg: `No JSON for ${(readiOS ? "IP" : "AN")}`,
+                                msg: `doRequest.No JSON for ${(readiOS ? "IP" : "AN")}`,
                                 body,
                                 options,
                             });
@@ -86,7 +151,7 @@ module.exports = function (shared, done) {
 
             req.on("error", (error) => {
                 console.error({
-                    msg: `PULL ERROR for ${(readiOS ? "IP" : "AN")}`,
+                    msg: `doRequest.PULL ERROR for ${(readiOS ? "IP" : "AN")}`,
                     error,
                     body,
                     options: options,
@@ -104,65 +169,67 @@ module.exports = function (shared, done) {
         });
     }
 
-    function readFromServer(offset, readiOS) {
+    function doRequestGetPlayerRank(playerId, readiOS) {
         return new Promise((resolve, reject) => {
+            const deviceServer = getDeviceName(readiOS),
+                options = shared.getRequestOpts(
+                    `/${deviceServer}/public/` +
+                    //`playerprogress/v1/progress/status?profileid=${playerId}`
+                    `playerstats/v1/ranking/global_stats?around=${playerId},1`
+                );
 
-            console.log(`TEST 1 PULL OF ${offset} REQUESTS OF ${handleDevice(readiOS)}`);
-            doRequest(offset, readiOS).then(() => {
-                // on success do all requests
-                var promises = [];
+            if (debug) {
+                console.log(options.path);
+            }
 
-                for (offset; offset <= (maxLimit / rankLimit); offset++) {
-                    promises.push(doRequest(offset, readiOS));
-                }
+            let body = "";
+            const badGateway = false;
 
-                console.log(`WAITING FOR PULLING OF ${offset - 1} REQUESTS OF ${handleDevice(readiOS)}`);
-                // merge all to one array
-                Promise.all(promises).then((...arguments) => {
-                    var results = [],
-                        device = "";
-
-                    [].forEach.call(arguments[0], (result) => {
-                        results = results.concat(result.results);
-                        device = result.device;
-                    });
-
-                    resolve({
-                        results: results,
-                        device: device
-                    });
-                });
-            }, (...error) => {
-                reject({
-                    msg: "readFromServer error",
-                    error,
+            // do request
+            const req = shared.https.request(options, (res) => {
+                res.setEncoding("utf8");
+                res.on("data", function (chunk) {
+                    body += chunk;
+                }).on("end", function () {
+                    if (body.indexOf("Bad Gateway") !== -1) {
+                        reject({
+                            msg: `doRequestGetPlayerRank.Bad Gateway for ${(readiOS ? "IP" : "AN")}`,
+                            body,
+                            options,
+                        });
+                    } else {
+                        if (shared.isJson(body)) {
+                            resolve({
+                                rank: JSON.parse(body).results[0].rank,
+                            });
+                        } else {
+                            reject({
+                                msg: `doRequestGetPlayerRank.No JSON for ${(readiOS ? "IP" : "AN")}`,
+                                body,
+                                options,
+                            });
+                        }
+                    }
                 });
             });
+
+            req.on("error", (error) => {
+                resolve({
+                    msg: `doRequestGetPlayerRank.PULL ERROR for ${(readiOS ? "IP" : "AN")}`,
+                    error,
+                    body,
+                    options,
+                });
+            });
+
+            req.end();
         });
     }
 
-    function writeResultsDown(isIos) {
-        // read all android parallel
-        return new Promise((resolve, reject) => {
-            readFromServer(1, isIos).then((data) => {
-                const fileName = `${weekId}.${trackId}.${data.device}`,
-                    itFile = `${pathArchive}${fileName}.json`,
-                    startFile = `${pathArchive}${fileName}.START.json`;
+    // CALC & SORT
 
-                // save server request
-                shared.fs.writeFileSync(itFile, JSON.stringify(data.results, null, 2));
-                // read previous data request
-                if (!shared.fs.existsSync(startFile)) {
-                    shared.fs.writeFileSync(startFile, JSON.stringify(data.results, null, 2));
-                }
-                resolve();
-            }, (...error) => {
-                reject({
-                    msg: "writeResultsDown error",
-                    error,
-                });
-            });
-        });
+    function uint16(n) {
+        return n & 0xFFFF;
     }
 
     function readResults(isIos) {
@@ -170,7 +237,8 @@ module.exports = function (shared, done) {
             const device = getDeviceName(isIos),
                 fileName = `${weekId}.${trackId}.${device}`,
                 itFile = `${pathArchive}${fileName}.json`,
-                startFile = `${pathArchive}${fileName}.START.json`;
+                startFile = `${pathArchive}${fileName}.START.json`,
+                ranksFile = `${pathRequest}ranks.json`;
             let results = [];
             if (shared.fs.existsSync(itFile)) {
                 results = require(`../../${itFile}`);
@@ -179,47 +247,59 @@ module.exports = function (shared, done) {
             if (shared.fs.existsSync(startFile)) {
                 resultsStart = require(`../../${startFile}`);
             }
-            evaluateResults(results, resultsStart, isIos);
+            let ranks = {};
+            if (shared.fs.existsSync(ranksFile)) {
+                ranks = require(`../../${ranksFile}`);
+            }
+            evaluateResults(results, resultsStart, ranks, isIos);
             resolve();
         });
     }
 
-    function evaluateResults(data, dataStart, isIos) {
-        console.log("EVALUATE", data.length, handleDevice(isIos), "RESULTS");
-        var teamScore = data.filter((score) => {
-            var found = {},
-                foundItem = teams.find((team) => {
-                    found = settings.teams[team].find((player) => {
-                        return score
-                            && ("player" in score)
-                            && shared._.startsWith(player.id, score.player)
-                            && (
-                                (isIos && shared._.endsWith(player.id, "-1")) // ios
-                                ||
-                                (!isIos) // android
-                            );
-                    });
-                    return found;
-                }) !== undefined;
-            if (foundItem) {
-                found.isIos = isIos === true;
-                found.rank = score.rank;
-                found.time = score.stats.drivetime;
-
-                var data = getData(
-                    score.stats.submittime,
-                    score.stats.score_value,
-                    found.time,
-                    score.stats.data,
-                    score.stats.upgrades);
-                found.drivenBike = data.bikeID === bikeId;
-                found.improvement = findImprovement(dataStart, found.time, score.player);
-                found.data = data;
-            } else {
-                found = {time: 99999};
-            }
-            return foundItem;
-        });
+    function evaluateResults(data, dataStart, dataRanks, isIos) {
+        console.log(`evaluateResults.${handleDevice(isIos)} / length: ${data.length}`);
+        try {
+            data.map((score) => {
+                let found = {},
+                    foundItem = teams.find((team) => {
+                        found = settings.teams[team].find((player) => {
+                            return score
+                                && ("player" in score)
+                                && shared._.startsWith(player.id, score.player)
+                                && (
+                                    (isIos && shared._.endsWith(player.id, `-${settings.platform.ios}`))
+                                    ||
+                                    (!isIos) // android
+                                );
+                        });
+                        return found;
+                    }) !== undefined;
+                if (foundItem) {
+                    found.isIos = isIos === true;
+                    found.globalRank = (found.id in dataRanks) ? dataRanks[found.id] : -1;
+                    found.rank = score.rank;
+                    found.time = score.stats.drivetime;
+                    const data = getData(
+                        score.stats.submittime,
+                        score.stats.score_value,
+                        found.time,
+                        score.stats.data,
+                        score.stats.upgrades);
+                    found.drivenBike = data.bikeID === bikeId;
+                    found.improvement = findImprovement(dataStart, found.time, score.player);
+                    found.data = data;
+                } else {
+                    found = {
+                        isIos: isIos === true,
+                        time: -1,
+                        rank: -1
+                    }
+                }
+                return foundItem;
+            });
+        } catch(e){
+            console.error("evaluateResults.error", e)
+        }
     }
 
     function findImprovement(dataStart, timeNow, playerId) {
@@ -232,10 +312,6 @@ module.exports = function (shared, done) {
             });
         }
         return improveTime;
-    }
-
-    function uint16(n) {
-        return n & 0xFFFF;
     }
 
     function getData(submittime, score, time, data, upgrades) {
@@ -261,32 +337,52 @@ module.exports = function (shared, done) {
     }
 
     function printResults() {
-        var teamTimes = [],
-            allPlayer = [];
-
+        let teamTimes = [],
+            allImprovedPlayer = [],
+            allNoneImprovePlayer = [];
+        // iterate all teams
         teams.map((team) => {
-            var timesInt = 0,
-                player = 0;
-            // add all player to one array
-            allPlayer = allPlayer.concat(settings.teams[team]);
+            let timesInt = 0,
+                teamPlayer = 0,
+                ratio = 0;
             // order best to badest
             settings.teams[team] = shared._.sortBy(settings.teams[team], ["time"]);
             // fill times in team
-            settings.teams[team].map((p) => {
-                var hasTime = ("time" in p),
-                    driveBike = ("bike" in p && p.bike);
-                if (hasTime) {
-                    timesInt += p.time;
-                    player++;
+            settings.teams[team].map((player) => {
+                const hasTime = ("time" in player),
+                    hasImprovement = player.improvement > 0,
+                    driveBike = ("bike" in player && player.bike);
+                if (hasTime && hasImprovement) {
+                    timesInt += player.time;
+                    teamPlayer++;
+                    // add to
+                    allImprovedPlayer.push(player);
+                } else {
+                    allNoneImprovePlayer.push(player);
                 }
             });
+            // only impromentTimes and improved player times counts
+            ratio = timesInt / teamPlayer;
 
-            teamTimes.push({name: team, times: timesInt, player: player, ratio: timesInt / player});
+            if (settings.colors.blue.indexOf(team) !== -1) {
+                settings.teamRatio.blue.sum += ratio;
+                settings.teamRatio.blue.count++;
+            } else {
+                settings.teamRatio.red.sum += ratio;
+                settings.teamRatio.red.count++;
+            }
+
+            teamTimes.push({name: team, times: timesInt, teamPlayer: teamPlayer, ratio: Math.round(ratio)});
         });
+
         // sort all player
-        settings.allPlayer = shared._.sortBy(allPlayer, ["time"]).map((player) => {
+        allImprovedPlayer = shared._.sortBy(allImprovedPlayer, ["time"]);
+        allNoneImprovePlayer = shared._.sortBy(allNoneImprovePlayer, ["time"]);
+
+        settings.allPlayer = allImprovedPlayer.concat(allNoneImprovePlayer).map((player) => {
             return {time: player.time, name: player.up, isIos: player.isIos};
         });
+
         // order teams
         let prevTeam = null;
         // order teams and add difftime to prev
@@ -300,35 +396,94 @@ module.exports = function (shared, done) {
                 prevTeam = team;
                 return team;
             });
-        console.log("team times wrote to: " + pathRequest);
+
+
+        console.log("printResults.team times wrote to: " + pathRequest);
         //console.log(JSON.stringify(times, null, 2));
         shared.fs.writeFileSync(pathRequest + "teams.json", JSON.stringify(settings, null, 2));
         shared.fs.writeFileSync(pathRequest + "teamTimes.json", JSON.stringify(teamTimes, null, 2));
         console.log("# DAN TEAMS END");
     }
 
+    // DEPLOY
+
+    function getAllPlayerRanks() {
+        const requests = [],
+            memberRanks = {};
+        teams.find((teamName) => {
+            const teamMembers = settings.teams[teamName];
+            teamMembers.find((teamMember) => {
+                const isiOS = shared._.endsWith(teamMember.id, `-${settings.platform.ios}`),
+                    clearMemberId = teamMember.id.replace(/(-1|-2)$/, "");
+
+
+                requests.push({
+                    memberId: teamMember.id,
+                    clearMemberId,
+                    isiOS,
+                });
+            });
+        });
+        console.log("getAllPlayerRanks for", requests.length, "members");
+
+        function doRequestsForMember(member) {
+            return doRequestGetPlayerRank(member.clearMemberId, member.isiOS).then((result) => {
+                memberRanks[member.memberId] = ("error" in result) ? 0 : result.rank;
+                return true;
+            });
+        }
+
+        let requestsDone = 0;
+
+        function repeatRequest() {
+            return doRequestsForMember(requests[requestsDone]).then(() => {
+                requestsDone++;
+                console.log("requestsDone", requestsDone, requests.length);
+                if (requestsDone !== requests.length) {
+                    return repeatRequest();
+                }
+            });
+        }
+
+        return new Promise((resolve) => {
+            repeatRequest().then(() => {
+                shared.fs.writeFileSync(pathRequest + "ranks.json", JSON.stringify(memberRanks, null, 2));
+                resolve();
+            });
+        });
+    }
+
     function pullAndDeploy() {
+        const promises = [];
         shared.getUbisoftTicket(() => {
-            const promises = [];
-            // start android
-            promises.push(writeResultsDown().then(() => {
-                return readResults();
-            }));
-            // start ios
-            promises.push(writeResultsDown(true).then(() => {
-                return readResults(true);
-            }));
-            // wait for all
+            // Pull ranks at first
+            if (process.env.withRanks) {
+                promises.push(getAllPlayerRanks());
+            }
+            // pull data when ranks or not
             Promise.all(promises).then(() => {
-                // print
-                console.log("All server data is in da house");
-                printResults();
-                done();
-            }, (...error) => {
-                console.error("Promise.all", JSON.stringify(error, null, 2));
-                console.log("Not all server data is in da house");
-                printResults();
-                done();
+                const promisesInner = [];
+                // start android
+                promisesInner.push(writeResultsDown().then(() => {
+                    return readResults();
+                }));
+                // start ios
+                promisesInner.push(writeResultsDown(true).then(() => {
+                    return readResults(true);
+                }));
+                // wait for all
+                Promise.all(promisesInner).then(() => {
+                    // print
+                    console.log("pullAndDeploy.All server data is in da house");
+                    return true;
+                }, (...error) => {
+                    console.error("pullAndDeploy.Promise.all.error", JSON.stringify(error));
+                    console.log("pullAndDeploy.Not all server data is in da house");
+                    return true;
+                }).then(() => {
+                    printResults();
+                    done();
+                });
             });
         });
     }
@@ -341,8 +496,7 @@ module.exports = function (shared, done) {
         promises.push(readResults(true));
 
         Promise.all(promises).then(() => {
-            // print
-            console.log("All server data readed from files");
+            console.log("onlyReadAndDeploy.All server data readed from files");
             printResults();
             done();
         });
