@@ -164,7 +164,7 @@
     "level": 1,
     "oid": 1113
   },
-  //
+  // Backyard Catwalk
   {
     "id": 33,
     "level": 2,
@@ -176,7 +176,7 @@
     "level": 5,
     "oid": 1048
   },
-  //
+  // Steeple Run
   {
     "id": 35,
     "level": 7,
@@ -268,12 +268,12 @@
     "id": 50,
     "oid": 1189
   },
-  //
+  // Terror Tower
   {
     "id": 89,
     "oid": 1204
   },
-  //
+  // Haunted Hallows
   {
     "id": 90,
     "oid": 1205

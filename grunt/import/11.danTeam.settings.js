@@ -7,13 +7,42 @@ https://public-ubiservices.ubi.com/v1/profiles?profileId=%s
 %server%/public/playerprogress/v1/progress/status?profileid=%s
 */
 module.exports = {
+    // database/media/bikes.json .bikes -> bikeId
+    // build/import/game/XXX/levels.json5 -> trackId
+    // database/trackdata/ids.json -> oid === trackId
     "week": [
+        {
+            "id": 7,
+            "bike": "Tango",
+            "bikeId": 2,
+            "trackName": "Backyard Catwalk",
+            "trackId": 1116,
+        },
+        {
+            "id": 6,
+            "bike": "KTM Rally",
+            "bikeId": 14,
+            "trackName": "Terror Tower",
+            "trackId": 1204,
+            "results": {
+                "map": "https://i.imgur.com/Zc6NSVJ.jpg",
+                "table": "https://i.imgur.com/6ieS3KG.png",
+                "overview": "https://i.imgur.com/1mnI6yZ.jpg",
+                "fastest": "",
+            }
+        },
         {
             "id": 5,
             "bike": "KTM Rally",
             "bikeId": 14,
             "trackName": "The Bell Pit",
-            "trackId": 1253
+            "trackId": 1253,
+            "results": {
+                "map": "https://i.imgur.com/lcc3rIE.jpg",
+                "table": "https://i.imgur.com/r9GhqsB.png",
+                "overview": "https://i.imgur.com/h8RH9gv.jpg",
+                "fastest": "https://i.imgur.com/jqC4Svv.png",
+            }
         },
         {
             "id": 4,
@@ -25,7 +54,7 @@ module.exports = {
                 "map": "https://i.imgur.com/zdHv6vF.jpg",
                 "table": "https://i.imgur.com/k2u2FVl.png",
                 "overview": "https://i.imgur.com/bcxC58q.jpg",
-                "fastest": "https://i.imgur.com/DaEDOjt.png"
+                "fastest": "https://i.imgur.com/DaEDOjt.png",
             }
         },
         {
@@ -38,7 +67,7 @@ module.exports = {
                 "map": "https://i.imgur.com/h57wxjn.jpg",
                 "table": "https://i.imgur.com/5qmmIVQ.jpg",
                 "overview": "https://i.imgur.com/GVCwBC3.jpg",
-                "fastest": "https://i.imgur.com/o8C7lGF.png"
+                "fastest": "https://i.imgur.com/o8C7lGF.png",
             }
         },
         {
@@ -51,7 +80,7 @@ module.exports = {
                 "map": "https://i.imgur.com/lNpTIxo.jpg",
                 "table": "https://i.imgur.com/ONZJVsZ.jpg",
                 "overview": "https://i.imgur.com/eU2v0TP.jpg",
-                "fastest": "https://i.imgur.com/wWoSEFt.jpg"
+                "fastest": "https://i.imgur.com/wWoSEFt.jpg",
             }
         },
         {
@@ -64,7 +93,7 @@ module.exports = {
                 "map": "https://i.imgur.com/X1bPDvv.jpg",
                 "table": "https://i.imgur.com/tSyWRKI.jpg",
                 "overview": "https://i.imgur.com/8lTHjQK.jpg",
-                "fastest": "https://i.imgur.com/O6nrWnU.png"
+                "fastest": "https://i.imgur.com/O6nrWnU.png",
             }
         }
     ],
@@ -73,18 +102,18 @@ module.exports = {
             "nuthin-but-a-tfg-thang",
             "vanilla-ice-blockade",
             "welcome-to-the-urban-jungle",
-            "wu-tango-clan"
+            "wu-tango-clan",
         ],
         "blue": [
             "cypress-hill-climb",
             "metallica-mayhem",
             "rage-against-the-dark-machine",
-            "notorious-tfg"
+            "notorious-tfg",
         ]
     },
     "platform": {
         "ios": 1,
-        "android": 2
+        "android": 2,
     },
     "teams": {
         "vanilla-ice-blockade": [
@@ -118,7 +147,7 @@ module.exports = {
                 "up": "Sl1mboy84_T3F",
                 "rl": "Guillaume",
                 "id": "ea50c2c5-bd3a-41e6-9d81-d7cd7572e29e-2"
-            }
+            },
         ],
         "cypress-hill-climb": [
             {
@@ -145,7 +174,7 @@ module.exports = {
             {
                 "up": "AurisLT-TFG",
                 "id": "209c0644-a80a-41a9-aff9-748b7268d84d-2"
-            }
+            },
         ],
         "metallica-mayhem": [
             {
@@ -176,7 +205,11 @@ module.exports = {
             {
                 "up": "TFG_Killermega",
                 "id": "c15cacb4-30fd-41bf-a6c1-23e540d51cbb-2"
-            }
+            },
+            {
+                "up": "ClungeCake-TFG",
+                "id": "88d30115-c082-4b7d-8bb6-fe02b00c6ee7-2"
+            },
         ],
         "nuthin-but-a-tfg-thang": [
             {
@@ -207,7 +240,7 @@ module.exports = {
             {
                 "up": "calinbasturea22",
                 "id": "01a593c7-8b03-4afe-87b8-0ce9b1676c8b-1"
-            }
+            },
         ],
         "rage-against-the-dark-machine": [
             {
@@ -234,7 +267,11 @@ module.exports = {
                 "up": "mashpotato-TFG",
                 "l": true,
                 "id": "fdeaa705-acf3-47ef-9e2d-a9bef229efc0-1"
-            }
+            },
+            {
+                "up": "Engage_death",
+                "id": "c9cf6205-8abc-4900-a23b-ed22488eda35-2"
+            },
         ],
         "welcome-to-the-urban-jungle": [
             {
@@ -261,7 +298,7 @@ module.exports = {
             {
                 "up": "Chemical-TBR",
                 "id": "4c274e59-4159-4a19-96f5-1f81649fc28a-2"
-            }
+            },
         ],
         "wu-tango-clan": [
             {
@@ -288,7 +325,7 @@ module.exports = {
             {
                 "up": "Akrasiia",
                 "id": "6f4f5170-8e20-4ef1-8a93-2c424619a1e6-2"
-            }
+            },
         ],
         "notorious-tfg": [
             {
@@ -316,7 +353,7 @@ module.exports = {
             {
                 "up": "DarthKavera-TBR",
                 "id": "15fd1a53-94c2-4efa-a094-e3b2b1cc56b4-2"
-            }
+            },
         ]
     },
     "left": {
@@ -326,5 +363,11 @@ module.exports = {
                 "id": "6e559fcc-8f21-44ed-b301-be8e787c4774-2"
             },
         ]
-    }
+    },
+    "new": [
+        {
+            "up": "",
+            "id": ""
+        },
+    ]
 };

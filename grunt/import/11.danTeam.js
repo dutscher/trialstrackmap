@@ -1,5 +1,4 @@
 module.exports = function (shared, done) {
-    console.log("# DANS TEAMS");
     var debug = false,
         rankLimit = 100,
         maxLimit = 2000,
@@ -107,7 +106,7 @@ module.exports = function (shared, done) {
         return new Promise((resolve, reject) => {
             const limit = offset * rankLimit,
                 device = getDeviceName(readiOS),
-                range = (limit - 99) + "," + (rankLimit),
+                range = `${limit - 99},${rankLimit}`,
                 options = shared.getRequestOpts(
                     `/${device}/public/` +
                     `playerstats/v1/ranking/track${trackId}?range=${range}`,
@@ -121,14 +120,14 @@ module.exports = function (shared, done) {
             const badGateway = false;
 
             // do request
-            const req = shared.https.request(options, (res) => {
+            const req = shared.https.request(options, res => {
                 res.setEncoding("utf8");
-                res.on("data", function (chunk) {
+                res.on("data", chunk => {
                     body += chunk;
-                }).on("end", function () {
+                }).on("end", () => {
                     if (body.indexOf("Bad Gateway") !== -1) {
                         reject({
-                            msg: `doRequest.Bad Gateway for ${(readiOS ? "IP" : "AN")}`,
+                            msg: `doRequest.Bad Gateway for ${readiOS ? "IP" : "AN"}`,
                             body,
                             options,
                         });
@@ -140,7 +139,7 @@ module.exports = function (shared, done) {
                             });
                         } else {
                             reject({
-                                msg: `doRequest.No JSON for ${(readiOS ? "IP" : "AN")}`,
+                                msg: `doRequest.No JSON for ${readiOS ? "IP" : "AN"}`,
                                 body,
                                 options,
                             });
@@ -149,18 +148,18 @@ module.exports = function (shared, done) {
                 });
             });
 
-            req.on("error", (error) => {
+            req.on("error", error => {
                 console.error({
-                    msg: `doRequest.PULL ERROR for ${(readiOS ? "IP" : "AN")}`,
+                    msg: `doRequest.PULL ERROR for ${readiOS ? "IP" : "AN"}`,
                     error,
                     body,
-                    options: options,
+                    options,
                 });
                 // try again
-                readFromServer(offset, readiOS).then(function (data) {
+                readFromServer(offset, readiOS).then(data => {
                     resolve({
                         results: data.results,
-                        device
+                        device,
                     });
                 });
             });
@@ -186,7 +185,7 @@ module.exports = function (shared, done) {
             const badGateway = false;
 
             // do request
-            const req = shared.https.request(options, (res) => {
+            const req = shared.https.request(options, res => {
                 res.setEncoding("utf8");
                 res.on("data", function (chunk) {
                     body += chunk;
@@ -213,7 +212,7 @@ module.exports = function (shared, done) {
                 });
             });
 
-            req.on("error", (error) => {
+            req.on("error", error => {
                 resolve({
                     msg: `doRequestGetPlayerRank.PULL ERROR for ${(readiOS ? "IP" : "AN")}`,
                     error,
@@ -284,29 +283,36 @@ module.exports = function (shared, done) {
                         score.stats.score_value,
                         found.time,
                         score.stats.data,
-                        score.stats.upgrades);
-                    found.drivenBike = data.bikeID === bikeId;
-                    found.improvement = findImprovement(dataStart, found.time, score.player);
+                        score.stats.upgrades
+                    );
                     found.data = data;
+                    found.drivenBike = data.bikeId === bikeId;
+                    found.improvement = findImprovement(dataStart, found.time, score.player);
                 } else {
                     found = {
                         isIos: isIos === true,
                         time: -1,
                         rank: -1
-                    }
+                    };
                 }
+
+                found.hasTime = ("time" in found);
+                found.hasImprovement = ("improvement" in found) && found.improvement > 0;
+                found.hasDrivenBike = ("drivenBike" in found) && found.drivenBike;
+
                 return foundItem;
             });
-        } catch(e){
-            console.error("evaluateResults.error", e)
+        } catch (e) {
+            console.error("evaluateResults.error", e);
         }
     }
 
     function findImprovement(dataStart, timeNow, playerId) {
         let improveTime = 0;
         if (dataStart) {
-            dataStart.filter((score) => {
-                if (score.player === playerId) {
+            dataStart.map((score) => {
+                if (("player" in score)
+                    && score.player === playerId) {
                     improveTime = score.stats.drivetime - timeNow;
                 }
             });
@@ -317,9 +323,9 @@ module.exports = function (shared, done) {
     function getData(submittime, score, time, data, upgrades) {
         return {
             faults: ((360000000 - score) - time) / 3600000,
-            bikeID: (data >>> 8) & 0x3F,
+            bikeId: (data >>> 8) & 0x3F,
             //submitTime1: (submittime >>> 12),
-            paintJobID: (submittime & 0xF),// submitTime2
+            paintJobId: (submittime & 0xF),// submitTime2
             //submitTime3: (submittime >>> 4),
             riderLevel: (uint16(upgrades) >>> 6) + 1,
             costum: {
@@ -349,10 +355,7 @@ module.exports = function (shared, done) {
             settings.teams[team] = shared._.sortBy(settings.teams[team], ["time"]);
             // fill times in team
             settings.teams[team].map((player) => {
-                const hasTime = ("time" in player),
-                    hasImprovement = player.improvement > 0,
-                    driveBike = ("bike" in player && player.bike);
-                if (hasTime && hasImprovement) {
+                if (player.hasTime && player.hasImprovement && player.hasDrivenBike) {
                     timesInt += player.time;
                     teamPlayer++;
                     // add to
@@ -363,13 +366,14 @@ module.exports = function (shared, done) {
             });
             // only impromentTimes and improved player times counts
             ratio = timesInt / teamPlayer;
-
-            if (settings.colors.blue.indexOf(team) !== -1) {
-                settings.teamRatio.blue.sum += ratio;
-                settings.teamRatio.blue.count++;
-            } else {
-                settings.teamRatio.red.sum += ratio;
-                settings.teamRatio.red.count++;
+            if (timesInt) {
+                if (settings.colors.blue.indexOf(team) !== -1) {
+                    settings.teamRatio.blue.sum += ratio;
+                    settings.teamRatio.blue.count++;
+                } else {
+                    settings.teamRatio.red.sum += ratio;
+                    settings.teamRatio.red.count++;
+                }
             }
 
             teamTimes.push({name: team, times: timesInt, teamPlayer: teamPlayer, ratio: Math.round(ratio)});

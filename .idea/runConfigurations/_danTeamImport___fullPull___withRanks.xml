@@ -1,5 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="#danTeamImport --fullPull" type="js.build_tools.grunt" factoryName="Grunt.js">
+  <configuration default="false" name="#danTeamImport --fullPull &amp; withRanks" type="js.build_tools.grunt" factoryName="Grunt.js">
     <node-interpreter value="project" />
     <gruntfile value="$PROJECT_DIR$/Gruntfile.js" />
     <tasks>
@@ -7,6 +7,7 @@
     </tasks>
     <envs>
       <env name="fullPull" value="true" />
+      <env name="withRanks" value="true" />
     </envs>
     <method />
   </configuration>

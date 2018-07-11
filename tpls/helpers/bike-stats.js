@@ -13,5 +13,10 @@
 
             return "Bikes: " + bikeNums + " Paintjobs: " + paintJobNums;
         });
+
+        Handlebars.registerHelper("bike-name", function (bikesArray, bikeId, pjId) {
+            var dataOfBike = bikesArray[bikeId];
+            return dataOfBike ? dataOfBike.name + " - " + dataOfBike.paintjobs[pjId] : "";
+        });
     }
 }).call(this);

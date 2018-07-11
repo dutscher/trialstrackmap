@@ -58,7 +58,7 @@
                 left: -20px;
                 top: -15px;
             }
-            .icon-wrap .paintjob:hover {
+            tr:not(.not-improved) .icon-wrap .paintjob:hover {
                 z-index: 1;
                 transform: scale(1);
                 background-color: #fff;
@@ -78,13 +78,13 @@
                 top: -5px;
                 left: -5px;
             }
-            .icon-wrap.icon-wrap--placeholder:hover {
+            tr:not(.not-improved) .icon-wrap--placeholder:hover {
                 transform: scale(0.4);
                 left: -46px;
                 top: -37px;
                 z-index: 1;
             }
-            .icon-wrap.icon-wrap--placeholder:hover .costum__part {
+            tr:not(.not-improved) .icon-wrap--placeholder:hover .costum__part {
                 width: 225px;
                 height: 155px;
             }
@@ -151,6 +151,9 @@
             .member-row.not-improved {
                 opacity: 0.6;
             }
+            .team-name {
+                white-space: nowrap;
+            }
         </style>
         {{#with ../danteam.build.danteam}}
         <div class="page-body">
@@ -173,7 +176,7 @@
                             </td>
                         </tr>
                         {{#each (lookup ../teams.teams name)}}
-                        <tr class="member-row{{#xif "!this.improvement || this.improvement === 0"}} not-improved{{/xif}}">
+                        <tr class="member-row{{#xif "!this.improvement || this.improvement === 0 || this.improvement !== 0 && !this.drivenBike"}} not-improved{{/xif}}">
                             <td class="rank-cell">
                                 <span class="rank" title="Rank in this week">
                                     {{math (findRank ../../teams.allPlayer up) "+" 1}}.
@@ -187,16 +190,18 @@
                             <td class="cell-device">
                                 <i class="device-{{#if isIos}}ios{{else}}android{{/if}}"></i>
                             </td>
-                            <td class="icon-cell">
-                                <span class="icon-wrap icon-wrap--paintjob{{#xif "!this.drivenBike"}} icon-wrap--wrong-bike{{/xif}}">
-                                    <i class="paintjob paintjob-{{data.bikeID}}-{{data.paintJobID}}"></i>
+                            <td class="icon-cell {{#xif "!this.drivenBike"}} icon-wrap--wrong-bike{{/xif}}">
+                                {{#with ../../../bikes.build.bikes}}
+                                <span class="icon-wrap icon-wrap--paintjob"
+                                    title="{{bike-name bikes ../data.bikeId ../data.paintJobId}}">
+                                    <i class="paintjob paintjob-{{../data.bikeId}}-{{../data.paintJobId}}"></i>
                                 </span>
+                                {{/with}}
                             </td>
                             <td class="time-cell">
                                 <span class="time-week">
                                 {{#if time}}
                                     {%'{{time}}'|convertTime%}
-                                    {{#xif "this.data.faults > 0"}} / {{data.faults}}{{/xif}}
                                 {{else}}
                                     0:00.000**
                                 {{/if}}
@@ -215,7 +220,7 @@
                             </td>
                             <td>
                                 {{up}}
-                                {{#xif "this.globalRank > 0"}}<span class="rank rank--small" title="Rank on global leaderboard">({{globalRank}}.)</span>{{/xif}}
+                                {{#xif "this.globalRank > 0"}}<span class="rank rank--small" title="Rank on global leaderboard">({{globalRank}})</span>{{/xif}}
                                 {{#if l}}<span class="unicode">👑</span>{{/if}}
                             </td>
                         </tr>
