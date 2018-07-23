@@ -21,16 +21,16 @@ module.exports = (grunt) => {
         ]);
     });
 
-    grunt.registerTask("#danTeamImport", () => {
+    grunt.registerTask("danTeamImport", () => {
         grunt.task.run([
-            "import-11-danteam",
+            "import-09-danteam",
             "deployDanTeam",
         ]);
     });
 
     grunt.registerTask("#danTeamImportAndUpload", () => {
         grunt.task.run([
-            "#danTeamImport",
+            "danTeamImport",
             "danTeamUpload",
         ]);
     });
@@ -76,18 +76,14 @@ module.exports = (grunt) => {
             "import-04-doPackagesToOneDir",
             "import-05-convertOri2Json",
             "import-06-gameDataViaJson",
-            "import-07-convertLanguages",
-            "import-08-getLanguageHashes",
-            "import-09-getTrackNamesViaHashes"
+            "import-07-i18n",
         ]);
     });
 
     grunt.registerTask("#startImportI18N", () => {
         grunt.task.run([
             "import-06-gameDataViaJson",
-            "import-07-convertLanguages",
-            "import-08-getLanguageHashes",
-            "import-09-getTrackNamesViaHashes"
+            "import-07-i18n",
         ]);
     });
 };

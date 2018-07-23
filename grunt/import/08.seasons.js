@@ -19,7 +19,7 @@ https://lb-rdv-http.ubi.com/TRIAG_AN_LNCH_A/public/pvp_matches/v1/matches
 
 */
 module.exports = function (shared, done) {
-    const importSeasonID = 49,
+    const importSeasonID = 50,
         useBetaServer = false,
         importDir = "build/import/seasons/",
         databaseDir = "database/events/seasons",
@@ -112,6 +112,7 @@ module.exports = function (shared, done) {
                     extra_type: "costum",
                     extra: findPrize("costum", foundReward[0].Comment
                         .replace(/\./g, "")
+                        .replace("Pants", "Pant")
                         .replace("Leg", "Pant")
                         .replace("Top", "Head")
                         .replace("Middle", "Torso")

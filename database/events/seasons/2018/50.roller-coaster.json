@@ -1,0 +1,174 @@
+{
+  "header": {
+    "src": "https://i.imgur.com/6ZznyNf.jpg"
+  },
+  "title": "Roller coaster",
+  "date": "17.07.2018",
+  "date_end": "16.08.2018",
+  "duration": "3h",
+  "free_showdowns": 3,
+  "ticket_regain": "45m",
+  "stats": "http://trials.bonxy.net/the-bunker/",
+  "total_legends": 0,
+  "prizes": [
+    {
+      "level": 1,
+      "coins": 5000,
+      "gems": 5,
+      "extra_type": "track",
+      "extra": 25
+    },
+    {
+      "level": 2,
+      "coins": 5000,
+      "gems": 5,
+      "extra_type": "doughnut"
+    },
+    {
+      "level": 3,
+      "coins": 5000,
+      "gems": 5,
+      "extra_type": "track",
+      "extra": 26
+    },
+    {
+      "level": 4,
+      "coins": 2000,
+      "gems": 5,
+      "extra_type": "doughnut"
+    },
+    {
+      "level": 5,
+      "coins": 2000,
+      "gems": 5,
+      "extra_type": "costum",
+      "extra": 13
+    },
+    {
+      "level": 6,
+      "coins": 2000,
+      "gems": 4,
+      "extra_type": "doughnut"
+    },
+    {
+      "level": 7,
+      "coins": 2000,
+      "gems": 4,
+      "extra_type": "paintjob",
+      "extra": 9
+    },
+    {
+      "level": 8,
+      "coins": 2000,
+      "gems": 4
+    },
+    {
+      "level": 9,
+      "coins": 1500,
+      "gems": 4
+    },
+    {
+      "level": 10,
+      "coins": 1500,
+      "gems": 3,
+      "extra_type": "costum",
+      "extra": 14
+    },
+    {
+      "level": 11,
+      "coins": 1500,
+      "gems": 3,
+      "extra_type": "part",
+      "extra": "nut-5"
+    },
+    {
+      "level": 12,
+      "coins": 1500,
+      "gems": 3,
+      "extra_type": "costum",
+      "extra": 15
+    },
+    {
+      "level": 13,
+      "coins": 1500,
+      "gems": 3,
+      "extra_type": "part",
+      "extra": "spring-5"
+    },
+    {
+      "level": 14,
+      "coins": 1500,
+      "gems": 3
+    },
+    {
+      "level": 15,
+      "coins": 1500,
+      "gems": 3,
+      "extra_type": "part",
+      "extra": "piston-5"
+    },
+    {
+      "level": 16,
+      "coins": 1500,
+      "gems": 2,
+      "extra_type": "doughnut"
+    },
+    {
+      "level": 17,
+      "coins": 1500,
+      "gems": 2,
+      "extra_type": "part",
+      "extra": "sheet-4"
+    },
+    {
+      "level": 18,
+      "coins": 1000,
+      "gems": 2,
+      "extra_type": "unlimited-fuel"
+    },
+    {
+      "level": 19,
+      "coins": 1000,
+      "gems": 2,
+      "extra_type": "part",
+      "extra": "nut-3"
+    },
+    {
+      "level": 20,
+      "coins": 1000,
+      "gems": 2,
+      "extra_type": "doughnut"
+    },
+    {
+      "level": 21,
+      "coins": 800,
+      "gems": 1,
+      "extra_type": "unlimited-fuel"
+    },
+    {
+      "level": 22,
+      "coins": 800,
+      "gems": 1,
+      "extra_type": "doughnut"
+    },
+    {
+      "level": 23,
+      "coins": 800,
+      "gems": 1,
+      "extra_type": "part",
+      "extra": "nut-1"
+    },
+    {
+      "level": 24,
+      "coins": 800,
+      "gems": 1,
+      "extra_type": "unlimited-fuel"
+    },
+    {
+      "level": 25,
+      "coins": 800,
+      "extra_type": "part",
+      "extra": "chain-1"
+    }
+  ]
+}

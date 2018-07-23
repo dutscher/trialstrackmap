@@ -1,269 +1,260 @@
 [
   // tier 1 / story
-  //
+  // Parched Cliff
   {
     "id": 1,
     "oid": 1068
   },
-  //
+  // The Cave
   {
     "id": 2,
     "oid": 100
   },
-  //
+  // Cave Entrance
   {
     "id": 3,
     "oid": 1097
   },
-  //
+  // Three Bridges
   {
     "id": 4,
     "oid": 1033
   },
-  //
+  // Night Life
   {
     "id": 5,
     "oid": 1
   },
-  //
+  // Pike Alley
   {
     "id": 6,
     "oid": 2
   },
-  //
+  // Market Street
   {
     "id": 7,
     "oid": 1036
   },
-  //
+  // The Aqueduct
   {
     "id": 8,
     "oid": 1106
   },
-  //
+  // Rocky Desert
   {
     "id": 9,
     "oid": 4
   },
-  //
+  // Moonlight Towers
   {
     "id": 10,
     "oid": 1062
   },
-  //
+  // Rooftops
   {
     "id": 11,
     "oid": 1037
   },
-  //
+  // Smuggler Tunnel
   {
     "id": 12,
     "oid": 1083
   },
-  //
+  // Rock Wall
   {
     "id": 13,
     "oid": 1090
   },
-  //
+  // Urban Jungle
   {
     "id": 14,
     "oid": 1024
   },
-  //
+  // The Arches
   {
     "id": 15,
     "oid": 1075
   },
-  //
+  // Pipeline Camp
   {
     "id": 16,
     "oid": 1041
   },
-  //
+  // Well Park
   {
     "id": 17,
     "oid": 1069
   },
-  //
+  // Dust Bowl
   {
     "id": 18,
     "oid": 1032
   },
-  //
+  // The Lift
   {
     "id": 19,
     "oid": 1023
   },
-  //
+  // Cannon Ridge
   {
     "id": 20,
     "oid": 1088
   },
-  //
+  // Hinged Pathway
   {
     "id": 21,
     "oid": 1087
   },
-  //
+  // Sunset Dungeon
   {
     "id": 22,
     "oid": 1133
   },
-  //
+  // Flaming Freeway
   {
     "id": 23,
     "oid": 1178
   },
   // tier 1 / timemachine
-  //
+  // Rocky Road
   {
     "id": 24,
     "oid": 1126
   },
-  //
+  // Cave Dweller
   {
     "id": 25,
     "oid": 1131
   },
-  //
+  // Road to Ruin
   {
     "id": 26,
     "oid": 1134
   },
   // tier 1 / lootwheel
-  //
+  // Stilted Path
   {
     "id": 27,
     "oid": 1167
   },
-  //
+  // Barrel Chase
   {
     "id": 28,
     "oid": 1123
   },
-  //
+  // City Outskirts
   {
     "id": 29,
     "oid": 1135
   },
-  //
+  // Crashed Castle
   {
     "id": 30,
     "oid": 1156
   },
-  //
+  // Diamond Dash
   {
     "id": 31,
     "oid": 1181
   },
   // tier 1 / slotmachine
-  //
+  // Flooded Highway
   {
     "id": 32,
-    "level": 1,
     "oid": 1113
   },
   // Backyard Catwalk
   {
     "id": 33,
-    "level": 2,
     "oid": 1116
   },
-  //
+  // Wolf Den
   {
     "id": 34,
-    "level": 5,
     "oid": 1048
   },
   // Steeple Run
   {
     "id": 35,
-    "level": 7,
     "oid": 1120
   },
-  //
+  // The Waterwheel
   {
     "id": 36,
-    "level": 4,
     "oid": 1115
   },
-  //
+  // Casino Rooftop
   {
     "id": 37,
-    "level": 8,
     "oid": 1122
   },
-  //
+  // Fire Oasis
   {
     "id": 38,
-    "level": 6,
     "oid": 1141
   },
-  // tier 1 / swamp
-  //
+  // Flower Hills
   {
     "id": 39,
     "oid": 1152
   },
-  //
+  // Buggy Track
   {
     "id": 40,
     "oid": 1148
   },
-  //
+  // Serpent Slough
   {
     "id": 41,
     "oid": 1149
   },
-  //
+  // Frog Village
   {
     "id": 42,
     "oid": 1153
   },
   // tier 1 / island
-  //
+  // Refinery Abyss
   {
     "id": 43,
-    "pack": 1,
     "oid": 1172
   },
-  //
+  // Rotten Railway
   {
     "id": 44,
-    "pack": 1,
     "oid": 1180
   },
-  //
+  // Melancholy Temple
   {
     "id": 45,
     "pack": 1,
     "oid": 1171
   },
-  //
+  // Daredevil Paradise
   {
     "id": 46,
     "pack": 1,
     "oid": 1170
   },
-  //
+  // Fault Village
   {
     "id": 47,
     "pack": 1,
     "oid": 1168
   },
-  //
+  // Alpha Street
   {
     "id": 48,
     "pack": 1,
     "oid": 1179
   },
   // pumpkin
-  //
+  // Pumpkin Patch
   {
-    "id": 49
+    "id": 49,
+    "oid": 1206
   },
-  //
+  // Doom Drop
   {
     "id": 50,
     "oid": 1189
@@ -279,239 +270,233 @@
     "oid": 1205
   },
   // tier 2 / story
-  //
+  // Pipe Basin
   {
     "id": 51,
     "oid": 1070
   },
-  //
+  // Burning Bushes
   {
     "id": 52,
     "oid": 1099
   },
-  //
+  // The Beamery
   {
     "id": 53,
     "oid": 1051
   },
-  //
+  // Old City Wall
   {
     "id": 54,
     "oid": 1034
   },
-  //
+  // Burnyard
   {
     "id": 55,
     "oid": 1040
   },
-  //
+  // Deadwood Valley
   {
     "id": 56,
     "oid": 1072
   },
-  //
+  // Lost Playground
   {
     "id": 57,
     "oid": 1045
   },
-  //
+  // Crane Peak
   {
     "id": 58,
     "oid": 1055
   },
-  //
+  // Ghost Town
   {
     "id": 59,
     "oid": 1050
   },
-  //
+  // Steam Quarter
   {
     "id": 60,
     "oid": 1052
   },
-  //
+  // Planks and Mozzies
   {
     "id": 61,
     "oid": 1085
   },
-  //
+  // The Trebuchet
   {
     "id": 62,
     "oid": 1026
   },
-  //
+  // Bouncy Hills
   {
     "id": 63,
     "oid": 1056
   },
-  //
+  // Fort Ruins
   {
     "id": 64,
     "oid": 1029
   },
-  //
+  // Wall Crack
   {
     "id": 65,
     "oid": 1031
   },
-  //
+  // Tree Houses
   {
     "id": 66,
     "oid": 1098
   },
-  //
+  // Lookout Point
   {
     "id": 67,
     "oid": 1095
   },
-  //
+  // The Mill
   {
     "id": 68,
     "oid": 1100
   },
-  //
+  // Spinner's Alley
   {
     "id": 69,
     "oid": 1102
   },
-  //
+  // The Purifier
   {
     "id": 70,
     "oid": 1094
   },
   // tier 2 / lootwheel
-  //
+  // Cannon End
   {
     "id": 71,
     "oid": 1108
   },
-  //
+  // Cracked Plateau
   {
     "id": 72,
     "oid": 1166
   },
-  //
+  // Coal Town
   {
     "id": 73,
     "oid": 1105
   },
-  //
+  // Drifter Valley
   {
     "id": 74,
     "oid": 1129
   },
-  //
+  // Garbage Route
   {
     "id": 75,
     "oid": 1130
   },
-  //
+  // Trapeze Churn
   {
     "id": 76,
     "oid": 1112
   },
-  //
+  // Logging Camp
   {
     "id": 77,
     "oid": 1127
   },
   // tier 2 / slotmachine
-  //
+  // Wood Switch City
   {
     "id": 78,
-    "level": 9
+    "oid": 1109
   },
-  //
+  // Coaster Canyon
   {
     "id": 79,
-    "level": 10,
     "oid": 1121
   },
-  //
+  // Buzzsaw Paradise
   {
     "id": 80,
-    "level": 11,
     "oid": 1140
   },
-  //
+  // Arch Ruins
   {
     "id": 81,
-    "level": 14,
     "oid": 1136
   },
-  //
+  // Balance Avenue
   {
     "id": 82,
-    "level": 13,
     "oid": 1110
   },
-  //
+  // Risky Rooftops
   {
     "id": 83,
-    "level": 16,
     "oid": 1137
   },
-  //
+  // Hilltop Ghetto
   {
     "id": 84,
-    "level": 17,
     "oid": 1111
   },
   // tier 2 / swamp
-  //
+  // Marsh Edge
   {
     "id": 85,
     "oid": 1145
   },
-  //
+  // Mushroom Heights
   {
     "id": 86,
     "oid": 1151
   },
-  //
+  // Mud Cakes
   {
     "id": 87,
     "oid": 1154
   },
-  //
+  // Firefly Landing
   {
     "id": 88,
     "oid": 1155
   },
   // tier 2 / china
-  //
+  // Great Wall
   {
     "id": 131,
     "oid": 1226,
     "case": "China 2015"
   },
   // tier 3 / story
-  //
+  // Crane Yard
   {
     "id": 91,
     "oid": 1082
   },
-  //
+  // Sewage Treatment
   {
     "id": 92,
     "oid": 1091
   },
-  //
+  // Desert Gondola
   {
     "id": 93,
     "oid": 1074
   },
-  //
+  // Drop Zone
   {
     "id": 94,
     "oid": 1027
   },
-  //
+  // The Watchers
   {
     "id": 95,
     "oid": 8
   },
-  //
+  // Lumber Yard
   {
     "id": 96,
     "oid": 65010
@@ -546,7 +531,7 @@
     "id": 102,
     "oid": 1101
   },
-  //
+  // Dark Machine
   {
     "id": 103,
     "helper": [
@@ -557,17 +542,17 @@
     "oid": 1143
   },
   // tier 3 / lootwheel
-  //
+  // Sunshine District
   {
     "id": 104,
     "oid": 1125
   },
-  //
+  // Canary Street
   {
     "id": 105,
     "oid": 1107
   },
-  //
+  // Lazy Catapult
   {
     "id": 106,
     "oid": 1132
@@ -577,7 +562,7 @@
     "id": 107,
     "oid": 1146
   },
-  //
+  // Fang Wall
   {
     "id": 108,
     "oid": 1124
@@ -586,26 +571,22 @@
   // The Pendulum
   {
     "id": 109,
-    "level": 12,
     "oid": 1144
   },
   // Troll Lair
   {
     "id": 110,
-    "level": 16,
     "oid": 1119
   },
   // The Quagmire
   {
     "id": 111,
-    "level": 17,
     "oid": 1147
   },
   // Trash Tops
   {
     "id": 112,
-    "oid": 1142,
-    "level": 18
+    "oid": 1142
   },
   // tier 3 / swamp
   // Monster Lake
@@ -697,113 +678,120 @@
     "chips": 25000,
     "oid": 1202
   },
-  //
+  // The Shaft
   {
     "id": 129,
     "chips": 30000,
     "oid": 1198
   },
-  //
+  // Waste Disposal
   {
     "id": 130,
     "chips": 35000,
     "oid": 1203
   },
-  //
+  // Traction Testground
   {
     "id": 123,
     "chips": 40000,
     "oid": 1201
   },
   // hidden bunker tracks,
-  // Bunny Hop
+  // Bunnyhop
   {
     "id": 132,
     "oid": 1233,
     "only_bunker": true
   },
-  //
+  // Sine City
   {
     "id": 133,
     "oid": 1211,
     "only_bunker": true
   },
-  //
+  // Hill Climb
   {
     "id": 134,
     "oid": 1212,
     "only_bunker": true
   },
   // winter tracks
-  //
+  // Walrus Road
   {
-    "id": 135
+    "id": 135,
+    "oid": 1239
   },
-  //
+  // Snowman Haven
   {
-    "id": 136
+    "id": 136,
+    "oid": 1238
   },
-  //
+  // Frostmoore
   {
-    "id": 137
+    "id": 137,
+    "oid": 1240
   },
-  //
+  // Container Grounds
   {
-    "id": 138
+    "id": 138,
+    "oid": 1228
   },
-  //
+  // Icy Foothills
   {
-    "id": 139
+    "id": 139,
+    "oid": 1227
   },
-  //
+  // Frozen Facility
   {
-    "id": 140
+    "id": 140,
+    "oid": 1237
   },
-  //
+  // Squall Slide
   {
-    "id": 141
+    "id": 141,
+    "oid": 1236
   },
-  //
+  // Penguin Landing
   {
     "id": 142,
-    "tier": 2
+    "oid": 1234
   },
-  //
+  // Ice Blockade
   {
     "id": 143,
-    "tier": 2
+    "oid": 1223
   },
-  //
+  // Snowball Ride
   {
     "id": 144,
-    "tier": 2
+    "oid": 1230
   },
-  //
+  // Sledridge Gorge
   {
     "id": 145,
-    "tier": 2
+    "oid": 1225
   },
-  //
+  // Chopping District
   {
     "id": 146,
-    "tier": 2
+    "oid": 1235
   },
-  //
+  // Icebound Hamlet
   {
     "id": 149,
-    "tier": 3
+    "oid": 1232
   },
-  //
+  // Frosty Plumbing
   {
     "id": 150,
-    "tier": 3
+    "oid": 1231
   },
-  //
+  // Permafrost Climb
   {
     "id": 151,
-    "tier": 3
+    "oid": 1224
   },
-  //
+  // Chilled Cliffs
   {
     "id": 152,
     "tier": 3
@@ -812,635 +800,736 @@
   // Rigged Roadway
   {
     "id": 157,
+    "oid": 1258,
     "only_bunker": true
   },
-  //
+  // Forgotten Factory
   {
-    "id": 156
+    "id": 156,
+    "oid": 1245
   },
-  //
+  // Rocks Off
   {
     "id": 148,
-    "tier": 2
+    "oid": 28
   },
-  //
+  // Barren Steps
   {
     "id": 158,
-    "tier": 2
+    "oid": 1251
   },
-  //
+  // Villainous Hideout
   {
     "id": 159,
-    "tier": 2
+    "oid": 1139
   },
   // tier 2 hardcore trackpack
-  //
+  // Fatality Lane
   {
     "id": 160,
+    "oid": 1173,
     "pack": 2
   },
-  //
+  // Girder Precinct
   {
     "id": 161,
+    "oid": 1177,
     "pack": 2
   },
-  //
+  // Stuntman Plaza
   {
     "id": 162,
+    "oid": 1175,
     "pack": 2
   },
-  //
+  // Rite Passage
   {
     "id": 163,
+    "oid": 1183,
     "pack": 2
   },
-  //
+  // Merchandise Stash
   {
     "id": 164,
+    "oid": 1174,
     "pack": 2
   },
-  //
+  // Grease Transit
   {
     "id": 165,
+    "oid": 1169,
     "pack": 2
   },
   // rodeo
-  //
+  // Collapsed Orchard
   {
     "id": 166,
+    "oid": 1256,
     "only_event": true
   },
   // rodeo weekly tracks
-  //
+  // Crow Nest
   {
-    "id": 167
+    "id": 167,
+    "oid": 1259
   },
-  //
+  // Vagrant Camp
   {
-    "id": 168
+    "id": 168,
+    "oid": 1262
   },
-  //
+  // Gem Quarry
   {
     "id": 169,
-    "tier": 2
+    "oid": 1248
   },
-  //
+  // Amusement Pit
   {
     "id": 170,
-    "tier": 2
+    "oid": 1220
   },
   // rodeo horseshoe tracks
-  //
+  // Tribal Homestead
   {
-    "id": 171
+    "id": 171,
+    "oid": 1163
   },
+  // Toxin Harvest
   {
     "id": 172,
-    "tier": 2
+    "oid": 1215
   },
   // The Big Swing
   {
     "id": 173,
-    "tier": 3
+    "oid": 1252
   },
   // Halloween #2
+  // Lift of Doom
   {
-    "id": 174
+    "id": 174,
+    "oid": 1276
   },
   // Spider Kingdom
   {
-    "id": 175
+    "id": 175,
+    "oid": 1277
   },
-  //
+  // Pumpkin Desert
   {
     "id": 176,
-    "tier": 2
+    "oid": 1267
   },
+  // Devil Hopping
   {
     "id": 177,
-    "tier": 2
+    "oid": 1272
   },
-  //
+  // Dark Sands
   {
     "id": 178,
-    "tier": 2
+    "oid": 1274
   },
-  //
+  // Crow Roofs
   {
     "id": 179,
-    "tier": 2
+    "oid": 1273
   },
-  //
+  // Curves of Destiny
   {
     "id": 180,
-    "tier": 2
+    "oid": 1268
   },
-  //
+  // City Blues
   {
-    "id": 181
+    "id": 181,
+    "oid": 1265
   },
-  //
+  // Death Wheel
   {
     "id": 182,
-    "tier": 3
+    "oid": 1271
   },
-  //
+  // Hops of Fury
   {
     "id": 183,
+    "oid": 1266,
     "halloween2_trackpack": true
   },
-  //
+  // Ruins of Despair
   {
     "id": 184,
+    "oid": 1270,
     "halloween2_trackpack": true
   },
-  //
+  // Black Forest
   {
     "id": 185,
+    "oid": 1275,
     "halloween2_trackpack": true
   },
-  //
+  // Fest Mine
   {
     "id": 186,
+    "oid": 1269,
     "halloween2_trackpack": true
   },
   // trackpack tier 3
   // Grand Moonshine
   {
     "id": 187,
+    "oid": 1176,
     "pack": 3
   },
   // Vault Crawl
   {
     "id": 188,
+    "oid": 1138,
     "pack": 3
   },
   // Scorched Battlement
   {
     "id": 189,
+    "oid": 1103,
     "pack": 3
   },
   // Madhouse
   {
     "id": 155,
+    "oid": 1184,
     "pack": 3
   },
   // Woodwork Conclave
   {
     "id": 190,
+    "oid": 1185,
     "pack": 3
   },
   // Widowmaker
   {
     "id": 191,
+    "oid": 1182,
     "pack": 3
   },
   // christmas
   // Skater Paradise
   {
-    "id": 192
+    "id": 192,
+    "oid": 1283
   },
   // Candyland
   {
-    "id": 193
+    "id": 193,
+    "oid": 1281
   },
   // Bell Tower
   {
     "id": 194,
-    "tier": 2
+    "oid": 1285
   },
   // Frost Carnival
   {
     "id": 195,
-    "tier": 2
+    "oid": 1282
   },
   // The Bell Pit
   {
     "id": 196,
-    "oid": 1253,
-    "tier": 2
+    "oid": 1253
   },
   // Nightwatch Haven
   {
     "id": 197,
-    "tier": 3
+    "oid": 1254
   },
   // The Naughty List
   {
     "id": 198,
-    "tier": 3
+    "oid": 1284
   },
   // Slick Slalom
   {
     "id": 199,
-    "week": 1
+    "oid": 1280
   },
   // Workshop Path
   {
     "id": 200,
-    "week": 2
+    "oid": 1279
   },
   // Sled Loading Bay
   {
     "id": 201,
-    "week": 3
+    "oid": 1286
   },
   // Present Village
   {
     "id": 202,
-    "week": 4
+    "oid": 1257
   },
   // Petrol Falls
-  // Concealed Entry
+  // Concealed Entryway
   {
     "id": 203,
+    "oid": 1221,
     "world": 2
   },
   // Petrol Falls Path
   {
     "id": 204,
+    "oid": 1291,
     "world": 2
   },
-  // Trail of Courage
+  // Trial of Courage
   {
     "id": 205,
+    "oid": 1241,
     "world": 2
   },
   // Leaping Hollows
   {
     "id": 206,
-    "world": 2,
-    "week": 1
+    "oid": 1290,
+    "world": 2
   },
   // Muddy Mounds
   {
     "id": 207,
-    "world": 2,
-    "week": 2
+    "oid": 1292,
+    "world": 2
   },
   // Lost Race Track
   {
     "id": 208,
-    "world": 2,
-    "week": 3
+    "oid": 1294,
+    "world": 2
   },
   // Endurance Run
   {
     "id": 209,
-    "world": 2,
-    "week": 4
+    "oid": 1293,
+    "world": 2
   },
   // KTM Course
   {
     "id": 210,
+    "oid": 1296,
     "world": 2
   },
-  // Metal Meyham
+  // Metal Mayhem
   {
     "id": 211,
+    "oid": 1246,
     "world": 2
   },
-  // Razor Duns
+  // Razor Dunes
   {
     "id": 212,
+    "oid": 1306,
     "world": 2
   },
   // High Tide Heights
   {
     "id": 213,
+    "oid": 1289,
     "world": 2
   },
-  // Choking Hazards
+  // Choking Hazard
   {
     "id": 214,
+    "oid": 1188,
     "world": 2
   },
   // Faceplant Precinct
   {
     "id": 215,
+    "oid": 1297,
     "world": 2
   },
   // Open Jaw Bog
   {
     "id": 216,
+    "oid": 1164,
     "world": 2
   },
   // Endless Wealth
   {
     "id": 217,
+    "oid": 1247,
     "world": 2
   },
   // Safe Escape
   {
     "id": 218,
+    "oid": 1301,
     "world": 2
   },
   // Longshot Lake
   {
     "id": 219,
+    "oid": 1250,
     "world": 2,
     "chips": 40500
   },
   // Overdose
   {
     "id": 220,
+    "oid": 1264,
     "world": 2,
     "chips": 45000
   },
   // Homegrown
   {
     "id": 221,
+    "oid": 1158,
     "world": 2
   },
   // Itchy Jaws
   {
     "id": 222,
+    "oid": 1159,
     "world": 2
   },
   // Exile Pass
   {
     "id": 223,
+    "oid": 1161,
     "world": 2
   },
   // Nausea Night
   {
     "id": 224,
+    "oid": 1263,
     "world": 2
   },
   // Derailed
   {
     "id": 225,
+    "oid": 1298,
     "world": 2
   },
   // Impact Attics
   {
     "id": 226,
+    "oid": 1260,
     "world": 2
   },
   // Lollygagging
   {
     "id": 227,
+    "oid": 1310,
     "world": 2
   },
   // Acrobat Quarter
   {
     "id": 228,
+    "oid": 1305,
     "world": 2
   },
   // Fenland Flail
   {
     "id": 229,
+    "oid": 1160,
     "world": 2
   },
   // Torn Canyon
   {
     "id": 230,
+    "oid": 1187,
     "world": 2
   },
   // Cold Cut Corner
   {
     "id": 231,
+    "oid": 1303,
     "world": 2
   },
   // Root Canal
   {
     "id": 232,
+    "oid": 1216,
     "world": 2
   },
   // Crystal Crossing
   {
     "id": 233,
+    "oid": 1222,
     "world": 2
   },
   // aniversary 2017
   // Broken Skull
   {
     "id": 234,
+    "oid": 1317,
     "world": 2,
     "case": "50.Mio Downloads"
   },
   // The Assumption
   {
     "id": 235,
+    "oid": 1243,
     "world": 2
   },
-  // Lost Decent
+  // Lost Descent
   {
     "id": 236,
+    "oid": 1308,
     "world": 2
   },
   // Peace Hammer
   {
     "id": 237,
+    "oid": 1302,
     "world": 2
   },
   // Peaceful Pummel
   {
     "id": 238,
+    "oid": 1214,
     "world": 2
   },
   // Dark Smoke
   {
     "id": 239,
+    "oid": 1311,
     "world": 2
   },
   // Fair Winds
   {
     "id": 240,
+    "oid": 1309,
     "world": 2
   },
   // Plant Food
   {
     "id": 241,
+    "oid": 1242,
     "world": 2
   },
   // Bayou Boatride
   {
     "id": 242,
+    "oid": 1304,
     "world": 2
   },
   // Headhurt Bluff
   {
     "id": 243,
+    "oid": 1278,
     "world": 2,
     "case": "3rd Anniversary"
   },
   // Kaiju Canyon
   {
     "id": 244,
+    "oid": 1315,
     "world": 2
   },
   // Break and Enter
   {
     "id": 245,
+    "oid": 1316,
     "world": 2
   },
   // Frozen Rapids
   {
     "id": 246,
+    "oid": 1320,
     "world": 2
   },
   // Mile High
   {
     "id": 247,
+    "oid": 1319,
     "world": 2
   },
   // Snowcap Smackdown
   {
     "id": 248,
+    "oid": 1322,
     "world": 2
   },
   // Icy Altar
   {
     "id": 249,
+    "oid": 1321,
     "world": 2
   },
   // Rabbit Hell
   {
     "id": 250,
+    "oid": 1318,
     "world": 2
   },
   // bandito rally  2017
   // Swamp Breath
   {
     "id": 251,
+    "oid": 1313,
     "world": 2
   },
   // Ravenous Ram
   {
     "id": 252,
+    "oid": 1165,
     "world": 2
   },
   // Sundown Slam
   {
     "id": 253,
+    "oid": 1314,
     "world": 2
   },
   // Graviton Swamp
   {
     "id": 254,
+    "oid": 1217,
     "world": 2
   },
   // Rejection Blues
   {
     "id": 255,
+    "oid": 1300,
     "world": 2
   },
   // Fatal Fungus
   {
     "id": 256,
+    "oid": 1323,
     "world": 2
   },
   // Reputation juli/august 2017
   // Aztec Trance
   {
     "id": 257,
+    "oid": 1324,
     "world": 2
   },
   // Rowdy Roofing
   {
     "id": 258,
+    "oid": 1325,
     "world": 2
   },
   // Pinball Pains
   {
     "id": 259,
+    "oid": 1326,
     "world": 2
   },
   // Suspended Getaway
   {
     "id": 260,
+    "oid": 1327,
     "world": 2
   },
   // Spelunker Graves
   {
     "id": 261,
+    "oid": 1328,
     "world": 2
   },
   // Acid Bath
   {
     "id": 262,
+    "oid": 1329,
     "world": 2
   },
   // Pain Marsh
   {
     "id": 263,
+    "oid": 1249,
     "world": 2
   },
   // Distilled Hops
   {
     "id": 264,
+    "oid": 1331,
     "world": 2
   },
   // Midnight Brewery
   {
     "id": 265,
+    "oid": 1332,
     "world": 2
   },
   // Fermented Caves
   {
     "id": 266,
+    "oid": 1333,
     "world": 2
   },
   // Rampant Ramps
   {
     "id": 267,
+    "oid": 1338,
     "world": 2
   },
   // Skyline Fling
   {
     "id": 268,
+    "oid": 1337,
     "world": 2
   },
   // Dual Hops
   {
     "id": 269,
+    "oid": 1334,
     "world": 2
   },
-  // Rest in Peaces
+  // Rest in Pieces
   {
     "id": 270,
+    "oid": 1330,
     "world": 2
   },
   // Hanging Gardens
   {
     "id": 271,
+    "oid": 1335,
     "world": 2
   },
   // Mushroom Boom
   {
     "id": 272,
+    "oid": 1336,
     "world": 2
   },
   // Treachery
   {
     "id": 273,
+    "oid": 1307,
     "world": 2
   },
   // Aus-X-Open
   // X-Factor
   {
     "id": 274,
+    "oid": 1339,
     "world": 2
   },
   // X-Terminate
   {
     "id": 275,
+    "oid": 1340,
     "world": 2
   },
   // Indigenous Village
   {
     "id": 276,
+    "oid": 1244,
     "world": 2
   },
   // Avalanche Strew
   {
     "id": 277,
+    "oid": 1288,
     "world": 2
   },
   // Redrum Hills
   {
     "id": 278,
+    "oid": 1213,
     "christmas_gift": true,
     "world": 2
   },
@@ -1448,149 +1537,233 @@
   // Lotus Swamp
   {
     "id": 279,
+    "oid": 1341,
     "world": 2
   },
   // Air Assault
   {
     "id": 280,
+    "oid": 1350,
     "world": 2
   },
   // Double Barrel
   {
     "id": 281,
+    "oid": 1344,
     "world": 2
   },
   // Reverse Engineering
   {
     "id": 282,
+    "oid": 1351,
     "world": 2
   },
   // Sloppy Slopes
   {
     "id": 283,
+    "oid": 1345,
     "world": 2
   },
   // Spare Ribs
   {
     "id": 284,
+    "oid": 1347,
     "world": 2
   },
   // Terrace Farming
   {
     "id": 285,
+    "oid": 1346,
     "world": 2
   },
   // Radical Roadworks
   {
     "id": 286,
+    "oid": 1342,
     "world": 2
   },
   // Nuclear Cave
   {
     "id": 287,
+    "oid": 1348,
     "world": 2
   },
   // Lopsided
   {
     "id": 288,
+    "oid": 1349,
     "world": 2
   },
   // Cliff-Hanger
   {
     "id": 289,
+    "oid": 1343,
     "world": 2
   },
-  // Sunken Sanctury
+  // Sunken Sanctuary
   {
     "id": 290,
+    "oid": 1219,
     "world": 2
   },
   // Peaks of Peril
   {
     "id": 291,
+    "oid": 1287,
     "only_event": true,
     "world": 2
   },
   // Ferocious Flips
   {
     "id": 292,
+    "oid": 1352,
     "world": 2
   },
   // Floor is Lava
   {
     "id": 293,
+    "oid": 1353,
     "world": 2
   },
   // Kick Back
   {
     "id": 294,
+    "oid": 1354,
     "world": 2
   },
   // Surprise Surprise
   {
     "id": 295,
+    "oid": 1355,
     "world": 2
   },
   // Twisted Curves
   {
     "id": 296,
+    "oid": 1356,
     "world": 2
   },
   // Downtown Love
   {
     "id": 297,
+    "oid": 1357,
     "world": 2
   },
   // Cold Shoulder
   {
     "id": 298,
+    "oid": 1358,
     "world": 2
   },
   // Perilous Pitfalls
   {
     "id": 299,
+    "oid": 1363,
     "world": 2
   },
   // Toxic Garden
   {
     "id": 300,
+    "oid": 1359,
     "world": 2
   },
-  // Temple Of Doom
+  // Temple of Doom
   {
     "id": 301,
+    "oid": 1360,
     "world": 2
   },
   // Crescent Night
   {
     "id": 302,
+    "oid": 1361,
+    "world": 2
+  },
+  // Slippery Ice
+  {
+    "id": 303,
+    "oid": 1362,
     "world": 2
   },
   // Wacky Rifts
   {
     "id": 304,
+    "oid": 1367,
     "chips": 56000,
     "world": 2
   },
   // Adagio Flow
   {
     "id": 305,
+    "oid": 1366,
     "chips": 63000,
     "world": 2
   },
   // Dark Ice Valley
   {
     "id": 306,
+    "oid": 1364,
     "world": 2
   },
   // Snowman Peaks
   {
     "id": 307,
+    "oid": 1365,
     "world": 2
   },
-  // Slippery Ice
+  // X-Games Minneapolis
+  // Mt. Whiplash
   {
     "id": 308,
+    "oid": 1376,
+    "world": 2
+  },
+  // Air Snatcher
+  {
+    "id": 309,
+    "oid": 1370,
+    "world": 2
+  },
+  // The Switchblade
+  {
+    "id": 310,
+    "oid": 1377,
+    "world": 2
+  },
+  // Infected Cavern
+  {
+    "id": 311,
+    "oid": 1369,
+    "world": 2
+  },
+  // La Pausa
+  {
+    "id": 312,
+    "oid": 1368,
+    "world": 2
+  },
+  // Crooked Grind
+  {
+    "id": 313,
+    "oid": 1371,
+    "world": 2
+  },
+  // Night Crawling
+  {
+    "id": 314,
+    "oid": 1372,
+    "world": 2
+  },
+  // Golden Dirt
+  {
+    "id": 315,
+    "oid": 1374,
+    "world": 2
+  },
+  // Bomber Bliss
+  {
+    "id": 316,
+    "oid": 1375,
     "world": 2
   }
 ]

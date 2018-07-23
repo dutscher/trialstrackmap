@@ -59,10 +59,8 @@ module.exports = {
         {t: "import-04-doPackagesToOneDir", p: "./04.doPackagesToOneDir"},
         {t: "import-05-convertOri2Json", p: "./05.convertOri2Json"},
         {t: "import-06-gameDataViaJson", p: "./06.gameDataViaJson", json5: true},
-        {t: "import-07-convertLanguages", p: "./07.convertLanguages"},
-        {t: "import-08-getLanguageHashes", p: "./08.getLanguageHashes"},
-        {t: "import-09-getTrackNamesViaHashes", p: "./09.getTrackNamesViaHashes"},
-        {t: "import-10-seasons", p: "./10.seasons", a: true},
-        {t: "import-11-danteam", p: "./11.danTeam", a: true},
+        {t: "import-07-i18n", p: "./07.i18n"},
+        {t: "import-08-seasons", p: "./08.seasons", a: true},
+        {t: "import-09-danteam", p: "./09.danTeam", a: true},
     ]
 };

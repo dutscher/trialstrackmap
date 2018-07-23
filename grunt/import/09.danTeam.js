@@ -5,10 +5,12 @@ module.exports = function (shared, done) {
         pathRequest = "build/danteam/",
         pathArchive = `${pathRequest}archive/`,
         teams = [],
-        settings = require("./11.danTeam.settings"),
+        settings = require("./10.danTeam.settings"),
         weekId = settings.week[0].id,
         trackId = settings.week[0].trackId,
-        bikeId = settings.week[0].bikeId;
+        bikeId = settings.week[0].bikeId,
+        withoutBikeIdWeek = settings.week[0].withoutBikeId,
+        withoutImproveWeek = settings.week[0].withoutImprove;
 
     console.log(`# weekId: ${weekId} - trackId: ${trackId}/${settings.week[0].trackName} - bikeId: ${bikeId}/${settings.week[0].bike}`);
 
@@ -355,9 +357,12 @@ module.exports = function (shared, done) {
             settings.teams[team] = shared._.sortBy(settings.teams[team], ["time"]);
             // fill times in team
             settings.teams[team].map((player) => {
-                if (player.hasTime && player.hasImprovement && player.hasDrivenBike) {
+                if (player.hasTime && player.hasDrivenBike && withoutImproveWeek && !withoutBikeIdWeek
+                    || player.hasTime && withoutImproveWeek && withoutBikeIdWeek
+                    || player.hasTime && player.hasImprovement && player.hasDrivenBike) {
                     timesInt += player.time;
                     teamPlayer++;
+                    player.isValidTime = true;
                     // add to
                     allImprovedPlayer.push(player);
                 } else {
@@ -384,7 +389,14 @@ module.exports = function (shared, done) {
         allNoneImprovePlayer = shared._.sortBy(allNoneImprovePlayer, ["time"]);
 
         settings.allPlayer = allImprovedPlayer.concat(allNoneImprovePlayer).map((player) => {
-            return {time: player.time, name: player.up, isIos: player.isIos};
+            return {
+                time: player.time,
+                name: player.up,
+                isIos: player.isIos,
+                bikeId: player.data ? player.data.bikeId : -1,
+                paintJobId: player.data ? player.data.paintJobId : -1,
+
+            };
         });
 
         // order teams

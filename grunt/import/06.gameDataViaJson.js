@@ -1,6 +1,7 @@
 module.exports = function (shared) {
     // convert game data to trackmap data
-    var JSON_ = (function () {
+    var i18nDefaultFile = "database/i18n/en.json",
+        JSON_ = (function () {
             var obj = {};
             for (var i in shared.workingFilesOfGame) {
                 var file = shared.workingFilesOfGame[i],
@@ -9,7 +10,7 @@ module.exports = function (shared) {
                 obj[key] = json;
             }
 
-            obj.i18n = require("../../database/i18n/en.json");
+            obj.i18n = require("../../" + i18nDefaultFile);
 
             return obj;
         })(),
@@ -48,10 +49,16 @@ module.exports = function (shared) {
         }
 
         trackData = {
-            name: name,
+            name,
             i18n: trackValuesRaw[trackIndex],
             author: level.A,
             oriID: level.ID,
+            idStr: "  // " + trackValuesRaw[trackIndex] + "\n" +
+            "  {\n" +
+            "    \"id\": " + trackID + ",\n" +
+            "    \"oid\": " + level.ID + (level.L + 1 === 2 ? "," : "") + "\n" +
+            (level.L + 1 === 2 ? "    \"world\": 2\n" : "") +
+            "  },",
             tier: {
                 int: level.D,
                 dbStr: trackIDQuotes + " " + (level.D)
@@ -95,10 +102,15 @@ module.exports = function (shared) {
         }
     }
 
-    console.log("levels: ", newLevels.length);
-    console.warn("unreleased: ", unreleasedLevels.map(function (track) {
-        return track.name + " '" + track.trackIDOrigin + "'";
-    }));
+    var lastId = trackKeys[trackKeys.length - 1],
+        nextId = lastId,
+        newLevelsNotInI18NObj = {};
+    unreleasedLevels.map((track) => {
+        nextId++;
+        newLevelsNotInI18NObj[nextId] = (track.name).replace(/\b\w/g, l => l.toUpperCase());
+    });
+    console.log("levels:", newLevels.length, `nextId: ${lastId}`, "\nunreleasedLevels:", unreleasedLevels.length);
+    console.log(shared.print(shared.flat.flatten(newLevelsNotInI18NObj)), "\nadd them to", i18nDefaultFile);
 
     newLevels.sort(function (a, b) {
         return a.trackID - b.trackID;
@@ -108,20 +120,25 @@ module.exports = function (shared) {
     tmpData.partsData = "";
     tmpData.timesData = "";
     tmpData.tierData = "";
+    tmpData.idData = "";
+    // add all lines
     for (var i in newLevels) {
         var str = newLevels[i].rewards.dbStr;
         tmpData.partsData += str + "\n";
         tmpData.timesData += newLevels[i].time.dbStr + "\n";
         tmpData.tierData += newLevels[i].tier.dbStr + "\n";
+        tmpData.idData += newLevels[i].idStr + "\n";
     }
     tmpData.partsData = tmpData.partsData.replace("  ,", "{\n   ") + "}";
     tmpData.timesData = tmpData.timesData.replace("  ,", "{\n   ") + "}";
     tmpData.tierData = tmpData.tierData.replace("  ,", "{\n   ") + "}";
+    tmpData.idData = tmpData.idData.replace("  ,", "{\n   ") + "}";
 
     shared.ensureDirectoryExistence("build/import/parts.json");
     shared.fs.writeFileSync("build/import/parts.json", tmpData.partsData);
     shared.fs.writeFileSync("build/import/times.json", tmpData.timesData);
     shared.fs.writeFileSync("build/import/tiers.json", tmpData.tierData);
+    shared.fs.writeFileSync("build/import/ids.json", tmpData.idData);
     shared.fs.writeFileSync(shared.i18nPath + "/names.txt", levelNames.join("\r\n"));
     shared.fs.writeFileSync("build/import/names-with-ids.json", JSON.stringify(levelNamesWithId));
 };

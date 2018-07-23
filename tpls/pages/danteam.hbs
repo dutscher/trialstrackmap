@@ -176,7 +176,7 @@
                             </td>
                         </tr>
                         {{#each (lookup ../teams.teams name)}}
-                        <tr class="member-row{{#xif "!this.improvement || this.improvement === 0 || this.improvement !== 0 && !this.drivenBike"}} not-improved{{/xif}}">
+                        <tr class="member-row{{#xif "!this.isValidTime"}} not-improved{{/xif}}">
                             <td class="rank-cell">
                                 <span class="rank" title="Rank in this week">
                                     {{math (findRank ../../teams.allPlayer up) "+" 1}}.
@@ -247,6 +247,12 @@
                         <p>
                             {{#listItem 0 3 teams.allPlayer}}
                                 <i class="device-{{#if isIos}}ios{{else}}android{{/if}}"></i>
+                                {{#with ../../../bikes.build.bikes}}
+                                    <span class="icon-wrap icon-wrap--paintjob"
+                                          title="{{bike-name bikes ../bikeId ../paintJobId}}">
+                                    <i class="paintjob paintjob-{{../bikeId}}-{{../paintJobId}}"></i>
+                                </span>
+                                {{/with}}
                                 <span>{%'{{time}}'|convertTime%}</span>
                                 {{name}}
                                 <br />

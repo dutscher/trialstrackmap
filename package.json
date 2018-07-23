@@ -35,7 +35,8 @@
     "grunt-exec": "latest",
     "colors": "latest",
     "magic-snowflakes": "latest",
-    "grunt-ftp-push": "latest"
+    "grunt-ftp-push": "latest",
+    "flat": "latest"
   },
   "engine": "node 8.9.1",
   "scripts": {

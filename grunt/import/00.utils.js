@@ -162,6 +162,12 @@ module.exports = function (grunt, http, https, path, fs, fsExt) {
                 return false;
             }
             return true;
+        },
+        capitalizeFirstLetter: (string) => {
+            return string && (string.charAt(0).toUpperCase() + string.slice(1));
+        },
+        print: (obj) => {
+            return JSON.stringify(obj, null, 2);
         }
     };
 };

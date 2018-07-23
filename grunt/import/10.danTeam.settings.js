@@ -12,11 +12,35 @@ module.exports = {
     // database/trackdata/ids.json -> oid === trackId
     "week": [
         {
+            "id": 9,
+            "bike": "Mantis",
+            "bikeId": 5,
+            "trackName": "Cannon End",
+            "trackId": 1108,
+        },
+        {
+            "id": 8,
+            "trackName": "Mt. Whiplash",
+            "trackId": 1376,
+            "withoutImprove": true,
+            "withoutBikeId": true,
+            "results": {
+                "map": "https://i.imgur.com/zLxtl4B.jpg",
+                "table": "https://i.imgur.com/trWIHIZ.jpg",
+                "overview": "https://i.imgur.com/8uM4ohY.jpg",
+            }
+        },
+        {
             "id": 7,
             "bike": "Tango",
             "bikeId": 2,
             "trackName": "Backyard Catwalk",
             "trackId": 1116,
+            "results": {
+                "map": "https://i.imgur.com/2kEhczM.jpg",
+                "table": "https://i.imgur.com/MDfo314.jpg",
+                "overview": "https://i.imgur.com/UevHbPR.jpg",
+            }
         },
         {
             "id": 6,
@@ -28,7 +52,6 @@ module.exports = {
                 "map": "https://i.imgur.com/Zc6NSVJ.jpg",
                 "table": "https://i.imgur.com/6ieS3KG.png",
                 "overview": "https://i.imgur.com/1mnI6yZ.jpg",
-                "fastest": "",
             }
         },
         {
@@ -222,10 +245,6 @@ module.exports = {
                 "id": "77371eae-1e0e-4f83-9cfd-9636379da4ef-1"
             },
             {
-                "up": "Abylons",
-                "id": "07a54fd0-7d1a-40f0-b819-288ebbd46ecd-1"
-            },
-            {
                 "up": "NL-WENER8-TFG",
                 "id": "d5ee6907-5291-4f54-b371-b54448853c2f-2"
             },
@@ -357,6 +376,12 @@ module.exports = {
         ]
     },
     "left": {
+        "nuthin-but-a-tfg-thang":[
+            {
+                "up": "Abylons",
+                "id": "07a54fd0-7d1a-40f0-b819-288ebbd46ecd-1"
+            },
+        ],
         "wu-tango-clan": [
             {
                 "up": "BellaRose-TFG",

@@ -27,7 +27,9 @@
     "21": "Toxic Garden",
     "22": "Dark Ice Valley",
     "23": "Snowman Peaks",
-    "24": "Slippery Ice"
+    "24": "Slippery Ice",
+    "25": "Peaks of Peril",
+    "26": "Downtown Love"
   },
   "paintjobs": {
     "1": {"title": "Neon Paintjob for Tango", "sprite": "tango-neon"},
@@ -68,9 +70,9 @@
     "10": {"title": "The Undead Rider Head", "selector": "the-undead-rider", "part": "head"},
     "11": {"title": "The Undead Rider Torso", "selector": "the-undead-rider", "part": "body"},
     "12": {"title": "The Undead Rider Pant", "selector": "the-undead-rider", "part": "pant"},
-    "13": {"title": "The Death Knight Head", "selector": "death-knight", "part": "head"},
-    "14": {"title": "The Death Knight Torso", "selector": "death-knight", "part": "body"},
-    "15": {"title": "The Death Knight Pant", "selector": "death-knight", "part": "pant"},
+    "13": {"title": "Death Knight Head", "selector": "death-knight", "part": "head"},
+    "14": {"title": "Death Knight Torso", "selector": "death-knight", "part": "body"},
+    "15": {"title": "Death Knight Pant", "selector": "death-knight", "part": "pant"},
     "16": {"title": "The Holiday Scarf Head", "selector": "holiday-scarf", "part": "head"},
     "17": {"title": "The Holiday Scarf Torso", "selector": "holiday-scarf", "part": "body"},
     "18": {"title": "The Holiday Scarf Pant", "selector": "holiday-scarf", "part": "pant"},

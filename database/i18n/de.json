@@ -297,17 +297,7 @@
     "20": "Schatzsuche 2016",
     "21": "Youtube",
     "22": "Midnight Circuit 2016",
-    "23": "Jubiläum",
-    "24": "KTM 400-Rally 2017",
-    "25": "Eggs Hunt 2017",
-    "26": "Bandito Rally 2017",
-    "27": "Reputation 2017",
-    "28": "Oktoberfest MC 2017",
-    "29": "BMW Rally 2017",
-    "30": "AUS-X Open",
-    "31": "Dakar Rally",
-    "32": "Love Express 2018",
-    "33": "Midnight Circuit Reward"
+    "23": "Jubiläum"
   },
   "tracks": {
     "1": "Dürre Klippe",
@@ -610,10 +600,19 @@
     "301": "Tempel des Verhängnisses",
     "302": "Halbmondnacht",
     "303": "Rutschiges Eis",
-    "304": "Adagio-Fluss",
-    "305": "Verrückte Risse",
+    "304": "Verrückte Risse",
+    "305": "Adagio-Fluss",
     "306": "Tal des dunklen Eises",
-    "307": "Schneemanngipfel"
+    "307": "Schneemanngipfel",
+    "308": "Peitschenknallberg",
+    "309": "Luftschnapper",
+    "310": "Das Klappmesser",
+    "311": "Verseuchte Höhle",
+    "312": "La Pausa",
+    "313": "Krummer Grind",
+    "314": "Nächtliches Kriechen",
+    "315": "Goldener Staub",
+    "316": "Bomber-Wonne"
   },
   "unreleased": [
     "Die Hoffnung gibt auf",

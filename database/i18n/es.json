@@ -295,19 +295,7 @@
     "18": "Cascadas Petrolíferas",
     "19": "Lugares Búsqueda de Tesoros",
     "20": "Búsqueda de Tesoros 2016",
-    "21": "Vídeos de Youtube",
-    "22": "Midnight Circuit 2016",
-    "23": "Anniversary",
-    "24": "KTM 400-Rally 2017",
-    "25": "Eggs Hunt 2017",
-    "26": "Bandito Rally 2017",
-    "27": "Reputation 2017",
-    "28": "Oktoberfest MC 2017",
-    "29": "BMW Rally 2017",
-    "30": "AUS-X Open",
-    "31": "Dakar Rally",
-    "32": "Love Express 2018",
-    "33": "Midnight Circuit Reward"
+    "21": "Vídeos de Youtube"
   },
   "tracks": {
     "1": "Risco reseco",
@@ -610,10 +598,19 @@
     "301": "Templo maldito",
     "302": "Noche de media luna",
     "303": "Hielo resbaladizo",
-    "304": "Corriente adagio",
-    "305": "Fisuras alocadas ",
+    "304": "Fisuras alocadas ",
+    "305": "Corriente adagio",
     "306": "Valle del hielo oscuro",
-    "307": "Picos del muñeco de nieve"
+    "307": "Picos del muñeco de nieve",
+    "308": "Monte Latigazo",
+    "309": "Raptor volátil",
+    "310": "La navaja",
+    "311": "Caverna infectada",
+    "312": "La pausa",
+    "313": "Molienda tortuosa",
+    "314": "Deambular nocturno",
+    "315": "Tierra dorada",
+    "316": "Dicha del bombardero"
   },
   "unreleased": [
     "Calzada",
