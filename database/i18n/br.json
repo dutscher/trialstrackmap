@@ -272,7 +272,8 @@
     "prices": "Prêmios",
     "stats": "Statistics",
     "total_legends": "Total Legends",
-    "more_stats": "More infos click here"
+    "more_stats": "More infos click here",
+    "summary": "Summary"
   },
   "cats": {
     "1": "Ilha do Desafio",
@@ -605,7 +606,9 @@
     "313": "Manobras Distorcidas",
     "314": "Rastejador Noturno",
     "315": "Terra Dourada",
-    "316": "Felicidade Explosiva"
+    "316": "Felicidade Explosiva",
+    "317": "Alcovas Azuis",
+    "318": "Dobradiças Curvadas"
   },
   "unreleased": [
     "Estrada",

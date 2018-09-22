@@ -23,21 +23,39 @@ html, body {
 }
 
 .centerized {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
+  position: relative;
+  padding: 10px 5px;
+}
+
+@media (min-width: 820px) {
+  .centerized {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
 }
 
 .trackfinder {
   position: relative;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #1A120D;
+  overflow: hidden;
+  padding-bottom: 100px;
+
+  @media (min-width: 820px) {
+    flex-direction: row;
+    padding-bottom: 0;
+    overflow: visible;
+  }
 
   .trackpainter {
     position: relative;
 
     &__name {
-      font-size: 30px;
+      font-size: 20px;
       color: #fff;
       text-shadow: 1px 1px #000;
       position: absolute;
@@ -66,19 +84,28 @@ html, body {
       background: radial-gradient(circle, transparent -70%, black 100%), transparent;
     }
   }
+}
 
-  .trackfilter {
-    position: absolute;
+.trackfilter {
+  position: absolute;
+  bottom: 25px;
+  left: 0;
+  right: 0;
+  text-align: center;
+
+  &__search {
+    height: 30px;
+    border: #6B432A solid 2px;
+    font-size: 25px;
+    padding: 2px 5px;
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: 820px) {
     bottom: -38px;
-    left: 0;
-    right: 0;
-    text-align: center;
 
     &__search {
-      height: 30px;
-      border: #6B432A solid 2px;
-      font-size: 25px;
-      padding: 2px 5px;
+      margin-bottom: 0;
     }
   }
 }

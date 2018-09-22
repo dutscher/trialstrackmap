@@ -4,6 +4,8 @@ module.exports = function (grunt) {
         require("time-grunt")(grunt);
     }
 
+    grunt.option("stack", true);
+
     grunt.initConfig({
         pkg: grunt.file.readJSON("package.json"),
         globalConfig: {}
@@ -20,4 +22,4 @@ module.exports = function (grunt) {
         // data passed into config.  Can use with <%= key %>
         data: {}
     });
-}
+};

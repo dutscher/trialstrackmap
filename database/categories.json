@@ -179,6 +179,11 @@
       "name": "X-Games Minneapolis 2018",
       "class": "x-games-minneapolis",
       "color": "93194c"
+    },
+    "35": {
+      "name": "Season Reward",
+      "class": "season-reward",
+      "color": "93194c"
     }
   }
 }

@@ -1,25 +1,26 @@
-<title page-title="{{#block "title-override"}}{{/block}}"
-       data-update="{{#with map}}{{database.map.stats.app_version}}{{/with}}">
-    {{#block "title"}}Trials Frontier Trackmap{{/block}}
+<title page-title="{{#block "title-override"}}{{/block}}" data-update="{{#with map}}{{version}}{{/with}}">
+    {{#block "title"}}{{title}}{{/block}}
 </title>
-
-<meta http-equiv="Access-Control-Allow-Origin" content="*">
+<meta name="description" content="{{#block "description"}}{{description}}{{/block}}"/>
 
 <meta name="copyright" content="© {{year}} dutscher-DE"/>
+<meta http-equiv="Access-Control-Allow-Origin" content="*">
 <meta http-equiv="last-modified" content="{{lastUpdateTimeISO}} TMZ"/>
 <meta http-equiv="content-language" content="de,en,fr,es,ru,pt,it"/>
 <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+
 <meta name="robots" content="index, follow"/>
 <meta name="google-site-verification" content="Hkk-F3cJa0eZ34g0qDeaBN6XfXBvhFPmOZd1w0C2MbE"/>
+
 <meta name="apple-mobile-web-app-capable" content="yes"/>
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
-<meta name="apple-mobile-web-app-title" content="Trackmap Trials Frontier"/>
+<meta name="apple-mobile-web-app-title" content="{{#block "title"}}{{title}}{{/block}}"/>
 
-<meta property="og:title" content="Trials Frontier Trackmap | Guide for Data-Cubes, Candies & Youtube How-tos"/>
-<meta property="og:url" content="http://trialstrackmap.sb-f.de/"/>
-{{#with gfx}}
-<meta property="og:image" content="{{hoster images.trackmap.1.src hoster}}"/>
-{{/with}}
+<meta property="og:title" content="{{#block "title"}}{{title}}{{/block}}"/>
+<meta property="og:description" content="{{#block "description"}}{{description}}{{/block}}"/>
+<meta property="og:url" content="{{#block "url"}}http://trialstrackmap.sb-f.de{{/block}}"/>
+<meta property="og:type" content="Website"/>
+<meta property="og:image" content="{{#block "image"}}https:{{hoster gfx.images.trackmaps.1.src hoster}}{{/block}}"/>
 
 <link rel="icon" href="favicon.ico" type="image/x-icon"/>
 <link rel="icon" href="app-icon.png" sizes="192x192"/>

@@ -1,16 +1,6 @@
 /*
     gameVersion is in:
      /database/map.json
-
-    pathes in /#content:
-     /MENUZ/HOMESHACK // customization _ON small _BIG maximal
-     /MENUZ/ITEM // paintjob icons,
-     /MENUZ/WIDGETS/BIKES.png // 14 paintjobs
-     /MENUZ/WIDGETS/BIKES2.png // 31
-     /MENUZ/WIDGETS/BIKES3.png // 33
-     /MENUZ/WIDGETS/BIKES4.png // 14
-     /MENUZ/MAP/LAYER_0 // world 1
-     /MENUZ/MAP/LAYER_1 // world 2
      */
 module.exports = {
     drives: [
@@ -22,6 +12,7 @@ module.exports = {
     ],
     trialsUtilsDir: "#TFunpacker",
     allInOneDir: "#content",
+    s3Cache: "#cache",
     appPath: "com.ubisoft.redlynx.trialsfrontier.ggp",
     appId: "1c91448e-c62e-45ec-b97b-898dc967f2c1",
     androidPath: "sdcard/Android/data/",
@@ -33,6 +24,11 @@ module.exports = {
     tools: [
         "hashes", "bin2Txt", "unpacker", "adb"
     ],
+    appFiles: [
+        "contentSFX",
+        "content",
+        "textures_android"
+    ],
     filesOfGame: [
         "bikes",
         "customization",
@@ -42,6 +38,13 @@ module.exports = {
         "pvp_match_rewards",
         "pvp_chip_store"
     ],
+    assetsOfGame: [
+        {src: "/MENUZ/HOMESHACK", matcher: "_ON"}, // customization _ON small _BIG maximal
+        {src: "/MENUZ/ITEM", matcher: "PAINT_"}, // paintjob icons
+        {src: "/MENUZ/WIDGETS", matcher: "BIKES"}, // paintjobs
+        {src: "/MENUZ/MAP/LAYER_0", matcher: "MAP_BG_"}, // world 1
+        {src: "/MENUZ/MAP/LAYER_1", matcher: "MAP_BG_"}, // world 2
+    ],
     renameTrack: {
         "LVL_SPINNERS_ALLEY": "spinner's alley",
         "LVL_HILLTOP_CHETTO": "hilltop ghetto",
@@ -49,7 +52,8 @@ module.exports = {
         "LVL_CRANE_PEEK": "crane peak",
         "LVL_X_FACTOR": "x-factor",
         "LVL_X_TERMINATE": "x-terminate",
-        "LVL_CLIFF_HANGER": "cliff-hanger"
+        "LVL_CLIFF_HANGER": "cliff-hanger",
+        "LVL_MT_WHIPLASH": "mt. whiplash",
     },
     importTasks: [
         {t: "import-00-checkImport", p: "./00.checkImport"},

@@ -272,7 +272,8 @@
     "prices": "Prix",
     "stats": "Statistics",
     "total_legends": "Total Legends",
-    "more_stats": "More infos click here"
+    "more_stats": "More infos click here",
+    "summary": "Summary"
   },
   "cats": {
     "1": "Île Mystérieuse",
@@ -601,7 +602,9 @@
     "313": "Meule tordue",
     "314": "Rampement nocturne",
     "315": "Terre dorée",
-    "316": "Rêve de bombardier"
+    "316": "Rêve de bombardier",
+    "317": "Corniches de smurf",
+    "318": "Charnières courbées"
   },
   "unreleased": [
     "Espoir abandonné",

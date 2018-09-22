@@ -1610,7 +1610,6 @@
   {
     "id": 291,
     "oid": 1287,
-    "only_event": true,
     "world": 2
   },
   // Ferocious Flips
@@ -1764,6 +1763,18 @@
   {
     "id": 316,
     "oid": 1375,
+    "world": 2
+  },
+  // Smurfin Ledges
+  {
+    "id": 317,
+    "oid": 1378,
+    "world": 2
+  },
+  // Curved Hinges
+  {
+    "id": 318,
+    "oid": 1379,
     "world": 2
   }
 ]

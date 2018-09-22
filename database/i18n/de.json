@@ -272,7 +272,8 @@
     "prices": "Preise",
     "stats": "Statistiken",
     "total_legends": "Legenden gesamt",
-    "more_stats": "Für mehr Infos klick hier"
+    "more_stats": "Für mehr Infos klick hier",
+    "summary": "Summary"
   },
   "cats": {
     "1": "Exteme Strecken",
@@ -612,7 +613,9 @@
     "313": "Krummer Grind",
     "314": "Nächtliches Kriechen",
     "315": "Goldener Staub",
-    "316": "Bomber-Wonne"
+    "316": "Bomber-Wonne",
+    "317": "Schlumpfige Kanten",
+    "318": "Gebogene Scharniere"
   },
   "unreleased": [
     "Die Hoffnung gibt auf",

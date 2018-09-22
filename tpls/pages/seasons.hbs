@@ -22,7 +22,9 @@
                     <div class="seasons-list">
                         {{#each-reverse _seasons}}
                             <div class="box season-container">
-                                <img class="season-banner" load-image-viewport="{{replaceHoster header.src ../../map.database.media.gfx.hoster}}" alt="{{title}}" title="{{title}}" />
+                                <img class="season-banner" load-image-viewport="{{replaceHoster header.src
+                                                                                                ../../map.database.media.gfx.hoster}}"
+                                     alt="{{title}}" title="{{title}}"/>
 
                                 <div class="season-times">
                                     <strong>#{%'{{id}}'|leadingZero:2%}</strong>
@@ -37,40 +39,42 @@
 
                                 <hr {{#if active}}class="protect-countdown"{{/if}}>
 
-                                {{#if total_legends}}
-                                <h2>{%'seasons.total_legends'|translate%}</h2>
-                                    {{total_legends}}
-                                    {{#if stats}}
-                                    | <a href="{{stats}}" target="_blank" class="classic-link">{%'seasons.more_stats'|translate%}</a>
+                                <div class="season-scroller">
+                                    {{#if total_legends}}
+                                        <div>
+                                            <h2>{%'seasons.total_legends'|translate%}</h2>
+                                            {{total_legends}}
+                                            {{#if stats}}
+                                                | <a href="{{stats}}" target="_blank" class="classic-link">{%'seasons.more_stats'|translate%}</a>
+                                            {{/if}}
+                                            <hr/>
+                                        </div>
                                     {{/if}}
-                                    <hr />
-                                {{/if}}
-
-                                <h2>{%'seasons.prices'|translate%}</h2>
-
-                                <div class="season-prizes" stop-scroll>
-                                    <table>
-                                        {{#each prizes}}
-                                            <tr>
-                                                <td>
-                                                    <i class="season-level-{{level}} seasons"></i>
-                                                </td>
-                                                <td title="{{title}}">
-                                                    <span class="season-prize" data-extra="{{extra}}"
-                                                          data-extra-type="{{extra_type}}"
-                                                          data-sprite-pointer="{{sprite_pointer}}"
-                                                          data-index="{{add @index 1}}"></span>
-                                                </td>
-                                                <td class="right">
-                                                    + {{coins}} <i class="coins"></i><br/>
-                                                    + {{#if gems}}{{gems}}{{else}}0{{/if}} <i class="gems"></i>
-                                                </td>
-                                            </tr>
-                                        {{/each}}
-                                    </table>
+                                    <h2>{%'seasons.summary'|translate%}</h2>
+                                    <div class="season-summary" data-season-id="{{id}}" stop-scroll></div>
+                                    <h2>{%'seasons.prices'|translate%}</h2>
+                                    <div class="season-prizes" stop-scroll>
+                                        <table>
+                                            {{#each prizes}}
+                                                <tr>
+                                                    <td>
+                                                        <i class="season-level-{{level}} seasons"></i>
+                                                    </td>
+                                                    <td title="{{title}}">
+                                                        <span class="season-prize" data-extra="{{extra}}"
+                                                              data-extra-type="{{extra_type}}"
+                                                              data-sprite-pointer="{{sprite_pointer}}"
+                                                              data-index="{{add @index 1}}"></span>
+                                                    </td>
+                                                    <td class="right">
+                                                        + {{coins}} <i class="coins"></i><br/>
+                                                        + {{#if gems}}{{gems}}{{else}}0{{/if}} <i class="gems"></i>
+                                                    </td>
+                                                </tr>
+                                            {{/each}}
+                                        </table>
+                                    </div>
                                 </div>
-
-                                <div class="season-summary" data-season-id="{{id}}"></div>
                             </div>
                         {{/each-reverse}}
                     </div>

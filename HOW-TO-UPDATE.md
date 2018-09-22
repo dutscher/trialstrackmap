@@ -103,7 +103,7 @@
 * look into game which version is the actual one
   * start app, go to options (gear in the top/left corner next to "Village")
   * in the right/bottom corner stands "5.8.3"
-  * go into file "./database/map.json" the app_version "5.8.3"
+  * go into file "./package.json" the change version to "5.8.3"
 * be sure your device is connected via adb! (see Preparation)
 * start import tasks:
   * $ npm run grunt import1GameDataPhone

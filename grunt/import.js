@@ -1,5 +1,6 @@
 module.exports = function (grunt) {
-    var _ = require("lodash"),
+    var package = grunt.config("pkg"),
+        _ = require("lodash"),
         fs = require("fs"),
         fsExt = require("fs-extra"),
         flat = require("flat"),
@@ -8,7 +9,7 @@ module.exports = function (grunt) {
         path = require("path"),
         consts = require("./import/00.const.js"),
         // VARS
-        gameVersion = require("../database/map.json").stats.app_version.replace(/\./g, ""),
+        gameVersion = package.version.replace(/\./g, ""),
         hddPath = function () {
             var dirOnStation = consts.drives.find(function (pathToDir) {
                 return fs.existsSync(pathToDir + consts.trialsUtilsDir);
@@ -25,14 +26,12 @@ module.exports = function (grunt) {
         })(),
         importPath = hddPath + gameVersion,
         importedPath = consts.importedPath.replace("${gameVersion}", gameVersion),
+        cachePath = hddPath + consts.s3Cache,
         newContentPath = importPath + "/" + consts.allInOneDir,
-        filesOfGame = consts.filesOfGame.map(function (name) {
-            return name + ".";
-        }),
-        workingFilesOfGame = _.extend([], filesOfGame)
-            .map(function (name) {
-                return importedPath + "/" + name;
-            }),
+        filesOfGame = consts.filesOfGame.map(name => `${name}.` ),
+        workingFilesOfGame = _
+            .extend([], filesOfGame)
+            .map(name => `${importedPath}/${name}`),
         dates = [];
     // put them together
     var importShared = _.extend({}, require("./import/00.utils.js")(grunt, http, https, path, fs, fsExt), {
@@ -44,6 +43,7 @@ module.exports = function (grunt) {
         https,
         flat,
         versionPath: importPath,
+        cachePath,
         secretPath: importedPath,
         dataGet: consts.cloudPath.replace("${gameVersion}", gameVersion),
         hddPath,
@@ -57,6 +57,8 @@ module.exports = function (grunt) {
         androidPath: consts.androidPath,
         allInOneDir: consts.allInOneDir,
         filesOfGame,// !!!
+        assetsOfGame: consts.assetsOfGame,
+        appFiles: consts.appFiles,
         workingFilesOfGame,
         defaultExt: consts.defaultExt,
         toExt: consts.toExt,

@@ -272,7 +272,8 @@
     "prices": "Premi",
     "stats": "Statistics",
     "total_legends": "Total Legends",
-    "more_stats": "More infos click here"
+    "more_stats": "More infos click here",
+    "summary": "Summary"
   },
   "cats": {
     "1": "Isola Hardcore",
@@ -601,7 +602,9 @@
     "313": "Crooked Grind",
     "314": "Ritmo Notturno",
     "315": "Fango d'Oro",
-    "316": "Estasi Esplosiva"
+    "316": "Estasi Esplosiva",
+    "317": "Sporgenze Impegnative",
+    "318": "Cardini Curvi"
   },
   "unreleased": [
     "Carreggiata",

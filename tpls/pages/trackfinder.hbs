@@ -1,6 +1,9 @@
 {{#extend "default"}}
     {{#content "title-override"}}true{{/content}}
     {{#content "title" mode="prepend"}}Trackfinder - {{/content}}
+    {{#content "description"}}Find all 300+ Tracks easily with one searchfield of the whole Trials Frontier{{/content}}
+    {{#content "url" mode="append"}}/trackfinder.html{{/content}}
+    {{#content "image"}}https://i.imgur.com/7MkbHSY.jpg{{/content}}
     {{#content "styles"}}
         <link rel="stylesheet" type="text/css" href="/dist/css/trackfinder.css{{cacheBuster}}"/>
     {{/content}}
@@ -14,12 +17,14 @@
                 </div>
                 <div class="trackpainter"
                     data-world="1"
+                    data-world-name="Seymore & Lotz"
                     data-src="{{replaceHoster ../map.database.media.gfx.images.trackmaps.1.srcPath ../map.database.media.gfx.hoster}}"
                     data-dim-map="{{../map.database.media.gfx.images.trackmaps.1.dim}}"
                     data-dim-path="{{../map.database.media.gfx.images.trackmaps.1.dimPath}}"
                     ></div>
                 <div class="trackpainter"
                     data-world="2"
+                    data-world-name="Petrol Falls"
                     data-src="{{replaceHoster ../map.database.media.gfx.images.trackmaps.2.srcPath ../map.database.media.gfx.hoster}}"
                     data-dim-map="{{../map.database.media.gfx.images.trackmaps.2.dim}}"
                     data-dim-path="{{../map.database.media.gfx.images.trackmaps.2.dimPath}}"
@@ -28,7 +33,7 @@
                     <input type="text"
                            class="trackfilter__search with-box-shadow"
                            ng-class="{'with-icon':searchTrack !== ''}"
-                           placeholder="{%'page.rightSidebar.searchForTrack'|translate%}"
+                           placeholder="{%'page.rightSidebar.searchForTrack'|translate%} ({%::data.tracks.length%})"
                            ng-model="searchTrack"
                            ng-model-options="{debounce:150}"/>
                     {{> language-select}}

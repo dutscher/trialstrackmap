@@ -6,7 +6,7 @@
                 <div class="wrap">
                     <h2>{%'page.leftSidebar.stats'|translate%}</h2>
                     {{#with map}}
-                        {%'page.leftSidebar.appVersion'|translate%}: {{database.map.stats.app_version}}<br/>
+                        {%'page.leftSidebar.appVersion'|translate%}: {{version}}<br/>
                     {{/with}}
 
                     {%'page.leftSidebar.update'|translate%}: {%'{{lastUpdateTime}}'|humanReadableDate%}

@@ -2,6 +2,11 @@ body, .season-page {
     display: flex;
 }
 
+.page-body {
+    display: flex;
+    flex-direction: column;
+}
+
 .no-pad {
     padding: 0
 }
@@ -18,9 +23,6 @@ h1, h2, h3 {
     margin: 5px 0;
 }
 
-.seasons-list {
-}
-
 @media (min-width: 600px) {
     .seasons-list {
         white-space: nowrap;
@@ -28,15 +30,34 @@ h1, h2, h3 {
     }
 }
 
+.season-scroller {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.season-summary {
+    overflow: auto;
+}
+
+.season-prizes {
+    height: 150px;
+    flex: 1 0;
+}
+
 .season-container {
-    display: inline-block;
-    vertical-align: top
+    display: flex;
+    flex-direction: column;
+    vertical-align: top;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 @media (min-width: 600px) {
     .season-container {
         width: 300px;
-        margin-right: 10px;
+        margin-left: 0;
+        margin-bottom: 0;
     }
 
     .season-container:last-child {
@@ -75,13 +96,11 @@ h1, h2, h3 {
 }
 
 .season-prizes {
-    height: 150px;
     overflow: scroll;
     overflow-x: hidden
 }
 
 .season-summary {
-    border-top: double 6px #ffee99;
     text-align: right;
     padding-top: 10px;
     margin-top: 10px;

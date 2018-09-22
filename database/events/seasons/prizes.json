@@ -29,7 +29,10 @@
     "23": "Snowman Peaks",
     "24": "Slippery Ice",
     "25": "Peaks of Peril",
-    "26": "Downtown Love"
+    "26": "Downtown Love",
+    "27": "Smurfin Ledges",
+    "28": "Curved Hinges",
+    "29": "Spare Ribs"
   },
   "paintjobs": {
     "1": {"title": "Neon Paintjob for Tango", "sprite": "tango-neon"},
@@ -55,7 +58,9 @@
     "21": {"title": "Vengeful Steed paintjob for Phantom (Run them over with your vengeance!)", "sprite": "phantom-vengeful-steed"},
     "22": {"title": "Camo Bandito paint job for Bandito (A good bandit can hide in plain sight.)", "sprite": "bandito-camouflage"},
     "23": {"title": "Winter Wolf paint job for Marauder (Howl at the moon!)", "sprite": "marauder-winter-wolf"},
-    "24": {"title": "Fanny Pack paint job for Mantis (Feel the motivation to move your body!)", "sprite": "mantis-fanny-pack"}
+    "24": {"title": "Fanny Pack paint job for Mantis (Feel the motivation to move your body!)", "sprite": "mantis-fanny-pack"},
+    "25": {"title": "KTM 500 Purple Dust", "sprite": "ktm-500-exc-purple-dust"},
+    "26": {"title": "The Renowned Berserkar", "sprite": "berserker-the-reowned-berserkar"}
   },
   "costums": {
     "1": {"title": "Ninja Head", "selector": "the-ninja", "part": "head"},
@@ -90,6 +95,12 @@
     "30": {"title": "Neon Blaze Pant", "selector": "neon-blaze", "part": "pant"},
     "31": {"title": "Neon Freeze Head", "selector": "neon-freeze", "part": "head"},
     "32": {"title": "Neon Freeze Torso", "selector": "neon-freeze", "part": "body"},
-    "33": {"title": "Neon Freeze Pant", "selector": "neon-freeze", "part": "pant"}
+    "33": {"title": "Neon Freeze Pant", "selector": "neon-freeze", "part": "pant"},
+    "34": {"title": "Butch Suite Head", "selector": "butch-suite", "part": "head"},
+    "35": {"title": "Butch Suite Torso", "selector": "butch-suite", "part": "body"},
+    "36": {"title": "Butch Suite Pant", "selector": "butch-suite", "part": "pant"},
+    "37": {"title": "The Deputy Head", "selector": "the-deputy", "part": "head"},
+    "38": {"title": "The Deputy Torso", "selector": "the-deputy", "part": "body"},
+    "39": {"title": "The Deputy Pant", "selector": "the-deputy", "part": "pant"}
   }
 }

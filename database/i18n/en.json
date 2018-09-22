@@ -275,7 +275,8 @@
     "prices": "Prizes",
     "stats": "Statistics",
     "total_legends": "Total Legends",
-    "more_stats": "More infos click here"
+    "more_stats": "More infos click here",
+    "summary": "Summary"
   },
   "tracks": {
     "1": "Parched Cliff",
@@ -590,7 +591,9 @@
     "313": "Crooked Grind",
     "314": "Night Crawling",
     "315": "Golden Dirt",
-    "316": "Bomber Bliss"
+    "316": "Bomber Bliss",
+    "317": "Smurfin Ledges",
+    "318": "Curved Hinges"
   },
   "unreleased": [
     "Flat",

@@ -14,6 +14,8 @@ module.exports = function (grunt) {
         ]);
     });
 
+    const package = grunt.config("pkg");
+
     const options = {
         flatten: true,
         data: ["dist/json/*.json"],
@@ -23,6 +25,9 @@ module.exports = function (grunt) {
             "tpls/partials/**/*.hbs",
             "tpls/layouts/*.hbs"
         ],
+        version: package.version,
+        title: package.title,
+        description: package.description,
         year: (new Date()).getFullYear(),
         lastUpdateTime: (new Date()).getTime(),
         lastUpdateTimeISO: (new Date()).toISOString(),

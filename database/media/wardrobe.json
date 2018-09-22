@@ -6,7 +6,7 @@
     40,41,43,42,50,44,47,48,46,51,52,53,54
   ],
   "homeshack": [
-    66,65,64,63,62,61,
+    69,68,67,66,65,64,63,62,61,
     60,59,58,57,56,55,54,53,52,51,
     50,49,48,47,46,45,44,43,42,41,
     40,39,38,37,36,35,34,33,32,31,
@@ -24,6 +24,33 @@
     }
   },
   "all": {
+    "69": {
+      "originID": 69,
+      "name": "The Deputy",
+      "parts": [
+        "https://i.imgur.com/sccID9T.png",
+        "https://i.imgur.com/1sZa92s.png",
+        "https://i.imgur.com/K3y5byM.png"
+      ]
+    },
+    "68": {
+      "originID": 68,
+      "name": "Chris Wheels Caper",
+      "parts": [
+        "https://i.imgur.com/pXmebzO.png",
+        "https://i.imgur.com/fUQJgBA.png",
+        "https://i.imgur.com/kBxYovk.png"
+      ]
+    },
+    "67": {
+      "originID": 67,
+      "name": "X-Games",
+      "parts": [
+        "https://i.imgur.com/4nDLDLF.png",
+        "https://i.imgur.com/Xmd902x.png",
+        "https://i.imgur.com/FiySD0d.png"
+      ]
+    },
     "66": {
       "originID": 66,
       "name": "Clawgirl",

@@ -34,7 +34,7 @@
             <option ng-repeat="cat in categories" class="{%::cat.class%}-bg"
                     ng-selected="selectedCat == cat.index"
                     value="{%::cat.index%}">
-                {%'cats.'+cat.index|translate%}
+                {%'cats.'+cat.index|translate|translateCat%}
                 ({%trackSum = (data.tracks|catAndTierTracks:cat.index:selectedTier).length%})
             </option>
         </select>

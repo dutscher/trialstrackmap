@@ -272,7 +272,8 @@
     "prices": "Premios",
     "stats": "Statistics",
     "total_legends": "Total Legends",
-    "more_stats": "More infos click here"
+    "more_stats": "More infos click here",
+    "summary": "Summary"
   },
   "cats": {
     "1": "Isla Desafío",
@@ -610,7 +611,9 @@
     "313": "Molienda tortuosa",
     "314": "Deambular nocturno",
     "315": "Tierra dorada",
-    "316": "Dicha del bombardero"
+    "316": "Dicha del bombardero",
+    "317": "Salientes pitufos",
+    "318": "Bisagras curvadas"
   },
   "unreleased": [
     "Calzada",

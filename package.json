@@ -1,8 +1,9 @@
 {
   "name": "trials-trackmap",
   "private": true,
-  "version": "1.0.0",
-  "description": "track locations and informations of the mobile game trials frontier",
+  "version": "6.2.2",
+  "title": "Trials Frontier Trackmap",
+  "description": "Guide for all Track-, Data-Cube- and Candy locations. As well Youtube walkthroughs for every track is available.",
   "author": "willy woitas <dutscher_sbf@hotmail.com>",
   "dependencies": {
     "grunt": "latest",

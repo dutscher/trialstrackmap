@@ -7,16 +7,38 @@ https://public-ubiservices.ubi.com/v1/profiles?profileId=%s
 %server%/public/playerprogress/v1/progress/status?profileid=%s
 */
 module.exports = {
+    "averages": {
+        "nuthin-but-a-tfg-thang": 21706,
+        "vanilla-ice-blockade": 21233,
+        "welcome-to-the-urban-jungle": 23059,
+        "wu-tango-clan": 0,
+        "cypress-hill-climb": 184554,
+        "metallica-mayhem": 20399,
+        "rage-against-the-dark-machine": 22174,
+        "notorious-tfg": 21416,
+    },
     // database/media/bikes.json .bikes -> bikeId
     // build/import/game/XXX/levels.json5 -> trackId
     // database/trackdata/ids.json -> oid === trackId
     "week": [
+        {
+            "id": 10,
+            "bike": "KTM Rally",
+            "bikeId": 14,
+            "trackName": "Bouncy Hills",
+            "trackId": 1056,
+        },
         {
             "id": 9,
             "bike": "Mantis",
             "bikeId": 5,
             "trackName": "Cannon End",
             "trackId": 1108,
+            "results": {
+                "map": "https://i.imgur.com/cIZYAix.jpg",
+                "table": "https://i.imgur.com/FwS7GF6.png",
+                "overview": "https://i.imgur.com/DYXSB9y.jpg",
+            }
         },
         {
             "id": 8,
@@ -376,7 +398,7 @@ module.exports = {
         ]
     },
     "left": {
-        "nuthin-but-a-tfg-thang":[
+        "nuthin-but-a-tfg-thang": [
             {
                 "up": "Abylons",
                 "id": "07a54fd0-7d1a-40f0-b819-288ebbd46ecd-1"

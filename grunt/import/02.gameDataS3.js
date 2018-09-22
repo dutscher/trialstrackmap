@@ -18,6 +18,7 @@ module.exports = function (shared, done) {
                         fileDest = shared.versionPath + "/" + fileData.name;
                     
                     filesToDownload.push({
+                        name: fileData.name,
                         src: fileSrc,
                         dest: fileDest
                     });
@@ -46,10 +47,24 @@ module.exports = function (shared, done) {
         }
 
         // download file
-        console.log("Download", downloadIndex, downloadFileObj.src);
-        shared.downloadFile(downloadFileObj.src, downloadFileObj.dest, function () {
+        // if dat file is new download from amazon
+        const cachedFile = shared.cachePath + "/" + downloadFileObj.name;
+        const isCached = shared.fs.existsSync(cachedFile);
+        const isNewVersion = downloadFileObj.src.indexOf(shared.gameVersion) !== -1;
+
+        if(!isCached || isNewVersion) {
+            console.log("Download", downloadIndex, downloadFileObj.src);
+            shared.downloadFile(downloadFileObj.src, downloadFileObj.dest, function () {
+                // copy to cache
+                shared.fsExt.copySync(downloadFileObj.dest, cachedFile);
+                downloadFiles(downloadIndex + 1);
+            });
+        // copy from cache
+        } else {
+            console.log("From Cache", downloadIndex, downloadFileObj.src);
+            shared.fsExt.copySync(cachedFile, downloadFileObj.dest);
             downloadFiles(downloadIndex + 1);
-        });
+        }
     }
 
     // start download

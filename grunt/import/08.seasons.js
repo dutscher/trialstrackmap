@@ -19,7 +19,7 @@ https://lb-rdv-http.ubi.com/TRIAG_AN_LNCH_A/public/pvp_matches/v1/matches
 
 */
 module.exports = function (shared, done) {
-    const importSeasonID = 50,
+    const importSeasonID = 52, // run import-02-gameDataS3 before to import-08-seasons
         useBetaServer = false,
         importDir = "build/import/seasons/",
         databaseDir = "database/events/seasons",
@@ -32,34 +32,34 @@ module.exports = function (shared, done) {
     console.log("# START SEASON IMPORT gameVersion:", shared.gameVersion, "importSeasonID:", importSeasonID);
 
     function findPrize(type, value) {
-        var returnData,
+        let returnData,
             foundPrize;
-        //console.log("findPrize", arguments)
+        // console.log("findPrize", arguments)
         switch (type) {
             case "track":
                 foundPrize = Object.keys(prizesJSON.tracks).filter(function (id) {
-                    var track = prizesJSON.tracks[id];
+                    const track = prizesJSON.tracks[id];
                     return track.toLowerCase() === value.toLowerCase();
                 });
                 returnData = parseInt(foundPrize[0]);
                 break;
             case "costum":
                 foundPrize = Object.keys(prizesJSON.costums).filter(function (id) {
-                    var costum = prizesJSON.costums[id];
-                    return costum.title === value;
+                    const costum = prizesJSON.costums[id];
+                    return costum.title.toLowerCase() === value.toLowerCase();
                 });
                 returnData = parseInt(foundPrize[0]);
                 break;
             case "paintjob":
                 foundPrize = Object.keys(prizesJSON.paintjobs).filter(function (id) {
-                    var paintjob = prizesJSON.paintjobs[id];
+                    const paintjob = prizesJSON.paintjobs[id];
                     return paintjob.title.toLowerCase().indexOf(value.toLowerCase()) !== -1;
                 });
                 returnData = parseInt(foundPrize[0]);
                 break;
         }
 
-        if (!foundPrize || foundPrize.length === 0) {
+        if (!foundPrize || foundPrize.length === 0 || !returnData) {
             console.warn("NO PRIZE FOUND FOR", type, value);
         }
 
@@ -67,16 +67,19 @@ module.exports = function (shared, done) {
     }
 
     function findSpecial(specialID) {
-        var rewards = rewardsJSON.PVPMatchRewardTypes,
+        const rewards = rewardsJSON.PVPMatchRewardTypes,
             foundReward = rewards.filter(function (reward) {
                 return reward.ID === specialID;
-            }),
-            returnData;
+            });
+        let returnData;
+
+        // console.log("findSpecial", specialID, foundReward)
+
         if (specialID && foundReward[0]) {
             // part
-            var matches = /(\d) (\w*)/g.exec(foundReward[0].Comment);
+            let matches = /(\d) (\w*)/g.exec(foundReward[0].Comment);
             if (matches && matches.length > 2) {
-                var type = matches[2].toLowerCase();
+                const type = matches[2].toLowerCase();
                 returnData = (
                     (type === "metal" ? "sheet" : type)
                     + "-"
@@ -106,6 +109,13 @@ module.exports = function (shared, done) {
                     extra: findPrize("paintjob", matches[2], foundReward[0].Comment)
                 };
             }
+            matches = /(.*) \(NOTE.*bikeskin\.txt.*/g.exec(foundReward[0].Comment);
+            if (matches && matches.length > 1) {
+                returnData = {
+                    extra_type: "paintjob",
+                    extra: findPrize("paintjob", matches[1], foundReward[0].Comment)
+                };
+            }
             // costum
             if (shared._.startsWith(foundReward[0].NameId, "OUTFIT")) {
                 returnData = {
@@ -119,6 +129,7 @@ module.exports = function (shared, done) {
                         .replace("middle", "Torso")
                         .replace("Bottom", "Pant")
                         .replace("bottom", "Pant")
+                        .replace("SUTE", "Suite")
                         , foundReward[0].Comment)
                 };
             }
@@ -129,7 +140,7 @@ module.exports = function (shared, done) {
 
     function handleSpecial(data, special) {
         if (special) {
-            var specialID = special.amount,
+            const specialID = special.amount,
                 arrDoughnut = [
                     222, // agent blueprint
                     260, // stallion
@@ -145,7 +156,7 @@ module.exports = function (shared, done) {
             } else if (arrDoughnut.indexOf(specialID) !== -1) {
                 data.extra_type = "doughnut";
             } else {
-                var specialData = findSpecial(specialID);
+                const specialData = findSpecial(specialID);
                 if (specialData && Object.keys(specialData).length > 0) {
                     data = shared._.extend({}, data, specialData);
                 }
@@ -156,10 +167,10 @@ module.exports = function (shared, done) {
     }
 
     function readSeasonFiles() {
-        var dirData = shared.fs.readdirSync(importDir);
+        const dirData = shared.fs.readdirSync(importDir);
         // loop import files
-        for (var i in dirData) {
-            var file = dirData[i],
+        for (const i in dirData) {
+            const file = dirData[i],
                 json = require("../../" + importDir + file),
                 settings = json.pvp_season_settings,
                 rewards = json.pvp_season_rewards,
@@ -189,7 +200,7 @@ module.exports = function (shared, done) {
                 };
             // going through rewards
             rewards.forEach(function (rank) {
-                var coins = rank.rewards.filter(function (reward) {
+                const coins = rank.rewards.filter(function (reward) {
                         return reward.item_id === 1;
                     }),
                     gems = rank.rewards.filter(function (reward) {
@@ -197,12 +208,12 @@ module.exports = function (shared, done) {
                     }),
                     special = rank.rewards.filter(function (reward) {
                         return reward.item_id === 145;
-                    }),
-                    data = {
-                        level: rank.rank,
-                        coins: coins[0].amount,
-                        gems: gems[0] ? gems[0].amount : 0
-                    };
+                    });
+                let data = {
+                    level: rank.rank,
+                    coins: coins[0].amount,
+                    gems: gems[0] ? gems[0].amount : 0
+                };
                 // handle all the other prizes
                 data = handleSpecial(data, special[0]);
                 // remove gems if empty
@@ -231,16 +242,16 @@ module.exports = function (shared, done) {
     }
 
     function readSeasonsFromServer(callback) {
-        var options = shared.getRequestOpts(
+        const options = shared.getRequestOpts(
             // "/TRIAG_AN_LNCH_A/public/pvp_matches/v1/pvp_config",
             "/TRIAG_"
             + (useBetaServer ? "AN_LNCH_A" : "IP_BETA_B")
             + "/public/pvp_matches/v1/season/" + importSeasonID + "?lang=en"
         );
 
-        var req = shared.https.request(options, function (res) {
-            res.on("data", function (json) {
-                var json = JSON.parse(json);
+        const req = shared.https.request(options, function (res) {
+            res.on("data", function (data) {
+                const json = JSON.parse(data);
                 shared.ensureDirectoryExistence(importDir);
                 shared.fs.writeFileSync(importDir + importSeasonID + ".json", JSON.stringify(json, null, 2));
                 callback();

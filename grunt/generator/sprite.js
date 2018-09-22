@@ -125,10 +125,11 @@ module.exports = function () {
                     costumName = costumData.name.toLowerCase().replace(/ /g, "-"),
                     costumSelector = "costum--" + costumData.originID,
                     costumParts = costumData.parts,
+                    isSmall = costumParts.length === 3,
                     costumHead = costumParts[0].split("|"),
                     costumBody = costumParts[1].split("|"),
-                    costumArm = costumParts[2].split("|"),
-                    costumPant = costumParts[3].split("|");
+                    costumArm = !isSmall ? costumParts[2].split("|") : [],
+                    costumPant = costumParts[!isSmall ? 3 : 2].split("|");
 
                 // src|left|top|width
                 css += (costumParts ? (
@@ -158,6 +159,7 @@ module.exports = function () {
                                 : ""
                         ) +
                         "}\n" +
+                        (!isSmall ? (
                         "." + costumName + " .costum--arm,\n" +
                         "." + costumSelector + " .costum--arm,\n" +
                         "." + costumSelector + ".costum--arm {\n" +
@@ -171,11 +173,11 @@ module.exports = function () {
                                 )
                                 : ""
                         ) +
-                        "}\n" +
+                        "}\n" ) : "" ) +
                         "." + costumName + " .costum--pant,\n" +
                         "." + costumSelector + " .costum--pant,\n" +
                         "." + costumSelector + ".costum--pant {\n" +
-                        "   background-image: url('" + replaceHoster(gfxJSON.hoster, costumParts[3]) + "');\n" +
+                        "   background-image: url('" + replaceHoster(gfxJSON.hoster, costumPant[0]) + "');\n" +
                         (
                             costumPant.length > 1
                                 ? (
