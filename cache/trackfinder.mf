@@ -1,0 +1,24 @@
+CACHE MANIFEST
+# https://www.html5rocks.com/de/tutorials/appcache/beginner/
+
+# Explicitly cached 'master entries'.
+CACHE:
+trackfinder.html
+dist/css/trackfinder.css
+http://i.imgur.com/dVuZS7f.jpg
+http://i.imgur.com/4bxtSwI.jpg
+dist/js/map.min.js
+dist/js/vendor.min.js
+dist/json/map.json
+dist/json/gfx.json
+dist/i18n/jp.json
+
+
+
+# static.html will be served if main.py is inaccessible
+# offline.jpg will be served in place of all images in images/large/
+# offline.html will be served in place of all other .html files
+#FALLBACK:
+#/main.py /static.html
+#images/large/ images/offline.jpg
+#*.html /offline.html

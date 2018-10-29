@@ -592,13 +592,20 @@
     "314": "Night Crawling",
     "315": "Golden Dirt",
     "316": "Bomber Bliss",
-    "317": "Smurfin Ledges",
-    "318": "Curved Hinges"
+    "317": "Smurfin' Ledges",
+    "318": "Curved Hinges",
+    "319": "Blossom Grove",
+    "320": "Crystal Flow",
+    "321": "Domino Dash",
+    "322": "Night Lights",
+    "323": "City Chaos",
+    "324": "Crystal Extraction",
+    "325": "Bumpy Mountain",
+    "326": "Haunted Ramps",
+    "327": "Face First"
   },
   "unreleased": [
-    "Flat",
-    "Roadway",
     "Hope Surrenders",
-    "Donkey lvl"
+    "Roadway"
   ]
 }

@@ -3,7 +3,7 @@
     <node-interpreter value="project" />
     <gruntfile value="$PROJECT_DIR$/Gruntfile.js" />
     <tasks>
-      <task value="#danTeamImport" />
+      <task value="danTeamImport" />
     </tasks>
     <envs>
       <env name="fullPull" value="true" />

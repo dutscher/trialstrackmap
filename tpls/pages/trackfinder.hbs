@@ -3,7 +3,7 @@
     {{#content "title" mode="prepend"}}Trackfinder - {{/content}}
     {{#content "description"}}Find all 300+ Tracks easily with one searchfield of the whole Trials Frontier{{/content}}
     {{#content "url" mode="append"}}/trackfinder.html{{/content}}
-    {{#content "image"}}https://i.imgur.com/7MkbHSY.jpg{{/content}}
+    {{#content "image"}}https://i.imgur.com/ZAd5CmK.jpg{{/content}}
     {{#content "styles"}}
         <link rel="stylesheet" type="text/css" href="/dist/css/trackfinder.css{{cacheBuster}}"/>
     {{/content}}
@@ -36,7 +36,8 @@
                            placeholder="{%'page.rightSidebar.searchForTrack'|translate%} ({%::data.tracks.length%})"
                            ng-model="searchTrack"
                            ng-model-options="{debounce:150}"/>
-                    {{> language-select}}
+                    {{> language-select all-langs=true}}
+                    {{> facebook}}
                 </div>
             </div>
         </div>

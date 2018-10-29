@@ -4,7 +4,19 @@
   "url3": "https://play.google.com/store/apps/details?id=com.ubisoft.redlynx.trialsfrontier.ggp",
   "releases": [
     {
-      "version": "6.1.1",
+      "version": "6.4.0",
+      "date": "24.10.2018"
+    },
+    {
+      "version": "6.3.0",
+      "date": "15.10.2018"
+    },
+    {
+      "version": "6.2.0",
+      "date": "03.09.2018"
+    },
+    {
+      "version": "6.1.0",
       "date": "02.07.2018"
     },
     {

@@ -51,11 +51,12 @@ module.exports = function () {
                 spritePaintJobIconScalePercent = imageJson["paintjob-icons"].scale;
 
             function trimName (name) {
-                var name = "" + name.toLowerCase()
+                const nameLocal = "" + name.toLowerCase()
                     .replace(/ /g, "-")
+                    .replace(/\./g, "")
                     .replace(/\(/g, "")
                     .replace(/\)/g, "");
-                return name;
+                return nameLocal
             }
 
             function calcPercantage (pixel, scalePercent) {

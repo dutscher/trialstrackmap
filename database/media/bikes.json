@@ -15,7 +15,7 @@
       "tier": 1,
       "paintjobs": [
         "Default",
-        "Raising Star",
+        "Raising Star aka. America",
         "Lava",
         "Boogeyman",
         "Saddle Bags",
@@ -29,13 +29,13 @@
       "paintjobs": [
         "Default",
         "Flaming",
-        "UK",
-        "France",
+        "Union Jack",
+        "Bastille",
         "Neon",
         "Soylent",
-        "Stiched",
+        "Stitch",
         "Redlynx",
-        "Birdy",
+        "Nutcracker",
         "AUS-X-OPEN"
       ]
     },
@@ -45,15 +45,15 @@
       "paintjobs": [
         "Default",
         "Wasp",
-        "Number 8",
+        "8-Ball",
         "Sailor",
         "Medic",
         "Aloha",
         "Luchador",
         "Kaleidoscope",
         "Raven",
-        "Independence",
-        "Valentine"
+        "Heartbreaker",
+        "4thJuly"
       ]
     },
     "4": {
@@ -61,9 +61,9 @@
       "tier": 2,
       "paintjobs": [
         "Default",
-        "Camouflage",
-        "Samsarin",
-        "Skeleton",
+        "Camo",
+        "Vanilla Glow",
+        "Mr. Bones",
         "Ice Cube",
         "Edge"
       ]
@@ -73,15 +73,16 @@
       "tier": 2,
       "paintjobs": [
         "Default",
-        "Gold",
+        "Golden",
         "Marine",
         "Mithril",
         "Pumpkin King",
         "Sheriffs Star",
         "Fanny Pack",
-        "Dealbreaker",
+        "The Dead Of Day",
         "AUS-X-OPEN",
-        "Desert Storm"
+        "Sandstorm",
+        "ICY X"
       ]
     },
     "6": {
@@ -89,10 +90,11 @@
       "tier": 2,
       "paintjobs": [
         "Default",
-        "Swashbuckler",
+        "Poopdeck",
         "Scales",
         "Footprint",
-        "Winter Wolf"
+        "Winter Wolf",
+        "Valentine In"
       ]
     },
     "7": {
@@ -100,13 +102,14 @@
       "tier": 3,
       "paintjobs": [
         "Gnasher (Default)",
-        "Snake",
-        "Parrot",
-        "Squash",
+        "Snakebite",
+        "Mad Bird",
+        "The Gourd",
         "Hippie",
         "Cheetah",
-        "Revenant",
-        "Clawride"
+        "The Revenant",
+        "Clawride",
+        "X-18"
       ]
     },
     "8": {
@@ -114,12 +117,13 @@
       "tier": 3,
       "paintjobs": [
         "Zebra (Default)",
-        "Pimpin",
-        "Venom Spider",
+        "Chester",
+        "Venom",
         "Spirits",
-        "Batwing",
+        "Batbike",
         "Hard Rocker",
-        "The Reowned Berserkar"
+        "The Reowned Berserkar",
+        "Darkmagic"
       ]
     },
     "9": {
@@ -129,10 +133,10 @@
         "Default",
         "Noble",
         "Apache",
-        "Woodadventure",
+        "Ceremonial Feathers",
         "Saurus",
         "Cyclops",
-        "Vengeful Steed"
+        "Vengeance Knight"
       ]
     },
     "10": {
@@ -143,7 +147,7 @@
         "Palmino",
         "Snowy",
         "Blacky",
-        "Skelly"
+        "Undead Horse"
       ]
     },
     "11": {
@@ -151,13 +155,14 @@
       "tier": "Crazy",
       "paintjobs": [
         "Default",
-        "Fire",
+        "Cruise Red",
         "Spec Ops",
-        "White"
+        "Cruise White"
       ]
     },
     "13": {
       "name": "KTM 500-EXC",
+      "nameShort": "KTM EXC",
       "tier": 1,
       "paintjobs": [
         "Default",
@@ -168,10 +173,11 @@
     },
     "14": {
       "name": "KTM 450 Rally",
+      "nameShort": "KTM Rally",
       "tier": 2,
       "paintjobs": [
         "Default",
-        "Redbull"
+        "Red Bull"
       ]
     },
     "15": {
@@ -180,15 +186,17 @@
       "paintjobs": [
         "Default",
         "Camouflage",
-        "Desert Storm"
+        "Thunderstorm"
       ]
     },
     "16": {
       "name": "BMW F 800 GS",
+      "nameShort": "BMW",
       "tier": 3,
       "paintjobs": [
         "Default (Black White)",
-        "Black Red"
+        "Red",
+        "Dark Horse"
       ]
     },
     "19": {

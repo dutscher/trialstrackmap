@@ -41,7 +41,7 @@ module.exports = function (grunt) {
             dest: "dist"
         },
         danTeam: {
-            src: ["tpls/pages/danteam.hbs"],
+            src: ["tpls/pages/danteam/danteam.hbs"],
             dest: "dist"
         }
     }

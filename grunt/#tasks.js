@@ -23,7 +23,7 @@ module.exports = (grunt) => {
 
     grunt.registerTask("danTeamImport", () => {
         grunt.task.run([
-            "import-09-danteam",
+            "import-00-danteam",
             "deployDanTeam",
         ]);
     });

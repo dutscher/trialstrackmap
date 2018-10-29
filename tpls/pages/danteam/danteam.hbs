@@ -1,0 +1,278 @@
+{{#extend "default"}}
+    {{#content "styles" mode="append"}}
+        <link rel="stylesheet" type="text/css" href="/dist/css/main.css{{cacheBuster}}"/>
+    {{/content}}
+    {{#content "ctrl"}}ng-controller="trackData"{{/content}}
+    {{#content "preload-images"}}data:loaded{{/content}}
+    {{#content "title-override"}}true{{/content}}
+    {{#content "title" mode="prepend"}}
+        Dan's Team Table
+    {{/content}}
+    {{#content "body"}}
+        <style>
+            .wrap {
+                display: flex;
+            }
+            .team-table td, .team-table--bottom {
+                color: #ffee99;
+            }
+            .team-table td {
+                vertical-align: top;
+                padding: 2px 5px;
+            }
+            .team-table .team-head--blue {
+                background: blue;
+            }
+            .team--blue {
+                color: blue;
+            }
+            .team-table .team-head--red {
+                background: red;
+            }
+            .team--red {
+                color: red;
+            }
+            .team-table .team-head td {
+                color: #fff;
+                font-size: 20px;
+            }
+            .team-table .member-row td {
+                padding: 0 5px;
+                line-height: 13px;
+            }
+            .team-table--bottom {
+                padding: 2px;
+                font-size: 10px;
+            }
+
+            .icon-wrap {
+                display: inline-block;
+                position: relative;
+            }
+            .icon-wrap .paintjob {
+                position: absolute;
+                transform: scale(0.4);
+                transform-origin: top;
+                background-color: #ffee99;
+                z-index: 0;
+                left: -20px;
+                top: -15px;
+            }
+            tr:not(.not-improved) .icon-wrap .paintjob:hover {
+                z-index: 1;
+                transform: scale(1);
+                background-color: #fff;
+            }
+            .icon-wrap--placeholder {
+                width: 20px;
+                height: 20px;
+                display: inline-block;
+            }
+            .icon-wrap--wrong-bike .paintjob {
+                background-color: #ff0000!important;
+            }
+            .icon-wrap.icon-wrap--placeholder {
+                transform: scale(0.1);
+                transform-origin: top left;
+                height: 10px;
+                top: -5px;
+                left: -5px;
+            }
+            tr:not(.not-improved) .icon-wrap--placeholder:hover {
+                transform: scale(0.4);
+                left: -46px;
+                top: -37px;
+                z-index: 1;
+            }
+            tr:not(.not-improved) .icon-wrap--placeholder:hover .costum__part {
+                width: 225px;
+                height: 155px;
+            }
+            .results-images {
+                background: rgba(0, 0, 0, 0.55);
+                color: #ffee99;
+                margin-left: 8px;
+                padding: 2px 5px;
+            }
+            .results-images h2 {
+                margin: 0 0 8px;
+            }
+            .results-images p {
+                padding-bottom: 16px;
+                border-bottom:dashed 1px #ffee99;
+                margin: 0 0 16px;
+                padding-left: 8px;
+            }
+            .results-images .images {
+                display: flex;
+                align-items: flex-start;
+            }
+            .results-images .images img {
+                height: 50px;
+                margin-right: 8px;
+            }
+            .results-images .icon-wrap {
+                width: 23px
+            }
+            .improvement {
+                color: #1cff00;
+                font-size: 10px;
+            }
+            .rank, .unicode {
+                font-size: 12px;
+            }
+            .rank--small {
+                font-size: 10px;
+            }
+            .rank-cell {
+                text-align: right;
+                padding: 0!important;
+            }
+            .icon-cell {
+                padding: 0!important;
+            }
+            .small--cell {
+                width: 1px;
+                padding: 0!important;
+            }
+            .cell-device {
+                width: 20px;
+                padding: 0!important;
+                position: relative;
+            }
+            .cell-device i {
+                position: absolute;
+                top: -3px;
+            }
+            .time-week {
+                display: inline-block;
+                width: 75px;
+            }
+            td.time-cell {
+                padding-left: 25px!important;
+            }
+            .member-row.not-improved {
+                opacity: 0.6;
+            }
+            .team-name {
+                white-space: nowrap;
+            }
+        </style>
+        {{#with ../danteam.build.danteam}}
+        <div class="page-body">
+            <div class="wrap">
+                <div>
+                    <table class="team-table">
+                        {{#each teamTimes}}
+                        <tr class="team-head">
+                            <td class="color" colspan="8">
+                                {{math @index "+" 1}}.
+                                {{name}}
+                            </td>
+                        </tr>
+                        {{#each (lookup ../teams.teams name)}}
+                        <tr class="member-row{{#xif "!this.isValidTime"}} not-improved{{/xif}}">
+                            <td class="rank-cell">
+                                <span class="rank" title="Rank in this week">
+                                    {{math (findRank ../../teams.allPlayer up) "+" 1}}.
+                                </span>
+                            </td>
+                            <td class="rank-cell">
+                                {{#if rank}}
+                                    <span class="rank rank--small" title="Rank on {{#if isIos}}iOS{{else}}Android{{/if}} leaderboard">({{rank}}.)</span>
+                                {{/if}}
+                            </td>
+                            <td class="cell-device">
+                                <i class="device-{{#if isIos}}ios{{else}}android{{/if}}"></i>
+                            </td>
+                            <td class="icon-cell {{#xif "!this.drivenBike"}} icon-wrap--wrong-bike{{/xif}}">
+                                {{#with ../../../bikes.build.bikes}}
+                                <span class="icon-wrap icon-wrap--paintjob"
+                                    title="{{bike-name bikes ../data.bikeId ../data.paintJobId}}">
+                                    <i class="paintjob paintjob-{{../data.bikeId}}-{{../data.paintJobId}}"></i>
+                                </span>
+                                {{/with}}
+                            </td>
+                            <td class="time-cell">
+                                <span class="time-week">
+                                {{#if time}}
+                                    {%'{{time}}'|convertTime%}
+                                {{else}}
+                                    0:00.000**
+                                {{/if}}
+                                </span>
+                                {{#xif "this.improvement > 0"}}
+                                    <span class="improvement" title="Improved time since week start">(+{%'{{improvement}}'|convertTime%})</span>
+                                {{/xif}}
+                            </td>
+                            <td class="icon-cell small--cell">
+                                <span class="icon-wrap icon-wrap--placeholder">
+                                    <i class="costum__part costum--head costum--{{data.costum.headID}}"></i>
+                                </span>
+                            </td>
+                            <td class="small--cell">
+                                {{#if data.riderLevel}}<span class="rank" title="PB Rider level">{{data.riderLevel}}</span>{{/if}}
+                            </td>
+                            <td>
+                                {{up}}
+                                {{#xif "this.globalRank > 0"}}<span class="rank rank--small" title="Rank on global leaderboard">({{globalRank}})</span>{{/xif}}
+                                {{#if l}}<span class="unicode">👑</span>{{/if}}
+                            </td>
+                        </tr>
+                        {{/each}}
+                        {{/each}}
+                    </table>
+                    <div class="team-table--bottom">
+                    </div>
+                </div>
+                <div class="results-images">
+                    <div>
+                        <h2>Week #{{teams.week.[0].id}}</h2>
+                        <p>
+                            Bike: {{teams.week.[0].bike}}<br />
+                            Track: {{teams.week.[0].track}}<br />
+                            Last update: {%'{{../lastUpdateTime}}'|humanReadableDate:true%}<br />
+                        </p>
+                        <h2>Best 3 player</h2>
+                        <p>
+                            {{#listItem 0 3 teams.allPlayer}}
+                                <i class="device-{{#if isIos}}ios{{else}}android{{/if}}"></i>
+                                {{#with ../../../bikes.build.bikes}}
+                                    <span class="icon-wrap icon-wrap--paintjob"
+                                          title="{{bike-name bikes ../bikeId ../paintJobId}}">
+                                    <i class="paintjob paintjob-{{../bikeId}}-{{../paintJobId}}"></i>
+                                </span>
+                                {{/with}}
+                                <span>{%'{{time}}'|convertTime%}</span>
+                                {{name}}
+                                <br />
+                            {{/listItem}}
+                        </p>
+                    </div>
+                    {{#each teams.week}}
+                        {{#if results}}
+                        <div>
+                            <h2>Week #{{id}}</h2>
+                            <div class="images">
+                            {{#if results.overview}}
+                                <a href="{{results.overview}}" target="_blank">
+                                    <img src="{{imgurThumb results.overview}}"/></a>{{/if}}
+                            {{#if results.map}}
+                                <a href="{{results.map}}" target="_blank">
+                                    <img src="{{imgurThumb results.map}}"/></a>{{/if}}
+                            {{#if results.table}}
+                                <a href="{{results.table}}" target="_blank">
+                                    <img src="{{imgurThumb results.table}}"/></a>{{/if}}
+                            {{#if results.fastest}}
+                                <a href="{{results.fastest}}" target="_blank">
+                                    <img src="{{imgurThumb results.fastest}}"/></a>{{/if}}
+                            </div>
+                        </div>
+                        {{/if}}
+                    {{/each}}
+                </div>
+            </div>
+        {{/with}}
+        </div>
+    {{/content}}
+{{/extend}}

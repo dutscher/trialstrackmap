@@ -19,7 +19,7 @@ https://lb-rdv-http.ubi.com/TRIAG_AN_LNCH_A/public/pvp_matches/v1/matches
 
 */
 module.exports = function (shared, done) {
-    const importSeasonID = 52, // run import-02-gameDataS3 before to import-08-seasons
+    const importSeasonID = 53, // run import-02-gameDataS3 before to import-08-seasons
         useBetaServer = false,
         importDir = "build/import/seasons/",
         databaseDir = "database/events/seasons",
@@ -31,7 +31,97 @@ module.exports = function (shared, done) {
         prizesJSON = require("../../database/events/seasons/prizes.json");
     console.log("# START SEASON IMPORT gameVersion:", shared.gameVersion, "importSeasonID:", importSeasonID);
 
-    function findPrize(type, value) {
+    function findSpecial(specialID) {
+        const rewards = rewardsJSON.PVPMatchRewardTypes,
+            foundReward = rewards.filter(function (reward) {
+                return reward.ID === specialID;
+            });
+        const commentOfReward = foundReward[0].Comment;
+        let returnData;
+
+        // console.log("findSpecial", specialID, foundReward)
+
+        if (specialID && foundReward[0]) {
+            // part
+            let matches = /(\d) (\w*)/g.exec(commentOfReward);
+            if (matches && matches.length > 2) {
+                const type = matches[2].toLowerCase();
+                returnData = (
+                    (type === "metal" ? "sheet" : type)
+                    + "-"
+                    + (parseInt(matches[1]) + 1)
+                );
+            }
+            // track
+            matches = /Track Reward - (.*)/g.exec(commentOfReward);
+            if (matches && matches.length > 1) {
+                returnData = {
+                    extra_type: "track",
+                    extra: findPrize("track", matches[1], commentOfReward)
+                };
+            }
+            // paintjobs
+            const allPJMatcher = [
+                {
+                    reqExp: /Custom skin '(.*)' for the (.*)\. .*/g,
+                    matchLength: 2,
+                    matchGroup: 1
+                },
+                {
+                    reqExp: /(.*) (.*) Paintjob$.*/g,
+                    matchLength: 2,
+                    matchGroup: 2
+                },
+                // Custom skin 'Stitch'. (NOTE: ItemId for bike skins points to bikeskin.txt skin ids!)
+                {
+                    reqExp: /Custom skin '(.*)'\. \(NOTE.*bikeskin\.txt.*/g,
+                    matchLength: 1,
+                    matchGroup: 1
+                },
+                {
+                    reqExp: /(.*) \(NOTE.*bikeskin\.txt.*/g,
+                    matchLength: 1,
+                    matchGroup: 1
+                },
+            ];
+            // find with matcher
+            let pjMatch = null;
+            allPJMatcher.map(matcher => {
+                const localMatches = matcher.reqExp.exec(commentOfReward);
+                if (localMatches && localMatches.length > matcher.matchLength && pjMatch === null) {
+                    pjMatch = localMatches[matcher.matchGroup];
+                }
+            });
+            if(pjMatch !== null) {
+                returnData = {
+                    extra_type: "paintjob",
+                    extra: findPrize("paintjob", pjMatch, commentOfReward)
+                };
+            }
+
+            // costum
+            if (shared._.startsWith(foundReward[0].NameId, "OUTFIT")) {
+                returnData = {
+                    extra_type: "costum",
+                    extra: findPrize("costum", commentOfReward
+                        .replace(/\./g, "")
+                        .replace("Pants", "Pant")
+                        .replace("Leg", "Pant")
+                        .replace("Top", "Head")
+                        .replace("Middle", "Torso")
+                        .replace("middle", "Torso")
+                        .replace("Bottom", "Pant")
+                        .replace("bottom", "Pant")
+                        .replace("SUTE", "Suite")
+                        , commentOfReward)
+                };
+            }
+        }
+
+        return returnData;
+    }
+
+    function findPrize(type, value, seasonComment) {
         let returnData,
             foundPrize;
         // console.log("findPrize", arguments)
@@ -51,6 +141,7 @@ module.exports = function (shared, done) {
                 returnData = parseInt(foundPrize[0]);
                 break;
             case "paintjob":
+            case "skin":
                 foundPrize = Object.keys(prizesJSON.paintjobs).filter(function (id) {
                     const paintjob = prizesJSON.paintjobs[id];
                     return paintjob.title.toLowerCase().indexOf(value.toLowerCase()) !== -1;
@@ -60,79 +151,7 @@ module.exports = function (shared, done) {
         }
 
         if (!foundPrize || foundPrize.length === 0 || !returnData) {
-            console.warn("NO PRIZE FOUND FOR", type, value);
-        }
-
-        return returnData;
-    }
-
-    function findSpecial(specialID) {
-        const rewards = rewardsJSON.PVPMatchRewardTypes,
-            foundReward = rewards.filter(function (reward) {
-                return reward.ID === specialID;
-            });
-        let returnData;
-
-        // console.log("findSpecial", specialID, foundReward)
-
-        if (specialID && foundReward[0]) {
-            // part
-            let matches = /(\d) (\w*)/g.exec(foundReward[0].Comment);
-            if (matches && matches.length > 2) {
-                const type = matches[2].toLowerCase();
-                returnData = (
-                    (type === "metal" ? "sheet" : type)
-                    + "-"
-                    + (parseInt(matches[1]) + 1)
-                );
-            }
-            // track
-            matches = /Track Reward - (.*)/g.exec(foundReward[0].Comment);
-            if (matches && matches.length > 1) {
-                returnData = {
-                    extra_type: "track",
-                    extra: findPrize("track", matches[1], foundReward[0].Comment)
-                };
-            }
-            // paintjob
-            matches = /Custom skin '(.*)' for the (.*)\. .*/g.exec(foundReward[0].Comment);
-            if (matches && matches.length > 2) {
-                returnData = {
-                    extra_type: "paintjob",
-                    extra: findPrize("paintjob", matches[1], foundReward[0].Comment)
-                };
-            }
-            matches = /(.*) (.*) Paintjob$.*/g.exec(foundReward[0].Comment);
-            if (matches && matches.length > 2) {
-                returnData = {
-                    extra_type: "paintjob",
-                    extra: findPrize("paintjob", matches[2], foundReward[0].Comment)
-                };
-            }
-            matches = /(.*) \(NOTE.*bikeskin\.txt.*/g.exec(foundReward[0].Comment);
-            if (matches && matches.length > 1) {
-                returnData = {
-                    extra_type: "paintjob",
-                    extra: findPrize("paintjob", matches[1], foundReward[0].Comment)
-                };
-            }
-            // costum
-            if (shared._.startsWith(foundReward[0].NameId, "OUTFIT")) {
-                returnData = {
-                    extra_type: "costum",
-                    extra: findPrize("costum", foundReward[0].Comment
-                        .replace(/\./g, "")
-                        .replace("Pants", "Pant")
-                        .replace("Leg", "Pant")
-                        .replace("Top", "Head")
-                        .replace("Middle", "Torso")
-                        .replace("middle", "Torso")
-                        .replace("Bottom", "Pant")
-                        .replace("bottom", "Pant")
-                        .replace("SUTE", "Suite")
-                        , foundReward[0].Comment)
-                };
-            }
+            console.warn("NO PRIZE FOUND FOR", `type: '${type}'`, `value: '${value}'\ncomment:`, seasonComment);
         }
 
         return returnData;

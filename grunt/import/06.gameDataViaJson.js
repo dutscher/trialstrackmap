@@ -1,6 +1,6 @@
 module.exports = function (shared) {
     // convert game data to trackmap data
-    var i18nDefaultFile = "database/i18n/en.json",
+    const i18nDefaultFile = "database/i18n/en.json",
         fuelToTier = {
             0: 0,
             5: 1,
@@ -12,18 +12,16 @@ module.exports = function (shared) {
             {x: 2049, y: 1015},
         ],
         JSON_ = (function () {
-            var obj = {};
-            for (var i in shared.workingFilesOfGame) {
-                var file = shared.workingFilesOfGame[i],
-                    json = require("../../" + file + shared.toExt),
-                    key = file.split("/")[4].replace("\.", "");
-                obj[key] = json;
+            const obj = {};
+            for (const i in shared.workingFilesOfGame) {
+                const file = shared.workingFilesOfGame[i];
+                const key = file.split("/")[4].replace("\.", "");
+                obj[key] = require("../../" + file + shared.toExt);
             }
             obj.i18n = require("../../" + i18nDefaultFile);
             return obj;
         })(),
         trackKeys = Object.keys(JSON_.i18n.tracks),
-        trackKeysOrdered = {},
         trackValues = shared.values(JSON_.i18n.tracks, true),
         trackValuesRaw = shared.values(JSON_.i18n.tracks),
         // Villages
@@ -31,12 +29,13 @@ module.exports = function (shared) {
         levelNames = [],
         levelNamesWithId = {},
         newLevels = [],
+        knownUnreleasedLevels = [],
         unreleasedLevels = [],
         tmpData = {};
 
     // make data readable
-    for (var i in JSON_.levels.Levels) {
-        var level = JSON_.levels.Levels[i],
+    for (const i in JSON_.levels.Levels) {
+        const level = JSON_.levels.Levels[i],
             name = (shared.renameTrack.hasOwnProperty(level.N)
                 ? shared.renameTrack[level.N]
                 : level.N)
@@ -51,8 +50,8 @@ module.exports = function (shared) {
             coords = {
                 x: level.X !== -10000 ? level.X + worldCoordsDifference[level.L].x : -1,
                 y: level.Y !== -10000 ? level.Y + worldCoordsDifference[level.L].y : -1,
-            },
-            trackData;
+            };
+        let trackData;
 
         // add name to levelNames
         if (shared._.startsWith(level.N, "LVL_")) {
@@ -62,6 +61,7 @@ module.exports = function (shared) {
 
         trackData = {
             name,
+            upperName: name.replace(/\b\w/g, l => l.toUpperCase()),
             i18n: trackValuesRaw[trackIndex],
             author: level.A,
             oriID: level.ID,
@@ -115,19 +115,24 @@ module.exports = function (shared) {
 
         if (!Number.isNaN(trackID)) {
             newLevels.push(trackData);
+        // test tracks aka
+        } else if(JSON_.i18n.unreleased.indexOf(trackData.upperName) !== -1) {
+            knownUnreleasedLevels.push(trackData.upperName);
+        // new tracks
         } else {
             unreleasedLevels.push(trackData);
         }
     }
 
-    var lastId = trackKeys[trackKeys.length - 1],
-        nextId = lastId,
-        newLevelsNotInI18NObj = {};
+    const lastId = trackKeys[trackKeys.length - 1];
+    const newLevelsNotInI18NObj = {};
+    let nextId = lastId;
     unreleasedLevels.map((track) => {
         nextId++;
-        newLevelsNotInI18NObj[nextId] = (track.name).replace(/\b\w/g, l => l.toUpperCase());
+        newLevelsNotInI18NObj[nextId] = track.upperName;
     });
     console.log("levels:", newLevels.length, `nextId: ${lastId}`,
+        "\nknownUnreleasedLevels:", knownUnreleasedLevels.length, knownUnreleasedLevels,
         "\nunreleasedLevels:", unreleasedLevels.length);
     console.log(shared.print(shared.flat.flatten(newLevelsNotInI18NObj)),
         "\nadd them to renameTrack in 00.const.js or",
@@ -144,8 +149,8 @@ module.exports = function (shared) {
     tmpData.idData = "";
     tmpData.coordsData = "";
     // add all lines
-    for (var i in newLevels) {
-        var str = newLevels[i].rewards.dbStr;
+    for (const i in newLevels) {
+        const str = newLevels[i].rewards.dbStr;
         tmpData.partsData += str + "\n";
         tmpData.timesData += newLevels[i].time.dbStr + "\n";
         tmpData.tierData += newLevels[i].tier.dbStr + "\n";

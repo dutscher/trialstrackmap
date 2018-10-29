@@ -1776,5 +1776,59 @@
     "id": 318,
     "oid": 1379,
     "world": 2
+  },
+  // Blossom Grove
+  {
+    "id": 319,
+    "oid": 1380,
+    "world": 2
+  },
+  // Crystal Flow
+  {
+    "id": 320,
+    "oid": 1381,
+    "world": 2
+  },
+  // Domino Dash
+  {
+    "id": 321,
+    "oid": 1382,
+    "world": 2
+  },
+  // Night Lights
+  {
+    "id": 322,
+    "oid": 1383,
+    "world": 2
+  },
+  // City Chaos
+  {
+    "id": 323,
+    "oid": 1384,
+    "world": 2
+  },
+  // Crystal Extraction
+  {
+    "id": 324,
+    "oid": 1385,
+    "world": 2
+  },
+  // Bumpy Mountain
+  {
+    "id": 325,
+    "oid": 1386,
+    "world": 2
+  },
+  // Haunted Ramps
+  {
+    "id": 326,
+    "oid": 1387,
+    "world": 2
+  },
+  // Face First
+  {
+    "id": 327,
+    "oid": 1388,
+    "world": 2
   }
 ]

@@ -50,32 +50,50 @@ module.exports = function (shared) {
                     'ZY3224JGK8\toffline' ]
             */
             if(error === null){
+                console.log(colors.good(
+                    `${colors.goodLabel("IMPORT FOR VERSION:")}
+                            ${shared.gameVersion} (if it is'nt right, go to package.json and change version)`));
                 // device connection
                 if (lines[3] && lines[3].indexOf("device") !== -1) {
-                    console.log(colors.good("✓\t" + colors.goodLabel("DEVICE CONNECTED") + ":\t\t" + lines[3]));
+                    console.log(colors.good(
+                        `✓\t${colors.goodLabel("DEVICE CONNECTED")}:
+                            ${lines[3]}`));
                 } else if (lines[3] && lines[3].indexOf("offline") !== -1) {
-                    console.log(colors.doWhat("!\t" + colors.doWhatLabel("DEVICE OFFLINE") + ":\t\t" + lines[3]));
+                    console.log(colors.doWhat(
+                        `!\t${colors.doWhatLabel("DEVICE OFFLINE")}:
+                            ${lines[3]}`));
                     console.log(colors.doWhat("Enable your device."));
                 } else {
-                    console.log(colors.bad("❌\t" + colors.badLabel("NO DEVICE CONNECTED") + ":\tActivate Developer-Options & USB-Debugging in your device settings. Or set your USB use to 'Charge this device'"));
+                    console.log(colors.bad(
+                        `❌\t${colors.badLabel("NO DEVICE CONNECTED")}:
+                            Activate Developer-Options & USB-Debugging in your device settings.
+                            Or set your USB use to 'Charge this device'.
+                            Or accept auth request of device`));
                 }
                 // app installed
                 if(lines[4] && lines[4].indexOf(shared.appPath) !== -1) {
-                    console.log(colors.good("✓\t" + colors.goodLabel("APP INSTALLED") + ":\t\t\t" + lines[4]));
+                    console.log(colors.good(
+                        `✓\t${colors.goodLabel("APP INSTALLED")}:
+                            ${lines[4]}`));
                 } else {
-                    console.log(colors.bad("❌\t" + colors.badLabel("APP NOT INSTALLED") + ":\t\tplease install Trials Frontier on your device."));
+                    console.log(colors.bad(
+                        `❌\t${colors.badLabel("APP NOT INSTALLED")}:
+                            please install Trials Frontier on your device.`));
                 }
                 // all tools found
                 if(shared.hddPath !== "") {
-                    console.log(colors.good("✓\t" + colors.goodLabel("TF TOOLS FOUND")));
+                    console.log(colors.good(
+                        `✓\t${colors.goodLabel("TF TOOLS FOUND")}
+                            ${shared.hddPath}`));
                 } else {
-                    console.log(colors.bad("❌\t" + colors.badLabel("TF TOOLS NOT FOUND") + ":\t\tunpack the zip under C:\\"));
+                    console.log(colors.bad(
+                        `❌\t${colors.badLabel("TF TOOLS NOT FOUND:")}:
+                            unpack the zip under C:\\`));
                 }
             } else {
                 console.log(error)
             }
         }
     });
-    //console.log(cmds)
     shared.grunt.task.run(["exec:checkAdb"]);
 };

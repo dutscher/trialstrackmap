@@ -9,15 +9,15 @@
         "dimPath": "464x320"
       },
       "2": {
-        "src": "#1/8SDyubT.jpg",
-        "srcPath": "#1/4bxtSwI.jpg",
+        "src": "#1/QMrUOoG.jpg",
+        "srcPath": "#1/SpW4tEg.jpg",
         "alt": "Trails Frontier Trackmap Petrol Falls",
         "dim": "2560x2560",
         "dimPath": "320x320"
       }
     },
     "paintjobs": {
-      "src": "#1/NWlUXl6.png",
+      "src": "#1/iQ0GDaP.png",
       "selector": "i.paintjob",
       "dim": "1190x550",
       "dimIcon": "70x50",
@@ -25,7 +25,7 @@
       "sprite": true
     },
     "paintjob-icons": {
-      "src": "#1/DixMOwi.png",
+      "src": "#1/aeBnXFV.png",
       "selector": "i.paintjob-icon",
       "dim": "1100x1710",
       "dimIcon": "100x100",
@@ -95,7 +95,19 @@
       "src": "#1/V8Oz1hI.png",
       "selector": "i.lang.lang_pt"
     },
-    "country_br": {
+    "i18n_cn": {
+      "src": "#1/l0yX5jv.png",
+      "selector": "i.lang.lang_cn"
+    },
+    "i18n_jp": {
+      "src": "#1/OeIlHKL.png",
+      "selector": "i.lang.lang_jp"
+    },
+    "i18n_kp": {
+      "src": "#1/f5JRUH5.png",
+      "selector": "i.lang.lang_kp"
+    },
+    "i18n_br": {
       "src": "#1/ZcXTA05.png",
       "selector": "i.lang.lang_br"
     },

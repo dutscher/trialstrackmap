@@ -65,6 +65,7 @@ module.exports = {
         {t: "import-06-gameDataViaJson", p: "./06.gameDataViaJson", json5: true},
         {t: "import-07-i18n", p: "./07.i18n"},
         {t: "import-08-seasons", p: "./08.seasons", a: true},
-        {t: "import-09-danteam", p: "./09.danTeam", a: true},
+        {t: "import-09-bikes", p: "./09.bikes"},
+        {t: "import-00-danteam", p: "../danteam/00.index", a: true},
     ]
 };

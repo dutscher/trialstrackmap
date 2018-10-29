@@ -6,7 +6,7 @@
     40,41,43,42,50,44,47,48,46,51,52,53,54
   ],
   "homeshack": [
-    69,68,67,66,65,64,63,62,61,
+    70,69,68,67,66,65,64,63,62,61,
     60,59,58,57,56,55,54,53,52,51,
     50,49,48,47,46,45,44,43,42,41,
     40,39,38,37,36,35,34,33,32,31,
@@ -24,8 +24,17 @@
     }
   },
   "all": {
-    "69": {
+    "70": {
       "originID": 69,
+      "name": "Nutjob Frank",
+      "parts": [
+        "https://i.imgur.com/vpdgeBa.png",
+        "https://i.imgur.com/O4wmnNL.png",
+        "https://i.imgur.com/KO6RGaG.png"
+      ]
+    },
+    "69": {
+      "originID": 68,
       "name": "The Deputy",
       "parts": [
         "https://i.imgur.com/sccID9T.png",
@@ -34,7 +43,7 @@
       ]
     },
     "68": {
-      "originID": 68,
+      "originID": 67,
       "name": "Chris Wheels Caper",
       "parts": [
         "https://i.imgur.com/pXmebzO.png",
@@ -43,7 +52,7 @@
       ]
     },
     "67": {
-      "originID": 67,
+      "originID": 66,
       "name": "X-Games",
       "parts": [
         "https://i.imgur.com/4nDLDLF.png",
@@ -52,7 +61,7 @@
       ]
     },
     "66": {
-      "originID": 66,
+      "originID": 65,
       "name": "Clawgirl",
       "parts": [
         "https://i.imgur.com/aodDZZO.png|15|-35",
@@ -62,7 +71,7 @@
       ]
     },
     "65": {
-      "originID": 65,
+      "originID": 64,
       "name": "Ted the Hipster",
       "parts": [
         "https://i.imgur.com/bc8boWQ.png|25|-65",
@@ -72,7 +81,7 @@
       ]
     },
     "64": {
-      "originID": 64,
+      "originID": 46,
       "name": "Desert King",
       "parts": [
         "https://i.imgur.com/UcKFQgN.png|15|-80",
@@ -154,7 +163,7 @@
     },
     "56": {
       "originID": 56,
-      "name": "Vengeful Knight",
+      "name": "Vengeance Knight",
       "purchase": true,
       "parts": [
         "#1/UJHu7ag.png||-60",

@@ -1,22 +1,29 @@
 module.exports = function (shared, done) {
-    var filesToDownload = [];
+    const filesToDownload = [];
+    const today = new Date();
+    let cachedFiles = 0;
+
+    function sameDay(d1, d2) {
+        return d1.getFullYear() === d2.getFullYear() &&
+            d1.getMonth() === d2.getMonth() &&
+            d1.getDate() === d2.getDate();
+    }
 
     function downloadS3Data() {
         // get urls to files
         shared.http.get(shared.dataGet, function (res) {
-            var body = "";
+            let body = "";
             res.on("data", function (chunk) {
                 body += chunk;
             });
             res.on("end", function () {
-                console.log("get json from amazon", shared.dataGet);
-                var response = JSON.parse(body);
-                console.log("downloading files from s3");
-                for (var i in response.content) {
-                    var fileData = response.content[i],
-                        fileSrc = fileData.url.replace("https", "http"),
-                        fileDest = shared.versionPath + "/" + fileData.name;
-                    
+                console.log("get json from amazon s3:", shared.dataGet);
+                const response = JSON.parse(body);
+                for (const i in response.content) {
+                    const fileData = response.content[i];
+                    const fileSrc = fileData.url.replace("https", "http");
+                    const fileDest = `${shared.versionPath}/${fileData.name}`;
+
                     filesToDownload.push({
                         name: fileData.name,
                         src: fileSrc,
@@ -27,21 +34,21 @@ module.exports = function (shared, done) {
                 downloadFiles();
             });
         }).on("error", function (e) {
-            console.error("Got an error: ", e);
+            console.error("got error at s3 downloading:", e);
             done();
         });
     }
 
     function downloadFiles(index) {
-        var downloadIndex = index || 0,
-            downloadFileObj = filesToDownload[downloadIndex];
+        const downloadIndex = index || 0;
+        const downloadFileObj = filesToDownload[downloadIndex];
 
         if (downloadIndex === 0) {
-            console.log("Download content files", filesToDownload.length);
+            console.log("Download content files");
         }
 
         if (!downloadFileObj) {
-            console.log("All files downloaded.");
+            console.log(`All ${filesToDownload.length} (${cachedFiles} cached) files are ready/downloaded.`);
             done();
             return;
         }
@@ -49,19 +56,22 @@ module.exports = function (shared, done) {
         // download file
         // if dat file is new download from amazon
         const cachedFile = shared.cachePath + "/" + downloadFileObj.name;
+        const stats = shared.fs.statSync(cachedFile);
         const isCached = shared.fs.existsSync(cachedFile);
+        const isCachedToday = sameDay(stats.mtime, today);
         const isNewVersion = downloadFileObj.src.indexOf(shared.gameVersion) !== -1;
 
-        if(!isCached || isNewVersion) {
+        if (!isCached || isNewVersion && !isCachedToday) {
             console.log("Download", downloadIndex, downloadFileObj.src);
             shared.downloadFile(downloadFileObj.src, downloadFileObj.dest, function () {
                 // copy to cache
                 shared.fsExt.copySync(downloadFileObj.dest, cachedFile);
                 downloadFiles(downloadIndex + 1);
             });
-        // copy from cache
+            // copy from cache
         } else {
             console.log("From Cache", downloadIndex, downloadFileObj.src);
+            cachedFiles++;
             shared.fsExt.copySync(cachedFile, downloadFileObj.dest);
             downloadFiles(downloadIndex + 1);
         }
