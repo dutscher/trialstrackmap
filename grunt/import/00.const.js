@@ -67,5 +67,56 @@ module.exports = {
         {t: "import-08-seasons", p: "./08.seasons", a: true},
         {t: "import-09-bikes", p: "./09.bikes"},
         {t: "import-00-danteam", p: "../danteam/00.index", a: true},
+    ],
+    // season
+    convertCostumStr: (str) => {
+        return str.replace(/\./g, "")
+            .replace("Top", "Head")
+            .replace("Middle", "Torso")
+            .replace("middle", "Torso")
+            .replace("Pants", "Pant")
+            .replace("Leg", "Pant")
+            .replace("Lower", "Pant")
+            .replace("Bottom", "Pant")
+            .replace("bottom", "Pant")
+            .replace("SUTE", "Suite")
+    },
+    pjMatcher: [
+        {
+            reqExp: /Custom skin '(.*)' for the (.*)\. .*/g,
+            matchLength: 2,
+            matchGroup: 1
+        },
+        {
+            reqExp: /Custom skin '(.*)' for (.*)\. .*/g,
+            matchLength: 2,
+            matchGroup: 1
+        },
+        {
+            reqExp: /(.*) (.*) Paintjob$.*/g,
+            matchLength: 2,
+            matchGroup: 2
+        },
+        // Custom skin 'Stitch'. (NOTE: ItemId for bike skins points to bikeskin.txt skin ids!)
+        {
+            reqExp: /Custom skin '(.*)'\. \(NOTE.*bikeskin\.txt.*/g,
+            matchLength: 1,
+            matchGroup: 1
+        },
+        {
+            reqExp: /(.*) \(NOTE.*bikeskin\.txt.*/g,
+            matchLength: 1,
+            matchGroup: 1
+        },
+    ],
+    pjRenames: {
+        "Winter 3": "Winter Wolf",
+    },
+    idsOfSeasonPrizes: [
+        222, // agent blueprint
+        260, // stallion
+        279, // ktm blueprint
+        299, // ktm blueprint
+        285, // bandito blueprint
     ]
 };

@@ -492,7 +492,7 @@
     "192": "Skater-Paradies",
     "193": "Bonbon-Land",
     "194": "Glockenturm",
-    "195": "Eis-Karneval ",
+    "195": "Eis-Karneval",
     "196": "Die Glockengrube",
     "197": "Nachtwächter-Zuflucht",
     "198": "Die fiese Liste",
@@ -624,7 +624,12 @@
     "324": "Kristallbergung",
     "325": "Holprige Hügel",
     "326": "Verzauberte Rampen",
-    "327": "Gesicht voraus"
+    "327": "Gesicht voraus",
+    "328": "Schneeball-Überraschung",
+    "329": "Schneeball-Gasse",
+    "330": "Kataklysmus",
+    "331": "Blumenstraße",
+    "332": "Fröhlicher Wurf"
   },
   "unreleased": [
     "Die Hoffnung gibt auf",

@@ -10,6 +10,7 @@ module.exports = function (grunt) {
         consts = require("./import/00.const.js"),
         // VARS
         gameVersion = package.version.replace(/\./g, ""),
+        seasonID = package.seasonID,
         hddPath = function () {
             var dirOnStation = consts.drives.find(function (pathToDir) {
                 return fs.existsSync(pathToDir + consts.trialsUtilsDir);
@@ -49,6 +50,7 @@ module.exports = function (grunt) {
         hddPath,
         toolPath,
         gameVersion,
+        seasonID,
         newContentPath,
         i18nPath: newContentPath + "/gen/lang",
         confPath: newContentPath + "/conf",
@@ -64,6 +66,10 @@ module.exports = function (grunt) {
         toExt: consts.toExt,
         // use this map for matching/renaming it to match the i18n
         renameTrack: consts.renameTrack,
+        convertCostumStr: consts.convertCostumStr,
+        pjMatcher: consts.pjMatcher,
+        pjRenames: consts.pjRenames,
+        idsOfSeasonPrizes: consts.idsOfSeasonPrizes,
     });
 
     for (var i in consts.importTasks) {

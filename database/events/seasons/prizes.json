@@ -33,7 +33,10 @@
     "27": "Smurfin Ledges",
     "28": "Curved Hinges",
     "29": "Spare Ribs",
-    "30": "Temple of Doom"
+    "30": "Temple of Doom",
+    "31": "Bumpy Mountain",
+    "32": "Blossom Grove",
+    "33": "Night Crawling"
   },
   "paintjobs": {
     "1": {"title": "Neon Paintjob for Tango", "sprite": "tango-neon"},
@@ -62,7 +65,8 @@
     "24": {"title": "Fanny Pack paint job for Mantis (Feel the motivation to move your body!)", "sprite": "mantis-fanny-pack"},
     "25": {"title": "KTM 500 Purple Dust", "sprite": "ktm-500-exc-purple-dust"},
     "26": {"title": "The Renowned Berserkar", "sprite": "berserker-the-reowned-berserkar"},
-    "27": {"title": "Stitch for Tango", "sprite": "tango-stitched"}
+    "27": {"title": "Stitch for Tango", "sprite": "tango-stitched"},
+    "28": {"title": "The Cyclops Phantom", "sprite": "phantom-cyclops"}
   },
   "costums": {
     "1": {"title": "Ninja Head", "selector": "the-ninja", "part": "head"},
@@ -103,6 +107,15 @@
     "36": {"title": "Butch Suite Pant", "selector": "butch-suite", "part": "pant"},
     "37": {"title": "The Deputy Head", "selector": "the-deputy", "part": "head"},
     "38": {"title": "The Deputy Torso", "selector": "the-deputy", "part": "body"},
-    "39": {"title": "The Deputy Pant", "selector": "the-deputy", "part": "pant"}
+    "39": {"title": "The Deputy Pant", "selector": "the-deputy", "part": "pant"},
+    "40": {"title": "The Speedrunner Head", "selector": "the-speedrunner", "part": "head"},
+    "41": {"title": "The Speedrunner Torso", "selector": "the-speedrunner", "part": "body"},
+    "42": {"title": "The Speedrunner Pant", "selector": "the-speedrunner", "part": "pant"},
+    "43": {"title": "Snowfox Head", "selector": "snowfox", "part": "head"},
+    "44": {"title": "Snowfox Torso", "selector": "snowfox", "part": "body"},
+    "45": {"title": "Snowfox Pant", "selector": "snowfox", "part": "pant"},
+    "46": {"title": "The Christmas Gal Head", "selector": "the-christmas-gal", "part": "head"},
+    "47": {"title": "The Christmas Gal Torso", "selector": "the-christmas-gal", "part": "body"},
+    "48": {"title": "The Christmas Gal Pant", "selector": "the-christmas-gal", "part": "pant"}
   }
 }

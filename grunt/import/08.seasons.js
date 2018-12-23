@@ -19,7 +19,7 @@ https://lb-rdv-http.ubi.com/TRIAG_AN_LNCH_A/public/pvp_matches/v1/matches
 
 */
 module.exports = function (shared, done) {
-    const importSeasonID = 53, // run import-02-gameDataS3 before to import-08-seasons
+    const importSeasonID = shared.seasonID, // run import-02-gameDataS3 before to import-08-seasons
         useBetaServer = false,
         importDir = "build/import/seasons/",
         databaseDir = "database/events/seasons",
@@ -37,6 +37,7 @@ module.exports = function (shared, done) {
                 return reward.ID === specialID;
             });
         const commentOfReward = foundReward[0].Comment;
+        const nameIdOfReward = foundReward[0].NameId;
         let returnData;
 
         // console.log("findSpecial", specialID, foundReward)
@@ -57,33 +58,17 @@ module.exports = function (shared, done) {
             if (matches && matches.length > 1) {
                 returnData = {
                     extra_type: "track",
-                    extra: findPrize("track", matches[1], commentOfReward)
+                    extra: findPrize(
+                        "track",
+                        nameIdOfReward
+                            .replace(/LVL_/g, "")
+                            .replace(/_/g, " "),
+                        commentOfReward
+                    )
                 };
             }
             // paintjobs
-            const allPJMatcher = [
-                {
-                    reqExp: /Custom skin '(.*)' for the (.*)\. .*/g,
-                    matchLength: 2,
-                    matchGroup: 1
-                },
-                {
-                    reqExp: /(.*) (.*) Paintjob$.*/g,
-                    matchLength: 2,
-                    matchGroup: 2
-                },
-                // Custom skin 'Stitch'. (NOTE: ItemId for bike skins points to bikeskin.txt skin ids!)
-                {
-                    reqExp: /Custom skin '(.*)'\. \(NOTE.*bikeskin\.txt.*/g,
-                    matchLength: 1,
-                    matchGroup: 1
-                },
-                {
-                    reqExp: /(.*) \(NOTE.*bikeskin\.txt.*/g,
-                    matchLength: 1,
-                    matchGroup: 1
-                },
-            ];
+            const allPJMatcher = shared.pjMatcher;
             // find with matcher
             let pjMatch = null;
             allPJMatcher.map(matcher => {
@@ -93,6 +78,11 @@ module.exports = function (shared, done) {
                 }
             });
             if(pjMatch !== null) {
+                // check renames
+                if(pjMatch in shared.pjRenames){
+                    pjMatch = shared.pjRenames[pjMatch];
+                }
+                // try to find prize
                 returnData = {
                     extra_type: "paintjob",
                     extra: findPrize("paintjob", pjMatch, commentOfReward)
@@ -102,18 +92,11 @@ module.exports = function (shared, done) {
             // costum
             if (shared._.startsWith(foundReward[0].NameId, "OUTFIT")) {
                 returnData = {
-                    extra_type: "costum",
-                    extra: findPrize("costum", commentOfReward
-                        .replace(/\./g, "")
-                        .replace("Pants", "Pant")
-                        .replace("Leg", "Pant")
-                        .replace("Top", "Head")
-                        .replace("Middle", "Torso")
-                        .replace("middle", "Torso")
-                        .replace("Bottom", "Pant")
-                        .replace("bottom", "Pant")
-                        .replace("SUTE", "Suite")
-                        , commentOfReward)
+                    extra: findPrize(
+                        "costum",
+                        shared.convertCostumStr(commentOfReward),
+                        commentOfReward),
+                    extra_type: "costum"
                 };
             }
         }
@@ -160,13 +143,7 @@ module.exports = function (shared, done) {
     function handleSpecial(data, special) {
         if (special) {
             const specialID = special.amount,
-                arrDoughnut = [
-                    222, // agent blueprint
-                    260, // stallion
-                    279, // ktm blueprint
-                    299, // ktm blueprint
-                    285, // bandito blueprint
-                ];
+                arrDoughnut = shared.idsOfSeasonPrizes;
             if (specialID >= 20000) {
                 data.extra_type = "part";
                 data.extra = findSpecial(specialID);

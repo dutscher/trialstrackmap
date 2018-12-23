@@ -8,6 +8,8 @@ module.exports = function (shared) {
         "adb devices",
         // check if app is installed
         "adb shell pm path " + shared.appPath,
+        // get app version
+        `adb shell dumpsys package ${shared.appPath} | findstr versionName`,
     ];
 
     shared.grunt.config("exec.checkAdb", {
@@ -52,7 +54,7 @@ module.exports = function (shared) {
             if(error === null){
                 console.log(colors.good(
                     `${colors.goodLabel("IMPORT FOR VERSION:")}
-                            ${shared.gameVersion} (if it is'nt right, go to package.json and change version)`));
+                            ${shared.gameVersion} (package.json:version, check APP INSTALLED)`));
                 // device connection
                 if (lines[3] && lines[3].indexOf("device") !== -1) {
                     console.log(colors.good(
@@ -74,7 +76,9 @@ module.exports = function (shared) {
                 if(lines[4] && lines[4].indexOf(shared.appPath) !== -1) {
                     console.log(colors.good(
                         `✓\t${colors.goodLabel("APP INSTALLED")}:
-                            ${lines[4]}`));
+                            ${lines[4]}
+                            ${lines[5]}
+                            `));
                 } else {
                     console.log(colors.bad(
                         `❌\t${colors.badLabel("APP NOT INSTALLED")}:

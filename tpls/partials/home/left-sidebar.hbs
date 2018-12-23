@@ -5,9 +5,7 @@
             <li>
                 <div class="wrap">
                     <h2>{%'page.leftSidebar.stats'|translate%}</h2>
-                    {{#with map}}
-                        {%'page.leftSidebar.appVersion'|translate%}: {{version}}<br/>
-                    {{/with}}
+                    {%'page.leftSidebar.appVersion'|translate%}: {{version}}<br/>
 
                     {%'page.leftSidebar.update'|translate%}: {%'{{lastUpdateTime}}'|humanReadableDate%}
 
@@ -51,26 +49,6 @@
                         {{/each}}
                     {{/with}}
                     <a href="/anniversary.html">{%'page.leftSidebar.goToAnniversary'|translate%} &raquo;</a>
-                </div>
-            </li>
-            <li>
-                <div class="wrap tierlegend">
-                    <h2 class="with-cursor" ng-click="visibility('creditsVisible')">
-                        {%'page.leftSidebar.credits'|translate%} ({%::data.map.credits.length%})</h2>
-
-                    <div ng-show="creditsVisible">
-                        {{#with map}}
-                            {{#each database.map.credits}}
-                                {{#if href}}
-                                    <a href="{{href}}" target="_blank">{{text}}</a>
-                                {{else}}
-                                    <span class="like-a">{{text}}</span>
-                                {{/if}}
-                            {{/each}}
-                        {{/with}}
-                    </div>
-                    <span class="with-cursor" ng-click="visibility('creditsVisible')"
-                          ng-hide="creditsVisible">{%'page.leftSidebar.toggleMe'|translate%}</span>
                 </div>
             </li>
         </ul>

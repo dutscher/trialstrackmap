@@ -592,7 +592,7 @@
     "314": "Night Crawling",
     "315": "Golden Dirt",
     "316": "Bomber Bliss",
-    "317": "Smurfin' Ledges",
+    "317": "Smurfin Ledges",
     "318": "Curved Hinges",
     "319": "Blossom Grove",
     "320": "Crystal Flow",
@@ -602,10 +602,21 @@
     "324": "Crystal Extraction",
     "325": "Bumpy Mountain",
     "326": "Haunted Ramps",
-    "327": "Face First"
+    "327": "Face First",
+    "328": "Snowball Surprise",
+    "329": "Snow Alley",
+    "330": "Cataclysm",
+    "331": "Floral Lane",
+    "332": "Happy Fling"
   },
   "unreleased": [
     "Hope Surrenders",
-    "Roadway"
+    "Roadway",
+    "Flat",
+    "Prod30 Maria 1",
+    "Prod55 Maria 3",
+    "Prod58 Maria 5",
+    "Prod45 Ukkis 1",
+    "Donkey Lvl"
   ]
 }

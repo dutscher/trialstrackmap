@@ -6,6 +6,7 @@
     40,41,43,42,50,44,47,48,46,51,52,53,54
   ],
   "homeshack": [
+    72,71,
     70,69,68,67,66,65,64,63,62,61,
     60,59,58,57,56,55,54,53,52,51,
     50,49,48,47,46,45,44,43,42,41,
@@ -24,9 +25,30 @@
     }
   },
   "all": {
+    "72": {
+      "originID": 71,
+      "name": "Bad Bone Sr",
+      "small": true,
+      "parts": [
+        "https://i.imgur.com/NPItl07.png",
+        "https://i.imgur.com/9XeBPFJ.png",
+        "https://i.imgur.com/Jv6v1aw.png"
+      ]
+    },
+    "71": {
+      "originID": 70,
+      "name": "The Speedrunner",
+      "small": true,
+      "parts": [
+        "https://i.imgur.com/3F5mVy4.png",
+        "https://i.imgur.com/6P7oIBH.png",
+        "https://i.imgur.com/UKDQoqg.png"
+      ]
+    },
     "70": {
       "originID": 69,
       "name": "Nutjob Frank",
+      "small": true,
       "parts": [
         "https://i.imgur.com/vpdgeBa.png",
         "https://i.imgur.com/O4wmnNL.png",
@@ -36,6 +58,7 @@
     "69": {
       "originID": 68,
       "name": "The Deputy",
+      "small": true,
       "parts": [
         "https://i.imgur.com/sccID9T.png",
         "https://i.imgur.com/1sZa92s.png",
@@ -45,6 +68,7 @@
     "68": {
       "originID": 67,
       "name": "Chris Wheels Caper",
+      "small": true,
       "parts": [
         "https://i.imgur.com/pXmebzO.png",
         "https://i.imgur.com/fUQJgBA.png",
@@ -54,6 +78,7 @@
     "67": {
       "originID": 66,
       "name": "X-Games",
+      "small": true,
       "parts": [
         "https://i.imgur.com/4nDLDLF.png",
         "https://i.imgur.com/Xmd902x.png",
@@ -231,13 +256,13 @@
       ]
     },
     "50": {
-      "originID": 46,
+      "originID": 1337,
       "name": "Android Rider",
       "info": "",
       "img": "",
       "unreleased": true,
       "parts": [
-        "#1/KQC4Bw8.png",
+        "#1/KQC4Bw8.png|11|-6",
         "#1/IauvxbF.png",
         "#1/lME2Dwv.png",
         "#1/hf8LFGX.png"
@@ -356,7 +381,7 @@
     },
     "41": {
       "originID": 43,
-      "name": "Christmas Gal",
+      "name": "The Christmas Gal",
       "img": "http://s8.postimg.org/h9t4xckp1/Christmas_Gal.jpg",
       "head": "",
       "top": "",

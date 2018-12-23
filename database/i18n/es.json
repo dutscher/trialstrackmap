@@ -599,7 +599,7 @@
     "301": "Templo maldito",
     "302": "Noche de media luna",
     "303": "Hielo resbaladizo",
-    "304": "Fisuras alocadas ",
+    "304": "Fisuras alocadas",
     "305": "Corriente adagio",
     "306": "Valle del hielo oscuro",
     "307": "Picos del muñeco de nieve",
@@ -622,7 +622,12 @@
     "324": "Extracción de cristal",
     "325": "Montaña irregular",
     "326": "Rampas encantadas",
-    "327": "De cara"
+    "327": "De cara",
+    "328": "Sorpresa de bola de nieve",
+    "329": "Callejón nevado",
+    "330": "Cataclismo",
+    "331": "Calle floral",
+    "332": "Aventura feliz"
   },
   "unreleased": [
     "Calzada",

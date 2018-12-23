@@ -184,6 +184,11 @@
       "name": "Season Reward",
       "class": "season-reward",
       "color": "93194c"
+    },
+    "36": {
+      "name": "Halloween 2018",
+      "class": "halloween-2018",
+      "color": "EC7000"
     }
   }
 }

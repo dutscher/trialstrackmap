@@ -23,6 +23,10 @@ i.lang.no-margin {
     margin-right: 0;
 }
 
+i.lang.is-active {
+    border: 2px #d2c3ab solid;
+}
+
 i.crazy,
 i.donkey,
 i.device-android,

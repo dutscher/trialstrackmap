@@ -86,4 +86,10 @@ module.exports = (grunt) => {
             "import-07-i18n",
         ]);
     });
+
+    grunt.registerTask("#startImportSeason", () => {
+        grunt.task.run([
+            "import-08-seasons",
+        ]);
+    });
 };
