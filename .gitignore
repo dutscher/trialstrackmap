@@ -10,3 +10,4 @@
 index.html
 npm-debug.log
 .ftpauth
+*.compare

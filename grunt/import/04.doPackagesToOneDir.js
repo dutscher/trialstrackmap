@@ -29,7 +29,9 @@ module.exports = function (shared) {
                 shared.deleteFolderRecursive(shared.versionPath + "/" + dir); // remove dir
                 // remove also .dat file
                 const datFile = shared.versionPath + "/" + dir + ".dat";
-                shared.fs.unlinkSync(datFile);
+                if(shared.fs.existsSync(datFile)){
+                    shared.fs.unlinkSync(datFile);
+                }
             }
         }
         console.log("✓ Copied all dirs");

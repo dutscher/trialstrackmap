@@ -1,6 +1,7 @@
 module.exports = function (shared) {
     // convert game data to trackmap data
     const i18nDefaultFile = "database/i18n/en.json",
+        pathToDB = "database/trackdata",
         fuelToTier = {
             0: 0,
             5: 1,
@@ -146,7 +147,7 @@ module.exports = function (shared) {
     tmpData.partsData = "";
     tmpData.timesData = "";
     tmpData.tierData = "";
-    tmpData.idData = "";
+    tmpData.idData = "[";
     tmpData.coordsData = "";
     // add all lines
     for (const i in newLevels) {
@@ -160,15 +161,15 @@ module.exports = function (shared) {
     tmpData.partsData = tmpData.partsData.replace("  ,", "{\n   ") + "}";
     tmpData.timesData = tmpData.timesData.replace("  ,", "{\n   ") + "}";
     tmpData.tierData = tmpData.tierData.replace("  ,", "{\n   ") + "}";
-    tmpData.idData = tmpData.idData.replace("  ,", "{\n   ") + "}";
+    tmpData.idData = tmpData.idData.replace("  ,", "{\n   ") + "]";
     tmpData.coordsData = tmpData.coordsData.replace("  ,", "{\n   ") + "}";
 
-    shared.ensureDirectoryExistence("build/import/parts.json");
-    shared.fs.writeFileSync("build/import/parts.json", tmpData.partsData);
-    shared.fs.writeFileSync("build/import/times.json", tmpData.timesData);
-    shared.fs.writeFileSync("build/import/tiers.json", tmpData.tierData);
-    shared.fs.writeFileSync("build/import/ids.json", tmpData.idData);
-    shared.fs.writeFileSync("build/import/coords.json", tmpData.coordsData);
+    shared.ensureDirectoryExistence(`${pathToDB}/parts.compare`);
+    shared.fs.writeFileSync(`${pathToDB}/parts.compare`, tmpData.partsData);
+    shared.fs.writeFileSync(`${pathToDB}/times.compare`, tmpData.timesData);
+    shared.fs.writeFileSync(`${pathToDB}/tiers.compare`, tmpData.tierData);
+    shared.fs.writeFileSync(`${pathToDB}/ids.compare`, tmpData.idData);
+    shared.fs.writeFileSync(`${pathToDB}/coords.compare`, tmpData.coordsData);
     shared.fs.writeFileSync(shared.i18nPath + "/names.txt", levelNames.join("\r\n"));
     shared.fs.writeFileSync("build/import/names-with-ids.json", JSON.stringify(levelNamesWithId));
 };

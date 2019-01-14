@@ -1830,5 +1830,35 @@
     "id": 327,
     "oid": 1388,
     "world": 2
+  },
+  // Snowball Surprise
+  {
+    "id": 328,
+    "oid": 1392,
+    "world": 2
+  },
+  // Snow Alley
+  {
+    "id": 329,
+    "oid": 1393,
+    "world": 2
+  },
+  // Cataclysm
+  {
+    "id": 330,
+    "oid": 1391,
+    "world": 2
+  },
+  // Floral Lane
+  {
+    "id": 331,
+    "oid": 1389,
+    "world": 2
+  },
+  // Happy Fling
+  {
+    "id": 332,
+    "oid": 1390,
+    "world": 2
   }
 ]

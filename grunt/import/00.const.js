@@ -54,6 +54,7 @@ module.exports = {
         "LVL_X_TERMINATE": "x-terminate",
         "LVL_CLIFF_HANGER": "cliff-hanger",
         "LVL_MT_WHIPLASH": "mt. whiplash",
+        "LVL_SMURFIN_LEDGES": "smurfin' ledges"
     },
     importTasks: [
         {t: "import-00-checkImport", p: "./00.checkImport"},
@@ -118,5 +119,18 @@ module.exports = {
         279, // ktm blueprint
         299, // ktm blueprint
         285, // bandito blueprint
-    ]
+    ],
+    i18nMap: {
+        braz_portuguese: "br",
+        english: "en",
+        spanish: "es",
+        french: "fr",
+        german: "de",
+        italian: "it",
+        russian: "ru",
+        korean: "kp",
+        japanese: "jp",
+        trad_chinese: "tcn",
+        simp_chinese: "cn"
+    }
 };

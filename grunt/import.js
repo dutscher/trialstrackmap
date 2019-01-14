@@ -70,6 +70,7 @@ module.exports = function (grunt) {
         pjMatcher: consts.pjMatcher,
         pjRenames: consts.pjRenames,
         idsOfSeasonPrizes: consts.idsOfSeasonPrizes,
+        i18nMap: consts.i18nMap,
     });
 
     for (var i in consts.importTasks) {

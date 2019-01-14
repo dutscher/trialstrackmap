@@ -1,4 +1,6 @@
 module.exports = function (shared) {
+    const pathToI18NRaw = shared.secretPath + "/i18n";
+
     shared.grunt.registerTask("import-07-i18n-convert", () => {
         shared.copyToolTo(shared.toolPath.bin2Txt, shared.i18nPath);
         const scriptAll = "bin2txt.cmd",
@@ -17,12 +19,14 @@ module.exports = function (shared) {
         shared.grunt.task.run(["exec:i18nHashes"]);
     });
 
-    shared.grunt.registerTask("import-07-i18n-getTrackNames", () => {
+    const levels = {},
+        hashes = {};
+
+    shared.grunt.registerTask("import-07-i18n-getTrackNamesFromRaw", () => {
         const fileData = shared.fs.readFileSync(shared.i18nPath + "/hashes.txt", "utf8"),
             rowsFileData = fileData.split("\r\n"),
-            fileDataWithIds = require("../../build/import/names-with-ids.json"),
-            hashes = {},
-            levels = {};
+            fileDataWithIds = require("../../build/import/names-with-ids.json");
+
         // jsonfy hashes
         for (const i in rowsFileData) {
             const rowData = rowsFileData[i].split("\t");
@@ -33,26 +37,26 @@ module.exports = function (shared) {
         }
 
         // read strings from all *_strings.txt files
-        const dirData = shared.fs.readdirSync(shared.i18nPath),
-            i18nMap = {
-                braz_portuguese: "br",
-                english: "en",
-                spanish: "es",
-                french: "fr",
-                german: "de",
-                italian: "it",
-                russian: "ru",
-                korean: "kp",
-                japanese: "jp",
-                trad_chinese: "tcn",
-                simp_chinese: "cn"
-            };
+        const dirData = shared.fs.readdirSync(shared.i18nPath);
+
+        for (const j in dirData) {
+            const file = dirData[j].toLowerCase();
+            if (shared._.endsWith(file, "_strings.txt")) {
+                shared.ensureDirectoryExistence(`${pathToI18NRaw}/en.txt`);
+                shared.fsExt.copySync(shared.i18nPath + "/" + file, pathToI18NRaw + "/" + file);
+            }
+        }
+    });
+
+    shared.grunt.registerTask("import-07-i18n-toJSON", () => {
+        // read strings from all *_strings.txt files
+        const dirData = shared.fs.readdirSync(pathToI18NRaw);
 
         for (const j in dirData) {
             const file = dirData[j].toLowerCase();
             if (shared._.endsWith(file, "_strings.txt")) {
                 // iterate strings
-                const fileDataJo = shared.fs.readFileSync(shared.i18nPath + "/" + file, "utf8"),
+                const fileDataJo = shared.fs.readFileSync(pathToI18NRaw + "/" + file, "utf8"),
                     fileLang = file.replace("_strings.txt", ""),
                     rowsJo = fileDataJo.split("\r\n");
                 // convert them to lvl objects
@@ -63,11 +67,13 @@ module.exports = function (shared) {
                         trackName = rowDataJO[1];
                     if (hashes.hasOwnProperty(hash)) {
                         const trackLVLtag = hashes[hash];
-                        levels[trackLVLtag].i18n[i18nMap[fileLang]] = trackName;
+                        levels[trackLVLtag].i18n[shared.i18nMap[fileLang]] = trackName;
                     }
                 }
             }
         }
+
+        // console.log(levels)
 
         // now we have
         /*
@@ -90,8 +96,8 @@ module.exports = function (shared) {
 
         // compare levels and languages
         const i18nFiles = {};
-        for (const track in levels) {
-            const trackData = levels[track];
+        for (const trackLVLtag in levels) {
+            const trackData = levels[trackLVLtag];
             for (const i18nLang in trackData.i18n) {
                 const i18nName = trackData.i18n[i18nLang],
                     trackId = trackData.id;
@@ -99,7 +105,7 @@ module.exports = function (shared) {
                     i18nFiles[i18nLang] = {tracks: {}, unreleased: []};
                 }
                 if (trackId === null) {
-                    i18nFiles[i18nLang].unreleased.push(i18nName);
+                    i18nFiles[i18nLang].unreleased.push(trackLVLtag + ": " + i18nName);
                 } else {
                     i18nFiles[i18nLang].tracks[trackId] = i18nName;
                 }
@@ -114,7 +120,7 @@ module.exports = function (shared) {
 
             fileData.unreleased.sort();
             // read existing
-            if(shared.fs.existsSync(filePath)) {
+            if (shared.fs.existsSync(filePath)) {
                 fileContent = JSON.parse(shared.fs.readFileSync(filePath));
             }
             // override existing
@@ -123,17 +129,27 @@ module.exports = function (shared) {
             // write in existing
             shared.fs.writeFileSync(filePath, JSON.stringify(fileContent, null, 2));
             if (file === "en" && fileData.unreleased.length > 1) {
-                console.warn("unreleased tracks or not matched in 'import-06-gameDataViaJson':renameTrack\n",
-                    fileData.unreleased.join(", "));
+                console.warn(
+                    "unreleased tracks or not matched in renameTrack in\n",
+                    "'grunt/import/00.const.js:renameTrack:48'\n",
+                    fileData.unreleased.join(", ") + "\n",
+                    "restart: import06-gameDataViaJson",
+                );
             }
         }
 
         console.log("all files are up to date in 'database/i18n/'");
     });
 
+    // shared.grunt.task.run([
+    //     "import-07-i18n-convert",
+    //     "import-07-i18n-getHashes",
+    //     "import-07-i18n-getTrackNames",
+    //     "import-07-i18n-toJSON",
+    // ]);
+
     shared.grunt.task.run([
-        "import-07-i18n-convert",
-        "import-07-i18n-getHashes",
-        "import-07-i18n-getTrackNames",
+        "import-07-i18n-getTrackNamesFromRaw",
+        "import-07-i18n-toJSON",
     ]);
 };
