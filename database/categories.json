@@ -189,6 +189,11 @@
       "name": "Halloween 2018",
       "class": "halloween-2018",
       "color": "EC7000"
+    },
+    "37": {
+      "name": "Winter 2018",
+      "class": "winter-2018",
+      "color": "FFFFFF"
     }
   }
 }
