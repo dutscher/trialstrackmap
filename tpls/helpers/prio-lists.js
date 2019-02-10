@@ -2,7 +2,7 @@
     var fs = require("fs");
     
     module.exports.register = function (Handlebars) {
-        Handlebars.registerHelper("prio-listHhomeShack", function (params) {
+        Handlebars.registerHelper("prio-listHomeShack", function (params) {
             var prio = params.hash.data.homeshack,
                 data = params.hash.data.all,
                 html = "",
@@ -24,7 +24,8 @@
                         season: costumData.season,
                         event: costumData.event,
                         purchase: costumData.purchase,
-                        unreleased: costumData.unreleased
+                        unreleased: costumData.unreleased,
+                        small: costumData.small
                     });
             }
             

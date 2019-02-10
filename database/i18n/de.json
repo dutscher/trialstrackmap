@@ -629,10 +629,13 @@
     "329": "Schneeball-Gasse",
     "330": "Kataklysmus",
     "331": "Blumenstraße",
-    "332": "Fröhlicher Wurf"
+    "332": "Fröhlicher Wurf",
+    "333": "Die Hoffnung gibt auf",
+    "334": "City Hallway",
+    "335": "Peak Route",
+    "336": "Wildwood Escape"
   },
   "unreleased": [
-    "LVL_HOPE_SURRENDERS: Die Hoffnung gibt auf",
     "LVL_ROADWAY: Fahrbahn"
   ]
 }

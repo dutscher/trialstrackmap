@@ -23,7 +23,7 @@ module.exports = function (grunt) {
         },
         map: {
             files: {
-                "dist/css/map.css": "css/map/main.less"
+                "dist/css/map.css": "css/trackmap/main.less"
             }
         },
         table: {

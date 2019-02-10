@@ -607,10 +607,13 @@
     "329": "Snow Alley",
     "330": "Cataclysm",
     "331": "Floral Lane",
-    "332": "Happy Fling"
+    "332": "Happy Fling",
+    "333": "Hope Surrenders",
+    "334": "City Hallway",
+    "335": "Peak Route",
+    "336": "Wildwood Escape"
   },
   "unreleased": [
-    "LVL_HOPE_SURRENDERS: Hope Surrenders",
     "LVL_ROADWAY: Roadway"
   ]
 }

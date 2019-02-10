@@ -622,10 +622,13 @@
     "329": "Beco da Neve",
     "330": "Cataclisma",
     "331": "Pista Floral",
-    "332": "Lançamento Feliz"
+    "332": "Lançamento Feliz",
+    "333": "Rendições da Esperança",
+    "334": "City Hallway",
+    "335": "Peak Route",
+    "336": "Wildwood Escape"
   },
   "unreleased": [
-    "LVL_HOPE_SURRENDERS: Rendições da Esperança",
     "LVL_ROADWAY: Estrada"
   ]
 }

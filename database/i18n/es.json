@@ -627,10 +627,13 @@
     "329": "Callejón nevado",
     "330": "Cataclismo",
     "331": "Calle floral",
-    "332": "Aventura feliz"
+    "332": "Aventura feliz",
+    "333": "Esperanza rendida",
+    "334": "City Hallway",
+    "335": "Peak Route",
+    "336": "Wildwood Escape"
   },
   "unreleased": [
-    "LVL_HOPE_SURRENDERS: Esperanza rendida",
     "LVL_ROADWAY: Calzada"
   ]
 }

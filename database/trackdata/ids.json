@@ -1860,5 +1860,29 @@
     "id": 332,
     "oid": 1390,
     "world": 2
+  },
+  // Hope Surrenders
+  {
+    "id": 333,
+    "oid": 1186,
+    "world": 2
+  },
+  // City Hallway
+  {
+    "id": 334,
+    "oid": 1394,
+    "world": 2
+  },
+  // Peak Route
+  {
+    "id": 335,
+    "oid": 1396,
+    "world": 2
+  },
+  // Wildwood Escape
+  {
+    "id": 336,
+    "oid": 1395,
+    "world": 2
   }
 ]

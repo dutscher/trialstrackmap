@@ -1,22 +1,22 @@
 {
   "header": {
-    "src": "https://i.imgur.com/LeDBPpa.jpg"
+    "src": "https://i.imgur.com/vBzisyH.jpg"
   },
-  "title": "Snowflake",
-  "date": "19.12.2018",
-  "date_end": "18.01.2019",
+  "title": "Rising",
+  "date": "26.01.2019",
+  "date_end": "26.02.2019",
   "duration": "4h",
   "free_showdowns": 3,
   "ticket_regain": "45m",
-  "stats": "http://trials.bonxy.net/the-bunker/Snowflake+Season",
-  "total_legends": 748,
+  "stats": "http://trials.bonxy.net/the-bunker/",
+  "total_legends": 0,
   "prizes": [
     {
       "level": 1,
       "coins": 5000,
       "gems": 5,
-      "extra_type": "track",
-      "extra": 33
+      "extra": 49,
+      "extra_type": "costum"
     },
     {
       "level": 2,
@@ -27,20 +27,21 @@
       "level": 3,
       "coins": 5000,
       "gems": 5,
-      "extra_type": "doughnut"
+      "extra": 50,
+      "extra_type": "costum"
     },
     {
       "level": 4,
       "coins": 2000,
       "gems": 5,
-      "extra": 46,
-      "extra_type": "costum"
+      "extra_type": "doughnut"
     },
     {
       "level": 5,
       "coins": 2000,
       "gems": 5,
-      "extra_type": "doughnut"
+      "extra_type": "track",
+      "extra": 34
     },
     {
       "level": 6,
@@ -52,8 +53,8 @@
       "level": 7,
       "coins": 2000,
       "gems": 4,
-      "extra_type": "paintjob",
-      "extra": 23
+      "extra": 51,
+      "extra_type": "costum"
     },
     {
       "level": 8,
@@ -66,29 +67,25 @@
       "level": 9,
       "coins": 1500,
       "gems": 4,
-      "extra": 47,
-      "extra_type": "costum"
+      "extra_type": "paintjob",
+      "extra": 29
     },
     {
       "level": 10,
       "coins": 1500,
-      "gems": 3,
-      "extra_type": "part",
-      "extra": "nut-5"
+      "gems": 3
     },
     {
       "level": 11,
       "coins": 1500,
-      "gems": 3,
-      "extra": 48,
-      "extra_type": "costum"
+      "gems": 3
     },
     {
       "level": 12,
       "coins": 1500,
       "gems": 3,
       "extra_type": "part",
-      "extra": "nut-4"
+      "extra": "spring-4"
     },
     {
       "level": 13,
@@ -101,13 +98,14 @@
       "coins": 1500,
       "gems": 3,
       "extra_type": "part",
-      "extra": "sheet-4"
+      "extra": "nut-4"
     },
     {
       "level": 15,
       "coins": 1500,
       "gems": 3,
-      "extra_type": "doughnut"
+      "extra_type": "part",
+      "extra": "sheet-4"
     },
     {
       "level": 16,
@@ -126,12 +124,13 @@
       "coins": 1000,
       "gems": 2,
       "extra_type": "part",
-      "extra": "bolt-2"
+      "extra": "bolt-4"
     },
     {
       "level": 19,
       "coins": 1000,
-      "gems": 2
+      "gems": 2,
+      "extra_type": "unlimited-fuel"
     },
     {
       "level": 20,
@@ -142,8 +141,7 @@
     {
       "level": 21,
       "coins": 800,
-      "gems": 1,
-      "extra_type": "unlimited-fuel"
+      "gems": 1
     },
     {
       "level": 22,
@@ -155,19 +153,18 @@
       "level": 23,
       "coins": 800,
       "gems": 1,
-      "extra_type": "unlimited-fuel"
+      "extra_type": "part",
+      "extra": "chain-3"
     },
     {
       "level": 24,
       "coins": 800,
       "gems": 1,
-      "extra_type": "part",
-      "extra": "chain-1"
+      "extra_type": "unlimited-fuel"
     },
     {
       "level": 25,
-      "coins": 800,
-      "extra_type": "unlimited-fuel"
+      "coins": 800
     }
   ]
 }

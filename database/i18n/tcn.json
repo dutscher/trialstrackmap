@@ -333,10 +333,13 @@
     "329": "雪巷",
     "330": "大災難",
     "331": "花巷",
-    "332": "快樂狂奔"
+    "332": "快樂狂奔",
+    "333": "願望的投降",
+    "334": "City Hallway",
+    "335": "Peak Route",
+    "336": "Wildwood Escape"
   },
   "unreleased": [
-    "LVL_HOPE_SURRENDERS: 願望的投降",
     "LVL_ROADWAY: 道路"
   ]
 }

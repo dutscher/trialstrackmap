@@ -10,6 +10,8 @@ module.exports = function (shared) {
         "adb shell pm path " + shared.appPath,
         // get app version
         `adb shell dumpsys package ${shared.appPath} | findstr versionName`,
+        // get app version
+        //`adb shell dumpsys package com.ubisoft.redlynx.trialsfrontier.ggp`,
     ];
 
     shared.grunt.config("exec.checkAdb", {

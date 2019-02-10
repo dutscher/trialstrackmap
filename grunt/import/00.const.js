@@ -84,6 +84,11 @@ module.exports = {
     },
     pjMatcher: [
         {
+            reqExp: /Custom skin '(.*) - PJ' for (.*)\. .*/g,
+            matchLength: 2,
+            matchGroup: 1
+        },
+        {
             reqExp: /Custom skin '(.*)' for the (.*)\. .*/g,
             matchLength: 2,
             matchGroup: 1

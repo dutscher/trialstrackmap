@@ -36,7 +36,8 @@
     "30": "Temple of Doom",
     "31": "Bumpy Mountain",
     "32": "Blossom Grove",
-    "33": "Night Crawling"
+    "33": "Night Crawling",
+    "34": "The Switchblade"
   },
   "paintjobs": {
     "1": {"title": "Neon Paintjob for Tango", "sprite": "tango-neon"},
@@ -66,7 +67,8 @@
     "25": {"title": "KTM 500 Purple Dust", "sprite": "ktm-500-exc-purple-dust"},
     "26": {"title": "The Renowned Berserkar", "sprite": "berserker-the-reowned-berserkar"},
     "27": {"title": "Stitch for Tango", "sprite": "tango-stitched"},
-    "28": {"title": "The Cyclops Phantom", "sprite": "phantom-cyclops"}
+    "28": {"title": "The Cyclops Phantom", "sprite": "phantom-cyclops"},
+    "29": {"title": "Thunderstorm for Bandito", "sprite": "bandito-thunderstorm"}
   },
   "costums": {
     "1": {"title": "Ninja Head", "selector": "the-ninja", "part": "head"},
@@ -116,6 +118,9 @@
     "45": {"title": "Snowfox Pant", "selector": "snowfox", "part": "pant"},
     "46": {"title": "The Christmas Gal Head", "selector": "the-christmas-gal", "part": "head"},
     "47": {"title": "The Christmas Gal Torso", "selector": "the-christmas-gal", "part": "body"},
-    "48": {"title": "The Christmas Gal Pant", "selector": "the-christmas-gal", "part": "pant"}
+    "48": {"title": "The Christmas Gal Pant", "selector": "the-christmas-gal", "part": "pant"},
+    "49": {"title": "The Trials Rising Head", "selector": "the-trials-rising", "part": "head"},
+    "50": {"title": "The Trials Rising Torso", "selector": "the-trials-rising", "part": "body"},
+    "51": {"title": "The Trials Rising Pant", "selector": "the-trials-rising", "part": "pant"}
   }
 }

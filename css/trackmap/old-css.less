@@ -224,74 +224,6 @@ span.de, span.en {
   display: none
 }
 
-.new-sidebar {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  width: 0;
-  z-index: 4;
-  -webkit-transition: width 0.25s ease-in-out; /* Firefox */
-  -moz-transition: width 0.25s ease-in-out; /* WebKit */
-  -o-transition: width 0.25s ease-in-out; /* Opera */
-  transition: width 0.25s ease-in-out; /* Standard */
-}
-
-.new-sidebar.open {
-  width: 300px;
-}
-
-.new-sidebar .handler {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  margin-top: -73px;
-  width: 62px;
-  height: 158px;
-}
-
-.new-sidebar .handler:before, .new-sidebar .handler:after {
-  content: '';
-  position: absolute;
-  right: 0;
-  width: 18px;
-}
-
-.new-sidebar .handler:before {
-  top: -500%;
-  bottom: 158px;
-}
-
-.new-sidebar .handler:after {
-  bottom: -500%;
-  top: 157px;
-}
-
-.new-sidebar.left {
-  left: -5px;
-  right: auto;
-  margin-right: 62px;
-}
-
-.new-sidebar.left .handler {
-  right: -62px;
-  -webkit-transform: scaleX(-1);
-  -moz-transform: scaleX(-1);
-  -ms-transform: scaleX(-1);
-  -o-transform: scaleX(-1);
-  transform: scaleX(-1);
-}
-
-.new-sidebar.right {
-  right: -5px;
-  left: auto;
-  margin-left: 62px;
-}
-
-.new-sidebar.right .handler {
-  left: -62px;
-}
-
 h1, h2, h3 {
   color: #61d4d7;
   text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
@@ -320,14 +252,6 @@ hr {
   bottom: 0;
   overflow: auto;
   overflow-x: hidden;
-}
-
-.new-sidebar.left .content {
-  right: 0;
-}
-
-.new-sidebar.right .content {
-  left: 0;
 }
 
 ul {

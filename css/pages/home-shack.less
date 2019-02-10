@@ -1,28 +1,29 @@
 .costum {
   @media (min-width: 600px) {
     &__area {
-      padding: 100px;
+      padding: 35px;
     }
   }
 
   position: relative;
   cursor: pointer;
   z-index: 1;
-  width: 256px;
-  height: 530px;
+  width: 150px;
+  height: 300px;
 
   // zoom magic
   &--50percent {
     .costum {
-      transform: scale(0.5);
+      transform: scale(1);
       transform-origin: left top;
 
       &:hover {
-        transform: scale(0.75) translate(-25%, -25%);
+        transform: scale(1.5) translate(-25%, -15%);
 
         .costum__name {
+          display: none;
           bottom: auto;
-          top: 520px;
+          top: 220px;
 
           &__inner {
             bottom: auto;
@@ -33,8 +34,9 @@
     }
 
     &.costum__mask {
-      width: 128px;
-      height: 265px;
+      overflow: hidden;
+      width: 170px;
+      height: 280px;
     }
   }
 
@@ -47,8 +49,8 @@
   }
 
   &__part {
-    width: 256px;
-    height: 256px;
+    width: 128px;
+    height: 128px;
     position: absolute;
     background-repeat: no-repeat;
 
@@ -72,37 +74,33 @@
   }
 
   &--head {
-    z-index: 4;
-    left: 10px;
+    z-index: 3;
+    top: 14px;
+    left: 25px;
+    transform: scale(0.6);
   }
 
   &--body {
-    z-index: 3;
-    top: 95px;
-  }
-
-  &--arm {
-    width: 64px;
-    z-index: 1;
-    left: 190px;
-    top: 120px;
+    z-index: 2;
+    top: 58px;
+    left: 22px;
   }
 
   &--pant {
-    z-index: 2;
-    left: 20px;
-    top: 260px;
+    z-index: 1;
+    top: 109px;
+    left: 24px
   }
 
   &__name {
     width: 100%;
     color: #fff;
-    font-size: 25px;
     position: absolute;
     z-index: 4;
     text-align: center;
     left: 10px;
-    bottom: 50px;
+    bottom: 20px;
+    font-size: 14px;
     .transition(bottom);
 
     &__inner {
@@ -114,7 +112,7 @@
       -moz-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.75);
       box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.75);
       position: absolute;
-      bottom: 20px;
+      bottom: 10px;
       left: 5px;
       right: 5px;
       padding: 0 5px;
@@ -127,9 +125,9 @@
     color: #000;
     padding: 4px 8px;
     font-family: Arial;
-    font-size: 20px;
-    min-width: 15px;
-    line-height: 20px;
+    font-size: 14px;
+    min-width: 7px;
+    line-height: 14px;
     .border-radius(50%);
   }
 
@@ -146,12 +144,49 @@
   // to get the pieces in row
   // <div class="costum__positioner"></div>
   &__positioner {
-    width: 5px;
-    height: 5px;
     position: absolute;
-    left: 94px;
-    top: 262px;
+    width: 38px;
+    height: 1px;
+    position: absolute;
+    left: 73px;
+    top: 144px;
     z-index: 5;
     background: #ff0000;
+
+    &::before,
+    &::after {
+      content: "";
+      display: block;
+      width: 38px;
+      height: 1px;
+      position: absolute;
+      left: -2px;
+      top: -89px;
+      z-index: 5;
+      background: #ff0000;
+    }
+
+    &::after {
+      left: -2px;
+      top: 67px;
+    }
+
+    &--xaxis {
+      transform: rotate(90deg);
+      &::before {
+        left: 56px;
+        right: 0;
+        top: 0;
+        height: 1px;
+        width: 30px;
+      }
+      &::after {
+        left: -70px;
+        right: 0;
+        top: 0;
+        height: 1px;
+        width: 45px;
+      }
+    }
   }
 }

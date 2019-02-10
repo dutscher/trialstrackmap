@@ -141,15 +141,15 @@ module.exports = function (shared) {
         console.log("all files are up to date in 'database/i18n/'");
     });
 
-    // shared.grunt.task.run([
-    //     "import-07-i18n-convert",
-    //     "import-07-i18n-getHashes",
-    //     "import-07-i18n-getTrackNames",
-    //     "import-07-i18n-toJSON",
-    // ]);
-
     shared.grunt.task.run([
+        "import-07-i18n-convert",
+        "import-07-i18n-getHashes",
         "import-07-i18n-getTrackNamesFromRaw",
         "import-07-i18n-toJSON",
     ]);
+
+    // shared.grunt.task.run([
+    //     "import-07-i18n-getTrackNamesFromRaw",
+    //     "import-07-i18n-toJSON",
+    // ]);
 };

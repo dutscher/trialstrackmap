@@ -618,10 +618,13 @@
     "329": "Vicolo Innevato",
     "330": "Cataclisma",
     "331": "Sentiero Floreale",
-    "332": "Lancio Felice"
+    "332": "Lancio Felice",
+    "333": "Sentiero dei disperati",
+    "334": "City Hallway",
+    "335": "Peak Route",
+    "336": "Wildwood Escape"
   },
   "unreleased": [
-    "LVL_HOPE_SURRENDERS: Sentiero dei disperati",
     "LVL_ROADWAY: Carreggiata"
   ]
 }

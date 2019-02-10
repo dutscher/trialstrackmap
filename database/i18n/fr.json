@@ -618,10 +618,13 @@
     "329": "Allée enneigée",
     "330": "Cataclysme",
     "331": "Chemin floral",
-    "332": "Envolée lyrique"
+    "332": "Envolée lyrique",
+    "333": "Espoir abandonné",
+    "334": "City Hallway",
+    "335": "Peak Route",
+    "336": "Wildwood Escape"
   },
   "unreleased": [
-    "LVL_HOPE_SURRENDERS: Espoir abandonné",
     "LVL_ROADWAY: Route"
   ]
 }

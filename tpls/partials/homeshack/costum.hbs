@@ -1,9 +1,12 @@
-<div class="costum__mask costum--{{#if scale}}{{scale}}{{else}}50percent{{/if}}" {{#if home-shack-editor-preview}}home-shack-editor-preview{{/if}}>
+<div class="costum__mask costum--{{#if scale}}{{scale}}{{else}}50percent{{/if}}"
+     {{#if home-shack-editor-preview}}home-shack-editor-preview{{/if}}>
     <div class="costum {{selector}}" id="{{id}}">
-        {{!<div class="costum__positioner"></div>}}
+        {{!
+        <div class="costum__positioner"></div>
+        <div class="costum__positioner costum__positioner--xaxis"></div>
+        }}
         <div class="costum__part costum--head {{#if head}}costum--{{head}}{{/if}}" type="head"></div>
         <div class="costum__part costum--body {{#if body}}costum--{{body}}{{/if}}" type="body"></div>
-        <div class="costum__part costum--arm {{#if body}}costum--{{body}}{{/if}}" type="body"></div>
         <div class="costum__part costum--pant {{#if pant}}costum--{{pant}}{{/if}}" type="pant"></div>
         {{#xif "this.name && !this.without_name"}}
         <div class="costum__name">

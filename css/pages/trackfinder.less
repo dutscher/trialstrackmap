@@ -3,6 +3,7 @@ body {
   font-size: 0;
   font-family: Verdana;
   background: #3a281d;
+  box-sizing: border-box;
 }
 
 html, body {
@@ -25,6 +26,7 @@ html, body {
 .centerized {
   position: relative;
   padding: 10px 5px;
+  box-sizing: inherit;
 }
 
 @media (min-width: 820px) {
@@ -43,24 +45,38 @@ html, body {
   align-items: center;
   background: #1A120D;
   overflow: hidden;
-  padding-bottom: 100px;
+  padding: 8px;
 
   @media (min-width: 820px) {
     flex-direction: row;
-    padding-bottom: 0;
+    padding: 0;
     overflow: visible;
   }
 
   .trackpainter {
     position: relative;
+    margin-bottom: 8px;
+
+    @media (min-width: 820px) {
+      margin-bottom: 0;
+    }
+
+    &[data-world="2"] {
+      margin-bottom: 0;
+    }
 
     &__name {
       font-size: 20px;
       color: #fff;
       text-shadow: 1px 1px #000;
       position: absolute;
-      left: 8px;
       top: 8px;
+      left: 8px;
+
+      @media (min-width: 820px) {
+        top: -30px;
+        left: 0;
+      }
     }
 
     &__pointer {
@@ -87,22 +103,45 @@ html, body {
 }
 
 .trackfilter {
-  position: absolute;
-  bottom: 25px;
-  left: 0;
-  right: 0;
   text-align: center;
+  padding-top: 8px;
+  margin-bottom: 8px;
 
   &__search {
-    height: 30px;
-    border: #6B432A solid 2px;
-    font-size: 25px;
-    padding: 2px 5px;
-    margin-bottom: 10px;
+    position: relative;
+    display: inline-block;
+
+    &__clear {
+      position: absolute;
+      right: 4px;
+      top: 4px;
+      background: #3A281D;
+      color: #fff;
+      font-size: 35px;
+      border: 0;
+      border-radius: 20px;
+      height: 30px;
+      width: 30px;
+      text-indent: -1px;
+      line-height: 18px;
+      cursor: pointer;
+    }
+
+    &__input {
+      height: 30px;
+      border: #6B432A solid 2px;
+      font-size: 25px;
+      padding: 2px 5px;
+      margin-bottom: 10px;
+    }
   }
 
   @media (min-width: 820px) {
-    bottom: -38px;
+    position: absolute;
+    padding-top: 0;
+    left: 0;
+    right: 0;
+    bottom: -65px;
 
     &__search {
       margin-bottom: 0;
@@ -110,4 +149,29 @@ html, body {
   }
 }
 
+.banner {
+  @media (min-width: 820px) {
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    bottom: -136px;
+  }
+
+  .content {
+    background: rgba(255,255,255,0.75);
+    padding: 8px;
+    display: inline-block;
+  }
+}
+
 @import "../icons/lang.less";
+
+i.lang {
+  width: 24px;
+  height: 17px;
+}
+
+[language-select] {
+  bottom: 8px;
+}

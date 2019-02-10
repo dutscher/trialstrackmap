@@ -160,21 +160,6 @@ module.exports = function () {
                                 : ""
                         ) +
                         "}\n" +
-                        (!isSmall ? (
-                        "." + costumName + " .costum--arm,\n" +
-                        "." + costumSelector + " .costum--arm,\n" +
-                        "." + costumSelector + ".costum--arm {\n" +
-                        "   background-image: url('" + replaceHoster(gfxJSON.hoster, costumArm[0]) + "');\n" +
-                        (
-                            costumArm.length > 1
-                                ? (
-                                    (costumArm[1] ? "   left: " + costumArm[1] + "px;\n" : "") +
-                                    (costumArm[2] ? "   top: " + costumArm[2] + "px;\n" : "") +
-                                    (costumArm[3] ? "   width: " + costumArm[3] + "px;\n" : "")
-                                )
-                                : ""
-                        ) +
-                        "}\n" ) : "" ) +
                         "." + costumName + " .costum--pant,\n" +
                         "." + costumSelector + " .costum--pant,\n" +
                         "." + costumSelector + ".costum--pant {\n" +
@@ -182,7 +167,8 @@ module.exports = function () {
                         (
                             costumPant.length > 1
                                 ? (
-                                    (costumPant[1] ? "   left: " + costumPant[1] + "px;\n" : "")
+                                    (costumPant[1] ? "   left: " + costumPant[1] + "px;\n" : "") +
+                                    (costumPant[2] ? "   top: " + costumPant[2] + "px;\n" : "")
                                 )
                                 : ""
                         ) +

@@ -333,10 +333,13 @@
     "329": "스노우 앨리",
     "330": "대격동",
     "331": "꽃길",
-    "332": "즐기는 시간"
+    "332": "즐기는 시간",
+    "333": "희망의 항복",
+    "334": "City Hallway",
+    "335": "Peak Route",
+    "336": "Wildwood Escape"
   },
   "unreleased": [
-    "LVL_HOPE_SURRENDERS: 희망의 항복",
     "LVL_ROADWAY: 도로"
   ]
 }
