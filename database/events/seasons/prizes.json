@@ -37,7 +37,8 @@
     "31": "Bumpy Mountain",
     "32": "Blossom Grove",
     "33": "Night Crawling",
-    "34": "The Switchblade"
+    "34": "The Switchblade",
+    "35": "Crooked Grind"
   },
   "paintjobs": {
     "1": {"title": "Neon Paintjob for Tango", "sprite": "tango-neon"},
@@ -68,7 +69,8 @@
     "26": {"title": "The Renowned Berserkar", "sprite": "berserker-the-reowned-berserkar"},
     "27": {"title": "Stitch for Tango", "sprite": "tango-stitched"},
     "28": {"title": "The Cyclops Phantom", "sprite": "phantom-cyclops"},
-    "29": {"title": "Thunderstorm for Bandito", "sprite": "bandito-thunderstorm"}
+    "29": {"title": "Thunderstorm for Bandito", "sprite": "bandito-thunderstorm"},
+    "29": {"title": "Edge for Jackal", "sprite": "jackal-edge"}
   },
   "costums": {
     "1": {"title": "Ninja Head", "selector": "the-ninja", "part": "head"},
@@ -121,6 +123,9 @@
     "48": {"title": "The Christmas Gal Pant", "selector": "the-christmas-gal", "part": "pant"},
     "49": {"title": "The Trials Rising Head", "selector": "the-trials-rising", "part": "head"},
     "50": {"title": "The Trials Rising Torso", "selector": "the-trials-rising", "part": "body"},
-    "51": {"title": "The Trials Rising Pant", "selector": "the-trials-rising", "part": "pant"}
+    "51": {"title": "The Trials Rising Pant", "selector": "the-trials-rising", "part": "pant"},
+    "52": {"title": "Indie Rider Head", "selector": "indie-rider", "part": "head"},
+    "53": {"title": "Indie Rider Torso", "selector": "indie-rider", "part": "body"},
+    "54": {"title": "Indie Rider Pant", "selector": "indie-rider", "part": "pant"}
   }
 }

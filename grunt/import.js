@@ -7,6 +7,7 @@ module.exports = function (grunt) {
         http = require("http"),
         https = require("https"),
         path = require("path"),
+        encoding = require("text-encoding"),
         consts = require("./import/00.const.js"),
         // VARS
         gameVersion = package.version.replace(/\./g, ""),
@@ -35,11 +36,12 @@ module.exports = function (grunt) {
             .map(name => `${importedPath}/${name}`),
         dates = [];
     // put them together
-    var importShared = _.extend({}, require("./import/00.utils.js")(grunt, http, https, path, fs, fsExt), {
+    const importShared = _.extend({}, require("./import/00.utils.js")(grunt, http, https, path, fs, fsExt), {
         grunt,
         _: _,
         fs: fs,
         fsExt: fsExt,
+        encoding: encoding,
         http,
         https,
         flat,

@@ -36,71 +36,77 @@ module.exports = function (shared, done) {
             foundReward = rewards.filter(function (reward) {
                 return reward.ID === specialID;
             });
-        const commentOfReward = foundReward[0].Comment;
-        const nameIdOfReward = foundReward[0].NameId;
+
         let returnData;
 
-        // console.log("findSpecial", specialID, foundReward)
+        if(foundReward.length === 1) {
+            const commentOfReward = foundReward[0].Comment;
+            const nameIdOfReward = foundReward[0].NameId;
 
-        if (specialID && foundReward[0]) {
-            // part
-            let matches = /(\d) (\w*)/g.exec(commentOfReward);
-            if (matches && matches.length > 2) {
-                const type = matches[2].toLowerCase();
-                returnData = (
-                    (type === "metal" ? "sheet" : type)
-                    + "-"
-                    + (parseInt(matches[1]) + 1)
-                );
-            }
-            // track
-            matches = /Track Reward - (.*)/g.exec(commentOfReward);
-            if (matches && matches.length > 1) {
-                returnData = {
-                    extra_type: "track",
-                    extra: findPrize(
-                        "track",
-                        nameIdOfReward
-                            .replace(/LVL_/g, "")
-                            .replace(/_/g, " "),
-                        commentOfReward
-                    )
-                };
-            }
-            // paintjobs
-            const allPJMatcher = shared.pjMatcher;
-            // find with matcher
-            let pjMatch = null;
-            allPJMatcher.map(matcher => {
-                const localMatches = matcher.reqExp.exec(commentOfReward);
-                if (localMatches && localMatches.length > matcher.matchLength && pjMatch === null) {
-                    pjMatch = localMatches[matcher.matchGroup];
-                }
-            });
-            if(pjMatch !== null) {
-                // check renames
-                if(pjMatch in shared.pjRenames){
-                    pjMatch = shared.pjRenames[pjMatch];
-                }
-                // try to find prize
-                returnData = {
-                    extra_type: "paintjob",
-                    extra: findPrize("paintjob", pjMatch, commentOfReward)
-                };
-            }
+            // console.log("findSpecial", specialID, foundReward)
 
-            // costum
-            if (shared._.startsWith(foundReward[0].NameId, "OUTFIT")) {
-                returnData = {
-                    extra: findPrize(
-                        "costum",
-                        shared.convertCostumStr(commentOfReward),
-                        commentOfReward),
-                    extra_type: "costum"
-                };
+            if (specialID && foundReward[0]) {
+                // part
+                let matches = /(\d) (\w*)/g.exec(commentOfReward);
+                if (matches && matches.length > 2) {
+                    const type = matches[2].toLowerCase();
+                    returnData = (
+                        (type === "metal" ? "sheet" : type)
+                        + "-"
+                        + (parseInt(matches[1]) + 1)
+                    );
+                }
+                // track
+                matches = /Track Reward - (.*)/g.exec(commentOfReward);
+                if (matches && matches.length > 1) {
+                    returnData = {
+                        extra_type: "track",
+                        extra: findPrize(
+                            "track",
+                            nameIdOfReward
+                                .replace(/LVL_/g, "")
+                                .replace(/_/g, " "),
+                            commentOfReward
+                        )
+                    };
+                }
+                // paintjobs
+                const allPJMatcher = shared.pjMatcher;
+                // find with matcher
+                let pjMatch = null;
+                allPJMatcher.map(matcher => {
+                    const localMatches = matcher.reqExp.exec(commentOfReward);
+                    if (localMatches && localMatches.length > matcher.matchLength && pjMatch === null) {
+                        pjMatch = localMatches[matcher.matchGroup];
+                    }
+                });
+                if (pjMatch !== null) {
+                    // check renames
+                    if (pjMatch in shared.pjRenames) {
+                        pjMatch = shared.pjRenames[pjMatch];
+                    }
+                    // try to find prize
+                    returnData = {
+                        extra_type: "paintjob",
+                        extra: findPrize("paintjob", pjMatch, commentOfReward)
+                    };
+                }
+
+                // costum
+                if (shared._.startsWith(foundReward[0].NameId, "OUTFIT")) {
+                    returnData = {
+                        extra: findPrize(
+                            "costum",
+                            shared.convertCostumStr(commentOfReward),
+                            commentOfReward),
+                        extra_type: "costum"
+                    };
+                }
             }
+        } else {
+            console.log("cant findSpecial");
+            console.log("specialID:", specialID, rewardsFile + shared.toExt, "PVPMatchRewardTypes")
         }
-
         return returnData;
     }
 

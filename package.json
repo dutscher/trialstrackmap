@@ -1,8 +1,8 @@
 {
   "name": "trials-trackmap",
   "private": true,
-  "version": "6.7.0",
-  "seasonID": 57,
+  "version": "6.8.0",
+  "seasonID": 58,
   "title": "Trials Frontier Trackmap",
   "description": "Guide for all Track-, Data-Cube- and Candy locations. As well Youtube walkthroughs for every track is available.",
   "author": "willy woitas <dutscher_sbf@hotmail.com>",
@@ -38,9 +38,14 @@
     "colors": "latest",
     "magic-snowflakes": "latest",
     "grunt-ftp-push": "latest",
-    "flat": "latest"
+    "flat": "latest",
+    "text-encoding": "latest",
+    "buffer-chunks": "latest"
   },
-  "engine": "node 8.9.1",
+  "engine": [
+    "node 8.11.3",
+    "python 3.7.2"
+  ],
   "scripts": {
     "npmInstall": "npm install",
     "grunt": "node ./node_modules/grunt/bin/grunt",

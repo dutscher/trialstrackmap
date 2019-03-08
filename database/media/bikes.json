@@ -15,10 +15,10 @@
       "tier": 1,
       "paintjobs": [
         "Default",
-        "Raising Star aka. America",
+        "America aka. Raising Star",
         "Lava",
         "Boogeyman",
-        "Saddle Bags",
+        "Saddle Bags Winter 1",
         "Cowhide",
         "Hungry Shark"
       ]
@@ -44,8 +44,8 @@
       "tier": 1,
       "paintjobs": [
         "Default",
-        "Wasp",
         "8-Ball",
+        "Wasp",
         "Sailor",
         "Medic",
         "Aloha",
@@ -64,7 +64,7 @@
         "Camo",
         "Vanilla Glow",
         "Mr. Bones",
-        "Ice Cube",
+        "Ice Cube Winter2",
         "Edge"
       ]
     },
@@ -73,16 +73,18 @@
       "tier": 2,
       "paintjobs": [
         "Default",
-        "Golden",
         "Marine",
+        "Golden",
         "Mithril",
         "Pumpkin King",
-        "Sheriffs Star",
+        "Sheriffs Star Rodeo1",
         "Fanny Pack",
         "The Dead Of Day",
         "AUS-X-OPEN",
         "Sandstorm",
-        "ICY X"
+        "ICY X",
+        "Tranzit",
+        "Rising Streaks"
       ]
     },
     "6": {
@@ -92,7 +94,7 @@
         "Default",
         "Poopdeck",
         "Scales",
-        "Footprint",
+        "Footprint Winter 3",
         "Winter Wolf",
         "Valentine In"
       ]
@@ -109,7 +111,8 @@
         "Cheetah",
         "The Revenant",
         "Clawride",
-        "X-18"
+        "X-18",
+        "Golden Dirt"
       ]
     },
     "8": {
@@ -132,11 +135,12 @@
       "paintjobs": [
         "Default",
         "Noble",
-        "Apache",
+        "Apache Winter 4",
         "Ceremonial Feathers",
         "Saurus",
         "Cyclops",
-        "Vengeance Knight"
+        "Vengeance Knight",
+        "Crimson Cruiser"
       ]
     },
     "10": {
@@ -166,7 +170,7 @@
       "tier": 1,
       "paintjobs": [
         "Default",
-        "Ivory",
+        "White Ivory",
         "Neon",
         "Purple Dust"
       ]
@@ -190,7 +194,7 @@
       ]
     },
     "16": {
-      "name": "BMW F 800 GS",
+      "name": "BMW F800 GS",
       "nameShort": "BMW",
       "tier": 3,
       "paintjobs": [
