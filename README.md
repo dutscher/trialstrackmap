@@ -15,7 +15,7 @@
 # setup
 ```
 $ git clone https://github.com/dutscher/trialstrackmap.git
-$ npm install
+$ npm install -g --production windows-build-tools
 $ npm run serve
 ```
 

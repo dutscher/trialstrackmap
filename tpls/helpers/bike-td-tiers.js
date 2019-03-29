@@ -15,7 +15,8 @@
             // build html
             for (var tierId in tiers) {
                 var tierNums = tiers[tierId];
-                html += "<td class=\"sprite-col-topheader\" colspan=\"" + tierNums + "\">" + tierId + "</td>";
+                var tierLabel = tierId == 256 ? "Crazy" : tierId;
+                html += "<td class=\"sprite-col-topheader\" colspan=\"" + tierNums + "\">" + tierLabel + "</td>";
             }
 
             return html;

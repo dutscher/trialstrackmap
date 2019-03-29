@@ -237,7 +237,7 @@ module.exports = function (shared, done) {
                 console.log("* " + pathToFile + " created");
             } else {
                 console.log("* " + pathToFile + " already exists");
-                shared.fs.writeFileSync(pathToFile + ".compare", JSON.stringify(jsonData, null, 2));
+                shared.fs.writeFileSync(pathToFile.replace(".json", "") + ".compare", JSON.stringify(jsonData, null, 2));
             }
         }
         console.log("# FINISHED");

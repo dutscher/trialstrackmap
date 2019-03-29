@@ -629,9 +629,12 @@
     "331": "Calle floral",
     "332": "Aventura feliz",
     "333": "Esperanza rendida",
-    "334": "City Hallway",
-    "335": "Peak Route",
-    "336": "Wildwood Escape"
+    "334": "Pasillo urbano",
+    "335": "Ruta de picos",
+    "336": "Huida forestal",
+    "337": "Congelación",
+    "338": "Ciudad trueque",
+    "339": "Rayo de engaño"
   },
   "unreleased": [
     "LVL_ROADWAY: Calzada"

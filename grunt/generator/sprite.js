@@ -39,16 +39,7 @@ module.exports = function () {
                 bikesJSON = require("../../build/bikes.json").build.bikes,
                 gfxJSON = require("../../database/media/gfx.json"),
                 imageJson = gfxJSON.images,
-                bikes = bikesJSON.bikes,
-                //gfx dimensions
-                spritePaintJobDimensions = imageJson.paintjobs.dim.split("x"),
-                spritePaintJobIconDimensions = imageJson["paintjob-icons"].dim.split("x"),
-                //sprite dimensions
-                paintJobDimensions = imageJson.paintjobs.dimIcon.split("x"),
-                paintJobIconDimensons = imageJson["paintjob-icons"].dimIcon.split("x"),
-                //scale dimensions
-                spritePaintJobScalePercent = imageJson.paintjobs.scale,
-                spritePaintJobIconScalePercent = imageJson["paintjob-icons"].scale;
+                bikes = bikesJSON.bikes;
 
             function trimName (name) {
                 const nameLocal = "" + name.toLowerCase()
@@ -64,52 +55,9 @@ module.exports = function () {
                 return pixel * factor;
             }
 
-            // paintjobs
-            globalVars._spritePaintJobsDimensionWidth = calcPercantage(spritePaintJobDimensions[0], spritePaintJobScalePercent);
-            globalVars._spritePaintJobsDimensionHeight = calcPercantage(spritePaintJobDimensions[1], spritePaintJobScalePercent);
-            globalVars._paintJobWidth = calcPercantage(paintJobDimensions[0], spritePaintJobScalePercent);
-            globalVars._paintJobHeight = calcPercantage(paintJobDimensions[1], spritePaintJobScalePercent);
-            globalVars._paintJobSelectors = [];
-            globalVars._paintJobNames = [];
-            globalVars._paintJobPositions = [];
-            // paintjob icons
-            globalVars._spritePaintJobsIconDimensionWidth = calcPercantage(spritePaintJobIconDimensions[0], spritePaintJobIconScalePercent);
-            globalVars._spritePaintJobsIconDimensionHeight = calcPercantage(spritePaintJobIconDimensions[1], spritePaintJobIconScalePercent);
-            globalVars._paintJobIconWidth = calcPercantage(paintJobIconDimensons[0], spritePaintJobIconScalePercent);
-            globalVars._paintJobIconHeight = calcPercantage(paintJobIconDimensons[1], spritePaintJobIconScalePercent);
-            globalVars._paintJobIconNames = [];
-            globalVars._paintJobIconSelectors = [];
-            globalVars._paintJobIconPositions = [];
             // gfx
             globalVars._gfxPaintjobs = gfxJSON.images.paintjobs.src.replace("#1/", "");
             globalVars._gfxPaintjobIcons = gfxJSON.images["paintjob-icons"].src.replace("#1/", "");
-
-            for (var bikeID in bikes) {
-                var bikeName = trimName(bikes[bikeID].name),
-                    bikeIndex = bikesJSON.spriteSorting.indexOf(parseInt(bikeID));
-
-                for (var paintJobID in bikes[bikeID].paintjobs) {
-                    var paintJob = bikes[bikeID].paintjobs[paintJobID],
-                        paintJobName = trimName(paintJob),
-                        paintJobIndex = Object.keys(bikes[bikeID].paintjobs).indexOf(paintJobID);
-                    // paintjobs
-                    globalVars._paintJobNames.push("paintjob-" + bikeName + "-" + paintJobName);
-                    globalVars._paintJobSelectors.push("paintjob-" + bikeID + "-" + paintJobIndex);
-
-                    var left = (globalVars._paintJobWidth * bikeIndex),
-                        top = (globalVars._paintJobHeight * paintJobIndex);
-
-                    globalVars._paintJobPositions.push((left > 0 ? "-" : "") + left + (left !== 0 ? "px" : "") + " " + (top > 0 ? "-" : "") + top + (top !== 0 ? "px" : ""));
-                    // icons
-                    globalVars._paintJobIconNames.push("paintjob-icon-" + bikeName + "-" + paintJobName);
-                    globalVars._paintJobIconSelectors.push("paintjob-icon-" + bikeID + "-" + paintJobIndex);
-
-                    var left = (globalVars._paintJobIconWidth * paintJobIndex),
-                        top = (globalVars._paintJobIconHeight * bikeIndex);
-
-                    globalVars._paintJobIconPositions.push((left > 0 ? "-" : "") + left + (left !== 0 ? "px" : "") + " " + (top > 0 ? "-" : "") + top + (top !== 0 ? "px" : ""));
-                }
-            }
 
             return globalVars;
         },

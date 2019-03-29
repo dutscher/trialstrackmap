@@ -624,9 +624,12 @@
     "331": "Pista Floral",
     "332": "Lançamento Feliz",
     "333": "Rendições da Esperança",
-    "334": "City Hallway",
-    "335": "Peak Route",
-    "336": "Wildwood Escape"
+    "334": "Corredor Urbano",
+    "335": "Rota do Pico",
+    "336": "Fuga do Bosque",
+    "337": "Queimadura de Gelo",
+    "338": "Cidade da Permuta",
+    "339": "Raio da Enganação"
   },
   "unreleased": [
     "LVL_ROADWAY: Estrada"

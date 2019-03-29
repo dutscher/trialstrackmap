@@ -46,6 +46,7 @@ module.exports = function (grunt) {
         https,
         flat,
         versionPath: importPath,
+        versionPathRepo: importPath,
         cachePath,
         secretPath: importedPath,
         dataGet: consts.cloudPath.replace("${gameVersion}", gameVersion),
@@ -73,11 +74,12 @@ module.exports = function (grunt) {
         pjRenames: consts.pjRenames,
         idsOfSeasonPrizes: consts.idsOfSeasonPrizes,
         i18nMap: consts.i18nMap,
+        pjAddons: consts.pjAddons,
     });
 
     for (var i in consts.importTasks) {
         var importTask = consts.importTasks[i];
-        importShared.createTask(importTask, importShared, function () {
+        importShared.createTask(importTask, importShared, () => {
             dates.push(new Date());
         });
     }

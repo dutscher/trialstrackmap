@@ -4,6 +4,7 @@ module.exports = function (shared) {
     shared.grunt.registerTask("import-07-i18n-convert", () => {
         shared.copyToolTo(shared.toolPath.bin2Txt, shared.i18nPath);
         const scriptAll = "bin2txt.cmd",
+            // copy i18n files from import to build
             cmds = ["pushd " + shared.makeWinPath(shared.i18nPath)];
 
         shared.grunt.config("exec.i18nBin2Txt.cmd", cmds.concat(["echo 'convert bin to txt'", scriptAll]).join(" & "));

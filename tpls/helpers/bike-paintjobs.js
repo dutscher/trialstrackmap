@@ -29,7 +29,7 @@
                         html += '<td class="sprite-col-item' + (!paintJobExist ? " is-empty" : "") + '" title="'
                             + (paintJobExist ? paintjobName : "") + '">';
                         if (paintJobExist) {
-                            html += '<i class="paintjob-icon paintjob-icon-' + bikeId + '-' + paintJobId + '"></i>';
+                            html += '<i class="paintjob-icon paintjob-' + bikeId + '-' + paintJobId + '-icon"></i>';
                             html += '<i class="paintjob paintjob-' + bikeId + '-' + paintJobId + '"></i>';
                         }
                         html += "</td>\n";

@@ -3,11 +3,8 @@
     1, 2, 3, 15, 13,
     4, 5, 6, 14,
     7, 8, 9, 16,
-    19, 10, 11, 12
-  ],
-  "spriteSorting": [
-    1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
-    11, 13, 14, 19, 15, 16, 12
+    19, 10, 11,
+    12, 991, 992, 993
   ],
   "bikes": {
     "1":  {
@@ -15,10 +12,10 @@
       "tier": 1,
       "paintjobs": [
         "Default",
-        "America aka. Raising Star",
+        "America aka Raising Star",
         "Lava",
         "Boogeyman",
-        "Saddle Bags Winter 1",
+        "Saddle Bags",
         "Cowhide",
         "Hungry Shark"
       ]
@@ -64,7 +61,7 @@
         "Camo",
         "Vanilla Glow",
         "Mr. Bones",
-        "Ice Cube Winter2",
+        "Ice Cube",
         "Edge"
       ]
     },
@@ -77,7 +74,7 @@
         "Golden",
         "Mithril",
         "Pumpkin King",
-        "Sheriffs Star Rodeo1",
+        "Sheriffs Star",
         "Fanny Pack",
         "The Dead Of Day",
         "AUS-X-OPEN",
@@ -94,16 +91,17 @@
         "Default",
         "Poopdeck",
         "Scales",
-        "Footprint Winter 3",
+        "Footprint",
         "Winter Wolf",
-        "Valentine In"
+        "Valentine In",
+        "Extra Terres Trial"
       ]
     },
     "7": {
       "name": "Riptide",
       "tier": 3,
       "paintjobs": [
-        "Gnasher (Default)",
+        "Default (Gnasher)",
         "Snakebite",
         "Mad Bird",
         "The Gourd",
@@ -119,7 +117,7 @@
       "name": "Berserker",
       "tier": 3,
       "paintjobs": [
-        "Zebra (Default)",
+        "Default (Zebra)",
         "Chester",
         "Venom",
         "Spirits",
@@ -135,7 +133,7 @@
       "paintjobs": [
         "Default",
         "Noble",
-        "Apache Winter 4",
+        "Apache",
         "Ceremonial Feathers",
         "Saurus",
         "Cyclops",
@@ -145,7 +143,7 @@
     },
     "10": {
       "name": "Stallion",
-      "tier": "Crazy",
+      "tier": 256,
       "paintjobs": [
         "Default",
         "Palmino",
@@ -156,7 +154,7 @@
     },
     "11": {
       "name": "Agent",
-      "tier": "Crazy",
+      "tier": 256,
       "paintjobs": [
         "Default",
         "Cruise Red",
@@ -189,7 +187,7 @@
       "tier": 1,
       "paintjobs": [
         "Default",
-        "Camouflage",
+        "Camo",
         "Thunderstorm"
       ]
     },
@@ -205,7 +203,7 @@
     },
     "19": {
       "name": "Donkey",
-      "tier": "Crazy",
+      "tier": 256,
       "paintjobs": [
         "Default",
         "Molten",
@@ -216,8 +214,29 @@
       ]
     },
     "12": {
-      "name": "Moonrover",
-      "tier": "Crazy",
+      "name": "Moonrover aka Pasila",
+      "tier": "Leaked",
+      "paintjobs": [
+        "Default"
+      ]
+    },
+    "991": {
+      "name": "Cassidy's Tiger on Berserker",
+      "tier": "Leaked",
+      "paintjobs": [
+        "Default"
+      ]
+    },
+    "992": {
+      "name": "Leroy's Thunder on Marauder",
+      "tier": "Leaked",
+      "paintjobs": [
+        "Default"
+      ]
+    },
+    "993": {
+      "name": "Sizov's Bones on Bronco",
+      "tier": "Leaked",
       "paintjobs": [
         "Default"
       ]

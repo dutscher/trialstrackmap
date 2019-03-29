@@ -620,9 +620,12 @@
     "331": "Chemin floral",
     "332": "Envolée lyrique",
     "333": "Espoir abandonné",
-    "334": "City Hallway",
-    "335": "Peak Route",
-    "336": "Wildwood Escape"
+    "334": "Zone urbaine",
+    "335": "Route du pic",
+    "336": "Escapade forestière",
+    "337": "Glaçant",
+    "338": "Barter Town",
+    "339": "Rayon d'illusion"
   },
   "unreleased": [
     "LVL_ROADWAY: Route"

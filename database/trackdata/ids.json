@@ -1884,5 +1884,23 @@
     "id": 336,
     "oid": 1395,
     "world": 2
+  },
+  // Frostbite
+  {
+    "id": 337,
+    "oid": 1398,
+    "world": 2
+  },
+  // Barter Town
+  {
+    "id": 338,
+    "oid": 1399,
+    "world": 2
+  },
+  // Ray Of Deception
+  {
+    "id": 339,
+    "oid": 1397,
+    "world": 2
   }
 ]

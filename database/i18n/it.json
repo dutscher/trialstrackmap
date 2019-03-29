@@ -620,9 +620,12 @@
     "331": "Sentiero Floreale",
     "332": "Lancio Felice",
     "333": "Sentiero dei disperati",
-    "334": "City Hallway",
-    "335": "Peak Route",
-    "336": "Wildwood Escape"
+    "334": "Corridoio Cittadino",
+    "335": "Strada del Picco",
+    "336": "Fuga nella Foresta",
+    "337": "Gelo",
+    "338": "Barter Town",
+    "339": "Raggio dell'Inganno"
   },
   "unreleased": [
     "LVL_ROADWAY: Carreggiata"

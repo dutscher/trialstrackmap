@@ -38,7 +38,8 @@
     "32": "Blossom Grove",
     "33": "Night Crawling",
     "34": "The Switchblade",
-    "35": "Crooked Grind"
+    "35": "Crooked Grind",
+    "36": "Rabbit Hell"
   },
   "paintjobs": {
     "1": {"title": "Neon Paintjob for Tango", "sprite": "tango-neon"},
@@ -59,9 +60,9 @@
     "16": {"title": "Mithril Paintjob for Mantis (Leave descruction and mayhem in your wake!)", "sprite": "mantis-mithril"},
     "17": {"title": "Hippie Paintjob for Riptide (Peace, love an speed!)", "sprite": "riptide-hippie"},
     "18": {"title": "Spec Ops Paintjob for Agent (No missions too dangerous when you're disguised in this paint job!)", "sprite": "agent-spec-ops"},
-    "19": {"title": "Revenant paint job for Riptide (Not even the apocalypse can stop Heavy Metal!)", "sprite": "riptide-revenant"},
+    "19": {"title": "Revenant paint job for Riptide (Not even the apocalypse can stop Heavy Metal!)", "sprite": "riptide-the-revenant"},
     "20": {"title": "Hard Rocker paintjob for Berserker (Flip out like a real Rock Star, without the midlife crisis!)", "sprite": "berserker-hard-rocker"},
-    "21": {"title": "Vengeful Steed paintjob for Phantom (Run them over with your vengeance!)", "sprite": "phantom-vengeful-steed"},
+    "21": {"title": "Vengeful Steed paintjob for Phantom (Run them over with your vengeance!)", "sprite": "phantom-vengeance-knight"},
     "22": {"title": "Camo Bandito paint job for Bandito (A good bandit can hide in plain sight.)", "sprite": "bandito-camouflage"},
     "23": {"title": "Winter Wolf paint job for Marauder (Howl at the moon!)", "sprite": "marauder-winter-wolf"},
     "24": {"title": "Fanny Pack paint job for Mantis (Feel the motivation to move your body!)", "sprite": "mantis-fanny-pack"},
@@ -70,7 +71,7 @@
     "27": {"title": "Stitch for Tango", "sprite": "tango-stitched"},
     "28": {"title": "The Cyclops Phantom", "sprite": "phantom-cyclops"},
     "29": {"title": "Thunderstorm for Bandito", "sprite": "bandito-thunderstorm"},
-    "29": {"title": "Edge for Jackal", "sprite": "jackal-edge"}
+    "30": {"title": "Edge for Jackal", "sprite": "jackal-edge"}
   },
   "costums": {
     "1": {"title": "Ninja Head", "selector": "the-ninja", "part": "head"},
@@ -126,6 +127,9 @@
     "51": {"title": "The Trials Rising Pant", "selector": "the-trials-rising", "part": "pant"},
     "52": {"title": "Indie Rider Head", "selector": "indie-rider", "part": "head"},
     "53": {"title": "Indie Rider Torso", "selector": "indie-rider", "part": "body"},
-    "54": {"title": "Indie Rider Pant", "selector": "indie-rider", "part": "pant"}
+    "54": {"title": "Indie Rider Pant", "selector": "indie-rider", "part": "pant"},
+    "55": {"title": "Feaster Bunny Head", "selector": "feaster-bunny", "part": "head"},
+    "56": {"title": "Feaster Bunny Torso", "selector": "feaster-bunny", "part": "body"},
+    "57": {"title": "Feaster Bunny Pant", "selector": "feaster-bunny", "part": "pant"}
   }
 }

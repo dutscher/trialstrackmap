@@ -631,9 +631,12 @@
     "331": "Blumenstraße",
     "332": "Fröhlicher Wurf",
     "333": "Die Hoffnung gibt auf",
-    "334": "City Hallway",
-    "335": "Peak Route",
-    "336": "Wildwood Escape"
+    "334": "Stadtgasse",
+    "335": "Gipfelroute",
+    "336": "Flucht aus dem wilden Wald",
+    "337": "Frostbeule",
+    "338": "Bartertown",
+    "339": "Täuschungsstrahl"
   },
   "unreleased": [
     "LVL_ROADWAY: Fahrbahn"

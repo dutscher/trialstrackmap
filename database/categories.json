@@ -194,6 +194,11 @@
       "name": "Winter 2018",
       "class": "winter-2018",
       "color": "FFFFFF"
+    },
+    "38": {
+      "name": "Orbies UFO Quest 2019",
+      "class": "orbies-ufo-quest-2019",
+      "color": "61d4d7"
     }
   }
 }

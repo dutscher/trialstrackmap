@@ -35,9 +35,15 @@ module.exports = (grunt) => {
         ]);
     });
 
+    grunt.registerTask("mapUpload", () => {
+        grunt.task.run([
+            "ftp_push:distRealEmpu",
+        ]);
+    });
+
     grunt.registerTask("danTeamUpload", () => {
         grunt.task.run([
-            "ftp_push:danTeam",
+            "ftp_push:danTeamAllInkl",
         ]);
     });
 

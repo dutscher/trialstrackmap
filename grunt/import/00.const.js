@@ -44,6 +44,7 @@ module.exports = {
         {src: "/MENUZ/WIDGETS", matcher: "BIKES"}, // paintjobs
         {src: "/MENUZ/MAP/LAYER_0", matcher: "MAP_BG_"}, // world 1
         {src: "/MENUZ/MAP/LAYER_1", matcher: "MAP_BG_"}, // world 2
+        {src: "/gen/atlas", matcher: "bikes"}, // world 2
     ],
     renameTrack: {
         "LVL_SPINNERS_ALLEY": "spinner's alley",
@@ -109,6 +110,12 @@ module.exports = {
             matchLength: 1,
             matchGroup: 1
         },
+        // Union Fanny Pack for the Mantis. (NOTE: ItemId for bike skins points to bikeskin.txt skin ids!)
+        {
+            reqExp: /Union (.*) for the (.*)\. \(NOTE.*bikeskin\.txt.*/g,
+            matchLength: 2,
+            matchGroup: 2
+        },
         {
             reqExp: /(.*) \(NOTE.*bikeskin\.txt.*/g,
             matchLength: 1,
@@ -117,6 +124,19 @@ module.exports = {
     ],
     pjRenames: {
         "Winter 3": "Winter Wolf",
+    },
+    pjAddons: {
+        bikes: {
+            "paintjob-991-0.png": "../trialstrackmap-gfx/garage/08-berserker/00-cassidy.png",
+            "paintjob-992-0.png": "../trialstrackmap-gfx/garage/06-marauder/00-leroy.png",
+            "paintjob-993-0.png": "../trialstrackmap-gfx/garage/03-bronco/00-sizov-bones.png",
+        },
+        cans: {
+            "paintjob-12-0-icon.png": "../trialstrackmap-gfx/garage/00-moonrover-icon.png", // moonrover override,
+            "paintjob-991-0-icon.png": "../trialstrackmap-gfx/garage/08-berserker/00-cassidy-icon.png",
+            "paintjob-992-0-icon.png": "../trialstrackmap-gfx/garage/06-marauder/00-leroy-icon.png",
+            "paintjob-993-0-icon.png": "../trialstrackmap-gfx/garage/03-bronco/00-sizov-bones-icon.png",
+        }
     },
     idsOfSeasonPrizes: [
         222, // agent blueprint
