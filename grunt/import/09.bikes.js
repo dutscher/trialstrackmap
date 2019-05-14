@@ -18,22 +18,28 @@ module.exports = function (shared) {
     const sharp = require("sharp");
     const chunks = require("buffer-chunks");
 
-    shared.grunt.registerTask("import-09-bikes-atl", () => {
+    shared.grunt.registerTask("import-09-bikes-atl", function () {
         const done = this.async();
         let count = 0;
+        let left = 0;
+        let timeout = null;
         shared.ensureDirectoryExistence(bikesPath + "/fileForDir.jo");
         shared.ensureDirectoryExistence(cansPath + "/fileForDir.jo");
 
         sharp.queue.on("change", (inQueue) => {
-            console.log("Queue contains " + inQueue + " task(s)");
-
-            if (inQueue === 0) {
-                count++;
+            //console.log("Queue contains " + inQueue + " task(s)");
+            left = inQueue;
+            // debounce
+            if (timeout !== null) {
+                clearTimeout(timeout);
+                timeout = null;
             }
-
-            if (count > 2) {
-                done();
-            }
+            timeout = setTimeout(() => {
+                console.log("ATL's parsed", left);
+                if (left === 0) {
+                    done();
+                }
+            }, 2000);
         });
 
         function findGhostMeshIndex(index) {
@@ -253,11 +259,12 @@ module.exports = function (shared) {
         shared.fs.writeFileSync(file, JSON.stringify(dataBikes, null, 2));
     });
 
-    shared.grunt.registerTask("import-09-bikes-prepare-sprite", () => {
+    shared.grunt.registerTask("import-09-bikes-prepare-sprite", function () {
         const done = this.async();
         shared.ensureDirectoryExistence(resizedPath + "/fileForDir.jo");
 
         let files = [];
+        let promises = [];
 
         shared.fs.readdirSync(bikesPath).forEach(file => {
             files.push(bikesPath + "/" + file);
@@ -268,38 +275,50 @@ module.exports = function (shared) {
 
         // do resizing
         files.map((file) => {
-            const image = sharp(file);
-            // pj 63x45
-            if (!file.includes("-icon")) {
-                image
-                    .metadata()
-                    .then(() => {
-                        return image
-                            .resize(newSizePj).toBuffer();
-                    })
-                    .then(() => {
-                        return image
-                            .toFile(file.replace(bikesPath, resizedPath));
-                    });
-                // can/icon 50x50
-            } else {
-                image
-                // 128x128
-                    .extract({
-                        left: 13,
-                        top: 13,
-                        width: 100,
-                        height: 100
-                    })
-                    .resize(newSizeCan)
-                    .toFile(file.replace(bikesPath, resizedPath));
-            }
+            const promise = new Promise((resolve, reject) => {
+                const image = sharp(file);
+                // pj 63x45
+                if (!file.includes("-icon")) {
+                    image
+                        .metadata()
+                        .then(() => {
+                            return image
+                                .resize(newSizePj).toBuffer();
+                        })
+                        .then(() => {
+                            return image
+                                .toFile(file.replace(bikesPath, resizedPath), () => {
+                                    resolve();
+                                });
+                        });
+                    // can/icon 50x50
+                } else {
+                    image
+                    // 128x128
+                        .extract({
+                            left: 13,
+                            top: 13,
+                            width: 100,
+                            height: 100
+                        })
+                        .resize(newSizeCan)
+                        .toFile(file.replace(bikesPath, resizedPath), () => {
+                            resolve();
+                        });
+                }
+            });
+            promises.push(promise);
+        });
+
+        Promise.all(promises).then(() => {
+            console.log("sprite prepared well");
+            done();
         });
     });
 
-    shared.grunt.registerTask("import-09-bikes-sprite", () => {
-        shared.ensureDirectoryExistence(resizedPath + "/fileForDir.jo");
+    shared.grunt.registerTask("import-09-bikes-sprite", function () {
         const done = this.async();
+        shared.ensureDirectoryExistence(resizedPath + "/fileForDir.jo");
         let files = [];
 
         // do sprite
@@ -339,17 +358,18 @@ module.exports = function (shared) {
     shared.grunt.registerTask("import-09-bikes-sprite-css", () => {
         const data = require(`../../${shared.secretPath}/paintjob-sprite.json`);
 
-        function trimName (name) {
+        function trimName(name) {
             const nameLocal = "" + name.toLowerCase()
                 .replace(/ /g, "-")
                 .replace(/\./g, "")
                 .replace(/'/g, "")
                 .replace(/\(/g, "")
                 .replace(/\)/g, "");
-            return nameLocal
+            return nameLocal;
         }
 
         let css = `
+            // this file is generated by grunt/import/09.bikes.js
             .paintjob {
               display: inline-block;
               background-repeat: no-repeat;
@@ -372,15 +392,38 @@ module.exports = function (shared) {
 
         for (const fileName in data.coords) {
             const tile = data.coords[fileName];
-            const pathReplace = fileName.split("/").slice(0, -1).join("/") + "/";
-            const iconName = fileName.replace(pathReplace, "").split(".").slice(0, -1).join(".");
+            const pathReplace = fileName
+                .split("/")
+                .slice(0, -1)
+                .join("/") + "/";
+            const iconName = fileName
+                .replace(pathReplace, "")
+                .split(".")
+                .slice(0, -1)
+                .join(".");
+            // paintjob-12-0-icon.png
+            // paintjob-8-leaked-0.png
             const iconNameSplit = iconName.split("-");
+            // 12
             const bikeId = iconNameSplit[1];
+            // 0
             const pjId = iconNameSplit[2];
-            const iconNameHR = iconNameSplit[0] + " " +
-                dataDB.bikes[bikeId].name + " " +
-                dataDB.bikes[bikeId].paintjobs[pjId] +
-                (iconNameSplit.length === 4 ? " " + iconNameSplit[3]: "");
+
+            if(!dataDB.bikes[bikeId] || !("name" in dataDB.bikes[bikeId])){
+                console.error("add new bike from bikes.json5 to database/media/bikes.json")
+            }
+
+            let iconNameHR = iconNameSplit[0] + " " +
+                dataDB.bikes[bikeId].name + " ";
+
+            if (pjId === "leaked") {
+                const pjIdLeaked = iconNameSplit[3];
+                iconNameHR+= dataDB.bikes[bikeId].pjLeaked[pjIdLeaked] +
+                    (iconNameSplit.length === 5 ? " " + iconNameSplit[4] : "");
+            } else {
+                iconNameHR+= dataDB.bikes[bikeId].paintjobs[pjId] +
+                    (iconNameSplit.length === 4 ? " " + iconNameSplit[3] : "");
+            }
 
             css += `
                 .${trimName(iconNameHR)},
@@ -392,14 +435,14 @@ module.exports = function (shared) {
         }
 
         console.log("write sprite css");
-        shared.fs.writeFileSync(`css/sprites/paintjob-sprite.less`, css);
+        shared.fs.writeFileSync(`css/sprites/paintjobs.less`, css);
     });
 
     shared.grunt.task.run([
-        //"import-09-bikes-atl",
-        //"import-09-bikes-copy",
-        //"import-09-bikes-data",
-        //"import-09-bikes-prepare-sprite",
+        "import-09-bikes-atl",
+        "import-09-bikes-copy",
+        "import-09-bikes-data",
+        "import-09-bikes-prepare-sprite",
         "import-09-bikes-sprite",
         "import-09-bikes-sprite-css",
     ]);

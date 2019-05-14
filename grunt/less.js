@@ -2,15 +2,15 @@ module.exports = function (grunt) {
     const generator = require("./generator/sprite.js")();
 
     grunt.registerTask("convertLess", function () {
-        const lessVars = generator.generateSprites();
-
-        grunt.config("less.options.globalVars", lessVars);
+        generator.generateSprites();
         grunt.task.run("less");
     });
 
     return {
         options: {
-            paths: ["css/mixins"],
+            paths: [
+                "css/mixins",
+            ],
             plugins: [
                 require("less-plugin-glob")
             ],

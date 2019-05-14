@@ -64,9 +64,19 @@ module.exports = function (shared, done) {
         if (!isCached || isNewVersion && !isCachedToday) {
             console.log("Download", downloadIndex, downloadFileObj.src);
             shared.downloadFile(downloadFileObj.src, downloadFileObj.dest, function () {
-                // copy to cache
-                shared.fsExt.copySync(downloadFileObj.dest, cachedFile);
-                downloadFiles(downloadIndex + 1);
+                const stats = shared.fsExt.statSync(downloadFileObj.dest);
+                const fileSizeInBytes = stats.size;
+                // check filesSize of downloaded file
+                if (fileSizeInBytes > 0) {
+                    // copy to cache
+                    shared.fsExt.copySync(downloadFileObj.dest, cachedFile);
+                    // download next file
+                    downloadFiles(downloadIndex + 1);
+                } else {
+                    console.error(`null byte download of ${downloadFileObj.dest}`);
+                    // download file again
+                    downloadFiles(downloadIndex);
+                }
             });
             // copy from cache
         } else {

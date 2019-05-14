@@ -1,8 +1,9 @@
 module.exports = function (grunt) {
 
-    grunt.registerTask("#startServer", function () {
+    grunt.registerTask("#startServer", () => {
         grunt.task.run([
             "deploy",
+            "copy:assetsOffline",
             "connect:dist",
             "watch"
         ]);

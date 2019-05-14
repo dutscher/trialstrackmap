@@ -1,245 +1,242 @@
 {
-  "bikeSorting": [
-    1, 2, 3, 15, 13,
-    4, 5, 6, 14,
-    7, 8, 9, 16,
-    19, 10, 11,
-    12, 991, 992, 993
-  ],
-  "bikes": {
-    "1":  {
-      "name": "Armadillo",
-      "tier": 1,
-      "paintjobs": [
-        "Default",
-        "America aka Raising Star",
-        "Lava",
-        "Boogeyman",
-        "Saddle Bags",
-        "Cowhide",
-        "Hungry Shark"
-      ]
-    },
-    "2": {
-      "name": "Tango",
-      "tier": 1,
-      "paintjobs": [
-        "Default",
-        "Flaming",
-        "Union Jack",
-        "Bastille",
-        "Neon",
-        "Soylent",
-        "Stitch",
-        "Redlynx",
-        "Nutcracker",
-        "AUS-X-OPEN"
-      ]
-    },
-    "3": {
-      "name": "Bronco",
-      "tier": 1,
-      "paintjobs": [
-        "Default",
-        "8-Ball",
-        "Wasp",
-        "Sailor",
-        "Medic",
-        "Aloha",
-        "Luchador",
-        "Kaleidoscope",
-        "Raven",
-        "Heartbreaker",
-        "4thJuly"
-      ]
-    },
-    "4": {
-      "name": "Jackal",
-      "tier": 2,
-      "paintjobs": [
-        "Default",
-        "Camo",
-        "Vanilla Glow",
-        "Mr. Bones",
-        "Ice Cube",
-        "Edge"
-      ]
-    },
-    "5": {
-      "name": "Mantis",
-      "tier": 2,
-      "paintjobs": [
-        "Default",
-        "Marine",
-        "Golden",
-        "Mithril",
-        "Pumpkin King",
-        "Sheriffs Star",
-        "Fanny Pack",
-        "The Dead Of Day",
-        "AUS-X-OPEN",
-        "Sandstorm",
-        "ICY X",
-        "Tranzit",
-        "Rising Streaks"
-      ]
-    },
-    "6": {
-      "name": "Marauder",
-      "tier": 2,
-      "paintjobs": [
-        "Default",
-        "Poopdeck",
-        "Scales",
-        "Footprint",
-        "Winter Wolf",
-        "Valentine In",
-        "Extra Terres Trial"
-      ]
-    },
-    "7": {
-      "name": "Riptide",
-      "tier": 3,
-      "paintjobs": [
-        "Default (Gnasher)",
-        "Snakebite",
-        "Mad Bird",
-        "The Gourd",
-        "Hippie",
-        "Cheetah",
-        "The Revenant",
-        "Clawride",
-        "X-18",
-        "Golden Dirt"
-      ]
-    },
-    "8": {
-      "name": "Berserker",
-      "tier": 3,
-      "paintjobs": [
-        "Default (Zebra)",
-        "Chester",
-        "Venom",
-        "Spirits",
-        "Batbike",
-        "Hard Rocker",
-        "The Reowned Berserkar",
-        "Darkmagic"
-      ]
-    },
-    "9": {
-      "name": "Phantom",
-      "tier": 3,
-      "paintjobs": [
-        "Default",
-        "Noble",
-        "Apache",
-        "Ceremonial Feathers",
-        "Saurus",
-        "Cyclops",
-        "Vengeance Knight",
-        "Crimson Cruiser"
-      ]
-    },
-    "10": {
-      "name": "Stallion",
-      "tier": 256,
-      "paintjobs": [
-        "Default",
-        "Palmino",
-        "Snowy",
-        "Blacky",
-        "Undead Horse"
-      ]
-    },
-    "11": {
-      "name": "Agent",
-      "tier": 256,
-      "paintjobs": [
-        "Default",
-        "Cruise Red",
-        "Spec Ops",
-        "Cruise White"
-      ]
-    },
-    "13": {
-      "name": "KTM 500-EXC",
-      "nameShort": "KTM EXC",
-      "tier": 1,
-      "paintjobs": [
-        "Default",
-        "White Ivory",
-        "Neon",
-        "Purple Dust"
-      ]
-    },
-    "14": {
-      "name": "KTM 450 Rally",
-      "nameShort": "KTM Rally",
-      "tier": 2,
-      "paintjobs": [
-        "Default",
-        "Red Bull"
-      ]
-    },
-    "15": {
-      "name": "Bandito",
-      "tier": 1,
-      "paintjobs": [
-        "Default",
-        "Camo",
-        "Thunderstorm"
-      ]
-    },
-    "16": {
-      "name": "BMW F800 GS",
-      "nameShort": "BMW",
-      "tier": 3,
-      "paintjobs": [
-        "Default (Black White)",
-        "Red",
-        "Dark Horse"
-      ]
-    },
-    "19": {
-      "name": "Donkey",
-      "tier": 256,
-      "paintjobs": [
-        "Default",
-        "Molten",
-        "Fallout",
-        "Blizzard",
-        "Candy Cane",
-        "Feaster"
-      ]
-    },
-    "12": {
-      "name": "Moonrover aka Pasila",
-      "tier": "Leaked",
-      "paintjobs": [
-        "Default"
-      ]
-    },
-    "991": {
-      "name": "Cassidy's Tiger on Berserker",
-      "tier": "Leaked",
-      "paintjobs": [
-        "Default"
-      ]
-    },
-    "992": {
-      "name": "Leroy's Thunder on Marauder",
-      "tier": "Leaked",
-      "paintjobs": [
-        "Default"
-      ]
-    },
-    "993": {
-      "name": "Sizov's Bones on Bronco",
-      "tier": "Leaked",
-      "paintjobs": [
-        "Default"
-      ]
+    "bikeSorting": [
+        1,2,3,15,13,
+        4,5,6,14,
+        7,8,9,16,17,
+        19,10,11,
+        12
+    ],
+    "bikes": {
+        "1": {
+            "name": "Armadillo",
+            "tier": 1,
+            "paintjobs": [
+                "Default",
+                "America aka Raising Star",
+                "Lava",
+                "Boogeyman",
+                "Saddle Bags",
+                "Cowhide",
+                "Hungry Shark"
+            ]
+        },
+        "2": {
+            "name": "Tango",
+            "tier": 1,
+            "paintjobs": [
+                "Default",
+                "Flaming",
+                "Union Jack",
+                "Bastille",
+                "Neon",
+                "Soylent",
+                "Stitch",
+                "Redlynx",
+                "Nutcracker",
+                "AUS-X-OPEN"
+            ]
+        },
+        "3": {
+            "name": "Bronco",
+            "tier": 1,
+            "paintjobs": [
+                "Default",
+                "8-Ball",
+                "Wasp",
+                "Sailor",
+                "Medic",
+                "Aloha",
+                "Luchador",
+                "Kaleidoscope",
+                "Raven",
+                "Heartbreaker",
+                "4thJuly"
+            ],
+            "pjLeaked": [
+                "Sizov's Bones"
+            ]
+        },
+        "4": {
+            "name": "Jackal",
+            "tier": 2,
+            "paintjobs": [
+                "Default",
+                "Camo",
+                "Vanilla Glow",
+                "Mr. Bones",
+                "Ice Cube",
+                "Edge"
+            ]
+        },
+        "5": {
+            "name": "Mantis",
+            "tier": 2,
+            "paintjobs": [
+                "Default",
+                "Marine",
+                "Golden",
+                "Mithril",
+                "Pumpkin King",
+                "Sheriffs Star",
+                "Fanny Pack",
+                "The Dead Of Day",
+                "AUS-X-OPEN",
+                "Sandstorm",
+                "ICY X",
+                "Tranzit",
+                "Rising Streaks"
+            ]
+        },
+        "6": {
+            "name": "Marauder",
+            "tier": 2,
+            "paintjobs": [
+                "Default",
+                "Poopdeck",
+                "Scales",
+                "Footprint",
+                "Winter Wolf",
+                "Valentine In",
+                "Extra Terres Trial"
+            ],
+            "pjLeaked": [
+                "Leroy's Thunder"
+            ]
+        },
+        "7": {
+            "name": "Riptide",
+            "tier": 3,
+            "paintjobs": [
+                "Default (Gnasher)",
+                "Snakebite",
+                "Mad Bird",
+                "The Gourd",
+                "Hippie",
+                "Cheetah",
+                "The Revenant",
+                "Clawride",
+                "X-18",
+                "Golden Dirt"
+            ]
+        },
+        "8": {
+            "name": "Berserker",
+            "tier": 3,
+            "paintjobs": [
+                "Default (Zebra)",
+                "Chester",
+                "Venom",
+                "Spirits",
+                "Batbike",
+                "Hard Rocker",
+                "The Reowned Berserkar",
+                "Darkmagic"
+            ],
+            "pjLeaked": [
+                "Cassidy's Tiger"
+            ]
+        },
+        "9": {
+            "name": "Phantom",
+            "tier": 3,
+            "paintjobs": [
+                "Default",
+                "Noble",
+                "Apache",
+                "Ceremonial Feathers",
+                "Saurus",
+                "Cyclops",
+                "Vengeance Knight",
+                "Crimson Cruiser"
+            ]
+        },
+        "10": {
+            "name": "Stallion",
+            "tier": 256,
+            "paintjobs": [
+                "Default",
+                "Palmino",
+                "Snowy",
+                "Blacky",
+                "Undead Horse"
+            ]
+        },
+        "11": {
+            "name": "Agent",
+            "tier": 256,
+            "paintjobs": [
+                "Default",
+                "Cruise Red",
+                "Spec Ops",
+                "Cruise White"
+            ]
+        },
+        "13": {
+            "name": "KTM 500-EXC",
+            "nameShort": "KTM EXC",
+            "tier": 1,
+            "paintjobs": [
+                "Default",
+                "White Ivory",
+                "Neon",
+                "Purple Dust"
+            ]
+        },
+        "14": {
+            "name": "KTM 450 Rally",
+            "nameShort": "KTM Rally",
+            "tier": 2,
+            "paintjobs": [
+                "Default",
+                "Red Bull"
+            ]
+        },
+        "15": {
+            "name": "Bandito",
+            "tier": 1,
+            "paintjobs": [
+                "Default",
+                "Camo",
+                "Thunderstorm"
+            ]
+        },
+        "16": {
+            "name": "BMW F800 GS",
+            "nameShort": "BMW",
+            "tier": 3,
+            "paintjobs": [
+                "Default",
+                "Red",
+                "Dark Horse"
+            ]
+        },
+        "17": {
+            "name": "Harley Davidson XG750R",
+            "nameShort": "HD",
+            "tier": 3,
+            "paintjobs": [
+                "Default",
+                "Black Blaze"
+            ]
+        },
+        "19": {
+            "name": "Donkey",
+            "tier": 256,
+            "paintjobs": [
+                "Default",
+                "Molten",
+                "Fallout",
+                "Blizzard",
+                "Candy Cane",
+                "Feaster"
+            ]
+        },
+        "12": {
+            "name": "Moonrover aka Pasila",
+            "tier": "Leaked",
+            "paintjobs": [
+                "Default"
+            ]
+        }
     }
-  }
 }

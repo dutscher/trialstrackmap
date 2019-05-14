@@ -1,6 +1,42 @@
 module.exports = function (shared) {
     // convert game data to trackmap data
+    /*
+    {
+       "N name":"LVL_HOPE_SURRENDERS",
+       "F file":"dump/Prod27 Ukkis 2.lvl",
+       "A author":"Ukkis",
+       "ID originId":1186,
+       "I rewardId":113,
+       "X mapX":-1829,
+       "Y mapY":644,
+       "C coins":2.000,
+       "FU fuel & index for tier":10,
+       "M0 time plat":180000,
+       "M1 time gold":360000,
+       "M2 time silver":540000,
+       "M3 time bronce":900000,
+       "F0 faults plat":0,
+       "F1 faults gold":20,
+       "F2 faults silver":40,
+       "F3 faults bronce":250,
+       "L world+1":1,
+       // unknown
+       "D":3,
+       "E":1,
+       "B":2,
+       "AS":-1
+    },
+    */
     const i18nDefaultFile = "database/i18n/en.json",
+        knownTracks = [
+            "Flat",
+            "Roadway",
+            "Donkey Lvl",
+            "Prod30 Maria 1",
+            "Prod45 Ukkis 1",
+            "Prod55 Maria 3",
+            "Prod58 Maria 5",
+        ],
         pathToDB = "database/trackdata",
         fuelToTier = {
             0: 0,
@@ -98,11 +134,11 @@ module.exports = function (shared) {
                 "\"" + level.F0 + "|" + level.M0 + "\"" +
                 "]",
                 clear: {
-                    bronze: {
+                    silver: {
                         time: level.M2,
                         faults: level.F2
                     },
-                    silver: {
+                    gold: {
                         time: level.M1,
                         faults: level.F1
                     },
@@ -117,7 +153,8 @@ module.exports = function (shared) {
         if (!Number.isNaN(trackID)) {
             newLevels.push(trackData);
         // test tracks aka
-        } else if(JSON_.i18n.unreleased.indexOf(trackData.upperName) !== -1) {
+        } else if(JSON_.i18n.unreleased.indexOf(trackData.upperName) !== -1
+            || knownTracks.indexOf(trackData.upperName) !== -1) {
             knownUnreleasedLevels.push(trackData.upperName);
         // new tracks
         } else {

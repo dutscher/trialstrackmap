@@ -16,6 +16,7 @@ module.exports = {
     appPath: "com.ubisoft.redlynx.trialsfrontier.ggp",
     appId: "1c91448e-c62e-45ec-b97b-898dc967f2c1",
     androidPath: "sdcard/Android/data/",
+    androidScreenshots: "sdcard/Pictures/Screenshots/",
     cloudPath: "http://s3.amazonaws.com/dlcontent_frontier_android/${gameVersion}/info.json",
     importPath: "build/import/raw/${gameVersion}",
     importedPath: "build/import/game/${gameVersion}",
@@ -68,6 +69,7 @@ module.exports = {
         {t: "import-07-i18n", p: "./07.i18n"},
         {t: "import-08-seasons", p: "./08.seasons", a: true},
         {t: "import-09-bikes", p: "./09.bikes"},
+        {t: "import-10-screenshots", p: "./10.screenshots"},
         {t: "import-00-danteam", p: "../danteam/00.index", a: true},
     ],
     // season
@@ -127,15 +129,15 @@ module.exports = {
     },
     pjAddons: {
         bikes: {
-            "paintjob-991-0.png": "../trialstrackmap-gfx/garage/08-berserker/00-cassidy.png",
-            "paintjob-992-0.png": "../trialstrackmap-gfx/garage/06-marauder/00-leroy.png",
-            "paintjob-993-0.png": "../trialstrackmap-gfx/garage/03-bronco/00-sizov-bones.png",
+            "paintjob-8-leaked-0.png": "../trialstrackmap-gfx/garage/08-berserker/00-cassidy.png",
+            "paintjob-6-leaked-0.png": "../trialstrackmap-gfx/garage/06-marauder/00-leroy.png",
+            "paintjob-3-leaked-0.png": "../trialstrackmap-gfx/garage/03-bronco/00-sizov-bones.png",
         },
         cans: {
             "paintjob-12-0-icon.png": "../trialstrackmap-gfx/garage/00-moonrover-icon.png", // moonrover override,
-            "paintjob-991-0-icon.png": "../trialstrackmap-gfx/garage/08-berserker/00-cassidy-icon.png",
-            "paintjob-992-0-icon.png": "../trialstrackmap-gfx/garage/06-marauder/00-leroy-icon.png",
-            "paintjob-993-0-icon.png": "../trialstrackmap-gfx/garage/03-bronco/00-sizov-bones-icon.png",
+            "paintjob-8-leaked-0-icon.png": "../trialstrackmap-gfx/garage/08-berserker/00-cassidy-icon.png",
+            "paintjob-6-leaked-0-icon.png": "../trialstrackmap-gfx/garage/06-marauder/00-leroy-icon.png",
+            "paintjob-3-leaked-0-icon.png": "../trialstrackmap-gfx/garage/03-bronco/00-sizov-bones-icon.png",
         }
     },
     idsOfSeasonPrizes: [

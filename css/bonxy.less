@@ -1,15 +1,7 @@
 @import "basics/**/*";
 @import "mixins/**/*";
-@import "sprites/paintjob-sprite";
-// preload images from database/media/gfx.json ->
-// paintjobs & paintjob-icons -> background-images
-.paintjob {
-  background-image: ~"url(//i.imgur.com/@{_gfxPaintjobs})";
-}
-.paintjob-icon {
-  background-image: ~"url(//i.imgur.com/@{_gfxPaintjobIcons})";
-}
-//
+@import "sprites/paintjobs2imgur";
+@import "sprites/paintjobs";
 @import "pages/home-shack";
 @import "sprites/costums";
 

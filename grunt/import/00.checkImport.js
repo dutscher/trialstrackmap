@@ -54,13 +54,10 @@ module.exports = function (shared) {
                     'ZY3224JGK8\toffline' ]
             */
             if(error === null){
-                console.log(colors.good(
-                    `${colors.goodLabel("IMPORT FOR VERSION:")}
-                            ${shared.gameVersion} (package.json:version, check APP INSTALLED)`));
                 // device connection
                 if (lines[3] && lines[3].indexOf("device") !== -1) {
                     console.log(colors.good(
-                        `✓\t${colors.goodLabel("DEVICE CONNECTED")}:
+                        `✓\t${colors.goodLabel("DEVICE CONNECTED VIA ADB")}:
                             ${lines[3]}`));
                 } else if (lines[3] && lines[3].indexOf("offline") !== -1) {
                     console.log(colors.doWhat(
@@ -75,21 +72,34 @@ module.exports = function (shared) {
                             Or accept auth request of device`));
                 }
                 // app installed
+                // line 4: package:/mnt/expand/7e578737-52d1-4d95-9d0f-8196a1885155/app/com.ubisoft.redlynx.trialsfrontier.ggp-HgTk--PCofiFBFszu3QrXQ==/base.apk
                 if(lines[4] && lines[4].indexOf(shared.appPath) !== -1) {
                     console.log(colors.good(
                         `✓\t${colors.goodLabel("APP INSTALLED")}:
                             ${lines[4]}
-                            ${lines[5]}
                             `));
                 } else {
                     console.log(colors.bad(
                         `❌\t${colors.badLabel("APP NOT INSTALLED")}:
                             please install Trials Frontier on your device.`));
                 }
+                // line 5: versionName=7.0.0
+                if(lines[5] && lines[5].indexOf(shared.gameVersionRaw) !== -1) {
+                    console.log(colors.good(
+                        `✓\t${colors.goodLabel("CORRECT APP VERSION")}:
+                            ${lines[5]}
+                            `));
+                } else {
+                    console.log(colors.bad(
+                        `❌\t${colors.badLabel("APP VERSION INCORRECT")}:
+                            package.json:version: ${shared.gameVersionRaw}
+                            found on device: ${lines[5] && lines[5].replace("versionName=", "")}`)
+                    );
+                }
                 // all tools found
                 if(shared.hddPath !== "") {
                     console.log(colors.good(
-                        `✓\t${colors.goodLabel("TF TOOLS FOUND")}
+                        `✓\t${colors.goodLabel("TF TOOLS FOUND:")}
                             ${shared.hddPath}`));
                 } else {
                     console.log(colors.bad(

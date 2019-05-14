@@ -11,6 +11,7 @@ module.exports = function (grunt) {
         consts = require("./import/00.const.js"),
         // VARS
         gameVersion = package.version.replace(/\./g, ""),
+        gameVersionRaw = package.version,
         seasonID = package.seasonID,
         hddPath = function () {
             var dirOnStation = consts.drives.find(function (pathToDir) {
@@ -53,6 +54,7 @@ module.exports = function (grunt) {
         hddPath,
         toolPath,
         gameVersion,
+        gameVersionRaw,
         seasonID,
         newContentPath,
         i18nPath: newContentPath + "/gen/lang",
@@ -60,6 +62,7 @@ module.exports = function (grunt) {
         appPath: consts.appPath,
         appId: consts.appId,
         androidPath: consts.androidPath,
+        androidScreenshots: consts.androidScreenshots,
         allInOneDir: consts.allInOneDir,
         filesOfGame,// !!!
         assetsOfGame: consts.assetsOfGame,

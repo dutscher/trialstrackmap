@@ -1897,10 +1897,46 @@
     "oid": 1399,
     "world": 2
   },
-  // Ray Of Deception
+  // Ray of Deception
   {
     "id": 339,
     "oid": 1397,
+    "world": 2
+  },
+  // Doom Race
+  {
+    "id": 340,
+    "oid": 1400,
+    "world": 2
+  },
+  // City Run
+  {
+    "id": 341,
+    "oid": 1401,
+    "world": 2
+  },
+  // Homeland Express
+  {
+    "id": 342,
+    "oid": 1402,
+    "world": 2
+  },
+  // Frozen Cliffs
+  {
+    "id": 343,
+    "oid": 1403,
+    "world": 2
+  },
+  // Swamp Fathom
+  {
+    "id": 344,
+    "oid": 1404,
+    "world": 2
+  },
+  // Rusty Cave
+  {
+    "id": 345,
+    "oid": 1405,
     "world": 2
   }
 ]

@@ -85,6 +85,16 @@ module.exports = function (grunt) {
                     dest: "dist/json/"
                 }
             ]
-        }
+        },
+        assetsOffline: {
+            files: [
+                {
+                    flatten: true,
+                    expand: true,
+                    src: "tpls/assetsOffline/*",
+                    dest: "dist"
+                }
+            ]
+        },
     }
 };

@@ -1,5 +1,9 @@
 module.exports = function () {
-    var _ = require("lodash");
+    const _ = require("lodash"),
+        fsExt = require("fs-extra"),
+        pathForSprites = "css/sprites/",
+        pathForIcons = "css/icons/",
+        firstFileRow = "// this file is generated via grunt/generator/sprite.js\n";
 
     function replaceHoster (hoster, path) {
         if (!hoster || !path || path.indexOf("http") >= 0)
@@ -12,28 +16,20 @@ module.exports = function () {
         return path;
     }
 
-    function jsMixinPlainCSS_ (name, css_) {
-        var obj = {},
-            css = ".this-line-will-be-removed{};\n";
-        css += ".jsMixinPlainCSS_" + name + "(){\n";
-        css += css_;
-        css += " }\n";
-
-        obj[name] = css;
-
-        return obj;
-    }
-
     return {
         generateSprites: function () {
+            const vars = this.generateVars();
+
+            this.generatePaintjobsToImgur(vars);
+            this.generateCostums();
+            this.generateMapColors();
+            this.generateI18NIcons();
+
             return _.extend({},
-                this.generatePaintjobs(),
-                jsMixinPlainCSS_("costums", this.generateCostums()),
-                jsMixinPlainCSS_("mapColors", this.generateMapColors()),
-                jsMixinPlainCSS_("i18nIcons", this.generateI18NIcons())
+                vars
             );
         },
-        generatePaintjobs: function () {
+        generateVars: () => {
             require("json5/lib/register");
             var globalVars = {},
                 bikesJSON = require("../../build/bikes.json").build.bikes,
@@ -61,12 +57,29 @@ module.exports = function () {
 
             return globalVars;
         },
-        generateCostums: function () {
-            var wardrobeJSON = require("../../database/media/wardrobe.json"),
+        generatePaintjobsToImgur: (vars) => {
+            // TODO: get vars from generatePaintjobs and write file
+            const pathDest = `${pathForSprites}paintjobs2imgur.less`;
+            let css = firstFileRow;
+
+            css += `
+            .paintjob {
+                background-image: url(//i.imgur.com/${vars._gfxPaintjobs});
+            }
+            .paintjob-icon {
+                background-image: url(//i.imgur.com/${vars._gfxPaintjobIcons});
+            }`;
+
+            // write file
+            fsExt.writeFileSync(pathDest, css);
+        },
+        generateCostums: () => {
+            const wardrobeJSON = require("../../database/media/wardrobe.json"),
                 gfxJSON = require("../../database/media/gfx.json"),
                 costumOrder = wardrobeJSON.homeshack,
                 costumsData = wardrobeJSON.all,
-                css = "";
+                pathDest = `${pathForSprites}costums.less`;
+            let css = firstFileRow;
 
             for (var i = 0; i < costumOrder.length; i++) {
                 var costumId = costumOrder[i],
@@ -126,29 +139,33 @@ module.exports = function () {
                 ;
             }
 
-            return css;
+            // write file
+            fsExt.writeFileSync(pathDest, css);
         },
-        generateMapColors: function () {
-            var catsJSON = require("../../database/categories.json"),
+        generateMapColors: () => {
+            const catsJSON = require("../../database/categories.json"),
                 mapTierJSON = require("../../database/map.json"),
-                css = "";
+                pathDest = `${pathForSprites}map-colors.less`;
+            let css = firstFileRow;
 
             Object.keys(catsJSON.all).forEach(function (catId) {
                 var cat = catsJSON.all[catId];
                 css += "." + cat.class + "{color:#" + cat.color + "}";
-                css += "." + cat.class + "-bg{background-color:#" + cat.color + "}";
+                css += "." + cat.class + "-bg{background-color:#" + cat.color + "}\n";
             });
 
             mapTierJSON.tiers.forEach(function (tier) {
                 css += "." + tier.class + "{color:#" + tier.color + "}";
-                css += "." + tier.class + "-bg{background-color:#" + tier.color + "}";
+                css += "." + tier.class + "-bg{background-color:#" + tier.color + "}\n";
             });
 
-            return css;
+            // write file
+            fsExt.writeFileSync(pathDest, css);
         },
-        generateI18NIcons: function () {
-            var gfxJSON = require("../../database/media/gfx.json"),
-                css = "";
+        generateI18NIcons: () => {
+            const gfxJSON = require("../../database/media/gfx.json"),
+                pathDest = `${pathForIcons}i18n-icons.less`;
+            let css = firstFileRow;
 
             Object.keys(gfxJSON.images).forEach(function (iconKey) {
                 var icon = gfxJSON.images[iconKey];
@@ -158,8 +175,8 @@ module.exports = function () {
                     css += " }\n";
                 }
             });
-
-            return css;
+            // write file
+            fsExt.writeFileSync(pathDest, css);
         }
     };
 };
