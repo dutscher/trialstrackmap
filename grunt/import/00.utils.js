@@ -37,12 +37,15 @@ module.exports = function (grunt, http, https, path, fs, fsExt) {
                 switch (response.statusCode) {
                     case 200:
                         const file = fs.createWriteStream(pathDest);
-                        response.on("data", function (chunk) {
-                            file.write(chunk);
-                        }).on("end", function () {
-                            file.end();
-                            cb(null);
-                        });
+                        response
+                            .on("data", function (chunk) {
+                                file.write(chunk);
+                            }).on("end", function () {
+                                file.end();
+                                setTimeout(() => {
+                                    cb(pathDest);
+                                }, 250);
+                            });
                         break;
                     case 301:
                     case 302:
@@ -226,7 +229,7 @@ module.exports = function (grunt, http, https, path, fs, fsExt) {
         handleDevice: function (isIos) {
             return isIos ? "IOS" : "ANDROID";
         },
-        hD: function(isIos){
+        hD: function (isIos) {
             return isIos ? "IP" : "AN";
         },
         getDeviceName: function (isiOS) {
@@ -443,7 +446,7 @@ module.exports = function (grunt, http, https, path, fs, fsExt) {
                 }
             };
         },
-        findImprovement: function(dataStart, timeNow, playerId) {
+        findImprovement: function (dataStart, timeNow, playerId) {
             let improveTime = 0;
             if (dataStart) {
                 dataStart.map((score) => {

@@ -1,7 +1,7 @@
 {{! debug }}
 
 {{#extend "default"}}
-    {{#content "htmlCtrl"}}ng-controller="trackData" data-without="worldrecords"{{/content}}
+    {{#content "htmlCtrl"}}ng-controller="trackData" data-without="myjson"{{/content}}
 
     {{#content "styles" mode="append"}}
         <link rel="stylesheet" type="text/css" href="/dist/css/map.css{{cacheBuster}}"/>
@@ -36,7 +36,12 @@
         <div ng-init="trackmapReady = false" ng-hide="trackmapReady && dataLoaded" class="loader spin"></div>
 
         <div pinch-map>
+            {{!
+            <div class="pinch-helper--mask-center"></div>
+            <div class="pinch-helper--scroll-pos"></div>
+            *}}
             <div zoom-here>
+
                 <canvas canvas-track-pointer></canvas>
 
                 <img hide-me-on-pan src="blank.png" class="track-pointer" usemap="#trackmap"/>

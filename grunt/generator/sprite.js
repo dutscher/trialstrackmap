@@ -143,7 +143,7 @@ module.exports = function () {
             fsExt.writeFileSync(pathDest, css);
         },
         generateMapColors: () => {
-            const catsJSON = require("../../database/categories.json"),
+            const catsJSON = require("../../database/trackdata/categories.json"),
                 mapTierJSON = require("../../database/map.json"),
                 pathDest = `${pathForSprites}map-colors.less`;
             let css = firstFileRow;

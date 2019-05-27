@@ -118,6 +118,12 @@ module.exports = {
             matchLength: 2,
             matchGroup: 2
         },
+        // SandStorm PJ for Mantis. (NOTE: ItemId for bike skins points to bikeskin.txt skin ids!)
+        {
+            reqExp: /(.*) PJ for (.*)\. \(NOTE.*bikeskin\.txt.*/g,
+            matchLength: 2,
+            matchGroup: 2
+        },
         {
             reqExp: /(.*) \(NOTE.*bikeskin\.txt.*/g,
             matchLength: 1,

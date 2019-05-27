@@ -631,7 +631,9 @@
     "342": "Visite expresse",
     "343": "Falaises de glace",
     "344": "Marais insondables",
-    "345": "Grotte de rouille"
+    "345": "Grotte de rouille",
+    "346": "Chambres rocailleuses",
+    "347": "Terrain vague"
   },
   "unreleased": [
     "LVL_ROADWAY: Route"

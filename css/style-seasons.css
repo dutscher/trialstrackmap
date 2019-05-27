@@ -27,6 +27,8 @@ h1, h2, h3 {
     .seasons-list {
         white-space: nowrap;
         display: flex;
+        height: 100%;
+        overflow: hidden;
     }
 }
 
@@ -34,15 +36,9 @@ h1, h2, h3 {
     display: flex;
     flex-direction: column;
     position: relative;
-}
-
-.season-summary {
-    overflow: auto;
-}
-
-.season-prizes {
-    height: 150px;
-    flex: 1 0;
+    overflow-y: scroll;
+    margin-top: 4px;
+    padding-right: 4px;
 }
 
 .season-container {
@@ -95,11 +91,6 @@ h1, h2, h3 {
     position: relative
 }
 
-.season-prizes {
-    overflow: scroll;
-    overflow-x: hidden
-}
-
 .season-summary {
     text-align: right;
     padding-top: 10px;
@@ -108,10 +99,11 @@ h1, h2, h3 {
 
 .season-times .countdown {
     position: absolute;
-    right: 0;
+    left: 0;
     top: 43px;
     color: #61d4d7;
     font-weight: bold;
+
 }
 
 .protect-countdown {

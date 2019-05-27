@@ -39,6 +39,19 @@ module.exports = function (shared, done) {
         });
     }
 
+    function getFileSize(filePath) {
+        const isExists = shared.fs.existsSync(filePath);
+        let stats = {};
+        let fileSize = 0;
+
+        if (isExists) {
+            stats = shared.fs.statSync(filePath);
+            fileSize = stats.size;
+        }
+
+        return fileSize;
+    }
+
     function downloadFiles(index) {
         const downloadIndex = index || 0;
         const downloadFileObj = filesToDownload[downloadIndex];
@@ -56,18 +69,27 @@ module.exports = function (shared, done) {
         // download file
         // if dat file is new download from amazon
         const cachedFile = shared.cachePath + "/" + downloadFileObj.name;
-        const stats = shared.fs.statSync(cachedFile);
         const isCached = shared.fs.existsSync(cachedFile);
-        const isCachedToday = sameDay(stats.mtime, today);
-        const isNewVersion = downloadFileObj.src.indexOf(shared.gameVersion) !== -1;
+        let stats = null;
+        let isCachedToday = false;
+        let isNewVersion = true;
+
+        if (isCached) {
+            stats = shared.fs.statSync(cachedFile);
+            isCachedToday = sameDay(stats.mtime, today);
+            isNewVersion = downloadFileObj.src.indexOf(shared.gameVersion) !== -1;
+        }
 
         if (!isCached || isNewVersion && !isCachedToday) {
-            console.log("Download", downloadIndex, downloadFileObj.src);
+            console.log("Download", downloadIndex + "\n",
+                "from", downloadFileObj.src + "\n",
+                "to", downloadFileObj.dest);
+
+
             shared.downloadFile(downloadFileObj.src, downloadFileObj.dest, function () {
-                const stats = shared.fsExt.statSync(downloadFileObj.dest);
-                const fileSizeInBytes = stats.size;
+                const fileSize = getFileSize(downloadFileObj.dest);
                 // check filesSize of downloaded file
-                if (fileSizeInBytes > 0) {
+                if (fileSize > 0) {
                     // copy to cache
                     shared.fsExt.copySync(downloadFileObj.dest, cachedFile);
                     // download next file

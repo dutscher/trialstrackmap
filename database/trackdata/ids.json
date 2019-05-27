@@ -1938,5 +1938,17 @@
     "id": 345,
     "oid": 1405,
     "world": 2
+  },
+  // Rocky Chambers
+  {
+    "id": 346,
+    "oid": 1406,
+    "world": 2
+  },
+  // Wasteland
+  {
+    "id": 347,
+    "oid": 1407,
+    "world": 2
   }
 ]

@@ -14,10 +14,11 @@ module.exports = (grunt) => {
         ]);
     });
 
-    grunt.registerTask("#finalDeploy", () => {
+    grunt.registerTask("#finalDeployWithUpload", () => {
         grunt.task.run([
             "deploy",
             "uglify:dist",
+            "ftp_push:distUpload",
         ]);
     });
 

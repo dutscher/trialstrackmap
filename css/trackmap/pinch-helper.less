@@ -1,0 +1,34 @@
+.pinch-helper {
+  &--mask-center,
+  &--scroll-pos {
+
+    &::before,
+    &::after {
+      cursor: wait;
+      position: absolute;
+      content: "";
+      background: red;
+      z-index: 1;
+    }
+
+    &::before {
+      top: 50%;
+      left: 50%;
+      width: 3px;
+      transform: translateY(-50%);
+      height: 100px;
+    }
+
+    &::after {
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 3px;
+      width: 100px;
+    }
+  }
+
+  &--scroll-pos {
+    position: absolute;
+  }
+}

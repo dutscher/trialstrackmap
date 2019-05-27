@@ -24,9 +24,7 @@ module.exports = function (shared, done) {
         importDir = "build/import/seasons/",
         databaseDir = "database/events/seasons",
         year = new Date().getFullYear(),
-        rewardsFile = shared.workingFilesOfGame.filter(function (file) {
-            return file.indexOf("pvp_match") !== -1;
-        })[0],
+        rewardsFile = shared.workingFilesOfGame.filter(file => file.indexOf("pvp_match") !== -1)[0],
         rewardsJSON = require("../../" + rewardsFile + shared.toExt),
         prizesJSON = require("../../database/events/seasons/prizes.json");
     console.log("# START SEASON IMPORT gameVersion:", shared.gameVersion, "importSeasonID:", importSeasonID);
@@ -169,10 +167,12 @@ module.exports = function (shared, done) {
     }
 
     function readSeasonFiles() {
-        const dirData = shared.fs.readdirSync(importDir);
+        const allSeasonFiles = shared.fs.readdirSync(importDir);
         // loop import files
-        for (const i in dirData) {
-            const file = dirData[i],
+        const seasonFile = allSeasonFiles.filter(file => file.indexOf(importSeasonID) !== -1);
+
+        for (const i in seasonFile) {
+            const file = seasonFile[i],
                 json = require("../../" + importDir + file),
                 settings = json.pvp_season_settings,
                 rewards = json.pvp_season_rewards,

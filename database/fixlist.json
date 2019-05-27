@@ -1,6 +1,15 @@
 {
   "wishes": [
     {
+      "id": 21,
+      "name": "Store scroll position",
+      "description": "Remember the latest position where we scrolled to. For bunkershowdowns and events tracklists.",
+      "thread": [
+        ""
+      ],
+      "date": "26-05-2019 11:59 AM"
+    },
+    {
       "id": 20,
       "name": "Limit the max showdowns in bunker",
       "description": "Just limit that number to 10-15. This parameter called 'ranked_match_limit' on pvp server",
@@ -21,19 +30,9 @@
     {
       "id": 18,
       "name": "Lost Control about bike",
-      "description": "If youre in mobile internet and you're lost connection, the bike flips like a spinner.",
+      "description": "When you're in mobile internet and lost the connection, the bike flips like a spinner. None of the four controls are take care of input.",
       "thread": [
         "https://forums.ubi.com/showthread.php/1819425-Bike-looses-function-randomly"
-      ],
-      "date": "16-01-2018 11:28 AM"
-    },
-    {
-      "id": 17,
-      "name": "Speedhack",
-      "description": "New version 5.7.1 is out, speedhack still working",
-      "thread": [
-        "https://forums.ubi.com/showthread.php/1825294-New-version-5-7-1-is-out-speedhack-still-working",
-        "https://forums.ubi.com/showthread.php/1814975-Vulnerability-that-allow-to-SPEED-HACK-is-FIXED-in-new-version!-Forums"
       ],
       "date": "16-01-2018 11:28 AM"
     },
@@ -47,13 +46,6 @@
         "http://forums.ubi.com/showthread.php/1528454-Lagggggggggg"
       ],
       "date": "06-10-2016 11:28 AM"
-    },
-    {
-      "id": 4,
-      "name": "Ninja tracks",
-      "description": "More Tracks with shortcuts and ninja technique",
-      "thread": "http://forums.ubi.com/showthread.php/1498956-Ninja-tracks-leaving-the-forums!",
-      "date": "01-01-2015, 01:00 AM"
     },
     {
       "id": 5,

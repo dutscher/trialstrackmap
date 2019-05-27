@@ -39,7 +39,9 @@
     "33": "Night Crawling",
     "34": "The Switchblade",
     "35": "Crooked Grind",
-    "36": "Rabbit Hell"
+    "36": "Rabbit Hell",
+    "37": "Happy Fling",
+    "38": "Crystal Extraction"
   },
   "paintjobs": {
     "1": {"title": "Neon Paintjob for Tango", "sprite": "tango-neon"},
@@ -71,7 +73,9 @@
     "27": {"title": "Stitch for Tango", "sprite": "tango-stitch"},
     "28": {"title": "The Cyclops Phantom", "sprite": "phantom-cyclops"},
     "29": {"title": "Thunderstorm for Bandito", "sprite": "bandito-thunderstorm"},
-    "30": {"title": "Edge for Jackal", "sprite": "jackal-edge"}
+    "30": {"title": "Edge for Jackal", "sprite": "jackal-edge"},
+    "31": {"title": "Sand Storm for Mantis", "sprite": "mantis-sandstorm"},
+    "32": {"title": "Yellow Submarine for Phantom", "sprite": "phantom-yellow-submarine"}
   },
   "costums": {
     "1": {"title": "Ninja Head", "selector": "the-ninja", "part": "head"},
@@ -130,6 +134,9 @@
     "54": {"title": "Indie Rider Pant", "selector": "indie-rider", "part": "pant"},
     "55": {"title": "Feaster Bunny Head", "selector": "feaster-bunny", "part": "head"},
     "56": {"title": "Feaster Bunny Torso", "selector": "feaster-bunny", "part": "body"},
-    "57": {"title": "Feaster Bunny Pant", "selector": "feaster-bunny", "part": "pant"}
+    "57": {"title": "Feaster Bunny Pant", "selector": "feaster-bunny", "part": "pant"},
+    "58": {"title": "The Temple Rider Head", "selector": "the-temple-rider", "part": "head"},
+    "59": {"title": "The Temple Rider Torso", "selector": "the-temple-rider", "part": "body"},
+    "60": {"title": "The Temple Rider Pant", "selector": "the-temple-rider", "part": "pant"}
   }
 }
