@@ -18,6 +18,15 @@
                 "Saddle Bags",
                 "Cowhide",
                 "Hungry Shark"
+            ],
+            "gfx": [
+                "https://i.imgur.com/tNoSs4e.png",
+                "https://i.imgur.com/eewnF2A.png",
+                "https://i.imgur.com/Cz3jJkp.png",
+                "https://i.imgur.com/bOnMhQW.png",
+                "https://i.imgur.com/baSIooC.png",
+                "https://i.imgur.com/EtyzuIz.png",
+                "https://i.imgur.com/zA823v2.png"
             ]
         },
         "2": {
@@ -34,6 +43,18 @@
                 "Redlynx",
                 "Nutcracker",
                 "AUS-X-OPEN"
+            ],
+            "gfx": [
+                "https://i.imgur.com/eTDRLeB.png",
+                "https://i.imgur.com/N6tUm8w.png",
+                "https://i.imgur.com/w6xdtRv.png",
+                "https://i.imgur.com/tTOl8jH.png",
+                "https://i.imgur.com/9ZXOR60.png",
+                "https://i.imgur.com/RIRBbz5.png",
+                "https://i.imgur.com/ricPUzV.png",
+                "https://i.imgur.com/q7k0i3B.png",
+                "https://i.imgur.com/E1EBRsf.png",
+                "https://i.imgur.com/YF1HNkt.png"
             ]
         },
         "3": {
@@ -41,8 +62,8 @@
             "tier": 1,
             "paintjobs": [
                 "Default",
-                "8-Ball",
                 "Wasp",
+                "8-Ball",
                 "Sailor",
                 "Medic",
                 "Aloha",
@@ -54,6 +75,20 @@
             ],
             "pjLeaked": [
                 "Sizov's Bones"
+            ],
+            "gfx": [
+                "https://i.imgur.com/KU06WCK.png",
+                "https://i.imgur.com/5dFsfvj.png",
+                "https://i.imgur.com/ecuyy3E.png",
+                "https://i.imgur.com/sWoX5kt.png",
+                "https://i.imgur.com/IsIJEWC.png",
+                "https://i.imgur.com/BucaWfM.png",
+                "https://i.imgur.com/fmc5AFa.png",
+                "https://i.imgur.com/GS8NM2G.png",
+                "https://i.imgur.com/xRLRW1O.png",
+                "https://i.imgur.com/XEYsiSr.png",
+                "https://i.imgur.com/4lE4kfZ.png",
+                "https://i.imgur.com/ZoT7Bag.png"
             ]
         },
         "4": {
@@ -66,6 +101,14 @@
                 "Mr. Bones",
                 "Ice Cube",
                 "Edge"
+            ],
+            "gfx": [
+                "https://i.imgur.com/cxBBCxs.png",
+                "https://i.imgur.com/aOlOaI0.png",
+                "https://i.imgur.com/tufylUQ.png",
+                "https://i.imgur.com/KE8f6I5.png",
+                "https://i.imgur.com/BbZYDVr.png",
+                "https://i.imgur.com/D6xkx5z.png"
             ]
         },
         "5": {
@@ -85,6 +128,21 @@
                 "ICY X",
                 "Tranzit",
                 "Rising Streaks"
+            ],
+            "gfx": [
+                "https://i.imgur.com/DHoDoIp.png",
+                "https://i.imgur.com/YaEGdOl.png",
+                "https://i.imgur.com/fTpt1il.png",
+                "https://i.imgur.com/LoV31Ki.png",
+                "https://i.imgur.com/yT93z0I.png",
+                "https://i.imgur.com/bx0p0it.png",
+                "https://i.imgur.com/iepjXij.png",
+                "https://i.imgur.com/Rieod0M.png",
+                "https://i.imgur.com/IMVmoeJ.png",
+                "https://i.imgur.com/oPJa6Qw.png",
+                "https://i.imgur.com/JRJrjqM.png",
+                "https://i.imgur.com/pYQHeBK.png",
+                "https://i.imgur.com/b8TZvqH.png"
             ]
         },
         "6": {
@@ -101,6 +159,16 @@
             ],
             "pjLeaked": [
                 "Leroy's Thunder"
+            ],
+            "gfx": [
+                "https://i.imgur.com/JUCNte3.png",
+                "https://i.imgur.com/Ce3PL7p.png",
+                "https://i.imgur.com/QR6TYx4.png",
+                "https://i.imgur.com/WngOHGm.png",
+                "https://i.imgur.com/k834tMJ.png",
+                "https://i.imgur.com/x8BTi7k.png",
+                "https://i.imgur.com/yHlYPcK.png",
+                "https://i.imgur.com/IZF72qb.png"
             ]
         },
         "7": {
@@ -117,6 +185,18 @@
                 "Clawride",
                 "X-18",
                 "Golden Dirt"
+            ],
+            "gfx": [
+                "https://i.imgur.com/wUQVdTC.png",
+                "https://i.imgur.com/WNUqVDl.png",
+                "https://i.imgur.com/uax0LAi.png",
+                "https://i.imgur.com/DgAdM5h.png",
+                "https://i.imgur.com/ACq8lR7.png",
+                "https://i.imgur.com/IKMOk17.png",
+                "https://i.imgur.com/QgLL6iZ.png",
+                "https://i.imgur.com/IT8bqjq.png",
+                "https://i.imgur.com/PMQz7sh.png",
+                "https://i.imgur.com/YKPdVgl.png"
             ]
         },
         "8": {
@@ -134,6 +214,17 @@
             ],
             "pjLeaked": [
                 "Cassidy's Tiger"
+            ],
+            "gfx": [
+                "https://i.imgur.com/XDS6gcG.png",
+                "https://i.imgur.com/21ctjZT.png",
+                "https://i.imgur.com/pRP89FN.png",
+                "https://i.imgur.com/QgLL6iZ.png",
+                "https://i.imgur.com/TIO4j3Q.png",
+                "https://i.imgur.com/AoqLok1.png",
+                "https://i.imgur.com/PPjvjy8.png",
+                "https://i.imgur.com/WsCTt3v.png",
+                "https://i.imgur.com/AmfN72E.png"
             ]
         },
         "9": {
@@ -148,7 +239,18 @@
                 "Cyclops",
                 "Vengeance Knight",
                 "Crimson Cruiser",
-                "Yellow Submarine"
+                "Yellow Submarine*"
+            ],
+            "gfx": [
+                "https://i.imgur.com/kooKFFG.png",
+                "https://i.imgur.com/v8OxRJD.png",
+                "https://i.imgur.com/sHuRCGI.png",
+                "https://i.imgur.com/pzcynxx.png",
+                "https://i.imgur.com/s2hA2kU.png",
+                "https://i.imgur.com/cqCnAA6.png",
+                "https://i.imgur.com/emYqg23.png",
+                "https://i.imgur.com/p2s1ofL.png",
+                "https://i.imgur.com/Tij3qEd.png"
             ]
         },
         "10": {
@@ -160,6 +262,13 @@
                 "Snowy",
                 "Blacky",
                 "Undead Horse"
+            ],
+            "gfx": [
+                "https://i.imgur.com/20XKer6.png",
+                "https://i.imgur.com/4Slvpn3.png",
+                "https://i.imgur.com/6DL2Sp9.png",
+                "https://i.imgur.com/NC8tFGl.png",
+                "https://i.imgur.com/YhKX9u9.png"
             ]
         },
         "11": {
@@ -170,6 +279,23 @@
                 "Cruise Red",
                 "Spec Ops",
                 "Cruise White"
+            ],
+            "gfx": [
+                "https://i.imgur.com/4he2XPY.png",
+                "https://i.imgur.com/XwMkaum.png",
+                "https://i.imgur.com/G7g3BH0.png",
+                "https://i.imgur.com/J3NZ3Y7.png"
+            ]
+        },
+        "12": {
+            "name": "Pasila",
+            "nameLong": "aka Moonrover",
+            "tier": "Leaked",
+            "paintjobs": [
+                "Default"
+            ],
+            "gfx": [
+                "https://i.imgur.com/lpcyYNT.png"
             ]
         },
         "13": {
@@ -181,6 +307,12 @@
                 "White Ivory",
                 "Neon",
                 "Purple Dust"
+            ],
+            "gfx": [
+                "https://i.imgur.com/cyGSyVJ.png",
+                "https://i.imgur.com/fAbHi8C.png",
+                "https://i.imgur.com/zrX949Q.png",
+                "https://i.imgur.com/QX9njPt.png"
             ]
         },
         "14": {
@@ -190,6 +322,10 @@
             "paintjobs": [
                 "Default",
                 "Red Bull"
+            ],
+            "gfx": [
+                "https://i.imgur.com/NKqiwIw.png",
+                "https://i.imgur.com/n2sLKEG.png"
             ]
         },
         "15": {
@@ -199,6 +335,11 @@
                 "Default",
                 "Camo",
                 "Thunderstorm"
+            ],
+            "gfx": [
+                "https://i.imgur.com/Ayg6pLc.png",
+                "https://i.imgur.com/M5KThwr.png",
+                "https://i.imgur.com/8C4LnjH.png"
             ]
         },
         "16": {
@@ -209,15 +350,24 @@
                 "Default",
                 "Red",
                 "Dark Horse"
+            ],
+            "gfx": [
+                "https://i.imgur.com/z2aVcee.png",
+                "https://i.imgur.com/58blKrv.png",
+                "https://i.imgur.com/wwAsIDJ.png"
             ]
         },
         "17": {
-            "name": "Harley Davidson XG750R",
-            "nameShort": "HD",
+            "name": "HD XG750R",
+            "nameLong": "Harley Davidson XG750R",
             "tier": 3,
             "paintjobs": [
                 "Default",
                 "Black Blaze"
+            ],
+            "gfx": [
+                "https://i.imgur.com/b5oHnGn.png",
+                "https://i.imgur.com/7NiAp4E.png"
             ]
         },
         "19": {
@@ -230,13 +380,14 @@
                 "Blizzard",
                 "Candy Cane",
                 "Feaster"
-            ]
-        },
-        "12": {
-            "name": "Moonrover aka Pasila",
-            "tier": "Leaked",
-            "paintjobs": [
-                "Default"
+            ],
+            "gfx": [
+                "https://i.imgur.com/NNJoSkB.png",
+                "https://i.imgur.com/URBpcmf.png",
+                "https://i.imgur.com/aJLkpyJ.png",
+                "https://i.imgur.com/xnmQNZS.png",
+                "https://i.imgur.com/aAx84qi.png",
+                "https://i.imgur.com/yQbOvCJ.png"
             ]
         }
     }

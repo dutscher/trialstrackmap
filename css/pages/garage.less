@@ -1,0 +1,271 @@
+.sprite-overview {
+  white-space: nowrap;
+  padding: 0 5px;
+  color: #fff;
+  text-align: left;
+}
+
+.garage-big-image {
+  position: fixed;
+  display: none;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  top: 0;
+  left: 0;
+  
+  &.is-open {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 11;
+  }
+
+  &.is-new div {
+    &::after {
+      position: absolute;
+      content: "NEW";
+      background: #00d9ff;
+      color: #fff;
+      padding: 2px 50px;
+      top: 3px;
+      right: -48px;
+      left: auto;
+      transform: rotate(45deg);
+      font-size: 8px;
+      z-index: -1;
+    }
+  }
+
+  div {
+    position: relative;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    //width: 256px;
+    //height: 128px;
+    width: 330px;
+    height: 160px;
+    overflow: hidden;
+
+    &::before {
+      position: absolute;
+      content: '';
+      bottom: 0;
+      background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.75) 100%);
+      height: 150px;
+      width: 100%;
+      z-index: -1;
+      border-radius: 0 0 6px 6px;
+    }
+  }
+
+  span {
+    color: #ffee99;
+    padding: 6px;
+  }
+}
+
+.sprite-table {
+  margin: 0 auto;
+  color: #fff;
+  border-spacing: 0;
+  border-collapse: collapse;
+  border: 1px #fff solid;
+  margin-bottom: 32px;
+
+  .last-tier-bike {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: '';
+      display: block;
+      border-bottom: 1px #fff solid;
+    }
+
+    td {
+      border-bottom: 1px #fff solid;
+    }
+  }
+
+  &--wrap {
+    display: flex;
+  }
+
+  &__tier {
+    background: #664635;
+    text-align: center;
+    font-size: 12px;
+    border-bottom: 1px #fff solid;
+
+    tr:last-child & {
+      border-bottom: 0;
+    }
+  }
+
+  &__bike {
+    height: 55px;
+    padding: 0 8px;
+    font-size: 12px;
+    font-weight: normal;
+    white-space: nowrap;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.55);
+    box-shadow: inset 0 0 10px 10px rgba(0, 0, 0, 0.25);
+    border-right: solid 1px #fff;
+    color: #ffee99;
+    position: relative;
+    
+    &::after {
+      position: absolute;
+      content: attr(data-nums);
+      display: block;
+      border-radius: 50%;
+      background: #000;
+      color: #fff;
+      padding: 0 2px;
+      right: -13px;
+      top: 19px;
+      width: 20px;
+      text-align: center;
+    }
+
+    &--scala {
+      font-size: 0;
+      width: 0;
+      padding: 0;
+    }
+
+    &__paint-job {
+      &__wrap {
+        position: relative;
+        cursor: pointer;
+
+        &::after {
+          position: absolute;
+          content: '';
+          box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 1);
+          top: 0;
+        }
+
+        &:hover {
+          background: rgba(255, 255, 255, 0.5);
+          z-index: 1;
+
+          &::after {
+            width: 100%;
+            height: 100%;
+          }
+
+          .sprite-table__bike__paint-job__name {
+            display: block;
+          }
+        }
+      }
+
+      &__span {
+        display: flex;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+      }
+
+      &__new,
+      &__leaked {
+        &::after {
+          position: absolute;
+          color: #fff;
+          padding: 2px 50px;
+          top: 3px;
+          right: -48px;
+          left: auto;
+          transform: rotate(45deg);
+          font-size: 8px;
+          z-index: -1;
+        }
+      }
+
+      &__leaked {
+        &::after {
+          content: "???";
+          background: #FF0000;
+        }
+      }
+
+      &__new {
+        &::after {
+          content: "NEW";
+          background: #00d9ff;
+        }
+      }
+
+      &__name {
+        position: relative;
+        display: none;
+        color: #ffee99;
+
+        &::before {
+          position: absolute;
+          content: attr(data-name);
+          font-size: 12px;
+          background: rgba(0, 0, 0, 0.8);
+          border-radius: 0 0 6px 6px;
+          top: 0;
+          width: 100%;
+          text-align: center;
+          padding: 6px;
+          box-sizing: border-box;
+        }
+      }
+
+      &__image {
+        display: none;
+      }
+    }
+  }
+}
+
+.sprite-col-topheader,
+.sprite-col-header,
+.sprite-col-footer {
+  padding: 0 5px;
+  background: #664635;
+  border: solid 1px #664635;
+  text-align: center;
+  font-size: 12px;
+}
+
+.sprite-col-topheader {
+  background: #fff;
+  color: #664635;
+}
+
+.sprite-col-subheader {
+  padding: 0;
+  border: solid 1px #876351;
+  background: transparent;
+  vertical-align: top;
+}
+
+.sprite-col-subheader-label {
+  background: #422c21;
+  text-align: center;
+  font-size: 10px;
+}
+
+.sprite-col-header {
+  border: solid 1px #876351;
+}
+
+.sprite-col-item:not(.is-empty) {
+  border: solid 1px #664635;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.paintjob-icon + .paintjob {
+  margin-left: -10px;
+}
+

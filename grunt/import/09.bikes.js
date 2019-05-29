@@ -343,7 +343,17 @@ module.exports = function (shared) {
 
                 // Output the image
                 console.log("write sprite", shared.secretPath + "/paintjob-sprite.png");
-                shared.fs.writeFileSync(shared.secretPath + "/paintjob-sprite.png", result.image);
+                // copy to other repo
+                const spriteName = "paintjob-sprite.png";
+                const pathToGfxRepo = `../trialstrackmap-gfx/icons/${spriteName}`;
+                if (shared.fs.existsSync(pathToGfxRepo)) {
+                    shared.fs.writeFileSync(pathToGfxRepo, result.image);
+                    console.log(`copied also to ${pathToGfxRepo}`);
+                } else {
+                    console.error(`can't copy to ${pathToGfxRepo} __filename:${__filename}`);
+                }
+                // for debug
+                shared.fs.writeFileSync(shared.secretPath + "/" + spriteName, result.image);
                 shared.fs.writeFileSync(shared.secretPath + "/paintjob-sprite.json", JSON.stringify({
                     newSizePj,
                     newSizeCan,
@@ -409,7 +419,7 @@ module.exports = function (shared) {
             // 0
             const pjId = iconNameSplit[2];
 
-            if(!dataDB.bikes[bikeId] || !("name" in dataDB.bikes[bikeId])){
+            if (!dataDB.bikes[bikeId] || !("name" in dataDB.bikes[bikeId])) {
                 console.error("add new bike from bikes.json5 to database/media/bikes.json")
             }
 
@@ -418,10 +428,10 @@ module.exports = function (shared) {
 
             if (pjId === "leaked") {
                 const pjIdLeaked = iconNameSplit[3];
-                iconNameHR+= dataDB.bikes[bikeId].pjLeaked[pjIdLeaked] +
+                iconNameHR += dataDB.bikes[bikeId].pjLeaked[pjIdLeaked] +
                     (iconNameSplit.length === 5 ? " " + iconNameSplit[4] : "");
             } else {
-                iconNameHR+= dataDB.bikes[bikeId].paintjobs[pjId] +
+                iconNameHR += dataDB.bikes[bikeId].paintjobs[pjId] +
                     (iconNameSplit.length === 4 ? " " + iconNameSplit[3] : "");
             }
 

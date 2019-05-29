@@ -1,99 +1,46 @@
 {{#extend "default"}}
-    {{#content "htmlCtrl"}}data-without="worldrecords"{{/content}}
+    {{#content "htmlCtrl"}}data-without="myjson"{{/content}}
+
+    {{#content "title-override"}}true{{/content}}
+    {{#content "title" mode="prepend"}}
+        {{#with ../bikes.build.bikes}}
+            Garage - {{bike-stats bikes}} -
+        {{/with}}
+    {{/content}}
 
     {{#content "styles" mode="append"}}
         <link rel="stylesheet" type="text/css" href="/dist/css/main.css{{cacheBuster}}"/>
+        <link rel="stylesheet" type="text/css" href="/dist/css/garage.css{{cacheBuster}}"/>
     {{/content}}
 
     {{#content "ctrl"}}ng-controller="trackData"{{/content}}
 
     {{#content "preload-images"}}data:loaded{{/content}}
+    {{#content "preload-only"}}paintjobs{{/content}}
 
     {{#content "body"}}
-        <style>
-            .sprite-overview {
-                white-space: nowrap;
-                padding: 0 5px;
-                color: #fff;
-                text-align: left;
-            }
-
-            .sprite-table {
-                margin: 0 auto;
-                empty-cells: hide;
-                table-layout: fixed;
-                color: #fff;
-                border-spacing: 0;
-                border: solid 1px #664635;
-                border-collapse: collapse;
-            }
-
-            .sprite-col-topheader,
-            .sprite-col-header,
-            .sprite-col-footer {
-                padding: 0 5px;
-                background: #664635;
-                border: solid 1px #664635;
-                text-align: center;
-                font-size: 12px;
-            }
-
-            .sprite-col-topheader {
-                background: #fff;
-                color: #664635;
-            }
-
-            .sprite-col-subheader {
-                padding: 0;
-                border: solid 1px #876351;
-                background: transparent;
-                vertical-align: top;
-            }
-
-            .sprite-col-subheader-label {
-                background: #422c21;
-                text-align: center;
-                font-size: 10px;
-            }
-
-            .sprite-col-header {
-                border: solid 1px #876351;
-            }
-
-            .sprite-col-item:not(.is-empty) {
-                border: solid 1px #664635;
-                text-align: center;
-                white-space: nowrap;
-            }
-
-            .paintjob-icon + .paintjob {
-                margin-left: -10px;
-            }
-        </style>
-
         <div class="page-body">
-            {{> navigation}}
-
-            {{#with ../bikes.build.bikes}}
+        {{#with ../bikes.build.bikes}}
+            {{> navigation title="Garage" badge=(bike-stats bikes)}}
+            <div class="garage-big-image" onclick="this.classList.remove('is-open');this.classList.remove('is-open').remove('is-new');">
+                <div></div>
+                <span></span>
+            </div>
+            <div class="sprite-table--wrap">
                 <table class="sprite-table">
-                    <tr>
-                        <td colspan="{{bikes-num bikes}}">
-                            <div class="sprite-overview">
-                                {{bike-stats bikes}}
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        {{{bike-td-tiers bikes}}}
-                    </tr>
-                    <tr>
-                        {{#each bikeSorting}}
-                            <td class="sprite-col-header">{{bikeProperty ../bikes this "name"}}</td>
-                        {{/each}}
-                    </tr>
-                    {{{bike-paintjobs this}}}
+                    {{{garage-tier-cells this
+                                         "sprite-table__tier"
+                                         "sprite-table__bike sprite-table__bike--scala"
+                    }}}
                 </table>
-            {{/with}}
+                <table class="sprite-table">
+                    {{{garage-bike-rows this
+                                        "sprite-table__bike"
+                                        "sprite-table__bike__paint-job"
+                    }}}
+                </table>
+            </div>
+        {{/with}}
         </div>
     {{/content}}
 {{/extend}}

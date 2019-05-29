@@ -36,6 +36,11 @@ module.exports = function (grunt) {
                 "dist/css/trackfinder.css": "css/pages/trackfinder.less"
             }
         },
+        garage: {
+            files: {
+                "dist/css/garage.css": "css/pages/garage.less"
+            }
+        },
         bonxy: {
             files: {
                 "dist/css/bonxy.css": "css/bonxy.less"

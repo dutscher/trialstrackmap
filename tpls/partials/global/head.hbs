@@ -30,7 +30,10 @@
 {{#block "styles"}}
     <link rel="stylesheet" type="text/css" href="/css/style-icons.css{{cacheBuster}}"/>
     <link rel="stylesheet" type="text/css" href="/css/style-common.css{{cacheBuster}}"/>
-    <style preload-images data-event="{{#block "preload-images"}}{{/block}}"></style>
+    <style preload-images
+           data-event="{{#block "preload-images"}}{{/block}}"
+           data-load-only="{{#block "preload-only"}}all{{/block}}">
+    </style>
 {{/block}}
 {{#block "vendor-scripts"}}
     <script type="text/javascript" src="/dist/js/vendor.min.js{{cacheBuster}}"></script>

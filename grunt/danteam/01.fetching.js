@@ -110,7 +110,7 @@ module.exports = function (shared, done) {
                 device = getDeviceName(readiOS),
                 range = `${limit - 99},${rankLimit}`,
                 options = shared.getRequestOpts(
-                    `/${device}/public/` +
+                    `/TRIAG_AN_LNCH_A/public/` +
                     `playerstats/v1/ranking/track${trackId}?range=${range}`,
                 );
 

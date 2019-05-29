@@ -57,6 +57,6 @@
     "upload": "npm run grunt ftp_push:distUpload",
     "----": "",
     "stats": "node ./grunt/nodejs/stats.js",
-    "importS3": "npm run grunt import-02-gameDataS3"
+    "doTask": "npm run grunt ..."
   }
 }
