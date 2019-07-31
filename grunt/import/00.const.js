@@ -67,7 +67,7 @@ module.exports = {
         {t: "import-05-convertOri2Json", p: "./05.convertOri2Json"},
         {t: "import-06-gameDataViaJson", p: "./06.gameDataViaJson", json5: true},
         {t: "import-07-i18n", p: "./07.i18n"},
-        {t: "import-08-seasons", p: "./08.seasons", a: true},
+        {t: "import-08-seasons", p: "./08.seasons"},
         {t: "import-09-bikes", p: "./09.bikes"},
         {t: "import-10-screenshots", p: "./10.screenshots"},
         {t: "import-00-danteam", p: "../danteam/00.index", a: true},

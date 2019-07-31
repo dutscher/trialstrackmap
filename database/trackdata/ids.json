@@ -129,7 +129,8 @@
   // Road to Ruin
   {
     "id": 26,
-    "oid": 1134
+    "oid": 1134,
+    "chips": 55000
   },
   // tier 1 / lootwheel
   // Stilted Path
@@ -1169,14 +1170,14 @@
     "id": 219,
     "oid": 1250,
     "world": 2,
-    "chips": 40500
+    "chips": 45000
   },
   // Overdose
   {
     "id": 220,
     "oid": 1264,
     "world": 2,
-    "chips": 45000
+    "chips": 50000
   },
   // Homegrown
   {

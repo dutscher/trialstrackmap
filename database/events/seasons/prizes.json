@@ -41,7 +41,8 @@
     "35": "Crooked Grind",
     "36": "Rabbit Hell",
     "37": "Happy Fling",
-    "38": "Crystal Extraction"
+    "38": "Crystal Extraction",
+    "39": "Ray Of Deception"
   },
   "paintjobs": {
     "1": {"title": "Neon Paintjob for Tango", "sprite": "tango-neon"},
@@ -137,6 +138,9 @@
     "57": {"title": "Feaster Bunny Pant", "selector": "feaster-bunny", "part": "pant"},
     "58": {"title": "The Temple Rider Head", "selector": "the-temple-rider", "part": "head"},
     "59": {"title": "The Temple Rider Torso", "selector": "the-temple-rider", "part": "body"},
-    "60": {"title": "The Temple Rider Pant", "selector": "the-temple-rider", "part": "pant"}
+    "60": {"title": "The Temple Rider Pant", "selector": "the-temple-rider", "part": "pant"},
+    "61": {"title": "Orbie Head", "selector": "orbie", "part": "head"},
+    "62": {"title": "Orbie Torso", "selector": "orbie", "part": "body"},
+    "63": {"title": "Orbie Pant", "selector": "orbie", "part": "pant"}
   }
 }
