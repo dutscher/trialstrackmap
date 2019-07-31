@@ -1951,5 +1951,41 @@
     "id": 347,
     "oid": 1407,
     "world": 2
+  },
+  // Urban Smash
+  {
+    "id": 348,
+    "oid": 1408,
+    "world": 2
+  },
+  // Dual Snowfest
+  {
+    "id": 349,
+    "oid": 1409,
+    "world": 2
+  },
+  // Fortune Wheel
+  {
+    "id": 350,
+    "oid": 1410,
+    "world": 2
+  },
+  // Blazing Hop
+  {
+    "id": 351,
+    "oid": 1411,
+    "world": 2
+  },
+  // Flora Crossing
+  {
+    "id": 352,
+    "oid": 1412,
+    "world": 2
+  },
+  // High Ville
+  {
+    "id": 353,
+    "oid": 1413,
+    "world": 2
   }
 ]

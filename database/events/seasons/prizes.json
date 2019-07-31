@@ -42,7 +42,8 @@
     "36": "Rabbit Hell",
     "37": "Happy Fling",
     "38": "Crystal Extraction",
-    "39": "Ray Of Deception"
+    "39": "Ray Of Deception",
+    "40": "Barter Town"
   },
   "paintjobs": {
     "1": {"title": "Neon Paintjob for Tango", "sprite": "tango-neon"},
@@ -141,6 +142,9 @@
     "60": {"title": "The Temple Rider Pant", "selector": "the-temple-rider", "part": "pant"},
     "61": {"title": "Orbie Head", "selector": "orbie", "part": "head"},
     "62": {"title": "Orbie Torso", "selector": "orbie", "part": "body"},
-    "63": {"title": "Orbie Pant", "selector": "orbie", "part": "pant"}
+    "63": {"title": "Orbie Pant", "selector": "orbie", "part": "pant"},
+    "64": {"title": "Chris Wheels Caper Head", "selector": "chris-wheels-caper", "part": "head"},
+    "65": {"title": "Chris Wheels Caper Torso", "selector": "chris-wheels-caper", "part": "body"},
+    "66": {"title": "Chris Wheels Caper Pant", "selector": "chris-wheels-caper", "part": "pant"}
   }
 }

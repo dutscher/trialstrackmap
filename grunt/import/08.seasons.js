@@ -19,7 +19,7 @@ https://lb-rdv-http.ubi.com/TRIAG_AN_LNCH_A/public/pvp_matches/v1/matches
 
 */
 module.exports = function (shared) {
-    shared.grunt.registerTask("import-08-get-actual-season-data", () => {
+    shared.grunt.registerTask("import-08-get-actual-season-data", function () {
         const importSeasonID = shared.seasonID, // run import-02-gameDataS3 before to import-08-seasons
             useBetaServer = false,
             importDir = "build/import/seasons/",
@@ -41,7 +41,7 @@ module.exports = function (shared) {
 
             let returnData;
 
-            if(foundReward.length === 1) {
+            if (foundReward.length === 1) {
                 const commentOfReward = foundReward[0].Comment;
                 const nameIdOfReward = foundReward[0].NameId;
 
@@ -280,17 +280,42 @@ module.exports = function (shared) {
         });
     });
 
-    shared.grunt.registerTask("import-08-crop-season-banner", () => {
+    shared.grunt.registerTask("import-08-crop-season-banner", function () {
+        const done = this.async();
+        const sharp = require("sharp");
         // src: build/season-images
-        // dest: ../trialstrackmap-gfx/seasons
         // image: 1920x1080 -> 1280x720 | x:370 y:205 | 540x74
+        // dest: ../trialstrackmap-gfx/seasons
+        const srcPath = "build/season-images";
+        const destPath = "../trialstrackmap-gfx/seasons";
 
+        const files = [];
+        shared.fs.readdirSync(srcPath).forEach((file, index) => {
+            files.push({
+                srcFile: srcPath + "/" + file,
+                destFile: `${destPath}/#0${index}.${file.replace(".png", ".jpg")}`,
+            });
+        });
+
+        files.forEach(file => {
+            console.log("sharp file", file.srcFile);
+            sharp(file.srcFile)
+                .resize(1280, 720)
+                .extract({
+                    left: 370,
+                    top: 205,
+                    width: 540,
+                    height: 74
+                })
+                .jpeg()
+                .toFile(file.destFile);
+        });
 
 
     });
 
     shared.grunt.task.run([
         "import-08-get-actual-season-data",
-        "import-08-crop-season-banner",
+        //"import-08-crop-season-banner",
     ]);
 };

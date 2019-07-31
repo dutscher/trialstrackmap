@@ -373,6 +373,7 @@ module.exports = function (shared) {
                 .replace(/ /g, "-")
                 .replace(/\./g, "")
                 .replace(/'/g, "")
+                .replace(/\*/g, "")
                 .replace(/\(/g, "")
                 .replace(/\)/g, "");
             return nameLocal;

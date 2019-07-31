@@ -633,7 +633,13 @@
     "344": "Marais insondables",
     "345": "Grotte de rouille",
     "346": "Chambres rocailleuses",
-    "347": "Terrain vague"
+    "347": "Terrain vague",
+    "348": "Chaos urbain",
+    "349": "Festival de la neige",
+    "350": "Roue de la fortune",
+    "351": "Saut flamboyant",
+    "352": "Traversée de la flore",
+    "353": "Haute-ville"
   },
   "unreleased": [
     "LVL_ROADWAY: Route"

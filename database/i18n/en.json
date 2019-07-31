@@ -622,7 +622,13 @@
     "344": "Swamp Fathom",
     "345": "Rusty Cave",
     "346": "Rocky Chambers",
-    "347": "Wasteland"
+    "347": "Wasteland",
+    "348": "Urban Smash",
+    "349": "Dual Snowfest",
+    "350": "Fortune Wheel",
+    "351": "Blazing Hop",
+    "352": "Flora Crossing",
+    "353": "High Ville"
   },
   "unreleased": [
     "LVL_ROADWAY: Roadway"
