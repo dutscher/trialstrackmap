@@ -19,8 +19,7 @@ module.exports = function (shared) {
         `echo "copy ${shared.androidScreenshots} (screenshots) to ${destPath}"`,
         `adb pull ${shared.androidScreenshots} ${destPath}`,
         // remove screenshots
-        `adb shell`,
-        `rm -r ${shared.androidScreenshots}`,
+        `adb shell rm -r ${shared.androidScreenshots}`,
     ]);
 
     shared.grunt.config("exec.copyContentViaAdb.cmd", cmds.join(" & "));

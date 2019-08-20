@@ -241,6 +241,7 @@ module.exports = function (shared) {
     shared.grunt.registerTask("import-09-bikes-data", () => {
         const file = "database/media/bikes.compare";
         const dataBikes = {
+            bikeSorting: [],
             bikes: {}
         };
 
@@ -250,13 +251,14 @@ module.exports = function (shared) {
                     name: dataImport.BikeData[skin.BikeID].Comment,
                     tier: dataImport.BikeData[skin.BikeID].Tier + 1,
                     paintjobs: ["Default"],
+                    gfx: []
                 };
             }
             // " SkinIndex: " + skin.SkinIndex);
             dataBikes.bikes[skin.BikeID].paintjobs.push(skin.Name);
         });
         console.log("write into", file);
-        shared.fs.writeFileSync(file, JSON.stringify(dataBikes, null, 2));
+        shared.fs.writeFileSync(file, JSON.stringify(dataBikes, null, 4));
     });
 
     shared.grunt.registerTask("import-09-bikes-prepare-sprite", function () {
