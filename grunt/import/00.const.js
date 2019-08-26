@@ -140,7 +140,6 @@ module.exports = {
             "paintjob-3-leaked-0.png": "../trialstrackmap-gfx/garage/03-bronco/00-sizov-bones.png",
         },
         cans: {
-            "paintjob-12-0-icon.png": "../trialstrackmap-gfx/garage/00-moonrover-icon.png", // moonrover override,
             "paintjob-8-leaked-0-icon.png": "../trialstrackmap-gfx/garage/08-berserker/00-cassidy-icon.png",
             "paintjob-6-leaked-0-icon.png": "../trialstrackmap-gfx/garage/06-marauder/00-leroy-icon.png",
             "paintjob-3-leaked-0-icon.png": "../trialstrackmap-gfx/garage/03-bronco/00-sizov-bones-icon.png",

@@ -43,7 +43,8 @@
     "37": "Happy Fling",
     "38": "Crystal Extraction",
     "39": "Ray Of Deception",
-    "40": "Barter Town"
+    "40": "Barter Town",
+    "41": "Rocky Chambers"
   },
   "paintjobs": {
     "1": {"title": "Neon Paintjob for Tango", "sprite": "tango-neon"},
@@ -77,7 +78,8 @@
     "29": {"title": "Thunderstorm for Bandito", "sprite": "bandito-thunderstorm"},
     "30": {"title": "Edge for Jackal", "sprite": "jackal-edge"},
     "31": {"title": "Sand Storm for Mantis", "sprite": "mantis-sandstorm"},
-    "32": {"title": "Yellow Submarine for Phantom", "sprite": "phantom-yellow-submarine"}
+    "32": {"title": "Yellow Submarine for Phantom", "sprite": "phantom-yellow-submarine"},
+    "33": {"title": "Black Jack PJ for Bronco", "sprite": "bronco-blackjack"}
   },
   "costums": {
     "1": {"title": "Ninja Head", "selector": "the-ninja", "part": "head"},
@@ -145,6 +147,9 @@
     "63": {"title": "Orbie Pant", "selector": "orbie", "part": "pant"},
     "64": {"title": "Chris Wheels Caper Head", "selector": "chris-wheels-caper", "part": "head"},
     "65": {"title": "Chris Wheels Caper Torso", "selector": "chris-wheels-caper", "part": "body"},
-    "66": {"title": "Chris Wheels Caper Pant", "selector": "chris-wheels-caper", "part": "pant"}
+    "66": {"title": "Chris Wheels Caper Pant", "selector": "chris-wheels-caper", "part": "pant"},
+    "67": {"title": "Reputed Hero Head", "selector": "reputed-hero", "part": "head"},
+    "68": {"title": "Reputed Hero Torso", "selector": "reputed-hero", "part": "body"},
+    "69": {"title": "Reputed Hero Pant", "selector": "reputed-hero", "part": "pant"}
   }
 }

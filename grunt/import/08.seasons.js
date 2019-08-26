@@ -19,7 +19,15 @@ https://lb-rdv-http.ubi.com/TRIAG_AN_LNCH_A/public/pvp_matches/v1/matches
 
 */
 module.exports = function (shared) {
+
+    shared.grunt.task.run([
+        "import-08-get-actual-season-data",
+        //"import-08-crop-season-banner",
+    ]);
+
     shared.grunt.registerTask("import-08-get-actual-season-data", function () {
+        const done = this.async();
+
         const importSeasonID = shared.seasonID, // run import-02-gameDataS3 before to import-08-seasons
             useBetaServer = false,
             importDir = "build/import/seasons/",
@@ -28,8 +36,6 @@ module.exports = function (shared) {
             rewardsFile = shared.workingFilesOfGame.filter(file => file.indexOf("pvp_match") !== -1)[0],
             rewardsJSON = require("../../" + rewardsFile + shared.toExt),
             prizesJSON = require("../../database/events/seasons/prizes.json");
-
-        const done = this.async();
 
         console.log("# START SEASON IMPORT gameVersion:", shared.gameVersion, "importSeasonID:", importSeasonID);
 
@@ -313,9 +319,4 @@ module.exports = function (shared) {
 
 
     });
-
-    shared.grunt.task.run([
-        "import-08-get-actual-season-data",
-        //"import-08-crop-season-banner",
-    ]);
 };
