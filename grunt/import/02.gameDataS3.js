@@ -1,12 +1,34 @@
-module.exports = function (shared, done) {
+module.exports = function (shared) {
+
+    shared.grunt.task.run([
+        "import-02-all-amazon",
+        //"import-02-only-season-update",
+    ]);
+
+    // create version path
+    shared.ensureDirectoryExistence(shared.versionPath + "/jojo");
+
+    let filesMatcher = [];
     const filesToDownload = [];
     const today = new Date();
+    let done = null;
     let cachedFiles = 0;
 
-    function sameDay(d1, d2) {
-        return d1.getFullYear() === d2.getFullYear() &&
-            d1.getMonth() === d2.getMonth() &&
-            d1.getDate() === d2.getDate();
+    function saveInfo(json) {
+        const cachedFile = shared.cachePath + "/info.json";
+        const isCached = shared.fs.existsSync(cachedFile);
+        let stats = null;
+        let isCachedToday = false;
+        let isNewVersion = true;
+
+        if (isCached) {
+            stats = shared.fs.statSync(cachedFile);
+            isCachedToday = sameDay(stats.mtime, today);
+        }
+
+        if (!isCachedToday) {
+            shared.fs.writeFileSync(shared.cachePath + "/info.json", JSON.stringify(json, null, 2));
+        }
     }
 
     function downloadS3Data() {
@@ -19,16 +41,27 @@ module.exports = function (shared, done) {
             res.on("end", function () {
                 console.log("get json from amazon s3:", shared.dataGet);
                 const response = JSON.parse(body);
+                // save latest info
+                saveInfo(response);
+                // iterate files
                 for (const i in response.content) {
                     const fileData = response.content[i];
                     const fileSrc = fileData.url.replace("https", "http");
                     const fileDest = `${shared.versionPath}/${fileData.name}`;
+                    let pushToDownload = true;
 
-                    filesToDownload.push({
-                        name: fileData.name,
-                        src: fileSrc,
-                        dest: fileDest
-                    });
+                    if (filesMatcher.length > 0 && filesMatcher.indexOf(fileData.name) === -1) {
+                        pushToDownload = false;
+                    }
+
+                    if (pushToDownload) {
+                        filesToDownload.push({
+                            name: fileData.name,
+                            src: fileSrc,
+                            dest: fileDest,
+                            version: fileData.version,
+                        });
+                    }
                 }
 
                 downloadFiles();
@@ -68,7 +101,7 @@ module.exports = function (shared, done) {
 
         // download file
         // if dat file is new download from amazon
-        const cachedFile = shared.cachePath + "/" + downloadFileObj.name;
+        const cachedFile = `${shared.cachePath}/${downloadFileObj.version}.${downloadFileObj.name}`;
         const isCached = shared.fs.existsSync(cachedFile);
         let stats = null;
         let isCachedToday = false;
@@ -86,7 +119,7 @@ module.exports = function (shared, done) {
                 "to", downloadFileObj.dest);
 
 
-            shared.downloadFile(downloadFileObj.src, downloadFileObj.dest, function () {
+            shared.downloadFile(downloadFileObj.src, downloadFileObj.dest, () => {
                 const fileSize = getFileSize(downloadFileObj.dest);
                 // check filesSize of downloaded file
                 if (fileSize > 0) {
@@ -109,7 +142,20 @@ module.exports = function (shared, done) {
         }
     }
 
-    // start download
-    shared.ensureDirectoryExistence(shared.versionPath + "/amazon.jo");
-    downloadS3Data();
+    function sameDay(d1, d2) {
+        return d1.getFullYear() === d2.getFullYear() &&
+            d1.getMonth() === d2.getMonth() &&
+            d1.getDate() === d2.getDate();
+    }
+
+    shared.grunt.registerTask("import-02-all-amazon", function () {
+        done = this.async();
+        downloadS3Data();
+    });
+
+    shared.grunt.registerTask("import-02-only-season-update", function () {
+        done = this.async();
+        filesMatcher = shared.seasonInfo;
+        downloadS3Data();
+    });
 };

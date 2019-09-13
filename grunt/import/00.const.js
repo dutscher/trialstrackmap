@@ -39,6 +39,9 @@ module.exports = {
         "pvp_match_rewards",
         "pvp_chip_store"
     ],
+    seasonInfo: [
+        "TrialsContentDL.dat"
+    ],
     assetsOfGame: [
         {src: "/MENUZ/HOMESHACK", matcher: "_ON"}, // customization _ON small _BIG maximal
         {src: "/MENUZ/ITEM", matcher: "PAINT_"}, // paintjob icons
@@ -61,7 +64,7 @@ module.exports = {
     importTasks: [
         {t: "import-00-checkImport", p: "./00.checkImport"},
         {t: "import-01-gameDataPhone", p: "./01.gameDataPhone"},
-        {t: "import-02-gameDataS3", p: "./02.gameDataS3", a: true},
+        {t: "import-02-gameDataS3", p: "./02.gameDataS3"},
         {t: "import-03-doUnpacking", p: "./03.doUnpacking"},
         {t: "import-04-doPackagesToOneDir", p: "./04.doPackagesToOneDir"},
         {t: "import-05-convertOri2Json", p: "./05.convertOri2Json"},
@@ -137,12 +140,10 @@ module.exports = {
         bikes: {
             "paintjob-8-leaked-0.png": "../trialstrackmap-gfx/garage/08-berserker/00-cassidy.png",
             "paintjob-6-leaked-0.png": "../trialstrackmap-gfx/garage/06-marauder/00-leroy.png",
-            "paintjob-3-leaked-0.png": "../trialstrackmap-gfx/garage/03-bronco/00-sizov-bones.png",
         },
         cans: {
             "paintjob-8-leaked-0-icon.png": "../trialstrackmap-gfx/garage/08-berserker/00-cassidy-icon.png",
             "paintjob-6-leaked-0-icon.png": "../trialstrackmap-gfx/garage/06-marauder/00-leroy-icon.png",
-            "paintjob-3-leaked-0-icon.png": "../trialstrackmap-gfx/garage/03-bronco/00-sizov-bones-icon.png",
         }
     },
     idsOfSeasonPrizes: [

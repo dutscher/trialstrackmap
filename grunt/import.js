@@ -67,6 +67,7 @@ module.exports = function (grunt) {
         filesOfGame,// !!!
         assetsOfGame: consts.assetsOfGame,
         appFiles: consts.appFiles,
+        seasonInfo: consts.seasonInfo,
         workingFilesOfGame,
         defaultExt: consts.defaultExt,
         toExt: consts.toExt,

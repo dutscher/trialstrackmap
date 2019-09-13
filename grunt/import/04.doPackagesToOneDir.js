@@ -1,13 +1,23 @@
 // process.on("uncaughtException", function (error) {
 //     console.error(error.stack);
 // });
-
 module.exports = function (shared) {
 
     function copyAllToOne() {
         // make one content repository
         console.log("Copy all dirs into one", shared.newContentPath, "and remove src");
-        shared.ensureDirectoryExistence(shared.newContentPath + "/import.json");
+
+        shared.ensureDirectoryExistence(shared.newContentPath + "/jojo");
+        shared.ensureDirectoryExistence(shared.newContentPath + "/MENUZ/HOMESHACK/jojo");
+        shared.ensureDirectoryExistence(shared.newContentPath + "/MENUZ/ITEM/jojo");
+        shared.ensureDirectoryExistence(shared.newContentPath + "/MENUZ/WIDGETS/jojo");
+        shared.ensureDirectoryExistence(shared.newContentPath + "/MENUZ/MAP/LAYER_0/jojo");
+        shared.ensureDirectoryExistence(shared.newContentPath + "/MENUZ/MAP/LAYER_1/jojo");
+        shared.ensureDirectoryExistence(shared.newContentPath + "/gen/atlas/jojo");
+        shared.ensureDirectoryExistence(shared.confPath + "/jojo");
+        shared.ensureDirectoryExistence(shared.i18nPath + "/jojo");
+
+
         try {
             // remove unused dir
             if (shared.fs.existsSync(shared.versionPath + "/files")) {

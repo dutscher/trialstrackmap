@@ -639,7 +639,14 @@
     "350": "Roue de la fortune",
     "351": "Saut flamboyant",
     "352": "Traversée de la flore",
-    "353": "Haute-ville"
+    "353": "Haute-ville",
+    "354": "Punk du désert",
+    "355": "Point glacial",
+    "356": "Galerie de mine",
+    "357": "Bas quartiers",
+    "358": "Course dorée",
+    "359": "Zone poussiéreuse",
+    "360": "Paysage urbain"
   },
   "unreleased": [
     "LVL_ROADWAY: Route"

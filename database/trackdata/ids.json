@@ -1987,5 +1987,47 @@
     "id": 353,
     "oid": 1413,
     "world": 2
+  },
+  // Desert Punk
+  {
+    "id": 354,
+    "oid": 1414,
+    "world": 2
+  },
+  // Frost Point
+  {
+    "id": 355,
+    "oid": 1415,
+    "world": 2
+  },
+  // Mineshaft
+  {
+    "id": 356,
+    "oid": 1416,
+    "world": 2
+  },
+  // Mean Street
+  {
+    "id": 357,
+    "oid": 1417,
+    "world": 2
+  },
+  // Golden Ride
+  {
+    "id": 358,
+    "oid": 1418,
+    "world": 2
+  },
+  // Dustzone
+  {
+    "id": 359,
+    "oid": 1419,
+    "world": 2
+  },
+  // Townscape
+  {
+    "id": 360,
+    "oid": 1420,
+    "world": 2
   }
 ]

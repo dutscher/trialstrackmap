@@ -13,21 +13,21 @@
       },
       "2": {
         "src": "#1/aNd0K6i.jpg",
-        "srcPath": "#1/6utq6am.jpg",
+        "srcPath": "#1/1lbcUHO.jpg",
         "offline_src": "trackmap.2.190821.en.jpg",
-        "offline_srcPath": "trackmap.2.190821.path.min.jpg",
+        "offline_srcPath": "trackmap.2.190907.path.min.jpg",
         "alt": "Trails Frontier Trackmap Petrol Falls",
         "dim": "2560x2560",
         "dimPath": "320x320"
       }
     },
     "paintjobs": {
-      "src": "#1/0FXdP3O.png",
+      "src": "#1/lwQZJwi.png",
       "selector": "i.paintjob",
       "sprite": true
     },
     "paintjob-icons": {
-      "src": "#1/0FXdP3O.png",
+      "src": "#1/lwQZJwi.png",
       "selector": "i.paintjob-icon",
       "sprite": true
     },

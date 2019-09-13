@@ -1,11 +1,11 @@
 {
   "name": "trials-trackmap",
-  "private": true,
-  "version": "7.3.0",
-  "seasonID": 64,
   "title": "Trials Frontier Trackmap",
   "description": "Guide for all Track-, Data-Cube- and Candy locations. As well Youtube walkthroughs for every track is available.",
   "author": "willy woitas <dutscher_sbf@hotmail.com>",
+  "private": true,
+  "version": "7.4.0",
+  "seasonID": 64,
   "dependencies": {
     "grunt": "latest",
     "grunt-cli": "latest",

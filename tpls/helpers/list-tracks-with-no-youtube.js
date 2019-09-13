@@ -19,19 +19,24 @@
         '3': '1|_sHrt7WMr5I',
         */
 
-        Handlebars.registerHelper("list-tracks-with-no-youtube", function (params) {
-            var trackIds = params.hash.trackIds,
-                youtubeData = params.hash.youtubeData,
-                tpl = params.hash.tpl,
-                template = Handlebars.compile(fs.readFileSync(tpl, "utf8")),
-                i18n = params.hash.i18n,
-                i18nData = JSON.parse(fs.readFileSync(i18n, "utf8")),
-                html = "";
+        Handlebars.registerHelper("list-tracks-with-no-youtube", (params) => {
+            const trackIds = params.hash.trackIds;
+            const youtubeData = params.hash.youtubeData;
+            const tpl = params.hash.tpl;
+            const template = Handlebars.compile(fs.readFileSync(tpl, "utf8"));
+            const i18n = params.hash.i18n;
+            const i18nData = JSON.parse(fs.readFileSync(i18n, "utf8"));
+            let html = "";
 
             function genTracks() {
                 // `options.fn` returns a promise. Wrapping brackets must be added after resolving
                 trackIds.forEach(function (track) {
-                    if (!youtubeData.videos[track.id]) {
+                    const videoExists = youtubeData.videos[track.id];
+                    const isArray = Array.isArray(videoExists);
+                    console.log(videoExists, track.id)
+                    if (!videoExists
+                        || videoExists && !isArray && !videoExists.startsWith("2|")
+                        || videoExists && isArray && !videoExists.indexOf("2|")) {
                         //console.log(track);
                         html += "\n" +
                             template({
