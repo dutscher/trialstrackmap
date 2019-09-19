@@ -12,13 +12,17 @@
                     ...
                 </tr>
                 */
+
+                const showNewestFirst = true;
+
                 function buildBike(paintJobName, paintJobId, bike, bikeId, isLeaked, additionIndex) {
                     var isNew = paintJobName.indexOf("*") !== -1;
                     return `
                     <td class="${pjClassName}">
                         <div class="${pjClassName}__wrap" 
                              garage-big-image="${bike.gfx[isLeaked ? additionIndex + paintJobId : paintJobId]}" 
-                             data-title="${bike.name} - ${paintJobName}">
+                             data-title="${bike.name} - ${paintJobName}"
+                             data-icon="paintjob-icon paintjob-${bikeId}${isLeaked ? "-leaked" : ""}-${paintJobId}-icon">
                             <span class="${pjClassName}__span">
                                 ${isNew ? `<div class="${pjClassName}__new"></div>` : ""}
                                 ${isLeaked ? `<div class="${pjClassName}__leaked"></div>` : ""}
@@ -33,23 +37,34 @@
 
                 return bikeData.bikeSorting.map((bikeId, index, array) => {
                     const bike = bikeData.bikes[bikeId],
-                        paintjobs = bike.paintjobs,
                         nextBikeIndex = index + 1,
                         isNextBike = nextBikeIndex in array,
                         isNextTierBike = isNextBike ? bikeData.bikes[array[nextBikeIndex]].tier !== bike.tier : false,
                         hasLeakedPjs = "pjLeaked" in bike;
+                    let paintjobs = bike.paintjobs;
+
+                    if (showNewestFirst) {
+                        paintjobs = paintjobs.reverse();
+                    }
+
+                    const leaked = hasLeakedPjs
+                        ? bike.pjLeaked.map((paintJobName, paintJobId) =>
+                            buildBike(paintJobName, paintJobId, bike, bikeId, true, paintjobs.length)).join("")
+                        : ""
 
                     return `
                 <tr class="${isNextTierBike ? "last-tier-bike" : ""}">
                     <td class="${bikeClassName}" data-nums="${paintjobs.length + (hasLeakedPjs ? bike.pjLeaked.length : 0)}">
                         ${bike.name}
                     </td>
-                    ${paintjobs.map((paintJobName, paintJobId) => 
-                        buildBike(paintJobName, paintJobId, bike, bikeId)).join("")}
-                    ${hasLeakedPjs 
-                        ? bike.pjLeaked.map((paintJobName, paintJobId) => 
-                            buildBike(paintJobName, paintJobId, bike, bikeId, true, paintjobs.length)).join("") 
-                        : ""}
+                    ${showNewestFirst ? leaked : ""}
+                    ${paintjobs.map((paintJobName, paintJobId) => {
+                        if (showNewestFirst) {
+                            paintJobId = paintjobs.length - paintJobId - 1;
+                        }
+                        return buildBike(paintJobName, paintJobId, bike, bikeId);
+                    }).join("")}
+                    ${!showNewestFirst ? leaked : ""}
                 </tr>\n`;
                 }).join("");
             });

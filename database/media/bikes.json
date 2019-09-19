@@ -55,7 +55,8 @@
                 "Stitch",
                 "Redlynx",
                 "Nutcracker",
-                "AUS-X-OPEN"
+                "AUS-X-OPEN",
+                "Turtle*"
             ],
             "gfx": [
                 "https://i.imgur.com/eTDRLeB.png",
@@ -67,7 +68,8 @@
                 "https://i.imgur.com/ricPUzV.png",
                 "https://i.imgur.com/q7k0i3B.png",
                 "https://i.imgur.com/E1EBRsf.png",
-                "https://i.imgur.com/YF1HNkt.png"
+                "https://i.imgur.com/YF1HNkt.png",
+                "https://i.imgur.com/hbSZAc0.png"
             ]
         },
         "3": {
@@ -305,7 +307,7 @@
         "12": {
             "name": "Pasila",
             "nameLong": "aka Moonrover",
-            "tier": "Crazy",
+            "tier": 256,
             "paintjobs": [
                 "Default*"
             ],

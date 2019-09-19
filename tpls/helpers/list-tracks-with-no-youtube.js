@@ -33,7 +33,6 @@
                 trackIds.forEach(function (track) {
                     const videoExists = youtubeData.videos[track.id];
                     const isArray = Array.isArray(videoExists);
-                    console.log(videoExists, track.id)
                     if (!videoExists
                         || videoExists && !isArray && !videoExists.startsWith("2|")
                         || videoExists && isArray && !videoExists.indexOf("2|")) {

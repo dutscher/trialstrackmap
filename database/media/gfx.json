@@ -22,12 +22,12 @@
       }
     },
     "paintjobs": {
-      "src": "#1/lwQZJwi.png",
+      "src": "#1/GGtBrti.png",
       "selector": "i.paintjob",
       "sprite": true
     },
     "paintjob-icons": {
-      "src": "#1/lwQZJwi.png",
+      "src": "#1/GGtBrti.png",
       "selector": "i.paintjob-icon",
       "sprite": true
     },

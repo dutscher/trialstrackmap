@@ -37,7 +37,8 @@ module.exports = {
         "level_rewards",
         "levels",
         "pvp_match_rewards",
-        "pvp_chip_store"
+        "pvp_chip_store",
+        "missiondb",
     ],
     seasonInfo: [
         "TrialsContentDL.dat"
