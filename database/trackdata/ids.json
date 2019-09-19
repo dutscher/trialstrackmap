@@ -1864,6 +1864,7 @@
   },
   // Hope Surrenders
   {
+    "only_event": true,
     "id": 333,
     "oid": 1186,
     "world": 2
