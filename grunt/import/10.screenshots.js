@@ -7,7 +7,9 @@ module.exports = function (shared) {
 
     shared.grunt.registerTask("import-10-remove-screenshots-from-device", () => {
         const cmds = shared._.flattenDeep([
-            // remove screenshots
+            `pushd ${shared.makeWinPath(shared.toolPath.adb)}`,
+            // navigate to adb tool
+            `echo "remove screenshots"`,
             `adb shell rm -r ${shared.androidScreenshots}`,
         ]);
 
@@ -28,10 +30,8 @@ module.exports = function (shared) {
         shared.ensureDirectoryExistence(destPath + "/adb.jo");
 
         const cmds = shared._.flattenDeep([
-            `echo "run adb pull"`,
-            `echo move to "${shared.makeWinPath(shared.toolPath.adb)}"`,
-            `pushd ${shared.makeWinPath(shared.toolPath.adb)}`, // navigate to adb tool
-
+            // navigate to adb tool
+            `pushd ${shared.makeWinPath(shared.toolPath.adb)}`,
             // copy all files
             `echo "copy ${shared.androidScreenshots} (screenshots) to ${destPath}"`,
             `adb pull ${shared.androidScreenshots} ${destPath}`,

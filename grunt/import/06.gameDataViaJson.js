@@ -53,8 +53,10 @@ module.exports = function (shared) {
             const obj = {};
             for (const i in shared.workingFilesOfGame) {
                 const file = shared.workingFilesOfGame[i];
-                const key = file.split("/")[4].replace("\.", "");
-                obj[key] = require("../../" + file + shared.toExt);
+                if (file.indexOf("missiondb") === -1) {
+                    const key = file.split("/")[4].replace("\.", "");
+                    obj[key] = require("../../" + file + shared.toExt);
+                }
             }
             obj.i18n = require("../../" + i18nDefaultFile);
             return obj;
@@ -153,11 +155,11 @@ module.exports = function (shared) {
 
         if (!Number.isNaN(trackID)) {
             newLevels.push(trackData);
-        // test tracks aka
-        } else if(JSON_.i18n.unreleased.indexOf(trackData.upperName) !== -1
+            // test tracks aka
+        } else if (JSON_.i18n.unreleased.indexOf(trackData.upperName) !== -1
             || knownTracks.indexOf(trackData.upperName) !== -1) {
             knownUnreleasedLevels.push(trackData.upperName);
-        // new tracks
+            // new tracks
         } else {
             unreleasedLevels.push(trackData);
         }

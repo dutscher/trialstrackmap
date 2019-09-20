@@ -1,8 +1,8 @@
 module.exports = function (shared) {
 
     shared.grunt.task.run([
-        "import-02-all-amazon",
-        //"import-02-only-season-update",
+        //"import-02-all-amazon",
+        "import-02-only-season-update",
     ]);
 
     // create version path
