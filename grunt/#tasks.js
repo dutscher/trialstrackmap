@@ -9,8 +9,9 @@ module.exports = (grunt) => {
             "concat",
             "minjson:dist",
             "minjson:distI18n",
+            "createTrackJson",
             "deployHtml",
-            "deployDanTeam",
+            //"deployDanTeam",
         ]);
     });
 
