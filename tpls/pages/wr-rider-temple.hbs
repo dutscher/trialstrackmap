@@ -1,4 +1,5 @@
 {{#extend "default"}}
+    {{#content "htmlCtrl"}}data-with="worldrecords"{{/content}}
     {{#content "title-override"}}true{{/content}}
     {{#content "title" mode="prepend"}}
         Temple of the legends -
@@ -18,8 +19,8 @@
 
                     {{> table-navigation-worldrecords}}
 
-                    <div class="box no-pad" sticky-thead>
-                        <table class="w100">
+                    <div class="box no-pad flex" sticky-thead="double">
+                        <table class="w50">
                             <thead>
                                 <tr>
                                     <th class="rider-name" width="25"></th>
@@ -30,29 +31,39 @@
                                     <th table-sorter="android|normal"><i class="global"></i></th>
                                     <th table-sorter="android|donkey"><i class="donkey"></i></th>
                                     <th table-sorter="android|crazy"><i class="crazy"></i></th>
-                                    <th class="rider-name" width="25"></th>
-                                    <th class="rider-name" width="200">
-                                        <i class="device-ios"></i>
-                                        {%'page.worldRecordsTable.headRider'|translate%}
-                                    </th>
-                                    <th table-sorter="ios|normal"><i class="global"></i></th>
-                                    <th table-sorter="ios|donkey"><i class="donkey"></i></th>
-                                    <th table-sorter="ios|crazy"><i class="crazy"></i></th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr ng-repeat="rider in sortedRider">
+                                <tr ng-repeat="rider in sortedRider.android">
                                     <td class="center rider-name">{%::$index+1|leadingZero%}.</td>
-                                    <td class="center rider-name" ng-bind-html="::rider.android.riderName|nameWithFlag" width="150"></td>
-                                    <td class="center" show-amount="{%::rider.android.WRAmount.android.normal%}"></td>
-                                    <td class="center" show-amount="{%::rider.android.WRAmount.android.donkey%}"></td>
-                                    <td class="center" show-amount="{%::rider.android.WRAmount.android.crazy%}"></td>
-                                    <td class="center rider-name">{%::$index+1|leadingZero%}.</td>
-                                    <td class="center rider-name" ng-bind-html="::rider.ios.riderName|nameWithFlag" width="150"></td>
-                                    <td class="center" show-amount="{%::rider.ios.WRAmount.ios.normal%}"></td>
-                                    <td class="center" show-amount="{%::rider.ios.WRAmount.ios.donkey%}"></td>
-                                    <td class="center" show-amount="{%::rider.ios.WRAmount.ios.crazy%}"></td>
+                                    <td class="center rider-name" ng-bind-html="::rider.riderName|nameWithFlag" width="150"></td>
+                                    <td class="center" show-amount="{%::rider.WRAmount.android.normal%}"></td>
+                                    <td class="center" show-amount="{%::rider.WRAmount.android.donkey%}"></td>
+                                    <td class="center" show-amount="{%::rider.WRAmount.android.crazy%}"></td>
                                 </tr>
+                            </tbody>
+                        </table>
+                        <table class="w50">
+                            <thead>
+                            <tr>
+                                <th class="rider-name" width="25"></th>
+                                <th class="rider-name" width="200">
+                                    <i class="device-ios"></i>
+                                    {%'page.worldRecordsTable.headRider'|translate%}
+                                </th>
+                                <th table-sorter="ios|normal"><i class="global"></i></th>
+                                <th table-sorter="ios|donkey"><i class="donkey"></i></th>
+                                <th table-sorter="ios|crazy"><i class="crazy"></i></th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr ng-repeat="rider in sortedRider.ios">
+                                <td class="center rider-name">{%::$index+1|leadingZero%}.</td>
+                                <td class="center rider-name" ng-bind-html="::rider.riderName|nameWithFlag" width="150"></td>
+                                <td class="center" show-amount="{%::rider.WRAmount.ios.normal%}"></td>
+                                <td class="center" show-amount="{%::rider.WRAmount.ios.donkey%}"></td>
+                                <td class="center" show-amount="{%::rider.WRAmount.ios.crazy%}"></td>
+                            </tr>
                             </tbody>
                         </table>
                     </div>

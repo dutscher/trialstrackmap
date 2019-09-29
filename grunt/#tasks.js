@@ -9,7 +9,6 @@ module.exports = (grunt) => {
             "concat",
             "minjson:dist",
             "minjson:distI18n",
-            "createTrackJson",
             "deployHtml",
             //"deployDanTeam",
         ]);
@@ -20,6 +19,13 @@ module.exports = (grunt) => {
             "deploy",
             "uglify:dist",
             "ftp_push:distUpload",
+        ]);
+    });
+
+    grunt.registerTask("#finalBonxyWithUpload", () => {
+        grunt.task.run([
+            "createBonxyJson",
+            "ftp_push:bonxy",
         ]);
     });
 

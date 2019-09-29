@@ -1,6 +1,7 @@
 module.exports = function (grunt) {
 
     grunt.registerTask('createBonxyJson', function () {
+        const resultsFetchedFromBonxy = require('../database/backup/bonxyResults.json');
         const i18nFile = require('../database/i18n/en.json');
         const bikesFile = require('../database/media/bikes.json');
         const data = {
@@ -20,6 +21,7 @@ module.exports = function (grunt) {
 
         // write file
         require('fs').writeFileSync('dist/json/bonxy.json', JSON.stringify(data));
+        require('fs').writeFileSync('dist/json/bonxyResults.json', JSON.stringify(resultsFetchedFromBonxy));
     });
 
     return {

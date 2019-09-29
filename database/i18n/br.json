@@ -109,6 +109,7 @@
       },
       "settingsHeader": "Table settings",
       "importExportHeader": "Im- & export your data",
+      "bonxyImport": "bonxy live leaderboard",
       "tflforoImport": "tf.lforo live leaderboard",
       "myJsonImportExport": "myJson data storage",
       "printExport": "Print Tracks"

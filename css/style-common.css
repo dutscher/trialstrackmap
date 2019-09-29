@@ -87,6 +87,12 @@ body {
 .w100 {
     width: 100%
 }
+.w50 {
+    width: 50%;
+}
+.flex {
+    display: flex;
+}
 
 .page-body {
     padding: 10px;

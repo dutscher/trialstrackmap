@@ -109,6 +109,7 @@
       },
       "settingsHeader": "Ajustes de tabla",
       "importExportHeader": "Im- y exportar tus datos",
+      "bonxyImport": "bonxy clasificación en vivo",
       "tflforoImport": "tf.lforo clasificación en vivo",
       "myJsonImportExport": "myJson almacenamiento datos",
       "printExport": "Imprimir pistas"

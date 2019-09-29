@@ -1,34 +1,34 @@
 module.exports = function (grunt) {
+    const options = {options: {
+        authKey: "distAllInkl",
+        host: "trialstrackmap.sb-f.de",
+        dest: "/trialstrackmap.sb-f.de/",
+        port: 21
+    }};
+
     return {
-        distRealEmpu: {
-            options: {
-                authKey: "distRealEmpu",
-                host: "81.169.220.139",
-                dest: "/trialstrackmap.sb-f.de/dist/",
-                port: 21
-            },
+        danTeamAllInkl: {
+            ...options,
             files: [
-                {expand: true, cwd: "dist", src: ["trackfinder.html"]},
+                {expand: true, cwd: "dist", dest: "dist", src: ["danteam.html"]},
             ]
         },
-        danTeamAllInkl: {
-            options: {
-                authKey: "distAllInkl",
-                host: "trialstrackmap.sb-f.de",
-                dest: "/trialstrackmap.sb-f.de/dist/",
-                port: 21
-            },
+        bonxy: {
+            ...options,
             files: [
-                {expand: true, cwd: "dist", src: ["danteam.html"]},
+                {
+                    expand: true,
+                    cwd: "dist",
+                    dest: "dist",
+                    src: [
+                        "json/bonxy.json",
+                        "json/bonxyResults.json"
+                    ],
+                },
             ]
         },
         distUpload: {
-            options: {
-                authKey: "distAllInkl",
-                host: "trialstrackmap.sb-f.de",
-                dest: "/trialstrackmap.sb-f.de/",
-                port: 21
-            },
+            ...options,
             files: [
                 {
                     expand: true,
