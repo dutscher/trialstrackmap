@@ -175,12 +175,8 @@ var map = {
             settings.newMinScale = calcMinScale(map.transform.scale);
         }
 
-        console.log(settings)
-
         // startScale
         this.scale = this.tmp.startScale = settings.newMinScale !== -1 ? settings.newMinScale : (settings.startScale || 1);
-
-        console.log(this.scale)
 
         // check settings
         // fits the height
