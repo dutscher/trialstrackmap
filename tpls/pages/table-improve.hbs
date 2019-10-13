@@ -25,7 +25,6 @@
                             <thead>
                             <tr>
                                 <th rowspan="2" width="10" table-sorter="catIndex"></th>
-                                <th rowspan="2" width="35" table-sorter="tier">{%'page.timesTable.tier'|translate%}</th>
                                 <th rowspan="2" width="200" table-sorter="trackName">
                                     {%'page.timesTable.trackName'|translate%}
                                 </th>
@@ -66,9 +65,6 @@
                             <tr ng-repeat="track in filteredArray = (data.tracks|showBikeModel:selectedBikeModel|showCatAndTier:selectedCat:selectedTier|showParts:selectedPart:selectedPartLevel|improveSorter:selectedSort:selectedSortType|searchTrack:search)"
                                 data-track-id="{%::track.id%}">
                                 <td cats-as-class="{track:track}" class="not-hover"></td>
-                                <td class="center">
-                                    {%::track.tier%}
-                                </td>
                                 <td ng-class="{'public-change':track.timesDB.public}">
                                     {%track.i18n|stripLevel%}
                                 </td>

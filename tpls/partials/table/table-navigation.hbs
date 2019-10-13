@@ -18,7 +18,28 @@
         {%'page.timesTable.tracksAmount'|translate%}: {%filteredArray.length%}
     </div>
     <div>
-        {%'page.timesTable.filter'|translate%}:
+        {{#xif "this.withImproveImportExport"}}
+            Import:
+            <div class="flyout flyout--right">
+                <div class="flyout__prompt"><i class="import-export" bonxy-import></i></div>
+                <div class="flyout__wrap">
+                    <!--<div class="flyout__item">-->
+                        <!--<span class="flyout__item__label">-->
+                            <!--{%'page.timesTable.bonxyImport'|translate%}:-->
+                        <!--</span>-->
+                        <!--<span bonxy-import></span>-->
+                    <!--</div>-->
+                    <!--<div class="flyout__item">-->
+                    <!--<span class="flyout__item__label">-->
+                    <!--{%'page.timesTable.improve.print'|translate%}:-->
+                    <!--</span>-->
+                    <!--<a href="table-improve-print.html" target="blank" class="button">{%'page.timesTable.improve.printFilled'|translate%}</a>-->
+                    <!--<a href="table-improve-print.html#empty=true" target="blank" class="button">{%'page.timesTable.improve.printEmpty'|translate%}</a>-->
+                    <!--</div>-->
+                </div>
+            </div>
+        {{/xif}}
+
         <input type="text" placeholder="{%'page.rightSidebar.searchForTrack'|translate%}"
                select-on-click
                ng-model="search"
@@ -156,40 +177,5 @@
                 {{/xif}}
             </div>
         </div>
-        {{#xif "this.withImproveImportExport"}}
-            {%'page.timesTable.importExport'|translate%}:
-            <div class="flyout">
-                <div class="flyout__prompt"><i class="import-export"></i></div>
-                <div class="flyout__wrap">
-                    <div class="flyout__header">{%'page.timesTable.importExportHeader'|translate%}</div>
-                    <div class="flyout__item">
-                        <span class="flyout__item__label">
-                            {%'page.timesTable.bonxyImport'|translate%}:
-                        </span>
-                        <span bonxy-import></span>
-                    </div>
-                    <!--<div class="flyout__item">-->
-                        <!--<span class="flyout__item__label">-->
-                            <!--{%'page.timesTable.tflforoImport'|translate%}:-->
-                        <!--</span>-->
-                        <!--<span tflforo-import></span>-->
-                    <!--</div>-->
-                    <!--<div class="flyout__item">-->
-                        <!--<span class="flyout__item__label">-->
-                            <!--{%'page.timesTable.myJsonImportExport'|translate%}:-->
-                        <!--</span>-->
-                        <!--<span improve-import></span>-->
-                        <!--<span improve-export></span>-->
-                    <!--</div>-->
-                    <!--<div class="flyout__item">-->
-                        <!--<span class="flyout__item__label">-->
-                            <!--{%'page.timesTable.improve.print'|translate%}:-->
-                        <!--</span>-->
-                        <!--<a href="table-improve-print.html" target="blank" class="button">{%'page.timesTable.improve.printFilled'|translate%}</a>-->
-                        <!--<a href="table-improve-print.html#empty=true" target="blank" class="button">{%'page.timesTable.improve.printEmpty'|translate%}</a>-->
-                    <!--</div>-->
-                </div>
-            </div>
-        {{/xif}}
     </div>
 </div>

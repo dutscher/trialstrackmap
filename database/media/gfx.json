@@ -138,6 +138,26 @@
       "src": "#1/DVZba3L.png",
       "selector": "i.lang.lang_no"
     },
+    "country_au": {
+      "src": "#1/IRWLPae.png",
+      "selector": "i.lang.lang_au"
+    },
+    "country_ca": {
+      "src": "#1/IHP5nz4.png",
+      "selector": "i.lang.lang_ca"
+    },
+    "country_gr": {
+      "src": "#1/A8TVKFu.png",
+      "selector": "i.lang.lang_gr"
+    },
+    "country_ne": {
+      "src": "#1/NRXPcVI.png",
+      "selector": "i.lang.lang_ne"
+    },
+    "country_et": {
+      "src": "#1/MnlwLDm.png",
+      "selector": "i.lang.lang_et"
+    },
     "timer": {
       "src": "#1/GLuwunX.png",
       "selector": "i.timer"
