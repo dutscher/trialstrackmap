@@ -91,7 +91,7 @@ module.exports = function () {
                     costumHead = costumParts[0].split("|"),
                     costumBody = costumParts[1].split("|"),
                     costumArm = !isSmall ? costumParts[2].split("|") : [],
-                    costumPant = costumParts[!isSmall ? 3 : 2].split("|");
+                    costumPants = costumParts[!isSmall ? 3 : 2].split("|");
 
                 // src|left|top|width
                 css += (costumParts ? (
@@ -121,15 +121,15 @@ module.exports = function () {
                                 : ""
                         ) +
                         "}\n" +
-                        "." + costumName + " .costum--pant,\n" +
-                        "." + costumSelector + " .costum--pant,\n" +
-                        "." + costumSelector + ".costum--pant {\n" +
-                        "   background-image: url('" + replaceHoster(gfxJSON.hoster, costumPant[0]) + "');\n" +
+                        "." + costumName + " .costum--pants,\n" +
+                        "." + costumSelector + " .costum--pants,\n" +
+                        "." + costumSelector + ".costum--pants {\n" +
+                        "   background-image: url('" + replaceHoster(gfxJSON.hoster, costumPants[0]) + "');\n" +
                         (
-                            costumPant.length > 1
+                            costumPants.length > 1
                                 ? (
-                                    (costumPant[1] ? "   left: " + costumPant[1] + "px;\n" : "") +
-                                    (costumPant[2] ? "   top: " + costumPant[2] + "px;\n" : "")
+                                    (costumPants[1] ? "   left: " + costumPants[1] + "px;\n" : "") +
+                                    (costumPants[2] ? "   top: " + costumPants[2] + "px;\n" : "")
                                 )
                                 : ""
                         ) +

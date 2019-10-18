@@ -3,6 +3,21 @@
      /database/map.json
      */
 module.exports = {
+    importTasks: [
+        {t: "import-00-checkImport", p: "./00.checkImport"},
+        {t: "import-01-gameDataPhone", p: "./01.gameDataPhone"},
+        {t: "import-02-gameDataS3", p: "./02.gameDataS3"},
+        {t: "import-03-doUnpacking", p: "./03.doUnpacking"},
+        {t: "import-04-doPackagesToOneDir", p: "./04.doPackagesToOneDir"},
+        {t: "import-05-convertOri2Json", p: "./05.convertOri2Json"},
+        {t: "import-06-gameDataViaJson", p: "./06.gameDataViaJson", json5: true},
+        {t: "import-07-i18n", p: "./07.i18n"},
+        {t: "import-08-seasons", p: "./08.seasons"},
+        {t: "import-09-bikes", p: "./09.bikes"},
+        {t: "import-10-screenshots", p: "./10.screenshots"},
+        {t: "import-00-danteam", p: "../danteam/00.index", a: true},
+        {t: "import-00-leaderboard", p: "../leaderboard/00.index", a: true},
+    ],
     drives: [
         "C:/", // global one
         //"C:/www/", // hp lappy / WIN7
@@ -62,20 +77,6 @@ module.exports = {
         "LVL_MT_WHIPLASH": "mt. whiplash",
         "LVL_SMURFIN_LEDGES": "smurfin' ledges"
     },
-    importTasks: [
-        {t: "import-00-checkImport", p: "./00.checkImport"},
-        {t: "import-01-gameDataPhone", p: "./01.gameDataPhone"},
-        {t: "import-02-gameDataS3", p: "./02.gameDataS3"},
-        {t: "import-03-doUnpacking", p: "./03.doUnpacking"},
-        {t: "import-04-doPackagesToOneDir", p: "./04.doPackagesToOneDir"},
-        {t: "import-05-convertOri2Json", p: "./05.convertOri2Json"},
-        {t: "import-06-gameDataViaJson", p: "./06.gameDataViaJson", json5: true},
-        {t: "import-07-i18n", p: "./07.i18n"},
-        {t: "import-08-seasons", p: "./08.seasons"},
-        {t: "import-09-bikes", p: "./09.bikes"},
-        {t: "import-10-screenshots", p: "./10.screenshots"},
-        {t: "import-00-danteam", p: "../danteam/00.index", a: true},
-    ],
     // season
     convertCostumStr: (str) => {
         return str.replace(/\./g, "")

@@ -647,7 +647,13 @@
     "357": "Strada malfamata",
     "358": "Pista d'oro",
     "359": "Zona polverosa",
-    "360": "Paesaggio urbano"
+    "360": "Paesaggio urbano",
+    "361": "Montagna",
+    "362": "Borgata",
+    "363": "Colonia abbandonata",
+    "364": "Vetta",
+    "365": "Fuga orbicolare",
+    "366": "Dolomite"
   },
   "unreleased": [
     "LVL_ROADWAY: Carreggiata"

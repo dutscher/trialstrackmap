@@ -12,7 +12,7 @@
         "dimPath": "464x320"
       },
       "2": {
-        "src": "#1/CcMEKSm.jpg",
+        "src": "#1/4bgXt03.png",
         "srcPath": "#1/mqVqJUY.jpg",
         "offline_src": "trackmap.2.191006.en.jpg",
         "offline_srcPath": "trackmap.2.191006.path.min.jpg",
@@ -22,12 +22,12 @@
       }
     },
     "paintjobs": {
-      "src": "#1/GGtBrti.png",
+      "src": "#1/ZNhyOG6.png",
       "selector": "i.paintjob",
       "sprite": true
     },
     "paintjob-icons": {
-      "src": "#1/GGtBrti.png",
+      "src": "#1/ZNhyOG6.png",
       "selector": "i.paintjob-icon",
       "sprite": true
     },

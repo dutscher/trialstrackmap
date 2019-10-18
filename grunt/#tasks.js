@@ -106,4 +106,10 @@ module.exports = (grunt) => {
             "import-08-seasons",
         ]);
     });
+
+    grunt.registerTask("leaderBoardCheckup", () => {
+        grunt.task.run([
+            "import-00-leaderboard",
+        ]);
+    });
 };

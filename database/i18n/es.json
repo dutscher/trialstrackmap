@@ -656,7 +656,13 @@
     "357": "Calle chunga",
     "358": "Pilotaje dorado",
     "359": "Zona polvorienta",
-    "360": "Paisaje urbano"
+    "360": "Paisaje urbano",
+    "361": "Alpino",
+    "362": "Municipio",
+    "363": "Colonia abandonada",
+    "364": "Cumbre",
+    "365": "Huida orbicular",
+    "366": "Dolomita"
   },
   "unreleased": [
     "LVL_ROADWAY: Calzada"

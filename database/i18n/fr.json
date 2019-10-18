@@ -647,7 +647,13 @@
     "357": "Bas quartiers",
     "358": "Course dorée",
     "359": "Zone poussiéreuse",
-    "360": "Paysage urbain"
+    "360": "Paysage urbain",
+    "361": "Haute montagne",
+    "362": "Canton",
+    "363": "Colonie abandonnée",
+    "364": "Sommet",
+    "365": "Sphère d'influence",
+    "366": "Dolomite"
   },
   "unreleased": [
     "LVL_ROADWAY: Route"

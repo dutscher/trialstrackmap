@@ -372,7 +372,15 @@ module.exports = function (grunt, http, https, path, fs, fsExt) {
                     options = scope.getRequestOpts(
                         `/${deviceServer}/public/` +
                         //`playerprogress/v1/progress/status?profileid=${playerId}`
+                        /*{ server_time: 1571221064,
+                            player_level: 53,
+                            missions_completed: 475,
+                            coins: 16547214,
+                            player_points: 14344342,
+                            diamonds: 1774 } */
                         `playerstats/v1/ranking/global_stats?around=${playerId},1`
+                        //`playerstats/v1/ranking/global_stats_donkey?around=${playerId},1`
+                        //`playerstats/v1/ranking/global_stats_crazy?around=${playerId},1`
                     );
 
                 if (scope.vars.debug) {
@@ -396,8 +404,18 @@ module.exports = function (grunt, http, https, path, fs, fsExt) {
                             });
                         } else {
                             if (scope.isJson(body)) {
+                                const json = JSON.parse(body);
                                 resolve({
-                                    rank: JSON.parse(body).results[0].rank,
+                                    rank: json.results[0].rank,
+                                    result:  json.results[0],
+                                    data: scope.encodeLeaderboardData(
+                                        // submittime, score, time, data, upgrades
+                                        json.results[0].stats.submittime,
+                                        json.results[0].stats.global_score,
+                                        json.results[0].stats.drivetime,
+                                        json.results[0].stats.data,
+                                        json.results[0].stats.upgrades,
+                                    )
                                 });
                             } else {
                                 reject({
@@ -429,14 +447,14 @@ module.exports = function (grunt, http, https, path, fs, fsExt) {
             return {
                 faults: ((360000000 - score) - time) / 3600000,
                 bikeId: (data >>> 8) & 0x3F,
-                //submitTime1: (submittime >>> 12),
                 paintJobId: (submittime & 0xF),// submitTime2
                 //submitTime3: (submittime >>> 4),
+                //submitTime1: (submittime >>> 12),
                 riderLevel: (this.uint16(upgrades) >>> 6) + 1,
                 costum: {
-                    headID: (data >>> 26),
-                    torsoID: (data >>> 20) & 0x3F,
-                    legID: (data >>> 14) & 0x3F
+                    headId: ((data >> 26) & 0x3F) + ((submittime >> 12) ? 64 : 0),
+                    bodyId: ((data >> 20) & 0x3F) + ((submittime >> 14) ? 64 : 0),
+                    pantsId: ((data >> 14) & 0x3F) + ((submittime >> 16) ? 64 : 0)
                 },
                 upgrades: {
                     bar: (upgrades >>> 28),

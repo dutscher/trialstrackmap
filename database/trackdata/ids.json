@@ -2030,5 +2030,41 @@
     "id": 360,
     "oid": 1420,
     "world": 2
+  },
+  // Alpine
+  {
+    "id": 361,
+    "oid": 1421,
+    "world": 2
+  },
+  // Township
+  {
+    "id": 362,
+    "oid": 1422,
+    "world": 2
+  },
+  // Abandoned Colony
+  {
+    "id": 363,
+    "oid": 1423,
+    "world": 2
+  },
+  // Tiptop
+  {
+    "id": 364,
+    "oid": 1424,
+    "world": 2
+  },
+  // Orbicular Escape
+  {
+    "id": 365,
+    "oid": 1425,
+    "world": 2
+  },
+  // Dolomite
+  {
+    "id": 366,
+    "oid": 1426,
+    "world": 2
   }
 ]

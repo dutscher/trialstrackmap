@@ -645,7 +645,13 @@
     "357": "Mean Street",
     "358": "Golden Ride",
     "359": "Dustzone",
-    "360": "Townscape"
+    "360": "Townscape",
+    "361": "Alpine",
+    "362": "Township",
+    "363": "Abandoned Colony",
+    "364": "Tiptop",
+    "365": "Orbicular Escape",
+    "366": "Dolomite"
   },
   "unreleased": [
     "LVL_ROADWAY: Roadway"
