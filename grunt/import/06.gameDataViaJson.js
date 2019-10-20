@@ -103,13 +103,15 @@ module.exports = function (shared) {
             i18n: trackValuesRaw[trackIndex],
             author: level.A,
             oriID: level.ID,
-            idStr: "  // " + trackValuesRaw[trackIndex] + "\n" +
-            "  {\n" +
-            "    \"id\": " + trackID + ",\n" +
-            "    \"oid\": " + level.ID +
-            (level.L + 1 === 2 ? "," : "") + "\n" +
-            (level.L + 1 === 2 ? "    \"world\": 2\n" : "") +
-            "  },",
+            levelHR: level.L + 1,
+            idStr: `// ${trackValuesRaw[trackIndex]}
+              {
+                "id": ${trackID},
+                "oid": ${level.ID}${levelHR > 1 ? "," : ""}
+                ${(levelHR > 1 ? `"world": ${levelHR}` : "")}
+              },
+            `,
+            startLineStr: `,"${trackID}": ""`,
             tier: {
                 int: fuelToTier[level.FU],
                 dbStr: trackIDQuotes + " " + (fuelToTier[level.FU])
@@ -187,20 +189,24 @@ module.exports = function (shared) {
     tmpData.tierData = "";
     tmpData.idData = "[";
     tmpData.coordsData = "";
+    tmpData.startLineData = "";
+    const allLevels = newLevels.length;
     // add all lines
     for (const i in newLevels) {
-        const str = newLevels[i].rewards.dbStr;
-        tmpData.partsData += str + "\n";
+        const isLast = (i + 1) === allLevels;
+        tmpData.partsData += newLevels[i].rewards.dbStr + "\n";
         tmpData.timesData += newLevels[i].time.dbStr + "\n";
         tmpData.tierData += newLevels[i].tier.dbStr + "\n";
-        tmpData.idData += newLevels[i].idStr + "\n";
+        tmpData.idData += newLevels[i].idStr.replace(isLast ? '},' : '', '}') + "\n";
         tmpData.coordsData += newLevels[i].coords.dbStr !== "" ? newLevels[i].coords.dbStr + "\n" : "";
+        tmpData.startLineData += newLevels[i].startLineStr + "\n";
     }
     tmpData.partsData = tmpData.partsData.replace("  ,", "{\n   ") + "}";
     tmpData.timesData = tmpData.timesData.replace("  ,", "{\n   ") + "}";
     tmpData.tierData = tmpData.tierData.replace("  ,", "{\n   ") + "}";
-    tmpData.idData = tmpData.idData.replace("  ,", "{\n   ") + "]";
+    tmpData.idData = tmpData.idData.replace("  ,", "{\n   ").replace("  },\n^") + "]";
     tmpData.coordsData = tmpData.coordsData.replace("  ,", "{\n   ") + "}";
+    tmpData.startLineData = tmpData.startLineData.replace("  ,", "{\n   ") + "}";
 
     shared.ensureDirectoryExistence(`${pathToDB}/parts.compare`);
     shared.fs.writeFileSync(`${pathToDB}/parts.compare`, tmpData.partsData);
@@ -208,6 +214,7 @@ module.exports = function (shared) {
     shared.fs.writeFileSync(`${pathToDB}/tiers.compare`, tmpData.tierData);
     shared.fs.writeFileSync(`${pathToDB}/ids.compare`, tmpData.idData);
     shared.fs.writeFileSync(`${pathToDB}/coords.compare`, tmpData.coordsData);
+    shared.fs.writeFileSync(`${pathToDB}/startlines.compare`, tmpData.startLineData);
     shared.fs.writeFileSync(shared.i18nPath + "/names.txt", levelNames.join("\r\n"));
     shared.fs.writeFileSync("build/import/names-with-ids.json", JSON.stringify(levelNamesWithId));
 };

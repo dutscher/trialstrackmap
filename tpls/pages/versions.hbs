@@ -1,0 +1,25 @@
+{{#extend "default"}}
+    {{#content "title-override"}}true{{/content}}
+    {{#content "title" mode="prepend"}}
+        Version History
+    {{/content}}
+
+    {{#content "preload-images"}}data:loaded{{/content}}
+
+    {{#content "styles" mode="append"}}
+        <link rel="stylesheet" type="text/css" href="/dist/css/main.css{{cacheBuster}}"/>
+
+        <style>
+
+        </style>
+    {{/content}}
+
+    {{#content "body"}}
+        <div>
+            <h1>Tracks without Video</h1>
+
+
+
+        </div>
+    {{/content}}
+{{/extend}}
