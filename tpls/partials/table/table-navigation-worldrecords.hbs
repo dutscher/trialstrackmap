@@ -1,11 +1,12 @@
 <div class="box make-sticky">
     <a href="/" class="classic-link">< {%'page.timesTable.back'|translate%}</a>
-    |
-    <a href="/table-improve.html" class="classic-link" target="_blank">{%'page.leftSidebar.goToImprove'|translate%}</a>
+    <!--|-->
+    <!--<a href="/table-improve.html" class="classic-link" target="_blank">{%'page.leftSidebar.goToImprove'|translate%}</a>-->
     |
     {{> language-select}}
     |
     {%'page.worldRecordsTable.ridersAmount'|translate%}: {% allRider %}
+    / last update: {% lastUpdate %}
     <br />
     {{!
     {%'page.worldRecordsTable.filter'|translate%}:
