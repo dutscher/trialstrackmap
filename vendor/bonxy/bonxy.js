@@ -3,7 +3,7 @@ var iframe = null,
     iframeScaler = null,
     iframeClose = null,
     iframeUrl = "//trialstrackmap.sb-f.de/trackfinder.html#track=",
-    iframeUrl = "http://localhost:8001/trackfinder.html#track=",
+    //iframeUrl = "//localhost:8001/trackfinder.html#track=",
     baseDim = "820x380".split("x"),
     scale = 0.45;
 
@@ -61,6 +61,7 @@ function showTrackFinder (event, trackName) {
 
         iframe = document.createElement("iframe");
         iframe.setAttribute("frameborder", "0");
+        iframe.setAttribute("onmouseleave", "closeTrackFinder()");
         iframe.setAttribute("scrolling", "no");
 
         iframe.src = iframeUrl;
