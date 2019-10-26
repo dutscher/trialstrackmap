@@ -21,8 +21,8 @@ https://lb-rdv-http.ubi.com/TRIAG_AN_LNCH_A/public/pvp_matches/v1/matches
 module.exports = function (shared) {
 
     shared.grunt.task.run([
-        //"import-08-get-actual-season-data",
-        "import-08-crop-season-banner",
+        "import-08-get-actual-season-data",
+        //"import-08-crop-season-banner",
     ]);
 
     shared.grunt.registerTask("import-08-get-actual-season-data", function () {
@@ -37,6 +37,7 @@ module.exports = function (shared) {
             rewardsJSON = require("../../" + rewardsFile + shared.toExt),
             prizesJSON = require("../../database/events/seasons/prizes.json");
 
+        shared.ensureDirectoryExistence(importDir + "/jojo");
         console.log("# START SEASON IMPORT gameVersion:", shared.gameVersion, "importSeasonID:", importSeasonID);
 
         function findSpecial(specialID) {
@@ -293,7 +294,12 @@ module.exports = function (shared) {
         // image: 1920x1080 -> 1280x720 | x:370 y:205 | 540x74
         // dest: ../trialstrackmap-gfx/seasons
         const srcPath = "build/season-images";
-        const destPath = "../trialstrackmap-gfx/seasons";
+        let destPath = "../trialstrackmap-gfx/seasons";
+
+        if(!shared.fs.existsSync(destPath)){
+            console.error('no gfx repo found new season image goes into', srcPath);
+            destPath = srcPath;
+        }
 
         const files = [];
         shared.fs.readdirSync(srcPath).forEach((file, index) => {

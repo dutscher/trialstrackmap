@@ -45,7 +45,8 @@
     "39": "Ray Of Deception",
     "40": "Barter Town",
     "41": "Rocky Chambers",
-    "42": "Wasteland"
+    "42": "Wasteland",
+    "43": "Blazing Hop"
   },
   "paintjobs": {
     "1": {"title": "Neon Paintjob for Tango", "sprite": "tango-neon"},
@@ -153,8 +154,11 @@
     "67": {"title": "Reputed Hero Head", "selector": "reputed-hero", "part": "head"},
     "68": {"title": "Reputed Hero Torso", "selector": "reputed-hero", "part": "body"},
     "69": {"title": "Reputed Hero Pant", "selector": "reputed-hero", "part": "pant"},
-    "70": {"title": "Bad Bond Sr Head", "selector": "bad-bone-sr", "part": "head"},
+    "70": {"title": "Bad Bone Sr Head", "selector": "bad-bone-sr", "part": "head"},
     "71": {"title": "Bad Bone Sr Torso", "selector": "bad-bone-sr", "part": "body"},
-    "72": {"title": "Bad Bone Sr Pant", "selector": "bad-bone-sr", "part": "pant"}
+    "72": {"title": "Bad Bone Sr Pant", "selector": "bad-bone-sr", "part": "pant"},
+    "73": {"title": "The Yeti Head", "selector": "the-yeti", "part": "head"},
+    "74": {"title": "The Yeti Torso", "selector": "the-yeti", "part": "body"},
+    "75": {"title": "The Yeti Pant", "selector": "the-yeti", "part": "pant"}
   }
 }
