@@ -1,0 +1,65 @@
+{{#extend "default"}}
+    {{#content "title-override"}}true{{/content}}
+    {{#content "title" mode="prepend"}}
+        Halloween 2019 -
+    {{/content}}
+
+    {{#content "styles" mode="append"}}
+        <!--<link rel="stylesheet" type="text/css" href="/css/style-anniversary.css{{cacheBuster}}"/>-->
+        <style>
+            .hunt-container {
+                display: flex;
+                flex-wrap: wrap;
+                color: #fff;
+            }
+            h1 {
+                margin: 8px;
+            }
+            .content {
+                background: white;
+                padding: 8px;
+            }
+            .track {
+                margin: 8px;
+            }
+            .track_locations {
+                display: flex;
+                flex-wrap: wrap;
+            }
+        </style>
+    {{/content}}
+
+    {{#content "body"}}
+        {{#with ../../hunt-events.database.events.hunt.halloween_2019}}
+        <div class="hunt-container">
+            <h1>Halloween Heat 2019</h1>
+            <div>
+                {{#hunt-event-stats huntData=this}}
+                    Tracks: {{tracks}}<br />
+                    Locations: {{locations}}
+                {{/hunt-event-stats}}
+            </div>
+            {{> facebook-script}}
+            <div class="content">
+                {{> facebook-div url="https://www.facebook.com/trialstrackmap" width=250}}
+            </div>
+        </div>
+        <div class="hunt-container">
+        {{#each this}}
+            {{#hunt-event huntData=../this id=@key i18n="database/i18n/en.json"}}
+                <div class="track">
+                    {{trackname}}
+                    <div  class="track__locations">
+                    {{#each images}}
+                        <a href="{{image}}" target="_blank" title="{{description}} found by {{founder}}">
+                            <img src="{{thumb}}" />
+                        </a>
+                    {{/each}}
+                    </div>
+                </div>
+            {{/hunt-event}}
+        {{/each}}
+        </div>
+        {{/with}}
+    {{/content}}
+{{/extend}}

@@ -14,6 +14,9 @@ module.exports = function (grunt) {
             files: {
                 "build/bikes.json": [
                     "build/bikes.json"
+                ],
+                "build/hunt-events.json": [
+                    "database/events/hunt/*.json"
                 ]
             }
         },

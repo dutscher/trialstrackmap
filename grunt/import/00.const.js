@@ -19,8 +19,9 @@ module.exports = {
         {t: "import-00-leaderboard", p: "../leaderboard/00.index", a: true},
     ],
     drives: [
+        // console.log(shared.toolPath)
         "C:/", // global one
-        //"C:/www/", // hp lappy / WIN7
+        "C:/www/", // hp lappy / WIN7
         "F:/#trails/", // hp lappy / cameo hdd / WIN7
         "E:/#trails/", // neofonie pc / cameo hdd / WIN10
         "C:/www/software/", // thinkpad neo / WIN10
@@ -38,6 +39,7 @@ module.exports = {
     defaultExt: "txt",
     toExt: "json5",
     tools: [
+        // with suffix #
         "hashes", "bin2Txt", "unpacker", "adb"
     ],
     appFiles: [

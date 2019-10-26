@@ -14,6 +14,10 @@ module.exports = function (shared) {
         //`adb shell dumpsys package com.ubisoft.redlynx.trialsfrontier.ggp`,
     ];
 
+    if(shared.toolPath.adb === ""){
+        cmds = ["echo no tools found"];
+    }
+
     shared.grunt.config("exec.checkAdb", {
         cmd: cmds.join(" & "),
         stdout: false,

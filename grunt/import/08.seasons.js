@@ -21,8 +21,8 @@ https://lb-rdv-http.ubi.com/TRIAG_AN_LNCH_A/public/pvp_matches/v1/matches
 module.exports = function (shared) {
 
     shared.grunt.task.run([
-        "import-08-get-actual-season-data",
-        //"import-08-crop-season-banner",
+        //"import-08-get-actual-season-data",
+        "import-08-crop-season-banner",
     ]);
 
     shared.grunt.registerTask("import-08-get-actual-season-data", function () {

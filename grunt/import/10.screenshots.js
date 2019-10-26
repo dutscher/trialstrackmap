@@ -6,6 +6,7 @@ module.exports = function (shared) {
     ]);
 
     shared.grunt.registerTask("import-10-remove-screenshots-from-device", () => {
+        console.log(shared.toolPath.adb)
         const cmds = shared._.flattenDeep([
             `pushd ${shared.makeWinPath(shared.toolPath.adb)}`,
             // navigate to adb tool
