@@ -138,6 +138,26 @@
       "src": "#1/DVZba3L.png",
       "selector": "i.lang.lang_no"
     },
+    "country_ru": {
+      "src": "#1/wKaPUzj.png",
+      "selector": "i.lang.lang_ru"
+    },
+    "country_au": {
+      "src": "#1/5xTvWrK.png",
+      "selector": "i.lang.lang_au"
+    },
+    "country_ca": {
+      "src": "#1/IHP5nz4.png",
+      "selector": "i.lang.lang_ca"
+    },
+    "country_et": {
+      "src": "#1/MnlwLDm.png",
+      "selector": "i.lang.lang_et"
+    },
+    "country_in": {
+      "src": "#1/NRXPcVI.png",
+      "selector": "i.lang.lang_in"
+    },
     "timer": {
       "src": "#1/GLuwunX.png",
       "selector": "i.timer"
@@ -251,6 +271,21 @@
       "src": "#1/J9d1WgB.jpg",
       "selector": "i.seasons",
       "sprite": true
+    },
+    "envs": {
+      "0": "#1/ZgbsVAq.png",
+      "1": "#1/n1yUqPZ.png",
+      "2": "#1/UJ7tXXa.png",
+      "3": "#1/D4pe3Ky.png",
+      "4": "#1/BOqgn1y.png",
+      "5": "#1/HMIZXyL.png",
+      "6": "#1/7LJN4yc.png",
+      "7": "#1/Zd46veF.png",
+      "8": "#1/ok87dDC.png",
+      "9": "#1/OPVYywm.png",
+      "10": "#1/w78IPRQ.png",
+      "11": "#1/Wnbdus3.png",
+      "12": "#1/CQsb5Um.png"
     }
   },
   "hoster": {
