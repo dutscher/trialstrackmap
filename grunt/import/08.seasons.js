@@ -204,7 +204,7 @@ module.exports = function (shared) {
                         title: title,
                         date: shared.pad(date.getDate()) + "." + shared.pad(date.getMonth() + 1) + "." + date.getFullYear(),
                         date_end: shared.pad(dateEnd.getDate()) + "." + shared.pad(dateEnd.getMonth() + 1) + "." + dateEnd.getFullYear(),
-                        duration: match.ranked_match_duration_hours + "h",
+                        duration: match.friendly_match_duration_hours + "h",
                         free_showdowns: match.free_tickets_max + 1,
                         ticket_regain: match.free_tickets_interval_minutes + "m",
                         stats: "http://trials.bonxy.net/the-bunker/",

@@ -1,5 +1,6 @@
 module.exports = function (grunt) {
     require("json5/lib/register");
+
     if (grunt.option("with-time")) {
         require("time-grunt")(grunt);
     }

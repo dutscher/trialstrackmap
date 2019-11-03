@@ -2,6 +2,13 @@
   "alias": {
     "treasure-pieces": "treasure"
   },
+  "hunt": {
+    "20": {
+      "name": "Treasure Hunt 2016",
+      "class": "treasure-hunt",
+      "color": "935A05"
+    }
+  },
   "all": {
     "19": {
       "name": "Treasure Hunt Places",
@@ -101,11 +108,7 @@
       "class": "petrol-falls",
       "color": "3556B2"
     },
-    "20": {
-      "name": "Treasure Hunt 2016",
-      "class": "treasure-hunt",
-      "color": "935A05"
-    },
+
     "21": {
       "name": "Youtube",
       "class": "youtube",
@@ -1263,6 +1266,12 @@
     "358": [41],
     "359": [41],
     "360": [41],
+    "361": [42],
+    "362": [42],
+    "363": [42],
+    "364": [42],
+    "365": [42],
+    "366": [42],
     "000": []
   }
 }

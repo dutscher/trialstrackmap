@@ -55,6 +55,8 @@ module.exports = {
         "levels",
         "pvp_match_rewards",
         "pvp_chip_store",
+        "levelpacks",
+        "store_5_missions",
         "missiondb",
     ],
     seasonInfo: [

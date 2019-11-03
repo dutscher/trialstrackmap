@@ -20,9 +20,9 @@ module.exports = function (shared) {
        "F2 faults silver":40,
        "F3 faults bronce":250,
        "L world+1":1,
+       "E environment":1,
        // unknown
        "D":3,
-       "E":1,
        "B":2,
        "AS":-1
     },
@@ -61,6 +61,8 @@ module.exports = function (shared) {
             obj.i18n = require("../../" + i18nDefaultFile);
             return obj;
         })(),
+        chipStore = require("../../" + shared.secretPath + "/pvp_chip_store.json5").PVPChipStoreTracks,
+        trackPacks = require("../../" + shared.secretPath + "/levelpacks.json5").AdditionalLevelPacks,
         trackKeys = Object.keys(JSON_.i18n.tracks),
         trackValues = shared.values(JSON_.i18n.tracks, true),
         trackValuesRaw = shared.values(JSON_.i18n.tracks),
@@ -75,22 +77,34 @@ module.exports = function (shared) {
 
     // make data readable
     for (const i in JSON_.levels.Levels) {
-        const level = JSON_.levels.Levels[i],
-            name = (shared.renameTrack.hasOwnProperty(level.N)
-                ? shared.renameTrack[level.N]
-                : level.N)
-                .toLowerCase()
-                .replace("lvl_", "")
-                .replace(/_/g, " "),
-            trackIndex = trackValues.indexOf(name),
-            // needable for i18n matching
-            trackID = parseInt(trackKeys[trackIndex]),
-            trackIDQuotes = "  ,\"" + trackID + "\":",
-            rewardData = JSON_.level_rewards[level.I],
-            coords = {
-                x: level.X !== -10000 ? level.X + worldCoordsDifference[level.L].x : -1,
-                y: level.Y !== -10000 ? level.Y + worldCoordsDifference[level.L].y : -1,
-            };
+        const level = JSON_.levels.Levels[i];
+        const levelHR = level.L + 1;
+        const name = (shared.renameTrack.hasOwnProperty(level.N)
+            ? shared.renameTrack[level.N]
+            : level.N)
+            .toLowerCase()
+            .replace("lvl_", "")
+            .replace(/_/g, " ");
+        const trackIndex = trackValues.indexOf(name);
+        // needable for i18n matching
+        const trackID = parseInt(trackKeys[trackIndex]);
+        const trackIDQuotes = "  ,\"" + trackID + "\":";
+        const rewardData = JSON_.level_rewards[level.I];
+        const coords = {
+            x: level.X !== -10000 ? level.X + worldCoordsDifference[level.L].x : -1,
+            y: level.Y !== -10000 ? level.Y + worldCoordsDifference[level.L].y : -1,
+        };
+        const chips = chipStore.filter((track) => {
+            return track.ItemId === level.ID;
+        }).map((track) => track.ItemValue);
+        const hasChips = chips.length === 1;
+        const trackpackID = trackPacks
+            .filter(pack => pack.Levels.includes(level.ID))
+            .map(pack => pack.ID + 1);
+
+        console.log(trackPacks, trackpackID)
+
+        const isInTrackpack = trackpackID.length === 1;
         let trackData;
 
         // add name to levelNames
@@ -105,14 +119,19 @@ module.exports = function (shared) {
             i18n: trackValuesRaw[trackIndex],
             author: level.A,
             oriID: level.ID,
-            levelHR: level.L + 1,
-            idStr: `// ${trackValuesRaw[trackIndex]}
-              {
-                "id": ${trackID},
-                "oid": ${level.ID}${levelHR > 1 ? "," : ""}
-                ${(levelHR > 1 ? `"world": ${levelHR}` : "")}
-              },
-            `,
+            levelHR,
+            idStr: `
+  // ${trackValuesRaw[trackIndex]}
+  {
+    "id": ${trackID},
+    "oid": ${level.ID},
+    "env": ${level.E}${
+    ((levelHR > 1) ? ",\n" : "") + ((levelHR > 1 ? `    "world": ${levelHR}` : "")) +
+    ((hasChips) ? ",\n" : "") + ((hasChips ? `    "chips": ${chips[0]}` : "")) +
+    ((isInTrackpack) ? ",\n" : "") + ((isInTrackpack ? `    "pack": ${trackpackID[0]}` : "")) +
+    ""
+    }
+  },`,
             startLineStr: `,"${trackID}": ""`,
             tier: {
                 int: fuelToTier[level.FU],
@@ -199,14 +218,14 @@ module.exports = function (shared) {
         tmpData.partsData += newLevels[i].rewards.dbStr + "\n";
         tmpData.timesData += newLevels[i].time.dbStr + "\n";
         tmpData.tierData += newLevels[i].tier.dbStr + "\n";
-        tmpData.idData += newLevels[i].idStr.replace(isLast ? '},' : '', '}') + "\n";
+        tmpData.idData += newLevels[i].idStr.replace((isLast ? '  },' : ''), (isLast ? '  }\n' : ''));
         tmpData.coordsData += newLevels[i].coords.dbStr !== "" ? newLevels[i].coords.dbStr + "\n" : "";
         tmpData.startLineData += newLevels[i].startLineStr + "\n";
     }
     tmpData.partsData = tmpData.partsData.replace("  ,", "{\n   ") + "}";
     tmpData.timesData = tmpData.timesData.replace("  ,", "{\n   ") + "}";
     tmpData.tierData = tmpData.tierData.replace("  ,", "{\n   ") + "}";
-    tmpData.idData = tmpData.idData.replace("  ,", "{\n   ").replace("  },\n^") + "]";
+    tmpData.idData = tmpData.idData.replace("  ,", "{\n   ").replace(/\}\,$/g, "}") + "\n]";
     tmpData.coordsData = tmpData.coordsData.replace("  ,", "{\n   ") + "}";
     tmpData.startLineData = tmpData.startLineData.replace("  ,", "{\n   ") + "}";
 

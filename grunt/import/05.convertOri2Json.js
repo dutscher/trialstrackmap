@@ -5,14 +5,18 @@ module.exports = function (shared) {
             "   \}\r\n   \{",
             "\}\r\n\t\{",
             "\t}\r\n\t{\r\n",
-            " \]\r\n \""
+            " \]\r\n \"",
+            "\],\r\n  },",
+            "\],\r\n  }",
         ],
         repairWith = [
             "},\n{\n", // bikes.txt
             "},\n{\n", // bikes.txt
             "},\n{\n", // bikes.txt
             "},\n{\n", // bikes.txt
-            "],\n\"" // levels.txt
+            "],\n\"", // levels.txt
+            "]\n  },", // levelpack.txt
+            "]\n  }", // levelpack.txt
         ],
         files = shared.workingFilesOfGame.filter(function(name){return name.indexOf("level_rewards") === -1}),
         fileNameOld,

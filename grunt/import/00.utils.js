@@ -378,8 +378,8 @@ module.exports = function (grunt, http, https, path, fs, fsExt) {
                             coins: 16547214,
                             player_points: 14344342,
                             diamonds: 1774 } */
-                        `playerstats/v1/ranking/global_stats?around=${playerId},1`
-                        //`playerstats/v1/ranking/global_stats_donkey?around=${playerId},1`
+                        //`playerstats/v1/ranking/global_stats?around=${playerId},1`
+                        `playerstats/v1/ranking/global_stats_donkey?around=${playerId},1`
                         //`playerstats/v1/ranking/global_stats_crazy?around=${playerId},1`
                     );
 
