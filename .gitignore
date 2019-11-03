@@ -2,12 +2,15 @@
 /dist/
 /build/
 /usage/
+/logs/
+/#screenshots/
 !.idea/
 .idea/*
 !.idea/runConfigurations
 **/secret/
 *.iml
 index.html
+tools.zip
 npm-debug.log
 .ftpauth
 *.compare
