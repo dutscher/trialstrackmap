@@ -4,25 +4,30 @@
     "https://www.apk4fun.com/history/9693/",
     "https://play.google.com/store/apps/details?id=com.ubisoft.redlynx.trialsfrontier.ggp"
   ],
-  "releases": [
-    {
+  "releases": {
+    "": {
       "version": "",
       "date": ""
     },
-    {
-      "version": "7.5.0",
-      "date": "17.10.2019"
+    "7.5.0": {
+      "date": "17.10.2019",
+      "event": {
+        "name": "Halloween Heat",
+        "type": "hunt",
+        "forum": "https://forums.ubisoft.com/showthread.php/2146517-New-Update-Halloween-Heat!",
+        "guide": "https://forums.ubisoft.com/showthread.php/2146933-2019-Halloween-Event-Guide"
+      }
     },
-    {
-      "version": "7.4.0",
-      "date": "11.09.2019"
+    "7.4.0": {
+      "date": "11.09.2019",
+      "event": "Crash & Sunburn",
+      "forum": "https://forums.ubisoft.com/showthread.php/2125538-New-Update-Crash-amp-Sunburn!"
     },
-    {
-      "version": "7.3.0",
+    "7.3.0": {
       "date": "20.08.2019"
     },
-    {
-      "version": "7.2.2",
+    "7.2.2": {
+      "version": ,
       "date": "31.07.2019"
     },
     {
@@ -107,7 +112,8 @@
     },
     {
       "version": "5.5.0",
-      "date": "21.09.2017"
+      "date": "21.09.2017",
+      "event": "BMW Rally"
     },
     {
       "version": "5.4.1",
@@ -303,7 +309,8 @@
     },
     {
       "version": "1.0.0",
-      "date": "12.05.2014"
+      "date": "12.05.2014",
+      "notes": ""
     }
   ]
 }
