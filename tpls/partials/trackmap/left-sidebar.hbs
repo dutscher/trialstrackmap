@@ -17,6 +17,17 @@
             <li>
                 <div class="wrap">
                     <h2>{%'page.title'|translate%}</h2>
+
+                    <a href="/halloween.html" style="color: orangered;">
+                        Halloween Guide 2019
+                        {{#with ../../../hunt-events.database.events.hunt.halloween_2019}}
+                            {{#hunt-event-stats huntData=this}}
+                                ( {{locations}} )
+                            {{/hunt-event-stats}}
+                        {{/with}}
+                    </a>
+
+
                     <a href="/trackfinder.html">
                         Trackfinder ({%::data.tracks.length%})
                     </a>

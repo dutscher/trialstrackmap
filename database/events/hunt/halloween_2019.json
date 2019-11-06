@@ -1,158 +1,335 @@
 {
-  // Acid Bath
-  "262": [
-    "https://i.imgur.com/U8dQDSf.png", "https://i.imgur.com/Dyxzh0z.png|See the arrow, short before the finishline|Majka From Gurun"
-  ],
-  // Broken Skull
-  "234": [
-    "https://i.imgur.com/lSWgyBH.png"
-  ],
-  // Burning Bushes
-  "52": [
-    "https://i.imgur.com/QV0JnAO.png|Drive backwards at the start|Cedric", "https://i.imgur.com/EmlESjC.png"
-  ],
-  // Cataclysm
-  "330": [
-    "https://i.imgur.com/MRpBgDr.png", "https://i.imgur.com/Sc7tKL2.png"
-  ],
-  // City Hallway
-  "334": [
-    "https://i.imgur.com/6qzFN7O.png", "https://i.imgur.com/Eh27Q5E.png"
-  ],
-  // City Chaos
-  "323": [
-    "https://i.imgur.com/Me88zVJ.png"
-  ],
-  // Dark Smoke
-  "239": [
-    "https://i.imgur.com/2fBTakb.png", "https://i.imgur.com/JSwER8b.png"
-  ],
-  // Drifter Valley
-  "74": [
-    "https://i.imgur.com/B4QCohY.png|Fall down from first platform|Thijs van Moll", "https://i.imgur.com/1KIQVBW.png"
-  ],
-  // Dual Snowfest
-  "349": [
-    "https://i.imgur.com/31ASLg5.png"
-  ],
-  // Fair Winds
-  "240": [
-    "https://i.imgur.com/Hxu8rUA.png", "https://i.imgur.com/Iaivj1X.png"
-  ],
-  // Fermented Caves
-  "266": [
-    "https://i.imgur.com/ogbmlEF.png"
-  ],
-  // Ghost Town
-  "59": [
-    "https://i.imgur.com/0YQjmwN.png", "https://i.imgur.com/H72dPJG.png"
-  ],
-  // Hanging Gardens
-  "271": [
-    "https://i.imgur.com/SefHHmn.png", "https://i.imgur.com/t5egFMz.png", "https://i.imgur.com/UBtQxkR.png", "https://i.imgur.com/5ECjzWC.png"
-  ],
-  // Homeland Express
-  "342": [
-    "https://i.imgur.com/kv4IqgM.png"
-  ],
-  // Infected Cavern
-  "311": [
-    "https://i.imgur.com/Fm1DgJM.png", "https://i.imgur.com/23kUQKx.png","https://i.imgur.com/BJ0lE6f.png|At the end|Ramunė Kazlaitė"
-  ],
-  // Lost Descent
-  "236": [
-    "https://i.imgur.com/UGLwfPu.png", "https://i.imgur.com/6HDHYXV.png", "https://i.imgur.com/6kfOAzQ.png", "https://i.imgur.com/7qnMBPf.png|See the arrow|Chemical Dee"
-  ],
-  // Mushroom Boom
-  "272": [
-    "https://i.imgur.com/JvqRD9G.png"
-  ],
-  // Peak Route
-  "335": [
-    "https://i.imgur.com/4GH8du4.png"
-  ],
-  // Pinball Pains
-  "259": [
-    "https://i.imgur.com/Hss6CcQ.png", "https://i.imgur.com/5TWt7iJ.png", "https://i.imgur.com/uO8TxK5.png|After the first big wheel|Thijs van Moll"
-  ],
-  // Pipe Basin
-  "51": [
-    "https://i.imgur.com/VzsE8Z3.png"
-  ],
-  // Planks and Mozzies
-  "61": [
-    "https://i.imgur.com/v9zxpwy.png", "https://i.imgur.com/EuUMt8u.png", "https://i.imgur.com/F536eT1.png"
-  ],
-  // Rampant Ramps
-  "267": [
-    "https://i.imgur.com/vMcPVe4.png"
-  ],
-  // Ray of Deception
-  "339": [
-    "https://i.imgur.com/KYt0FXm.png", "https://i.imgur.com/eHOFuOc.png"
-  ],
-  // Razor Dunes
-  "212": [
-    "https://i.imgur.com/GBRH1R1.png"
-  ],
-  // Rejection Blues
-  "255": [
-    "https://i.imgur.com/l1g36Jt.png"
-  ],
-  // Rest in Pieces
-  "270": [
-    "https://i.imgur.com/lsIfoVl.png", "https://i.imgur.com/8UyBtTw.png", "https://i.imgur.com/ZZITldu.png"
-  ],
-  // Rowdy Roofing
-  "258": [
-    "https://i.imgur.com/t6KS8Hu.png", "https://i.imgur.com/2XbEAvf.png", "https://i.imgur.com/vZu9mNd.png", "https://i.imgur.com/iT8t9UC.png", "https://i.imgur.com/RQYYDsN.png", "https://i.imgur.com/hMXVBwR.png||Robin Harris"
-  ],
-  // Snowball Surprise
-  "328": [
-    "https://i.imgur.com/Vh1AOSL.png", "https://i.imgur.com/EnjjW1U.png"
-  ],
-  // Sunken Sanctuary
-  "290": [
-    "https://i.imgur.com/no0EOeP.png"
-  ],
-  // Suspended Getaway
-  "260": [
-    "https://i.imgur.com/cfHv6zP.png", "https://i.imgur.com/t0EKqUm.png", "https://i.imgur.com/hjbYvk3.png", "https://i.imgur.com/PGFP55l.png"
-  ],
-  // The Watchers
-  "95": [
-    "https://i.imgur.com/7uTDK6Q.png", "https://i.imgur.com/0XglgGK.png|Alternative location|Johannes Plls"
-  ],
-  // The Beamery
-  "53": [
-    "https://i.imgur.com/MCpTiuo.png"
-  ],
-  // The Tanktops
-  "97": [
-    "https://i.imgur.com/NJsQ6Sd.png", "https://i.imgur.com/bGCelZJ.png", "https://i.imgur.com/4KdGt9b.png", "https://i.imgur.com/w74Xaeg.png","https://i.imgur.com/ybZ3Ceg.png|Look at the arrow|MC callum"
-  ],
-  // Toxic Garden
-  "300": [
-    "https://i.imgur.com/FGR6ItI.png|It’s down between the two tall mushrooms. To get it get back wheel between swing and ledge and use power to move the swing forward then rear wheel drag into the gap!!!|Robert Farnsworth"
-  ],
-  // Midnight Brewery
-  "265": [
-    "https://i.imgur.com/GPhX42O.png||Ramunė Kazlaitė"
-  ],
-  // Skyline Fling
-  "268": [
-    "https://i.imgur.com/u3iSul5.png|At the end|Apurva Acharya", "https://i.imgur.com/bY9cs8G.png|In the middle, make backflip and slide into the bone"
-  ],
-  // Distilled Hops
-  "265": [
-    "https://i.imgur.com/TTe1XDb.png|Hidden in the pipe|Robin Harris"
-  ],
-  // Lollygagging
-  "227": [
-    "https://i.imgur.com/adCOeFW.png||Chemical Dee", "https://i.imgur.com/DR4K5Br.png||Ramunė Kazlaitė"
-  ],
-  //
-  "000": [
-    "https://i.imgur.com/5zcq3fP.png", "https://i.imgur.com/gbul45N.png"
-  ]
+    // Acid Bath
+    "262": [
+        "https://i.imgur.com/U8dQDSf.png",
+        "https://i.imgur.com/Dyxzh0z.png|See the arrow, short before the finishline|Majka From Gurun"
+    ],
+    // Broken Skull
+    "234": [
+        "https://i.imgur.com/lSWgyBH.png"
+    ],
+    // Burning Bushes
+    "52": [
+        "https://i.imgur.com/QV0JnAO.png|Drive backwards at the start|Cedric",
+        "https://i.imgur.com/EmlESjC.png",
+        "https://i.imgur.com/fYge3n6.png",
+        "https://i.imgur.com/w7wzV3G.png"
+    ],
+    // Cataclysm
+    "330": [
+        "https://i.imgur.com/MRpBgDr.png",
+        "https://i.imgur.com/Sc7tKL2.png"
+    ],
+    // City Hallway
+    "334": [
+        "https://i.imgur.com/6qzFN7O.png",
+        "https://i.imgur.com/Eh27Q5E.png"
+    ],
+    // City Chaos
+    "323": [
+        "https://i.imgur.com/tCYPvIi.png",
+        "https://i.imgur.com/t0AA4cL.png"
+    ],
+    // Dark Smoke
+    "239": [
+        "https://i.imgur.com/2fBTakb.png",
+        "https://i.imgur.com/JSwER8b.png"
+    ],
+    // Drifter Valley
+    "74": [
+        "https://i.imgur.com/B4QCohY.png|Fall down from first platform|Thijs van Moll",
+        "https://i.imgur.com/1KIQVBW.png"
+    ],
+    // Dual Snowfest
+    "349": [
+        "https://i.imgur.com/31ASLg5.png"
+    ],
+    // Fair Winds
+    "240": [
+        "https://i.imgur.com/Hxu8rUA.png",
+        "https://i.imgur.com/Iaivj1X.png"
+    ],
+    // Ghost Town
+    "59": [
+        "https://i.imgur.com/0YQjmwN.png",
+        "https://i.imgur.com/H72dPJG.png",
+        "https://cdn.discordapp.com/attachments/635226219834507264/636447065500811274/Screenshot_2019-10-23-07-09-42.png|By these explosive barrels, under the swinging ramp. Dip the front wheel down and reverse to collect without faulting. Can be obtained without faulting. Complete within 23.5 seconds and 0 faults for platinum medal, 27.3 seconds and 0 faults for gold, or 28.8 seconds and 2 faults for silver.|Ihateuplaykk",
+        "https://i.imgur.com/FMYB7Xr.png",
+        "https://i.imgur.com/LJf3Rr1.png"
+    ],
+    // Hanging Gardens
+    "271": [
+        "https://i.imgur.com/SefHHmn.png",
+        "https://i.imgur.com/t5egFMz.png",
+        "https://i.imgur.com/UBtQxkR.png",
+        "https://i.imgur.com/5ECjzWC.png"
+    ],
+    // Homeland Express
+    "342": [
+        "https://i.imgur.com/kv4IqgM.png"
+    ],
+    // Infected Cavern
+    "311": [
+        "https://i.imgur.com/Fm1DgJM.png",
+        "https://i.imgur.com/23kUQKx.png",
+        "https://i.imgur.com/BJ0lE6f.png|At the end|Ramunė Kazlaitė"
+    ],
+    // Lost Descent
+    "236": [
+        "https://i.imgur.com/UGLwfPu.png",
+        "https://i.imgur.com/6HDHYXV.png",
+        "https://i.imgur.com/6kfOAzQ.png",
+        "https://i.imgur.com/7qnMBPf.png|See the arrow|Chemical Dee"
+    ],
+    // Mushroom Boom
+    "272": [
+        "https://i.imgur.com/JvqRD9G.png",
+        "https://i.imgur.com/rvielaA.png",
+        "https://i.imgur.com/UYdZkXT.png",
+        "https://i.imgur.com/gPl7hyr.png"
+    ],
+    // Peak Route
+    "335": [
+        "https://i.imgur.com/4GH8du4.png"
+    ],
+    // Pinball Pains
+    "259": [
+        "https://i.imgur.com/lOGPKCa.png",
+        "https://i.imgur.com/5TWt7iJ.png",
+        "https://i.imgur.com/uO8TxK5.png|After the first big wheel|Thijs van Moll",
+        "https://i.imgur.com/X2COKPg.png",
+        "https://i.imgur.com/xou0awn.png"
+    ],
+    // Pipe Basin
+    "51": [
+        "https://i.imgur.com/VzsE8Z3.png",
+        "https://i.imgur.com/CmnEJnA.png",
+        "https://i.imgur.com/GJbMojE.png"
+    ],
+    // Planks and Mozzies
+    "61": [
+        "https://i.imgur.com/v9zxpwy.png",
+        "https://i.imgur.com/EuUMt8u.png",
+        "https://i.imgur.com/F536eT1.png"
+    ],
+    // Rampant Ramps
+    "267": [
+        "https://i.imgur.com/bxg4HMa.png",
+        "https://i.imgur.com/3sM5TXS.png",
+        "https://i.imgur.com/vMcPVe4.png"
+    ],
+    // Ray of Deception
+    "339": [
+        "https://i.imgur.com/KYt0FXm.png",
+        "https://i.imgur.com/eHOFuOc.png"
+    ],
+    // Razor Dunes
+    "212": [
+        "https://i.imgur.com/GBRH1R1.png",
+        "https://i.imgur.com/xNXyfq9.png"
+    ],
+    // Rejection Blues
+    "255": [
+        "https://i.imgur.com/l1g36Jt.png"
+    ],
+    // Rest in Pieces
+    "270": [
+        "https://i.imgur.com/lsIfoVl.png",
+        "https://i.imgur.com/8UyBtTw.png",
+        "https://i.imgur.com/ZZITldu.png",
+        "https://i.imgur.com/XR3lodY.png"
+    ],
+    // Rowdy Roofing
+    "258": [
+        "https://i.imgur.com/t6KS8Hu.png",
+        "https://i.imgur.com/2XbEAvf.png",
+        "https://i.imgur.com/vZu9mNd.png",
+        "https://i.imgur.com/iT8t9UC.png",
+        "https://i.imgur.com/RQYYDsN.png",
+        "https://i.imgur.com/hMXVBwR.png||Robin Harris",
+        "https://i.imgur.com/pb55Anm.png"
+    ],
+    // Snowball Surprise
+    "328": [
+        "https://i.imgur.com/Vh1AOSL.png",
+        "https://i.imgur.com/EnjjW1U.png",
+        "https://cdn.discordapp.com/attachments/635235118465941525/635237223637188609/Screenshot_2019-10-19-22-35-44.jpg|Under the big wheel. Before first checkpoint - no faults. Complete within 17.8 seconds and 0 faults for platinum medal, 19.7 seconds and 2 faults for gold, or 20.5 seconds and 4 faults for silver.|Ihateuplaykk"
+    ],
+    // Sunken Sanctuary
+    "290": [
+        "https://i.imgur.com/mwlqjYO.png",
+        "https://i.imgur.com/no0EOeP.png",
+        "https://i.imgur.com/dkh7hSU.png"
+    ],
+    // Suspended Getaway
+    "260": [
+        "https://i.imgur.com/cfHv6zP.png",
+        "https://i.imgur.com/t0EKqUm.png",
+        "https://i.imgur.com/hjbYvk3.png"
+    ],
+    // The Watchers
+    "95": [
+        "https://i.imgur.com/7uTDK6Q.png",
+        "https://i.imgur.com/0XglgGK.png|Alternative location|Johannes Plls"
+    ],
+    // The Beamery
+    "53": [
+        "https://i.imgur.com/KqUanBj.png",
+        "https://i.imgur.com/ZlbvGGx.png",
+        "https://i.imgur.com/MCpTiuo.png",
+        "https://i.imgur.com/Mlr7uR7.png",
+        "https://i.imgur.com/ZOjUDW8.png"
+    ],
+    // The Tanktops
+    "97": [
+        "https://i.imgur.com/bGCelZJ.png",
+        "https://i.imgur.com/4KdGt9b.png",
+        "https://i.imgur.com/w74Xaeg.png",
+        "https://i.imgur.com/ybZ3Ceg.png|Look at the arrow|MC callum"
+    ],
+    // Toxic Garden
+    "300": [
+        "https://i.imgur.com/RWfC4BL.png",
+        "https://i.imgur.com/FGR6ItI.png|It’s down between the two tall mushrooms. To get it get back wheel between swing and ledge and use power to move the swing forward then rear wheel drag into the gap!!!|Robert Farnsworth",
+        "https://i.imgur.com/OqHoB9R.png"
+    ],
+    // Midnight Brewery
+    "265": [
+        "https://i.imgur.com/GPhX42O.png||Ramunė Kazlaitė",
+        "https://i.imgur.com/4sdkAhH.png"
+    ],
+    // Skyline Fling
+    "268": [
+        "https://i.imgur.com/u3iSul5.png|At the end|Apurva Acharya",
+        "https://i.imgur.com/bY9cs8G.png|In the middle, make backflip and slide into the bone"
+    ],
+    // Distilled Hops
+    "264": [
+        "https://i.imgur.com/xdFQg5l.png",
+        "https://i.imgur.com/qEwZSSX.png"
+    ],
+    // Lollygagging
+    "227": [
+        "https://i.imgur.com/adCOeFW.png||Chemical Dee",
+        "https://i.imgur.com/DR4K5Br.png||Ramunė Kazlaitė"
+    ],
+    // Acrobat Quarter
+    "228": [
+        "https://i.imgur.com/ckG9OiJ.jpg|Under ramp between the first and second checkpoint. Can't be obtained without faulting. Complete within 30 seconds and 1 fault for silver medal.|Ihateuplaykk"
+    ],
+    // Aztec Trance
+    "257": [
+        "https://cdn.discordapp.com/attachments/635235118465941525/638493379180625920/Screenshot_2019-10-28-21-40-25.jpg|In pit between bones after first checkpoint. Can't be obtained without faulting. Complete within 29.3 seconds and 2 faults for silver medal.|Ihateuplaykk",
+        "https://i.imgur.com/VX13W6Z.png"
+    ],
+    // Barrel Chase
+    "28": [
+        "https://i.imgur.com/9Niu2LB.png",
+        "https://i.imgur.com/3OvkpHY.png",
+        "https://i.imgur.com/3sPsFws.png"
+    ],
+    // Bayou Boatride
+    "242": [
+        "https://i.imgur.com/ka9hbN4.png"
+    ],
+    // Cave Dweller
+    "25": [
+        "https://i.imgur.com/FYCuMqF.png"
+    ],
+    // City Outskirts
+    "29": [
+        "https://i.imgur.com/AoDhLVQ.png",
+        "https://i.imgur.com/PTfCMrT.png",
+        "https://i.imgur.com/UFsH01v.png"
+    ],
+    // Concealed Entryway
+    "203": [
+        "https://i.imgur.com/ROJnhEn.png"
+    ],
+    // Flooded Highway
+    "32": [
+        "https://i.imgur.com/I9KAvMp.png", "https://i.imgur.com/wrFJ1Rh.png"
+    ],
+    // Hinged Pathway
+    "21": [
+        "https://i.imgur.com/xMEC6dT.png",
+        "https://i.imgur.com/8DQIdX9.png"
+    ],
+    // Icy Altar
+    "249": [
+        "https://i.imgur.com/SwhnVKv.png",
+        "https://i.imgur.com/p6oxWui.png"
+    ],
+    // Market Street
+    "7": [
+        "https://i.imgur.com/HS6wGbz.png", "https://i.imgur.com/rYL1922.png"
+    ],
+    // Buggy Track
+    "40": [
+        "https://i.imgur.com/yvU3lCa.png"
+    ],
+    // Pipeline Camp
+    "16": [
+        "https://i.imgur.com/JxrXgjI.png",
+        "https://i.imgur.com/2DsJXjz.png",
+        "https://i.imgur.com/h82VVSX.png"
+    ],
+    // Road to Ruin
+    "26": [
+        "https://i.imgur.com/VxTlQWW.png"
+    ],
+    // Rooftops
+    "11": [
+        "https://i.imgur.com/orwxt3M.png",
+        "https://i.imgur.com/DX9pllp.png",
+        "https://i.imgur.com/8a6fH1G.png",
+        "https://i.imgur.com/gfw9Lzu.png"
+    ],
+    // Smuggler Tunnel
+    "12": [
+        "https://i.imgur.com/EOLjWse.png",
+        "https://i.imgur.com/vL91zTx.png"
+    ],
+    // Snowcap Smackdown
+    "248": [
+        "https://i.imgur.com/3DxW0sJ.png",
+        "https://i.imgur.com/JIir31o.png"
+    ],
+    // Snowman Haven
+    "136": [
+        "https://i.imgur.com/UO6gztw.png"
+    ],
+    // Sunset Dungeon
+    "22": [
+        "https://i.imgur.com/d8eJIBa.png"
+    ],
+    // The Arches
+    "15": [
+        "https://i.imgur.com/R0y54Ag.png",
+        "https://i.imgur.com/mAuUguF.png",
+        "https://i.imgur.com/IG5GLhp.png",
+        "https://i.imgur.com/8q2LOlJ.png",
+        "https://i.imgur.com/GwKjDhl.png",
+        "https://i.imgur.com/BeQzvHa.png",
+        "https://i.imgur.com/pMwKX0w.png"
+    ],
+    // The Waterwheel
+    "36": [
+        "https://i.imgur.com/WTUdfSj.png",
+        "https://i.imgur.com/H8bTMHr.png"
+    ],
+    // Urban Jungle
+    "14": [
+        "https://i.imgur.com/n4lITCa.png",
+        "https://i.imgur.com/suL5icu.png",
+        "https://i.imgur.com/5tfonC3.png",
+        "https://i.imgur.com/L0FjqV1.png",
+        "https://i.imgur.com/MSCH35M.png"
+    ],
+    // Well Park
+    "17": [
+        "https://i.imgur.com/qvTQkIv.png",
+        "https://i.imgur.com/h42SXs3.png",
+        "https://i.imgur.com/9BBbN7T.png"
+    ]
 }

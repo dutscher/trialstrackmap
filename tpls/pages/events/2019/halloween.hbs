@@ -5,51 +5,110 @@
     {{/content}}
 
     {{#content "styles" mode="append"}}
-        <!--<link rel="stylesheet" type="text/css" href="/css/style-anniversary.css{{cacheBuster}}"/>-->
         <style>
             .hunt-container {
                 display: flex;
                 flex-wrap: wrap;
-                color: #fff;
+                color: #d1c086;
+                -webkit-text-stroke-width: 1px;
+                -webkit-text-stroke-color: #4e432f;
             }
             h1 {
+                color: orangered;
                 margin: 8px;
+                margin-right: 16px;
+                line-height: 12px;
+                padding: 24px 0;
+                -webkit-text-stroke-width: 0;
+            }
+            h1 span {
+                font-size: 12px;
             }
             .content {
                 background: white;
-                padding: 8px;
+                padding: 10px;
+            }
+            .letter {
+                font-size: 37px;
+                background: orangered;
+                border-radius: 20px;
+                padding: 0 10px;
+                margin: 10px;
             }
             .track {
-                margin: 8px;
+                white-space: nowrap;
+                margin: 10px;
+                padding: 5px 10px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                border-radius: 20px;
+                position: relative;
             }
-            .track_locations {
+            .track__badge {
+                background: orangered;
+                text-align: center;
+                line-height: 20px;
+            }
+            .track__locations {
                 display: flex;
                 flex-wrap: wrap;
             }
-        </style>
+            .track__badge,
+            .track__locations img {
+                display: block;
+                width: 20px;
+                height: 20px;
+                margin-right: 5px;
+                border: solid 1px #fff;
+            }
+            {{#with ../../gfx}}
+                {{#each images.envs}}
+                    .trackenv--{{@key}}{
+                        background-image: url({{hoster this ../hoster}});
+                    }
+                {{/each}}
+            {{/with}}
+            </style>
     {{/content}}
 
     {{#content "body"}}
         {{#with ../../hunt-events.database.events.hunt.halloween_2019}}
         <div class="hunt-container">
-            <h1>Halloween Heat 2019</h1>
-            <div>
-                {{#hunt-event-stats huntData=this}}
-                    Tracks: {{tracks}}<br />
-                    Locations: {{locations}}
-                {{/hunt-event-stats}}
-            </div>
+            <h1>
+                Halloween Heat 2019<br />
+                <span>
+                    {{#hunt-event-stats huntData=this}}
+                        Tracks: {{tracks}} /
+                        Locations: {{locations}}
+                    {{/hunt-event-stats}}
+                </span>
+            </h1>
             {{> facebook-script}}
             <div class="content">
                 {{> facebook-div url="https://www.facebook.com/trialstrackmap" width=250}}
             </div>
         </div>
         <div class="hunt-container">
-        {{#each this}}
-            {{#hunt-event huntData=../this id=@key i18n="database/i18n/en.json"}}
-                <div class="track">
-                    {{trackname}}
-                    <div  class="track__locations">
+        {{#hunt-event-sorter
+            tracksData=this
+            i18nFile="database/i18n/en.json"}}
+            {{#if renderLetter}}
+                <div class="letter">
+                    {{letter}}
+                </div>
+            {{/if}}
+            {{#hunt-event
+                huntData=huntData
+                id=trackId
+                trackName=trackName
+                trackIdsFile="database/trackdata/ids.json"
+            }}
+                <div class="track trackenv--{{trackEnv}}">
+                    {{trackName}}
+                    <div class="track__locations">
+                        <div class="track__badge">
+                            {{locations}}
+                        </div>
                     {{#each images}}
                         <a href="{{image}}" target="_blank" title="{{description}} found by {{founder}}">
                             <img src="{{thumb}}" />
@@ -58,7 +117,7 @@
                     </div>
                 </div>
             {{/hunt-event}}
-        {{/each}}
+        {{/hunt-event-sorter}}
         </div>
         {{/with}}
     {{/content}}

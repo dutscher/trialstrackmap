@@ -15,6 +15,7 @@ module.exports = {
         {t: "import-08-seasons", p: "./08.seasons"},
         {t: "import-09-bikes", p: "./09.bikes"},
         {t: "import-10-screenshots", p: "./10.screenshots"},
+        {t: "import-11-hunting", p: "./11.hunting"},
         {t: "import-00-danteam", p: "../danteam/00.index", a: true},
         {t: "import-00-leaderboard", p: "../leaderboard/00.index", a: true},
     ],
