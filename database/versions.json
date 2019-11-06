@@ -1,316 +1,351 @@
 {
-  "urls": [
-    "https://trials-frontier.de.aptoide.com/versions",
-    "https://www.apk4fun.com/history/9693/",
-    "https://play.google.com/store/apps/details?id=com.ubisoft.redlynx.trialsfrontier.ggp"
-  ],
-  "releases": {
-    "": {
-      "version": "",
-      "date": ""
-    },
-    "7.5.0": {
-      "date": "17.10.2019",
-      "event": {
-        "name": "Halloween Heat",
-        "type": "hunt",
-        "forum": "https://forums.ubisoft.com/showthread.php/2146517-New-Update-Halloween-Heat!",
-        "guide": "https://forums.ubisoft.com/showthread.php/2146933-2019-Halloween-Event-Guide"
-      }
-    },
-    "7.4.0": {
-      "date": "11.09.2019",
-      "event": "Crash & Sunburn",
-      "forum": "https://forums.ubisoft.com/showthread.php/2125538-New-Update-Crash-amp-Sunburn!"
-    },
-    "7.3.0": {
-      "date": "20.08.2019"
-    },
-    "7.2.2": {
-      "version": ,
-      "date": "31.07.2019"
-    },
-    {
-      "version": "7.2.0",
-      "date": "26.07.2019"
-    },
-    {
-      "version": "7.1.0",
-      "date": "24.05.2019"
-    },
-    {
-      "version": "7.0.0",
-      "date": "24.04.2019"
-    },
-    {
-      "version": "6.9.0",
-      "date": "13.03.2019"
-    },
-    {
-      "version": "6.8.0",
-      "date": "18.02.2019"
-    },
-    {
-      "version": "6.7.0",
-      "date": "23.01.2019"
-    },
-    {
-      "version": "6.6.0",
-      "date": "19.12.2018"
-    },
-    {
-      "version": "6.5.0",
-      "date": "15.11.2018"
-    },
-    {
-      "version": "6.4.1",
-      "date": "31.10.2018"
-    },
-    {
-      "version": "6.4.0",
-      "date": "21.10.2018"
-    },
-    {
-      "version": "6.3.0",
-      "date": "26.09.2018"
-    },
-    {
-      "version": "6.2.2",
-      "date": "02.09.2018"
-    },
-    {
-      "version": "6.2.0",
-      "date": "21.08.2018"
-    },
-    {
-      "version": "6.1.0",
-      "date": "02.07.2018"
-    },
-    {
-      "version": "6.0.0",
-      "date": "08.05.2018"
-    },
-    {
-      "version": "5.9.0",
-      "date": "09.04.2018"
-    },
-    {
-      "version": "5.8.3",
-      "date": "14.02.2018"
-    },
-    {
-      "version": "5.7.1",
-      "date": "07.01.2018"
-    },
-    {
-      "version": "5.7.0",
-      "date": "21.12.2017"
-    },
-    {
-      "version": "5.6.0",
-      "date": "02.11.2017"
-    },
-    {
-      "version": "5.5.0",
-      "date": "21.09.2017",
-      "event": "BMW Rally"
-    },
-    {
-      "version": "5.4.1",
-      "date": "18.08.2017"
-    },
-    {
-      "version": "5.4.0",
-      "date": "16.08.2017"
-    },
-    {
-      "version": "5.3.0",
-      "date": "06.07.2017"
-    },
-    {
-      "version": "5.2.0",
-      "date": "15.06.2017"
-    },
-    {
-      "version": "5.1.1",
-      "date": "27.05.2017"
-    },
-    {
-      "version": "5.1.0",
-      "date": "11.05.2017"
-    },
-    {
-      "version": "5.0.1",
-      "date": "26.04.2017"
-    },
-    {
-      "version": "5.0.0",
-      "date": "11.04.2017"
-    },
-    {
-      "version": "4.9.0",
-      "date": "10.03.2017"
-    },
-    {
-      "version": "4.8.1",
-      "date": "07.03.2017"
-    },
-    {
-      "version": "4.8.0",
-      "date": "09.01.2017"
-    },
-    {
-      "version": "4.6.0",
-      "date": "12.12.2016"
-    },
-    {
-      "version": "4.5.1",
-      "date": "21.10.2016"
-    },
-    {
-      "version": "4.5.0",
-      "date": "16.10.2116"
-    },
-    {
-      "version": "4.3.0",
-      "date": "26.08.2016"
-    },
-    {
-      "version": "4.2.2",
-      "date": "28.07.2016"
-    },
-    {
-      "version": "4.2.1",
-      "date": "02.07.2016"
-    },
-    {
-      "version": "4.1.0",
-      "date": "11.05.2016"
-    },
-    {
-      "version": "4.0.2",
-      "date": "13.04.2016"
-    },
-    {
-      "version": "4.0.0",
-      "date": "21.03.2016"
-    },
-    {
-      "version": "3.9.1",
-      "date": "01.03.2016"
-    },
-    {
-      "version": "3.9.0",
-      "date": "20.02.2016"
-    },
-    {
-      "version": "3.8.0",
-      "date": "20.01.2016"
-    },
-    {
-      "version": "3.7.0",
-      "date": "02.01.2016"
-    },
-    {
-      "version": "3.6.0",
-      "date": "19.11.2015"
-    },
-    {
-      "version": "3.5.0",
-      "date": "15.10.2015"
-    },
-    {
-      "version": "3.4.0",
-      "date": "09.09.2015"
-    },
-    {
-      "version": "3.3.0",
-      "date": "16.07.2015"
-    },
-    {
-      "version": "3.2.6",
-      "date": "27.06.2015"
-    },
-    {
-      "version": "3.2.5",
-      "date": "27.05.2015"
-    },
-    {
-      "version": "3.2.4",
-      "date": "07.06.2015"
-    },
-    {
-      "version": "3.2.3",
-      "date": "02.05.2015"
-    },
-    {
-      "version": "3.2.2",
-      "date": "19.04.2015"
-    },
-    {
-      "version": "3.2.1",
-      "date": "17.04.2015"
-    },
-    {
-      "version": "3.1.0",
-      "date": "17.02.2015"
-    },
-    {
-      "version": "3.0.4",
-      "date": "24.12.2014"
-    },
-    {
-      "version": "3.0.3",
-      "date": "17.12.2014"
-    },
-    {
-      "version": "3.0.2",
-      "date": "14.12.2014"
-    },
-    {
-      "version": "2.5.1",
-      "date": "11.11.2014"
-    },
-    {
-      "version": "2.5.0",
-      "date": "23.10.2014"
-    },
-    {
-      "version": "2.2.1",
-      "date": "01.10.2014"
-    },
-    {
-      "version": "2.2.0",
-      "date": "11.09.2014"
-    },
-    {
-      "version": "2.0.3",
-      "date": "26.08.2014"
-    },
-    {
-      "version": "2.0.2",
-      "date": "21.08.2014"
-    },
-    {
-      "version": "2.0.1",
-      "date": "14.07.2014"
-    },
-    {
-      "version": "2.0.0",
-      "date": "11.07.2014"
-    },
-    {
-      "version": "1.5.0",
-      "date": "03.06.2014"
-    },
-    {
-      "version": "1.0.2",
-      "date": "22.05.2014"
-    },
-    {
-      "version": "1.0.0",
-      "date": "12.05.2014",
-      "notes": ""
+    "urls": [
+        "https://trials-frontier.en.aptoide.com/versions",
+        "https://www.apk4fun.com/history/9693/",
+        "https://play.google.com/store/apps/details?id=com.ubisoft.redlynx.trialsfrontier.ggp"
+    ],
+    "releases": {
+        "": {
+            "date": "",
+            "event": {
+                "name": "",
+                "type": "hunt|grind|mc",
+                "forum": "https://forums.ubisoft.com/showthread.php/",
+                "guide": "https://forums.ubisoft.com/showthread.php/"
+            }
+        },
+        "7.5.0": {
+            "date": "17.10.2019",
+            "date": "08.10.2019",
+            "notes": "Fire up your engines, it's time for ‘Crash & Sunburn’! join the all-new event and fly high with the Superman stunt all over again! Get stuntin' to gain Fan Points and unlock 7 new Tracks, 2 New Paintjobs, and the brand new ‘Jungle Explorer’ outfit!",
+            "event": {
+                "name": "Halloween Heat",
+                "type": "hunt",
+                "forum": "https://forums.ubisoft.com/showthread.php/2146517-New-Update-Halloween-Heat!",
+                "guide": "https://forums.ubisoft.com/showthread.php/2146933-2019-Halloween-Event-Guide"
+            }
+        },
+        "7.4.0": {
+            "date": "11.09.2019",
+            "date": "06.09.2019",
+            "notes": "Fire up your engines, it's time for ‘Crash & Sunburn’! join the all-new event and fly high with the Superman stunt all over again! Get stuntin' to gain Fan Points and unlock 7 new Tracks, 2 New Paintjobs, and the brand new ‘Jungle Explorer’ outfit!",
+            "event": "Crash & Sunburn",
+            "forum": "https://forums.ubisoft.com/showthread.php/2125538-New-Update-Crash-amp-Sunburn!"
+        },
+        "7.3.0": {
+            "date": "20.08.2019",
+            "date": "11.08.2019",
+            "notes": "Riders, it's time for Giant Leaps in an all-new environment! Defy gravity with the brand new 'Moon Rover' Bike and deliver 'Helium-3 Ores' to the Research Lab! Avoid bumpy rides, make your way to the top of the Leaderboards, and win 6 epic new Tracks! Download Now!"
+        },
+        "7.2.2": {
+            "date": "31.07.2019",
+            "date": "29.07.2019",
+            "notes": "Riders, it's time for Giant Leaps in an all-new environment! Defy gravity with the brand new 'Moon Rover' Bike and deliver 'Helium-3 Ores' to the Research Lab! Avoid bumpy rides, make your way to the top of the Leaderboards, and win 6 epic new Tracks! Download Now!"
+        },
+        "7.2.0": {
+            "date": "26.07.2019",
+            "date": "15.07.2019",
+            "notes": "Riders, it's time for Giant Leaps in an all-new environment! Defy gravity with the brand new 'Moon Rover' Bike and deliver 'Helium-3 Ores' to the Research Lab! Avoid bumpy rides, make your way to the top of the Leaderboards, and win 6 epic new Tracks! Download Now!"
+        },
+        "7.1.0": {
+            "date": "24.05.2019",
+            "date": "21.05.2019",
+            "notes": "Welcome to the Harley-Davidson Rally! Introducing the mighty Harley-Davidson XG750R in Trials Frontier! Experience maximum torque as you race this beast through 50 Tracks! Go full-throttle and set your best times to dominate the Leaderboard! Rewards include blueprints to the Harley-Davidson XG750R and exciting new tracks!\nDon't miss out on the Harley-Davidson Asphalt Feeder outfit and the Orange Flicker Paintjob, as you Ride this Mean Machine! Download Now!"
+        },
+        "7.0.0": {
+            "date": "24.04.2019",
+            "date": "11.04.2019",
+            "notes": "Welcome to the Harley-Davidson Rally! Introducing the mighty Harley-Davidson XG750R in Trials Frontier! Experience maximum torque as you race this beast through 50 Tracks! Go full-throttle and set your best times to dominate the Leaderboard! Rewards include blueprints to the Harley-Davidson XG750R and exciting new tracks!\nDon't miss out on the Harley-Davidson Asphalt Feeder outfit and the Orange Flicker Paintjob, as you Ride this Mean Machine! Download Now!",
+            "youtube": "https://www.youtube.com/watch?v=5iMLI0A1Ti4"
+        },
+        "6.9.0": {
+            "date": "13.03.2019",
+            "notes": "Meet Orbie the friendly intergalactic explorer on a mission to get back home! Time for some intergalactic favors collect Energy Cores hidden across the Frontier and help repair Orbie's Spaceship! Join 'Orbie's Quest' to win all-new Tracks, exciting outfits and Paintjobs! Download now!"
+        },
+        "6.8.0": {
+            "date": "18.02.2019",
+            "notes": "Update your game for a smoother ride we've improved the stability and removed some pesky bugs to enhance your gameplay experience!"
+        },
+        "6.7.0": {
+            "date": "23.01.2019",
+            "notes": "Trials Rising is in the Frontier! Master your rides or crash in style, in the upcoming Rising PvP Season! Ride hard to win exclusive, iconic rewards! Oh, and don't forget to claim the free Stuntman Antti outfit available for a limited time only! Download Now!"
+        },
+        "6.6.0": {
+            "date": "19.12.2018",
+            "notes": "It’s time for the Trials Holiday Run! Get into the festive spirit with Bad Bone Sr., and keep winning epic rewards throughout! Ride different bikes in each Leg, including the BMW F 800 GS and the KTM 500-EXC! Get ready to break all records in this joyful Run! Download now!"
+        },
+        "6.5.0": {
+            "date": "15.11.2018",
+            "notes": "The Frontier is Haunted! The mysterious Dracuul has appeared out of thin air, looking for his missing Pumpkins! Help him find his freaky fruits, and win exciting new Tracks! Download Now!"
+        },
+        "6.4.1": {
+            "date": "31.10.2018",
+            "notes": "The Frontier is Haunted! The mysterious Dracuul has appeared out of thin air, looking for his missing Pumpkins! Help him find his freaky fruits, and win exciting new Tracks! Download Now!"
+        },
+        "6.4.0": {
+            "date": "21.10.2018",
+            "notes": "The Frontier is Haunted! The mysterious Dracuul has appeared out of thin air, looking for his missing Pumpkins! Help him find his freaky fruits, and win exciting new Tracks! Download Now!"
+        },
+        "6.3.0": {
+            "date": "26.09.2018",
+            "notes": "Update your game for a smoother ride we've improved the stability and removed some pesky bugs to enhance your gameplay experience!\nRace in the Bunker to win some epic new Tracks and Paintjob!"
+        },
+        "6.2.2": {
+            "date": "02.09.2018",
+            "notes": "Update your game for a smoother ride we've improved the stability and removed some pesky bugs to enhance your gameplay experience!\nRace in the Bunker to win some epic new Tracks and Paintjob!"
+        },
+        "6.2.0": {
+            "date": "21.08.2018",
+            "notes": "Update your game for a smoother ride we've improved the stability and removed some pesky bugs to enhance your gameplay experience!\nRace in the Bunker to win some epic new Tracks and Paintjob!"
+        },
+        "6.1.1": {
+            "date": "19.07.2018",
+            "notes": "Enter 'X Games Minneapolis 2018' the world’s biggest action sports event comes to Trials Frontier! Stunt all the way through this flip-tastic event to earn Fan Points, win all-new Tracks, celebrated Outfits, and Paintjobs! For the first time ever: try the exciting new Stunt 'The Superman' in all its soaring glory! Download now!"
+        },
+        "6.1.0": {
+            "date": "02.07.2018",
+            "notes": "Enter 'X Games Minneapolis 2018' the world’s biggest action sports event comes to Trials Frontier! Stunt all the way through this flip-tastic event to earn Fan Points, win all-new Tracks, celebrated Outfits, and Paintjobs! For the first time ever: try the exciting new Stunt 'The Superman' in all its soaring glory! Download now!"
+        },
+        "6.0.0": {
+            "date": "08.05.2018",
+            "date": "09.05.2018",
+            "notes": "The 'X Games Norway Season' rides into the Frontier! Stunt your way through the multiplayer mode this super-chilled Season, and win exclusive 'X Games Norway' reward Tracks!"
+        },
+        "5.9.0": {
+            "date": "09.04.2018",
+            "notes": "Get our 4th Anniversary update! Download now to get the brand-new Community Track, voted for by the Trials Community! This update also includes Bug Fixes to make your rides smoother."
+        },
+        "5.8.3": {
+            "date": "14.02.2018",
+            "notes": "Riders, all aboard the Love Express! Deliver Love for Ted across the Frontier in this charming new update!\nAvoid bumpy rides, and make your way to the top of the Leaderboards!\nRemember, gentle and caring rides could win you 7 epic new Tracks!"
+        },
+        "5.7.1": {
+            "date": "07.01.2018",
+            "notes": "A grand adventure begins! DAKAR 2018 the biggest Rally-Raid in the World comes to Trials Frontier!\nJoin the 'DAKAR Rally Challenge' for 6 Legs of super-competitive racing, with 11 exciting new Tracks to be won!\nRace against multiple opponents, score the best times, and win exciting rewards!"
+        },
+        "5.7.0": {
+            "date": "21.12.2017",
+            "notes": "A grand adventure begins! DAKAR 2018 the biggest Rally-Raid in the World comes to Trials Frontier!\nJoin the 'DAKAR Rally Challenge' for 6 Legs of super-competitive racing, with 11 exciting new Tracks to be won!\nRace against multiple opponents, score the best times, and win exciting rewards!"
+        },
+        "5.6.0": {
+            "date": "02.11.2017",
+            "notes": "Monster Energy AUS X OPEN 2017 the biggest Supercross, Freestyle Motocross, and action sports event in the Southern Hemisphere comes to Trials Frontier!\nUpdate your game and enter the ‘AUS-X OPEN Midnight Circuit’ for two weeks of super-competitive racing, with two exciting new themed Tracks and Bike Paintjobs!\nRace now!"
+        },
+        "5.5.0": {
+            "date": "21.09.2017",
+            "notes": "Harder, faster and stronger than before – we’re working permanently to improve your riding experience. Based on your feedback, we’ve been able to remove some annoying bugs hitting the Frontier.\nDownload the latest version now!"
+        },
+        "5.4.1": {
+            "date": "18.08.2017",
+            "date": "22.08.2017",
+            "notes": "Harder, faster and stronger than before – we’re working permanently to improve your riding experience. Based on your feedback, we’ve been able to remove some annoying bugs hitting the Frontier.\nDownload the latest version now!"
+        },
+        "5.4.0": {
+            "date": "16.08.2017",
+            "notes": ""
+        },
+        "5.3.0": {
+            "date": "06.07.2017",
+            "notes": ""
+        },
+        "5.2.0": {
+            "date": "15.06.2017",
+            "notes": ""
+        },
+        "5.1.1": {
+            "date": "27.05.2017",
+            "notes": ""
+        },
+        "5.1.0": {
+            "date": "11.05.2017",
+            "date": "09.05.2017",
+            "notes": "Easter has passed, but a bizarre new visitor, claiming to be the Easter Bunny, roams the Frontier. Is he the real Easter Bunny? Can he be trusted? What does he want?\nWith this update, we’ll have some egg-citing shells to crack!\nRide across the Frontier & locate Easter Eggs to win up to 7 Brand New Tracks! All this, plus a Special Outfit & Paintjob!\nGrab your riding gear, we’re about to hit the road and discover the secret behind the mysterious Easter Bunny & the EASTER EGG HUNT!"
+        },
+        "5.0.1": {
+            "date": "26.04.2017",
+            "notes": "Harder, faster and stronger than before – we’re working permanently to improve your riding experience. Based on your feedback, we’ve been able to remove some annoying bugs hitting the Frontier.\nDownload the latest version now!"
+        },
+        "5.0.0": {
+            "date": "11.04.2017",
+            "notes": "Frontier completes THREE YEARS! Join in the celebration, Riders!\nHarder, faster and stronger than before – we’re working permanently to improve your riding experience. Based on your feedback, we’ve been able to remove some annoying bugs hitting the Frontier.\nDownload the latest version now!"
+        },
+        "4.9.0": {
+            "date": "10.03.2017",
+            "date": "08.03.2017",
+            "notes": "How fast did you race in the KTM Rally Challenge?\nIt's time to update your game for a smoother ride we've improved the stability and removed some pesky bugs to enhance your gameplay experience!\nReach out to us on our Forums if you have any concerns, and do share your feedback!"
+        },
+        "4.8.1": {
+            "date": "07.03.2017",
+            "date": "10.03.2017",
+            "notes": "Introducing the KTM Rally Challenge – the ultimate test of skill!\nRide the all new legendary KTM 450 Rally through 4 weekly legs of 10 tracks each and bring glory to your new team, the Desert Wings! Race hard on every track to score your best time & dominate the weekly leaderboards! Win grand rewards based on your performance including blueprints to the KTM 450 Rally and 8 radical new tracks!\nReady to Race?"
+        },
+        "4.8.0": {
+            "date": "09.01.2017",
+            "date": "04.01.2017",
+            "notes": "Introducing the KTM Rally Challenge – the ultimate test of skill!\nRide the all new legendary KTM 450 Rally through 4 weekly legs of 10 tracks each and bring glory to your new team, the Desert Wings! Race hard on every track to score your best time & dominate the weekly leaderboards! Win grand rewards based on your performance including blueprints to the KTM 450 Rally and 8 radical new tracks!\nReady to Race?"
+        },
+        "4.6.0": {
+            "date": "12.12.2016",
+            "notes": ""
+        },
+        "4.5.1": {
+            "date": "21.10.2016",
+            "date": "20.10.2016",
+            "notes": "This Halloween, gear up for the Midnight Circuit!\nQuickshift Cam is here to offer you 4 weekly challenges of one track and bike each, to pit yourself against every other rider in the world. Impress her with your performance and smash trophies to win rewards like new Tracks & rad Outfits (even some that you’ve missed before).\nMake your opponents eat dirt with your techniques and speed to the top of a brand new leaderboard every week!\nHave a frightfully fun Halloween and keep riding!"
+        },
+        "4.5.0": {
+            "date": "16.10.2116",
+            "date": "13.10.2116",
+            "notes": "This Halloween, gear up for the Midnight Circuit!\nQuickshift Cam is here to offer you 4 weekly challenges of one track and bike each, to pit yourself against every other rider in the world. Impress her with your performance and smash trophies to win rewards like new Tracks & rad Outfits (even some that you’ve missed before).\nMake your opponents eat dirt with your techniques and speed to the top of a brand new leaderboard every week!\nHave a frightfully fun Halloween and keep riding!"
+        },
+        "4.3.0": {
+            "date": "26.08.2016",
+            "date": "30.08.2016",
+            "notes": "More power to you, Riders! Here’s an update with some new features to enhance your gameplay experience!\nMedal Toggling: You can now switch between Basic, Donkey and Crazy Medals on the World Map.\nNew track pack info: Wondering which tracks to buy next? Click on the pack for details that will help you make an informed purchase.\nLoads of bug fixes based on your feedback.\nPlease note that the game is currently unavailable on Android 7.0 Nougat. However, the team is working on it."
+        },
+        "4.2.2": {
+            "date": "28.07.2016",
+            "date": "27.07.2016",
+            "notes": "Howdy Riders!\nThe Treasure Hunt Event is here! The Prospector’s got 4 new tracks for you, but you have to find them first! Embark on an epic hunt to be first on their Leaderboards!\nThe Temple Rider Outfit is now available with its own special ability to aid the chase!\nYou’ll also find an overhaul of the in-game store and the new Riders Club, an exclusive rewards program that offers huge amounts of daily gems and coins, a wicked new outfit and an exclusive badge to display on the Leaderboards."
+        },
+        "4.2.1": {
+            "date": "02.07.2016",
+            "date": "01.07.2016",
+            "notes": "Howdy Riders!\nThe Treasure Hunt Event is here! The Prospector’s got 4 new tracks for you, but you have to find them first! Embark on an epic hunt to be first on their Leaderboards!\nThe Temple Rider Outfit is now available with its own special ability to aid the chase!\nYou’ll also find an overhaul of the in-game store and the new Riders Club, an exclusive rewards program that offers huge amounts of daily gems and coins, a wicked new outfit and an exclusive badge to display on the Leaderboards."
+        },
+        "4.1.0": {
+            "date": "11.05.2016",
+            "date": "10.05.2016",
+            "notes": "Howdy Riders!\nTo celebrate the second anniversary of Trials Frontier, we’re introducing a brand new quest giver: The Puppy!\nHe’s gonna give you daily quests to complete and some super cool rewards to earn that get better every day!\nGet ready to crush the competition with the meanest Tier 1 bike. The KTM 500 EXC is finally available for sale!\nAn awesome ride requires a cool outfit and fitting venue, so both KTM Course track and KTM Gear outfit are also available for purchase from now on!"
+        },
+        "4.0.2": {
+            "date": "13.04.2016",
+            "notes": "We regularly bring you updates and new features to improve your experience. Have fun!"
+        },
+        "4.0.0": {
+            "date": "21.03.2016",
+            "notes": ""
+        },
+        "3.9.1": {
+            "date": "01.03.2016",
+            "notes": ""
+        },
+        "3.9.0": {
+            "date": "20.02.2016",
+            "notes": ""
+        },
+        "3.8.0": {
+            "date": "20.01.2016",
+            "date": "14.01.2016",
+            "notes": "Butch and his gang have been up to their usual shenanigans and causing all kinds of trouble. We’ve been hard at work and cleaning after them to bring you an even smoother experience than before."
+        },
+        "3.7.0": {
+            "date": "02.01.2016",
+            "notes": ""
+        },
+        "3.6.0": {
+            "date": "19.11.2015",
+            "date": "18.11.2015",
+            "notes": "Butch and his gang have been up to their usual shenanigans and causing all kinds of trouble. We’ve been hard at work and cleaning after them to bring you an even smoother experience than before."
+        },
+        "3.5.0": {
+            "date": "15.10.2015",
+            "notes": ""
+        },
+        "3.4.0": {
+            "date": "09.09.2015",
+            "notes": ""
+        },
+        "3.3.0": {
+            "date": "16.07.2015",
+            "notes": ""
+        },
+        "3.2.6": {
+            "date": "27.06.2015",
+            "notes": ""
+        },
+        "3.2.5": {
+            "date": "27.05.2015",
+            "notes": ""
+        },
+        "3.2.4": {
+            "date": "07.06.2015",
+            "notes": ""
+        },
+        "3.2.3": {
+            "date": "02.05.2015",
+            "notes": ""
+        },
+        "3.2.2": {
+            "date": "19.04.2015",
+            "notes": ""
+        },
+        "3.2.1": {
+            "date": "17.04.2015",
+            "notes": ""
+        },
+        "3.1.0": {
+            "date": "17.02.2015",
+            "notes": ""
+        },
+        "3.0.4": {
+            "date": "24.12.2014",
+            "notes": ""
+        },
+        "3.0.3": {
+            "date": "17.12.2014",
+            "notes": ""
+        },
+        "3.0.2": {
+            "date": "14.12.2014",
+            "notes": ""
+        },
+        "2.5.1": {
+            "date": "11.11.2014",
+            "notes": ""
+        },
+        "2.5.0": {
+            "date": "23.10.2014",
+            "notes": "Explore a vast world on your motorcycle. Compete against your friends on Global Leaderboards. Master physics-based tracks to challenge the world's top riders for the best times. Race your motorcycle through a world of adventure, crazy characters, and unfairly addictive tracks!\nExperience the ULTIMATE skill-based RACING game on your smartphone and tablet!\nACCEPT NO SUBSTITUTES! Physics-based racing FINALLY PERFECTED for the touch screen!"
+        },
+        "2.2.1": {
+            "date": "01.10.2014",
+            "notes": ""
+        },
+        "2.2.0": {
+            "date": "11.09.2014",
+            "notes": ""
+        },
+        "2.0.3": {
+            "date": "26.08.2014",
+            "notes": ""
+        },
+        "2.0.2": {
+            "date": "21.08.2014",
+            "notes": ""
+        },
+        "2.0.1": {
+            "date": "14.07.2014",
+            "notes": ""
+        },
+        "2.0.0": {
+            "date": "11.07.2014",
+            "notes": ""
+        },
+        "1.5.0": {
+            "date": "03.06.2014",
+            "date": "14.06.2014",
+            "notes": "Explore a vast world on your motorcycle. Compete against your friends on Global Leaderboards. Master physics-based tracks to challenge the world's top riders for the best times. Race your motorcycle through a world of adventure, crazy characters, and unfairly addictive tracks!\nExperience the ULTIMATE skill-based RACING game on your smartphone and tablet!"
+        },
+        "1.0.2": {
+            "date": "22.05.2014",
+            "notes": "Explore a vast world on your motorcycle. Compete against your friends on Global Leaderboards. Master physics-based tracks to challenge the world's top riders for the best times. Race your motorcycle through a world of adventure, crazy characters, and unfairly addictive tracks!\nExperience the ULTIMATE skill-based RACING game on your smartphone and tablet!"
+        },
+        "1.0.0": {
+            "date": "12.05.2014",
+            "date": "22.05.2014",
+            "notes": "Explore a vast world on your motorcycle. Compete against your friends on Global Leaderboards. Master physics-based tracks to challenge the world's top riders for the best times. Race your motorcycle through a world of adventure, crazy characters, and unfairly addictive tracks!\nExperience the ULTIMATE skill-based RACING game on your smartphone and tablet!",
+            "youtube": "https://www.youtube.com/watch?v=4QkWauePAaw"
+        }
     }
-  ]
 }
