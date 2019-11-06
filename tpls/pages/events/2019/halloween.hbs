@@ -6,15 +6,24 @@
 
     {{#content "styles" mode="append"}}
         <style>
+            body {
+                padding: 6px;
+            }
+            * {
+                box-sizing: border-box;
+            }
             .hunt-container {
                 display: flex;
                 flex-wrap: wrap;
-                color: #d1c086;
-                -webkit-text-stroke-width: 1px;
-                -webkit-text-stroke-color: #4e432f;
+                color: #fadda1;
+                text-shadow:
+                        -1px -1px 0 #443925,
+                        1px -1px 0 #443925,
+                        -1px 1px 0 #443925,
+                        1px 1px 0 #443925;
             }
             h1 {
-                color: orangered;
+                color: #fadda1;
                 margin: 8px;
                 margin-right: 16px;
                 line-height: 12px;
@@ -23,35 +32,45 @@
             }
             h1 span {
                 font-size: 12px;
+                color: orangered;
             }
             .content {
-                background: white;
-                padding: 10px;
+                background: orangered;
+                padding: 6px;
+                border-radius: 20px;
             }
             .letter {
+                min-width: 52px;
                 font-size: 37px;
                 background: orangered;
                 border-radius: 20px;
                 padding: 0 10px;
-                margin: 10px;
+                margin: 6px;
+                text-align: center;
             }
             .track {
                 white-space: nowrap;
-                margin: 10px;
+                margin: 6px;
                 padding: 5px 10px;
                 background-size: cover;
                 background-repeat: no-repeat;
                 border-radius: 20px;
                 position: relative;
+                border: solid 3px #2e180a;
             }
             .track__badge {
                 background: orangered;
                 text-align: center;
                 line-height: 20px;
+                border-radius: 20px;
+                border: solid 1px orangered;
             }
             .track__locations {
                 display: flex;
                 flex-wrap: wrap;
+            }
+            .track__locations img {
+                border: solid 1px #fadda1;
             }
             .track__badge,
             .track__locations img {
@@ -59,8 +78,8 @@
                 width: 20px;
                 height: 20px;
                 margin-right: 5px;
-                border: solid 1px #fff;
             }
+
             {{#with ../../gfx}}
                 {{#each images.envs}}
                     .trackenv--{{@key}}{
