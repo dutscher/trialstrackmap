@@ -1559,7 +1559,7 @@
     "oid": 1278,
     "env": 0,
     "world": 2,
-    "case": "3rd Anniversary"
+    "ani": 3
   },
   // Kaiju Canyon
   {
@@ -1955,6 +1955,7 @@
   {
     "id": 299,
     "oid": 1363,
+    "ani": 4,
     "env": 4,
     "world": 2
   },

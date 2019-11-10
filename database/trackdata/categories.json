@@ -2,19 +2,11 @@
   "alias": {
     "treasure-pieces": "treasure"
   },
-  "hunt": {
+  "all": {
     "20": {
       "name": "Treasure Hunt 2016",
       "class": "treasure-hunt",
       "color": "935A05"
-    }
-  },
-  "all": {
-    "19": {
-      "name": "Treasure Hunt Places",
-      "class": "treasure",
-      "color": "AFDD23",
-      "noneGameCategory": true
     },
     "6": {
       "name": "Data Cube",
@@ -108,7 +100,6 @@
       "class": "petrol-falls",
       "color": "3556B2"
     },
-
     "21": {
       "name": "Youtube",
       "class": "youtube",
@@ -194,7 +185,7 @@
       "color": "EC7000"
     },
     "37": {
-      "name": "Winter 2018",
+      "name": "Winter Trials Holiday Run! 2018",
       "class": "winter-2018",
       "color": "FFFFFF"
     },

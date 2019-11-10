@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2560" height="2560">
+    <defs>
+        <filter id="filter">
+            <feGaussianBlur stdDeviation="5"/>
+        </filter>
+        <mask id="mask">
+            <ellipse cx="231" cy="1018" rx="80" ry="80" fill="white" filter="url(#filter)"></ellipse>
+            <ellipse cx="407" cy="1106" rx="80" ry="80" fill="white" filter="url(#filter)"></ellipse>
+            <ellipse cx="480" cy="1233" rx="80" ry="80" fill="white" filter="url(#filter)"></ellipse>
+            <ellipse cx="356" cy="1347" rx="80" ry="80" fill="white" filter="url(#filter)"></ellipse>
+        </mask>
+    </defs>
+
+    <image xlink:href="http://i.imgur.com/9hqP9zO.jpg" width="2560" height="2560" mask="url(#mask)"></image>
+</svg>
+
+<img src="http://i.imgur.com/9hqP9zO.jpg" alt="" />
+
+<style>
+    img {
+        width: 2560px;
+        height: 2560px;
+        mask: url(#mask);
+    }
+</style>
