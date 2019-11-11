@@ -108,8 +108,7 @@
             }
 
             .cell.cell--letter {
-                background: #EC7000;
-                opacity: 0.5;
+                padding: 8px;
             }
 
             .hunt-container .medals {
@@ -355,7 +354,7 @@
                 </div>
             </div>
             <div class="hunt-container">
-                {{#ranges '["A-M","N-Z"]'}}
+                {{#ranges '["A-G","H-R","S-Z"]'}}
                     <table>
                         <thead>
                             <th width="50%"></th>
@@ -381,7 +380,7 @@
                                     <td>
                                         {{../trackName}}
                                     </td>
-                                    <td title="{{locations}}" data-trackname="{{../trackName}}">
+                                    <td data-locations="{{locations}}" data-trackname="{{../trackName}}">
                                         {{#each images}}
                                             <a onclick="openModal(this)"
                                                target="_blank"
