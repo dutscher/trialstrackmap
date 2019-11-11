@@ -122,11 +122,11 @@
             }
 
             {{#with ../../gfx}}
-                    {{#each images.envs}}
-                    .trackenv--{{@key}} {
-                        background-image: url({{hoster this ../hoster}});
-                    }
-                    {{/each}}
+                {{#each images.envs}}
+                .trackenv--{{@key}} {
+                    background-image: url({{hoster this ../hoster}});
+                }
+                {{/each}}
             {{/with}}
 
             .modal {
