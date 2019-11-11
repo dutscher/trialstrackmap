@@ -22,6 +22,16 @@
             return content;
         });
 
+        Handlebars.registerHelper("ranges", function (rangesJson, block) {
+            var content = "";
+            var ranges = JSON.parse(rangesJson);
+            for (var i = 0; i < ranges.length; ++i)
+                content += block.fn({
+                    range: ranges[i],
+                });
+            return content;
+        });
+
         /**
          * Loop helper.
          *
