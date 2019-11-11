@@ -3,141 +3,212 @@
     {{#content "title" mode="prepend"}}
         Halloween 2019 -
     {{/content}}
-
     {{#content "styles" mode="append"}}
         <style>
             body {
-                padding: 6px;
+                padding: 8px;
             }
+
             * {
                 box-sizing: border-box;
             }
+
+            .fb {
+                background: #fadda1;
+                padding: 6px;
+                border-radius: 8px;
+            }
+
             .hunt-container {
                 display: flex;
-                flex-wrap: wrap;
                 color: #fadda1;
-                text-shadow:
-                        -1px -1px 0 #443925,
-                        1px -1px 0 #443925,
-                        -1px 1px 0 #443925,
-                        1px 1px 0 #443925;
+                text-shadow: -1px -1px 0 #443925,
+                1px -1px 0 #443925,
+                -1px 1px 0 #443925,
+                1px 1px 0 #443925;
             }
+
             h1 {
                 color: #fadda1;
                 margin: 8px;
                 margin-right: 16px;
                 line-height: 12px;
                 padding: 24px 0;
-                -webkit-text-stroke-width: 0;
             }
+
             h1 span {
                 font-size: 12px;
-                color: orangered;
+                color: #EC7000;
             }
-            .content {
-                background: orangered;
-                padding: 6px;
-                border-radius: 20px;
+
+            table {
+                margin: 8px;
+                border-spacing: 0;
             }
-            .letter {
-                min-width: 52px;
-                font-size: 37px;
-                background: orangered;
-                border-radius: 20px;
-                padding: 0 10px;
-                margin: 6px;
-                text-align: center;
-            }
-            .track {
-                white-space: nowrap;
-                margin: 6px;
-                padding: 5px 10px;
-                background-size: cover;
-                background-repeat: no-repeat;
-                border-radius: 20px;
+            tr {
                 position: relative;
-                border: solid 3px #2e180a;
             }
-            .track__badge {
-                background: orangered;
-                text-align: center;
-                line-height: 20px;
-                border-radius: 20px;
-                border: solid 1px orangered;
+            tr:hover {
+                color: #EC7000;
             }
-            .track__locations {
-                display: flex;
-                flex-wrap: wrap;
+            td {
+                min-width: 10px;
+                white-space: nowrap;
+                vertical-align: middle;
+                padding: 0 6px;
             }
-            .track__locations img {
-                border: solid 1px #fadda1;
+            td i {
+                width: 15px!important;
+                height: 15px!important;;
             }
-            .track__badge,
-            .track__locations img {
+            i.medal-platinum {
+                background: url(//i.imgur.com/jAFrKkL.png);
+            }
+            i.medal-gold {
+                background: url(//i.imgur.com/E9nANVv.png);
+            }
+            i.medal-silver {
+                background: url(//i.imgur.com/OJmAWbw.png);
+            }
+            i.faults {
+                background: url(//i.imgur.com/ZDhEx6w.png);
+            }
+            td a {
+                display: inline-block;
+                margin-top: 6px;
+                border: solid 3px #fadda1;
+            }
+
+            td a:hover {
+                border-color: #EC7000;
+            }
+
+            td img {
                 display: block;
-                width: 20px;
-                height: 20px;
-                margin-right: 5px;
+                width: 30px;
+                height: 30px;
+            }
+
+            .cell.cell--letter {
+                background: #EC7000;
+                opacity: 0.5;
+            }
+
+            .medals {
+                display: block;
+                font-size: 12px;
+            }
+
+            .trackenv {
+                background-size: cover;
+                background-position-y: center;
             }
 
             {{#with ../../gfx}}
-                {{#each images.envs}}
-                    .trackenv--{{@key}}{
-                        background-image: url({{hoster this ../hoster}});
-                    }
-                {{/each}}
+            {{#each images.envs}}
+            .trackenv--{{@key}} {
+                background-image: url({{hoster this ../hoster}});
+            }
+            {{/each}}
             {{/with}}
-            </style>
+        </style>
     {{/content}}
 
     {{#content "body"}}
         {{#with ../../hunt-events.database.events.hunt.halloween_2019}}
-        <div class="hunt-container">
-            <h1>
-                Halloween Heat 2019<br />
-                <span>
-                    {{#hunt-event-stats huntData=this}}
-                        Tracks: {{tracks}} /
+            <div class="hunt-container">
+                <h1>
+                    Halloween Heat 2019<br/>
+                    <span>
+                        {{#hunt-event-stats huntData=this}}
+                            Tracks: {{tracks}} /
                         Locations: {{locations}}
-                    {{/hunt-event-stats}}
-                </span>
-            </h1>
-            {{> facebook-script}}
-            <div class="content">
-                {{> facebook-div url="https://www.facebook.com/trialstrackmap" width=250}}
+                        {{/hunt-event-stats}}
+                    </span>
+                </h1>
+                {{> facebook-script}}
+                <div class="fb">
+                    {{> facebook-div url="https://www.facebook.com/trialstrackmap" width=250}}
+                </div>
             </div>
-        </div>
-        <div class="hunt-container">
-        {{#hunt-event-sorter
-            tracksData=this
-            i18nFile="database/i18n/en.json"}}
-            {{#if renderLetter}}
-                <div class="letter">
-                    {{letter}}
-                </div>
-            {{/if}}
-            {{#hunt-event
-                huntData=huntData
-                id=trackId
-                trackName=trackName
-                trackIdsFile="database/trackdata/ids.json"
-            }}
-                <div class="track trackenv--{{trackEnv}}">
-                    {{trackName}}
-                    <div class="track__locations">
-                        <div class="track__badge">
-                            {{locations}}
-                        </div>
-                    {{#each images}}
-                        <a href="{{image}}" target="_blank" title="{{description}} found by {{founder}}">
-                            <img src="{{thumb}}" />
-                        </a>
-                    {{/each}}
-                    </div>
-                </div>
-            {{/hunt-event}}
-        {{/hunt-event-sorter}}
-        </div>
+            <div class="hunt-container">
+                <table>
+                    {{#hunt-event-sorter
+                            tracksData=this
+                            chunks="A-M"
+                            medalFile="database/trackdata/times.json"
+                            i18nFile="database/i18n/en.json"}}
+                        {{#if renderLetter}}
+                            <tr>
+                                <td colspan="4" class="cell cell--letter">
+                                    {{letter}}
+                                </td>
+                            </tr>
+                        {{/if}}
+                        {{#hunt-event
+                                huntData=huntData
+                                id=trackId
+                                trackIdsFile="database/trackdata/ids.json"
+                        }}
+                            <tr class="trackenv trackenv--{{trackEnv}}">
+                                <td>
+                                    {{../trackName}}
+                                </td>
+                                <td title="{{locations}}">
+                                    {{#each images}}
+                                        <a href="{{image}}" target="_blank" title="{{description}} found by {{founder}}">
+                                            <img src="{{thumb}}"/>
+                                        </a>
+                                    {{/each}}
+                                </td>
+                                <td>
+                                    <span class="medals">
+                                        {{hunt-event-medals ../medals}}
+                                    </span>
+                                </td>
+                            </tr>
+                        {{/hunt-event}}
+                    {{/hunt-event-sorter}}
+                </table>
+                <table>
+                    {{#hunt-event-sorter
+                            tracksData=this
+                            chunks="N-Z"
+                            medalFile="database/trackdata/times.json"
+                            i18nFile="database/i18n/en.json"}}
+                        {{#if renderLetter}}
+                            <tr>
+                                <td colspan="4" class="cell cell--letter">
+                                    {{letter}}
+                                </td>
+                            </tr>
+                        {{/if}}
+                        {{#hunt-event
+                                huntData=huntData
+                                id=trackId
+                                trackIdsFile="database/trackdata/ids.json"
+                        }}
+                            <tr class="trackenv trackenv--{{trackEnv}}">
+                                <td>
+                                    {{../trackName}}
+                                </td>
+                                <td title="{{locations}}">
+                                    {{#each images}}
+                                        <a href="{{image}}" target="_blank" title="{{description}} found by {{founder}}">
+                                            <img src="{{thumb}}"/>
+                                        </a>
+                                    {{/each}}
+                                </td>
+                                <td>
+                                    <span class="medals">
+                                        {{hunt-event-medals ../medals}}
+                                    </span>
+                                </td>
+                            </tr>
+                        {{/hunt-event}}
+                    {{/hunt-event-sorter}}
+                </table>
+            </div>
         {{/with}}
     {{/content}}
 {{/extend}}
