@@ -46,7 +46,9 @@
     "40": "Barter Town",
     "41": "Rocky Chambers",
     "42": "Wasteland",
-    "43": "Blazing Hop"
+    "43": "Blazing Hop",
+    "44": "Crystal Flow",
+    "45": "Flora Crossing"
   },
   "paintjobs": {
     "1": {"title": "Neon Paintjob for Tango", "sprite": "tango-neon"},
@@ -82,7 +84,8 @@
     "31": {"title": "Sand Storm for Mantis", "sprite": "mantis-sandstorm"},
     "32": {"title": "Yellow Submarine for Phantom", "sprite": "phantom-yellow-submarine"},
     "33": {"title": "Black Jack PJ for Bronco", "sprite": "bronco-blackjack"},
-    "34": {"title": "Bad Bone PJ for Bronco", "sprite": "bronco-bad-bone"}
+    "34": {"title": "Bad Bone PJ for Bronco", "sprite": "bronco-bad-bone"},
+    "35": {"title": "Swamp Monster for Donkey", "sprite": "donkey-swamp-monster"}
   },
   "costums": {
     "1": {"title": "Ninja Head", "selector": "the-ninja", "part": "head"},

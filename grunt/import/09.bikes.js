@@ -18,6 +18,15 @@ module.exports = function (shared) {
     const sharp = require("sharp");
     const chunks = require("buffer-chunks");
 
+    shared.grunt.task.run([
+        "import-09-bikes-atl",
+        "import-09-bikes-copy",
+        "import-09-bikes-data",
+        "import-09-bikes-prepare-sprite",
+        "import-09-bikes-sprite",
+        "import-09-bikes-sprite-css",
+    ]);
+
     shared.grunt.registerTask("import-09-bikes-atl", function () {
         const done = this.async();
         let count = 0;
@@ -450,13 +459,4 @@ module.exports = function (shared) {
         console.log("write sprite css");
         shared.fs.writeFileSync(`css/sprites/paintjobs.less`, css);
     });
-
-    shared.grunt.task.run([
-        "import-09-bikes-atl",
-        "import-09-bikes-copy",
-        "import-09-bikes-data",
-        "import-09-bikes-prepare-sprite",
-        "import-09-bikes-sprite",
-        "import-09-bikes-sprite-css",
-    ]);
 };

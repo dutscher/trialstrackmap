@@ -88,11 +88,11 @@ module.exports = {
             .replace("Top", "Head")
             .replace("Middle", "Torso")
             .replace("middle", "Torso")
-            .replace("Pants", "Pant")
-            .replace("Leg", "Pant")
-            .replace("Lower", "Pant")
-            .replace("Bottom", "Pant")
-            .replace("bottom", "Pant")
+            .replace("Pant", "Pants")
+            .replace("Leg", "Pants")
+            .replace("Lower", "Pants")
+            .replace("Bottom", "Pants")
+            .replace("bottom", "Pants")
             .replace("SUTE", "Suite")
     },
     pjMatcher: [
@@ -151,6 +151,7 @@ module.exports = {
         cans: {
             "paintjob-8-leaked-0-icon.png": "../trialstrackmap-gfx/garage/08-berserker/00-cassidy-icon.png",
             "paintjob-6-leaked-0-icon.png": "../trialstrackmap-gfx/garage/06-marauder/00-leroy-icon.png",
+            "paintjob-19-leaked-0-icon.png": "../trialstrackmap-gfx/garage/10-donkey/00-swamp-icon.png",
         }
     },
     idsOfSeasonPrizes: [
