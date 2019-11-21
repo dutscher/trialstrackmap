@@ -479,6 +479,13 @@ module.exports = function (grunt, http, https, path, fs, fsExt) {
                 });
             }
             return improveTime;
+        },
+        toTitleCase: function(phrase){
+            return phrase
+                .toLowerCase()
+                .split(' ')
+                .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+                .join(' ');
         }
     };
 };

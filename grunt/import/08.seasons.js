@@ -122,19 +122,20 @@ module.exports = function (shared) {
         function findPrize(type, value, seasonComment) {
             let returnData,
                 foundPrize;
+            const prizeNeedle = value.toLowerCase().replace(/_/g, ' ');
             // console.log("findPrize", arguments)
             switch (type) {
                 case "track":
                     foundPrize = Object.keys(prizesJSON.tracks).filter(function (id) {
                         const track = prizesJSON.tracks[id];
-                        return track.toLowerCase() === value.toLowerCase();
+                        return track.toLowerCase() === prizeNeedle;
                     });
                     returnData = parseInt(foundPrize[0]);
                     break;
                 case "costum":
                     foundPrize = Object.keys(prizesJSON.costums).filter(function (id) {
                         const costum = prizesJSON.costums[id];
-                        return costum.title.toLowerCase() === value.toLowerCase();
+                        return costum.title.toLowerCase() === prizeNeedle;
                     });
                     returnData = parseInt(foundPrize[0]);
                     break;
@@ -142,14 +143,18 @@ module.exports = function (shared) {
                 case "skin":
                     foundPrize = Object.keys(prizesJSON.paintjobs).filter(function (id) {
                         const paintjob = prizesJSON.paintjobs[id];
-                        return paintjob.title.toLowerCase().indexOf(value.toLowerCase()) !== -1;
+                        return paintjob.title.toLowerCase().indexOf(prizeNeedle) !== -1;
                     });
                     returnData = parseInt(foundPrize[0]);
                     break;
             }
 
             if (!foundPrize || foundPrize.length === 0 || !returnData) {
-                console.warn("NO PRIZE FOUND FOR", `type: '${type}'`, `value: '${value}'\ncomment:`, seasonComment);
+                console.warn(
+                    "NO PRIZE FOUND FOR",
+                    `type: '${type}'`,
+                    `prizeNeedle: '${prizeNeedle}'`,
+                    `comment: '${seasonComment}'`);
             }
 
             return returnData;
@@ -193,6 +198,7 @@ module.exports = function (shared) {
                         .toLowerCase().replace("season", ""))),
                     titleShort = shared._.trim(settings.season_title
                         .toLowerCase().replace("season", "")).replace(/ /g, "-"),
+                    titleBonxy = shared.toTitleCase(settings.season_title).replace(/ /g, "+"),
                     date = new Date(settings.season_start * 1000),
                     dateEnd = new Date(settings.season_end * 1000),
                     fileJson = id + "." + titleShort + ".json",
@@ -207,7 +213,7 @@ module.exports = function (shared) {
                         duration: match.friendly_match_duration_hours + "h",
                         free_showdowns: match.free_tickets_max + 1,
                         ticket_regain: match.free_tickets_interval_minutes + "m",
-                        stats: "http://trials.bonxy.net/the-bunker/",
+                        stats: "http://trials.bonxy.net/the-bunker/" + titleBonxy,
                         total_legends: 0,
                         prizes: []
                     };
@@ -254,6 +260,29 @@ module.exports = function (shared) {
             console.log("# FINISHED");
         }
 
+        function readSeasonConfig(type) {
+            const options = shared.getRequestOpts(
+                `/TRIAG_${useBetaServer ? "AN_LNCH_A" : "IP_BETA_B"}/public/pvp_matches/v1/${type}`
+            );
+            const importDirConfig = importDir + "config/";
+            shared.ensureDirectoryExistence(importDirConfig + "test.json");
+            const fileName = importDirConfig + importSeasonID + `.${type}.json`;
+
+            const req = shared.https.request(options, function (res) {
+                res.on("data", function (data) {
+                    const json = JSON.parse(data);
+                    shared.fs.writeFileSync(fileName, JSON.stringify(json, null, 2));
+                });
+            });
+
+            req.on("error", e => {
+                console.error(e);
+                done();
+            });
+
+            req.end();
+        }
+
         function readSeasonsFromServer(callback) {
             const options = shared.getRequestOpts(
                 // "/TRIAG_AN_LNCH_A/public/pvp_matches/v1/pvp_config",
@@ -271,7 +300,7 @@ module.exports = function (shared) {
                 });
             });
 
-            req.on("error", function (e) {
+            req.on("error", e => {
                 console.error(e);
                 done();
             });
@@ -280,9 +309,12 @@ module.exports = function (shared) {
         }
 
         shared.getUbisoftTicket(function () {
+            readSeasonConfig('pvp_config');
+            readSeasonConfig('matches');
+
             readSeasonsFromServer(function () {
                 readSeasonFiles();
-                done();
+                //done();
             });
         });
     });
@@ -296,7 +328,7 @@ module.exports = function (shared) {
         const srcPath = "build/season-images";
         let destPath = "../trialstrackmap-gfx/seasons";
 
-        if(!shared.fs.existsSync(destPath)){
+        if (!shared.fs.existsSync(destPath)) {
             console.error('no gfx repo found new season image goes into', srcPath);
             destPath = srcPath;
         }
