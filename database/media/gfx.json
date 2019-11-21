@@ -158,6 +158,10 @@
       "src": "#1/NRXPcVI.png",
       "selector": "i.lang.lang_in"
     },
+    "country_at": {
+      "src": "#1/Wja2P4C.png",
+      "selector": "i.lang.lang_at"
+    },
     "timer": {
       "src": "#1/GLuwunX.png",
       "selector": "i.timer"
