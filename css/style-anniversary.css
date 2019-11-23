@@ -3,6 +3,10 @@ body {
     background: #1B0702
 }
 
+.compare {
+    display: flex;
+}
+
 img {
     position: relative;
     z-index: 0;

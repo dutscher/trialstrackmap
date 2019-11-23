@@ -1,7 +1,7 @@
 {{#extend "default"}}
     {{#content "title-override"}}true{{/content}}
     {{#content "title" mode="prepend"}}
-        Anniversary Page 2015 -
+        Anniversary Page -
     {{/content}}
 
     {{#content "styles" mode="append"}}
@@ -11,8 +11,15 @@
     {{#content "body"}}
         <div ng-init="pageReady = false" ng-hide="pageReady" class="loader spin"></div>
         <div class="page-body is-loading" data-event="data:loaded" ng-class="{'is-ready':pageReady}">
-            {{> navigation title="Anniversary Page 2015"}}
-            <img ng-src="//i.imgur.com/bLqIuu9.jpg" ng-load="pageReady = true" alt="one year trials frontier" />
+            {{> navigation title="Anniversary Page - 10.04.2014 - 5 Years"}}
+            <div class="compare">
+                <div>
+                    <img ng-src="//i.imgur.com/bLqIuu9.jpg" ng-load="pageReady = true" alt="10.04.2015 - one year trials frontier" data-link="https://www.facebook.com/trialsfrontier.game/photos/a.243487692484276/462217643944612/?type=3&theater" />
+                </div>
+                <div>
+                    <img ng-src="//i.imgur.com/Q8HdAti.jpg" ng-load="pageReady = true" alt="10.01.2017 - 50 mio downloads" data-link="https://www.facebook.com/trialsfrontier.game/photos/a.753004518199255/753005034865870/?type=3&theater" />
+                </div>
+            </div>
         </div>
     {{/content}}
 {{/extend}}

@@ -24,6 +24,7 @@
                             <thead>
                                 <tr>
                                     <th class="rider-name" width="25"></th>
+                                    <th class="rider-name" width="25"></th>
                                     <th class="rider-name" width="200">
                                         <i class="device-android"></i>
                                         {%'page.worldRecordsTable.headRider'|translate%}
@@ -36,7 +37,10 @@
                             <tbody>
                                 <tr ng-repeat="rider in sortedRider.android">
                                     <td class="center rider-name">{%::$index+1|leadingZero%}.</td>
-                                    <td class="center rider-name" ng-bind-html="::rider.riderName|nameWithFlag" width="150"></td>
+                                    <td class="rider-name">
+                                        <i ng-if="rider.country !== ''" class="lang lang_{% ::rider.country %} beside-name no-margin"></i>
+                                    </td>
+                                    <td class="center rider-name" ng-bind-html="::rider.riderName" width="150"></td>
                                     <td class="center" show-amount="{%::rider.WRAmount.android.normal%}" type="normal" name="{%::rider.riderName%}"></td>
                                     <td class="center" show-amount="{%::rider.WRAmount.android.donkey%}" type="donkey" name="{%::rider.riderName%}"></td>
                                     <td class="center" show-amount="{%::rider.WRAmount.android.crazy%}" type="crazy" name="{%::rider.riderName%}"></td>
@@ -46,6 +50,7 @@
                         <table class="w50">
                             <thead>
                             <tr>
+                                <th class="rider-name" width="25"></th>
                                 <th class="rider-name" width="25"></th>
                                 <th class="rider-name" width="200">
                                     <i class="device-ios"></i>
@@ -59,7 +64,10 @@
                             <tbody>
                             <tr ng-repeat="rider in sortedRider.ios">
                                 <td class="center rider-name">{%::$index+1|leadingZero%}.</td>
-                                <td class="center rider-name" ng-bind-html="::rider.riderName|nameWithFlag" width="150"></td>
+                                <td class="rider-name">
+                                    <i ng-if="rider.country" class="lang lang_{% ::rider.country %} beside-name no-margin"></i>
+                                </td>
+                                <td class="center rider-name" ng-bind-html="::rider.riderName" width="150"></td>
                                 <td class="center" show-amount="{%::rider.WRAmount.ios.normal%}" type="normal" name="{%::rider.riderName%}"></td>
                                 <td class="center" show-amount="{%::rider.WRAmount.ios.donkey%}" type="donkey" name="{%::rider.riderName%}"></td>
                                 <td class="center" show-amount="{%::rider.WRAmount.ios.crazy%}" type="crazy" name="{%::rider.riderName%}"></td>

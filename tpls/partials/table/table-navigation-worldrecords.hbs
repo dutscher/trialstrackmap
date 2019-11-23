@@ -3,10 +3,8 @@
     <!--|-->
     <!--<a href="/table-improve.html" class="classic-link" target="_blank">{%'page.leftSidebar.goToImprove'|translate%}</a>-->
     |
-    {{> language-select}}
-    |
     {%'page.worldRecordsTable.ridersAmount'|translate%}: {% allRider %}
-    / last update: {% lastUpdate %}
+    / last update: {% lastUpdate|localeDate %}
     <br />
     {{!
     {%'page.worldRecordsTable.filter'|translate%}:
