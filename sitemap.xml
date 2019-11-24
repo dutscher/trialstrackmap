@@ -11,11 +11,6 @@
         <priority>0.90</priority>
     </url>
     <url>
-        <loc>http://trialstrackmap.sb-f.de/fixlist.html</loc>
-        <changefreq>monthly</changefreq>
-        <priority>0.90</priority>
-    </url>
-    <url>
         <loc>http://trialstrackmap.sb-f.de/seasons.html</loc>
         <changefreq>monthly</changefreq>
         <priority>0.80</priority>
@@ -32,8 +27,8 @@
     </url>
     <url>
         <loc>http://trialstrackmap.sb-f.de/wr-rider-temple.html</loc>
-        <changefreq>monthly</changefreq>
-        <priority>0.80</priority>
+        <changefreq>daily</changefreq>
+        <priority>1.00</priority>
     </url>
     <url>
         <loc>http://trialstrackmap.sb-f.de/table-improve.html</loc>
@@ -47,7 +42,7 @@
     </url>
     <url>
         <loc>http://trialstrackmap.sb-f.de/anniversary.html</loc>
-        <changefreq>monthly</changefreq>
+        <changefreq>yearly</changefreq>
         <priority>0.80</priority>
     </url>
 </urlset>

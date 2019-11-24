@@ -1,7 +1,6 @@
 User-agent: *
 
 Allow: /trackfinder.html
-Allow: /fixlist.html
 Allow: /seasons.html
 Allow: /home-shack.html
 Allow: /garage.html

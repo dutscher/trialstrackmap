@@ -1,5 +1,6 @@
 {
   "offline": false,
+  "flags": "https://github.com/madebybowtie/FlagKit/tree/master/Assets/PNG",
   "images": {
     "trackmaps": {
       "1": {
@@ -161,6 +162,46 @@
     "country_at": {
       "src": "#1/Wja2P4C.png",
       "selector": "i.lang.lang_at"
+    },
+    "country_lt": {
+      "src": "#1/4AAQGns.png",
+      "selector": "i.lang.lang_lt"
+    },
+    "country_nl": {
+      "src": "#1/rHcMF0W.png",
+      "selector": "i.lang.lang_nl"
+    },
+    "country_ua": {
+      "src": "#1/yQglRA5.png",
+      "selector": "i.lang.lang_ua"
+    },
+    "country_ro": {
+      "src": "#1/WBFzpyp.png",
+      "selector": "i.lang.lang_ro"
+    },
+    "country_gr": {
+      "src": "#1/GBxwG5s.png",
+      "selector": "i.lang.lang_gr"
+    },
+    "country_it": {
+      "src": "#1/Hn8NJ8H.png",
+      "selector": "i.lang.lang_it"
+    },
+    "country_mx": {
+      "src": "#1/dNsieKL.png",
+      "selector": "i.lang.lang_mx"
+    },
+    "country_hu": {
+      "src": "#1/LQbYRHu.png",
+      "selector": "i.lang.lang_hu"
+    },
+    "country_pl": {
+      "src": "#1/pfr2Joq.png",
+      "selector": "i.lang.lang_pl"
+    },
+    "country_sk": {
+      "src": "#1/yA76Fwl.png",
+      "selector": "i.lang.lang_sk"
     },
     "timer": {
       "src": "#1/GLuwunX.png",
