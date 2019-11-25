@@ -6,7 +6,7 @@
     {{/content}}
 
     {{#content "styles" mode="prepend"}}
-        <link rel="stylesheet" type="text/css" href="/dist/css/table.css{{cacheBuster}}" />
+        <link rel="stylesheet" type="text/css" href="/dist/css/table.css{{cacheBuster}}"/>
     {{/content}}
 
     {{#content "ctrl"}}ng-controller="trackData"{{/content}}
@@ -23,11 +23,18 @@
                         <table class="w50">
                             <thead>
                                 <tr>
-                                    <th class="rider-name" width="25"></th>
-                                    <th class="rider-name" width="25"></th>
+                                    <th class="rider-name" colspan="2" rowspan="2" width="60"></th>
                                     <th class="rider-name" width="150">
-                                        <i class="device-android"></i>
                                         {%'page.worldRecordsTable.headRider'|translate%}
+                                    </th>
+                                    <th colspan="3" class="rider-name">
+                                        <i class="device-android"></i>
+                                        Android
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th class="rider-name" width="150">
+                                        {% sortedRider.android.length %}
                                     </th>
                                     <th table-sorter="android|normal"><i class="global"></i></th>
                                     <th table-sorter="android|donkey"><i class="donkey"></i></th>
@@ -35,26 +42,35 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr ng-repeat="rider in sortedRider.android">
-                                    <td class="center rider-name low-letter-space">{%::$index+1|leadingZero%}.</td>
-                                    <td class="rider-name">
-                                        <i ng-if="rider.country !== ''" class="lang lang_{% ::rider.country %} beside-name no-margin"></i>
-                                    </td>
-                                    <td class="center rider-name low-letter-space" ng-bind-html="::rider.riderName"></td>
-                                    <td class="center" show-amount="{%::rider.WRAmount.android.normal%}" type="normal" name="{%::rider.riderName%}"></td>
-                                    <td class="center" show-amount="{%::rider.WRAmount.android.donkey%}" type="donkey" name="{%::rider.riderName%}"></td>
-                                    <td class="center" show-amount="{%::rider.WRAmount.android.crazy%}" type="crazy" name="{%::rider.riderName%}"></td>
-                                </tr>
+                            <tr ng-repeat="rider in sortedRider.android">
+                                <td class="center rider-name low-letter-space">
+                                    {%::$index+1|leadingZero%}.
+                                </td>
+                                <td class="rider-name">
+                                    <i ng-if="rider.country !== ''" class="country country--{% ::rider.country %} beside-name no-margin"></i>
+                                </td>
+                                <td class="center rider-name low-letter-space" ng-bind-html="::rider.riderName"></td>
+                                <td class="center" show-amount="{%::rider.WRAmount.android.normal%}" type="normal" name="{%::rider.riderName%}"></td>
+                                <td class="center" show-amount="{%::rider.WRAmount.android.donkey%}" type="donkey" name="{%::rider.riderName%}"></td>
+                                <td class="center" show-amount="{%::rider.WRAmount.android.crazy%}" type="crazy" name="{%::rider.riderName%}"></td>
+                            </tr>
                             </tbody>
                         </table>
                         <table class="w50">
                             <thead>
                             <tr>
-                                <th class="rider-name" width="25"></th>
-                                <th class="rider-name" width="25"></th>
+                                <th class="rider-name" colspan="2" rowspan="2" width="60"></th>
                                 <th class="rider-name" width="150">
-                                    <i class="device-ios"></i>
                                     {%'page.worldRecordsTable.headRider'|translate%}
+                                </th>
+                                <th colspan="3" class="rider-name">
+                                    <i class="device-ios"></i>
+                                    iOS
+                                </th>
+                            </tr>
+                            <tr>
+                                <th class="rider-name" width="150">
+                                    {% sortedRider.ios.length %}
                                 </th>
                                 <th table-sorter="ios|normal"><i class="global"></i></th>
                                 <th table-sorter="ios|donkey"><i class="donkey"></i></th>
@@ -65,7 +81,7 @@
                             <tr ng-repeat="rider in sortedRider.ios">
                                 <td class="center rider-name low-letter-space">{%::$index+1|leadingZero%}.</td>
                                 <td class="rider-name">
-                                    <i ng-if="rider.country" class="lang lang_{% ::rider.country %} beside-name no-margin"></i>
+                                    <i ng-if="rider.country" class="country country--{% ::rider.country %} beside-name no-margin"></i>
                                 </td>
                                 <td class="center rider-name low-letter-space" ng-bind-html="::rider.riderName"></td>
                                 <td class="center" show-amount="{%::rider.WRAmount.ios.normal%}" type="normal" name="{%::rider.riderName%}"></td>

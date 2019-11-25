@@ -1,6 +1,5 @@
 {
   "offline": false,
-  "flags": "https://github.com/madebybowtie/FlagKit/tree/master/Assets/PNG",
   "images": {
     "trackmaps": {
       "1": {
@@ -21,6 +20,11 @@
         "dim": "2560x2560",
         "dimPath": "320x320"
       }
+    },
+    "countries": {
+      "src": "#1/e21a9G6.png",
+      "selector": "i.country",
+      "sprite": true
     },
     "paintjobs": {
       "src": "#1/Gw8FP4k.png",
@@ -66,142 +70,6 @@
     "medal-platinum": {
       "src": "#1/jAFrKkL.png",
       "selector": "i.medal-platinum"
-    },
-    "i18n_de": {
-      "src": "#1/f2m614V.png",
-      "selector": "i.lang.lang_de"
-    },
-    "i18n_en": {
-      "src": "#1/F5nx4Ls.png",
-      "selector": "i.lang.lang_en"
-    },
-    "i18n_fr": {
-      "src": "#1/E5jKMIo.png",
-      "selector": "i.lang.lang_fr"
-    },
-    "i18n_ru": {
-      "src": "#1/e8AOcGs.png",
-      "selector": "i.lang.lang_ru"
-    },
-    "i18n_it": {
-      "src": "#1/PpPOUEX.png",
-      "selector": "i.lang.lang_it"
-    },
-    "i18n_es": {
-      "src": "#1/Wdl73R9.png",
-      "selector": "i.lang.lang_es"
-    },
-    "i18n_pt": {
-      "src": "#1/V8Oz1hI.png",
-      "selector": "i.lang.lang_pt"
-    },
-    "i18n_cn": {
-      "src": "#1/l0yX5jv.png",
-      "selector": "i.lang.lang_cn"
-    },
-    "i18n_jp": {
-      "src": "#1/OeIlHKL.png",
-      "selector": "i.lang.lang_jp"
-    },
-    "i18n_kp": {
-      "src": "#1/f5JRUH5.png",
-      "selector": "i.lang.lang_kp"
-    },
-    "i18n_br": {
-      "src": "#1/ZcXTA05.png",
-      "selector": "i.lang.lang_br"
-    },
-    "country_us": {
-      "src": "#1/RT79ss2.png",
-      "selector": "i.lang.lang_us"
-    },
-    "country_eg": {
-      "src": "#1/kMvsnzg.png",
-      "selector": "i.lang.lang_eg"
-    },
-    "country_se": {
-      "src": "#1/pbe90JA.png",
-      "selector": "i.lang.lang_co"
-    },
-    "country_co": {
-      "src": "#1/ijWXshk.png",
-      "selector": "i.lang.lang_se"
-    },
-    "country_cz": {
-      "src": "#1/dofaAXL.png",
-      "selector": "i.lang.lang_cz"
-    },
-    "country_hr": {
-      "src": "#1/F3Tuk3t.png",
-      "selector": "i.lang.lang_hr"
-    },
-    "country_no": {
-      "src": "#1/DVZba3L.png",
-      "selector": "i.lang.lang_no"
-    },
-    "country_ru": {
-      "src": "#1/wKaPUzj.png",
-      "selector": "i.lang.lang_ru"
-    },
-    "country_au": {
-      "src": "#1/5xTvWrK.png",
-      "selector": "i.lang.lang_au"
-    },
-    "country_ca": {
-      "src": "#1/IHP5nz4.png",
-      "selector": "i.lang.lang_ca"
-    },
-    "country_et": {
-      "src": "#1/MnlwLDm.png",
-      "selector": "i.lang.lang_et"
-    },
-    "country_in": {
-      "src": "#1/NRXPcVI.png",
-      "selector": "i.lang.lang_in"
-    },
-    "country_at": {
-      "src": "#1/Wja2P4C.png",
-      "selector": "i.lang.lang_at"
-    },
-    "country_lt": {
-      "src": "#1/4AAQGns.png",
-      "selector": "i.lang.lang_lt"
-    },
-    "country_nl": {
-      "src": "#1/rHcMF0W.png",
-      "selector": "i.lang.lang_nl"
-    },
-    "country_ua": {
-      "src": "#1/yQglRA5.png",
-      "selector": "i.lang.lang_ua"
-    },
-    "country_ro": {
-      "src": "#1/WBFzpyp.png",
-      "selector": "i.lang.lang_ro"
-    },
-    "country_gr": {
-      "src": "#1/GBxwG5s.png",
-      "selector": "i.lang.lang_gr"
-    },
-    "country_it": {
-      "src": "#1/Hn8NJ8H.png",
-      "selector": "i.lang.lang_it"
-    },
-    "country_mx": {
-      "src": "#1/dNsieKL.png",
-      "selector": "i.lang.lang_mx"
-    },
-    "country_hu": {
-      "src": "#1/LQbYRHu.png",
-      "selector": "i.lang.lang_hu"
-    },
-    "country_pl": {
-      "src": "#1/pfr2Joq.png",
-      "selector": "i.lang.lang_pl"
-    },
-    "country_sk": {
-      "src": "#1/yA76Fwl.png",
-      "selector": "i.lang.lang_sk"
     },
     "timer": {
       "src": "#1/GLuwunX.png",

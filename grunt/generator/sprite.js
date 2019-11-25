@@ -2,7 +2,6 @@ module.exports = function () {
     const _ = require("lodash"),
         fsExt = require("fs-extra"),
         pathForSprites = "css/sprites/",
-        pathForIcons = "css/icons/",
         firstFileRow = "// this file is generated via grunt/generator/sprite.js\n";
 
     function replaceHoster (hoster, path) {
@@ -23,7 +22,6 @@ module.exports = function () {
             this.generatePaintjobsToImgur(vars);
             this.generateCostums();
             this.generateMapColors();
-            this.generateI18NIcons();
 
             return _.extend({},
                 vars
@@ -159,22 +157,6 @@ module.exports = function () {
                 css += "." + tier.class + "-bg{background-color:#" + tier.color + "}\n";
             });
 
-            // write file
-            fsExt.writeFileSync(pathDest, css);
-        },
-        generateI18NIcons: () => {
-            const gfxJSON = require("../../database/media/gfx.json"),
-                pathDest = `${pathForIcons}i18n-icons.less`;
-            let css = firstFileRow;
-
-            Object.keys(gfxJSON.images).forEach(function (iconKey) {
-                var icon = gfxJSON.images[iconKey];
-                if (iconKey.indexOf("i18n_") === 0) {
-                    css += icon.selector + " {\n";
-                    css += " background-image: url('" + replaceHoster(gfxJSON.hoster, icon.src) + "');\n";
-                    css += " }\n";
-                }
-            });
             // write file
             fsExt.writeFileSync(pathDest, css);
         }

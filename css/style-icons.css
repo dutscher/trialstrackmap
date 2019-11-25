@@ -1,32 +1,3 @@
-i.lang {
-    width: 25px;
-    height: 16px;
-    cursor: pointer;
-    display: inline-block;
-    background-size: cover !important;
-    vertical-align: middle;
-    margin-right: 10px;
-}
-
-i.lang:last-child {
-    margin-right: 0;
-}
-
-i.lang.beside-name {
-    vertical-align: baseline;
-    position: relative;
-    bottom: -2px;
-    cursor: default;
-}
-
-i.lang.no-margin {
-    margin-right: 0;
-}
-
-i.lang.is-active {
-    border: 2px #d2c3ab solid;
-}
-
 i.crazy,
 i.donkey,
 i.device-android,
