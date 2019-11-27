@@ -2,18 +2,16 @@
     <a href="/" class="classic-link">< {%'page.timesTable.back'|translate%}</a>
     <!--|-->
     <!--<a href="/table-improve.html" class="classic-link" target="_blank">{%'page.leftSidebar.goToImprove'|translate%}</a>-->
-    |
-    {%'page.worldRecordsTable.ridersAmount'|translate%}: {% allRider %}
-    / last update: {% lastUpdate|localeDate %}
-    <br />
-    {{!
-    {%'page.worldRecordsTable.filter'|translate%}:
-    <input type="text" placeholder="{%'page.worldRecordsTable.searchForRider'|translate%}"
-           select-on-click
-           ng-model="search"
-           ng-model-options="{debounce:100}"
-           ng-change="saveSearch()" />
-    <i class="faults with-cursor" ng-if="search != ''" ng-click="clearSearch()"></i>
-    |
-    }}
+    | <a href="javascript:void(0)" class="classic-link" ng-click="toggleView()">Toggle view</a>
+    | {%'page.worldRecordsTable.ridersAmount'|translate%}: {% allRiderCount %}
+
+    | last update: {% lastUpdate|localeDate %}
+    <!--|-->
+    <!--{%'page.worldRecordsTable.filter'|translate%}:-->
+    <!--<input type="text" placeholder="{%'page.worldRecordsTable.searchForRider'|translate%}"-->
+           <!--select-on-click-->
+           <!--ng-model="search"-->
+           <!--ng-model-options="{debounce:100}"-->
+           <!--ng-change="saveSearch()" />-->
+    <!--<i class="faults with-cursor" ng-if="search != ''" ng-click="clearSearch()"></i>-->
 </div>

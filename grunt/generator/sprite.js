@@ -51,7 +51,6 @@ module.exports = function () {
 
             // gfx
             globalVars._gfxPaintjobs = gfxJSON.images.paintjobs.src.replace("#1/", "");
-            globalVars._gfxPaintjobIcons = gfxJSON.images["paintjob-icons"].src.replace("#1/", "");
 
             return globalVars;
         },
@@ -63,9 +62,6 @@ module.exports = function () {
             css += `
             .paintjob {
                 background-image: url(//i.imgur.com/${vars._gfxPaintjobs});
-            }
-            .paintjob-icon {
-                background-image: url(//i.imgur.com/${vars._gfxPaintjobIcons});
             }`;
 
             // write file
@@ -83,7 +79,7 @@ module.exports = function () {
                 var costumId = costumOrder[i],
                     costumData = costumsData[costumId],
                     costumName = costumData.name.toLowerCase().replace(/ /g, "-"),
-                    costumSelector = "costum--" + costumData.originID,
+                    costumIDSelector = "costum--" + costumData.originID,
                     costumParts = costumData.parts,
                     isSmall = costumParts.length === 3,
                     costumHead = costumParts[0].split("|"),
@@ -94,8 +90,8 @@ module.exports = function () {
                 // src|left|top|width
                 css += (costumParts ? (
                         "." + costumName + " .costum--head,\n" +
-                        "." + costumSelector + " .costum--head,\n" +
-                        "." + costumSelector + ".costum--head {\n" +
+                        "." + costumIDSelector + " .costum--head,\n" +
+                        "." + costumIDSelector + ".costum--head {\n" +
                         "   background-image: url('" + replaceHoster(gfxJSON.hoster, costumHead[0]) + "');\n" +
                         (
                             costumHead.length > 1
@@ -107,8 +103,8 @@ module.exports = function () {
                         ) +
                         "}\n" +
                         "." + costumName + " .costum--body,\n" +
-                        "." + costumSelector + " .costum--body,\n" +
-                        "." + costumSelector + ".costum--body {\n" +
+                        "." + costumIDSelector + " .costum--body,\n" +
+                        "." + costumIDSelector + ".costum--body {\n" +
                         "   background-image: url('" + replaceHoster(gfxJSON.hoster, costumBody[0]) + "');\n" +
                         (
                             costumBody.length > 1
@@ -120,8 +116,9 @@ module.exports = function () {
                         ) +
                         "}\n" +
                         "." + costumName + " .costum--pants,\n" +
-                        "." + costumSelector + " .costum--pants,\n" +
-                        "." + costumSelector + ".costum--pants {\n" +
+                        "." + costumIDSelector + " .costum--pants,\n" +
+                        "." + costumIDSelector + ".costum--pants, \n" +
+                        "." + costumIDSelector + ".costum--pant {\n" +
                         "   background-image: url('" + replaceHoster(gfxJSON.hoster, costumPants[0]) + "');\n" +
                         (
                             costumPants.length > 1

@@ -22,18 +22,13 @@
       }
     },
     "countries": {
-      "src": "#1/e21a9G6.png",
+      "src": "#1/HoGuCCn.png",
       "selector": "i.country",
       "sprite": true
     },
     "paintjobs": {
       "src": "#1/Gw8FP4k.png",
       "selector": "i.paintjob",
-      "sprite": true
-    },
-    "paintjob-icons": {
-      "src": "#1/Gw8FP4k.png",
-      "selector": "i.paintjob-icon",
       "sprite": true
     },
     "sidebar-arrow-open": {

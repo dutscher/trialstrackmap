@@ -19,7 +19,7 @@
 
                     {{> table-navigation-worldrecords}}
 
-                    <div class="box no-pad flex" sticky-thead="w50">
+                    <div ng-if="selectedView === 'separated'" class="box no-pad flex" sticky-thead="w50">
                         <table class="w50">
                             <thead>
                                 <tr>
@@ -34,7 +34,7 @@
                                 </tr>
                                 <tr>
                                     <th class="rider-name" width="150">
-                                        {% sortedRider.android.length %}
+                                        {% allRiderSeparated.android.length %}
                                     </th>
                                     <th table-sorter="android|normal"><i class="global"></i></th>
                                     <th table-sorter="android|donkey"><i class="donkey"></i></th>
@@ -42,7 +42,7 @@
                                 </tr>
                             </thead>
                             <tbody>
-                            <tr ng-repeat="rider in sortedRider.android">
+                            <tr ng-repeat="rider in allRiderSeparated.android">
                                 <td class="center rider-name low-letter-space">
                                     {%::$index+1|leadingZero%}.
                                 </td>
@@ -70,7 +70,7 @@
                             </tr>
                             <tr>
                                 <th class="rider-name" width="150">
-                                    {% sortedRider.ios.length %}
+                                    {% allRiderSeparated.ios.length %}
                                 </th>
                                 <th table-sorter="ios|normal"><i class="global"></i></th>
                                 <th table-sorter="ios|donkey"><i class="donkey"></i></th>
@@ -78,7 +78,7 @@
                             </tr>
                             </thead>
                             <tbody>
-                            <tr ng-repeat="rider in sortedRider.ios">
+                            <tr ng-repeat="rider in allRiderSeparated.ios">
                                 <td class="center rider-name low-letter-space">{%::$index+1|leadingZero%}.</td>
                                 <td class="rider-name">
                                     <i ng-if="rider.country" class="country country--{% ::rider.country %} beside-name no-margin"></i>
@@ -89,6 +89,63 @@
                                 <td class="center" show-amount="rider" os="ios" type="crazy"></td>
                             </tr>
                             </tbody>
+                        </table>
+                    </div>
+
+                    <div ng-if="selectedView === 'combined'" class="box no-pad flex">
+                        <table style="margin-right:16px;">
+                            <tr><td colspan="4">Total</td></tr>
+                            <tr ng-repeat="rider in allRiderCombined.total">
+                                <td class="center rider-name low-letter-space">{%::$index+1|leadingZero%}.</td>
+                                <td class="rider-name">
+                                    <i ng-if="rider.country" class="country country--{% ::rider.country %} beside-name no-margin"></i>
+                                </td>
+                                <td class="center rider-name low-letter-space" ng-bind-html="::rider.riderName"></td>
+                                <td class="center">{%::rider.amount%}</td>
+                            </tr>
+                        </table>
+                        <table style="margin-right:16px;">
+                            <tr><td colspan="4">Countries</td></tr>
+                            <tr ng-repeat="rider in allRiderCombined.countries">
+                                <td class="center rider-name low-letter-space">{%::$index+1|leadingZero%}.</td>
+                                <td class="rider-name">
+                                    <i ng-if="rider.country" class="country country--{% ::rider.country %} beside-name no-margin"></i>
+                                </td>
+                                <td class="center">{%::rider.amount%}</td>
+                            </tr>
+                        </table>
+                        <table style="margin-right:16px;">
+                            <tr><td colspan="4"><i class="global"></i> Normal</td></tr>
+                            <tr ng-repeat="rider in allRiderCombined.normal">
+                                <td class="center rider-name low-letter-space">{%::$index+1|leadingZero%}.</td>
+                                <td class="rider-name">
+                                    <i ng-if="rider.country" class="country country--{% ::rider.country %} beside-name no-margin"></i>
+                                </td>
+                                <td class="center rider-name low-letter-space" ng-bind-html="::rider.riderName"></td>
+                                <td class="center">{%::rider.amount%}</td>
+                            </tr>
+                        </table>
+                        <table style="margin-right:16px;">
+                            <tr><td colspan="4"><i class="donkey"></i> Donkey</td></tr>
+                            <tr ng-repeat="rider in allRiderCombined.donkey">
+                                <td class="center rider-name low-letter-space">{%::$index+1|leadingZero%}.</td>
+                                <td class="rider-name">
+                                    <i ng-if="rider.country" class="country country--{% ::rider.country %} beside-name no-margin"></i>
+                                </td>
+                                <td class="center rider-name low-letter-space" ng-bind-html="::rider.riderName"></td>
+                                <td class="center">{%::rider.amount%}</td>
+                            </tr>
+                        </table>
+                        <table>
+                            <tr><td colspan="4"><i class="crazy"></i> Crazy</td></tr>
+                            <tr ng-repeat="rider in allRiderCombined.crazy">
+                                <td class="center rider-name low-letter-space">{%::$index+1|leadingZero%}.</td>
+                                <td class="rider-name">
+                                    <i ng-if="rider.country" class="country country--{% ::rider.country %} beside-name no-margin"></i>
+                                </td>
+                                <td class="center rider-name low-letter-space" ng-bind-html="::rider.riderName"></td>
+                                <td class="center">{%::rider.amount%}</td>
+                            </tr>
                         </table>
                     </div>
                 </div>
