@@ -1,10 +1,9 @@
 {{#extend "default"}}
     {{#content "title-override"}}true{{/content}}
-    {{#content "title" mode="prepend"}}
-        {{#with seasons}}
-            Seasons ({{_seasons.length}}) overview  -
-        {{/with}}
-    {{/content}}
+    {{#content "title" mode="prepend"}}Seasons ({{seasons._seasons.length}}) overview -{{/content}}
+    {{#content "description"}}Here you can find all {{seasons._seasons.length}} seasons that ever happend in the trials frontier{{/content}}
+    {{#content "url" mode="append"}}/seasons.html{{/content}}
+
 
     {{#content "preload-images"}}data:loaded{{/content}}
     {{#content "styles" mode="append"}}

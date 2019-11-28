@@ -1,10 +1,8 @@
 {{#extend "default"}}
     {{#content "title-override"}}true{{/content}}
-    {{#content "title" mode="prepend"}}
-        {{#with ../bikes.build.bikes}}
-            Garage - {{bike-stats bikes}} -
-        {{/with}}
-    {{/content}}
+    {{#content "title" mode="prepend"}}Garage - {{bike-stats bikes.build.bikes.bikes}} - {{/content}}
+    {{#content "description"}}Did you know that there {{bike-stats bikes.build.bikes.bikes}} in the garage?{{/content}}
+    {{#content "url" mode="append"}}/garage.html{{/content}}
 
     {{#content "styles" mode="append"}}
         <link rel="stylesheet" type="text/css" href="/dist/css/main.css{{cacheBuster}}"/>

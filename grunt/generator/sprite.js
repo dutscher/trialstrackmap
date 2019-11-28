@@ -60,7 +60,8 @@ module.exports = function () {
             let css = firstFileRow;
 
             css += `
-            .paintjob {
+            .paintjob,
+            .paintjob-icon {
                 background-image: url(//i.imgur.com/${vars._gfxPaintjobs});
             }`;
 

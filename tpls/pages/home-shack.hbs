@@ -1,4 +1,9 @@
 {{#extend "default"}}
+    {{#content "title-override"}}true{{/content}}
+    {{#content "title" mode="prepend"}}Home-Shack with all {{wardrobe.homeshack.length}} costumes of the frontier{{/content}}
+    {{#content "description"}}Did you know that {{wardrobe.homeshack.length}} costumes exists?{{/content}}
+    {{#content "url" mode="append"}}/home-shack.html{{/content}}
+
     {{#content "styles" mode="append"}}
         <link rel="stylesheet" type="text/css" href="/dist/css/main.css{{cacheBuster}}"/>
     {{/content}}

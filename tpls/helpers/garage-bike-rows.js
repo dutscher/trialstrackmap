@@ -35,6 +35,20 @@
                     </td>\n`
                 }
 
+                let maxPjs = 0;
+                Object.values(bikeData.bikes).forEach((bikeData) => {
+                    let allPjs = 0;
+                    allPjs += bikeData.paintjobs.length;
+
+                    if ("pjLeaked" in bikeData) {
+                        allPjs += bikeData.pjLeaked.length;
+                    }
+
+                    if(allPjs > maxPjs) {
+                        maxPjs = allPjs;
+                    }
+                });
+
                 return bikeData.bikeSorting.map((bikeId, index, array) => {
                     const bike = bikeData.bikes[bikeId],
                         nextBikeIndex = index + 1,
@@ -50,7 +64,7 @@
                     const leaked = hasLeakedPjs
                         ? bike.pjLeaked.map((paintJobName, paintJobId) =>
                             buildBike(paintJobName, paintJobId, bike, bikeId, true, paintjobs.length)).join("")
-                        : ""
+                        : "";
 
                     return `
                 <tr class="${isNextTierBike ? "last-tier-bike" : ""}">
@@ -65,6 +79,7 @@
                         return buildBike(paintJobName, paintJobId, bike, bikeId);
                     }).join("")}
                     ${!showNewestFirst ? leaked : ""}
+                    <td colspan="${maxPjs}"></td>
                 </tr>\n`;
                 }).join("");
             });

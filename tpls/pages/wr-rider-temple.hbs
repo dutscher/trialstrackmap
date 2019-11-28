@@ -1,15 +1,15 @@
 {{#extend "default"}}
-    {{#content "htmlCtrl"}}data-with="worldrecords"{{/content}}
     {{#content "title-override"}}true{{/content}}
-    {{#content "title" mode="prepend"}}
-        Temple of the legends -
-    {{/content}}
+    {{#content "title" mode="prepend"}}World Records Rider Temple - {{/content}}
+    {{#content "description"}}iOS and Android world records you can find here for all 300+ tracks and records made in 20+ countries.{{/content}}
+    {{#content "url" mode="append"}}/wr-rider-temple.html{{/content}}
 
     {{#content "styles" mode="prepend"}}
         <link rel="stylesheet" type="text/css" href="/dist/css/table.css{{cacheBuster}}"/>
     {{/content}}
 
     {{#content "ctrl"}}ng-controller="trackData"{{/content}}
+    {{#content "htmlCtrl"}}data-with="worldrecords"{{/content}}
 
     {{#content "body"}}
         {{#with map}}
@@ -19,7 +19,7 @@
 
                     {{> table-navigation-worldrecords}}
 
-                    <div ng-if="selectedView === 'separated'" class="box no-pad flex" sticky-thead="w50">
+                    <div ng-if="activeView === 'separated'" class="box no-pad flex" sticky-thead="w50">
                         <table class="w50">
                             <thead>
                                 <tr>
@@ -92,7 +92,7 @@
                         </table>
                     </div>
 
-                    <div ng-if="selectedView === 'combined'" class="box no-pad flex">
+                    <div ng-if="activeView === 'combined'" class="box no-pad flex">
                         <table style="margin-right:16px;">
                             <tr><td colspan="4">Total</td></tr>
                             <tr ng-repeat="rider in allRiderCombined.total">
