@@ -46,7 +46,7 @@
                                 <td class="center rider-name low-letter-space">
                                     {%::$index+1|leadingZero%}.
                                 </td>
-                                <td class="rider-name">
+                                <td class="rider-name" title="{%::rider.country|convertCountry%}">
                                     <i ng-if="rider.country !== ''" class="country country--{% ::rider.country %} beside-name no-margin"></i>
                                 </td>
                                 <td class="center rider-name low-letter-space" ng-bind-html="::rider.riderName"></td>
@@ -80,7 +80,7 @@
                             <tbody>
                             <tr ng-repeat="rider in allRiderSeparated.ios">
                                 <td class="center rider-name low-letter-space">{%::$index+1|leadingZero%}.</td>
-                                <td class="rider-name">
+                                <td class="rider-name" title="{%::rider.country|convertCountry%}">
                                     <i ng-if="rider.country" class="country country--{% ::rider.country %} beside-name no-margin"></i>
                                 </td>
                                 <td class="center rider-name low-letter-space" ng-bind-html="::rider.riderName"></td>
@@ -97,7 +97,7 @@
                             <tr><td colspan="4">Total</td></tr>
                             <tr ng-repeat="rider in allRiderCombined.total">
                                 <td class="center rider-name low-letter-space">{%::$index+1|leadingZero%}.</td>
-                                <td class="rider-name">
+                                <td class="rider-name" title="{%::rider.country|convertCountry%}">
                                     <i ng-if="rider.country" class="country country--{% ::rider.country %} beside-name no-margin"></i>
                                 </td>
                                 <td class="center rider-name low-letter-space" ng-bind-html="::rider.riderName"></td>
@@ -108,7 +108,7 @@
                             <tr><td colspan="4">Countries</td></tr>
                             <tr ng-repeat="rider in allRiderCombined.countries">
                                 <td class="center rider-name low-letter-space">{%::$index+1|leadingZero%}.</td>
-                                <td class="rider-name">
+                                <td class="rider-name" title="{%::rider.country|convertCountry%}">
                                     <i ng-if="rider.country" class="country country--{% ::rider.country %} beside-name no-margin"></i>
                                 </td>
                                 <td class="center">{%::rider.amount%}</td>
@@ -118,7 +118,7 @@
                             <tr><td colspan="4"><i class="global"></i> Normal</td></tr>
                             <tr ng-repeat="rider in allRiderCombined.normal">
                                 <td class="center rider-name low-letter-space">{%::$index+1|leadingZero%}.</td>
-                                <td class="rider-name">
+                                <td class="rider-name" title="{%::rider.country|convertCountry%}">
                                     <i ng-if="rider.country" class="country country--{% ::rider.country %} beside-name no-margin"></i>
                                 </td>
                                 <td class="center rider-name low-letter-space" ng-bind-html="::rider.riderName"></td>
@@ -129,7 +129,7 @@
                             <tr><td colspan="4"><i class="donkey"></i> Donkey</td></tr>
                             <tr ng-repeat="rider in allRiderCombined.donkey">
                                 <td class="center rider-name low-letter-space">{%::$index+1|leadingZero%}.</td>
-                                <td class="rider-name">
+                                <td class="rider-name" title="{%::rider.country|convertCountry%}">
                                     <i ng-if="rider.country" class="country country--{% ::rider.country %} beside-name no-margin"></i>
                                 </td>
                                 <td class="center rider-name low-letter-space" ng-bind-html="::rider.riderName"></td>
@@ -140,7 +140,7 @@
                             <tr><td colspan="4"><i class="crazy"></i> Crazy</td></tr>
                             <tr ng-repeat="rider in allRiderCombined.crazy">
                                 <td class="center rider-name low-letter-space">{%::$index+1|leadingZero%}.</td>
-                                <td class="rider-name">
+                                <td class="rider-name" title="{%::rider.country|convertCountry%}">
                                     <i ng-if="rider.country" class="country country--{% ::rider.country %} beside-name no-margin"></i>
                                 </td>
                                 <td class="center rider-name low-letter-space" ng-bind-html="::rider.riderName"></td>
