@@ -3,10 +3,9 @@ module.exports = function (grunt) {
         database: {
             files: {
                 "build/map.json": [
-                    "database/*.{json,json5}",
+                    "database/{map,rider2country,ferries}.json",
                     "database/trackdata/*.json",
-                    "database/events/midnightchamps_2017.json",
-                    "database/media/*!(gfx).json"
+                    "database/media/*.json"
                 ]
             }
         },

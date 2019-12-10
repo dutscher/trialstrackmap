@@ -38,6 +38,9 @@ module.exports = function (grunt) {
                 ],
                 "dist/json/hunt-events.json": [
                     "build/hunt-events.json"
+                ],
+                "dist/json/versions.json": [
+                    "database/versions.json"
                 ]
             }
         },

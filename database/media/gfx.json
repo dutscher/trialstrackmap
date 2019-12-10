@@ -4,18 +4,22 @@
     "trackmaps": {
       "1": {
         "src": "#1/YDkVx7H.jpg",
-        "srcPath": "#1/dVuZS7f.jpg",
+        "srcTrackfinder": "#1/dVuZS7f.jpg",
+        "srcDiscover": "#1/s5Osb5B.jpg",
         "offline_src": "trackmap.180104.en.jpg",
-        "offline_srcPath": "trackmap.180104.path.min.jpg",
+        "offline_srcTrackfinder": "trackmap.180104.path.min.jpg",
+        "offline_srcDiscover": "map-empty.1.jpg",
         "alt": "Trails Frontier Trackmap Seymore and Lotz",
         "dim": "3614x2495",
         "dimPath": "464x320"
       },
       "2": {
         "src": "#1/amK7uNQ.jpg",
-        "srcPath": "#1/lswKsTT.jpg",
+        "srcTrackfinder": "#1/lswKsTT.jpg",
+        "srcDiscover": "#1/Dyl6ddF.jpg",
         "offline_src": "trackmap.2.191101.en.jpg",
-        "offline_srcPath": "trackmap.2.191101.path.min.jpg",
+        "offline_srcTrackfinder": "trackmap.2.191101.path.min.jpg",
+        "offline_srcDiscover": "map-empty.2.jpg",
         "alt": "Trails Frontier Trackmap Petrol Falls",
         "dim": "2560x2560",
         "dimPath": "320x320"
@@ -147,7 +151,7 @@
       "selector": "i.eggs"
     },
     "startline": {
-      "src": "#1/DZvKLvp.png",
+      "src": "#1/K6jeFnM.png",
       "selector": "i.startline"
     },
     "data-cube": {

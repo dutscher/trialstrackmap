@@ -1,6 +1,6 @@
 module.exports = function (grunt) {
 
-    grunt.registerTask("deployHtml", function() {
+    grunt.registerTask("deployHtml", function () {
         grunt.task.run([
             "clean:assemble",
             "assemble:default",
@@ -8,7 +8,7 @@ module.exports = function (grunt) {
         ]);
     });
 
-    grunt.registerTask("deployHtmlDanTeam", function() {
+    grunt.registerTask("deployHtmlDanTeam", function () {
         grunt.task.run([
             "assemble:danTeam"
         ]);

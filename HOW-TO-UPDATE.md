@@ -1,42 +1,21 @@
-# How-to-update 06.03.18
+# How-to-update 10.12.19
 
 ## Requirements
-* Windows 7+ (import only works on windows)
+* Windows 7+/10 (import only works on windows)
 * Photoshop CC (necessary for new tracks on trackmap and new seasons)
-* Android device (necessary for import)
-* git https://git-scm.com/downloads (upload changes to github)
-* Github account (https://github.com/ for commits of your changes)
+* Android device (necessary for apk and amazon import)
+* git: https://git-scm.com/downloads (upload changes to github)
+* Github account (https://github.com/ for commits of your changes) into this repo
 * NodeJS https://nodejs.org/en/download/ (running trackmap server & import)
 * dutscher will brief you for:
   * TF.zip for import unpack this in "C:/" (import scripts)
-  * www.imgur.com (image hoster)
-  * ftp credentials (to get your changes live)
+  * www.imgur.com (image hoster, ask for credentials)
+  * ftp credentials (to get the changes live)
 
 ## Preparation
-* adb necessary for import:
-  * connect your phone with adb (go into "C:/#TF/#adb" dir and start cmd here)
-    * Hold Shift while Right-Clicking a blank space in the desired folder to bring up a more verbose context menu. 
-      One of the options is Open Command Window Here
-    * in cmd:
-      * C:\www\#TF\#adb>adb devices\
-        List of devices attached\
-        \* daemon not running. starting it now on port 5037 *\
-        \* daemon started successfully *\
-        NO DEVICE FOUND
-  * unplug device:
-    * go into your Android settings:
-      * "System" / "Information" or "About" / click 10 times on "Build number"
-      * now go into "Developer options"
-        * enable Debugging "Android debugging"
-        * Allow USB debugging, click OK
-  * plugin your device:
-    * RSA fingerprint of your device will shown up
-    * Always allow from this computer
-  * back to cmd:
-    * C:\www\#TF\#adb>adb devices\
-      List of devices attached\
-      ZY3224JGK8    device\
-      DEVICE CONNECTED via adb
+* unzip the TF.zip to "C:/#TFunpacker"
+* run "npm run npmInstall"
+* run "grunt #checkImport"
 
 ## 1.Trackmap-gfx repo	
 * $ git clone https://github.com/dutscher/trialstrackmap-gfx.git
@@ -88,16 +67,13 @@
 * Changes for gfx in repo trackmap
   * go into file "./database/media/gfx.json"
   * change for trackmap "src" property "https://i.imgur.com/J8rLK29.jpg" => "#1/J8rLK29.jpg"
-  * add the path image to "srcPath" "#1/MZjlZMS.jpg"
+  * add the path image to "srcTrackfinder" "#1/MZjlZMS.jpg"
 		
 ## 5.Repo changes for tracks and deploy
 * clone repo
   * $ git clone https://github.com/dutscher/trialstrackmap.git
   * $ cd trialstrackmap
   * $ npm install
-* unpack "TF.zip" into "C:/" (see Requirements)
-  * check if "C:/#TF" dir exists
-  * #adb, #bin2txt, #hashes and #do are child dirs
 
 ## 6.Import newest data to trackmap repo
 * look into game which version is the actual one

@@ -21,7 +21,6 @@
                         <table class="w100">
                             <thead>
                             <tr>
-                                <!--<th rowspan="2" width="30">{%'page.timesTable.id'|translate%}</th>-->
                                 <th rowspan="2" width="5"></th>
                                 <th rowspan="2" width="35" table-sorter="tier">{%'page.timesTable.tier'|translate%}</th>
                                 <th rowspan="2" width="200">{%'page.timesTable.trackName'|translate%}</th>
@@ -58,10 +57,9 @@
                             <tbody>
                             <!-- showZero:showZero:medal| -->
                             <tr ng-repeat="track in filteredArray = (data.tracks|showCatAndTier:selectedCat:selectedTier|filter:search|showParts:selectedPart:selectedPartLevel)">
-                                <!--<td>
-                                    {%track.id%}
-                                </td>-->
-                                <td cats-as-class="{track:track}" class="not-hover"></td>
+                                <td cats-as-class="{track:track}" class="not-hover">
+                                    <a name="{%track.id%}"></a>
+                                </td>
                                 <td class="center">
                                     {%::track.tier%}
                                 </td>

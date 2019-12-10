@@ -3,7 +3,7 @@
 <svg class="trackmap trackmap--discovered" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2560" height="2560">
     <defs>
         <filter id="filter">
-            <feGaussianBlur stdDeviation="5"/>
+            <feGaussianBlur stdDeviation="10"/>
         </filter>
         <mask id="mask">
             <ellipse cx="231" cy="1018" rx="100" ry="100" fill="white" filter="url(#filter)"></ellipse>
@@ -26,7 +26,7 @@
         position: relative;
     }
     .trackmap--cloud {
-        filter: hue-rotate(-891deg) sepia(89) saturate(2) brightness(30%);
+        filter: hue-rotate(0) sepia(1) saturate(30) brightness(30%) grayscale(0.6);
     }
     .trackmap--discovered {
         position: absolute;

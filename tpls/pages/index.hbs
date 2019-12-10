@@ -40,18 +40,17 @@
             <div class="pinch-helper--scroll-pos"></div>
             *}}
             <div zoom-here>
-
                 <canvas canvas-track-pointer></canvas>
+
+                <div discover-map></div>
 
                 <img hide-me-on-pan src="blank.png" class="track-pointer" usemap="#trackmap"/>
 
-                {{#with gfx}}
-                    <img class="trackmap" world="{% selectedWorld %}" alt="{% worldAlt %}"
-                         ng-src="{% worldImage %}"
-                         onload="this.isLoaded = true"
-                         image-loaded="trackmapReady = true"
-                         ng-class="{'loading':!trackmapReady && !dataLoaded,'all-loaded':trackmapReady && dataLoaded}"/>
-                {{/with}}
+                <img class="trackmap" world="{% selectedWorld %}" alt="{% worldAlt %}"
+                     ng-src="{% worldImage %}"
+                     onload="this.isLoaded = true"
+                     image-loaded="trackmapReady = true"
+                     ng-class="{'loading':!trackmapReady && !dataLoaded,'all-loaded':trackmapReady && dataLoaded}"/>
 
                 <map name="trackmap" track-pointer></map>
             </div>
