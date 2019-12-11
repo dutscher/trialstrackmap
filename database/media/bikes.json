@@ -202,7 +202,7 @@
                 "Clawride",
                 "X-18",
                 "Golden Dirt",
-                "Stache*"
+                "Stache"
             ],
             "gfx": [
                 "https://i.imgur.com/wUQVdTC.png",
@@ -259,7 +259,7 @@
                 "Vengeance Knight",
                 "Crimson Cruiser",
                 "Yellow Submarine",
-                "Opera*"
+                "Opera"
             ],
             "gfx": [
                 "https://i.imgur.com/kooKFFG.png",
@@ -355,12 +355,14 @@
             "paintjobs": [
                 "Default",
                 "Camo",
-                "Thunderstorm"
+                "Thunderstorm",
+                "Scarlet*"
             ],
             "gfx": [
                 "https://i.imgur.com/Ayg6pLc.png",
                 "https://i.imgur.com/M5KThwr.png",
-                "https://i.imgur.com/8C4LnjH.png"
+                "https://i.imgur.com/8C4LnjH.png",
+                "https://i.imgur.com/sZW8jl4.png"
             ]
         },
         "16": {
@@ -400,10 +402,8 @@
                 "Fallout",
                 "Blizzard",
                 "Candy Cane",
-                "Feaster"
-            ],
-            "pjLeaked": [
-                "Swamp Monster"
+                "Feaster",
+                "Swamp Monster*"
             ],
             "gfx": [
                 "https://i.imgur.com/NNJoSkB.png",
@@ -411,7 +411,8 @@
                 "https://i.imgur.com/aJLkpyJ.png",
                 "https://i.imgur.com/xnmQNZS.png",
                 "https://i.imgur.com/aAx84qi.png",
-                "https://i.imgur.com/yQbOvCJ.png"
+                "https://i.imgur.com/yQbOvCJ.png",
+                "https://i.imgur.com/ntBqHwb.png"
             ]
         }
     }

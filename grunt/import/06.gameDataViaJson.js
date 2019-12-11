@@ -102,8 +102,6 @@ module.exports = function (shared) {
             .filter(pack => pack.Levels.includes(level.ID))
             .map(pack => pack.ID + 1);
 
-        console.log(trackPacks, trackpackID)
-
         const isInTrackpack = trackpackID.length === 1;
         let trackData;
 

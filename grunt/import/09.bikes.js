@@ -353,9 +353,9 @@ module.exports = function (shared) {
                 }
 
                 // Output the image
-                console.log("write sprite", shared.secretPath + "/paintjob-sprite.png");
+                console.log("write sprite", shared.secretPath + "/sprite-paintjob.png");
                 // copy to other repo
-                const spriteName = "paintjob-sprite.png";
+                const spriteName = "sprite-paintjob.png";
                 const pathToGfxRepo = `../trialstrackmap-gfx/icons/${spriteName}`;
                 if (shared.fs.existsSync(pathToGfxRepo)) {
                     shared.fs.writeFileSync(pathToGfxRepo, result.image);

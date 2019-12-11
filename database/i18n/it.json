@@ -653,7 +653,13 @@
     "363": "Colonia abbandonata",
     "364": "Vetta",
     "365": "Fuga orbicolare",
-    "366": "Dolomite"
+    "366": "Dolomite",
+    "367": "Corsa con la Palla",
+    "368": "Ostacoli Infernali",
+    "369": "Paesaggio Stradale",
+    "370": "Apostasia",
+    "371": "Viadotto",
+    "372": "Caos Urbano"
   },
   "unreleased": [
     "LVL_ROADWAY: Carreggiata"

@@ -8,6 +8,7 @@ module.exports = function (shared) {
             " \]\r\n \"",
             "\],\r\n  },",
             "\],\r\n  }",
+            ":00000,"
         ],
         repairWith = [
             "},\n{\n", // bikes.txt
@@ -16,7 +17,8 @@ module.exports = function (shared) {
             "},\n{\n", // bikes.txt
             "],\n\"", // levels.txt
             "]\n  },", // levelpack.txt
-            "]\n  }", // levelpack.txt
+            "]\n  }", // levelpack.txt,
+            ":0,"// levels.json
         ],
         files = shared.workingFilesOfGame.filter(function(name){return name.indexOf("level_rewards") === -1}),
         fileNameOld,

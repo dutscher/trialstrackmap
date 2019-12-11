@@ -2431,5 +2431,47 @@
     "oid": 1426,
     "env": 10,
     "world": 2
+  },
+  // Ball Run
+  {
+    "id": 367,
+    "oid": 1427,
+    "env": 6,
+    "world": 2
+  },
+  // Hurdles From Hell
+  {
+    "id": 368,
+    "oid": 1428,
+    "env": 0,
+    "world": 2
+  },
+  // Streetscape
+  {
+    "id": 369,
+    "oid": 1429,
+    "env": 6,
+    "world": 2
+  },
+  // Apostatize
+  {
+    "id": 370,
+    "oid": 1430,
+    "env": 0,
+    "world": 2
+  },
+  // Viaduct
+  {
+    "id": 371,
+    "oid": 1431,
+    "env": 4,
+    "world": 2
+  },
+  // Urban Sprawl
+  {
+    "id": 372,
+    "oid": 1432,
+    "env": 2,
+    "world": 2
   }
 ]

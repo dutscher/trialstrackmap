@@ -152,7 +152,6 @@ module.exports = {
         cans: {
             "paintjob-8-leaked-0-icon.png": "../trialstrackmap-gfx/garage/08-berserker/00-cassidy-icon.png",
             "paintjob-6-leaked-0-icon.png": "../trialstrackmap-gfx/garage/06-marauder/00-leroy-icon.png",
-            "paintjob-19-leaked-0-icon.png": "../trialstrackmap-gfx/garage/10-donkey/00-swamp-icon.png",
         }
     },
     idsOfSeasonPrizes: [
