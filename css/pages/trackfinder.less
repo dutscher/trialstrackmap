@@ -53,66 +53,57 @@ html, body {
     overflow: visible;
   }
 
-  .trackpainter {
-    position: relative;
-    margin-bottom: 8px;
+  &[data-world="2"] {
+    margin-bottom: 0;
+  }
+
+  &__name {
+    font-size: 20px;
+    color: #fff;
+    text-shadow: 1px 1px #000;
+    position: absolute;
+    top: 8px;
+    left: 8px;
 
     @media (min-width: 820px) {
-      margin-bottom: 0;
-    }
-
-    &[data-world="2"] {
-      margin-bottom: 0;
-    }
-
-    &__name {
-      font-size: 20px;
-      color: #fff;
-      text-shadow: 1px 1px #000;
-      position: absolute;
-      top: 8px;
-      left: 8px;
-
-      @media (min-width: 820px) {
-        top: -30px;
-        left: 0;
-      }
-    }
-
-    &__pointer {
-      position: absolute;
+      top: -30px;
       left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 1;
     }
+  }
 
-    &__links {
-      visibility: visible;
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      left: 0;
-      top: 0;
-      z-index: 2;
-    }
+  &__pointer {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
 
-    &__message {
-      font-size: 40px;
-      color: #fff;
-      text-shadow: 1px 1px #000;
-      position: absolute;
-      left: 0;
-      top: 0;
-      bottom: 0;
-      right: 0;
-      z-index: 1;
-      background: radial-gradient(circle, transparent -70%, black 100%), transparent;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
+  &__links {
+    visibility: visible;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 2;
+  }
+
+  &__message {
+    font-size: 40px;
+    color: #fff;
+    text-shadow: 1px 1px #000;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    background: radial-gradient(circle, transparent -70%, black 100%), transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -175,7 +166,7 @@ html, body {
   }
 
   .content {
-    background: rgba(255,255,255,0.75);
+    background: rgba(255, 255, 255, 0.75);
     padding: 8px;
     display: inline-block;
   }

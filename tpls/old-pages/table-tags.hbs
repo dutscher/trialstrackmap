@@ -1,0 +1,50 @@
+{{#extend "default"}}
+    {{#content "title" mode="prepend"}}
+        Track medaltimes and informations -
+    {{/content}}
+
+    {{#content "styles" mode="prepend"}}
+        <link rel="stylesheet" type="text/css" href="/dist/css/table.css{{cacheBuster}}"/>
+    {{/content}}
+
+    {{#content "ctrl"}}ng-controller="trackData"{{/content}}
+
+    {{#content "body"}}
+        {{#with map}}
+            <div ng-controller="trackTimes">
+                <div ng-init="pageReady = false" ng-hide="pageReady" class="loader spin"></div>
+                <div class="page-body is-loading" data-finished="pageReady">
+
+                    {{> table-navigation}}
+
+                    <div class="box no-pad" sticky-thead>
+                        <table class="w100">
+                            <thead>
+                            <tr>
+                                <th width="50"></th>
+                                <th width="200">{%'page.timesTable.trackName'|translate%}</th>
+                                <th title="{%'page.timesTable.parts.head'|translate%}">
+                                    <i class="filter"></i>
+                                </th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr ng-repeat="track in filteredArray = (data.tracks|showCatAndTier:selectedCat:selectedTier|filter:search|showParts:selectedPart:selectedPartLevel)">
+                                <td>
+                                    {%track.id%}.
+                                </td>
+                                <td ng-class="{'public-change':track.timesDB.public}">
+                                    {%track.i18n%}
+                                </td>
+                                <td class="no-pad">
+                                    <div tag-list="track"></div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        {{/with}}
+    {{/content}}
+{{/extend}}

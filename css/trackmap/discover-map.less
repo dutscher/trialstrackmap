@@ -1,16 +1,37 @@
-.trackmap__wrapper {
-  position: relative;
+
+[discover-map] {
+  opacity: 0;
+
+  &.all-loaded.show-discovery {
+    opacity: 1;
+  }
 }
+
 .trackmap {
-  width: 2560px;
-  height: 2560px;
   position: relative;
-}
-.trackmap--cloud {
-  filter: hue-rotate(0) sepia(1) saturate(30) brightness(30%) grayscale(0.6);
-}
-.trackmap--discovered {
-  position: absolute;
-  left: 0;
-  top: 0;
+
+  &__wrapper {
+    position: relative;
+  }
+
+  &__discover-close {
+    position: fixed;
+    z-index: 1;
+    right: 50px;
+    top: 30px;
+    font-size: 50px;
+    cursor: pointer;
+    color: @color-tan;
+  }
+
+  &--cloud {
+    visibility: visible;
+    position: relative;
+  }
+
+  &--discovered {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
 }

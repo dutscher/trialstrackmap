@@ -39,10 +39,12 @@
             <div class="pinch-helper--mask-center"></div>
             <div class="pinch-helper--scroll-pos"></div>
             *}}
-            <div zoom-here>
-                <canvas canvas-track-pointer></canvas>
+            <div ng-if="filteredTracks.length > 0" class="trackmap__discover-close" ng-click="resetFilter()">🞮</div>
 
-                <div discover-map></div>
+            <div zoom-here>
+                <div discover-map
+                     ng-class="{'loading':!trackmapReady && !dataLoaded,'all-loaded':trackmapReady && dataLoaded}">
+                </div>
 
                 <img hide-me-on-pan src="blank.png" class="track-pointer" usemap="#trackmap"/>
 
@@ -52,7 +54,7 @@
                      image-loaded="trackmapReady = true"
                      ng-class="{'loading':!trackmapReady && !dataLoaded,'all-loaded':trackmapReady && dataLoaded}"/>
 
-                <map name="trackmap" track-pointer></map>
+                <map name="trackmap" track-map-links></map>
             </div>
         </div>
     {{/content}}
