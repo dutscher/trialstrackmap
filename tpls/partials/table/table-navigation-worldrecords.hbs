@@ -6,9 +6,14 @@
     <i class="global"></i>
     <a href="javascript:void(0)" class="classic-link" ng-if="activeView === 'separated'" ng-click="toggleView()">Show combined View</a>
     <a href="javascript:void(0)" class="classic-link" ng-if="activeView === 'combined'" ng-click="toggleView()">Show separated View</a>
+    |
+    <select ng-model="selectedLeaderboardWorld" ng-change="changeLeaderboardWorld()">
+        <option value="0" ng-selected="selectedLeaderboardWorld == 0">Both Worlds</option>
+        <option value="1" ng-selected="selectedLeaderboardWorld == 1">Seymore & Lotz</option>
+        <option value="2" ng-selected="selectedLeaderboardWorld == 2">Petrol Falls</option>
+    </select>
     | {%'page.worldRecordsTable.ridersAmount'|translate%}: {% allRiderCount %}
     | {%'Tracks'|translate%}: {% allTrackCount %}
-
     | last update: {% lastUpdate|localeDate %}
     <!--|-->
     <!--{%'page.worldRecordsTable.filter'|translate%}:-->

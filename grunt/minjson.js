@@ -41,6 +41,9 @@ module.exports = function (grunt) {
                 ],
                 "dist/json/versions.json": [
                     "database/versions.json"
+                ],
+                "dist/json/wrrider.json": [
+                    "database/wr/wrrider.json"
                 ]
             }
         },
