@@ -1,0 +1,70 @@
+<table class="w50">
+    <thead>
+    <tr>
+        <th class="rider-name" colspan="2" rowspan="2" width="60"></th>
+        <th class="rider-name" width="150">
+            {%'page.worldRecordsTable.headRider'|translate%}
+        </th>
+        <th colspan="3" class="rider-name">
+            <i class="device-android"></i>
+            Android
+        </th>
+    </tr>
+    <tr>
+        <th class="rider-name" width="150">
+            {% leaders.android.length %}
+        </th>
+        <th table-sorter="android|normal"><i class="global"></i></th>
+        <th table-sorter="android|donkey"><i class="donkey"></i></th>
+        <th table-sorter="android|crazy"><i class="crazy"></i></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="rider in leaders.android">
+        <td class="center rider-name low-letter-space">
+            {%$index+1|leadingZero%}.
+        </td>
+        <td class="rider-name" title="{%rider.country|convertCountry%}">
+            <i ng-if="rider.country !== ''" class="country country--{%rider.country%} beside-name no-margin"></i>
+        </td>
+        <td class="center rider-name low-letter-space" ng-bind-html="rider.riderName"></td>
+        <td class="center" show-amount="rider" os="android" type="normal" world="selectedLeaderboardWorld"></td>
+        <td class="center" show-amount="rider" os="android" type="donkey" world="selectedLeaderboardWorld"></td>
+        <td class="center" show-amount="rider" os="android" type="crazy" world="selectedLeaderboardWorld"></td>
+    </tr>
+    </tbody>
+</table>
+<table class="w50">
+    <thead>
+    <tr>
+        <th class="rider-name" colspan="2" rowspan="2" width="60"></th>
+        <th class="rider-name" width="150">
+            {%'page.worldRecordsTable.headRider'|translate%}
+        </th>
+        <th colspan="3" class="rider-name">
+            <i class="device-ios"></i>
+            iOS
+        </th>
+    </tr>
+    <tr>
+        <th class="rider-name" width="150">
+            {%leaders.ios.length%}
+        </th>
+        <th table-sorter="ios|normal"><i class="global"></i></th>
+        <th table-sorter="ios|donkey"><i class="donkey"></i></th>
+        <th table-sorter="ios|crazy"><i class="crazy"></i></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="rider in leaders.ios">
+        <td class="center rider-name low-letter-space">{%$index+1|leadingZero%}.</td>
+        <td class="rider-name" title="{%rider.country|convertCountry%}">
+            <i ng-if="rider.country" class="country country--{%rider.country%} beside-name no-margin"></i>
+        </td>
+        <td class="center rider-name low-letter-space" ng-bind-html="rider.riderName"></td>
+        <td class="center" show-amount="rider" os="ios" type="normal" world="selectedLeaderboardWorld"></td>
+        <td class="center" show-amount="rider" os="ios" type="donkey" world="selectedLeaderboardWorld"></td>
+        <td class="center" show-amount="rider" os="ios" type="crazy" world="selectedLeaderboardWorld"></td>
+    </tr>
+    </tbody>
+</table>
