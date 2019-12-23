@@ -130,7 +130,7 @@ module.exports = function (shared) {
     ""
     }
   },`,
-            startLineStr: `,"${trackID}": ""`,
+            startLineStr: `  ,"${trackID}": ""`,
             tier: {
                 int: fuelToTier[level.FU],
                 dbStr: trackIDQuotes + " " + (fuelToTier[level.FU])

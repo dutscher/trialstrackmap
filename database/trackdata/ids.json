@@ -2439,7 +2439,7 @@
     "env": 6,
     "world": 2
   },
-  // Hurdles From Hell
+  // Hurdles from Hell
   {
     "id": 368,
     "oid": 1428,
@@ -2472,6 +2472,48 @@
     "id": 372,
     "oid": 1432,
     "env": 2,
+    "world": 2
+  },
+  // Snow Flurry
+  {
+    "id": 373,
+    "oid": 1433,
+    "env": 11,
+    "world": 2
+  },
+  // Heavenward
+  {
+    "id": 374,
+    "oid": 1434,
+    "env": 6,
+    "world": 2
+  },
+  // Wild Zone
+  {
+    "id": 375,
+    "oid": 1435,
+    "env": 0,
+    "world": 2
+  },
+  // Dutschers Den
+  {
+    "id": 376,
+    "oid": 1436,
+    "env": 4,
+    "world": 2
+  },
+  // Urban Complex
+  {
+    "id": 377,
+    "oid": 1437,
+    "env": 2,
+    "world": 2
+  },
+  // Marsh Ride
+  {
+    "id": 378,
+    "oid": 1438,
+    "env": 8,
     "world": 2
   }
 ]
