@@ -102,6 +102,10 @@ body {
     font-weight: bold;
     text-decoration: none
 }
+.classic-link.active {
+    text-decoration: underline;
+    color: #775746;
+}
 
 .link-info {
     font-size: 14px;

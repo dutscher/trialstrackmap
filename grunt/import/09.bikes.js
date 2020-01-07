@@ -407,7 +407,7 @@ module.exports = function (shared) {
               width: ${data.newSizeCan}px;
               height: ${data.newSizeCan}px;
               background-size: ${data.props.width}px ${data.props.height}px;
-              background-position: 0 0;
+              background-position: 50px 0;
               vertical-align: middle;
             }
         `;
@@ -423,7 +423,14 @@ module.exports = function (shared) {
                 .split(".")
                 .slice(0, -1)
                 .join(".");
+            let iconNameBonxy = "";
+            if (iconName.indexOf("-icon") !== -1) {
+                iconNameBonxy = "." + iconName
+                    .replace("-icon", "")
+                    .replace("paintjob-", "paintjob-icon-") + ",";
+            }
             // paintjob-12-0-icon.png
+            // paintjob-icon-12-0
             // paintjob-8-leaked-0.png
             const iconNameSplit = iconName.split("-");
             // 12
@@ -447,8 +454,12 @@ module.exports = function (shared) {
                     (iconNameSplit.length === 4 ? " " + iconNameSplit[3] : "");
             }
 
+            //.paintjob-armadillo-default-icon,
+            //.test-icon,
+            //.paintjob-1-0-icon {
             css += `
                 .${trimName(iconNameHR)},
+                ${iconNameBonxy}
                 .${iconName} {
                     height: ${tile.height}px;
                     background-position: -${tile.x}px -${tile.y}px;

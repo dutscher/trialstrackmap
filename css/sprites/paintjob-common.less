@@ -1,0 +1,24 @@
+.paintjob--scaled {
+    width: 150px;
+    height: 18px;
+
+    .paintjob {
+      &__mask {
+        vertical-align: middle;
+        height: 18px;
+        width: 18px;
+        display: inline-block;
+
+        .paintjob {
+          transform: scale(0.36);
+          transform-origin: top left;
+        }
+      }
+    }
+
+    &:hover {
+      .paintjob {
+        transform: scale(1) translateY(-35%);
+      }
+    }
+}

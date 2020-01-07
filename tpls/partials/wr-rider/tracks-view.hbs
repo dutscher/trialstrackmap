@@ -1,0 +1,69 @@
+<table>
+    <thead>
+        <tr>
+            <th rowspan="2" class="rider-name" width="150">
+                Trackname
+            </th>
+            <th colspan="9" class="rider-name">
+                WR Holders
+            </th>
+        </tr>
+        <tr>
+            <th colspan="3"><i class="global"></i></th>
+            <th colspan="3"><i class="donkey"></i></th>
+            <th colspan="3"><i class="crazy"></i></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="track in leaders">
+            <td class="rider-name low-letter-space">
+                {%track.i18n%}
+            </td>
+            <td>
+                <i class="device-{%track.WRHolder.normal.os%}"></i>
+                {%track.WRHolder.normal.time|convertTime%}
+                <span class="paintjob--scaled" title="{%track.WRHolder.normal.bikeName%}">
+                    <span class="paintjob__mask">
+                        <i class="paintjob paintjob-{%track.WRHolder.normal.bikeId%}-0"></i>
+                    </span>
+                </span>
+            </td>
+            <td>
+                {%track.WRHolder.normal.riderName%}
+            </td>
+            <td title="{%track.WRHolder.normal.country|convertCountry%}">
+                <i ng-if="track.WRHolder.normal.country" class="country country--{%track.WRHolder.normal.country%}"></i>
+            </td>
+            <td>
+                <i class="device-{%track.WRHolder.normal.os%}"></i>
+                {%track.WRHolder.donkey.time|convertTime%}
+                <span class="paintjob--scaled" title="{%track.WRHolder.donkey.bikeName%}">
+                    <span class="paintjob__mask">
+                        <i class="paintjob paintjob-{%track.WRHolder.donkey.bikeId%}-0"></i>
+                    </span>
+                </span>
+            </td>
+            <td>
+                {%track.WRHolder.donkey.riderName%}
+            </td>
+            <td title="{%track.WRHolder.donkey.country|convertCountry%}">
+                <i ng-if="track.WRHolder.donkey.country" class="country country--{%track.WRHolder.donkey.country%}"></i>
+            </td>
+            <td>
+                <i class="device-{%track.WRHolder.normal.os%}"></i>
+                {%track.WRHolder.crazy.time|convertTime%}
+                <span class="paintjob--scaled" title="{%track.WRHolder.crazy.bikeName%}">
+                    <span class="paintjob__mask">
+                        <i class="paintjob paintjob-{%track.WRHolder.crazy.bikeId%}-0"></i>
+                    </span>
+                </span>
+            </td>
+            <td>
+                {%track.WRHolder.crazy.riderName%}
+            </td>
+            <td title="{%track.WRHolder.crazy.country|convertCountry%}">
+                <i ng-if="track.WRHolder.crazy.country" class="country country--{%track.WRHolder.crazy.country%}"></i>
+            </td>
+        </tr>
+    </tbody>
+</table>
