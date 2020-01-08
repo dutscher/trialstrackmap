@@ -4,8 +4,8 @@
   "description": "Guide for all Track-, Data-Cube- and Candy locations. As well Youtube walkthroughs for every track is available.",
   "author": "willy woitas <dutscher_sbf@hotmail.com>",
   "private": true,
-  "version": "7.6.0",
-  "seasonID": 68,
+  "version": "7.8.0",
+  "seasonID": 69,
   "dependencies": {
     "grunt": "latest",
     "grunt-cli": "latest",
@@ -44,8 +44,12 @@
     "sharp": "latest",
     "spritesmith": "latest"
   },
+  "devDependencies": {
+    "set-value": ">=2.0.1",
+    "mixin-deep": ">=1.3.2"
+  },
   "engine": [
-    "node 8.11.3",
+    "node 12.13.0",
     "python 3.7.2"
   ],
   "scripts": {

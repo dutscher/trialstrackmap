@@ -81,7 +81,8 @@ module.exports = {
         "LVL_X_TERMINATE": "x-terminate",
         "LVL_CLIFF_HANGER": "cliff-hanger",
         "LVL_MT_WHIPLASH": "mt. whiplash",
-        "LVL_SMURFIN_LEDGES": "smurfin' ledges"
+        "LVL_SMURFIN_LEDGES": "smurfin' ledges",
+        "LVL_DUTSCHERS_DEN": "dutscher's den"
     },
     // season
     convertCostumStr: (str) => {

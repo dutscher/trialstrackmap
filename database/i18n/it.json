@@ -659,7 +659,13 @@
     "369": "Paesaggio Stradale",
     "370": "Apostasia",
     "371": "Viadotto",
-    "372": "Caos Urbano"
+    "372": "Caos Urbano",
+    "373": "Valanga di Neve",
+    "374": "Verso il Cielo",
+    "375": "Zona Selvaggia",
+    "376": "Tana di Dutscher",
+    "377": "Complesso Urbano",
+    "378": "Corsa nella Palude"
   },
   "unreleased": [
     "LVL_ROADWAY: Carreggiata"

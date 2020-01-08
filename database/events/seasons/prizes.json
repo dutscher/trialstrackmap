@@ -48,7 +48,9 @@
     "42": "Wasteland",
     "43": "Blazing Hop",
     "44": "Crystal Flow",
-    "45": "Flora Crossing"
+    "45": "Flora Crossing",
+    "46": "Swamp Fathom",
+    "47": "Snow Flurry"
   },
   "paintjobs": {
     "1": {"title": "Neon Paintjob for Tango", "sprite": "tango-neon"},
@@ -162,6 +164,12 @@
     "72": {"title": "Bad Bone Sr Pants", "selector": "bad-bone-sr", "part": "pants"},
     "73": {"title": "The Yeti Head", "selector": "the-yeti", "part": "head"},
     "74": {"title": "The Yeti Torso", "selector": "the-yeti", "part": "body"},
-    "75": {"title": "The Yeti Pants", "selector": "the-yeti", "part": "pants"}
+    "75": {"title": "The Yeti Pants", "selector": "the-yeti", "part": "pants"},
+    "76": {"title": "The Sno-Rider Head", "selector": "the-sno-rider", "part": "head"},
+    "77": {"title": "The Sno-Rider Torso", "selector": "the-sno-rider", "part": "body"},
+    "78": {"title": "The Sno-Rider Pants", "selector": "the-sno-rider", "part": "pants"},
+    "79": {"title": "Harley-Davidson Asphalt Head", "selector": "harley-davidson-asphalt-feeder", "part": "head"},
+    "80": {"title": "Harley-Davidson Asphalt Torso", "selector": "harley-davidson-asphalt-feeder", "part": "body"},
+    "81": {"title": "Harley-Davidson Asphalt Pants", "selector": "harley-davidson-asphalt-feeder", "part": "pants"}
   }
 }
