@@ -14,8 +14,8 @@
         "dimPath": "464x320"
       },
       "2": {
-        "src": "#1/amK7uNQ.jpg",
-        "srcTrackfinder": "#1/lswKsTT.jpg",
+        "src": "#1/tgxiyOF.jpg",
+        "srcTrackfinder": "#1/jx8ffBU.jpg",
         "srcDiscover": "#1/ZlrINkm.jpg",
         "offline_src": "trackmap.2.191101.en.jpg",
         "offline_srcTrackfinder": "trackmap.2.191101.path.min.jpg",
@@ -25,14 +25,14 @@
         "dimPath": "320x320"
       }
     },
+    "paintjobs": {
+      "src": "#1/O5bID9W.png",
+      "selector": "i.paintjob, i.paintjob-icon",
+      "sprite": true
+    },
     "countries": {
       "src": "#1/tbcHwm9.png",
       "selector": "i.country",
-      "sprite": true
-    },
-    "paintjobs": {
-      "src": "#1/IZq4xZi.png",
-      "selector": "i.paintjob, i.paintjob-icon",
       "sprite": true
     },
     "sidebar-arrow-open": {

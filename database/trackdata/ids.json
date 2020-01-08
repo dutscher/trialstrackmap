@@ -2437,14 +2437,16 @@
     "id": 367,
     "oid": 1427,
     "env": 6,
-    "world": 2
+    "world": 2,
+    "only_event": true
   },
   // Hurdles from Hell
   {
     "id": 368,
     "oid": 1428,
     "env": 0,
-    "world": 2
+    "world": 2,
+    "only_event": true
   },
   // Streetscape
   {
@@ -2495,7 +2497,7 @@
     "env": 0,
     "world": 2
   },
-  // Dutschers Den
+  // Dutscher's Den
   {
     "id": 376,
     "oid": 1436,
