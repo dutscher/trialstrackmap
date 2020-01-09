@@ -104,7 +104,7 @@
     {"name":"jussi1979","country":"FIN"},
     {"name":"potatosandwich_","country":"CHN"},
     {"name":"manchester_ctid","country":"GBR"},
-    {"name":"francis70381","country":"CHN"},
+    {"name":"francis70381","country":"TW"},
     {"name":"killer-two","country":"FRA"},
     {"name":"Husaberg-TFG","country":"GER"},
     {"name":"UpsettingStr011","country":"CHN"},
@@ -116,6 +116,7 @@
     {"name":"Szulcsi","country":"HUN"},
     {"name":"Trafal.gar","country":"RUS"},
     {"name":"zachclark321","country":"USA"},
+    {"name":"Clarky_Boi_TFG","country":"AUS"},
     {"name":"Kitchen-Knives","country":"GBR"},
     {"name":"peppie18","country":"AUS"},
     {"name":"ThugLife-EBR","country":"BRA"},
@@ -131,6 +132,7 @@
     {"name":"TM_texno1og_GT","country":"RUS"},
     {"name":"ktarik9","country":"USA"},
     {"name":"Phoenix999","country":"CAN"},
+    {"name":"THE_PHOENIX999","country":"CAN"},
     {"name":"C-Speed.T3F","country":"FRA"},
 
     {"name":"o-Wrong-Turn-o","country":""},
@@ -151,5 +153,9 @@
     {"name":"mancow533","country":""},
     {"name":"Cryo","country":""},
     {"name":"NJDC1998","country":""},
-    {"name":"EdKenway11","country":""}
+    {"name":"EdKenway11","country":""},
+
+    {"name":"lepr1c0n_24rus","country":"RUS"},
+    {"name":"olegbegamentov","country":"RUS"},
+    {"name":"russfromkrg","country":"RUS"}
 ]
