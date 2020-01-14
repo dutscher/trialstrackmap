@@ -5,15 +5,19 @@
         3,
         15,
         13,
+        18,
+
         4,
         5,
         6,
         14,
+
         7,
         8,
         9,
         16,
         17,
+
         19,
         10,
         11,
@@ -57,7 +61,7 @@
                 "Nutcracker",
                 "AUS-X-OPEN",
                 "Turtle",
-                "Fudge*"
+                "Fudge>"
             ],
             "gfx": [
                 "https://i.imgur.com/eTDRLeB.png",
@@ -143,7 +147,7 @@
                 "AUS-X-OPEN",
                 "Sandstorm",
                 "ICY X",
-                "Tranzit",
+                "Tranzit?",
                 "Rising Streaks"
             ],
             "gfx": [
@@ -174,7 +178,7 @@
                 "Valentine In",
                 "Extra Terres Trial",
                 "Alpaca",
-                "Nocturnal*"
+                "Nocturnal>"
             ],
             "gfx": [
                 "https://i.imgur.com/JUCNte3.png",
@@ -207,7 +211,7 @@
                 "X-18",
                 "Golden Dirt",
                 "Stache",
-                "Sheriff*"
+                "Sheriff>"
             ],
             "gfx": [
                 "https://i.imgur.com/wUQVdTC.png",
@@ -236,7 +240,7 @@
                 "Hard Rocker",
                 "The Reowned Berserkar",
                 "Darkmagic",
-                "Firestarter*"
+                "Firestarter>"
             ],
             "gfx": [
                 "https://i.imgur.com/XDS6gcG.png",
@@ -268,7 +272,7 @@
                 "Crimson Cruiser",
                 "Yellow Submarine",
                 "Opera",
-                "Blossom*"
+                "Blossom>"
             ],
             "gfx": [
                 "https://i.imgur.com/kooKFFG.png",
@@ -353,7 +357,7 @@
             "paintjobs": [
                 "Default",
                 "Red Bull",
-                "Dawn Breaker*"
+                "Dawn Breaker>"
             ],
             "gfx": [
                 "https://i.imgur.com/NKqiwIw.png",
@@ -369,14 +373,14 @@
                 "Camo",
                 "Thunderstorm",
                 "Scarlet*",
-                "Beluga*"
+                "Beluga>"
             ],
             "gfx": [
                 "https://i.imgur.com/Ayg6pLc.png",
                 "https://i.imgur.com/M5KThwr.png",
                 "https://i.imgur.com/8C4LnjH.png",
                 "https://i.imgur.com/sZW8jl4.png",
-                "https://i.imgur.com/hS68BgE.png"
+                "https://i.imgur.com/msnfjEZ.png"
             ]
         },
         "16": {
@@ -407,6 +411,17 @@
                 "https://i.imgur.com/7NiAp4E.png"
             ]
         },
+        "18": {
+            "name": "HD EV",
+            "nameLong": "Harley Davidson EV",
+            "tier": 1,
+            "paintjobs": [
+                "Default*"
+            ],
+            "gfx": [
+                "https://i.imgur.com/HnNWYiM.png"
+            ]
+        },
         "19": {
             "name": "Donkey",
             "tier": 256,
@@ -417,7 +432,7 @@
                 "Blizzard",
                 "Candy Cane",
                 "Feaster",
-                "Swamp Monster*"
+                "Swamp Monster"
             ],
             "gfx": [
                 "https://i.imgur.com/NNJoSkB.png",

@@ -5,11 +5,9 @@ module.exports = function (shared) {
     const dataDB = require("../../" + dbPath);
     const importPath = `${shared.secretPath}/bikes.json5`;
     const spriteMapPathRaw = `${shared.secretPath}/gen/atlas`;
-    const spritesPathRaw = `${shared.secretPath}/MENUZ/WIDGETS`;
-    const cansPathRaw = `${shared.secretPath}/MENUZ/ITEM`;
+    const imagesPathRaw = `${shared.secretPath}/MENUZ`;
     const resizedPath = `${shared.secretPath}/resized`;
     const bikesPath = `${shared.secretPath}/bikes`;
-    const cansPath = `${shared.secretPath}/cans`;
     const hashFile = shared.fs.readFileSync(`${shared.toolPath.hashes}/bike-hashes.txt`, "utf-8");
     const newSizePj = 70;
     const newSizeCan = 50;
@@ -33,7 +31,6 @@ module.exports = function (shared) {
         let left = 0;
         let timeout = null;
         shared.ensureDirectoryExistence(bikesPath + "/fileForDir.jo");
-        shared.ensureDirectoryExistence(cansPath + "/fileForDir.jo");
 
         sharp.queue.on("change", (inQueue) => {
             //console.log("Queue contains " + inQueue + " task(s)");
@@ -115,6 +112,7 @@ module.exports = function (shared) {
             ver = JSON.parse(ver);
             var count = JSON.stringify(list[1]);
             count = JSON.parse(count);
+
             return {
                 ver: ver.data[0],
                 count: count.data[0]
@@ -140,11 +138,12 @@ module.exports = function (shared) {
         }
 
         function cropBike(coords, spriteIndex) {
+            // console.log(coords)
             // { bike: { id: 15, pjId: 1, can: { id: '14', letter: '_B' } },
             const cssClass = `${coords.bike.id}-${coords.bike.pjId}`;
             const pos = {left: coords.pos[0], top: coords.pos[1], width: 256, height: 128};
-            const spriteRaw = `${spritesPathRaw}/BIKES${spriteIndex >= 1 ? spriteIndex + 1 : ""}.png`;
-            const canPathRaw = `${cansPathRaw}/PAINT_${coords.bike.can.id}${coords.bike.can.letter}.png`;
+            const spriteRaw = `${imagesPathRaw}/WIDGETS/BIKES${spriteIndex >= 1 ? spriteIndex + 1 : ""}.png`;
+            const canPathRaw = `${imagesPathRaw}/ITEM/PAINT_${coords.bike.can.id}${coords.bike.can.letter}.png`;
             const pjPath = `${bikesPath}/paintjob-${cssClass}.png`;
             const canPath = `${bikesPath}/paintjob-${cssClass}-icon.png`;
 
@@ -203,16 +202,18 @@ module.exports = function (shared) {
 
             // read sprite map
             filesMap.map((file, i) => {
-                let fileMap = shared.fs.readFileSync(`${spriteMapPathRaw}/${file}.atl`);
-                //console.log(getVerCount(fileMap))
+                const ATLPath = `${spriteMapPathRaw}/${file}.atl`;
+                const fileMapATL = shared.fs.readFileSync(ATLPath);
                 // cut the buffer
-                fileMap = fileMap.slice(8, fileMap.length);
+                const fileMap = fileMapATL.slice(8, fileMapATL.length);
                 let list = chunks(fileMap, 12);
                 //console.log("list.length", list.length)
                 // print json
+                console.log(file, list.length, getVerCount(fileMapATL), ATLPath)
                 list.map((l, j) => {
                     let first = JSON.stringify(l);
                     // { bike: { id: 15, pjId: 1, can: { id: '14', letter: '_B' } },
+                    //console.log(first, j, getPos(l), i)
                     if (renderImages) {
                         cropBike(getPos(l), i);
                     } else {

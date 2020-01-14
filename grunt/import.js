@@ -74,6 +74,7 @@ module.exports = function (grunt) {
         // use this map for matching/renaming it to match the i18n
         renameTrack: consts.renameTrack,
         convertCostumStr: consts.convertCostumStr,
+        blueprintRenames: consts.blueprintRenames,
         pjMatcher: consts.pjMatcher,
         pjRenames: consts.pjRenames,
         idsOfSeasonPrizes: consts.idsOfSeasonPrizes,

@@ -50,7 +50,15 @@
     "44": "Crystal Flow",
     "45": "Flora Crossing",
     "46": "Swamp Fathom",
-    "47": "Snow Flurry"
+    "47": "Snow Flurry",
+    "48": "Homeland Express",
+    "49": "Dutschers Den",
+    "50": "Frost Point",
+    "51": "Dual Snowfest",
+    "52": "Snowball Surprise",
+    "53": "Floral Lane",
+    "54": "Marsh Ride",
+    "55": "Desert Punk"
   },
   "paintjobs": {
     "1": {"title": "Neon Paintjob for Tango", "sprite": "tango-neon"},
@@ -87,7 +95,10 @@
     "32": {"title": "Yellow Submarine for Phantom", "sprite": "phantom-yellow-submarine"},
     "33": {"title": "Black Jack PJ for Bronco", "sprite": "bronco-blackjack"},
     "34": {"title": "Bad Bone PJ for Bronco", "sprite": "bronco-bad-bone"},
-    "35": {"title": "Swamp Monster for Donkey", "sprite": "donkey-swamp-monster"}
+    "35": {"title": "Swamp Monster for Donkey", "sprite": "donkey-swamp-monster"},
+    "36": {"title": "Dawn Breaker for KTM 450", "sprite": "ktm-450-rally-dawn-breaker"},
+    "37": {"title": "Blossom for Phantom", "sprite": "phantom-blossom"},
+    "38": {"title": "Beluga for Bandito", "sprite": "bandito-beluga"}
   },
   "costums": {
     "1": {"title": "Ninja Head", "selector": "the-ninja", "part": "head"},
@@ -170,6 +181,15 @@
     "78": {"title": "The Sno-Rider Pants", "selector": "the-sno-rider", "part": "pants"},
     "79": {"title": "Harley-Davidson Asphalt Head", "selector": "harley-davidson-asphalt-feeder", "part": "head"},
     "80": {"title": "Harley-Davidson Asphalt Torso", "selector": "harley-davidson-asphalt-feeder", "part": "body"},
-    "81": {"title": "Harley-Davidson Asphalt Pants", "selector": "harley-davidson-asphalt-feeder", "part": "pants"}
+    "81": {"title": "Harley-Davidson Asphalt Pants", "selector": "harley-davidson-asphalt-feeder", "part": "pants"},
+    "82": {"title": "Ted- Head", "selector": "ted-the-hipster", "part": "head"},
+    "83": {"title": "Ted- Torso", "selector": "ted-the-hipster", "part": "body"},
+    "84": {"title": "Ted- Pants", "selector": "ted-the-hipster", "part": "pants"},
+    "85": {"title": "Nutjob Frank Head", "selector": "nutjob-frank", "part": "head"},
+    "86": {"title": "Nutjob Frank Torso", "selector": "nutjob-frank", "part": "body"},
+    "87": {"title": "Nutjob Frank Pants", "selector": "nutjob-frank", "part": "pants"},
+    "88": {"title": "Moonrider Head", "selector": "moonrider", "part": "head"},
+    "89": {"title": "Moonrider Torso", "selector": "moonrider", "part": "body"},
+    "90": {"title": "Moonrider Pants", "selector": "moonrider", "part": "pants"}
   }
 }

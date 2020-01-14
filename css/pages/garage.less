@@ -22,19 +22,46 @@
     z-index: 11;
   }
 
-  &.is-new &__wrap {
+  &.is-open.is-new &__wrap,
+  &.is-open.coming-soon &__wrap,
+  &.is-open.is-leaked &__wrap {
     &::after {
       position: absolute;
-      content: "NEW";
-      background: #00d9ff;
       color: #fff;
       padding: 2px 50px;
-      top: 25px;
-      right: -34px;
       left: auto;
       transform: rotate(45deg);
       font-size: 20px;
       z-index: -1;
+    }
+  }
+
+  &.is-new &__wrap {
+    &::after {
+      content: "NEW";
+      background: #00d9ff;
+      top: 25px;
+      right: -34px;
+    }
+  }
+
+  &.coming-soon &__wrap {
+    &::after {
+      content: "COMING SOON";
+      background: #fce303;
+      top: 26px;
+      right: -54px;
+      width: 119px;
+      text-align: center;
+    }
+  }
+
+  &.is-leaked &__wrap {
+    &::after {
+      content: "LEAKED";
+      background: #FF0000;
+      top: 22px;
+      right: -58px;
     }
   }
 
@@ -180,7 +207,8 @@
       }
 
       &__new,
-      &__leaked {
+      &__leaked,
+      &__coming-soon {
         &::after {
           position: absolute;
           color: #fff;
@@ -205,6 +233,14 @@
         &::after {
           content: "NEW";
           background: #00d9ff;
+        }
+      }
+
+      &__coming-soon {
+        &::after {
+          content: "SOON";
+          background: #fce303;
+          right: -51px;
         }
       }
 

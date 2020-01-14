@@ -41,81 +41,125 @@ module.exports = function (shared) {
         console.log("# START SEASON IMPORT gameVersion:", shared.gameVersion, "importSeasonID:", importSeasonID);
 
         function findSpecial(specialID) {
+            if (specialID === 200021) {
+                specialID = 20001;
+            }
+
             const rewards = rewardsJSON.PVPMatchRewardTypes,
-                foundReward = rewards.filter(function (reward) {
-                    return reward.ID === specialID;
-                });
+                foundReward = rewards.filter(reward => reward.ID === specialID);
 
             let returnData;
+            let matches;
 
-            if (foundReward.length === 1) {
+            const isCostum = false; // Type: 0, TextureScale: 1.5,
+            const isCraftingItem = false; // Type: 0, TextureAtlasId: 1,
+            const isBlueprint = false; //  Type: 0, TextureScale: 0.85,
+            const isTrack = false; // Type: 1,
+            const isPaintjob = false; // Type: 2,
+            const isCoinMagnet = false; // Type: 0, TextureScale: 1.42,
+
+            if (foundReward.length === 0) {
+                console.error("cant findSpecial");
+                console.error("specialID:", specialID, rewardsFile + shared.toExt, "PVPMatchRewardTypes")
+            } else {
                 const commentOfReward = foundReward[0].Comment;
                 const nameIdOfReward = foundReward[0].NameId;
 
                 // console.log("findSpecial", specialID, foundReward)
-
                 if (specialID && foundReward[0]) {
+                    // coin magnet
+                    if (commentOfReward === "Coin Magnet") {
+                        returnData = {
+                            extra_type: "coin-magnet"
+                        };
+                    }
+
+                    // blueprint
+                    if (commentOfReward.indexOf("blueprint") !== -1) {
+                        // Comment: 'Harley blueprint part. As a fallback reward, Doughnut is used.',
+                        const blueprintRenames = shared.blueprintRenames;
+                        const bikeNameRaw = /(.*) blueprint part. As a fallback reward, Doughnut is used.*/g.exec(commentOfReward);
+                        const foundRename = Object.entries(blueprintRenames).filter(bike => bike[0] === bikeNameRaw[1]);
+                        returnData = {
+                            extra: foundRename.length > 0 ? foundRename[0][1] : bikeNameRaw[1],
+                            extra_type: "blueprint"
+                        };
+                    }
+
                     // part
-                    let matches = /(\d) (\w*)/g.exec(commentOfReward);
-                    if (matches && matches.length > 2) {
-                        const type = matches[2].toLowerCase();
-                        returnData = (
-                            (type === "metal" ? "sheet" : type)
-                            + "-"
-                            + (parseInt(matches[1]) + 1)
-                        );
+                    if (!returnData) {
+                        matches = /(\d) (\w*)/g.exec(commentOfReward);
+                        if (matches && matches.length > 2) {
+                            const type = matches[2].toLowerCase();
+                            returnData = (
+                                (type === "metal" ? "sheet" : type)
+                                + "-"
+                                + (parseInt(matches[1]) + 1)
+                            );
+                        }
                     }
                     // track
-                    matches = /Track Reward - (.*)/g.exec(commentOfReward);
-                    if (matches && matches.length > 1) {
-                        returnData = {
-                            extra_type: "track",
-                            extra: findPrize(
-                                "track",
-                                nameIdOfReward
-                                    .replace(/LVL_/g, "")
-                                    .replace(/_/g, " "),
-                                commentOfReward
-                            )
-                        };
+                    if (!returnData) {
+                        matches = /Track Reward - (.*)/g.exec(commentOfReward);
+                        if (matches && matches.length > 1) {
+                            returnData = {
+                                extra_type: "track",
+                                extra: findPrize(
+                                    "track",
+                                    nameIdOfReward
+                                        .replace(/LVL_/g, "")
+                                        .replace(/_/g, " "),
+                                    commentOfReward
+                                )
+                            };
+                        }
                     }
+
                     // paintjobs
-                    const allPJMatcher = shared.pjMatcher;
-                    // find with matcher
-                    let pjMatch = null;
-                    allPJMatcher.map(matcher => {
-                        const localMatches = matcher.reqExp.exec(commentOfReward);
-                        if (localMatches && localMatches.length > matcher.matchLength && pjMatch === null) {
-                            pjMatch = localMatches[matcher.matchGroup];
+                    if (!returnData) {
+                        const allPJMatcher = shared.pjMatcher;
+                        // find with matcher
+                        let pjMatch = null;
+                        allPJMatcher.map(matcher => {
+                            const localMatches = matcher.reqExp.exec(commentOfReward);
+                            if (localMatches && localMatches.length > matcher.matchLength && pjMatch === null) {
+                                pjMatch = localMatches[matcher.matchGroup];
+                            }
+                        });
+                        if (pjMatch !== null) {
+                            // check renames
+                            if (pjMatch in shared.pjRenames) {
+                                pjMatch = shared.pjRenames[pjMatch];
+                            }
+                            // try to find prize
+                            returnData = {
+                                extra_type: "paintjob",
+                                extra: findPrize("paintjob", pjMatch, commentOfReward)
+                            };
                         }
-                    });
-                    if (pjMatch !== null) {
-                        // check renames
-                        if (pjMatch in shared.pjRenames) {
-                            pjMatch = shared.pjRenames[pjMatch];
-                        }
-                        // try to find prize
-                        returnData = {
-                            extra_type: "paintjob",
-                            extra: findPrize("paintjob", pjMatch, commentOfReward)
-                        };
                     }
 
                     // costum
-                    if (shared._.startsWith(foundReward[0].NameId, "OUTFIT")) {
-                        returnData = {
-                            extra: findPrize(
-                                "costum",
-                                shared.convertCostumStr(commentOfReward),
-                                commentOfReward),
-                            extra_type: "costum"
-                        };
+                    if (!returnData) {
+                        if (shared._.startsWith(foundReward[0].NameId, "OUTFIT")) {
+                            returnData = {
+                                extra: findPrize(
+                                    "costum",
+                                    shared.convertCostumStr(commentOfReward),
+                                    commentOfReward),
+                                extra_type: "costum"
+                            };
+                        }
+                    }
+
+                    if (!returnData) {
+                        console.error("cant findSpecial in prizes.json");
+                        console.error("specialID:", specialID, rewardsFile + shared.toExt, "PVPMatchRewardTypes");
+                        console.error(foundReward);
                     }
                 }
-            } else {
-                console.log("cant findSpecial");
-                console.log("specialID:", specialID, rewardsFile + shared.toExt, "PVPMatchRewardTypes")
             }
+
             return returnData;
         }
 
@@ -189,8 +233,14 @@ module.exports = function (shared) {
 
             for (const i in seasonFile) {
                 const file = seasonFile[i],
-                    json = require("../../" + importDir + file),
-                    settings = json.pvp_season_settings,
+                    json = require("../../" + importDir + file);
+
+                if("httpCode" in json && json.httpCode === 404){
+                    console.error(`season ${file} and their settings  not exists`);
+                    return;
+                }
+
+                const settings = json.pvp_season_settings,
                     rewards = json.pvp_season_rewards,
                     match = json.pvp_match_settings,
                     id = settings.season_index,

@@ -17,23 +17,28 @@
 
                 function buildBike(paintJobName, paintJobId, bike, bikeId, isLeaked, additionIndex) {
                     var isNew = paintJobName.indexOf("*") !== -1;
+                    var isComingSoon = paintJobName.indexOf(">") !== -1;
+                    var isUnreleased = paintJobName.indexOf("?") !== -1;
+                    var clearPjName = paintJobName.replace(/[*?>]/, "");
                     return `
                     <td class="${pjClassName}">
                         <div class="${pjClassName}__wrap" 
                              garage-big-image="${bike.gfx[isLeaked ? additionIndex + paintJobId : paintJobId]}" 
-                             data-title="${bike.name} - ${paintJobName}"
+                             data-title="${bike.name} - ${paintJobName}${isLeaked ? '?' : ''}"
                              data-icon="paintjob-icon paintjob-${bikeId}${isLeaked ? "-leaked" : ""}-${paintJobId}-icon">
                             <span class="${pjClassName}__span">
                                 ${isNew ? `<div class="${pjClassName}__new"></div>` : ""}
-                                ${isLeaked ? `<div class="${pjClassName}__leaked"></div>` : ""}
+                                ${isComingSoon ? `<div class="${pjClassName}__coming-soon"></div>` : ""}
+                                ${isLeaked || isUnreleased ? `<div class="${pjClassName}__leaked"></div>` : ""}
                                 <i class="paintjob-icon paintjob-${bikeId}${isLeaked ? "-leaked" : ""}-${paintJobId}-icon"></i>
                                 <i class="paintjob paintjob-${bikeId}${isLeaked ? "-leaked" : ""}-${paintJobId}"></i>
                             </span>
                             <span class="${pjClassName}__name" 
-                                  data-name="${paintJobName.replace("*", "")}"></span>
+                                  data-name="${clearPjName}"></span>
                         </div>
                     </td>\n`
                 }
+
 
                 let maxPjs = 0;
                 Object.values(bikeData.bikes).forEach((bikeData) => {

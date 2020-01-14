@@ -63,6 +63,9 @@ module.exports = function (grunt) {
             },
             list = function (path) {
                 fs.readdirSync(path).forEach(function (file) {
+                    if(file.indexOf(".compare") !== -1)
+                        return;
+
                     if (fs.lstatSync(path + "/" + file).isDirectory()) {
                         // read dir and step into
                         list(path + "/" + file);

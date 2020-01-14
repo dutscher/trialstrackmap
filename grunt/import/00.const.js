@@ -87,15 +87,24 @@ module.exports = {
     // season
     convertCostumStr: (str) => {
         return str.replace(/\./g, "")
+            .replace("- Top", "Head")
             .replace("Top", "Head")
+            .replace("- Middle", "Torso")
             .replace("Middle", "Torso")
             .replace("middle", "Torso")
             .replace("Pant", "Pants")
             .replace("Leg", "Pants")
             .replace("Lower", "Pants")
+            .replace("- Bottom", "Pants")
             .replace("Bottom", "Pants")
             .replace("bottom", "Pants")
             .replace("SUTE", "Suite")
+    },
+    blueprintRenames: {
+        "BMW F800GS": 16,
+        "Harley": 17,
+        "Harley EV": 18,
+        "Donkey": 19,
     },
     pjMatcher: [
         {
@@ -124,6 +133,11 @@ module.exports = {
             matchLength: 1,
             matchGroup: 1
         },
+        {
+            reqExp: /Custom skin '(.*)'\. \(NOTE.*bikes\.txt.*/g,
+            matchLength: 1,
+            matchGroup: 1
+        },
         // Union Fanny Pack for the Mantis. (NOTE: ItemId for bike skins points to bikeskin.txt skin ids!)
         {
             reqExp: /Union (.*) for the (.*)\. \(NOTE.*bikeskin\.txt.*/g,
@@ -136,8 +150,20 @@ module.exports = {
             matchLength: 2,
             matchGroup: 2
         },
+        // Dawn Breaker KTM 450. (NOTE: ItemId for bike skins points to bikes.txt skin ids!)'
+        {
+            reqExp: /(.*) KTM 450\. \(NOTE.*bikes\.txt.*/g,
+            matchLength: 1,
+            matchGroup: 1
+        },
         {
             reqExp: /(.*) \(NOTE.*bikeskin\.txt.*/g,
+            matchLength: 1,
+            matchGroup: 1
+        },
+        // Blossom (NOTE: ItemId for bike skins points to bikes.txt skin ids!)',
+        {
+            reqExp: /(.*) \(NOTE.*bikes\.txt.*/g,
             matchLength: 1,
             matchGroup: 1
         },

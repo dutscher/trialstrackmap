@@ -12,7 +12,7 @@ module.exports = function (shared) {
             shared.appFiles.map(file => {
                 return [
                     `echo "copy ${file}.dat"`,
-                    `adb pull ${shared.androidPath}${shared.appPath}/${file}.dat ${shared.versionPath}`
+                    `adb pull ${shared.androidPath}${shared.appPath}/files/${file}.dat ${shared.versionPath}`
                 ];
             }),
         ]);

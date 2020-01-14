@@ -26,12 +26,12 @@
       }
     },
     "paintjobs": {
-      "src": "#1/O5bID9W.png",
+      "src": "#1/N3XvLM8.pngg",
       "selector": "i.paintjob, i.paintjob-icon",
       "sprite": true
     },
     "countries": {
-      "src": "#1/JnaZFCj.png",
+      "src": "#1/MxbOAjh.png",
       "selector": "i.country",
       "sprite": true
     },
