@@ -17,6 +17,7 @@ module.exports = {
         {t: "import-10-screenshots", p: "./10.screenshots"},
         {t: "import-11-hunting", p: "./11.hunting"},
         {t: "import-12-countries", p: "./12.countries"},
+        {t: "import-13-matches", p: "./13.matches"},
         {t: "import-00-danteam", p: "../danteam/00.index", a: true},
         {t: "import-00-leaderboard", p: "../leaderboard/00.index", a: true},
     ],

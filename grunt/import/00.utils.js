@@ -142,6 +142,9 @@ module.exports = function (grunt, http, https, path, fs, fsExt) {
             }
         },
         getRequestOpts: function (path, method, appId) {
+            //const auth = "Basic " + Buffer.from("email:pass").toString("base64");
+            const auth = "Basic ZHV0c2NoZXJfc2JmQGhvdG1haWwuY29tOm1vY2xvdjEzMzc=";
+
             return {
                 host: session === null ? "public-ubiservices.ubi.com" : "lb-rdv-http.ubi.com",
                 port: 443,
@@ -149,8 +152,7 @@ module.exports = function (grunt, http, https, path, fs, fsExt) {
                 method: method ? method : "GET",
                 headers: {
                     "Ubi-AppId": appId ? appId : this.appId,
-                    //"Authorization": "Basic " + Buffer.from("email:pass").toString("base64"),
-                    "Authorization": session === null ? "Basic ZHV0c2NoZXJfc2JmQGhvdG1haWwuY29tOm1vY2xvdjEzMzc=" : "Ubi_v1 t=" + session.ticket,
+                    "Authorization": session === null ? auth : "Ubi_v1 t=" + session.ticket,
                     "Content-Type": "application/json"
                 }
             };
