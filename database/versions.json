@@ -12,16 +12,49 @@
             "event": {
                 "name": "",
                 "type": "hunt|grind|mc|fanpoints|rally",
-                "guide": "https://forums.ubisoft.com/showthread.php/"
+                "guide": "https://forums.ubisoft.com/showthread.php/",
+                "img": []
             }
+        },
+        "7.9.0": {
+            "date": "13.01.2020",
+            "icon": "https://i.imgur.com/CGAPE58.jpg",
+            "event": {
+                "name": "Harley Davidson EV",
+                "type": "mc",
+                "img": [
+                    "https://i.imgur.com/cZyTO28.png",
+                    "https://i.imgur.com/ue9OQh4.png"
+                ]
+            }
+        },
+        "7.8.0": {
+            "date": "17.12.2019",
+            "fixfor": "7.6.0",
+            "icon": "https://i.imgur.com/5vvNvEq.jpg"
+        },
+        "7.7.0": {
+            "date": "16.12.2019",
+            "fixfor": "7.6.0",
+            "icon": "https://i.imgur.com/5vvNvEq.jpg"
         },
         "7.6.0": {
             "date": "16.12.2019",
             "icon": "https://i.imgur.com/5vvNvEq.jpg",
+            "notes": "Get ready to get stuntin', because it's time for 'Trixmas'! Take on the never-before-seen Skill Games - try a 'Ball Run', or get past the 'Hurdles from Hell'! Are you ready for this challenge?",
+            "forum": "https://forums.ubisoft.com/showthread.php/2166794-Trixmas!",
             "event": {
                 "name": "Trixmas",
                 "type": "fanpoints",
-                "forum": "https://forums.ubisoft.com/showthread.php/"
+                "img": [
+                    "https://i.imgur.com/1xlb7Nw.png",
+                    "https://i.imgur.com/VAYpyeM.png",
+                    "https://i.imgur.com/R3eKabY.png",
+                    "https://i.imgur.com/zH5yzQ6.png",
+                    "https://i.imgur.com/Vc83O6S.png",
+                    "https://i.imgur.com/uFtUilj.png"
+                 ],
+                "category": 43
             }
         },
         "7.5.0": {

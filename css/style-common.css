@@ -22,53 +22,26 @@ body {
 }
 
 .spin {
-    -webkit-animation: clock-spin 1.5s infinite ease-out;
     animation: clock-spin 1.5s infinite ease-out;
-}
-
-@-webkit-keyframes clock-spin {
-    0% {
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
-    15% {
-        -webkit-transform: rotate(320deg);
-        transform: rotate(320deg);
-    }
-    75% {
-        -webkit-transform: rotate(45deg);
-        transform: rotate(45deg);
-    }
-    100% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
 }
 
 @keyframes clock-spin {
     0% {
-        -webkit-transform: rotate(360deg);
         transform: rotate(360deg);
     }
     15% {
-        -webkit-transform: rotate(320deg);
         transform: rotate(320deg);
     }
     75% {
-        -webkit-transform: rotate(45deg);
         transform: rotate(45deg);
     }
     100% {
-        -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
     }
 }
 
 .is-loading {
     opacity: 0;
-    -webkit-transition: opacity 500ms ease-out; /* Firefox */
-    -moz-transition: opacity 500ms ease-out; /* WebKit */
-    -o-transition: opacity 500ms ease-out; /* Opera */
     transition: opacity 500ms ease-out; /* Standard */
 }
 

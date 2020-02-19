@@ -27,7 +27,6 @@ module.exports = function (grunt) {
             livereload: config.livereload,
             hostname: config.hostname,
             middleware: function (connect, options, middlewares) {
-
                 // 1. mod-rewrite behavior
                 middlewares.unshift(rewrite(rules));
 
@@ -39,6 +38,14 @@ module.exports = function (grunt) {
                 base.forEach(function (path) {
                     middlewares.unshift(serveStatic(path));
                 });
+
+                middlewares.unshift(
+                    function (req, res, next) {
+                        res.setHeader('Access-Control-Allow-Origin', '*');
+                        res.setHeader('Access-Control-Allow-Methods', '*');
+                        next();
+                    }
+                );
 
                 return middlewares;
             }
