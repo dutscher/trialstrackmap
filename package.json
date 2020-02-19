@@ -5,7 +5,7 @@
   "author": "willy woitas <dutscher_sbf@hotmail.com>",
   "private": true,
   "version": "7.9.0",
-  "seasonID": 69,
+  "seasonID": 71,
   "dependencies": {
     "grunt": "latest",
     "grunt-cli": "latest",
@@ -42,7 +42,8 @@
     "text-encoding": "latest",
     "buffer-chunks": "latest",
     "sharp": "latest",
-    "spritesmith": "latest"
+    "spritesmith": "latest",
+    "image-size": "latest"
   },
   "devDependencies": {
     "set-value": ">=2.0.1",

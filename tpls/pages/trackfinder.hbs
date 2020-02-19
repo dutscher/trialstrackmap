@@ -10,7 +10,7 @@
     {{#content "htmlCtrl"}}ng-controller="trackData" data-snowflakes="no"{{/content}}
     {{#content "ctrl"}}ng-controller="trackFinder"{{/content}}
     {{#content "body"}}
-        <div class="centerized">
+        <div class="centerized" ng-class="{'iframe-view':iframeView}">
             <div class="trackfinder__wrap gradient-border with-box-shadow">
                 <div class="trackfinder__message" ng-if="showMessage">
                     {%showMessage%}
@@ -29,7 +29,7 @@
                     data-dim-map="{{../map.database.media.gfx.images.trackmaps.2.dim}}"
                     data-dim-path="{{../map.database.media.gfx.images.trackmaps.2.dimPath}}"
                     ></div>
-                <div class="trackfilter" ng-show="showFilter">
+                <div class="trackfilter" ng-hide="iframeView">
                     <span class="trackfilter__search">
                         <button class="trackfilter__search__clear"
                                 ng-show="searchTrack"
@@ -43,7 +43,7 @@
                     </span>
                     {{> language-select all-langs=true}}
                 </div>
-                <div class="banner">
+                <div class="banner" ng-hide="iframeView">
                     {{> facebook-script}}
                     <div class="content">
                         {{> facebook-div url="https://www.facebook.com/Trials-Frontier-Trackfinder-1986266344782873" width=350}}

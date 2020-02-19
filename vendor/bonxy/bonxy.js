@@ -2,12 +2,13 @@ var iframe = null,
     iframeWrap = null,
     iframeScaler = null,
     iframeClose = null,
-    iframeUrl = "//trialstrackmap.sb-f.de/trackfinder.html#track=",
-    //iframeUrl = "//localhost:8001/trackfinder.html#track=",
-    baseDim = "820x380".split("x"),
+    iframeUrl = "//trialstrackmap.sb-f.de/trackfinder.html#bonxy=true&track=",
+    //iframeUrl = "http://localhost:8001/trackfinder.html#bonxy=true&track=",
+    baseDim = "784x320".split("x"),
     scale = 0.45;
 
 function closeTrackFinder () {
+    iframe.src = iframeUrl;
     iframeWrap.setAttribute("style",
         " \
             left:{1}px;\
@@ -78,19 +79,19 @@ function showTrackFinder (event, trackName) {
     if (newSrc !== iframe.src) {
         iframe.src = newSrc;
     } else {
-        iframe.src = iframeUrl;
         closeTrackFinder();
         return;
     }
 
     calcScale();
 
+    var margin = 16;
     iframeWrap.setAttribute("style",
         " \
             top:{1}px; \
             left:{2}px;\
         "
-            .replace("{1}", event.y + 16)
-            .replace("{2}", event.x + 16)
+            .replace("{1}", event.pageY + margin)
+            .replace("{2}", event.pageX + margin)
     );
 }

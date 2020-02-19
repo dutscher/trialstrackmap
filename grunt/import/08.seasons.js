@@ -20,8 +20,8 @@ https://lb-rdv-http.ubi.com/TRIAG_IP_BETA_B/public/pvp_matches/v1/season/%1
 module.exports = function (shared) {
 
     shared.grunt.task.run([
-        "import-08-get-actual-season-data",
-        //"import-08-crop-season-banner",
+        //"import-08-get-actual-season-data",
+        "import-08-crop-season-banner",
         //"import-08-read-matches",
     ]);
 
@@ -372,8 +372,10 @@ module.exports = function (shared) {
     shared.grunt.registerTask("import-08-crop-season-banner", function () {
         const done = this.async();
         const sharp = require("sharp");
+        const sizeOf = require('image-size');
         // src: build/season-images
-        // image: 1920x1080 -> 1280x720 | x:370 y:205 | 540x74
+        // motog5 image: 1920x1080 -> 1280x720 | x:370 y:205 | 540x74
+        // motog8 image: 2280x1080 -> 1280x606 |
         // dest: ../trialstrackmap-gfx/seasons
         const srcPath = "build/season-images";
         let destPath = "../trialstrackmap-gfx/seasons";
@@ -392,20 +394,19 @@ module.exports = function (shared) {
         });
 
         files.forEach(file => {
-            console.log("sharp file", file.srcFile);
+            const dimensions = sizeOf(file.srcFile);
+            console.log("sharp file", file.srcFile, `${dimensions.width}x${dimensions.height}`);
             sharp(file.srcFile)
-                .resize(1280, 720)
+                .resize(1280, undefined)
                 .extract({
                     left: 370,
-                    top: 205,
+                    top: dimensions.width === 1920 ? 205 : 147,
                     width: 540,
                     height: 74
                 })
                 .jpeg()
                 .toFile(file.destFile);
         });
-
-
     });
 
     shared.grunt.registerTask("import-08-read-matches", function () {

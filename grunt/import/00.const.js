@@ -88,15 +88,15 @@ module.exports = {
     // season
     convertCostumStr: (str) => {
         return str.replace(/\./g, "")
-            .replace("- Top", "Head")
+            .replace("- Top", " Head")
             .replace("Top", "Head")
-            .replace("- Middle", "Torso")
+            .replace("- Middle", " Torso")
             .replace("Middle", "Torso")
             .replace("middle", "Torso")
             .replace("Pant", "Pants")
             .replace("Leg", "Pants")
             .replace("Lower", "Pants")
-            .replace("- Bottom", "Pants")
+            .replace("- Bottom", " Pants")
             .replace("Bottom", "Pants")
             .replace("bottom", "Pants")
             .replace("SUTE", "Suite")
