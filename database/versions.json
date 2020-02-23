@@ -30,7 +30,7 @@
         },
         "7.8.0": {
             "date": "17.12.2019",
-            "fixfor": "7.6.0",
+            "fixfor": "7.7.0",
             "icon": "https://i.imgur.com/5vvNvEq.jpg"
         },
         "7.7.0": {
@@ -94,8 +94,8 @@
         },
         "7.3.0": {
             "date": "20.08.2019",
-            "fixfor": "7.2.2",
-            "icon": "https://i.imgur.com/alCfrYM.jpg"
+            "icon": "https://i.imgur.com/alCfrYM.jpg",
+            "fixfor": "7.2.2"
         },
         "7.2.2": {
             "date": "31.07.2019",
@@ -154,10 +154,12 @@
         },
         "6.8.0": {
             "date": "18.02.2019",
+            "icon": "https://i.imgur.com/LUsTy5Y.jpg",
             "notes": "Update your game for a smoother ride we've improved the stability and removed some pesky bugs to enhance your gameplay experience!"
         },
         "6.7.0": {
             "date": "23.01.2019",
+            "icon": "https://i.imgur.com/LUsTy5Y.jpg",
             "notes": "Trials Rising is in the Frontier! Master your rides or crash in style, in the upcoming Rising PvP Season! Ride hard to win exclusive, iconic rewards! Oh, and don't forget to claim the free Stuntman Antti outfit available for a limited time only! Download Now!",
             "event": {
                 "type": "mc"
@@ -207,23 +209,26 @@
         },
         "6.3.0": {
             "date": "26.09.2018",
-            "fixfor": "6.2.2",
             "icon": "https://i.imgur.com/Dodc5e9.jpg"
         },
         "6.2.2": {
             "date": "02.09.2018",
-            "fixfor": "6.2.0"
+            "fixfor": "6.2.0",
+            "icon": "https://i.imgur.com/e2aio99.png"
         },
         "6.2.0": {
             "date": "21.08.2018",
+            "icon": "https://i.imgur.com/e2aio99.png",
             "notes": "Update your game for a smoother ride we've improved the stability and removed some pesky bugs to enhance your gameplay experience!\nRace in the Bunker to win some epic new Tracks and Paintjob!"
         },
         "6.1.1": {
             "date": "19.07.2018",
-            "fixfor": "6.1.0"
+            "fixfor": "6.1.0",
+            "icon": "https://i.imgur.com/cEMY5K5.png"
         },
         "6.1.0": {
             "date": "02.07.2018",
+            "icon": "https://i.imgur.com/cEMY5K5.png",
             "notes": "Enter 'X Games Minneapolis 2018' the world’s biggest action sports event comes to Trials Frontier! Stunt all the way through this flip-tastic event to earn Fan Points, win all-new Tracks, celebrated Outfits, and Paintjobs! For the first time ever: try the exciting new Stunt 'The Superman' in all its soaring glory! Download now!",
             "forum": "https://forums.ubisoft.com/showthread.php/1907271-New-Update-X-Games-Minneapolis-2018!",
             "event": {
@@ -239,11 +244,13 @@
         },
         "6.0.0": {
             "date": "09.05.2018",
+            "icon": "https://i.imgur.com/eTcC1Yb.jpg",
             "notes": "The 'X Games Norway Season' rides into the Frontier! Stunt your way through the multiplayer mode this super-chilled Season, and win exclusive 'X Games Norway' reward Tracks!",
             "forum": "https://forums.ubisoft.com/showthread.php/1881069-New-Update-X-Games-Norway-Season!"
         },
         "5.9.0": {
             "date": "09.04.2018",
+            "icon": "https://i.imgur.com/D5huRJo.png",
             "anniversary": 4,
             "notes": "Get our 4th Anniversary update! Download now to get the brand-new Community Track, voted for by the Trials Community! This update also includes Bug Fixes to make your rides smoother.",
             "img": [
@@ -253,6 +260,7 @@
         },
         "5.8.3": {
             "date": "14.02.2018",
+            "icon": "https://i.imgur.com/COXN13f.png",
             "notes": "Riders, all aboard the Love Express! Deliver Love for Ted across the Frontier in this charming new update!\nAvoid bumpy rides, and make your way to the top of the Leaderboards!\nRemember, gentle and caring rides could win you 7 epic new Tracks!",
             "forum": "https://forums.ubisoft.com/showthread.php/1838550-New-Update-The-Love-Express!",
             "event": {
@@ -268,10 +276,12 @@
         },
         "5.7.1": {
             "date": "07.01.2018",
-            "fixfor": "5.7.0"
+            "fixfor": "5.7.0",
+            "icon": "https://i.imgur.com/z4OiUtD.png"
         },
         "5.7.0": {
             "date": "21.12.2017",
+            "icon": "https://i.imgur.com/z4OiUtD.png",
             "notes": "A grand adventure begins! DAKAR 2018 the biggest Rally-Raid in the World comes to Trials Frontier!\nJoin the 'DAKAR Rally Challenge' for 6 Legs of super-competitive racing, with 11 exciting new Tracks to be won!\nRace against multiple opponents, score the best times, and win exciting rewards!",
             "forum": "https://forums.ubisoft.com/showthread.php/1815258-New-Update-The-DAKAR-Rally-Challenge!",
             "youtube": "https://www.youtube.com/watch?v=-O6YYsvjk9w",
@@ -288,6 +298,7 @@
         },
         "5.6.0": {
             "date": "02.11.2017",
+            "icon": "https://i.imgur.com/rwBP2sE.png",
             "notes": "Monster Energy AUS X OPEN 2017 the biggest Supercross, Freestyle Motocross, and action sports event in the Southern Hemisphere comes to Trials Frontier!\nUpdate your game and enter the ‘AUS-X OPEN Midnight Circuit’ for two weeks of super-competitive racing, with two exciting new themed Tracks and Bike Paintjobs!\nRace now!",
             "forum": "https://forums.ubisoft.com/showthread.php/1778794-New-Update-AUS-X-OPEN-Midnight-Circuit!",
             "youtube": "https://www.youtube.com/watch?v=rn8EQpEhaaU",
@@ -299,6 +310,7 @@
         },
         "5.5.0": {
             "date": "21.09.2017",
+            "icon": "https://i.imgur.com/JaPfUv2.png",
             "forum": "https://forums.ubisoft.com/showthread.php/1759655-New-Update-The-BMW-Rally-Challenge!",
             "event": {
                 "name": "The BMW Rally Challenge",
@@ -313,19 +325,22 @@
         },
         "5.4.1": {
             "date": "22.08.2017",
-            "fixfor": "5.4.0"
+            "fixfor": "5.4.0",
+            "icon": "https://i.imgur.com/hbMTuOn.png"
         },
         "5.4.0": {
             "date": "16.08.2017",
+            "icon": "https://i.imgur.com/hbMTuOn.png",
             "notes": "Harder, faster and stronger than before – we’re working permanently to improve your riding experience. Based on your feedback, we’ve been able to remove some annoying bugs hitting the Frontier.\nDownload the latest version now!",
             "forum": "https://forums.ubisoft.com/showthread.php/1719085-The-Midnight-Championship!",
             "event": {
                 "name": "The Midnight Championship",
-                "type": ""
+                "type": "mc"
             }
         },
         "5.3.0": {
             "date": "06.07.2017",
+            "icon": "https://i.imgur.com/cHx63cy.png",
             "event": {
                 "name": "Reputation",
                 "type": "grind",
@@ -340,6 +355,7 @@
         },
         "5.2.0": {
             "date": "15.06.2017",
+            "icon": "https://i.imgur.com/NReibNy.png",
             "forum": "https://forums.ubisoft.com/showthread.php/1688863-The-Bandito-Rally-Challenge!",
             "event": {
                 "name": "The Bandito Rally Challenge",
@@ -354,10 +370,12 @@
         },
         "5.1.1": {
             "date": "27.05.2017",
-            "fixfor": "5.1.0"
+            "fixfor": "5.1.0",
+            "icon": "https://i.imgur.com/tnQO1P4.png"
         },
         "5.1.0": {
             "date": "09.05.2017",
+            "icon": "https://i.imgur.com/tnQO1P4.png",
             "notes": "Easter has passed, but a bizarre new visitor, claiming to be the Easter Bunny, roams the Frontier. Is he the real Easter Bunny? Can he be trusted? What does he want?\nWith this update, we’ll have some egg-citing shells to crack!\nRide across the Frontier & locate Easter Eggs to win up to 7 Brand New Tracks! All this, plus a Special Outfit & Paintjob!\nGrab your riding gear, we’re about to hit the road and discover the secret behind the mysterious Easter Bunny & the EASTER EGG HUNT!",
             "forum": "https://forums.ubisoft.com/showthread.php/1665037-New-Update-The-Easter-Egg-Hunt!",
             "event": {
@@ -372,10 +390,13 @@
         },
         "5.0.1": {
             "date": "26.04.2017",
+            "icon": "https://i.imgur.com/FcvWWmn.png",
+            "fixfor": "5.0.0",
             "notes": "Harder, faster and stronger than before – we’re working permanently to improve your riding experience. Based on your feedback, we’ve been able to remove some annoying bugs hitting the Frontier.\nDownload the latest version now!"
         },
         "5.0.0": {
             "date": "11.04.2017",
+            "icon": "https://i.imgur.com/FcvWWmn.png",
             "anniversary": 3,
             "notes": "Frontier completes THREE YEARS! Join in the celebration, Riders!\nHarder, faster and stronger than before – we’re working permanently to improve your riding experience. Based on your feedback, we’ve been able to remove some annoying bugs hitting the Frontier.\nDownload the latest version now!",
             "forum": "https://forums.ubisoft.com/showthread.php/1629111-New-Update-The-Bandito-Update!",
@@ -387,15 +408,18 @@
         },
         "4.9.0": {
             "date": "06.03.2017",
+            "icon": "https://i.imgur.com/FcvWWmn.png",
             "notes": "How fast did you race in the KTM Rally Challenge?\nIt's time to update your game for a smoother ride we've improved the stability and removed some pesky bugs to enhance your gameplay experience!\nReach out to us on our Forums if you have any concerns, and do share your feedback!",
             "forum": "https://forums.ubisoft.com/showthread.php/1598997-Patch-4-9-0"
         },
         "4.8.1": {
             "date": "07.03.2017",
-            "notes": "4.8.0"
+            "fixfor": "4.8.0",
+            "icon": "https://i.imgur.com/a8ktqwX.png"
         },
         "4.8.0": {
             "date": "04.01.2017",
+            "icon": "https://i.imgur.com/a8ktqwX.png",
             "notes": "Introducing the KTM Rally Challenge – the ultimate test of skill!\nRide the all new legendary KTM 450 Rally through 4 weekly legs of 10 tracks each and bring glory to your new team, the Desert Wings! Race hard on every track to score your best time & dominate the weekly leaderboards! Win grand rewards based on your performance including blueprints to the KTM 450 Rally and 8 radical new tracks!\nReady to Race?",
             "forum": "https://forums.ubisoft.com/showthread.php/1544701-New-UPDATE-The-KTM-Rally-Challenge!",
             "event": {
@@ -411,6 +435,7 @@
         },
         "4.6.0": {
             "date": "10.12.2016",
+            "icon": "https://i.imgur.com/azLu1k1.png",
             "forum": "https://forums.ubisoft.com/showthread.php/1506895-New-UPDATE-Ride-the-MIDNIGHT-CIRCUIT!",
             "event": {
                 "name": "Ride the MIDNIGHT CIRCUIT",
@@ -420,10 +445,12 @@
         },
         "4.5.1": {
             "date": "20.10.2016",
-            "fixfor": "4.5.0"
+            "fixfor": "4.5.0",
+            "icon": "https://i.imgur.com/aAWtS5J.png"
         },
         "4.5.0": {
             "date": "13.10.2116",
+            "icon": "https://i.imgur.com/aAWtS5J.png",
             "notes": "This Halloween, gear up for the Midnight Circuit!\nQuickshift Cam is here to offer you 4 weekly challenges of one track and bike each, to pit yourself against every other rider in the world. Impress her with your performance and smash trophies to win rewards like new Tracks & rad Outfits (even some that you’ve missed before).\nMake your opponents eat dirt with your techniques and speed to the top of a brand new leaderboard every week!\nHave a frightfully fun Halloween and keep riding!",
             "event": {
                 "type": "mc"
@@ -431,16 +458,19 @@
         },
         "4.3.0": {
             "date": "26.08.2016",
+            "icon": "https://i.imgur.com/sKVsfBB.png",
             "notes": "More power to you, Riders! Here’s an update with some new features to enhance your gameplay experience!\nMedal Toggling: You can now switch between Basic, Donkey and Crazy Medals on the World Map.\nNew track pack info: Wondering which tracks to buy next? Click on the pack for details that will help you make an informed purchase.\nLoads of bug fixes based on your feedback.\nPlease note that the game is currently unavailable on Android 7.0 Nougat. However, the team is working on it.",
             "forum": "https://forums.ubisoft.com/showthread.php/1486835-Patch-4-3-0"
         },
         "4.2.2": {
             "date": "13.07.2016",
+            "icon": "https://i.imgur.com/Ma7tcNZ.png",
             "fixfor": "4.2.1",
             "forum": "https://forums.ubisoft.com/showthread.php/1471140-Patch-4-2-2"
         },
         "4.2.1": {
             "date": "28.06.2016",
+            "icon": "https://i.imgur.com/Ma7tcNZ.png",
             "notes": "Howdy Riders!\nThe Treasure Hunt Event is here! The Prospector’s got 4 new tracks for you, but you have to find them first! Embark on an epic hunt to be first on their Leaderboards!\nThe Temple Rider Outfit is now available with its own special ability to aid the chase!\nYou’ll also find an overhaul of the in-game store and the new Riders Club, an exclusive rewards program that offers huge amounts of daily gems and coins, a wicked new outfit and an exclusive badge to display on the Leaderboards.",
             "forum": "https://forums.ubisoft.com/showthread.php/1465895-Patch-4-2-1",
             "event": {
@@ -455,6 +485,7 @@
         },
         "4.1.0": {
             "date": "04.05.2016",
+            "icon": "https://i.imgur.com/hkJrMbv.png",
             "anniversary": 2,
             "notes": "Howdy Riders!\nTo celebrate the second anniversary of Trials Frontier, we’re introducing a brand new quest giver: The Puppy!\nHe’s gonna give you daily quests to complete and some super cool rewards to earn that get better every day!\nGet ready to crush the competition with the meanest Tier 1 bike. The KTM 500 EXC is finally available for sale!\nAn awesome ride requires a cool outfit and fitting venue, so both KTM Course track and KTM Gear outfit are also available for purchase from now on!",
             "forum": "https://forums.ubisoft.com/showthread.php/1446458-Patch-4-1-0-Notes-10th-of-May",
@@ -464,18 +495,24 @@
         },
         "4.0.2": {
             "date": "13.04.2016",
+            "icon": "https://i.imgur.com/Us7NIhs.png",
+            "fixfor": "4.0.0",
             "notes": "We regularly bring you updates and new features to improve your experience. Have fun!"
         },
         "4.0.0": {
             "date": "21.03.2016",
+            "fixfor": "3.9.1",
+            "icon": "https://i.imgur.com/Us7NIhs.png",
             "forum": "https://forums.ubisoft.com/showthread.php/1418307-Update-22-March-21"
         },
         "3.9.1": {
             "date": "01.03.2016",
-            "fixfor": "3.9.0"
+            "fixfor": "3.9.0",
+            "icon": "https://i.imgur.com/Us7NIhs.png"
         },
         "3.9.0": {
             "date": "20.02.2016",
+            "icon": "https://i.imgur.com/Us7NIhs.png",
             "forum": "https://forums.ubisoft.com/showthread.php/1390750-UPDATE-3-9-0-KTM-event",
             "event": {
                 "name": "KTM event",
@@ -487,11 +524,13 @@
         },
         "3.8.0": {
             "date": "14.01.2016",
+            "icon": "https://i.imgur.com/boqmL7m.png",
             "notes": "Butch and his gang have been up to their usual shenanigans and causing all kinds of trouble. We’ve been hard at work and cleaning after them to bring you an even smoother experience than before.",
             "forum": "https://forums.ubisoft.com/showthread.php/1371868-Update-3-8-0-14-01-16"
         },
         "3.7.0": {
             "date": "10.12.2016",
+            "icon": "https://i.imgur.com/boqmL7m.png",
             "notes": "Explore a vast world on your motorcycle. Compete against your friends on Global Leaderboards. Master physics-based tracks to challenge the world's top riders for the best times. Race your motorcycle through a world of adventure, crazy characters, and unfairly addictive tracks!\nExperience the ULTIMATE skill-based RACING game on your smartphone and tablet!",
             "forum": "https://forums.ubisoft.com/showthread.php/1350231-QA-Corner-Update-10-12",
             "event": {
@@ -505,11 +544,13 @@
         },
         "3.6.0": {
             "date": "16.11.2015",
+            "icon": "https://i.imgur.com/boqmL7m.png",
             "notes": "Butch and his gang have been up to their usual shenanigans and causing all kinds of trouble. We’ve been hard at work and cleaning after them to bring you an even smoother experience than before.",
             "forum": "https://forums.ubisoft.com/showthread.php/1332248-QA-corner-Update-20-11"
         },
         "3.5.0": {
             "date": "15.10.2015",
+            "icon": "https://i.imgur.com/6zAKvTK.png",
             "event": {
                 "name": "Halloween",
                 "type": "grind",
@@ -523,6 +564,7 @@
         },
         "3.4.0": {
             "date": "10.09.2015",
+            "icon": "https://i.imgur.com/22KJDX3.png",
             "forum": "https://forums.ubisoft.com/showthread.php/1261871-QA-corner-Update-14-09",
             "event": {
                 "name": "Rodeo",
@@ -537,6 +579,7 @@
         },
         "3.3.0": {
             "date": "16.07.2015",
+            "icon": "https://i.imgur.com/ZORavZz.png",
             "youtube": "https://www.youtube.com/watch?v=f1B7UR1P7to",
             "event": {
                 "name": "Agents Mission Impossible",
@@ -547,28 +590,33 @@
         },
         "3.2.4": {
             "date": "06.05.2015",
-            "fixfor": "3.2.3"
+            "fixfor": "3.2.3",
+            "icon": "https://i.imgur.com/NDIg2Ze.png"
         },
         "3.2.3": {
             "date": "24.04.2015",
             "ios": {
                 "date": "26.06.2015"
             },
-            "fixfor": "3.2.2"
+            "fixfor": "3.2.2",
+            "icon": "https://i.imgur.com/NDIg2Ze.png"
         },
         "3.2.2": {
             "date": "17.04.2015",
             "ios": {
                 "date": "30.04.2015"
             },
-            "fixfor": "3.2.1"
+            "fixfor": "3.2.1",
+            "icon": "https://i.imgur.com/NDIg2Ze.png"
         },
         "3.2.1": {
             "date": "15.04.2015",
-            "fixfor": "3.2.0"
+            "fixfor": "3.2.0",
+            "icon": "https://i.imgur.com/NDIg2Ze.png"
         },
         "3.2.0": {
             "date": "15.04.2015",
+            "icon": "https://i.imgur.com/NDIg2Ze.png",
             "event": {
                 "name": "Frostpocalypse",
                 "img": "https://i.imgur.com/Drl8yAL.png",
@@ -578,6 +626,7 @@
         },
         "3.1.0": {
             "date": "16.02.2015",
+            "icon": "https://i.imgur.com/ntfQTuu.png",
             "ios": {
                 "date": "05.02.2015"
             },
@@ -588,18 +637,22 @@
         },
         "3.0.4": {
             "date": "24.12.2014",
-            "fixfor": "3.0.3"
+            "fixfor": "3.0.3",
+            "icon": "https://i.imgur.com/ntfQTuu.png"
         },
         "3.0.3": {
             "date": "17.12.2014",
-            "fixfor": "3.0.2"
+            "fixfor": "3.0.2",
+            "icon": "https://i.imgur.com/ntfQTuu.png"
         },
         "3.0.2": {
             "date": "14.12.2014",
-            "fixfor": "3.0.1"
+            "fixfor": "3.0.1",
+            "icon": "https://i.imgur.com/ntfQTuu.png"
         },
         "3.0.1": {
             "date": "11.12.2014",
+            "icon": "https://i.imgur.com/ntfQTuu.png",
             "event": {
                 "name": "Bunker Released",
                 "category": 9
@@ -607,10 +660,12 @@
         },
         "2.5.1": {
             "date": "11.11.2014",
-            "notes": ""
+            "fixfor": "2.5.0",
+            "icon": "https://i.imgur.com/CM1Yuaz.png"
         },
         "2.5.0": {
             "date": "23.10.2014",
+            "icon": "https://i.imgur.com/CM1Yuaz.png",
             "notes": "Explore a vast world on your motorcycle. Compete against your friends on Global Leaderboards. Master physics-based tracks to challenge the world's top riders for the best times. Race your motorcycle through a world of adventure, crazy characters, and unfairly addictive tracks!\nExperience the ULTIMATE skill-based RACING game on your smartphone and tablet!\nACCEPT NO SUBSTITUTES! Physics-based racing FINALLY PERFECTED for the touch screen!",
             "event": {
                 "name": "Halloween",
@@ -620,29 +675,36 @@
         },
         "2.2.1": {
             "date": "01.10.2014",
-            "fixfor": "2.2.0"
+            "fixfor": "2.2.0",
+            "icon": "https://i.imgur.com/VkNFIup.png"
         },
         "2.2.0": {
             "date": "11.09.2014",
-            "fixfor": "2.0.3"
+            "fixfor": "2.0.3",
+            "icon": "https://i.imgur.com/VkNFIup.png"
         },
         "2.0.3": {
             "date": "26.08.2014",
-            "fixfor": "2.0.2"
+            "fixfor": "2.0.2",
+            "icon": "https://i.imgur.com/VkNFIup.png"
         },
         "2.0.2": {
             "date": "21.08.2014",
-            "fixfor": "2.0.1"
+            "fixfor": "2.0.1",
+            "icon": "https://i.imgur.com/VkNFIup.png"
         },
         "2.0.1": {
             "date": "14.07.2014",
-            "fixfor": "2.0.0"
+            "fixfor": "2.0.0",
+            "icon": "https://i.imgur.com/VkNFIup.png"
         },
         "2.0.0": {
-            "date": "10.07.2014"
+            "date": "10.07.2014",
+            "icon": "https://i.imgur.com/VkNFIup.png"
         },
         "1.0.0": {
             "date": "27.05.2014",
+            "icon": "https://i.imgur.com/kgz7BjU.png",
             "ios": {
                 "date": "05.12.2013"
             },
