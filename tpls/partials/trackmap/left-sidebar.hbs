@@ -5,7 +5,7 @@
             <li>
                 <div class="wrap">
                     <h2>{%'page.leftSidebar.stats'|translate%}</h2>
-                    {%'page.leftSidebar.appVersion'|translate%}: {{version}}<br/>
+                    <a href="https://dutscher.github.io/release-timeline-trials-frontier/">{%'page.leftSidebar.appVersion'|translate%}: {{version}}</a><br/>
 
                     {%'page.leftSidebar.update'|translate%}: {%'{{lastUpdateTime}}'|humanReadableDate%}
 
@@ -18,16 +18,17 @@
                 <div class="wrap">
                     <h2>{%'page.title'|translate%}</h2>
 
-                    <a href="/halloween.html" style="color: orangered;">
+                    <!--<a href="/halloween.html" style="color: orangered;">
                         Halloween Guide 2019
                         {{#with ../../../hunt-events.database.events.hunt.halloween_2019}}
                             {{#hunt-event-stats huntData=this}}
                                 ( {{locations}} )
                             {{/hunt-event-stats}}
                         {{/with}}
+                    </a>-->
+                    <a href="https://dutscher.github.io/release-timeline-trials-frontier/">
+                        Release Timeline *New*
                     </a>
-
-
                     <a href="/trackfinder.html">
                         Trackfinder ({%::data.tracks.length%})
                     </a>
