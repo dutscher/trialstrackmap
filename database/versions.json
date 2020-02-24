@@ -154,6 +154,7 @@
         },
         "6.8.0": {
             "date": "18.02.2019",
+            "fixfor": "6.7.0",
             "icon": "https://i.imgur.com/LUsTy5Y.jpg",
             "notes": "Update your game for a smoother ride we've improved the stability and removed some pesky bugs to enhance your gameplay experience!"
         },
@@ -162,6 +163,7 @@
             "icon": "https://i.imgur.com/LUsTy5Y.jpg",
             "notes": "Trials Rising is in the Frontier! Master your rides or crash in style, in the upcoming Rising PvP Season! Ride hard to win exclusive, iconic rewards! Oh, and don't forget to claim the free Stuntman Antti outfit available for a limited time only! Download Now!",
             "event": {
+                "name": "Trails Rising coop",
                 "type": "mc"
             }
         },
@@ -251,12 +253,14 @@
         "5.9.0": {
             "date": "09.04.2018",
             "icon": "https://i.imgur.com/D5huRJo.png",
-            "anniversary": 4,
             "notes": "Get our 4th Anniversary update! Download now to get the brand-new Community Track, voted for by the Trials Community! This update also includes Bug Fixes to make your rides smoother.",
-            "img": [
-                "https://i.imgur.com/sdI7RQy.png",
-                "https://i.imgur.com/9caFUue.png"
-            ]
+            "event": {
+                "name": "4th Anniversary",
+                "img": [
+                    "https://i.imgur.com/sdI7RQy.png",
+                    "https://i.imgur.com/9caFUue.png"
+                ]
+            }
         },
         "5.8.3": {
             "date": "14.02.2018",
@@ -344,7 +348,6 @@
             "event": {
                 "name": "Reputation",
                 "type": "grind",
-                "forum": "",
                 "img": [
                     "https://i.imgur.com/d9iooGl.png",
                     "https://i.imgur.com/d9iooGl.png",
@@ -397,11 +400,10 @@
         "5.0.0": {
             "date": "11.04.2017",
             "icon": "https://i.imgur.com/FcvWWmn.png",
-            "anniversary": 3,
             "notes": "Frontier completes THREE YEARS! Join in the celebration, Riders!\nHarder, faster and stronger than before – we’re working permanently to improve your riding experience. Based on your feedback, we’ve been able to remove some annoying bugs hitting the Frontier.\nDownload the latest version now!",
             "forum": "https://forums.ubisoft.com/showthread.php/1629111-New-Update-The-Bandito-Update!",
             "event": {
-                "name": "The Bandito Update",
+                "name": "The Bandito Update, 3rd Anniversary",
                 "type": "mc",
                 "category": 23
             }
@@ -449,10 +451,11 @@
             "icon": "https://i.imgur.com/aAWtS5J.png"
         },
         "4.5.0": {
-            "date": "13.10.2116",
+            "date": "13.10.2016",
             "icon": "https://i.imgur.com/aAWtS5J.png",
             "notes": "This Halloween, gear up for the Midnight Circuit!\nQuickshift Cam is here to offer you 4 weekly challenges of one track and bike each, to pit yourself against every other rider in the world. Impress her with your performance and smash trophies to win rewards like new Tracks & rad Outfits (even some that you’ve missed before).\nMake your opponents eat dirt with your techniques and speed to the top of a brand new leaderboard every week!\nHave a frightfully fun Halloween and keep riding!",
             "event": {
+                "name": "Halloween",
                 "type": "mc"
             }
         },
@@ -486,11 +489,10 @@
         "4.1.0": {
             "date": "04.05.2016",
             "icon": "https://i.imgur.com/hkJrMbv.png",
-            "anniversary": 2,
             "notes": "Howdy Riders!\nTo celebrate the second anniversary of Trials Frontier, we’re introducing a brand new quest giver: The Puppy!\nHe’s gonna give you daily quests to complete and some super cool rewards to earn that get better every day!\nGet ready to crush the competition with the meanest Tier 1 bike. The KTM 500 EXC is finally available for sale!\nAn awesome ride requires a cool outfit and fitting venue, so both KTM Course track and KTM Gear outfit are also available for purchase from now on!",
             "forum": "https://forums.ubisoft.com/showthread.php/1446458-Patch-4-1-0-Notes-10th-of-May",
             "event": {
-                "name": "10th of May"
+                "name": "10th of May, 2nd Anniversary"
             }
         },
         "4.0.2": {
@@ -516,7 +518,7 @@
             "forum": "https://forums.ubisoft.com/showthread.php/1390750-UPDATE-3-9-0-KTM-event",
             "event": {
                 "name": "KTM event",
-                "type": "",
+                "type": "rally",
                 "img": "https://i.imgur.com/6uYaOoq.png",
                 "category": 17
             },
@@ -536,6 +538,7 @@
             "event": {
                 "name": "Christmas",
                 "category": 16,
+                "type": "grind",
                 "img": [
                     "https://i.imgur.com/HtuOlfP.png",
                     "https://i.imgur.com/Wo876wT.png"
@@ -618,9 +621,9 @@
             "date": "15.04.2015",
             "icon": "https://i.imgur.com/NDIg2Ze.png",
             "event": {
-                "name": "Frostpocalypse",
+                "name": "Frostpocalypse, 1st Anniversary",
                 "img": "https://i.imgur.com/Drl8yAL.png",
-                "type": "hunt|grind",
+                "type": "hunt",
                 "category": 11
             }
         },
