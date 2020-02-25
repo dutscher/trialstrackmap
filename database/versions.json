@@ -713,6 +713,16 @@
             },
             "notes": "Explore a vast world on your motorcycle. Compete against your friends on Global Leaderboards. Master physics-based tracks to challenge the world's top riders for the best times. Race your motorcycle through a world of adventure, crazy characters, and unfairly addictive tracks!\nExperience the ULTIMATE skill-based RACING game on your smartphone and tablet!",
             "youtube": "https://www.youtube.com/watch?v=4QkWauePAaw"
+        },
+        "0.0.0": {
+            "date": "10.12.2013",
+            "icon": "https://i.imgur.com/kgz7BjU.png",
+            "forum": "https://forums.ubisoft.com/showthread.php/815944-Finnish-and-Canadian-Soft-Launch-is-Upon-Us!",
+            "youtube": "https://www.youtube.com/watch?v=Y9I_tUiqBV4",
+            "event": {
+                "name": "Finnish and Canadian Soft Launch is Upon Us!",
+                "img": "http://i.imgur.com/2nI77Tz.png"
+            }
         }
     }
 }
