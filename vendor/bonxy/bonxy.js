@@ -4,6 +4,7 @@ var iframe = null,
     iframeClose = null,
     iframeUrl = "http://trialstrackmap.sb-f.de/trackfinder.html#bonxy=true&track=",
     //iframeUrl = "http://localhost:8001/trackfinder.html#bonxy=true&track=",
+    //iframeUrl = "http://192.168.211.20:8001/trackfinder.html#bonxy=true&track=",
     baseDim = "784x320".split("x"),
     scale = 0.45;
 
@@ -87,15 +88,23 @@ function showTrackFinder (event, trackName) {
 
     var newWidth = calcScale(),
         margin = 16,
-        viewportWidth = document.body.offsetWidth,
-        isMobile = viewportWidth <= 768;
+        viewport = {
+            width: window.innerWidth,
+            height: window.innerHeight
+        },
+        iframeDim = iframe.getBoundingClientRect(),
+        isMobile = viewport.width <= 768,
+        isSwapToTop = event.y + iframeDim.height + (margin * 2) > viewport.height,
+        pageY = isSwapToTop ? event.pageY - iframeDim.height - (margin * 2) : event.pageY,
+        newTop = (isMobile ? pageY + margin : pageY + margin),
+        newLeft = (isMobile ? ((viewport.width - newWidth) / 2) : event.pageX + margin);
 
     iframeWrap.setAttribute("style",
         " \
             top:{1}px; \
             left:{2}px;\
         "
-            .replace("{1}", isMobile ? event.pageY + margin : event.pageY + margin)
-            .replace("{2}", isMobile ? ((viewportWidth - newWidth) / 2) : event.pageX + margin)
+            .replace("{1}", newTop)
+            .replace("{2}", newLeft)
     );
 }

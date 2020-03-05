@@ -56,12 +56,13 @@
   "scripts": {
     "npmInstall": "npm install",
     "grunt": "node ./node_modules/grunt/bin/grunt",
-    "serve": "npm run grunt #startServer",
+    "start": "npm run grunt #startServer",
     "import": "npm run grunt #startImport",
     "deploy": "npm run grunt #finalDeployWithUpload",
     "upload": "npm run grunt ftp_push:distUpload",
     "----": "",
     "stats": "node ./grunt/nodejs/stats.js",
-    "doTask": "npm run grunt ..."
+    "doTask": "npm run grunt ...",
+    "show:win:ips": "ipconfig"
   }
 }
