@@ -1,8 +1,8 @@
 module.exports = function (shared) {
 
     shared.grunt.task.run([
-        "import-10-pull-screenshots",
-        //"import-10-remove-screenshots-from-device",
+        //"import-10-pull-screenshots",
+        "import-10-remove-screenshots-from-device",
     ]);
 
     shared.grunt.registerTask("import-10-remove-screenshots-from-device", () => {

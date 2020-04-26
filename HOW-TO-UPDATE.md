@@ -32,7 +32,7 @@
   * use 50% compression (the new image should be 15KB)
 * Trackmap
   * open "/map-psd/map.5.7.0-petrol-falls.psd"
-  * insert screenshot of centered new track
+  * insert screenshot of centered new track (1280x720px)
   * toggle the visiblity to get it mapped to the big map
   * mask it, fully black mask, and unmask only visible new track
   * merge if done to one layer
@@ -50,8 +50,6 @@
     * scale down to 320x320 (world 2, see in "./database/media/gfx.json" which dimension u need) 
     * save image as jpg, the name should be "./map/trackmap.2.180224.path.min.jpg"
   * hide group layer "track path" and save .psd
-* Paintjobs
-  * TODO: maybe a generated task will do this
  
 ## 4.Deployment into trackmap-gfx repo
 * Commit the image changes and push to master

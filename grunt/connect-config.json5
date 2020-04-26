@@ -2,5 +2,5 @@
   "port": 8001,
   "livereload": 8002,
   // change this to "0.0.0.0" to access the server from outside
-  "hostname": "192.168.211.20"
+  // "hostname": "192.168.211.20"
 }

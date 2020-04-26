@@ -5,7 +5,7 @@
   "author": "willy woitas <dutscher_sbf@hotmail.com>",
   "private": true,
   "version": "7.9.0",
-  "seasonID": 71,
+  "seasonID": 72,
   "dependencies": {
     "grunt": "latest",
     "grunt-cli": "latest",
