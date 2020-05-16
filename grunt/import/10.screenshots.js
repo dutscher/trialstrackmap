@@ -5,18 +5,6 @@ module.exports = function (shared) {
         "import-10-remove-screenshots-from-device",
     ]);
 
-    shared.grunt.registerTask("import-10-remove-screenshots-from-device", () => {
-        const cmds = shared._.flattenDeep([
-            `pushd ${shared.makeWinPath(shared.toolPath.adb)}`,
-            // navigate to adb tool
-            `echo "remove screenshots"`,
-            `adb shell rm -r ${shared.androidScreenshots}`,
-        ]);
-
-        shared.grunt.config("exec.copyContentViaAdb.cmd", cmds.join(" & "));
-        shared.grunt.task.run(["exec:copyContentViaAdb"]);
-    });
-
     shared.grunt.registerTask("import-10-pull-screenshots", () => {
         const date = new Date();
         // 19.04.25 -> YY-MM-DD
@@ -39,6 +27,19 @@ module.exports = function (shared) {
 
         shared.grunt.config("exec.copyContentViaAdb.cmd", cmds.join(" & "));
         shared.grunt.task.run(["exec:copyContentViaAdb"]);
-
     });
+
+    shared.grunt.registerTask("import-10-remove-screenshots-from-device", () => {
+        const cmds = shared._.flattenDeep([
+            `pushd ${shared.makeWinPath(shared.toolPath.adb)}`,
+            // navigate to adb tool
+            `echo "remove screenshots"`,
+            `adb shell rm -r ${shared.androidScreenshots}`,
+        ]);
+
+        shared.grunt.config("exec.copyContentViaAdb.cmd", cmds.join(" & "));
+        shared.grunt.task.run(["exec:copyContentViaAdb"]);
+    });
+
+
 };

@@ -236,7 +236,7 @@ module.exports = function (shared) {
                     json = require("../../" + importDir + file);
 
                 if("httpCode" in json && json.httpCode === 404){
-                    console.error(`season ${file} and their settings  not exists`);
+                    console.error(`season ${file} has not data on redlynx servers.`);
                     return;
                 }
 

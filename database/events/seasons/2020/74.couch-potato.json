@@ -1,116 +1,126 @@
 {
   "header": {
-    "src": "https://i.imgur.com/mA42xit.jpg"
+    "src": "https://i.imgur.com/ac1KImQ.jpg"
   },
-  "title": "Easter",
-  "date": "28.03.2019",
-  "date_end": "26.04.2019",
+  "title": "Couch potato",
+  "date": "16.05.2020",
+  "date_end": "15.06.2020",
   "duration": "4h",
-  "free_showdowns": 3,
+  "free_showdowns": 4,
   "ticket_regain": "45m",
-  "stats": "http://trials.bonxy.net/the-bunker/Easter+Season-57",
-  "total_legends": 643,
+  "stats": "http://trials.bonxy.net/the-bunker/Couch+Potato+Season-72",
+  "total_legends": 0,
   "prizes": [
     {
       "level": 1,
       "coins": 5000,
       "gems": 5,
-      "extra": 55,
-      "extra_type": "costum"
+      "extra_type": "track",
+      "extra": 54
     },
     {
       "level": 2,
       "coins": 5000,
       "gems": 5,
-      "extra_type": "track",
-      "extra": 36
+      "extra": 17,
+      "extra_type": "blueprint"
     },
     {
       "level": 3,
       "coins": 5000,
       "gems": 5,
-      "extra": 56,
+      "extra": 34,
       "extra_type": "costum"
     },
     {
       "level": 4,
       "coins": 2000,
-      "gems": 5
+      "gems": 5,
+      "extra_type": "doughnut"
     },
     {
       "level": 5,
       "coins": 2000,
       "gems": 5,
-      "extra": 57,
-      "extra_type": "costum"
+      "extra_type": "track",
+      "extra": 27
     },
     {
       "level": 6,
       "coins": 2000,
       "gems": 4,
-      "extra_type": "doughnut"
+      "extra": 18,
+      "extra_type": "blueprint"
     },
     {
       "level": 7,
       "coins": 2000,
       "gems": 4,
-      "extra_type": "part",
-      "extra": "piston-5"
+      "extra": 34,
+      "extra_type": "costum"
     },
     {
       "level": 8,
       "coins": 2000,
-      "gems": 4
+      "gems": 4,
+      "extra_type": "part",
+      "extra": "nut-5"
     },
     {
       "level": 9,
       "coins": 1500,
       "gems": 4,
-      "extra_type": "doughnut"
+      "extra_type": "track",
+      "extra": 55
     },
     {
       "level": 10,
       "coins": 1500,
       "gems": 3,
-      "extra_type": "doughnut"
+      "extra_type": "part",
+      "extra": "piston-5"
     },
     {
       "level": 11,
       "coins": 1500,
       "gems": 3,
-      "extra_type": "doughnut"
+      "extra": 16,
+      "extra_type": "blueprint"
     },
     {
       "level": 12,
       "coins": 1500,
       "gems": 3,
-      "extra_type": "paintjob",
-      "extra": 12
+      "extra_type": "track",
+      "extra": 24
     },
     {
       "level": 13,
+      "coins": 1500,
+      "gems": 3,
+      "extra": 19,
+      "extra_type": "blueprint"
+    },
+    {
+      "level": 14,
+      "coins": 1500,
+      "gems": 3,
+      "extra": 36,
+      "extra_type": "costum"
+    },
+    {
+      "level": 15,
       "coins": 1500,
       "gems": 3,
       "extra_type": "part",
       "extra": "pipe-4"
     },
     {
-      "level": 14,
-      "coins": 1500,
-      "gems": 3,
-      "extra_type": "doughnut"
-    },
-    {
-      "level": 15,
-      "coins": 1500,
-      "gems": 3,
-      "extra_type": "doughnut"
-    },
-    {
       "level": 16,
       "coins": 1500,
       "gems": 2,
-      "extra_type": "doughnut"
+      "extra_type": "part",
+      "extra": "chain-3"
     },
     {
       "level": 17,
@@ -123,7 +133,7 @@
       "coins": 1000,
       "gems": 2,
       "extra_type": "part",
-      "extra": "spring-4"
+      "extra": "nut-3"
     },
     {
       "level": 19,
@@ -135,36 +145,39 @@
       "level": 20,
       "coins": 1000,
       "gems": 2,
-      "extra_type": "unlimited-fuel"
+      "extra_type": "doughnut"
     },
     {
       "level": 21,
       "coins": 800,
-      "gems": 1
+      "gems": 1,
+      "extra_type": "unlimited-fuel"
     },
     {
       "level": 22,
       "coins": 800,
       "gems": 1,
-      "extra_type": "part",
-      "extra": "spring-3"
+      "extra_type": "doughnut"
     },
     {
       "level": 23,
       "coins": 800,
       "gems": 1,
-      "extra_type": "unlimited-fuel"
+      "extra": 16,
+      "extra_type": "blueprint"
     },
     {
       "level": 24,
       "coins": 800,
       "gems": 1,
       "extra_type": "part",
-      "extra": "nut-2"
+      "extra": "gear-1"
     },
     {
       "level": 25,
-      "coins": 800
+      "coins": 800,
+      "gems": 1,
+      "extra_type": "coin-magnet"
     }
   ]
 }
