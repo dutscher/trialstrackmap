@@ -1,9 +1,9 @@
-module.exports = function (shared) {
-
-    shared.grunt.task.run([
-        "import-02-all-amazon",
-        //"import-02-only-season-update",
-    ]);
+module.exports = function (taskName, shared) {
+    shared.grunt.registerTask(taskName, () => {
+        shared.grunt.task.run([
+            taskName + '-all-amazon',
+        ]);
+    });
 
     // create version path
     shared.ensureDirectoryExistence(shared.cachePath + "/jojo");
@@ -149,12 +149,12 @@ module.exports = function (shared) {
             d1.getDate() === d2.getDate();
     }
 
-    shared.grunt.registerTask("import-02-all-amazon", function () {
+    shared.grunt.registerTask(taskName + "-all-amazon", function () {
         done = this.async();
         downloadS3Data();
     });
 
-    shared.grunt.registerTask("import-02-only-season-update", function () {
+    shared.grunt.registerTask(taskName + "-only-season-update", function () {
         done = this.async();
         filesMatcher = shared.seasonInfo;
         downloadS3Data();

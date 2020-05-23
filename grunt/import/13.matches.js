@@ -19,7 +19,6 @@ https://lb-rdv-http.ubi.com/TRIAG_AN_LNCH_A/public/pvp_matches/v1/matches
 
 */
 module.exports = function (shared) {
-
     shared.grunt.task.run([
         "import-13-read-matches",
     ]);

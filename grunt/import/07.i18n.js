@@ -1,6 +1,18 @@
 module.exports = function (shared) {
     const pathToI18NRaw = shared.secretPath + "/i18n";
 
+    shared.grunt.task.run([
+        "import-07-i18n-convert",
+        "import-07-i18n-getHashes",
+        "import-07-i18n-getTrackNamesFromRaw",
+        "import-07-i18n-toJSON",
+    ]);
+
+    // shared.grunt.task.run([
+    //     "import-07-i18n-getTrackNamesFromRaw",
+    //     "import-07-i18n-toJSON",
+    // ]);
+
     shared.grunt.registerTask("import-07-i18n-convert", () => {
         shared.copyToolTo(shared.toolPath.bin2Txt, shared.i18nPath);
         const scriptAll = "bin2txt.cmd",
@@ -141,16 +153,4 @@ module.exports = function (shared) {
 
         console.log("all files are up to date in 'database/i18n/'");
     });
-
-    shared.grunt.task.run([
-        "import-07-i18n-convert",
-        "import-07-i18n-getHashes",
-        "import-07-i18n-getTrackNamesFromRaw",
-        "import-07-i18n-toJSON",
-    ]);
-
-    // shared.grunt.task.run([
-    //     "import-07-i18n-getTrackNamesFromRaw",
-    //     "import-07-i18n-toJSON",
-    // ]);
 };

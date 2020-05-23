@@ -86,17 +86,21 @@ module.exports = function (grunt, http, https, path, fs, fsExt) {
             return vals;
         },
         createTask: function (importTask, importShared, callback) {
-            grunt.registerTask(importTask.t, function () {
-                if (callback) {
-                    callback();
-                }
-                const done = importTask.a ? this.async() : null;
-                if (importTask.json5) {
-                    require("json5/lib/register");
-                }
-                //console.log("run " + importTask.t + " at " + importTask.p);
-                require(importTask.p)(importShared, done);
-            });
+            if(importTask.useInnerTasks){
+                require(importTask.p)(importTask.t, importShared);
+            } else {
+                grunt.registerTask(importTask.t, function () {
+                    if (callback) {
+                        callback();
+                    }
+                    const done = importTask.a ? this.async() : null;
+                    if (importTask.json5) {
+                        require("json5/lib/register");
+                    }
+                    //console.log("run " + importTask.t + " at " + importTask.p);
+                    require(importTask.p)(importShared, done);
+                });
+            }
         },
         pad: function (n, width, z) {
             n = n + "";

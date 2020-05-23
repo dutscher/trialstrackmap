@@ -17,19 +17,14 @@ https://lb-rdv-http.ubi.com/TRIAG_AN_LNCH_A/public/pvp_matches/v1/season/47?lang
 https://lb-rdv-http.ubi.com/TRIAG_IP_BETA_B/public/pvp_matches/v1/season/%1
 
 */
-module.exports = function (shared) {
+module.exports = function (taskName, shared) {
+    const taskGetData = taskName + "-get-actual-season-data";
 
-    shared.grunt.task.run([
-        "import-08-get-actual-season-data",
-        //"import-08-crop-season-banner",
-        //"import-08-read-matches",
-    ]);
-
-    shared.grunt.registerTask("import-08-get-actual-season-data", function () {
+    shared.grunt.registerTask(taskGetData, function () {
         const done = this.async();
 
         const importSeasonID = shared.seasonID, // run import-02-gameDataS3 before to import-08-seasons
-            useBetaServer = false,
+            useBetaServer = shared.grunt.option("useBetaServer") || false,
             importDir = "build/import/seasons/",
             databaseDir = "database/events/seasons",
             year = new Date().getFullYear(),
@@ -235,8 +230,8 @@ module.exports = function (shared) {
                 const file = seasonFile[i],
                     json = require("../../" + importDir + file);
 
-                if("httpCode" in json && json.httpCode === 404){
-                    console.error(`season ${file} has not data on redlynx servers.`);
+                if ("httpCode" in json && json.httpCode === 404) {
+                    console.error(`for season ${file} is no data on the redlynx servers.`);
                     return;
                 }
 
@@ -369,7 +364,12 @@ module.exports = function (shared) {
         });
     });
 
-    shared.grunt.registerTask("import-08-crop-season-banner", function () {
+    shared.grunt.registerTask(taskGetData + " --beta", () => {
+        shared.grunt.option('useBetaServer', true);
+        shared.grunt.task.run(taskGetData);
+    });
+
+    shared.grunt.registerTask(taskName + "-crop-season-banner", function () {
         const done = this.async();
         const sharp = require("sharp");
         const sizeOf = require('image-size');
@@ -409,9 +409,9 @@ module.exports = function (shared) {
         });
     });
 
-    shared.grunt.registerTask("import-08-read-matches", function () {
+    shared.grunt.registerTask(taskName + "-read-matches", function () {
         const done = this.async();
-        const useBetaServer = false;
+        const useBetaServer = shared.grunt.option('useBetaServer') || false;
         const importDir = "build/import/matches/";
         shared.ensureDirectoryExistence(importDir + "file.json");
         const date = new Date();

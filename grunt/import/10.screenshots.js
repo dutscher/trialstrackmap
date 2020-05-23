@@ -1,11 +1,5 @@
-module.exports = function (shared) {
-
-    shared.grunt.task.run([
-        //"import-10-pull-screenshots",
-        "import-10-remove-screenshots-from-device",
-    ]);
-
-    shared.grunt.registerTask("import-10-pull-screenshots", () => {
+module.exports = function (taskName, shared) {
+    shared.grunt.registerTask(taskName + "-pull-screenshots", () => {
         const date = new Date();
         // 19.04.25 -> YY-MM-DD
         const today = [
@@ -29,7 +23,7 @@ module.exports = function (shared) {
         shared.grunt.task.run(["exec:copyContentViaAdb"]);
     });
 
-    shared.grunt.registerTask("import-10-remove-screenshots-from-device", () => {
+    shared.grunt.registerTask(taskName + "-remove-screenshots-from-device", () => {
         const cmds = shared._.flattenDeep([
             `pushd ${shared.makeWinPath(shared.toolPath.adb)}`,
             // navigate to adb tool
@@ -40,6 +34,4 @@ module.exports = function (shared) {
         shared.grunt.config("exec.copyContentViaAdb.cmd", cmds.join(" & "));
         shared.grunt.task.run(["exec:copyContentViaAdb"]);
     });
-
-
 };
