@@ -16,6 +16,11 @@
                 "img": []
             }
         },
+        "7.9.1": {
+            "date": "13.07.2020",
+            "fixfor": "7.9.0",
+            "icon": "https://i.imgur.com/CGAPE58.jpg"
+        },
         "7.9.0": {
             "date": "13.01.2020",
             "icon": "https://i.imgur.com/CGAPE58.jpg",

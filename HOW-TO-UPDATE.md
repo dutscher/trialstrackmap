@@ -32,7 +32,9 @@
   * use 50% compression (the new image should be 15KB)
 * Trackmap
   * open "/map-psd/map.5.7.0-petrol-falls.psd"
-  * insert screenshot of centered new track (1280x720px)
+  * insert screenshot of centered new track
+  // motog5 image: 1920x1080 -> 1280x720
+  // motog8 image: 2280x1080 -> 1267x600
   * toggle the visiblity to get it mapped to the big map
   * mask it, fully black mask, and unmask only visible new track
   * merge if done to one layer

@@ -58,7 +58,19 @@
     "52": "Snowball Surprise",
     "53": "Floral Lane",
     "54": "Marsh Ride",
-    "55": "Desert Punk"
+    "55": "Desert Punk",
+    "56": "High Ville",
+    "57": "Heavenward",
+    "58": "Townscape",
+    "59": "City Chaos",
+    "60": "Wild Zone",
+    "61": "Frostbite",
+    "62": "Urban Complex",
+    "63": "Golden Ride",
+    "64": "Mean Street",
+    "65": "Peak Route",
+    "66": "Dustzone",
+    "67": "Doom Race"
   },
   "paintjobs": {
     "1": {"title": "Neon Paintjob for Tango", "sprite": "tango-neon"},
@@ -98,7 +110,11 @@
     "35": {"title": "Swamp Monster for Donkey", "sprite": "donkey-swamp-monster"},
     "36": {"title": "Dawn Breaker for KTM 450", "sprite": "ktm-450-rally-dawn-breaker"},
     "37": {"title": "Blossom for Phantom", "sprite": "phantom-blossom"},
-    "38": {"title": "Beluga for Bandito", "sprite": "bandito-beluga"}
+    "38": {"title": "Beluga for Bandito", "sprite": "bandito-beluga"},
+    "39": {"title": "Nocturnal for Marauder", "sprite": "marauder-nocturnal"},
+    "40": {"title": "Sheriff for Riptide", "sprite": "riptide-sheriff"},
+    "41": {"title": "Firestarter for Berserker", "sprite": "berserker-firestarter"},
+    "42": {"title": "Fudge for Tango", "sprite": "tango-fudge"}
   },
   "costums": {
     "1": {"title": "Ninja Head", "selector": "the-ninja", "part": "head"},
@@ -190,6 +206,15 @@
     "87": {"title": "Nutjob Frank Pants", "selector": "nutjob-frank", "part": "pants"},
     "88": {"title": "Moonrider Head", "selector": "moonrider", "part": "head"},
     "89": {"title": "Moonrider Torso", "selector": "moonrider", "part": "body"},
-    "90": {"title": "Moonrider Pants", "selector": "moonrider", "part": "pants"}
+    "90": {"title": "Moonrider Pants", "selector": "moonrider", "part": "pants"},
+    "91": {"title": "Jungle Explorer Head", "selector": "jungle-explorer", "part": "head"},
+    "92": {"title": "Jungle Explorer Torso", "selector": "jungle-explorer", "part": "body"},
+    "93": {"title": "Jungle Explorer Pants", "selector": "jungle-explorer", "part": "pants"},
+    "94": {"title": "Dr Cool Head", "selector": "dr-cool", "part": "head"},
+    "95": {"title": "Dr Cool Torso", "selector": "dr-cool", "part": "body"},
+    "96": {"title": "Dr Cool Pants", "selector": "dr-cool", "part": "pants"},
+    "97": {"title": "Madcap Elf Head", "selector": "madcap-elf", "part": "head"},
+    "98": {"title": "Madcap Elf Torso", "selector": "madcap-elf", "part": "body"},
+    "99": {"title": "Madcap Elf Pants", "selector": "madcap-elf", "part": "pants"}
   }
 }

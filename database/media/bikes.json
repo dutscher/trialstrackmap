@@ -61,7 +61,7 @@
                 "Nutcracker",
                 "AUS-X-OPEN",
                 "Turtle",
-                "Fudge>"
+                "Fudge*"
             ],
             "gfx": [
                 "https://i.imgur.com/eTDRLeB.png",
@@ -178,7 +178,7 @@
                 "Valentine In",
                 "Extra Terres Trial",
                 "Alpaca",
-                "Nocturnal>"
+                "Nocturnal*"
             ],
             "gfx": [
                 "https://i.imgur.com/JUCNte3.png",
@@ -211,7 +211,7 @@
                 "X-18",
                 "Golden Dirt",
                 "Stache",
-                "Sheriff>"
+                "Sheriff*"
             ],
             "gfx": [
                 "https://i.imgur.com/wUQVdTC.png",
@@ -240,7 +240,7 @@
                 "Hard Rocker",
                 "The Reowned Berserkar",
                 "Darkmagic",
-                "Firestarter>"
+                "Firestarter*"
             ],
             "gfx": [
                 "https://i.imgur.com/XDS6gcG.png",
@@ -272,7 +272,7 @@
                 "Crimson Cruiser",
                 "Yellow Submarine",
                 "Opera",
-                "Blossom>"
+                "Blossom"
             ],
             "gfx": [
                 "https://i.imgur.com/kooKFFG.png",
@@ -357,7 +357,7 @@
             "paintjobs": [
                 "Default",
                 "Red Bull",
-                "Dawn Breaker>"
+                "Dawn Breaker"
             ],
             "gfx": [
                 "https://i.imgur.com/NKqiwIw.png",
@@ -372,8 +372,8 @@
                 "Default",
                 "Camo",
                 "Thunderstorm",
-                "Scarlet*",
-                "Beluga>"
+                "Scarlet",
+                "Beluga"
             ],
             "gfx": [
                 "https://i.imgur.com/Ayg6pLc.png",
